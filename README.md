@@ -1,0 +1,2 @@
+# RapidContentCreator
+Curious Reader RCC
