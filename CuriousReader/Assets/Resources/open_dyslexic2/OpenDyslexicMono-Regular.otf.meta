@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: d3f99f380a2b23644b80c6393171dd5f
+timeCreated: 1522738997
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: OpenDyslexicMono
+  fontNames:
+  - OpenDyslexicMono
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: bd1d93006c6402e4ab03841f225815ae, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

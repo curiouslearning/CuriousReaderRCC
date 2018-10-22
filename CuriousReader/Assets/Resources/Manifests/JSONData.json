@@ -1,0 +1,58 @@
+{
+    "tabletID": {
+
+        "appID":{
+             "0": {
+                  "sectionID": 0,
+                  "IN_APP_TOUCH":[
+                  ],
+                   "IN_APP_SECTION":[{
+                    "timeSpent":12,
+                    "inTime": "12:00"
+                  }
+                 ],
+                   "IN_APP_RESPONSE":[
+
+                   ]
+               },
+            "1": {
+                   "sectionID": 1,
+                  "IN_APP_TOUCH":[
+
+                  ],
+                   "IN_APP_SECTION":[
+
+                   ],
+                   "IN_APP_RESPONSE":[
+                       
+                   ]
+               }
+            }
+    ,
+        "appNotID":{
+            "0":   {
+                  "sectionID": 0,
+                  "IN_APP_TOUCH":[
+
+                  ],
+                   "IN_APP_SECTION":[
+
+                   ],
+                   "IN_APP_RESPONSE":[
+
+                   ]
+               },
+            "1":   {
+                   "sectionID": 1,
+                  "IN_APP_TOUCH":[
+
+                  ],
+                   "IN_APP_SECTION":[
+
+                   ],
+                   "IN_APP_RESPONSE":[
+                       
+                   ]
+               }
+        }
+}

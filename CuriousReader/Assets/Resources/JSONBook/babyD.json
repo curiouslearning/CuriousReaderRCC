@@ -1,0 +1,221 @@
+{
+
+    "fontColor": "font-color",
+    "textStartPosition": 120,     
+    "storyImageFile" :null    ,
+    "backgroundColor" :"blue",
+    "arrowColor":"red",
+    "font-family":"helvetica",
+    "language":"english",
+
+    "babyD":
+    [   
+        {
+            "pageNumber":1,
+             "audio": {
+                       "audioName": "audio-name",
+                       "typeOfObject":"anim/static",
+                       "id": 1
+					   },
+             "staticObjects": 
+                      [{
+                       "id": 0,
+                       "imageName":"img-name",
+                       "inText": true,
+                       "label": "toad",
+                       "draggable": true,
+					   "animId": 0
+                       }],
+            "animationObjects": 
+                      [{
+                      "id": 0,
+                      "animName": "A01",
+                      "staticObjectId": 1,
+                      "loop": true,
+                      "draggable": false
+                      }],
+            "texts": 
+                      [{
+                      "id": 0,
+                      "text": "Red frog,"
+                       }, {
+                      "id": 1,
+                      "text": "take me to play!"
+                      }],
+           
+            "audioFile": "scene11_child_stanza_red.mp3",
+            "timestamps": [{
+                 "start": "185",
+                 "wordIdx": "0",
+                 "end": "625"
+                 },
+                 {
+                 "start": "625",
+                 "wordIdx": "1",
+                 "end": "1425"
+                 },
+                 {
+                 "start": "2335",
+                 "wordIdx": "2",
+                 "end": "2745"
+                 },
+                 {
+                "start": "2745",
+                "wordIdx": "3",
+                "end": "2935"
+                 },
+                {
+                "start": "2985",
+                "wordIdx": "4",
+                "end": "3125"
+                },
+                {
+                "start": "3205",
+                "wordIdx": "5",
+                "end": "3855"
+                } ],
+
+            "triggers": [{
+               "args": {
+                         "stnzaId": 0,
+                         "textId": 0,
+                         "timestamp": null,
+                        "sceneObjectId": 
+                        },
+               "typeOfLinking": 0
+                        }, {
+               "args": {
+                         "stnzaId": 0,
+                         "textId": 1,
+                         "timestamp": null,
+                         "sceneObjectId": 0
+                        },
+               "typeOfLinking": 0
+                        }, {
+               "args": {
+                         "stanzaId": 0,
+                         "textId": 2,
+                         "timestamp": null,
+                         "sceneObjectId": 0
+                       },
+               "typeOfLinking": 0
+                        }, {
+               "args": {
+                         "stanzaId": 1,
+                         "textId": 0,
+                         "timestamp": null,
+                         "sceneObjectId": 0
+                       },
+               "typeOfLinking": 0
+              }],
+           "isTitle": false,
+           "fontColor": "font-color",
+           "textStartPosition": 120
+              },
+              
+        
+        {
+            "pageNumber":2,
+             "audio": {
+                       "audioName": "audio-name",
+                       "typeOfObject":"anim/static",
+                       "id": 1
+					   },
+             "staticObjects": 
+                      [{
+                       "id": 0,
+                       "imageName":"img-name",
+                       "inText": true,
+                       "label": "toad",
+                       "draggable": true,
+					   "animId": 0
+                       }],
+            "animationObjects": 
+                      [{
+                      "id": 0,
+                      "animName": "A02",
+                      "staticObjectId": 1,
+                      "loop": true,
+                      "draggable": false
+                      }],
+            "texts": 
+                      [{
+                      "id": 0,
+                      "text": "Green frog,"
+                       }, {
+                      "id": 1,
+                      "text": "don't take me to play!"
+                      }],
+           
+            "audioFile": "scene11_child_stanza_red.mp3",
+            "timestamps": [{
+                 "start": "185",
+                 "wordIdx": "0",
+                 "end": "625"
+                 },
+                 {
+                 "start": "625",
+                 "wordIdx": "1",
+                 "end": "1425"
+                 },
+                 {
+                 "start": "2335",
+                 "wordIdx": "2",
+                 "end": "2745"
+                 },
+                 {
+                "start": "2745",
+                "wordIdx": "3",
+                "end": "2935"
+                 },
+                {
+                "start": "2985",
+                "wordIdx": "4",
+                "end": "3125"
+                },
+                {
+                "start": "3205",
+                "wordIdx": "5",
+                "end": "3855"
+                } ],
+
+            "triggers": [{
+               "args": {
+                         "stnzaId": 0,
+                         "textId": 0,
+                         "timestamp": null,
+                        "sceneObjectId": 
+                        },
+               "typeOfLinking": 0
+                        }, {
+               "args": {
+                         "stnzaId": 0,
+                         "textId": 1,
+                         "timestamp": null,
+                         "sceneObjectId": 0
+                        },
+               "typeOfLinking": 0
+                        }, {
+               "args": {
+                         "stanzaId": 0,
+                         "textId": 2,
+                         "timestamp": null,
+                         "sceneObjectId": 0
+                       },
+               "typeOfLinking": 0
+                        }, {
+               "args": {
+                         "stanzaId": 1,
+                         "textId": 0,
+                         "timestamp": null,
+                         "sceneObjectId": 0
+                       },
+               "typeOfLinking": 0
+              }],
+           "isTitle": false,
+           "fontColor": "font-color",
+           "textStartPosition": 120
+              }
+              
+        ]
+}
