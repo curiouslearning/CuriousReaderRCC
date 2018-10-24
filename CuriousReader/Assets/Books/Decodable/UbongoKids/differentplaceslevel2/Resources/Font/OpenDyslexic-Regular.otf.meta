@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: 332f02eb145559744b67dc7911b30937
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: OpenDyslexic
+  fontNames:
+  - OpenDyslexic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a54b206278c4f4447bfcda28fe58003b, type: 3}
+  - {fileID: 12800000, guid: c0ac0d54fc6c4e74580c11a6730cd02e, type: 3}
+  - {fileID: 12800000, guid: ad37db56c8fdb0f42919d1ca2b91f035, type: 3}
+  - {fileID: 12800000, guid: 81cfd327a6ffa9b4c984cf02d4ebf327, type: 3}
+  - {fileID: 12800000, guid: bc2145d98a4f6e242ae4f118ab0825e9, type: 3}
+  - {fileID: 12800000, guid: 686c643be83a0e94cb2f211bb588b07c, type: 3}
+  - {fileID: 12800000, guid: 87ebcddb5de312a4895f7cb947e6287f, type: 3}
+  - {fileID: 12800000, guid: 8c42629c4cab99d45b3073700f75b8e4, type: 3}
+  - {fileID: 12800000, guid: a0a4f19fce25a874e8dcf41aeb911147, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

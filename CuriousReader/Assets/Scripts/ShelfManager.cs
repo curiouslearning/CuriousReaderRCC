@@ -52,15 +52,14 @@ public class ShelfManager : MonoBehaviour, IPointerClickHandler
 
     public static bool autoNarrate = true;
 
-
-
     void Awake()
     {
         Image = GameObject.Find("Image");
         Title = GameObject.Find("Title");
 
         //loading initial assetbundle on shelf scene.
-        StartCoroutine(LoadAssetBundle("catstory"));
+        StartCoroutine(LoadAssetBundle("differentplaces"));
+//        StartCoroutine(LoadAssetBundle("catstory"));
 
 
         //call json file from server

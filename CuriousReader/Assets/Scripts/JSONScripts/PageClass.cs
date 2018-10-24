@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
-public class PageClass  {
+public class PageClass
+{
+    [System.NonSerialized] public bool Show;
     public int pageNumber;
 	public string script;
     public AudioClass audio;
@@ -14,5 +16,4 @@ public class PageClass  {
     //public bool isTitle;
     //public string fontColor;
     //public int textStartPosition;
-	
 }

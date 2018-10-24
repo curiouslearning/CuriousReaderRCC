@@ -1,0 +1,371 @@
+ManifestFileVersion: 0
+CRC: 1908379420
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 84e2043b25ab03fa50ba31240ae3389f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f15e3de460b6d66795d75d009aacc30d
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/makes.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/Sam waves.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat is sad.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A10/A10-4.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A14/A14-3.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A08/A08-2.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SLAM/m_slam.wav
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Sam slams.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/s a d.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/eats.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A10/A10-6.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A01/A01-1.png
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/Cat naps on the mat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A09/A09-9.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A04/A04-2.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/r a n 2 .mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A06/A06-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat wags.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11a/A11a-2.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Ham.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/Sam the man waves.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A07/A07-1.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/w a g.mp3
+- Assets/Books/Decodable/CatTale/Common/Images/Home.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/RAN/a_ran.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/n a p.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03b/A03b-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The cat on the mat is
+  glad.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/h a t.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/him.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A05/A05-3.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A12/A12-1.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/Sam the man ran He ran
+  fast.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/GLAD/g_glad.wav
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/eat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03/A03-9.png
+- Assets/Books/Decodable/CatTale/catstorylevel1/Resources/CatStoryLevel1.json
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/sam_s.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/HAM/m_ham.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A16/A16-1.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A02/A02-5.png
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/Sam tips his black hat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/f a t.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/wags.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Fat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03/A03-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/The cat ran from the
+  man.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A07/A07-6.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A18/A18-1.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A18/A18-6.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/WAG/a_wag.wav
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The cat ran The cat is
+  not happy.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/NAP/a_nap.wav
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/See Sam the man wave
+  Sam is happy.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/MAT/m_mat.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/MAN/m_man.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/s l a m.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A08/A08-1.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11/A11-7.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A18/A18-7.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11/A11-5.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/HAT/t_hat.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15b/A15b-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A16b/A16b-3.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A01/A01-3.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11/A11-6.png
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/Does the cat still nap.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Cat wags.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Fat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/CAT/a_cat.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/GLAD/l_glad.wav
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/sat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11/A11-8.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A02/A02-6.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/g l a d.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A09/A09-6.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A18/A18-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/m a n.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Glad.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03b/A03b-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A14/A14-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/JAM2/a_jam2.wav
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Mat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15b/A15b-1.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/still.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A09/A09-5.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A07/A07-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A04/A04-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/Sam_s hat makes him happy.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A10/A10-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The cat likes the mat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SAD/a_sad.wav
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/The man.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A16b/A16b-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The cat is glad to eat
+  the jam.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A14/A14-1.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Ran.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/The cat is happy.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/cat_s.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Wag.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Man.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SAD/s_sad.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A02/A02-2.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/audio_stanza_page_0.wav
+- Assets/Books/Decodable/CatTale/catstorylevel4/Resources/CatStoryLevel4.json
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/Sam the man is happy.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Cat ran.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A04/A04-4.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11/A11-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15/A15-7.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/he.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A16b/A16b-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03/A03-1.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A13/A13-2.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Jam.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A16/A16-2.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/thee.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/GLAD/d_glad.wav
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/a.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/the.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A04/A04-1.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The glad cat is happy.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Sam.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A10/A10-5.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A09/A09-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/JAM/a_jam.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A02/A02-1.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/thuh.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/FAT2/t_fat2.wav
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/why.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A12/A12-5.png
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Cat naps.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Hat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat is glad.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/FAT2/f_fat2.wav
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/had.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Resources/CatStoryLevel3.json
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat ran.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A05/A05-1.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/naps.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A17/A17-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/Happy cat naps on the
+  mat.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/slams.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A07/A07-3.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A07/A07-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Ham.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/h a m.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A13/A13-4.png
+- Assets/Books/Decodable/CatTale/Common/Images/ReadAgain.png
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Man.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A12/A12-6.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Mat.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Sam.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/NAP/n_nap.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A06/A06-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/Why is the cat sad.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11/A11-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/The cat wants the ham.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Glad cat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Jam.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Sad cat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat is fat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15/A15-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A13/A13-1.png
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/Sam the man ran.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The cat likes to nap.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/f a t 2.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SAM/m_sam.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/NAP/p_nap.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SLAM/l_slam.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/CAT2/t_cat2.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SAM/a_sam.wav
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/Why is the cat fat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03/A03-7.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/see.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/HAT/h_hat.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15/A15-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/WAG/w_wag.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A09/A09-2.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/RAN2/n_ran2.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/CAT2/a_cat2.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/m a t.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/not.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03b/A03b-1.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/stops.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A16b/A16b-1.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/RAN2/a_ran2.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A01/A01-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The happy cat wags.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Sam ran.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat is in a jam.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The fat cat had a happy
+  nap.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A07/A07-7.png
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/Sam the man slams.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A10/A10-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03/A03-5.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/happy.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/Sam_s black hat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A08/A08-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Ran.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/The cat sat on the mat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/s a m.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A09/A09-8.png
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Cat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A07/A07-8.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A17/A17-4.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03/A03-2.png
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Hi Sam.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A12/A12-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Nap.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Cat_s ham.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Slam.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/j a m 2.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/does.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/MAT/t_mat.wav
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Sad.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/JAM/m_jam.wav
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A17/A17-2.png
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat on mat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/MAT/a_mat.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A07/A07-5.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/j a m.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The fat cat in a jam
+  is not happy.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/his.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A13/A13-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/Sam the man ran He slams.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/The cat wants the jam.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/black.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Cat_s jam.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat naps.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/fast.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat still naps.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/r a n.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Resources/CatStoryLevel2.json
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03/A03-6.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Wag.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/Sam slams He is not glad
+  he ran.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/FAT2/a_fat2.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A14/A14-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A08/A08-3.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Cat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A05/A05-2.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/WAG/g_wag.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15/A15-1.png
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Sad.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/See how Sam the man ran.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/FAT/t_fat.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A10/A10-1.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/how.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat eats ham.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The cat is sad and not
+  happy.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15/A15-6.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/RAN/r_ran.wav
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Cat_s mat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A01/A01-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A17/A17-1.png
+- Assets/Books/Decodable/CatTale/catstorylevel5/Resources/CatStoryLevel5.json
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A02/A02-3.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/wave.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/JAM2/j_jam2.wav
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/tips.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/from.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The cat is fat and happy.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/HAT/a_hat.wav
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/See Sam the man.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/hi.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03/A03-4.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03b/A03b-5.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/to.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/FAT/a_fat.wav
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/Sam the man.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/wants.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/r a n 2.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SAM/s_sam.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SLAM/s_slam.wav
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/is.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15b/A15b-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat eats jam.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Cat jam.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/The cat is glad to eat
+  the ham.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/CAT/t_cat.wav
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Hat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11a/A11a-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Slam.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A09/A09-7.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Nap.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/RAN/n_ran.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/HAM/a_ham.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/JAM2/m_jam2.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SLAM/a_slam.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A12/A12-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/CAT2/c_cat2.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Resources/CatStoryLevel0.json
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A09/A09-4.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A09/A09-1.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03b/A03b-3.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/GLAD/a_glad.wav
+- Assets/Books/Decodable/CatTale/catstorylevel1/Audio/Stanza/Glad.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A17/A17-6.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/in.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15/A15-5.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A02/A02-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/RAN2/r_ran2.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A06/A06-1.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11/A11-1.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/and.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/The cat is on a mat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A03/A03-8.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A18/A18-5.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A12/A12-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A15/A15-4.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11a/A11a-1.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/HAM/h_ham.wav
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/The fat cat stops his
+  nap.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/Is the cat glad.mp3
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/on.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Sam_s hat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/FAT/f_fat.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/k a t 2.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/MAN/a_man.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A18/A18-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Stanza/k a t.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Fat cat.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A05/A05-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/MAN/n_man.wav
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/waves.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A18/A18-2.png
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A11/A11-4.png
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SAD/d_sad.wav
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A06/A06-2.png
+- Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/likes.mp3
+- Assets/Books/Decodable/CatTale/Common/AnimPNGs/A17/A17-5.png
+- Assets/Books/Decodable/CatTale/catstorylevel4/Audio/Stanza/The fat cat is in a jam.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel3/Audio/Stanza/The cat on the mat.mp3
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/JAM/j_jam.wav
+- Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/CAT/c_cat.wav
+Dependencies: []

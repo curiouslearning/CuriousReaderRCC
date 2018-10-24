@@ -54,7 +54,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		if (!ShelfManager.bundleLoaded)
 		{
 
-			ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/catstory"));  //ShelfManager.selectedBook.ToLower())
+            ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplaces"));  //ShelfManager.selectedBook.ToLower())
+//            ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/catstory"));  //ShelfManager.selectedBook.ToLower())
 			if (ShelfManager.bundleLoaded == null)
 			{
 				Debug.Log("Failed to load AssetBundle!");

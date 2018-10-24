@@ -103,5 +103,23 @@
 "version": 1
     },
 
+
+		{
+    "bookId": 7,
+    "title": "Different Places",
+    "author": "",
+    "language": "English (U.S.)",
+    "readingLevel": 1, 
+    "tags" : [
+            "places", 
+            "Ubongo"
+        ],
+"fileName": "DifferentPlacesLevel2",
+"pathToThumbnail": "Thumbnail/duck",
+"version": 1
+    },
+
+
+
 ]
 }

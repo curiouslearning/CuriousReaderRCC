@@ -1,0 +1,366 @@
+{
+    "id": 1,
+    "fontColor": "white",
+    "textStartPositionX": -111.0,
+    "textStartPositionY": 182.0,
+    "textFontSize": 30,
+    "storyImageFile": "",
+    "backgroundColor": "blue",
+    "arrowColor": "red",
+    "fontFamily": "helvetica",
+    "language": "english",
+    "pages": [
+        {
+            "pageNumber": 0,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "audio-name",
+                "isAnim": true,
+                "objectId": 1
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "daysky",
+                    "posX": -2600.0,
+                    "posY": 0.0,
+                    "scaleX": 6000.0,
+                    "scaleY": 1000.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_night_bg-01.svg",
+                    "inText": true,
+                    "label": "daysky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "1_day_bg-01",
+                            "startX": -2600,
+                            "startY": 0,
+                            "startIndex": 0,
+                            "endIndex": 0,
+                            "onTouch": false,
+                            "onStart": true,
+                            "secPerFrame": [
+                                5.0,
+                                5.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 1,
+                                    "noOfLoops": 0,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "stars",
+                    "posX": 0.0,
+                    "posY": -30.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "orderInLayer": 1,
+                    "imageName": "1_stars-01",
+                    "inText": false,
+                    "label": "stars",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Sky! I love the sky, day and night."
+                }
+            ],
+            "audioFile": "sound_page_1_sky_day_and_night.ogg",
+            "timestamps": [
+                {
+                    "start": 395,
+                    "wordIdx": 0,
+                    "audio": "sound_sky.ogg",
+                    "end": 1173,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 1660,
+                    "wordIdx": 1,
+                    "audio": "sound_i.ogg",
+                    "end": 2252,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2507,
+                    "wordIdx": 2,
+                    "audio": "sound_love.ogg",
+                    "end": 3100,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3509,
+                    "wordIdx": 3,
+                    "audio": "sound_the.ogg",
+                    "end": 3709,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3709,
+                    "wordIdx": 4,
+                    "audio": "sound_sky2.ogg",
+                    "end": 4420,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5203,
+                    "wordIdx": 5,
+                    "audio": "sound_day.ogg",
+                    "end": 5706,
+                    "starWord": "no"
+                },
+                {
+                    "start": 6329,
+                    "wordIdx": 6,
+                    "audio": "sound_and.ogg",
+                    "end": 6827,
+                    "starWord": "no"
+                },
+                {
+                    "start": 7155,
+                    "wordIdx": 7,
+                    "audio": "sound_night.ogg",
+                    "end": 7814,
+                    "starWord": "no"
+                }
+            ],
+            "triggers": []
+        },
+        {
+            "pageNumber": 1,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "stars",
+                    "posX": -30.0,
+                    "posY": -30.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_stars-01.svg",
+                    "inText": false,
+                    "label": "stars",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Oh, the sky, the splendid sky, so big and bright, I love the sky.  I wonder how many different thingws there are in the sky."
+                }
+            ],
+            "audioFile": "audio_stanza_page_1.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 463,
+                    "starWord": "No"
+                },
+                {
+                    "start": 463,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 926,
+                    "starWord": "No"
+                },
+                {
+                    "start": 926,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1389,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1390,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 1853,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1853,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 2316,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2317,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 2780,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2780,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 3243,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3243,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 3706,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3707,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 4170,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4170,
+                    "wordIdx": 9,
+                    "audio": "",
+                    "end": 4633,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4634,
+                    "wordIdx": 10,
+                    "audio": "",
+                    "end": 5097,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5097,
+                    "wordIdx": 11,
+                    "audio": "",
+                    "end": 5560,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5561,
+                    "wordIdx": 12,
+                    "audio": "",
+                    "end": 6024,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6024,
+                    "wordIdx": 13,
+                    "audio": "",
+                    "end": 6487,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6487,
+                    "wordIdx": 14,
+                    "audio": "",
+                    "end": 6950,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6951,
+                    "wordIdx": 15,
+                    "audio": "",
+                    "end": 7414,
+                    "starWord": "No"
+                },
+                {
+                    "start": 7414,
+                    "wordIdx": 16,
+                    "audio": "",
+                    "end": 7877,
+                    "starWord": "No"
+                },
+                {
+                    "start": 7878,
+                    "wordIdx": 17,
+                    "audio": "",
+                    "end": 8341,
+                    "starWord": "No"
+                },
+                {
+                    "start": 8341,
+                    "wordIdx": 18,
+                    "audio": "",
+                    "end": 8804,
+                    "starWord": "No"
+                },
+                {
+                    "start": 8805,
+                    "wordIdx": 19,
+                    "audio": "",
+                    "end": 9268,
+                    "starWord": "No"
+                },
+                {
+                    "start": 9268,
+                    "wordIdx": 20,
+                    "audio": "",
+                    "end": 9731,
+                    "starWord": "No"
+                },
+                {
+                    "start": 9731,
+                    "wordIdx": 21,
+                    "audio": "",
+                    "end": 10194,
+                    "starWord": "No"
+                },
+                {
+                    "start": 10195,
+                    "wordIdx": 22,
+                    "audio": "",
+                    "end": 10658,
+                    "starWord": "No"
+                },
+                {
+                    "start": 10658,
+                    "wordIdx": 23,
+                    "audio": "",
+                    "end": 11121,
+                    "starWord": "No"
+                },
+                {
+                    "start": 11122,
+                    "wordIdx": 24,
+                    "audio": "",
+                    "end": 11585,
+                    "starWord": "No"
+                },
+                {
+                    "start": 11585,
+                    "wordIdx": 25,
+                    "audio": "",
+                    "end": 12048,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": []
+        }
+    ]
+}

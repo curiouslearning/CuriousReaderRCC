@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 1636197571
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: catstory
+      Dependencies: {}
+    Info_1:
+      Name: differentplaces
+      Dependencies: {}

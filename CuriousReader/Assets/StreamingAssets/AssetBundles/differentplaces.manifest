@@ -1,0 +1,48 @@
+ManifestFileVersion: 0
+CRC: 1209092332
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1ca29f86860cabb9aa85b193a5863ab3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c229f1531c5b0cb0fe6debd87a58514c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_love.ogg
+- Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/1_night_bg/1_night_bg-01.svg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_sky2.ogg
+- Assets/Books/Decodable/UbongoKids/Common/Images/ReadAgain.png
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_i.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_the.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel2.json
+- Assets/Books/Decodable/UbongoKids/Common/Images/Home.png
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_day.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/sound_page_1_sky_day_and_night.ogg
+- Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/1_cloud/1_cloud-01.svg
+- Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/1_day_bg/1_day_bg-01.svg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_night.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_sky.ogg
+- Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/1_stars/1_stars-01.svg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/Label Track.txt
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_and.ogg
+Dependencies: []
