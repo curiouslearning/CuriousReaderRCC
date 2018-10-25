@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1209092332
+CRC: 3124518828
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1ca29f86860cabb9aa85b193a5863ab3
+    Hash: ed8ee6dfb8f20703417d4a7eaaa865c5
   TypeTreeHash:
     serializedVersion: 2
     Hash: c229f1531c5b0cb0fe6debd87a58514c
@@ -28,21 +28,46 @@ ClassTypes:
 - Class: 213
   Script: {instanceID: 0}
 Assets:
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_14.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_3.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_0.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_love.ogg
 - Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/1_night_bg/1_night_bg-01.svg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_2.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_15.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_sky2.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_23.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_19.wav
 - Assets/Books/Decodable/UbongoKids/Common/Images/ReadAgain.png
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_1.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_18.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_i.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_22.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_9.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_the.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_10.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_4.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel2.json
 - Assets/Books/Decodable/UbongoKids/Common/Images/Home.png
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_7.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_day.ogg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/sound_page_1_sky_day_and_night.ogg
 - Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/1_cloud/1_cloud-01.svg
 - Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/1_day_bg/1_day_bg-01.svg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_16.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_night.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_20.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_6.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_5.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_21.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_sky.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_8.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_13.wav
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_24.wav
 - Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/1_stars/1_stars-01.svg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_12.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/Label Track.txt
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_11.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_and.ogg
+- Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_17.wav
 Dependencies: []
