@@ -18,7 +18,51 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "day1",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_day_to_night-01",
+                    "inText": false,
+                    "label": "day1",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "1_day_to_night",
+                            "startX": 0,
+                            "startY": 0,
+                            "startIndex": 0,
+                            "endIndex": 2,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                2.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 2,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -84,7 +128,16 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 0,
+                    "timestamp": 5,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 1,
@@ -94,7 +147,38 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "smallcloud",
+                    "posX": 125.0,
+                    "posY": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "2_small_fluffy_cloud-01",
+                    "inText": false,
+                    "label": "smallcloud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 1,
+                    "tag": "bigcloud",
+                    "posX": -120.0,
+                    "posY": 0.0,
+                    "scaleX": 175.0,
+                    "scaleY": 175.0,
+                    "orderInLayer": 0,
+                    "imageName": "2_big_thunderstorm_cloud-01",
+                    "inText": false,
+                    "label": "bigcloud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -139,7 +223,24 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 2,
@@ -149,7 +250,104 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "bigbird",
+                    "posX": -120.0,
+                    "posY": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "03_big_bird_flapping-1",
+                    "inText": false,
+                    "label": "bigbird",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "03_big_bird_flapping",
+                            "startX": -120,
+                            "startY": 0,
+                            "startIndex": 0,
+                            "endIndex": 7,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 7,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "smallbird",
+                    "posX": 120.0,
+                    "posY": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "orderInLayer": 0,
+                    "imageName": "03_a_small_bird_flapping-1",
+                    "inText": true,
+                    "label": "smallbird",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "03_a_small_bird_flapping",
+                            "startX": 120,
+                            "startY": 0,
+                            "startIndex": 0,
+                            "endIndex": 7,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 7,
+                                    "noOfLoops": 3,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -187,7 +385,24 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 3,
@@ -197,7 +412,53 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
