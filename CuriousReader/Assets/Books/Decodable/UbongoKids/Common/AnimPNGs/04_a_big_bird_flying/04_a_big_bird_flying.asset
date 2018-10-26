@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Name: 04_a_big_bird_flying
   m_EditorClassIdentifier: 
   fps: 30
-  frames: []
-  framesDuration: 
+  frames:
+  - {fileID: 21300000, guid: b61378bac9c052f41b9fd82a8dda4a18, type: 3}
+  - {fileID: 21300000, guid: 3eca2e91e60d0074b9f461c833f2f606, type: 3}
+  - {fileID: 21300000, guid: 5deb8900c83553f4fb5d8824a2bbc717, type: 3}
+  - {fileID: 21300000, guid: f21ee6f0e6478af4bbdd8e5e7919523f, type: 3}
+  - {fileID: 21300000, guid: 983ff51116b681d4786bf659518de2d5, type: 3}
+  - {fileID: 21300000, guid: 3a7765723061f044b9051e403ba3615d, type: 3}
+  - {fileID: 21300000, guid: 920df1a8f8379d6418d02c0c2955c99e, type: 3}
+  - {fileID: 21300000, guid: 6ad12babdf7a5ab44a8d1529e78f8b63, type: 3}
+  framesDuration: 0500000005000000050000000500000005000000050000000500000005000000

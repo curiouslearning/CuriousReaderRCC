@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1908379420
+CRC: 2893071175
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 84e2043b25ab03fa50ba31240ae3389f
+    Hash: d05baefd332014d2b8e3e347271a6b7d
   TypeTreeHash:
     serializedVersion: 2
     Hash: f15e3de460b6d66795d75d009aacc30d
@@ -127,7 +127,6 @@ Assets:
 - Assets/Books/Decodable/CatTale/Common/Audio/SingleWord/Man.mp3
 - Assets/Books/Decodable/CatTale/catstorylevel0/Audio/Book0SPLIT/SAD/s_sad.wav
 - Assets/Books/Decodable/CatTale/Common/AnimPNGs/A02/A02-2.png
-- Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/audio_stanza_page_0.wav
 - Assets/Books/Decodable/CatTale/catstorylevel4/Resources/CatStoryLevel4.json
 - Assets/Books/Decodable/CatTale/catstorylevel5/Audio/Stanza/Sam the man is happy.mp3
 - Assets/Books/Decodable/CatTale/catstorylevel2/Audio/Stanza/Cat ran.mp3

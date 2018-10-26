@@ -85,8 +85,6 @@ public class BookEditor : EditorWindow
         m_rcStoryBook.textStartPositionX = EditorGUILayout.FloatField("Text Start X", m_rcStoryBook.textStartPositionX, EditorStyles.numberField);
         m_rcStoryBook.textStartPositionY = EditorGUILayout.FloatField("Text Start Y", m_rcStoryBook.textStartPositionY, EditorStyles.numberField);
 
-
-
         int nRemove = -1;
 
         for (int i = 0; i < m_rcStoryBook.pages.Length; i++)
@@ -168,6 +166,34 @@ public class BookEditor : EditorWindow
             i_rcPage.script = EditorGUILayout.TextField("Script", i_rcPage.script, EditorStyles.textField);
             i_rcPage.audioFile = EditorGUILayout.TextField("Audio File", i_rcPage.audioFile, EditorStyles.textField);
 
+            GUILayout.BeginHorizontal();
+            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
+            m_bMicrophoneHot = GUILayout.Button("Record");
+
+            if (m_bMicrophoneHot)
+            {
+                if (Microphone.IsRecording(Microphone.devices[0]))
+                {
+                    float fDuration = Time.realtimeSinceStartup - m_fRecordingStart;
+                    Debug.Log("Recording Ended: Duration " + fDuration);
+                    Microphone.End(Microphone.devices[0]);
+
+                    m_rcPageAudio[i_nOrdinal] = RARE.TrimEndOfAudioClip(m_rcRecordingClip, (int)(fDuration * 44100));
+
+                    string strFilename = "audio_stanza_page_" + i_nOrdinal;
+                    string strFilePath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "Audio/Stanza/" + strFilename);
+                    RARE.ExportClip(strFilePath, m_rcPageAudio[i_nOrdinal]);
+                    i_rcPage.audioFile = strFilename + ".wav";
+                }
+                else
+                {
+                    m_fRecordingStart = Time.realtimeSinceStartup;
+                    Debug.Log("Recording Started at " + m_fRecordingStart);
+                    m_rcRecordingClip = Microphone.Start(Microphone.devices[0], false, 300, 44100);
+                }
+            }
+            GUILayout.EndHorizontal();
+
             if (!string.IsNullOrEmpty(i_rcPage.audioFile))
             {
                 string strPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "Audio/Stanza/" + i_rcPage.audioFile);
@@ -196,35 +222,6 @@ public class BookEditor : EditorWindow
                         AudioUtility.PlayClip(m_rcPageAudio[i_nOrdinal], 0);
                     }
 
-                    m_bMicrophoneHot = GUILayout.Button("Record");
-
-                    if (m_bMicrophoneHot)
-                    {
-                        if (Microphone.IsRecording(Microphone.devices[0]))
-                        {
-                            float fDuration = Time.realtimeSinceStartup - m_fRecordingStart;
-                            Debug.Log("Recording Ended: Duration " + fDuration);
-                            Microphone.End(Microphone.devices[0]);
-
-                            m_rcPageAudio[i_nOrdinal] = RARE.TrimEndOfAudioClip(m_rcRecordingClip, (int)(fDuration * 44100));
-
-                            string strFilename = "audio_stanza_page_" + i_nOrdinal;
-                            string strFilePath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "Audio/Stanza/" + strFilename);
-                            RARE.ExportClip(strFilePath, m_rcPageAudio[i_nOrdinal]);
-                            i_rcPage.audioFile = strFilename + ".wav";
-                        }
-                        else
-                        {
-                            m_fRecordingStart = Time.realtimeSinceStartup;
-                            Debug.Log("Recording Started at " + m_fRecordingStart);
-                            m_rcRecordingClip = Microphone.Start(Microphone.devices[0], false, 300, 44100);
-                        }
-
-                        if (m_bWasMicrophoneHotLastFrame && !m_bMicrophoneHot)
-                        {
-
-                        }
-                    }
                     GUILayout.EndHorizontal();
                 }
 
@@ -260,7 +257,7 @@ public class BookEditor : EditorWindow
                 }
 
                 GUILayout.BeginHorizontal();
-                GUILayout.Space((EditorGUI.indentLevel+1) * 10);
+                GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
                 if (GUILayout.Button("Generate Timestamps"))
                 {
                     List<string> rcWords = GetTextWords(i_rcPage.texts);

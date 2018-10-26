@@ -16,7 +16,7 @@ public class GTinkerGraphic : MonoBehaviour{
 	private int framecount = 30;
 	private float initial_scale_x;
 	private float initial_scale_y;
-	private float totalchange = 4f;
+	private float totalchange = 1.33f;
 	private float deltasize;
 	private int totaltime = 1;
 	private float deltatime;
@@ -47,9 +47,9 @@ public class GTinkerGraphic : MonoBehaviour{
 	{
 		initial_scale_x = this.transform.localScale.x;
 		initial_scale_y = this.transform.localScale.y;
-		final_scale_x = initial_scale_x + totalchange;
-		final_scale_y = initial_scale_y + totalchange;
-		deltasize = totalchange / framecount;
+		final_scale_x = initial_scale_x * totalchange;
+		final_scale_y = initial_scale_y * totalchange;
+		deltasize = (final_scale_x - initial_scale_x) / framecount;
 		deltatime = totaltime / framecount;
 	}
     private void Update()

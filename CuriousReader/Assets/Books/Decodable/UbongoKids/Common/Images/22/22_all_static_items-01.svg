@@ -1,0 +1,17 @@
+<svg id="day" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="600" viewBox="0 0 1024 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="511.94" y1="597.63" x2="511.94" y2="-199.88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.38" stop-color="#9be9ff"/>
+      <stop offset="0.81" stop-color="#31d1ff"/>
+      <stop offset="1" stop-color="#07c7ff"/>
+    </linearGradient>
+  </defs>
+  <title>22_all_static_items</title>
+  <rect class="cls-1" width="1023.88" height="600"/>
+</svg>
