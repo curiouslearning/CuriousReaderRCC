@@ -5,10 +5,12 @@ using UnityEngine;
 public class GameObjectClass
 {
     [System.NonSerialized] public bool Show;
+    [System.NonSerialized] public int ImageIndex;
     public int id;
 	public string tag;
     public float posX;
     public float posY;
+    public float posZ;
     public float scaleX;
     public float scaleY;
     public int orderInLayer;
