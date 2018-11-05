@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6e04725d484f7ff4aa21751c9ffb87ab
+guid: c8fbd13fe91afc341824b44ddcf5deb6
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/14_big_boat_moves_fast_02
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 4744820f8ee501044ab9b97818efe79e
+      spriteID: cc7d8d19d83542645a7ae10ad36bf224
     PhysicsOutlines: []

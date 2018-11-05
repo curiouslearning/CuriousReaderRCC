@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4bada52e8356a25468f6cdda41a880da
+guid: ef8cdd5580803c14fb8da4a8f9e18378
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/18_bobbing_togethe_03
@@ -10,7 +10,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -52,5 +52,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: fdc47cc6882d1654299068ff64bd6be0
+      spriteID: 73654376d5dcf6c40a5dc2e31c38d537
     PhysicsOutlines: []

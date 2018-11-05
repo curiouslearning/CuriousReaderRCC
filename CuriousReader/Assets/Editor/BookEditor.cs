@@ -16,9 +16,13 @@ public class BookEditor : EditorWindow
     public AudioClip m_rcRecordingClip;
     float m_fRecordingStart;
 
+    string m_strAssetPath;
     string m_strBookPath;
     string m_strCommonPath;
     string m_strAnimPath;
+    string m_strImagePath;
+
+    List<string> m_rcImageNames;
 
     Rect[] m_rcAudioRects;
 
@@ -56,24 +60,39 @@ public class BookEditor : EditorWindow
                     m_strCommonPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strCommonPath).FullName).FullName).FullName + "\\Common";
 
                     string strAssetPath = Application.dataPath.Replace("/Assets", "");
+                    m_strAssetPath = strAssetPath;
                     m_strAnimPath = m_strCommonPath + "\\AnimPNGs";
+                    m_strImagePath = m_strCommonPath + "\\Images";
                     m_strAnimPath = m_strAnimPath.Replace(strAssetPath, "").TrimStart('/');
-
 
                     // Allocate each of the audio tracks for each of the pages
                     // NOTE: We might need to do this for sub-audio?  Maybe?
                     m_rcAudioRects = new Rect[m_rcStoryBook.pages.Length];
                     m_rcPageAudio = new AudioClip[m_rcStoryBook.pages.Length];
                 }
+
+                m_rcImageNames = GetImagesInPath(m_strCommonPath);
+
             }
             return;
         }
 
+        GUILayout.BeginHorizontal();
         GUILayout.Label("Book Editor", EditorStyles.boldLabel);
+        
+        if ( GUILayout.Button("Add Images To AssetBundle"))
+        {
+            Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/","\\"), "").Replace("\\Assets\\", "Assets\\"));
+            AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/","\\"),"").Replace("\\Assets\\", "Assets\\"));
+            AddImagesInPath(m_strImagePath.Replace(m_strAssetPath.Replace("/","\\"),"").Replace("\\Assets\\", "Assets\\"));
+        }
+        GUILayout.EndHorizontal();
+
 
         if (!string.IsNullOrEmpty(m_strBookPath)) GUILayout.Label(m_strBookPath);
         if (!string.IsNullOrEmpty(m_strCommonPath)) GUILayout.Label(m_strCommonPath);
         if (!string.IsNullOrEmpty(m_strAnimPath)) GUILayout.Label(m_strAnimPath);
+        if (!string.IsNullOrEmpty(m_strAssetPath)) GUILayout.Label(m_strAssetPath);
 
         m_vScrollPosition = GUILayout.BeginScrollView(m_vScrollPosition);
 
@@ -543,18 +562,29 @@ public class BookEditor : EditorWindow
             GUILayout.BeginHorizontal();
             GUILayout.BeginVertical();
             i_rcGameObject.id = EditorGUILayout.IntField("ID", i_rcGameObject.id, EditorStyles.numberField);
+
+
+            if ( m_rcImageNames.Contains(i_rcGameObject.imageName))
+            {
+                i_rcGameObject.ImageIndex = m_rcImageNames.IndexOf(i_rcGameObject.imageName);
+            }
+
+            i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
+
+            i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
             i_rcGameObject.imageName = EditorGUILayout.TextField("Image Name", i_rcGameObject.imageName, EditorStyles.textField);
+
             i_rcGameObject.label = EditorGUILayout.TextField("Label", i_rcGameObject.label, EditorStyles.textField);
             i_rcGameObject.tag = EditorGUILayout.TextField("Tag", i_rcGameObject.tag, EditorStyles.textField);
             i_rcGameObject.destroyOnCollision = EditorGUILayout.TextField("Destroy On Collision", i_rcGameObject.destroyOnCollision, EditorStyles.textField);
             i_rcGameObject.posX = EditorGUILayout.FloatField("Pos X", i_rcGameObject.posX, EditorStyles.numberField);
             i_rcGameObject.posY = EditorGUILayout.FloatField("Pos Y", i_rcGameObject.posY, EditorStyles.numberField);
+            i_rcGameObject.posZ = EditorGUILayout.FloatField("Pos Z", i_rcGameObject.posZ, EditorStyles.numberField);
             i_rcGameObject.scaleX = EditorGUILayout.FloatField("Scale X", i_rcGameObject.scaleX, EditorStyles.numberField);
             i_rcGameObject.scaleY = EditorGUILayout.FloatField("Scale Y", i_rcGameObject.scaleY, EditorStyles.numberField);
             i_rcGameObject.orderInLayer = EditorGUILayout.IntField("Order In Layer", i_rcGameObject.orderInLayer, EditorStyles.numberField);
-            i_rcGameObject.inText = EditorGUILayout.Toggle("In Text?", i_rcGameObject.inText, EditorStyles.numberField);
-            i_rcGameObject.draggable = EditorGUILayout.Toggle("Draggable?", i_rcGameObject.draggable, EditorStyles.numberField);
-
+            i_rcGameObject.inText = EditorGUILayout.ToggleLeft("In Text", i_rcGameObject.inText, EditorStyles.textField);
+            i_rcGameObject.draggable = EditorGUILayout.ToggleLeft("Draggable?", i_rcGameObject.draggable, EditorStyles.textField);
 
             ///
 
@@ -967,8 +997,58 @@ public class BookEditor : EditorWindow
         int position = newPosition;
     }
 
+    public List<string> GetImagesInPath(string i_strPath)
+    {
+        List<string> rcFiles = new List<string>();
+        string[] allowedExtensions = new string[] { "*.svg", "*.png", "prefab_*"};
+        string[] Directories = Directory.GetDirectories(i_strPath);
 
-[MenuItem("Window/Book Editor")]
+        foreach (string strDir in Directories)
+        {
+            List<string> rcReturnFiles = GetImagesInPath(strDir);
+
+            if ( rcReturnFiles != null )
+            {
+                foreach (string strFile in rcReturnFiles)
+                {
+                    rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+                }
+            }
+        }
+
+        foreach (string strType in allowedExtensions)
+        {
+            foreach (string strFile in Directory.GetFiles(i_strPath,strType))
+            {
+                rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+            }
+        }
+
+        return rcFiles;
+    }
+
+    public void AddImagesInPath(string i_strPath)
+    {
+        string[] allowedExtensions = new string[] { "*.svg", "*.png" };
+        string[] Directories = Directory.GetDirectories(i_strPath);
+
+        foreach (string strDir in Directories)
+        {
+            AddImagesInPath(strDir);
+        }
+
+        foreach (string strType in allowedExtensions)
+        {
+            foreach (string strFile in Directory.GetFiles(i_strPath, strType))
+            {
+                AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant("differentplaces", "");
+            }
+        }
+    }
+
+
+
+    [MenuItem("Window/Book Editor")]
     public static void ShowWindow()
     {
         EditorWindow.GetWindow(typeof(BookEditor));

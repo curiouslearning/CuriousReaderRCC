@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 527192446a7718e4eb7edc75ef442c7f
+guid: 8643c8928e6c49640b5416b3a4bc19d3
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/21_Akili_smiles_and_jumps_04
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 4c90318ed953c6c40807db5e79c1a215
+      spriteID: 18dd3bd2ae26f744983cc097e56eb1a1
     PhysicsOutlines: []

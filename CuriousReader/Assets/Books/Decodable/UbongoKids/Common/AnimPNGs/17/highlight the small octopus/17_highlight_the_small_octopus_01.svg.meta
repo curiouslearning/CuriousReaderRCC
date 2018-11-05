@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8cd4a2a506988ee479db16088f857b0d
+guid: f743b83dfdceeb84c8e2e05d5ccfb885
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/17_highlight_the_small_octopus_01
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 8267b742f595956459ba8f77031c059d
+      spriteID: 2dea0668398782b488e359c960fb4239
     PhysicsOutlines: []

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 85b419708f2cab14cb174565678d184e
+guid: 63e3291651311dc408dbca0c9dd62d8a
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/05_orange_portion_sun-01
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: e7d4ad4e4c1badc45927fc99af0c80ae
+      spriteID: dc69e43f49c17804aad2423d2d46fe4e
     PhysicsOutlines: []

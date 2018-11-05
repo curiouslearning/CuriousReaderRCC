@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 063da76adb5671d41a180b77fae71c6b
+guid: 69fc4ff47f44c234a957178405ac7b68
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/7_between_night_bg_day_bg_02
@@ -10,7 +10,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -52,5 +52,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: ef951781bb9f2fa4f990e9aeb90b5e8c
+      spriteID: 84453f2450e7e4449813513d91a0ae5e
     PhysicsOutlines: []

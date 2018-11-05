@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c45ed3ff54e145e40b0f51256abb0d41
+guid: 5496cadeb5e1eab43b592dda1064be4a
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/10_monkeys_playing_passing_the_sticks_06
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: e27eb4476d90de34abeab39bb303cb12
+      spriteID: b2a841ffa3bd4b74f8ad804b3a3082e1
     PhysicsOutlines: []

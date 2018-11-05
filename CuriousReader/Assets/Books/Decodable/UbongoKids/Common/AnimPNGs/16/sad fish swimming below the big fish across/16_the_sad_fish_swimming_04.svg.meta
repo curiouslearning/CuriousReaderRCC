@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cfb28a3a2374ef44f9ec2b52be037044
+guid: 2d8974fcd6d0a7b499f704a253639ef5
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/16_the_sad_fish_swimming_04
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: fac98a245733589419fa520dcc2a6c68
+      spriteID: 45e0212230fa68f42b02a75685757f63
     PhysicsOutlines: []

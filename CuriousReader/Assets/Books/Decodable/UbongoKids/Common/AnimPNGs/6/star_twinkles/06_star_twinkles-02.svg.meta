@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f9ac28bbd304c4247af9039bf945ef43
+guid: 2069ba375c60e81479fa2fb964d4248d
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/06_star_twinkles-02
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 2f6b9539945c1594383f068c2953df36
+      spriteID: b239708f04e03ef4092f9f3a0b7d95c9
     PhysicsOutlines: []

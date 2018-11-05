@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dece0b1497f93284fa87519031f9a337
+guid: 118a04447ff711b41a8fda016abf3ef0
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/14_small_boat_moves_slowly_02
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 8f4a86db92fb39646a9acbdb203e4194
+      spriteID: 9e8eaf7eeb446364c82071cec329b74f
     PhysicsOutlines: []

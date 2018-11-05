@@ -4,12 +4,13 @@ ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/9_giraffe-01
     400000: gameObject/9_giraffe-01/Transform
+    2800000: texAtlas
     21200000: gameObject/9_giraffe-01/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0

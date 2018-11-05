@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 72d01c997662cb14384c3a12b547c637
+guid: 91c3e3f155518954ea5f68d388afb800
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/16_the_happy_fish_dances_03
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 4b070b9172762e14d850856b243084f4
+      spriteID: 1ec85abe025b8334cab4010cda140951
     PhysicsOutlines: []

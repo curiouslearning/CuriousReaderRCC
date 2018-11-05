@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e3bd5bbf0184d648b493c3a14658fd1
+guid: 514e357f98ffc9443a4e0fa017c70ce3
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/13_water_wave_05
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 9dbb240818ef83c458ec9d01515bfa2b
+      spriteID: 5595626ebf955d14f851ab02af539c43
     PhysicsOutlines: []

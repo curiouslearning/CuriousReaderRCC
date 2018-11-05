@@ -1,1 +1,400 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 489.26 394.36"><defs><style>.cls-1,.cls-18{fill:none;}.cls-2{fill:#93278f;}.cls-3{clip-path:url(#clip-path);}.cls-4{fill:#fc9a8d;}.cls-5{fill:#d4555e;}.cls-6{fill:#510706;}.cls-7{clip-path:url(#clip-path-2);}.cls-8{clip-path:url(#clip-path-3);}.cls-9{clip-path:url(#clip-path-4);}.cls-10{clip-path:url(#clip-path-5);}.cls-11{clip-path:url(#clip-path-6);}.cls-12{clip-path:url(#clip-path-7);}.cls-13{clip-path:url(#clip-path-8);}.cls-14,.cls-17{fill:#2f009a;}.cls-15{fill:#fff;}.cls-16{fill:#231f20;}.cls-17,.cls-18{stroke:#a81307;stroke-linecap:round;stroke-linejoin:round;}.cls-17{stroke-width:0.85px;}.cls-18{stroke-width:1.71px;}.cls-19{clip-path:url(#clip-path-9);}.cls-20{fill:#fa4316;}</style><clipPath id="clip-path"><path class="cls-1" d="M460.72,234.26c3.57-2.88,3-9.21-1.62-10.71s.45-9,11-5.48,31.4,22,4.35,40.47S394,244.86,377.29,229.79c-11-8.57-98.56-2.45-87.42-34.12,0,0,18.29-23.39,43.91-15.52"/></clipPath><clipPath id="clip-path-2"><path class="cls-1" d="M433.69,278.9c4.07-2.1,4.78-8.42.57-10.81s2.25-8.71,11.87-3.15,26.32,27.9-3.89,40.52-76-29.61-89.36-47.74c-9.05-10.61-96.05-22.25-78.76-51,0,0,22.62-19.23,46.14-6.36"/></clipPath><clipPath id="clip-path-3"><path class="cls-1" d="M389.25,326.62c4.53-.69,7.22-6.45,4-10.06s4.92-7.53,12.25.81,16,34.85-16.64,37.14-62.57-52.37-69.4-73.81c-5.18-12.95-83.89-51.8-58.3-73.54,0,0,27.59-11,45.75,8.73"/></clipPath><clipPath id="clip-path-4"><path class="cls-1" d="M314.26,368.39c4.36,1.42,9.36-2.51,8.1-7.19s7.78-4.51,10.58,6.24-1.4,38.32-31.59,25.67S269.07,318.17,272.62,296c1.2-13.89-51.57-84-18.94-91.92,0,0,29.57,2.62,36.92,28.4"/></clipPath><clipPath id="clip-path-5"><path class="cls-1" d="M25.67,216.79c-3.27-3.21-2.08-9.46,2.65-10.5s.42-9-10.41-6.51-33.37,18.89-8.23,39.86,81.38-5.87,99.47-19.26c11.78-7.47,98.34,7.07,90.31-25.53,0,0-15.95-25-42.21-19.69"/></clipPath><clipPath id="clip-path-6"><path class="cls-1" d="M53,272c-4-2.27-4.43-8.61-.12-10.83s-1.89-8.79-11.73-3.64-27.45,26.78,2.21,40.64,77.19-26.44,91.27-44c9.48-10.23,96.89-18.25,80.81-47.72,0,0-21.81-20.15-45.84-8.27"/></clipPath><clipPath id="clip-path-7"><path class="cls-1" d="M100.56,326.31c-4.53-.69-7.23-6.45-4-10.06s-4.92-7.52-12.25.82-16,34.86,16.67,37.13,62.53-52.43,69.34-73.87c5.17-13,83.85-51.87,58.24-73.59,0,0-27.59-11-45.74,8.77"/></clipPath><clipPath id="clip-path-8"><path class="cls-1" d="M178.4,369.45c-4.32,1.53-9.41-2.29-8.27-7s-7.88-4.32-10.43,6.49,2.29,38.28,32.18,24.93,30.53-75.67,26.46-97.8c-1.53-13.86,49.6-85.21,16.79-92.33,0,0-29.51,3.31-36.25,29.25"/></clipPath><clipPath id="clip-path-9"><path class="cls-1" d="M209.69,165s31.95,20.59,69.57,0C279.26,165,244.48,225.33,209.69,165Z"/></clipPath></defs><title>17_big_octopus_move_flap_legs</title><g id="character"><path class="cls-2" d="M289.87,195.66s18.29-23.39,43.91-15.52,26.95,3.45,47.8,12.47c24.43,10.56,47.76,54.75,79.13,41.65,3.57-2.88,3-9.21-1.62-10.71s.45-9,11-5.48,31.4,22,4.35,40.47S394,244.86,377.29,229.79C366.29,221.22,278.73,227.34,289.87,195.66Z"/><g class="cls-3"><path class="cls-4" d="M495.9,241.89s-14.26,25.57-56.58,9.66-80.95-67.92-157.83-36c0,0,76.88,23.6,81.31,23.19S464.35,308.64,495.9,241.89Z"/></g><circle class="cls-5" cx="466.68" cy="262.27" r="6.24" transform="translate(-65.38 203.22) rotate(-23)"/><circle class="cls-6" cx="464.65" cy="262.92" r="3.82" transform="translate(-65.8 202.48) rotate(-23)"/><circle class="cls-5" cx="431.28" cy="259.92" r="6.24" transform="translate(-67.28 189.2) rotate(-23)"/><circle class="cls-6" cx="429.25" cy="260.57" r="3.82" transform="translate(-67.69 188.46) rotate(-23)"/><circle class="cls-5" cx="394.86" cy="243.15" r="6.24" transform="translate(-63.62 173.63) rotate(-23)"/><circle class="cls-6" cx="392.82" cy="243.8" r="3.82" transform="translate(-64.04 172.89) rotate(-23)"/><circle class="cls-5" cx="365.68" cy="226.88" r="6.24" transform="translate(-59.58 160.94) rotate(-23)"/><circle class="cls-6" cx="363.65" cy="227.54" r="3.82" transform="translate(-60 160.2) rotate(-23)"/><circle class="cls-5" cx="333.11" cy="222.31" r="6.24" transform="translate(-60.39 147.85) rotate(-23)"/><circle class="cls-6" cx="331.08" cy="222.96" r="3.82" transform="translate(-60.8 147.11) rotate(-23)"/><path class="cls-2" d="M274.12,206.68s22.62-19.23,46.14-6.36,25.7,8.81,44.31,21.84c21.8,15.27,35.76,63.25,69.12,56.74,4.07-2.1,4.78-8.42.57-10.81s2.25-8.71,11.87-3.15,26.32,27.9-3.89,40.52-76-29.61-89.36-47.74C343.83,247.11,256.83,235.46,274.12,206.68Z"/><g class="cls-7"><path class="cls-4" d="M466.62,293.46s-19.11,22.18-57.37-1.93-65.61-82.84-147.36-67c0,0,70.55,38.6,75,39.09S422.27,352.49,466.62,293.46Z"/></g><circle class="cls-5" cx="433.89" cy="307.54" r="6.24" transform="translate(-52.16 91.69) rotate(-11.38)"/><circle class="cls-6" cx="431.77" cy="307.77" r="3.82" transform="translate(-52.25 91.27) rotate(-11.38)"/><circle class="cls-5" cx="399.69" cy="298.11" r="6.24" transform="translate(-50.98 84.75) rotate(-11.38)"/><circle class="cls-6" cx="397.57" cy="298.34" r="3.82" transform="translate(-51.06 84.34) rotate(-11.38)"/><circle class="cls-5" cx="367.39" cy="274.34" r="6.24" transform="translate(-46.92 77.91) rotate(-11.38)"/><circle class="cls-6" cx="365.27" cy="274.57" r="3.82" transform="translate(-47.01 77.5) rotate(-11.38)"/><circle class="cls-5" cx="342.09" cy="252.53" r="6.24" transform="translate(-43.11 72.49) rotate(-11.38)"/><circle class="cls-6" cx="339.97" cy="252.76" r="3.82" transform="translate(-43.2 72.07) rotate(-11.38)"/><circle class="cls-5" cx="311.11" cy="241.49" r="6.24" transform="translate(-41.54 66.16) rotate(-11.38)"/><circle class="cls-6" cx="308.99" cy="241.72" r="3.82" transform="translate(-41.63 65.74) rotate(-11.38)"/><path class="cls-2" d="M261.16,207.15s27.59-11,45.75,8.73,21.53,16.57,35,34.87c15.77,21.44,13.65,71.36,47.34,75.86,4.53-.69,7.22-6.45,4-10.06s4.92-7.53,12.25.81,16,34.85-16.64,37.14-62.57-52.37-69.4-73.81C314.27,267.75,235.57,228.89,261.16,207.15Z"/><g class="cls-8"><path class="cls-4" d="M415.79,350.94s-25.2,14.9-53.74-20.18-35.67-99.47-118.18-110.63c0,0,54.5,59.13,58.53,61S354.89,392.68,415.79,350.94Z"/></g><circle class="cls-5" cx="380.28" cy="353.81" r="6.24" transform="translate(-18.8 686.26) rotate(-82.73)"/><circle class="cls-6" cx="378.2" cy="353.35" r="3.82" transform="matrix(0.13, -0.99, 0.99, 0.13, -20.16, 683.79)"/><circle class="cls-5" cx="350.89" cy="333.93" r="6.24" transform="translate(-24.76 639.75) rotate(-82.73)"/><circle class="cls-6" cx="348.81" cy="333.47" r="3.82" transform="matrix(0.13, -0.99, 0.99, 0.13, -26.12, 637.28)"/><circle class="cls-5" cx="327.89" cy="301.09" r="6.24" transform="translate(-12.26 588.25) rotate(-82.73)"/><circle class="cls-6" cx="325.81" cy="300.63" r="3.82" transform="translate(-13.63 585.78) rotate(-82.73)"/><circle class="cls-5" cx="310.89" cy="272.33" r="6.24" transform="translate(1.41 546.27) rotate(-82.73)"/><circle class="cls-6" cx="308.81" cy="271.87" r="3.82" transform="translate(0.05 543.8) rotate(-82.73)"/><circle class="cls-5" cx="285.07" cy="251.96" r="6.24" transform="translate(-0.94 502.86) rotate(-82.73)"/><circle class="cls-6" cx="282.99" cy="251.5" r="3.82" transform="translate(-2.3 500.39) rotate(-82.73)"/><path class="cls-2" d="M253.69,204s29.57,2.62,36.92,28.4,11.76,24.49,15.55,46.89c4.43,26.24-19.95,69.87,8.11,89.06,4.36,1.42,9.36-2.51,8.1-7.19s7.78-4.51,10.58,6.24-1.4,38.32-31.59,25.67S269.07,318.17,272.62,296C273.82,282.06,221,211.93,253.69,204Z"/><g class="cls-9"><path class="cls-4" d="M327,402.06s-29.21,2-38.89-42.22,12.95-104.87-55.7-152c0,0,22,77.34,24.78,80.84S253.83,411.9,327,402.06Z"/></g><circle class="cls-5" cx="294.01" cy="388.62" r="6.24" transform="translate(-192.6 414.77) rotate(-55.97)"/><circle class="cls-6" cx="292.35" cy="387.28" r="3.82" transform="matrix(0.56, -0.83, 0.83, 0.56, -192.21, 412.81)"/><circle class="cls-5" cx="276.71" cy="357.65" r="6.24" transform="translate(-174.54 386.8) rotate(-55.97)"/><circle class="cls-6" cx="275.06" cy="356.3" r="3.82" transform="translate(-174.15 384.84) rotate(-55.97)"/><circle class="cls-5" cx="270.97" cy="317.96" r="6.24" transform="translate(-144.18 364.56) rotate(-55.97)"/><circle class="cls-6" cx="269.32" cy="316.61" r="3.82" transform="translate(-143.79 362.6) rotate(-55.97)"/><circle class="cls-5" cx="268.74" cy="284.63" r="6.24" transform="translate(-117.55 348.04) rotate(-55.97)"/><circle class="cls-6" cx="267.09" cy="283.28" r="3.82" transform="matrix(0.56, -0.83, 0.83, 0.56, -117.16, 346.08)"/><circle class="cls-5" cx="254.86" cy="254.82" r="6.24" transform="translate(-98.95 323.41) rotate(-55.97)"/><circle class="cls-6" cx="253.21" cy="253.47" r="3.82" transform="translate(-98.56 321.44) rotate(-55.97)"/><path class="cls-2" d="M199.45,194.84s-15.95-25-42.21-19.69-27.15.84-48.78,7.8c-25.33,8.16-52.82,49.89-82.78,33.83-3.27-3.21-2.08-9.46,2.65-10.5s.42-9-10.41-6.51-33.37,18.89-8.23,39.86,81.38-5.87,99.47-19.26C120.92,212.91,207.48,227.44,199.45,194.84Z"/><g class="cls-10"><path class="cls-4" d="M-10.08,221s11.72,26.83,55.39,15.07,87.12-59.8,160.57-20.57c0,0-78.8,16.07-83.17,15.24S14.88,290.47-10.08,221Z"/></g><circle class="cls-5" cx="17.04" cy="244.08" r="6.24" transform="translate(-205.53 142.45) rotate(-61.46)"/><circle class="cls-6" cx="19" cy="244.93" r="3.82" transform="translate(-205.25 144.61) rotate(-61.46)"/><circle class="cls-5" cx="52.5" cy="245.16" r="6.24" transform="translate(-187.96 174.16) rotate(-61.46)"/><circle class="cls-6" cx="54.46" cy="246.01" r="3.82" transform="translate(-187.68 176.32) rotate(-61.46)"/><circle class="cls-5" cx="90.37" cy="231.98" r="6.24" transform="translate(-156.6 200.54) rotate(-61.46)"/><circle class="cls-6" cx="92.33" cy="232.82" r="3.82" transform="translate(-156.32 202.71) rotate(-61.46)"/><circle class="cls-5" cx="120.98" cy="218.61" r="6.24" transform="translate(-128.86 220.45) rotate(-61.46)"/><circle class="cls-6" cx="122.94" cy="219.45" r="3.82" transform="translate(-128.58 222.61) rotate(-61.46)"/><circle class="cls-5" cx="153.83" cy="217.19" r="6.24" transform="translate(-110.46 248.58) rotate(-61.46)"/><circle class="cls-6" cx="155.79" cy="218.04" r="3.82" transform="translate(-110.18 250.74) rotate(-61.46)"/><path class="cls-2" d="M215.46,206.47s-21.81-20.15-45.84-8.27-26,7.74-45.18,20C102,232.54,86.09,279.9,53,272c-4-2.27-4.43-8.61-.12-10.83s-1.89-8.79-11.73-3.64-27.45,26.78,2.21,40.64,77.19-26.44,91.27-44C144.14,244,231.54,235.94,215.46,206.47Z"/><g class="cls-11"><path class="cls-4" d="M19.53,285.19s18.18,23,57.4.45,69-80,150-60.85c0,0-72.09,35.64-76.53,36S61.39,346,19.53,285.19Z"/></g><circle class="cls-5" cx="51.65" cy="300.61" r="6.24" transform="translate(-252.62 279.28) rotate(-76.24)"/><circle class="cls-6" cx="53.76" cy="300.93" r="3.82" transform="translate(-251.32 281.57) rotate(-76.24)"/><circle class="cls-5" cx="86.21" cy="292.61" r="6.24" transform="translate(-218.51 306.75) rotate(-76.24)"/><circle class="cls-6" cx="88.32" cy="292.93" r="3.82" transform="translate(-217.21 309.04) rotate(-76.24)"/><circle class="cls-5" cx="119.46" cy="270.2" r="6.24" transform="translate(-171.4 321.97) rotate(-76.24)"/><circle class="cls-6" cx="121.57" cy="270.52" r="3.82" transform="translate(-170.1 324.26) rotate(-76.24)"/><circle class="cls-5" cx="145.65" cy="249.46" r="6.24" transform="translate(-131.3 331.6) rotate(-76.24)"/><circle class="cls-6" cx="147.76" cy="249.78" r="3.82" transform="translate(-130 333.89) rotate(-76.24)"/><circle class="cls-5" cx="177.06" cy="239.71" r="6.24" transform="translate(-97.89 354.68) rotate(-76.24)"/><circle class="cls-6" cx="179.17" cy="240.03" r="3.82" transform="translate(-96.59 356.97) rotate(-76.24)"/><path class="cls-2" d="M228.55,206.74s-27.59-11-45.74,8.77-21.52,16.58-35,34.9c-15.75,21.45-13.59,71.37-47.28,75.9-4.53-.69-7.23-6.45-4-10.06s-4.92-7.52-12.25.82-16,34.86,16.67,37.13,62.53-52.43,69.34-73.87C175.48,267.38,254.16,228.46,228.55,206.74Z"/><g class="cls-12"><path class="cls-4" d="M74,350.65s25.22,14.88,53.72-20.22,35.59-99.5,118.09-110.72c0,0-54.45,59.18-58.48,61.06S135,392.35,74,350.65Z"/></g><circle class="cls-5" cx="109.55" cy="353.49" r="6.24" transform="translate(-44.12 16.83) rotate(-7.32)"/><circle class="cls-6" cx="111.63" cy="353.03" r="3.82" transform="translate(-44.04 17.09) rotate(-7.32)"/><circle class="cls-5" cx="138.92" cy="333.59" r="6.24" transform="translate(-41.35 20.4) rotate(-7.32)"/><circle class="cls-6" cx="141" cy="333.13" r="3.82" transform="matrix(0.99, -0.13, 0.13, 0.99, -41.27, 20.67)"/><circle class="cls-5" cx="161.89" cy="300.73" r="6.24" transform="matrix(0.99, -0.13, 0.13, 0.99, -36.97, 23.06)"/><circle class="cls-6" cx="163.97" cy="300.27" r="3.82" transform="translate(-36.9 23.32) rotate(-7.32)"/><circle class="cls-5" cx="178.87" cy="271.96" r="6.24" transform="translate(-33.17 24.99) rotate(-7.32)"/><circle class="cls-6" cx="180.95" cy="271.5" r="3.82" transform="translate(-33.1 25.25) rotate(-7.32)"/><circle class="cls-5" cx="204.67" cy="251.57" r="6.24" transform="translate(-30.37 28.11) rotate(-7.32)"/><circle class="cls-6" cx="206.76" cy="251.11" r="3.82" transform="matrix(0.99, -0.13, 0.13, 0.99, -30.29, 28.37)"/><path class="cls-2" d="M235.13,203.74S205.63,207,198.88,233s-11.19,24.75-14.45,47.24c-3.82,26.34,21.57,69.38-6,89.22-4.32,1.53-9.41-2.29-8.27-7s-7.88-4.32-10.43,6.49,2.29,38.28,32.18,24.93,30.53-75.67,26.46-97.8C216.81,282.21,267.94,210.86,235.13,203.74Z"/><g class="cls-13"><path class="cls-4" d="M166.44,403.41s29.25,1.27,37.9-43.11S189,255.75,256.5,207c0,0-20.23,77.83-22.9,81.39S239.83,411.55,166.44,403.41Z"/></g><circle class="cls-5" cx="199.12" cy="389.21" r="6.24" transform="matrix(0.82, -0.58, 0.58, 0.82, -188.54, 187.07)"/><circle class="cls-6" cx="200.74" cy="387.83" r="3.82" transform="translate(-187.43 187.76) rotate(-35.37)"/><circle class="cls-5" cx="215.68" cy="357.84" r="6.24" transform="translate(-167.32 190.87) rotate(-35.37)"/><circle class="cls-6" cx="217.3" cy="356.46" r="3.82" transform="translate(-166.22 191.56) rotate(-35.37)"/><circle class="cls-5" cx="220.5" cy="318.03" r="6.24" transform="translate(-143.39 186.32) rotate(-35.37)"/><circle class="cls-6" cx="222.12" cy="316.65" r="3.82" transform="translate(-142.29 187) rotate(-35.37)"/><circle class="cls-5" cx="221.96" cy="284.66" r="6.24" transform="translate(-123.81 181) rotate(-35.37)"/><circle class="cls-6" cx="223.58" cy="283.27" r="3.82" transform="translate(-122.7 181.68) rotate(-35.37)"/><circle class="cls-5" cx="235.14" cy="254.53" r="6.24" transform="translate(-103.93 183.07) rotate(-35.37)"/><circle class="cls-6" cx="236.76" cy="253.15" r="3.82" transform="translate(-102.83 183.75) rotate(-35.37)"/><path class="cls-2" d="M255.89.59a140.64,140.64,0,0,0-25.69,0c-87.77,6.62-93.65,99.11-80.74,125.34a235.6,235.6,0,0,0,15.39,26.59,22.37,22.37,0,0,0,11,36.58c1.75,16.15,35.89,21.16,59.83,22,2.14.09,4.62.14,7.34.14s5.19,0,7.34-.14c23.71-.84,57.41-5.77,59.77-21.54a22.37,22.37,0,0,0,11.46-38.91c4.45-6.88,9.72-14.6,15-24.73C350.15,100.1,343.46,9.84,255.89.59Z"/><circle class="cls-14" cx="213.57" cy="122.65" r="26.41"/><circle class="cls-15" cx="213.57" cy="124.71" r="23.25"/><circle class="cls-16" cx="213.57" cy="124.71" r="18.34"/><circle class="cls-15" cx="221.38" cy="116.4" r="6.92"/><circle class="cls-14" cx="277.13" cy="122.65" r="26.41"/><circle class="cls-15" cx="277.13" cy="124.71" r="23.25"/><circle class="cls-16" cx="277.13" cy="124.71" r="18.34"/><circle class="cls-15" cx="284.94" cy="116.4" r="6.92"/><path class="cls-17" d="M209.69,165s31.95,20.59,69.57,0C279.26,165,244.48,225.33,209.69,165Z"/><path class="cls-18" d="M203,165.55a8.68,8.68,0,0,0,11-5.1"/><path class="cls-18" d="M286.71,165.55a8.68,8.68,0,0,1-11-5.1"/><g class="cls-19"><path class="cls-20" d="M231.27,192.49s-.56-8.43,5.38-8.43,6.82,3.37,6.82,3.37.88-3.85,7.38-3.85,5.54,12.36,5.54,12.36Z"/></g><path class="cls-17" d="M197.65,79.42h28.4S211.85,68.06,197.65,79.42Z"/><path class="cls-17" d="M263.92,79.42h28.4S278.12,68.06,263.92,79.42Z"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="650" height="470" viewBox="0 0 650 470">
+  <defs>
+    <style>
+      .cls-1, .cls-18 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #93278f;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: #fc9a8d;
+      }
+
+      .cls-5 {
+        fill: #d4555e;
+      }
+
+      .cls-6 {
+        fill: #510706;
+      }
+
+      .cls-7 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-8 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-9 {
+        clip-path: url(#clip-path-4);
+      }
+
+      .cls-10 {
+        clip-path: url(#clip-path-5);
+      }
+
+      .cls-11 {
+        clip-path: url(#clip-path-6);
+      }
+
+      .cls-12 {
+        clip-path: url(#clip-path-7);
+      }
+
+      .cls-13 {
+        clip-path: url(#clip-path-8);
+      }
+
+      .cls-14, .cls-17 {
+        fill: #2f009a;
+      }
+
+      .cls-15 {
+        fill: #fff;
+      }
+
+      .cls-16 {
+        fill: #231f20;
+      }
+
+      .cls-17, .cls-18 {
+        stroke: #a81307;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-17 {
+        stroke-width: 0.85px;
+      }
+
+      .cls-18 {
+        stroke-width: 1.71px;
+      }
+
+      .cls-19 {
+        clip-path: url(#clip-path-9);
+      }
+
+      .cls-20 {
+        fill: #fa4316;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="SVGID" class="cls-1" d="M28.25,222.59c-3.11-3.37-1.62-9.55,3.15-10.36s.85-9-10.08-7-34.25,17.25-10.16,39.42,131.36-10.52,150.07-23c12.13-6.89,135.64,15.85,129.19-17.1,0,0-22.68-37-49.17-33"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="SVGID-2" data-name="SVGID" class="cls-1" d="M68.19,320.17c-4.11-2-4.92-8.34-.75-10.8s-2.4-8.67-11.92-2.95-25.84,28.34,4.58,40.44,119-56.7,132-75c8.87-10.76,132.37-33.59,114.58-62.07,0,0-34.41-26.51-57.7-13.25"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="SVGID-3" data-name="SVGID" class="cls-1" d="M147.8,407.07c-4.58-.07-8-5.42-5.32-9.43s-5.89-6.79-12,2.46S119.29,436.79,152,434.65,235,332.34,238.88,310.17C242.27,296.65,344,223,315.68,204.89c0,0-42.46-9.16-57.79,12.83"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="SVGID-4" data-name="SVGID" class="cls-1" d="M621.75,222.59c3.11-3.37,1.62-9.55-3.15-10.36s-.85-9,10.08-7,34.25,17.25,10.16,39.42-131.36-10.52-150.07-23c-12.13-6.89-135.64,15.85-129.19-17.1,0,0,22.68-37,49.17-33"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path id="SVGID-5" data-name="SVGID" class="cls-1" d="M581.81,320.17c4.11-2,4.92-8.34.75-10.8s2.4-8.67,11.92-2.95,25.84,28.34-4.58,40.44-119-56.7-132-75c-8.87-10.76-132.37-33.59-114.58-62.07,0,0,34.41-26.51,57.7-13.25"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <path id="SVGID-6" data-name="SVGID" class="cls-1" d="M502.2,407.07c4.58-.07,8-5.42,5.32-9.43s5.89-6.79,12,2.46,11.15,36.69-21.51,34.55S415,332.34,411.12,310.17C407.73,296.65,306,223,334.32,204.89c0,0,42.46-9.16,57.79,12.83"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <path id="SVGID-7" data-name="SVGID" class="cls-1" d="M243.32,413.61c-4.4,1.31-9.28-2.76-7.9-7.4s-7.66-4.72-10.74,6,.36,38.35,30.88,26.51,42-113.36,39-135.67c1.19-13.49,56.86-91.47,22-100.76,0,0-29.63,1.82-37.67,27.39"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <path id="SVGID-8" data-name="SVGID" class="cls-1" d="M406.94,415.11c4.4,1.31,9.28-2.76,7.9-7.4s7.66-4.72,10.74,6-.36,38.35-30.88,26.51-42-113.36-39-135.67c-1.19-13.49-56.86-91.47-22-100.76,0,0,29.63,1.82,37.67,27.39"/>
+    </clipPath>
+    <clipPath id="clip-path-9">
+      <path id="SVGID-9" data-name="SVGID" class="cls-1" d="M289.44,165s31.95,20.59,69.57,0C359,165,324.23,225.33,289.44,165Z"/>
+    </clipPath>
+  </defs>
+  <title>17_big_octopus_move_flap_legs</title>
+  <g id="number">
+    <g>
+      <g>
+        <g>
+          <path class="cls-2" d="M282.45,193.27s-14.72-25.79-41.21-21.71-59.76,8.29-81.7,14.2c-25.7,6.92-101.53,53.47-130.67,36-3.11-3.37-1.62-9.55,3.15-10.36s.85-9-10.08-7-34.25,17.25-10.16,39.42,127.92-8.12,146.63-20.62C170.54,216.28,288.9,226.22,282.45,193.27Z"/>
+          <g class="cls-3">
+            <path class="cls-4" d="M3,233.12s29,20,93.29,1.3c43.42-12.64,60.27-37.53,180.15-26.44,0,0-68.1,18.44-72.43,17.4S24.62,303.74,3,233.12Z"/>
+          </g>
+          <g>
+            <g>
+              <circle class="cls-5" cx="59.45" cy="250.74" r="6.24" transform="translate(-185.66 171.22) rotate(-58.69)"/>
+              <circle class="cls-6" cx="61.37" cy="251.68" r="3.82" transform="translate(-185.54 173.31) rotate(-58.69)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="29.12" cy="251.07" r="4.75" transform="translate(-200.51 145.47) rotate(-58.69)"/>
+              <circle class="cls-6" cx="30.58" cy="251.78" r="2.91" transform="translate(-200.42 147.06) rotate(-58.69)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="95.53" cy="244.28" r="6.24" transform="translate(-162.81 198.94) rotate(-58.69)"/>
+              <circle class="cls-6" cx="97.44" cy="245.21" r="3.82" transform="matrix(0.52, -0.85, 0.85, 0.52, -162.7, 201.02)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="127.76" cy="234.99" r="6.24" transform="translate(-139.41 222.01) rotate(-58.69)"/>
+              <circle class="cls-6" cx="129.67" cy="235.93" r="3.82" transform="translate(-139.29 224.1) rotate(-58.69)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="164.45" cy="221.58" r="6.24" transform="translate(-110.32 246.92) rotate(-58.69)"/>
+              <circle class="cls-6" cx="166.37" cy="222.51" r="3.82" transform="translate(-110.2 249) rotate(-58.69)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="203.21" cy="219.72" r="6.24" transform="translate(-90.11 279.14) rotate(-58.69)"/>
+              <circle class="cls-6" cx="205.13" cy="220.65" r="3.82" transform="matrix(0.52, -0.85, 0.85, 0.52, -90, 281.23)"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-2" d="M295.2,202.07S272.25,183.23,249,196.5s-52.87,29.07-71.25,42.42c-21.54,15.64-75.76,86.18-109.23,80.24-4.11-2-4.92-8.34-.75-10.8s-2.4-8.67-11.92-2.95S30,333.75,60.37,345.85,177,292.62,190,274.27C198.87,263.5,313,230.56,295.2,202.07Z"/>
+          <g class="cls-7">
+            <path class="cls-4" d="M48.41,339s34.2,8.38,87.62-32.07c36-27.3,42.91-56.56,158.86-89,0,0-57,41.53-61.45,42.1S93.76,397.27,48.41,339Z"/>
+          </g>
+          <g>
+            <g>
+              <circle class="cls-5" cx="107.39" cy="335.33" r="6.24" transform="translate(-241.83 380.38) rotate(-79.59)"/>
+              <circle class="cls-6" cx="109.51" cy="335.53" r="3.82" transform="translate(-240.28 382.62) rotate(-79.59)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="79.17" cy="346.46" r="4.75" transform="translate(-275.9 361.74) rotate(-79.59)"/>
+              <circle class="cls-6" cx="80.79" cy="346.61" r="2.91" transform="translate(-274.71 363.46) rotate(-79.59)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="138.78" cy="316.42" r="6.24" transform="translate(-197.51 395.76) rotate(-79.59)"/>
+              <circle class="cls-6" cx="140.91" cy="316.62" r="3.82" transform="translate(-195.96 398.01) rotate(-79.59)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="165.58" cy="296.25" r="6.24" transform="translate(-155.72 405.59) rotate(-79.59)"/>
+              <circle class="cls-6" cx="167.7" cy="296.45" r="3.82" transform="translate(-154.17 407.83) rotate(-79.59)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="195.07" cy="270.63" r="6.24" transform="translate(-106.35 413.59) rotate(-79.59)"/>
+              <circle class="cls-6" cx="197.19" cy="270.82" r="3.82" transform="translate(-104.8 415.84) rotate(-79.59)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="230.61" cy="255.06" r="6.24" transform="translate(-61.91 435.8) rotate(-79.59)"/>
+              <circle class="cls-6" cx="232.74" cy="255.25" r="3.82" transform="translate(-60.36 438.05) rotate(-79.59)"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-2" d="M302,202.89s-28.82-7.15-44.15,14.84-35.24,49-46.11,68.92C199,310,180.39,397,147.62,406c-4.58-.07-8-5.42-5.32-9.43s-5.89-6.79-12,2.46-11.15,36.69,21.51,34.55,82.41-98.17,86.29-120.34C241.45,299.75,330.33,221,302,202.89Z"/>
+          <g class="cls-8">
+            <path class="cls-4" d="M138,432.58s34.49-7.13,65.33-66.61c20.82-40.14,14.44-69.51,105.21-148.61,0,0-33.66,62-37.4,64.42S204,465.7,138,432.58Z"/>
+          </g>
+          <g>
+            <g>
+              <circle class="cls-5" cx="189.71" cy="403.92" r="6.24" transform="matrix(0.97, -0.26, 0.26, 0.97, -98.32, 63.07)"/>
+              <circle class="cls-6" cx="191.71" cy="403.18" r="3.82" transform="translate(-98.06 63.56) rotate(-15.04)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="169.02" cy="426.09" r="4.75" transform="translate(-104.78 58.46) rotate(-15.04)"/>
+              <circle class="cls-6" cx="170.54" cy="425.53" r="2.91" transform="translate(-104.59 58.84) rotate(-15.04)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="209.93" cy="373.35" r="6.24" transform="matrix(0.97, -0.26, 0.26, 0.97, -89.7, 67.27)"/>
+              <circle class="cls-6" cx="211.93" cy="372.61" r="3.82" transform="translate(-89.44 67.76) rotate(-15.04)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="225.46" cy="343.63" r="6.24" transform="matrix(0.97, -0.26, 0.26, 0.97, -81.45, 70.28)"/>
+              <circle class="cls-6" cx="227.46" cy="342.89" r="3.82" transform="translate(-81.19 70.78) rotate(-15.04)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="241.08" cy="307.81" r="6.24" transform="translate(-71.62 73.11) rotate(-15.04)"/>
+              <circle class="cls-6" cx="243.08" cy="307.07" r="3.82" transform="translate(-71.36 73.6) rotate(-15.04)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="266.48" cy="278.48" r="6.24" transform="translate(-63.14 78.7) rotate(-15.04)"/>
+              <circle class="cls-6" cx="268.49" cy="277.74" r="3.82" transform="translate(-62.88 79.19) rotate(-15.04)"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-2" d="M367.55,193.27s14.72-25.79,41.21-21.71,59.76,8.29,81.7,14.2c25.7,6.92,101.53,53.47,130.67,36,3.11-3.37,1.62-9.55-3.15-10.36s-.85-9,10.08-7,34.25,17.25,10.16,39.42-127.92-8.12-146.63-20.62C479.46,216.28,361.1,226.22,367.55,193.27Z"/>
+          <g class="cls-9">
+            <path class="cls-4" d="M647,233.12s-29,20-93.29,1.3C510.24,221.78,493.39,196.9,373.51,208c0,0,68.1,18.44,72.43,17.4S625.38,303.74,647,233.12Z"/>
+          </g>
+          <g>
+            <g>
+              <circle class="cls-5" cx="590.55" cy="250.74" r="6.24" transform="translate(-44.29 343.44) rotate(-31.31)"/>
+              <circle class="cls-6" cx="588.63" cy="251.68" r="3.82" transform="translate(-45.06 342.58) rotate(-31.31)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="620.88" cy="251.07" r="4.75" transform="translate(-40.05 359.25) rotate(-31.31)"/>
+              <circle class="cls-6" cx="619.42" cy="251.78" r="2.91" transform="matrix(0.85, -0.52, 0.52, 0.85, -40.63, 358.59)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="554.47" cy="244.28" r="6.24" transform="translate(-46.19 323.75) rotate(-31.31)"/>
+              <circle class="cls-6" cx="552.56" cy="245.21" r="3.82" transform="translate(-46.96 322.89) rotate(-31.31)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="522.24" cy="234.99" r="6.24" transform="translate(-46.06 305.65) rotate(-31.31)"/>
+              <circle class="cls-6" cx="520.33" cy="235.93" r="3.82" transform="translate(-46.83 304.79) rotate(-31.31)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="485.55" cy="221.58" r="6.24" transform="translate(-44.43 284.62) rotate(-31.31)"/>
+              <circle class="cls-6" cx="483.63" cy="222.51" r="3.82" transform="translate(-45.2 283.76) rotate(-31.31)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="446.79" cy="219.72" r="6.24" transform="translate(-49.11 264.21) rotate(-31.31)"/>
+              <circle class="cls-6" cx="444.87" cy="220.65" r="3.82" transform="matrix(0.85, -0.52, 0.52, 0.85, -49.88, 263.35)"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-2" d="M354.8,202.07s22.95-18.84,46.24-5.57,52.87,29.07,71.25,42.42c21.54,15.64,75.76,86.18,109.23,80.24,4.11-2,4.92-8.34.75-10.8s2.4-8.67,11.92-2.95,25.84,28.34-4.58,40.44S473,292.62,460,274.27C451.13,263.5,337,230.56,354.8,202.07Z"/>
+          <g class="cls-10">
+            <path class="cls-4" d="M601.59,339s-34.2,8.38-87.62-32.07c-36-27.3-42.91-56.56-158.86-89,0,0,57,41.53,61.45,42.1S556.24,397.27,601.59,339Z"/>
+          </g>
+          <g>
+            <g>
+              <circle class="cls-5" cx="542.61" cy="335.33" r="6.24" transform="translate(-51.65 103.54) rotate(-10.41)"/>
+              <circle class="cls-6" cx="540.49" cy="335.53" r="3.82" transform="translate(-51.72 103.16) rotate(-10.41)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="570.83" cy="346.46" r="4.75" transform="translate(-53.2 108.82) rotate(-10.41)"/>
+              <circle class="cls-6" cx="569.21" cy="346.61" r="2.91" transform="translate(-53.25 108.53) rotate(-10.41)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="511.22" cy="316.42" r="6.24" transform="translate(-48.75 97.56) rotate(-10.41)"/>
+              <circle class="cls-6" cx="509.09" cy="316.62" r="3.82" transform="translate(-48.82 97.18) rotate(-10.41)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="484.42" cy="296.25" r="6.24" transform="translate(-45.55 92.39) rotate(-10.41)"/>
+              <circle class="cls-6" cx="482.3" cy="296.45" r="3.82" transform="translate(-45.62 92.01) rotate(-10.41)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="454.93" cy="270.63" r="6.24" transform="translate(-41.4 86.64) rotate(-10.41)"/>
+              <circle class="cls-6" cx="452.81" cy="270.82" r="3.82" transform="translate(-41.47 86.26) rotate(-10.41)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="419.39" cy="255.06" r="6.24" transform="translate(-39.18 79.96) rotate(-10.41)"/>
+              <circle class="cls-6" cx="417.26" cy="255.25" r="3.82" transform="translate(-39.25 79.58) rotate(-10.41)"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-2" d="M348,202.89s28.82-7.15,44.15,14.84,35.24,49,46.11,68.92C451,310,469.61,397,502.38,406c4.58-.07,8-5.42,5.32-9.43s5.89-6.79,12,2.46,11.15,36.69-21.51,34.55-82.41-98.17-86.29-120.34C408.55,299.75,319.67,221,348,202.89Z"/>
+          <g class="cls-11">
+            <path class="cls-4" d="M512,432.58s-34.49-7.13-65.33-66.61c-20.82-40.14-14.44-69.51-105.21-148.61,0,0,33.66,62,37.4,64.42S446,465.7,512,432.58Z"/>
+          </g>
+          <g>
+            <g>
+              <circle class="cls-5" cx="460.29" cy="403.92" r="6.24" transform="translate(-49.24 743.62) rotate(-74.96)"/>
+              <circle class="cls-6" cx="458.29" cy="403.18" r="3.82" transform="translate(-50.01 741.14) rotate(-74.96)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="480.98" cy="426.09" r="4.75" transform="translate(-55.33 780.03) rotate(-74.96)"/>
+              <circle class="cls-6" cx="479.46" cy="425.53" r="2.91" transform="translate(-55.92 778.14) rotate(-74.96)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="440.07" cy="373.35" r="6.24" transform="translate(-34.7 701.46) rotate(-74.96)"/>
+              <circle class="cls-6" cx="438.07" cy="372.61" r="3.82" transform="translate(-35.47 698.98) rotate(-74.96)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="424.54" cy="343.63" r="6.24" transform="translate(-17.49 664.45) rotate(-74.96)"/>
+              <circle class="cls-6" cx="422.54" cy="342.89" r="3.82" transform="translate(-18.26 661.97) rotate(-74.96)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="408.92" cy="307.81" r="6.24" transform="matrix(0.26, -0.97, 0.97, 0.26, 5.54, 622.85)"/>
+              <circle class="cls-6" cx="406.92" cy="307.07" r="3.82" transform="translate(4.77 620.37) rotate(-74.96)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="383.52" cy="278.48" r="6.24" transform="translate(15.05 576.59) rotate(-74.96)"/>
+              <circle class="cls-6" cx="381.51" cy="277.74" r="3.82" transform="translate(14.28 574.11) rotate(-74.96)"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-2" d="M316.51,202.25s-29.63,1.82-37.67,27.39-13.63,35.21-18,57.51c-5.14,26.11,11.39,107.7-17.17,126.12-4.4,1.31-9.28-2.76-7.9-7.4s-7.66-4.72-10.74,6,.36,38.35,30.88,26.51,41-111.36,38-133.67C293.06,290.76,348.92,211,316.51,202.25Z"/>
+          <g class="cls-12">
+            <path class="cls-4" d="M245.22,447s33.33-24.39,37.33-89.67c2.77-45.14-1-102.67,55.13-150.72,0,0-24.11,76.72-27,80.14S318.1,458.83,245.22,447Z"/>
+          </g>
+          <g>
+            <g>
+              <circle class="cls-5" cx="282.22" cy="397.68" r="4.89" transform="translate(-169.43 213.8) rotate(-32.49)"/>
+              <circle class="cls-6" cx="283.54" cy="396.66" r="3" transform="translate(-168.67 214.35) rotate(-32.49)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="289.34" cy="355.18" r="6.24" transform="translate(-145.49 210.98) rotate(-32.49)"/>
+              <circle class="cls-6" cx="291.03" cy="353.88" r="3.82" transform="matrix(0.84, -0.54, 0.54, 0.84, -144.53, 211.68)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="296.15" cy="315.67" r="6.24" transform="translate(-123.2 208.45) rotate(-32.49)"/>
+              <circle class="cls-6" cx="297.84" cy="314.36" r="3.82" transform="translate(-122.24 209.16) rotate(-32.49)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="299.28" cy="282.41" r="6.24" transform="translate(-104.85 204.93) rotate(-32.49)"/>
+              <circle class="cls-6" cx="300.97" cy="281.11" r="3.82" transform="translate(-103.88 205.63) rotate(-32.49)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="313.96" cy="252.98" r="6.24" transform="translate(-86.75 208.21) rotate(-32.49)"/>
+              <circle class="cls-6" cx="315.65" cy="251.68" r="3.82" transform="translate(-85.78 208.91) rotate(-32.49)"/>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="cls-2" d="M333.74,203.75s29.63,1.82,37.67,27.39,13.63,35.21,18,57.51c5.14,26.11-11.39,107.7,17.17,126.12,4.4,1.31,9.28-2.76,7.9-7.4s7.66-4.72,10.74,6-.36,38.35-30.88,26.51-41-111.36-38-133.67C357.19,292.26,301.33,212.52,333.74,203.75Z"/>
+          <g class="cls-13">
+            <path class="cls-4" d="M405,448.51s-33.33-24.39-37.33-89.67c-2.77-45.14,1-102.67-55.13-150.72,0,0,24.11,76.72,27,80.14S332.15,460.33,405,448.51Z"/>
+          </g>
+          <g>
+            <g>
+              <circle class="cls-5" cx="368.04" cy="399.18" r="4.89" transform="translate(-166.35 495.23) rotate(-57.51)"/>
+              <circle class="cls-6" cx="366.71" cy="398.16" r="3" transform="translate(-166.1 493.64) rotate(-57.51)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="360.91" cy="356.68" r="6.24" transform="translate(-133.8 469.55) rotate(-57.51)"/>
+              <circle class="cls-6" cx="359.22" cy="355.38" r="3.82" transform="translate(-133.48 467.52) rotate(-57.51)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="354.1" cy="317.17" r="6.24" transform="translate(-103.62 445.51) rotate(-57.51)"/>
+              <circle class="cls-6" cx="352.41" cy="315.86" r="3.82" transform="translate(-103.3 443.48) rotate(-57.51)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="350.97" cy="283.91" r="6.24" transform="translate(-77.02 427.48) rotate(-57.51)"/>
+              <circle class="cls-6" cx="349.28" cy="282.61" r="3.82" transform="translate(-76.7 425.45) rotate(-57.51)"/>
+            </g>
+            <g>
+              <circle class="cls-5" cx="336.29" cy="254.48" r="6.24" transform="translate(-58.99 401.47) rotate(-57.51)"/>
+              <circle class="cls-6" cx="334.6" cy="253.18" r="3.82" transform="translate(-58.67 399.44) rotate(-57.51)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g>
+        <path class="cls-2" d="M335.64.59a140.64,140.64,0,0,0-25.69,0C222.18,7.22,216.3,99.7,229.2,125.93a235.6,235.6,0,0,0,15.39,26.59,22.37,22.37,0,0,0,11,36.58c1.75,16.15,35.89,21.16,59.83,22,2.14.09,4.62.14,7.34.14s5.19,0,7.34-.14c23.71-.84,57.41-5.77,59.77-21.54a22.37,22.37,0,0,0,11.46-38.91c4.45-6.88,9.72-14.6,15-24.73C429.9,100.1,423.22,9.84,335.64.59Z"/>
+        <g>
+          <g>
+            <circle class="cls-14" cx="293.32" cy="122.65" r="26.41"/>
+            <circle class="cls-15" cx="293.32" cy="124.71" r="23.25"/>
+            <circle class="cls-16" cx="293.32" cy="124.71" r="18.34"/>
+            <circle class="cls-15" cx="301.13" cy="116.4" r="6.92"/>
+          </g>
+          <g>
+            <circle class="cls-14" cx="356.88" cy="122.65" r="26.41"/>
+            <circle class="cls-15" cx="356.88" cy="124.71" r="23.25"/>
+            <circle class="cls-16" cx="356.88" cy="124.71" r="18.34"/>
+            <circle class="cls-15" cx="364.69" cy="116.4" r="6.92"/>
+          </g>
+          <g>
+            <path class="cls-17" d="M289.44,165s31.95,20.59,69.57,0C359,165,324.23,225.33,289.44,165Z"/>
+            <path class="cls-18" d="M282.78,165.55a8.68,8.68,0,0,0,11-5.1"/>
+            <path class="cls-18" d="M366.46,165.55a8.68,8.68,0,0,1-11-5.1"/>
+            <g class="cls-19">
+              <path class="cls-20" d="M311,192.49s-.56-8.43,5.38-8.43,6.82,3.37,6.82,3.37.88-3.85,7.38-3.85,5.54,12.36,5.54,12.36Z"/>
+            </g>
+          </g>
+          <path class="cls-17" d="M277.4,79.42h28.4S291.6,68.06,277.4,79.42Z"/>
+          <path class="cls-17" d="M343.67,79.42h28.4S357.87,68.06,343.67,79.42Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 063902f4b90f3314eb4d3bb24b46f79c
+guid: 271221ffcd120624e9fe8323d432b4fa
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/20_Akili_takes_food_and_eat_04
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 412797065d1454b4c995a9fde08fb6f5
+      spriteID: a77051ae8e373d943a12e56434cd2ae5
     PhysicsOutlines: []

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9ed072734971c541a67ebb94a5413ca
+guid: ce9c4803d5b603644ac9f5ed0cd5a542
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/17_big_octopus_move_flap_legs_02
@@ -9,7 +9,7 @@ ScriptedImporter:
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: fd8fd6b872dd9e64d83e71c76f5bf298
+      spriteID: decdbb9f02560b24593165961b9e617b
     PhysicsOutlines: []

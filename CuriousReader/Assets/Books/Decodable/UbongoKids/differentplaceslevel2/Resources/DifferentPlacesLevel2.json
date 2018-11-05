@@ -24,43 +24,16 @@
                     "tag": "day1",
                     "posX": 0.0,
                     "posY": 0.0,
-                    "scaleX": 400.0,
-                    "scaleY": 400.0,
+                    "posZ": 100.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "orderInLayer": 0,
-                    "imageName": "1_day_to_night-01",
+                    "imageName": "1_day_bg-01",
                     "inText": false,
                     "label": "day1",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
-                        {
-                            "id": 0,
-                            "animName": "1_day_to_night",
-                            "startX": 0,
-                            "startY": 0,
-                            "startIndex": 0,
-                            "endIndex": 2,
-                            "onTouch": true,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                2.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 2,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
-                        }
-                    ]
+                    "anim": []
                 }
             ],
             "texts": [
@@ -150,30 +123,48 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "smallcloud",
-                    "posX": 125.0,
+                    "tag": "backdrop",
+                    "posX": 0.0,
                     "posY": 0.0,
-                    "scaleX": 100.0,
-                    "scaleY": 100.0,
+                    "posZ": 100.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
                     "orderInLayer": 0,
-                    "imageName": "2_small_fluffy_cloud-01",
+                    "imageName": "1_day_bg-01",
                     "inText": false,
-                    "label": "smallcloud",
+                    "label": "backdrop",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
                 },
                 {
                     "id": 1,
-                    "tag": "bigcloud",
+                    "tag": "thundercloud",
                     "posX": -120.0,
                     "posY": 0.0,
-                    "scaleX": 175.0,
-                    "scaleY": 175.0,
+                    "posZ": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
                     "orderInLayer": 0,
                     "imageName": "2_big_thunderstorm_cloud-01",
                     "inText": false,
-                    "label": "bigcloud",
+                    "label": "thundercloud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 120.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 75.0,
+                    "scaleY": 75.0,
+                    "orderInLayer": 0,
+                    "imageName": "2_small_fluffy_cloud-01",
+                    "inText": false,
+                    "label": "smallcloud",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
@@ -228,13 +219,45 @@
                     "stanzaID": 0,
                     "textId": 3,
                     "timestamp": 0,
-                    "sceneObjectId": 0,
+                    "sceneObjectId": 2,
                     "animId": -1,
                     "typeOfLinking": 3
                 },
                 {
                     "stanzaID": 0,
                     "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
@@ -253,14 +276,31 @@
             "gameObjects": [
                 {
                     "id": 0,
+                    "tag": "background",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 100.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_day_bg-01",
+                    "inText": false,
+                    "label": "background",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 1,
                     "tag": "bigbird",
                     "posX": -120.0,
                     "posY": 0.0,
+                    "posZ": 0.0,
                     "scaleX": 100.0,
                     "scaleY": 100.0,
                     "orderInLayer": 0,
                     "imageName": "03_big_bird_flapping-1",
-                    "inText": false,
+                    "inText": true,
                     "label": "bigbird",
                     "destroyOnCollision": "",
                     "draggable": false,
@@ -271,15 +311,10 @@
                             "startX": -120,
                             "startY": 0,
                             "startIndex": 0,
-                            "endIndex": 7,
+                            "endIndex": 2,
                             "onTouch": true,
                             "onStart": false,
                             "secPerFrame": [
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612
@@ -287,8 +322,8 @@
                             "sequences": [
                                 {
                                     "startFrame": 0,
-                                    "endFrame": 7,
-                                    "noOfLoops": 1,
+                                    "endFrame": 2,
+                                    "noOfLoops": 5,
                                     "movable": {
                                         "finalx": 0.0,
                                         "finaly": 0.0,
@@ -300,15 +335,16 @@
                     ]
                 },
                 {
-                    "id": 1,
+                    "id": 2,
                     "tag": "smallbird",
                     "posX": 120.0,
                     "posY": 0.0,
-                    "scaleX": 50.0,
-                    "scaleY": 50.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
                     "orderInLayer": 0,
                     "imageName": "03_a_small_bird_flapping-1",
-                    "inText": true,
+                    "inText": false,
                     "label": "smallbird",
                     "destroyOnCollision": "",
                     "draggable": false,
@@ -319,15 +355,10 @@
                             "startX": 120,
                             "startY": 0,
                             "startIndex": 0,
-                            "endIndex": 7,
+                            "endIndex": 2,
                             "onTouch": true,
                             "onStart": false,
                             "secPerFrame": [
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612
@@ -335,8 +366,8 @@
                             "sequences": [
                                 {
                                     "startFrame": 0,
-                                    "endFrame": 7,
-                                    "noOfLoops": 3,
+                                    "endFrame": 2,
+                                    "noOfLoops": 5,
                                     "movable": {
                                         "finalx": 0.0,
                                         "finaly": 0.0,
@@ -390,7 +421,7 @@
                     "stanzaID": 0,
                     "textId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 0,
+                    "sceneObjectId": 1,
                     "animId": 0,
                     "typeOfLinking": 3
                 },
@@ -398,7 +429,39 @@
                     "stanzaID": 0,
                     "textId": 2,
                     "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 1,
+                    "timestamp": 0,
                     "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
                     "animId": 0,
                     "typeOfLinking": 3
                 }
@@ -415,48 +478,144 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "",
-                    "posX": 0.0,
+                    "tag": "bigbird",
+                    "posX": -120.0,
                     "posY": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
                     "orderInLayer": 0,
-                    "imageName": "",
+                    "imageName": "04_a_big_bird_flying-1",
                     "inText": false,
-                    "label": "",
+                    "label": "bigbird",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "04_a_big_bird_flying",
+                            "startX": -120,
+                            "startY": 0,
+                            "startIndex": 0,
+                            "endIndex": 7,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 7,
+                                    "noOfLoops": 3,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": 1,
-                    "tag": "",
-                    "posX": 0.0,
+                    "tag": "smallbird",
+                    "posX": 120.0,
                     "posY": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
                     "orderInLayer": 0,
-                    "imageName": "",
+                    "imageName": "04_a_small_singing_bird-1",
                     "inText": false,
-                    "label": "",
+                    "label": "smallbird",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "04_a_small_singing_bird",
+                            "startX": 120,
+                            "startY": 0,
+                            "startIndex": 0,
+                            "endIndex": 5,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 5,
+                                    "noOfLoops": 3,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": 2,
-                    "tag": "",
-                    "posX": 0.0,
-                    "posY": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
+                    "tag": "music",
+                    "posX": 180.0,
+                    "posY": 60.0,
+                    "posZ": 0.0,
+                    "scaleX": 30.0,
+                    "scaleY": 30.0,
                     "orderInLayer": 0,
-                    "imageName": "",
+                    "imageName": "04_a_small_singing_bird_music-1",
                     "inText": false,
-                    "label": "",
+                    "label": "music",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "04_a_small_singing_bird_music",
+                            "startX": 180,
+                            "startY": 60,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                0.5
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 180.0,
+                                        "finaly": 100.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "texts": [
@@ -510,7 +669,32 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 4,
@@ -520,7 +704,56 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "sun",
+                    "posX": -120.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "orderInLayer": 0,
+                    "imageName": "5_sun-01",
+                    "inText": false,
+                    "label": "sun",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 2,
+                    "tag": "moon",
+                    "posX": 155.0,
+                    "posY": 35.0,
+                    "posZ": 0.0,
+                    "scaleX": 75.0,
+                    "scaleY": 75.0,
+                    "orderInLayer": 0,
+                    "imageName": "5_moon-01",
+                    "inText": false,
+                    "label": "moon",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 3,
+                    "tag": "star",
+                    "posX": 120.0,
+                    "posY": -75.0,
+                    "posZ": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "orderInLayer": 0,
+                    "imageName": "05_star_vibrates-01",
+                    "inText": false,
+                    "label": "star",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -568,7 +801,40 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "star",
+                    "posX": 120.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "06_star_twinkles-01",
+                    "inText": false,
+                    "label": "star",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 1,
+                    "tag": "sun",
+                    "posX": -120.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "06_sunligh-01",
+                    "inText": false,
+                    "label": "sun",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -706,7 +972,24 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "forest",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "8_all_the_forest_trees-01",
+                    "inText": false,
+                    "label": "forest",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -747,7 +1030,24 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "8_all_the_forest_trees-01",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -802,7 +1102,24 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "giraffe",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "9_giraffe_stand_up_01",
+                    "inText": false,
+                    "label": "giraffe",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -850,7 +1167,72 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -120.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "10_big_monkey-01",
+                    "inText": false,
+                    "label": "bigmonkey",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 120.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "10_small_monkeys-01",
+                    "inText": false,
+                    "label": "smallmonkeys",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "10_one_more_big_monkey-01",
+                    "inText": false,
+                    "label": "onemoremonkey",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "orderInLayer": 0,
+                    "imageName": "10_forest_floor_bg-01",
+                    "inText": false,
+                    "label": "forestfloor",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -898,7 +1280,24 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 45.0,
+                    "scaleY": 45.0,
+                    "orderInLayer": 0,
+                    "imageName": "10_monkeys_playing_passing_the_sticks_01",
+                    "inText": false,
+                    "label": "monkeys",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,

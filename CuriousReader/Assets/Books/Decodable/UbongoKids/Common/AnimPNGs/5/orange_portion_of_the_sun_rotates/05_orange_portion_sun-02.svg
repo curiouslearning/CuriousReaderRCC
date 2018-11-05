@@ -1,1 +1,76 @@
-<svg id="boat01" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650"><defs><style>.cls-1{fill:#f27341;}</style></defs><title>05_orange_portion_sun</title><polygon class="cls-1" points="141.78 300.5 88.94 249.08 151.68 240.4 125.5 190.21 191.91 198.62 181.82 127.8 231.37 154.13 239.25 99.28 286.44 137.98 320.46 76.32 349.66 138.23 394.61 90.43 407.41 160.49 468.59 127.69 460.63 184.32 518.12 173.62 490.4 233.79 553.17 243.81 509.06 292.54 570.97 321.23 507.04 355.68 555.51 405.12 503.52 412.51 528.93 459.99 454.57 450.32 467.32 521.27 415.96 495.74 408.47 561.29 355.8 506.32 323.31 573.39 296.24 523.16 258.85 561.5 244.44 487.81 180.59 520.48 187.58 465.59 133.73 474.68 160.6 413.58 88.18 400.44 131.92 359.71 78.61 337.66 141.78 300.5"/></svg>
+<svg id="boat01" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="650" height="650" viewBox="0 0 650 650">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #f27341;
+      }
+
+      .cls-3 {
+        fill: #fbe831;
+      }
+
+      .cls-4 {
+        fill: #f27342;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-7 {
+        fill: #ec764b;
+      }
+
+      .cls-8 {
+        fill: #ed2d24;
+      }
+
+      .cls-9 {
+        clip-path: url(#clip-path-2);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle id="SVGID" class="cls-1" cx="306.45" cy="293.33" r="36.88" transform="translate(-47.25 59.12) rotate(-10.24)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <circle id="SVGID-2" data-name="SVGID" class="cls-1" cx="399.05" cy="287.59" r="36.88" transform="translate(-44.75 75.49) rotate(-10.24)"/>
+    </clipPath>
+  </defs>
+  <title>05_orange_portion_sun</title>
+  <polygon class="cls-2" points="166.9 229.22 139.06 160.95 200.03 178.11 196.13 121.63 253.61 155.92 272.72 86.98 307.58 130.94 336.75 83.83 364.51 138.18 420.37 95.29 422.35 163.71 482.68 137.91 466.36 207.23 535.56 201.66 505.6 250.37 562.56 263.57 513.08 307.62 566.59 341.93 506.67 368.93 551.91 419.99 479.54 425.97 504.18 490.68 453.57 476.65 457.85 530.34 393.58 491.71 376.87 561.83 340.02 517.88 306.92 574.96 280.65 503.49 224.03 551.96 219.34 495.09 169.72 515.26 186.01 441.96 114.42 446.35 142.8 398.84 89.81 385.62 138.88 340.38 77.78 299.35 134.16 279.54 94.14 237.99 166.9 229.22"/>
+  <g>
+    <circle class="cls-3" cx="325" cy="325" r="159.84" transform="translate(-111.76 181.84) rotate(-26.85)"/>
+    <path class="cls-2" d="M265.81,247.5s40.55-40.77,66.29-8.35c0,0-1-30.56-24.79-27.16S265.81,247.5,265.81,247.5Z"/>
+    <path class="cls-2" d="M359.56,237.92s40.55-40.77,66.29-8.35c0,0-1-30.56-24.79-27.16S359.56,237.92,359.56,237.92Z"/>
+    <path class="cls-4" d="M287.83,378.85s37.2,49,89.63,33.83c32.05-10.94,44.44-50.82,44.44-50.82S383.09,415.27,287.83,378.85Z"/>
+    <g>
+      <circle class="cls-5" cx="306.45" cy="293.33" r="36.88" transform="translate(-47.25 59.12) rotate(-10.24)"/>
+      <g class="cls-6">
+        <g>
+          <circle class="cls-7" cx="320.55" cy="295.79" r="23.25" transform="translate(-47.46 61.67) rotate(-10.24)"/>
+          <circle class="cls-8" cx="321" cy="295.78" r="15.75" transform="translate(-47.45 61.75) rotate(-10.24)"/>
+          <circle class="cls-5" cx="309.72" cy="287.6" r="7.33" transform="translate(-46.18 59.61) rotate(-10.24)"/>
+        </g>
+      </g>
+    </g>
+    <g>
+      <circle class="cls-5" cx="399.05" cy="287.59" r="36.88" transform="translate(-44.75 75.49) rotate(-10.24)"/>
+      <g class="cls-9">
+        <g>
+          <circle class="cls-7" cx="416.77" cy="291.04" r="23.25" transform="translate(-45.08 78.69) rotate(-10.24)"/>
+          <circle class="cls-8" cx="417.23" cy="291.03" r="15.75" transform="translate(-45.07 78.77) rotate(-10.24)"/>
+          <circle class="cls-5" cx="405.94" cy="282.86" r="7.33" transform="translate(-43.8 76.64) rotate(-10.24)"/>
+        </g>
+      </g>
+    </g>
+    <circle class="cls-4" cx="361.91" cy="353.34" r="18.84" transform="translate(-57.03 69.93) rotate(-10.24)"/>
+  </g>
+</svg>
