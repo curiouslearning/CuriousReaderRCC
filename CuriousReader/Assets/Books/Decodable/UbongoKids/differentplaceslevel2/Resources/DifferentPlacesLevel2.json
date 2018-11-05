@@ -497,15 +497,10 @@
                             "startX": -120,
                             "startY": 0,
                             "startIndex": 0,
-                            "endIndex": 7,
+                            "endIndex": 2,
                             "onTouch": true,
                             "onStart": false,
                             "secPerFrame": [
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612
@@ -513,8 +508,8 @@
                             "sequences": [
                                 {
                                     "startFrame": 0,
-                                    "endFrame": 7,
-                                    "noOfLoops": 3,
+                                    "endFrame": 2,
+                                    "noOfLoops": 5,
                                     "movable": {
                                         "finalx": 0.0,
                                         "finaly": 0.0,
@@ -546,13 +541,10 @@
                             "startX": 120,
                             "startY": 0,
                             "startIndex": 0,
-                            "endIndex": 5,
+                            "endIndex": 2,
                             "onTouch": true,
                             "onStart": false,
                             "secPerFrame": [
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612
@@ -560,8 +552,8 @@
                             "sequences": [
                                 {
                                     "startFrame": 0,
-                                    "endFrame": 5,
-                                    "noOfLoops": 3,
+                                    "endFrame": 2,
+                                    "noOfLoops": 5,
                                     "movable": {
                                         "finalx": 0.0,
                                         "finaly": 0.0,
@@ -616,6 +608,38 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -325.0,
+                    "posY": 175.0,
+                    "posZ": 100.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_cloud-01",
+                    "inText": false,
+                    "label": "leftcloud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 4,
+                    "tag": "rightcloud",
+                    "posX": 325.0,
+                    "posY": 175.0,
+                    "posZ": 100.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_cloud-01",
+                    "inText": false,
+                    "label": "rightcloud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
                 }
             ],
             "texts": [
