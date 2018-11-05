@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3eb0201454181d246a4608bfb205f73a
+guid: f41ee62cd20a4fd489669fc2d0f67054
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/13_water_wave_02
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 74155b4b5d651ee47aac34ae442b2e9e
+      spriteID: a479b496d514053488075cb86d7573ff
     PhysicsOutlines: []

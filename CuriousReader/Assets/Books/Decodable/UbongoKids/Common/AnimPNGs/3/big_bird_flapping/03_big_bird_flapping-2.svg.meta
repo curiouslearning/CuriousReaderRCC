@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b7e60a956583da84d9d0c42c6b9d9346
+guid: 221386d79aa290849a753d6a95b88650
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/03_big_bird_flapping-2
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: de9aee9e8311d36468e22c299acb194c
+      spriteID: e7e880921def35e4ca2467d5afd4e664
     PhysicsOutlines: []

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d6cd32b632f68a64280737e532617515
+guid: 7703aa8f657d7874ea330294c3597c80
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/14_small_boat_moves_slowly_01
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: c6031e468f9f2ca4c8086eca40bb1389
+      spriteID: 8f38b981bdf8b9f4fad8188d91edb9a5
     PhysicsOutlines: []

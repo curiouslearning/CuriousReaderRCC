@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 50a994dec1606a24f92a378d69d4806d
+guid: 56fe79b80e178f84fbc6f57299eb033e
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/16_the_happy_fish_dances_04
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: cac939bbfb1f5b04fab1a10f60c0dc25
+      spriteID: cae438d00c8ffaf4394b55c9d26916a8
     PhysicsOutlines: []

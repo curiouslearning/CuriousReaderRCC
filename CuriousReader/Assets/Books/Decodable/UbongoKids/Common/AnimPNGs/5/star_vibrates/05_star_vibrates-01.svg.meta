@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4918e5a6489679344a746e427637e759
+guid: d0e1293fb594f0940ad9e65b2c492464
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/05_star_vibrates-01
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 93f44d4e34da6f7469ac14d9de0798d7
+      spriteID: 1d533ce8332e2b143981595be85ca27f
     PhysicsOutlines: []

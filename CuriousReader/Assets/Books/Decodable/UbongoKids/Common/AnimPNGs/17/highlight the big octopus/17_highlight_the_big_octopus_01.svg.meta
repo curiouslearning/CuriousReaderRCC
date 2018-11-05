@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47b893e67e698094092e439c147eca6d
+guid: 61ed909e149b22e44b5aa09535485af5
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/17_highlight_the_big_octopus_01
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 1702c57e04c96704db2ec4fb2268d518
+      spriteID: 34167c82e89a96b4eae3c820aa339294
     PhysicsOutlines: []

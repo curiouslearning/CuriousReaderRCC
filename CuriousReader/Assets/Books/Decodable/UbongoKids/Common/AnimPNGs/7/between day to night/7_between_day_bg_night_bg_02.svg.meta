@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e454b47eefa16147af9dbd21503e87d
+guid: b4b244652217a6c42a912f7b4d1a6c1a
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/7_between_day_bg_night_bg_02
@@ -52,5 +52,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 1d378e08aef169e49bf363f8f5d38f71
+      spriteID: 63282f705f987984c830611fd207813c
     PhysicsOutlines: []

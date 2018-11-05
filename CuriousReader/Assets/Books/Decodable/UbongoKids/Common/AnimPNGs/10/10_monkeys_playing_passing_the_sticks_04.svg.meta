@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d13336ba76bca074eaf2bd2d4af9b890
+guid: 8f7124475dfa470469c545d6f32f2b04
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/10_monkeys_playing_passing_the_sticks_04
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 6e8879cf7f6d0ef4098589c0ccf8ca02
+      spriteID: 4822f668bb9ae6a429b20dfbe3e2556e
     PhysicsOutlines: []

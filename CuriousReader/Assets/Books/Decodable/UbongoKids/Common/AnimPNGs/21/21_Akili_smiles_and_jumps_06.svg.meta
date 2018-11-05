@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5db57af0b34deeb419889ce4ab273c18
+guid: dfd421ca21041f042b4dcd5976ea7e6d
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/21_Akili_smiles_and_jumps_06
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 7331411fcf629c147ba7c20ed51c662d
+      spriteID: d4ae8e2768e245446a05338f238b890f
     PhysicsOutlines: []

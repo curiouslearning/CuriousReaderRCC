@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f4ae8c7ef2876e4b8fa7033dfb7ef66
+guid: 9687e465641137a4d8e5274bc8e362b5
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/16_the_happy_fish_smiles_02
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 3024004cc2bca704395b8bee526d3eb3
+      spriteID: 489a59cfcb5f47c488d098ed3be08f42
     PhysicsOutlines: []

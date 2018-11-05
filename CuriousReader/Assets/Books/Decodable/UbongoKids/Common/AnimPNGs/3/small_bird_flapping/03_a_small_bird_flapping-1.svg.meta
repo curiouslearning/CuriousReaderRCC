@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3657bb0b8927a1e4b8d8769ae6ebaafe
+guid: e201a000029f01a4cba549ff2ea9abd3
 ScriptedImporter:
   fileIDToRecycleName:
-    100002: gameObject/03_a_small_bird_flapping-1
-    400002: gameObject/03_a_small_bird_flapping-1/Transform
-    21200002: gameObject/03_a_small_bird_flapping-1/SpriteRenderer
+    100000: gameObject/03_a_small_bird_flapping-1
+    400000: gameObject/03_a_small_bird_flapping-1/Transform
+    21200000: gameObject/03_a_small_bird_flapping-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 0c82fbdbe8958544e93d097817313d5b
+      spriteID: 377b671c5a03cbe439437d2e782ebf5b
     PhysicsOutlines: []

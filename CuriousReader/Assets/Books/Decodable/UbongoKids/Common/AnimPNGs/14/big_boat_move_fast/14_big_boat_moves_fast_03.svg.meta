@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 39e407f1da0a7bb4fa79201e819169ee
+guid: 386c40bbbc4f391468c4e7cc3cb2f29c
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/14_big_boat_moves_fast_03
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: c4ae66b5b53bd1d45aaed5eb136c438b
+      spriteID: a9a3bae02cdc6524a9ddb869051f5c74
     PhysicsOutlines: []

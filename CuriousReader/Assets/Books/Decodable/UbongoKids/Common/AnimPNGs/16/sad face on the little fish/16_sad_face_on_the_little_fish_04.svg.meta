@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d306ad4545117c643a9629ea111b5cef
+guid: 9f35f91e93b63c947b291d340b3bbced
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/16_sad_face_on_the_little_fish_04
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 7dc843ab279c0e3478a10ecd96a10b52
+      spriteID: b40bfbfa909ee8e4789ec4dc8a7a7757
     PhysicsOutlines: []

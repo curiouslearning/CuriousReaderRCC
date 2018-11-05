@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 78c0eb228d93c374d9914819f195da54
+guid: 2b0c8b7ac317d7242baa261d4ba410ba
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/17_big_octopus_move_flap_legs_06
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 62742867e57b69c4fac12b660c3f7fff
+      spriteID: c38cb943f2fb8c74f9f10855f6f321d7
     PhysicsOutlines: []

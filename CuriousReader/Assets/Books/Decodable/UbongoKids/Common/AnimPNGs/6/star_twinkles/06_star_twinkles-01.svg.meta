@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd902208eb1a89640ad2f4798a170d9c
+guid: 7d47ecb235a5bc14fb5ec8a765d2a3d6
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/06_star_twinkles-01
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 1f0b281d340bd004faeb82f3fb45e0e2
+      spriteID: 7cf7eae952ccfd5429cc551591aa1905
     PhysicsOutlines: []

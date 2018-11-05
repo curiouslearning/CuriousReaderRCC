@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f86d446b44c4b8d478355622141160c2
+guid: 9ec368cbe0c22db4bb082bf443e9c1ea
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/20_Akili_takes_food_and_eat_01
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: fcc9a742107a36841b6754ed9f4022a3
+      spriteID: e99277a788bf1924c9c19793f663ad30
     PhysicsOutlines: []

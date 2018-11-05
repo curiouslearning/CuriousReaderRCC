@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f94d59045516ffd4a84507bceaf910fc
+guid: 7ea14ddb6f7f97044a7fcd296d01ed0b
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/16_the_sad_fish_swimming_01
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 1aa8cb7812ee89344b7e01d9c2ffb60a
+      spriteID: 91dca39393b9d8444b27813056bd8cff
     PhysicsOutlines: []

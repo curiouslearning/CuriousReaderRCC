@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 154a6f88d608a434883b9a1dd44090eb
+guid: 4e580ff65a57a72469a66f028c4ad327
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/18_bobbing_togethe_04
@@ -52,5 +52,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 3ca97aae48b67c245ad428b631a77121
+      spriteID: 89bef4ba48a0c4b4e9039bd5901a2e28
     PhysicsOutlines: []
