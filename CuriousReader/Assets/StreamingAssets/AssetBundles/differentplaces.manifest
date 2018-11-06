@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1435122273
+CRC: 2423989720
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d363f056db7250a48f1c144ccc4c7f05
+    Hash: 2f395ba88e8bf8e67fa36276593b2c26
   TypeTreeHash:
     serializedVersion: 2
-    Hash: c229f1531c5b0cb0fe6debd87a58514c
+    Hash: 4583ce2b0311bd8e6486ec49141039c5
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -22,6 +22,10 @@ ClassTypes:
 - Class: 49
   Script: {instanceID: 0}
 - Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+- Class: 115
   Script: {instanceID: 0}
 - Class: 212
   Script: {instanceID: 0}
@@ -190,6 +194,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/3/small_bird_flapping/03_a_small_bird_flapping-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/13/13_water_wave_02.svg
 - Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/7/between night to day/7_between_night_bg_day_bg_04.svg
+- Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/3/big_bird_flapping/03_big_bird_flapping.asset
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_21.wav
 - Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/16/The happy fish smiles/16_the_happy_fish_smiles_04.svg
 - Assets/Books/Decodable/UbongoKids/Common/AnimPNGs/4/big_bird_flying/04_a_big_bird_flying-2.svg

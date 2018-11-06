@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Elendow.SpritedowAnimator;
 using UnityEngine;
 [System.Serializable]
 public class GameObjectClass
@@ -20,5 +21,5 @@ public class GameObjectClass
 	public string destroyOnCollision;
     public bool draggable;
     public Anim[] anim;
-
+    public SpriteAnimation SpriteAnimation;
 }

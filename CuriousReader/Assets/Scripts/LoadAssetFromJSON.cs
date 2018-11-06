@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.IO;
 using UnityEngine.SceneManagement;
 using System;
+using Elendow.SpritedowAnimator;
 
 /// <summary>
 /// Script to load the scene based on JSON describing the book.
@@ -524,6 +525,19 @@ public class LoadAssetFromJSON : MonoBehaviour {
         else
         {
             go = new GameObject(gameObjectData.label);
+        }
+
+        if ( gameObjectData.SpriteAnimation != null )
+        {
+            Elendow.SpritedowAnimator.SpriteAnimator rcAnimator =  go.AddComponent<Elendow.SpritedowAnimator.SpriteAnimator>();
+
+            List<SpriteAnimation> rcAnimations = new List<SpriteAnimation>();
+            rcAnimations.Add(gameObjectData.SpriteAnimation);
+
+            if ( rcAnimator != null )
+            {
+                rcAnimator.Initialize(false, rcAnimations, gameObjectData.SpriteAnimation.Name);
+            }
         }
 
         SpriteRenderer rcRender = go.GetComponent<SpriteRenderer>();

@@ -163,7 +163,7 @@ namespace Elendow.SpritedowAnimator
                     if (frameIndex > framesInAnimation - 1 || frameIndex < 0)
                     {
                         // Last frame, reset index and stop if is one shot
-                        onFinish.Invoke();
+                        if ( onFinish != null ) onFinish.Invoke();
 
                         if (oneShot)
                         {
@@ -293,7 +293,7 @@ namespace Elendow.SpritedowAnimator
                     startingFrame = -1;
                 }
 
-                onPlay.Invoke();
+                if ( onPlay != null ) onPlay.Invoke();
                 playing = true;
 
                 if (!waitingLoop)
@@ -349,7 +349,7 @@ namespace Elendow.SpritedowAnimator
         {
             randomStartFrameApplied = false;
             playing = false;
-            onStop.Invoke();
+            if ( onStop != null ) onStop.Invoke();
             SetActiveRenderer(!disableRendererOnFinish);
         }
 

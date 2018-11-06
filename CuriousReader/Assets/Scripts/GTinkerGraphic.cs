@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using Elendow.SpritedowAnimator;
 
 public class GTinkerGraphic : MonoBehaviour{
 	public GameObjectClass dataTinkerGraphic;
@@ -99,16 +100,19 @@ public class GTinkerGraphic : MonoBehaviour{
         //LoadAndPlayAnimation (i);
         //StartCoroutine (animdelay());
         //}
-        PlayCompleteAnim();
+
+        PlayAnimation();
+
+//        PlayCompleteAnim();
 		sceneManager.OnMouseDown (this);
 }
 	public void PlayCompleteAnim()
 	{
-        checkandStoproutines();
-        isanimplaying = true;
-		par_routine=StartCoroutine(Animdelay());
+//        checkandStoproutines();
+//        isanimplaying = true;
+//		par_routine=StartCoroutine(Animdelay());
 	}
-	public IEnumerator Animdelay()
+/*	public IEnumerator Animdelay()
 	{
         float sum;
 		for (int i = 0; i < dataTinkerGraphic.anim.Length; i++) { 
@@ -120,11 +124,12 @@ public class GTinkerGraphic : MonoBehaviour{
 				sum = sum + sec[t];
 			}
 			yield return new WaitForSeconds(sum);
-		}
+		} 
 	}
+*/
     public void checkandStoproutines()
     {
-        if (par_routine != null)
+/*        if (par_routine != null)
         {
             StopCoroutine(par_routine);
             par_routine = null;
@@ -139,11 +144,11 @@ public class GTinkerGraphic : MonoBehaviour{
             StopCoroutine(destroyObject);
             destroyObject = null;
         }
-
+        */
     }
 
 
-    /// <summary>
+        /// <summary>
     /// this function is called when the tinkergraphic is paired to some tinkertext 
     /// and we want have some paired graphical animation for that text
     /// </summary>
@@ -152,10 +157,10 @@ public class GTinkerGraphic : MonoBehaviour{
     public void OnPairedMouseDown(GTinkerText tinkerText)
 	{
 		sceneManager.OnPairedMouseDown(tinkerText);
-        isanimplaying = true;
+/*        isanimplaying = true;
         checkandStoproutines();
         LoadAndPlayAnimation(tinkerText.pairedAnim);
-		 
+	*/	 
 
 	}
 	/// <summary>
@@ -165,7 +170,6 @@ public class GTinkerGraphic : MonoBehaviour{
 	public void OnPairedMouseDown(GTinkerGraphic tinkerGraphic)
 	{
         sceneManager.OnMouseDown (this);
-
 	} 
 
 	// Mouse Currently Down Event
@@ -228,7 +232,7 @@ public class GTinkerGraphic : MonoBehaviour{
 	/// </summary>
 	public void LoadAndPlayAnimation(int pairedAnim){
 		
-		if (dataTinkerGraphic.anim.Length > 0) {
+/*		if (dataTinkerGraphic.anim.Length > 0) {
 
 			//if (dataTinkerGraphic.anim [pairedAnim].onTouch) 
 			{
@@ -240,7 +244,7 @@ public class GTinkerGraphic : MonoBehaviour{
 
 			} 
 
-		}
+		} */
 
 	}
 
@@ -255,7 +259,18 @@ public class GTinkerGraphic : MonoBehaviour{
 	/// <summary>
 	/// Resets the graphic object and triggers the animation play.
 	/// </summary>
-      public void PlayAnimation(){
+    public void PlayAnimation()
+    {
+        SpriteAnimator rcAnimator = gameObject.GetComponent<SpriteAnimator>();
+
+        if ( rcAnimator != null )
+        {
+            rcAnimator.enabled = true;
+            rcAnimator.SetActiveRenderer(true);
+            rcAnimator.Play();
+            return;
+        }
+/*
         //StopAllCoroutines()
         if(current_routine!=null)
         {
@@ -266,7 +281,9 @@ public class GTinkerGraphic : MonoBehaviour{
 		}
 		//transform.position = new Vector3 (dataTinkerGraphic.posX, dataTinkerGraphic.posY);
 		current_routine=StartCoroutine("Animate");
+        */
 	}
+
     public void reset()
     {
         forcestop = true;
@@ -277,7 +294,7 @@ public class GTinkerGraphic : MonoBehaviour{
     /// <summary>
     /// Animate this instance with loaded animation frames.
     /// </summary>
-    IEnumerator Animate()
+/*    IEnumerator Animate()
 	{  
 		currentframe = 0;
 		int i = 1;
@@ -350,8 +367,8 @@ public class GTinkerGraphic : MonoBehaviour{
 		col.isTrigger = true;
 	
 		yield break;
-
-	}
+        
+	}*/
 	public IEnumerator Zoom()
 	{
 		while(this.transform.localScale.x<=final_scale_x && this.transform.localScale.y<=final_scale_y)

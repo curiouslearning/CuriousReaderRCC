@@ -586,7 +586,7 @@ public class BookEditor : EditorWindow
             i_rcGameObject.inText = EditorGUILayout.ToggleLeft("In Text", i_rcGameObject.inText, EditorStyles.textField);
             i_rcGameObject.draggable = EditorGUILayout.ToggleLeft("Draggable?", i_rcGameObject.draggable, EditorStyles.textField);
 
-            ///
+            i_rcGameObject.SpriteAnimation = (Elendow.SpritedowAnimator.SpriteAnimation)EditorGUILayout.ObjectField(i_rcGameObject.SpriteAnimation,typeof(Elendow.SpritedowAnimator.SpriteAnimation),false);
 
             int nRemove = -1;
 
