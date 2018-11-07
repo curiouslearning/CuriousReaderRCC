@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 63965fb620c53d243a5d4434e66eb75c
+guid: 469217521fdc6fc4dab8227e01aaef72
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/10_monkeys_playing_passing_the_sticks_02
-    400000: gameObject/10_monkeys_playing_passing_the_sticks_02/Transform
-    21200000: gameObject/10_monkeys_playing_passing_the_sticks_02/SpriteRenderer
+    100000: gameObject/04_a_small_singing_bird_music-4
+    400000: gameObject/04_a_small_singing_bird_music-4/Transform
+    21200000: gameObject/04_a_small_singing_bird_music-4/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: c315b2229108a5649901470c12252d10
+      spriteID: e14d59db35775aa4fbf76fa85e06c2f0
     PhysicsOutlines: []

@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: d529c466dc8c10845b1ce2a1a011b09e
+guid: 60767718bf7912c4a8cb085443d398c4
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/04_a_small_singing_bird_music01
-    400000: gameObject/04_a_small_singing_bird_music01/Transform
-    21200000: gameObject/04_a_small_singing_bird_music01/SpriteRenderer
+    100000: gameObject/9_giraffe_stand_up-3
+    400000: gameObject/9_giraffe_stand_up-3/Transform
+    2800000: texAtlas
+    21200000: gameObject/9_giraffe_stand_up-3/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -51,5 +52,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: cd8e4a7dbcb253444981652f976f74cc
+      spriteID: c9f903b8492ce014b9e4d21ed2897310
     PhysicsOutlines: []

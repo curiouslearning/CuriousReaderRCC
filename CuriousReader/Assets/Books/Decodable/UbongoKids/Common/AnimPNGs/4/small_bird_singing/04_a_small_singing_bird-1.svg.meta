@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e847a965251ab7b4e8eddefb84468cc6
+guid: fd17fb42b855d05469e9b9b234af8772
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/04_a_small_singing_bird_02
-    400000: gameObject/04_a_small_singing_bird_02/Transform
-    21200000: gameObject/04_a_small_singing_bird_02/SpriteRenderer
+    100000: gameObject/04_a_small_singing_bird-1
+    400000: gameObject/04_a_small_singing_bird-1/Transform
+    21200000: gameObject/04_a_small_singing_bird-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: a56b02402d6dd094ab5ea2704b4241d0
+      spriteID: e70f19641ff7f5a428abfd71508d4aac
     PhysicsOutlines: []

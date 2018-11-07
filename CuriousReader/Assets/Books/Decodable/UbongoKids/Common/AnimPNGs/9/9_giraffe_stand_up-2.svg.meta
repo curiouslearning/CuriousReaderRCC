@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: 0cdc854a622bafd4585b242764dd5eed
+guid: b1c97eab63836c3488509b38fdf08a84
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/10_monkeys_playing_passing_the_sticks_05
-    400000: gameObject/10_monkeys_playing_passing_the_sticks_05/Transform
-    21200000: gameObject/10_monkeys_playing_passing_the_sticks_05/SpriteRenderer
+    100000: gameObject/9_giraffe_stand_up-2
+    400000: gameObject/9_giraffe_stand_up-2/Transform
+    2800000: texAtlas
+    21200000: gameObject/9_giraffe_stand_up-2/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -51,5 +52,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 34c0c4607275aad498149db16d55647e
+      spriteID: 8f68cd7872d746742b07677cc1ed7be0
     PhysicsOutlines: []

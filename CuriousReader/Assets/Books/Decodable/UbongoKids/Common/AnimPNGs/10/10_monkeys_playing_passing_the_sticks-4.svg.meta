@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5496cadeb5e1eab43b592dda1064be4a
+guid: fa6e62eba27f67544bae878a85abddd1
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/10_monkeys_playing_passing_the_sticks_06
-    400000: gameObject/10_monkeys_playing_passing_the_sticks_06/Transform
-    21200000: gameObject/10_monkeys_playing_passing_the_sticks_06/SpriteRenderer
+    100000: gameObject/10_monkeys_playing_passing_the_sticks-4
+    400000: gameObject/10_monkeys_playing_passing_the_sticks-4/Transform
+    21200000: gameObject/10_monkeys_playing_passing_the_sticks-4/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: b2a841ffa3bd4b74f8ad804b3a3082e1
+      spriteID: fecf4aa2164f1a444870f1242145d2a4
     PhysicsOutlines: []

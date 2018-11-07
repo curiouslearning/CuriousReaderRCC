@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 1fb2518496f4e0744ac7a2f38b721e1b
+guid: 5d8c79e0f9f967e4c8e6d1fd6b903082
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/9_giraffe_stand_up_3
-    400000: gameObject/9_giraffe_stand_up_3/Transform
+    100000: gameObject/9_giraffe_stand_up-1
+    400000: gameObject/9_giraffe_stand_up-1/Transform
     2800000: texAtlas
-    21200000: gameObject/9_giraffe_stand_up_3/SpriteRenderer
+    21200000: gameObject/9_giraffe_stand_up-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -52,5 +52,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 6ef6bbbdc1d3b404eacdf1cb41d20103
+      spriteID: ce07e5f36412e7b48b5b82d29d649437
     PhysicsOutlines: []
