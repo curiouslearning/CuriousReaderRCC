@@ -491,13 +491,57 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 	public void CreateGameObject(GameObjectClass gameObjectData)
 	{
-		Vector3 position = new Vector3(gameObjectData.posX, gameObjectData.posY);
+        GameObject go;
+
+        GameObject rcPrefab = ShelfManager.bundleLoaded.LoadAsset<GameObject>(gameObjectData.imageName);
+
+        if ( rcPrefab != null )
+        {
+            go = GameObject.Instantiate(rcPrefab);
+            go.name = gameObjectData.label;
+            SpriteRenderer rcRenderer = go.GetComponent<SpriteRenderer>();
+
+            if ( rcRenderer != null )
+            {
+                Material rcMaterial = rcRenderer.material;
+
+                if ( rcMaterial != null )
+                {
+                    Material rcShader = ShelfManager.bundleLoaded.LoadAsset<Material>(rcMaterial.name.Replace(" (Instance)",""));
+
+                    if (rcMaterial.name.Contains("Unlit_VectorGradient"))
+                    {
+                        rcRenderer.material = new Material(Shader.Find("Unlit/VectorGradient"));
+                    } else if (rcMaterial.name.Contains("Unlit_Vector"))
+                    {
+                        rcRenderer.material = new Material(Shader.Find("Unlit/Vector"));
+                    }
+
+
+                }
+            }
+        }
+        else
+        {
+            go = new GameObject(gameObjectData.label);
+        }
+
+        SpriteRenderer rcRender = go.GetComponent<SpriteRenderer>();
+
+        if ( rcRender == null )
+        {
+            go.AddComponent<SpriteRenderer>();
+            go.GetComponent<SpriteRenderer>().sortingOrder = gameObjectData.orderInLayer;
+        }
+        else
+        {
+            rcRender.sortingOrder = gameObjectData.orderInLayer;
+        }
+
+        Vector3 position = new Vector3(gameObjectData.posX, gameObjectData.posY, gameObjectData.posZ);
 		Vector3 scale = new Vector3(gameObjectData.scaleX, gameObjectData.scaleY);
-		GameObject go = new GameObject(gameObjectData.label);
 		go.transform.position = position;
 		go.transform.localScale = scale;
-		go.AddComponent<SpriteRenderer>();
-		go.GetComponent<SpriteRenderer>().sortingOrder = gameObjectData.orderInLayer;
 		go.AddComponent<GTinkerGraphic>();
 		go.GetComponent<GTinkerGraphic>().dataTinkerGraphic = gameObjectData;
 		go.GetComponent<GTinkerGraphic>().sceneManager = GameObject.Find("SceneManager" + (pageNumber)).GetComponent<GSManager>();
@@ -538,9 +582,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		// BoxCollider col = go.AddComponent<BoxCollider>();
 		col.isTrigger = true;
 		tinkerGraphicObjects.Add(go);
-
 	}
-
 
 	public void LoadAssetFromBundle(string name)
 	{

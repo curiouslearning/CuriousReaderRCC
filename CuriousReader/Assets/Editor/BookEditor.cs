@@ -16,9 +16,14 @@ public class BookEditor : EditorWindow
     public AudioClip m_rcRecordingClip;
     float m_fRecordingStart;
 
-    string m_strBookPath;
+    public string m_strBookPath;
+    string m_strAssetPath;
     string m_strCommonPath;
+    string m_strBookRoot;
     string m_strAnimPath;
+    string m_strImagePath;
+
+    List<string> m_rcImageNames;
 
     Rect[] m_rcAudioRects;
 
@@ -42,38 +47,63 @@ public class BookEditor : EditorWindow
     {
         if (m_rcStoryBook == null)
         {
-            string path = EditorUtility.OpenFilePanel("Find Book File", "", "json");
-
-            if (path.Length != 0)
+            if (!string.IsNullOrEmpty(m_strBookPath))
             {
-                string strBook = File.ReadAllText(path);
+                string strBook = File.ReadAllText(m_strBookPath);
                 m_rcStoryBook = JsonUtility.FromJson<StoryBookJson>(strBook);
 
                 if (m_rcStoryBook != null)
                 {
-                    m_strBookPath = path;
-                    m_strCommonPath = m_strBookPath.Replace(System.IO.Path.GetFileName(m_strBookPath), "");
+                    m_strBookRoot = m_strBookPath;
+                    m_strCommonPath = m_strBookPath.Replace(System.IO.Path.GetFileName(m_strBookRoot), "");
+#if UNITY_EDITOR_OSX
+                    m_strCommonPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strCommonPath).FullName).FullName).FullName + "/Common";
+#endif
+
+#if UNITY_EDITOR_WIN
                     m_strCommonPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strCommonPath).FullName).FullName).FullName + "\\Common";
-
+#endif
                     string strAssetPath = Application.dataPath.Replace("/Assets", "");
-                    m_strAnimPath = m_strCommonPath + "\\AnimPNGs";
-                    m_strAnimPath = m_strAnimPath.Replace(strAssetPath, "").TrimStart('/');
+                    m_strAssetPath = strAssetPath;
+#if UNITY_EDITOR_WIN
+                    m_strAnimPath = m_strCommonPath + "\\Animations";
+                    m_strImagePath = m_strCommonPath + "\\Images";
+#endif
 
+#if UNITY_EDITOR_OSX
+                    m_strAnimPath = m_strCommonPath + "/Animations";
+                    m_strImagePath = m_strCommonPath + "/Images";
+#endif
+                    m_strAnimPath = m_strAnimPath.Replace(strAssetPath, "").TrimStart('/');
 
                     // Allocate each of the audio tracks for each of the pages
                     // NOTE: We might need to do this for sub-audio?  Maybe?
                     m_rcAudioRects = new Rect[m_rcStoryBook.pages.Length];
                     m_rcPageAudio = new AudioClip[m_rcStoryBook.pages.Length];
                 }
+
+                m_rcImageNames = GetImagesInPath(m_strCommonPath);
+
             }
             return;
         }
 
+        GUILayout.BeginHorizontal();
         GUILayout.Label("Book Editor", EditorStyles.boldLabel);
+
+        if (GUILayout.Button("Add Images To AssetBundle"))
+        {
+            Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+            AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+            AddImagesInPath(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+        }
+        GUILayout.EndHorizontal();
+
 
         if (!string.IsNullOrEmpty(m_strBookPath)) GUILayout.Label(m_strBookPath);
         if (!string.IsNullOrEmpty(m_strCommonPath)) GUILayout.Label(m_strCommonPath);
         if (!string.IsNullOrEmpty(m_strAnimPath)) GUILayout.Label(m_strAnimPath);
+        if (!string.IsNullOrEmpty(m_strAssetPath)) GUILayout.Label(m_strAssetPath);
 
         m_vScrollPosition = GUILayout.BeginScrollView(m_vScrollPosition);
 
@@ -114,7 +144,7 @@ public class BookEditor : EditorWindow
         }
 
         GUILayout.BeginHorizontal();
-        GUILayout.Space((EditorGUI.indentLevel+1) * 10);
+        GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
         if (GUILayout.Button("Add Page"))
         {
             PageClass[] rcNewArray = new PageClass[m_rcStoryBook.pages.Length + 1];
@@ -142,12 +172,12 @@ public class BookEditor : EditorWindow
         }
         GUILayout.EndHorizontal();
 
-        if ( GUILayout.Button("Save JSON") )
+        if (GUILayout.Button("Save JSON"))
         {
             Debug.Log(m_strBookPath + " file to be saved.");
 
             StreamWriter rcWriter = new StreamWriter(m_strBookPath, false);
-            rcWriter.Write(JsonUtility.ToJson(m_rcStoryBook,true));
+            rcWriter.Write(JsonUtility.ToJson(m_rcStoryBook, true));
             rcWriter.Close();
         }
 
@@ -202,7 +232,7 @@ public class BookEditor : EditorWindow
 
                 m_rcPageAudio[i_nOrdinal] = AssetDatabase.LoadAssetAtPath<AudioClip>(strPath);
 
-                if ( m_rcPageAudio[i_nOrdinal] != null )
+                if (m_rcPageAudio[i_nOrdinal] != null)
                 {
                     m_rcAudioRects[i_nOrdinal] = EditorGUILayout.GetControlRect(false, 100.0f);
                     m_rcAudioRects[i_nOrdinal].xMin = 20.0f;
@@ -251,7 +281,7 @@ public class BookEditor : EditorWindow
                     i_rcPage.timestamps = i_rcPage.timestamps.RemoveAt(nDelete);
                 }
 
-                if ( m_rcPageAudio[i_nOrdinal] != null )
+                if (m_rcPageAudio[i_nOrdinal] != null)
                 {
                     DrawTextOnAudioClip(m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], i_rcPage.timestamps, i_rcPage.texts);
                 }
@@ -307,7 +337,7 @@ public class BookEditor : EditorWindow
             }
 
             GUILayout.BeginHorizontal();
-            GUILayout.Space((EditorGUI.indentLevel+1) * 10);
+            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
             if (GUILayout.Button("Add GameObject"))
             {
                 GameObjectClass[] rcNewArray = new GameObjectClass[i_rcPage.gameObjects.Length + 1];
@@ -348,7 +378,7 @@ public class BookEditor : EditorWindow
             }
 
             GUILayout.BeginHorizontal();
-            GUILayout.Space((EditorGUI.indentLevel+1) * 10);
+            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
             if (GUILayout.Button("Add Text"))
             {
                 TextClass[] rcNewArray = new TextClass[i_rcPage.texts.Length + 1];
@@ -388,7 +418,7 @@ public class BookEditor : EditorWindow
             }
 
             GUILayout.BeginHorizontal();
-            GUILayout.Space((EditorGUI.indentLevel+1) * 10);
+            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
             if (GUILayout.Button("Add Trigger"))
             {
                 TriggerClass[] rcNewArray = new TriggerClass[i_rcPage.triggers.Length + 1];
@@ -456,17 +486,17 @@ public class BookEditor : EditorWindow
 
         if (i_rcTimestamp.Show)
         {
-            if ( i_rcTimestamp.SubClip == null )
+            if (i_rcTimestamp.SubClip == null)
             {
-                i_rcTimestamp.SubClip = MakeSubclip(i_rcClip,i_rcTimestamp.AudioData, i_rcTimestamp.start / 1000.0f, i_rcTimestamp.end / 1000.0f);
+                i_rcTimestamp.SubClip = MakeSubclip(i_rcClip, i_rcTimestamp.AudioData, i_rcTimestamp.start / 1000.0f, i_rcTimestamp.end / 1000.0f);
 
-                string strPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "Audio/Stanza/TimeStamp" + i_nOrdinal + ".ogg" );
+                string strPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "Audio/Stanza/TimeStamp" + i_nOrdinal + ".ogg");
                 string strAssetPath = Application.dataPath.Replace("/Assets", "");
                 strPath = strPath.Replace(strAssetPath, "").TrimStart('/');
 
                 Debug.Log(strPath);
 
-//                AssetDatabase.CreateAsset(i_rcTimestamp.SubClip, strPath);
+                //                AssetDatabase.CreateAsset(i_rcTimestamp.SubClip, strPath);
             }
 
             if (i_rcTimestamp.SubClip != null)
@@ -489,7 +519,7 @@ public class BookEditor : EditorWindow
             i_rcTimestamp.audio = EditorGUILayout.TextField("Audio", i_rcTimestamp.audio, EditorStyles.textField);
             i_rcTimestamp.wordIdx = EditorGUILayout.IntField("Word Index", i_rcTimestamp.wordIdx, EditorStyles.numberField);
 
-            if ( i_rcClip != null )
+            if (i_rcClip != null)
             {
                 DrawTimestamp(i_rcClip, i_rcRect, i_rcTimestamp.start, i_rcTimestamp.end);
             }
@@ -543,18 +573,31 @@ public class BookEditor : EditorWindow
             GUILayout.BeginHorizontal();
             GUILayout.BeginVertical();
             i_rcGameObject.id = EditorGUILayout.IntField("ID", i_rcGameObject.id, EditorStyles.numberField);
+
+            if ( m_rcImageNames != null )
+            {
+                if (m_rcImageNames.Contains(i_rcGameObject.imageName))
+                {
+                    i_rcGameObject.ImageIndex = m_rcImageNames.IndexOf(i_rcGameObject.imageName);
+
+                    i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
+                    i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
+                }
+            }
+
             i_rcGameObject.imageName = EditorGUILayout.TextField("Image Name", i_rcGameObject.imageName, EditorStyles.textField);
+
             i_rcGameObject.label = EditorGUILayout.TextField("Label", i_rcGameObject.label, EditorStyles.textField);
             i_rcGameObject.tag = EditorGUILayout.TextField("Tag", i_rcGameObject.tag, EditorStyles.textField);
             i_rcGameObject.destroyOnCollision = EditorGUILayout.TextField("Destroy On Collision", i_rcGameObject.destroyOnCollision, EditorStyles.textField);
             i_rcGameObject.posX = EditorGUILayout.FloatField("Pos X", i_rcGameObject.posX, EditorStyles.numberField);
             i_rcGameObject.posY = EditorGUILayout.FloatField("Pos Y", i_rcGameObject.posY, EditorStyles.numberField);
+            i_rcGameObject.posZ = EditorGUILayout.FloatField("Pos Z", i_rcGameObject.posZ, EditorStyles.numberField);
             i_rcGameObject.scaleX = EditorGUILayout.FloatField("Scale X", i_rcGameObject.scaleX, EditorStyles.numberField);
             i_rcGameObject.scaleY = EditorGUILayout.FloatField("Scale Y", i_rcGameObject.scaleY, EditorStyles.numberField);
             i_rcGameObject.orderInLayer = EditorGUILayout.IntField("Order In Layer", i_rcGameObject.orderInLayer, EditorStyles.numberField);
-            i_rcGameObject.inText = EditorGUILayout.Toggle("In Text?", i_rcGameObject.inText, EditorStyles.numberField);
-            i_rcGameObject.draggable = EditorGUILayout.Toggle("Draggable?", i_rcGameObject.draggable, EditorStyles.numberField);
-
+            i_rcGameObject.inText = EditorGUILayout.ToggleLeft("In Text", i_rcGameObject.inText, EditorStyles.textField);
+            i_rcGameObject.draggable = EditorGUILayout.ToggleLeft("Draggable?", i_rcGameObject.draggable, EditorStyles.textField);
 
             ///
 
@@ -621,7 +664,7 @@ public class BookEditor : EditorWindow
 
                     Rect rcControl = EditorGUILayout.GetControlRect(GUILayout.MinWidth(300.0f), GUILayout.MinHeight(300.0f));
 
-                    if ( rcGo != null )
+                    if (rcGo != null)
                     {
                         Texture2D rcTexture = AssetPreview.GetAssetPreview(rcGo);
 
@@ -632,25 +675,25 @@ public class BookEditor : EditorWindow
                     }
 
 
-/*                    if (strPath.Contains(".svg") || strPath.Contains(".SVG"))
-                    {
+                    /*                    if (strPath.Contains(".svg") || strPath.Contains(".SVG"))
+                                        {
 
-                        string strContents = File.ReadAllText(strPath);
+                                            string strContents = File.ReadAllText(strPath);
 
-                        // Dynamically import the SVG data, and tessellate the resulting vector scene.
-                        var sceneInfo = SVGParser.ImportSVG(new StringReader(strContents));
-                        var geoms = VectorUtils.TessellateScene(sceneInfo.Scene, tessOptions);
+                                            // Dynamically import the SVG data, and tessellate the resulting vector scene.
+                                            var sceneInfo = SVGParser.ImportSVG(new StringReader(strContents));
+                                            var geoms = VectorUtils.TessellateScene(sceneInfo.Scene, tessOptions);
 
-                        // Build a sprite with the tessellated geometry.
-                        var sprite = VectorUtils.BuildSprite(geoms, 10.0f, VectorUtils.Alignment.Center, Vector2.zero, 128);
+                                            // Build a sprite with the tessellated geometry.
+                                            var sprite = VectorUtils.BuildSprite(geoms, 10.0f, VectorUtils.Alignment.Center, Vector2.zero, 128);
 
-                        //                        Texture rcTexture = (Texture)AssetDatabase.LoadAssetAtPath(strPath, typeof(Texture));
+                                            //                        Texture rcTexture = (Texture)AssetDatabase.LoadAssetAtPath(strPath, typeof(Texture));
 
 
-                        var mat = new Material(Shader.Find("Unlit/Vector"));
+                                            var mat = new Material(Shader.Find("Unlit/Vector"));
 
-                        Texture2D rcText = VectorUtils.RenderSpriteToTexture2D(sprite, (int)rcControl.width, (int)rcControl.height, mat);
-                    }*/
+                                            Texture2D rcText = VectorUtils.RenderSpriteToTexture2D(sprite, (int)rcControl.width, (int)rcControl.height, mat);
+                                        }*/
                 }
             }
 
@@ -707,7 +750,7 @@ public class BookEditor : EditorWindow
             }
 
             GUILayout.BeginHorizontal();
-            GUILayout.Space((EditorGUI.indentLevel+1) * 10);
+            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
             if (GUILayout.Button("Add secPerFrame"))
             {
                 float[] rcNewArray = new float[i_rcAnim.secPerFrame.Length + 1];
@@ -732,7 +775,7 @@ public class BookEditor : EditorWindow
 
                 EditorGUILayout.BeginVertical();
 
-                if ( GUILayout.Button("Remove"))
+                if (GUILayout.Button("Remove"))
                 {
                     nRemove = i;
                 }
@@ -741,13 +784,13 @@ public class BookEditor : EditorWindow
                 EditorGUILayout.EndHorizontal();
             }
 
-            if ( nRemove != -1)
+            if (nRemove != -1)
             {
                 i_rcAnim.sequences = i_rcAnim.sequences.RemoveAt(nRemove);
             }
 
             GUILayout.BeginHorizontal();
-            GUILayout.Space((EditorGUI.indentLevel+1) * 10);
+            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
             if (GUILayout.Button("Add Sequence"))
             {
                 Sequence[] rcNewArray = new Sequence[i_rcAnim.sequences.Length + 1];
@@ -776,7 +819,7 @@ public class BookEditor : EditorWindow
             i_rcSequence.endFrame = EditorGUILayout.IntField("End Frame", i_rcSequence.endFrame, EditorStyles.numberField);
             i_rcSequence.noOfLoops = EditorGUILayout.IntField("Num of Loops", i_rcSequence.noOfLoops, EditorStyles.numberField);
 
-            if ( i_rcSequence.movable != null )
+            if (i_rcSequence.movable != null)
             {
                 i_rcSequence.movable.speed = EditorGUILayout.FloatField("Speed", i_rcSequence.movable.speed, EditorStyles.numberField);
                 i_rcSequence.movable.finalx = EditorGUILayout.FloatField("FinalX", i_rcSequence.movable.finalx, EditorStyles.numberField);
@@ -932,7 +975,7 @@ public class BookEditor : EditorWindow
         }
     }
 
-    private AudioClip MakeSubclip(AudioClip i_rcClip,float [] i_rcData, float i_fStart, float i_fStop)
+    private AudioClip MakeSubclip(AudioClip i_rcClip, float[] i_rcData, float i_fStart, float i_fStop)
     {
         m_rcTempAudioClip = i_rcClip;
 
@@ -950,16 +993,16 @@ public class BookEditor : EditorWindow
 
     void OnAudioRead(float[] data)
     {
-        m_rcTempAudioClip.GetData(data,(int)(m_rcTempAudioClip.frequency * 0.3f));
+        m_rcTempAudioClip.GetData(data, (int)(m_rcTempAudioClip.frequency * 0.3f));
 
-/*        int position = 0;
-        int count = 0;
-        while (count < data.Length)
-        {
-            data[count] = Mathf.Sign(Mathf.Sin(2 * Mathf.PI * 440.0f * position / 48000));
-            position++;
-            count++;
-        } */
+        /*        int position = 0;
+                int count = 0;
+                while (count < data.Length)
+                {
+                    data[count] = Mathf.Sign(Mathf.Sin(2 * Mathf.PI * 440.0f * position / 48000));
+                    position++;
+                    count++;
+                } */
     }
 
     void OnAudioSetPosition(int newPosition)
@@ -967,21 +1010,71 @@ public class BookEditor : EditorWindow
         int position = newPosition;
     }
 
-
-[MenuItem("Window/Book Editor")]
-    public static void ShowWindow()
+    public List<string> GetImagesInPath(string i_strPath)
     {
-        EditorWindow.GetWindow(typeof(BookEditor));
+        List<string> rcFiles = new List<string>();
+        string[] allowedExtensions = new string[] { "*.svg", "*.png", "prefab_*" };
+        string[] Directories = Directory.GetDirectories(i_strPath);
+
+        foreach (string strDir in Directories)
+        {
+            List<string> rcReturnFiles = GetImagesInPath(strDir);
+
+            if (rcReturnFiles != null)
+            {
+                foreach (string strFile in rcReturnFiles)
+                {
+                    rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+                }
+            }
+        }
+
+        foreach (string strType in allowedExtensions)
+        {
+            foreach (string strFile in Directory.GetFiles(i_strPath, strType))
+            {
+                rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+            }
+        }
+
+        return rcFiles;
     }
 
-    // Use this for initialization
-    void Start ()
-    {   
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public void AddImagesInPath(string i_strPath)
+    {
+        string[] allowedExtensions = new string[] { "*.svg", "*.png" };
+        string[] Directories = Directory.GetDirectories(i_strPath);
+
+        foreach (string strDir in Directories)
+        {
+            AddImagesInPath(strDir);
+        }
+
+        foreach (string strType in allowedExtensions)
+        {
+            foreach (string strFile in Directory.GetFiles(i_strPath, strType))
+            {
+                AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant("differentplaces", "");
+            }
+        }
+    }
+}
+
+public class OpenBookEditor
+{
+    [MenuItem("Window/Book Editor")]
+    static void ShowWindow()
+    {
+
+     string path = EditorUtility.OpenFilePanel("Find Book File", "", "json");
+
+        if (path.Length != 0)
+        {
+            Debug.Log(path);
+
+            BookEditor rcEditor = (BookEditor)EditorWindow.GetWindow(typeof(BookEditor));
+            rcEditor.m_strBookPath = path;
+            rcEditor.Show();
+        }
+    }
 }
