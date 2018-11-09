@@ -82,7 +82,7 @@ public class BookEditor : EditorWindow
                     m_rcPageAudio = new AudioClip[m_rcStoryBook.pages.Length];
                 }
 
-                m_rcImageNames = GetImagesInPath(m_strCommonPath);
+                m_rcImageNames = GetImagesInPath(m_strCommonPath,"-1");
 
             }
             return;
@@ -186,8 +186,17 @@ public class BookEditor : EditorWindow
 
     private void EditPage(PageClass i_rcPage, int i_nOrdinal)
     {
-        i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber));
-
+        if (i_rcPage.texts != null)
+        {
+            if ( i_rcPage.texts[0] != null )
+            {
+                i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber + " - " + i_rcPage.texts[0].text ));
+            }
+        }
+        else
+        {
+            i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber));
+        }
         EditorGUI.indentLevel++;
 
         if (i_rcPage.Show)
@@ -583,6 +592,11 @@ public class BookEditor : EditorWindow
                     i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
                     i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
                 }
+                else
+                {
+                    i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
+                    i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
+                }
             }
 
             i_rcGameObject.imageName = EditorGUILayout.TextField("Image Name", i_rcGameObject.imageName, EditorStyles.textField);
@@ -716,6 +730,7 @@ public class BookEditor : EditorWindow
             i_rcAnim.animName = EditorGUILayout.TextField("Anim Name", i_rcAnim.animName, EditorStyles.textField);
             i_rcAnim.startX = EditorGUILayout.IntField("Start X", i_rcAnim.startX, EditorStyles.numberField);
             i_rcAnim.startY = EditorGUILayout.IntField("Start Y", i_rcAnim.startY, EditorStyles.numberField);
+            i_rcAnim.startZ = EditorGUILayout.IntField("Start Z", i_rcAnim.startZ, EditorStyles.numberField);
             i_rcAnim.startIndex = EditorGUILayout.IntField("Start Index", i_rcAnim.startIndex, EditorStyles.numberField);
             i_rcAnim.endIndex = EditorGUILayout.IntField("End Index", i_rcAnim.endIndex, EditorStyles.numberField);
             i_rcAnim.onStart = EditorGUILayout.ToggleLeft("On Start", i_rcAnim.onStart, EditorStyles.textField);
@@ -1010,7 +1025,7 @@ public class BookEditor : EditorWindow
         int position = newPosition;
     }
 
-    public List<string> GetImagesInPath(string i_strPath)
+    public List<string> GetImagesInPath(string i_strPath, string i_strPattern="")
     {
         List<string> rcFiles = new List<string>();
         string[] allowedExtensions = new string[] { "*.svg", "*.png", "prefab_*" };
@@ -1018,7 +1033,7 @@ public class BookEditor : EditorWindow
 
         foreach (string strDir in Directories)
         {
-            List<string> rcReturnFiles = GetImagesInPath(strDir);
+            List<string> rcReturnFiles = GetImagesInPath(strDir,i_strPattern);
 
             if (rcReturnFiles != null)
             {
@@ -1033,7 +1048,17 @@ public class BookEditor : EditorWindow
         {
             foreach (string strFile in Directory.GetFiles(i_strPath, strType))
             {
-                rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+                if (string.IsNullOrEmpty(i_strPattern))
+                {
+                    rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+                }
+                else
+                {
+                    if ( strFile.Contains(i_strPattern))
+                    {
+                        rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+                    }
+                }
             }
         }
 

@@ -9,7 +9,8 @@ public class Anim
     public string animName;
 	public int startX;
 	public int startY;
-	public int startIndex;
+    public int startZ;
+    public int startIndex;
 	public int endIndex;
 	public bool onTouch;
 	public bool onStart;
