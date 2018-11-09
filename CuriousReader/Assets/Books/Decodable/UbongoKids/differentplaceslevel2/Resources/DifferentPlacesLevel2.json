@@ -28,7 +28,7 @@
                     "scaleX": 800.0,
                     "scaleY": 800.0,
                     "orderInLayer": 0,
-                    "imageName": "1_day_bg-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "day1",
                     "destroyOnCollision": "",
@@ -130,7 +130,7 @@
                     "scaleX": 900.0,
                     "scaleY": 900.0,
                     "orderInLayer": 0,
-                    "imageName": "1_day_bg-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "backdrop",
                     "destroyOnCollision": "",
@@ -146,7 +146,7 @@
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "orderInLayer": 0,
-                    "imageName": "2_big_thunderstorm_cloud-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "thundercloud",
                     "destroyOnCollision": "",
@@ -162,7 +162,7 @@
                     "scaleX": 75.0,
                     "scaleY": 75.0,
                     "orderInLayer": 0,
-                    "imageName": "2_small_fluffy_cloud-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "smallcloud",
                     "destroyOnCollision": "",
@@ -283,7 +283,7 @@
                     "scaleX": 900.0,
                     "scaleY": 900.0,
                     "orderInLayer": 0,
-                    "imageName": "1_day_bg-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "background",
                     "destroyOnCollision": "",
@@ -651,7 +651,7 @@
                     "scaleX": 900.0,
                     "scaleY": 900.0,
                     "orderInLayer": 0,
-                    "imageName": "1_day_bg-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "background",
                     "destroyOnCollision": "",
@@ -771,7 +771,7 @@
                     "scaleX": 200.0,
                     "scaleY": 200.0,
                     "orderInLayer": 0,
-                    "imageName": "5_sun-01",
+                    "imageName": "5_sun-1",
                     "inText": false,
                     "label": "sun",
                     "destroyOnCollision": "",
@@ -787,7 +787,7 @@
                     "scaleX": 75.0,
                     "scaleY": 75.0,
                     "orderInLayer": 0,
-                    "imageName": "5_moon-01",
+                    "imageName": "5_moon-1",
                     "inText": false,
                     "label": "moon",
                     "destroyOnCollision": "",
@@ -803,9 +803,25 @@
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "orderInLayer": 0,
-                    "imageName": "05_star_vibrates-01",
+                    "imageName": "5_star-1",
                     "inText": false,
                     "label": "star",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 100.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "orderInLayer": 0,
+                    "imageName": "7_between_day_bg_night_bg-1",
+                    "inText": false,
+                    "label": "background",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
@@ -1626,7 +1642,70 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "water",
+                    "posX": -48.0,
+                    "posY": -64.0,
+                    "posZ": 100.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "orderInLayer": 0,
+                    "imageName": "13_water_wave-1",
+                    "inText": false,
+                    "label": "water",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "13_water_wave",
+                            "startX": -48,
+                            "startY": -64,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                0.5
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 5,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 105.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "orderInLayer": 0,
+                    "imageName": "7_between_day_bg_night_bg-1",
+                    "inText": false,
+                    "label": "background",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -1671,7 +1750,24 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 15,
