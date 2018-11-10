@@ -233,7 +233,7 @@ public class GTinkerGraphic : MonoBehaviour{
 			//if (dataTinkerGraphic.anim [pairedAnim].onTouch) 
 			{
 				
-				LoadAssetFromJSON.LoadAssetImages(this, dataTinkerGraphic.anim[pairedAnim].animName, dataTinkerGraphic.anim[pairedAnim].startIndex,dataTinkerGraphic.anim[pairedAnim].endIndex,dataTinkerGraphic.anim[pairedAnim].startX,dataTinkerGraphic.anim[pairedAnim].startY);
+                LoadAssetFromJSON.LoadAssetImages(this, dataTinkerGraphic.anim[pairedAnim].animName, dataTinkerGraphic.anim[pairedAnim].startIndex,dataTinkerGraphic.anim[pairedAnim].endIndex,dataTinkerGraphic.anim[pairedAnim].startX,dataTinkerGraphic.anim[pairedAnim].startY, dataTinkerGraphic.anim[pairedAnim].startZ);
 				secPerFrame = dataTinkerGraphic.anim [pairedAnim].secPerFrame;
 				sequences = dataTinkerGraphic.anim [pairedAnim].sequences;
 				PlayAnimation();

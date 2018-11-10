@@ -28,7 +28,7 @@
                     "scaleX": 800.0,
                     "scaleY": 800.0,
                     "orderInLayer": 0,
-                    "imageName": "1_day_bg-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "day1",
                     "destroyOnCollision": "",
@@ -130,7 +130,7 @@
                     "scaleX": 900.0,
                     "scaleY": 900.0,
                     "orderInLayer": 0,
-                    "imageName": "1_day_bg-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "backdrop",
                     "destroyOnCollision": "",
@@ -146,7 +146,7 @@
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "orderInLayer": 0,
-                    "imageName": "2_big_thunderstorm_cloud-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "thundercloud",
                     "destroyOnCollision": "",
@@ -162,7 +162,7 @@
                     "scaleX": 75.0,
                     "scaleY": 75.0,
                     "orderInLayer": 0,
-                    "imageName": "2_small_fluffy_cloud-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "smallcloud",
                     "destroyOnCollision": "",
@@ -283,7 +283,7 @@
                     "scaleX": 900.0,
                     "scaleY": 900.0,
                     "orderInLayer": 0,
-                    "imageName": "1_day_bg-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "background",
                     "destroyOnCollision": "",
@@ -310,6 +310,7 @@
                             "animName": "03_big_bird_flapping",
                             "startX": -120,
                             "startY": 0,
+                            "startZ": 0,
                             "startIndex": 0,
                             "endIndex": 2,
                             "onTouch": true,
@@ -354,6 +355,7 @@
                             "animName": "03_a_small_bird_flapping",
                             "startX": 120,
                             "startY": 0,
+                            "startZ": 0,
                             "startIndex": 0,
                             "endIndex": 2,
                             "onTouch": true,
@@ -496,6 +498,7 @@
                             "animName": "04_a_big_bird_flying",
                             "startX": 900,
                             "startY": 0,
+                            "startZ": 0,
                             "startIndex": 0,
                             "endIndex": 2,
                             "onTouch": true,
@@ -540,6 +543,7 @@
                             "animName": "04_a_small_singing_bird",
                             "startX": 0,
                             "startY": 0,
+                            "startZ": 0,
                             "startIndex": 0,
                             "endIndex": 2,
                             "onTouch": true,
@@ -567,6 +571,7 @@
                             "animName": "03_a_small_bird_flapping",
                             "startX": 0,
                             "startY": 0,
+                            "startZ": 0,
                             "startIndex": 0,
                             "endIndex": 2,
                             "onTouch": true,
@@ -611,6 +616,7 @@
                             "animName": "04_a_small_singing_bird_music",
                             "startX": 60,
                             "startY": 60,
+                            "startZ": 0,
                             "startIndex": 0,
                             "endIndex": 3,
                             "onTouch": true,
@@ -645,7 +651,7 @@
                     "scaleX": 900.0,
                     "scaleY": 900.0,
                     "orderInLayer": 0,
-                    "imageName": "1_day_bg-01",
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "background",
                     "destroyOnCollision": "",
@@ -765,7 +771,7 @@
                     "scaleX": 200.0,
                     "scaleY": 200.0,
                     "orderInLayer": 0,
-                    "imageName": "5_sun-01",
+                    "imageName": "5_sun-1",
                     "inText": false,
                     "label": "sun",
                     "destroyOnCollision": "",
@@ -781,7 +787,7 @@
                     "scaleX": 75.0,
                     "scaleY": 75.0,
                     "orderInLayer": 0,
-                    "imageName": "5_moon-01",
+                    "imageName": "5_moon-1",
                     "inText": false,
                     "label": "moon",
                     "destroyOnCollision": "",
@@ -797,9 +803,25 @@
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "orderInLayer": 0,
-                    "imageName": "05_star_vibrates-01",
+                    "imageName": "5_star-1",
                     "inText": false,
                     "label": "star",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 100.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "orderInLayer": 0,
+                    "imageName": "7_between_day_bg_night_bg-1",
+                    "inText": false,
+                    "label": "background",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
@@ -862,7 +884,7 @@
                     "scaleX": 100.0,
                     "scaleY": 100.0,
                     "orderInLayer": 0,
-                    "imageName": "06_star_twinkles-01",
+                    "imageName": "06_star_twinkles-1",
                     "inText": false,
                     "label": "star",
                     "destroyOnCollision": "",
@@ -875,15 +897,44 @@
                     "posX": -120.0,
                     "posY": 0.0,
                     "posZ": 0.0,
-                    "scaleX": 100.0,
-                    "scaleY": 100.0,
+                    "scaleX": 40.0,
+                    "scaleY": 40.0,
                     "orderInLayer": 0,
-                    "imageName": "06_sunligh-01",
+                    "imageName": "06_sunlight-1",
                     "inText": false,
                     "label": "sun",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "06_sunlight",
+                            "startX": -120,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 2,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.5,
+                                1.0,
+                                0.5
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 2,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "texts": [
@@ -906,7 +957,7 @@
                     "wordIdx": 1,
                     "audio": "",
                     "end": 1384,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1384,
@@ -937,7 +988,16 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 6,
@@ -1174,6 +1234,7 @@
                             "animName": "9_giraffe_stand_up",
                             "startX": 0,
                             "startY": -30,
+                            "startZ": 0,
                             "startIndex": 0,
                             "endIndex": 3,
                             "onTouch": false,
@@ -1379,7 +1440,7 @@
                     "scaleX": 45.0,
                     "scaleY": 45.0,
                     "orderInLayer": 0,
-                    "imageName": "10_monkeys_playing_passing_the_sticks_01",
+                    "imageName": "10_monkeys_playing_passing_the_sticks-1",
                     "inText": false,
                     "label": "monkeys",
                     "destroyOnCollision": "",
@@ -1390,6 +1451,7 @@
                             "animName": "10_monkeys_playing_passing_the_sticks",
                             "startX": 0,
                             "startY": 0,
+                            "startZ": 0,
                             "startIndex": 0,
                             "endIndex": 7,
                             "onTouch": true,
@@ -1580,7 +1642,70 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "water",
+                    "posX": -48.0,
+                    "posY": -64.0,
+                    "posZ": 100.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "orderInLayer": 0,
+                    "imageName": "13_water_wave-1",
+                    "inText": false,
+                    "label": "water",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "13_water_wave",
+                            "startX": -48,
+                            "startY": -64,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                0.5
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 5,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 105.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "orderInLayer": 0,
+                    "imageName": "7_between_day_bg_night_bg-1",
+                    "inText": false,
+                    "label": "background",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -1625,7 +1750,24 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 15,
@@ -1635,7 +1777,106 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 120.0,
+                    "posY": 60.0,
+                    "posZ": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "orderInLayer": 0,
+                    "imageName": "14_big_boat_moves_fast-1",
+                    "inText": false,
+                    "label": "bigboat",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "14_big_boat_moves_fast",
+                            "startX": 120,
+                            "startY": 60,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 5,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 5,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": -120.0,
+                                        "finaly": 60.0,
+                                        "speed": -20.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "smallboat",
+                    "posX": 120.0,
+                    "posY": 120.0,
+                    "posZ": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "orderInLayer": 0,
+                    "imageName": "14_small_boat_moves_slowly-1",
+                    "inText": false,
+                    "label": "smallboat",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "14_small_boat_moves_slowly",
+                            "startX": 120,
+                            "startY": 120,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 7,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 7,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": -120.0,
+                                        "finaly": 120.0,
+                                        "speed": -20.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -1680,7 +1921,16 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 16,
@@ -1786,7 +2036,220 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -115.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 45.0,
+                    "scaleY": 45.0,
+                    "orderInLayer": 0,
+                    "imageName": "17_big_octopus_move_flap_legs-1",
+                    "inText": false,
+                    "label": "bigoctopus",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "17_big_octopus_move_flap_legs",
+                            "startX": -115,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 5,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 5,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "animName": "17_highlight_the_big_octopus",
+                            "startX": -115,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 1,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.5,
+                                0.5
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 1,
+                                    "noOfLoops": 3,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "smalloctopus",
+                    "posX": 135.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 40.0,
+                    "scaleY": 40.0,
+                    "orderInLayer": 0,
+                    "imageName": "17_small_octopus_move_flap_legs-1",
+                    "inText": false,
+                    "label": "smalloctopus",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "17_small_octopus_move_flap_legs",
+                            "startX": 135,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 5,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 5,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "animName": "17_highlight_the_small_octopus",
+                            "startX": 135,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 1,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.5,
+                                0.5
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 1,
+                                    "noOfLoops": 3,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "water",
+                    "posX": -48.0,
+                    "posY": -64.0,
+                    "posZ": 100.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "orderInLayer": 0,
+                    "imageName": "13_water_wave-1",
+                    "inText": false,
+                    "label": "water",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "13_water_wave",
+                            "startX": -48,
+                            "startY": -64,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": true,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1000,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "sky",
+                    "posX": 0.0,
+                    "posY": -30.0,
+                    "posZ": 105.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "orderInLayer": 0,
+                    "imageName": "7_between_day_bg_night_bg-1",
+                    "inText": false,
+                    "label": "sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -1824,7 +2287,40 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 1,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 1,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 19,
@@ -1834,7 +2330,54 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 100.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "orderInLayer": 0,
+                    "imageName": "18_bobbing_together-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "18_bobbing_together",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -1879,7 +2422,24 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 20,
