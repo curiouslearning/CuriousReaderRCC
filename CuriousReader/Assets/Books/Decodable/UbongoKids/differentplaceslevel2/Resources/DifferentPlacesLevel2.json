@@ -1148,12 +1148,12 @@
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
                     "orderInLayer": 0,
                     "imageName": "8_all_the_forest_trees-01",
                     "inText": false,
-                    "label": "",
+                    "label": "Forest",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
@@ -1875,6 +1875,68 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": 2,
+                    "tag": "water",
+                    "posX": -48.0,
+                    "posY": -64.0,
+                    "posZ": 100.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "orderInLayer": 0,
+                    "imageName": "13_water_wave-1",
+                    "inText": false,
+                    "label": "water",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "13_water_wave",
+                            "startX": -48,
+                            "startY": -64,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": true,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1000,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "sky",
+                    "posX": 0.0,
+                    "posY": -30.0,
+                    "posZ": 105.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "orderInLayer": 0,
+                    "imageName": "7_between_day_bg_night_bg-1",
+                    "inText": false,
+                    "label": "sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
                 }
             ],
             "texts": [
@@ -1988,7 +2050,132 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -120.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "orderInLayer": 0,
+                    "imageName": "16_the_happy_fish_smiles-1",
+                    "inText": false,
+                    "label": "happyfish",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "16_the_happy_fish_smiles",
+                            "startX": -120,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 120.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "orderInLayer": 0,
+                    "imageName": "16_sad_face_on_the_little_fish-1",
+                    "inText": false,
+                    "label": "sadfish",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "16_sad_face_on_the_little_fish",
+                            "startX": 120,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "water",
+                    "posX": -48.0,
+                    "posY": -64.0,
+                    "posZ": 100.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "orderInLayer": 0,
+                    "imageName": "13_water_wave-1",
+                    "inText": false,
+                    "label": "water",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 3,
+                    "tag": "sky",
+                    "posX": 0.0,
+                    "posY": -30.0,
+                    "posZ": 105.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "orderInLayer": 0,
+                    "imageName": "7_between_day_bg_night_bg-1",
+                    "inText": false,
+                    "label": "sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -2026,7 +2213,24 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                },
+                {
+                    "stanzaID": 0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 18,
@@ -2490,7 +2694,24 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -40.0,
+                    "posZ": 100.0,
+                    "scaleX": 45.0,
+                    "scaleY": 45.0,
+                    "orderInLayer": 0,
+                    "imageName": "20_Akili_s_house_bg-1",
+                    "inText": false,
+                    "label": "akilishouse",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -2552,7 +2773,54 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "orderInLayer": 0,
+                    "imageName": "20_Akili_takes_food_and_eat-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "20_Akili_takes_food_and_eat",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": true,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.5,
+                                0.5,
+                                0.5,
+                                0.5
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -2583,7 +2851,16 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 23,
@@ -2593,7 +2870,58 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "orderInLayer": 0,
+                    "imageName": "21_Akili_smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "21_Akili_smiles_and_jumps",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 7,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 7,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
@@ -2631,7 +2959,16 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3
+                }
+            ]
         },
         {
             "pageNumber": 24,
