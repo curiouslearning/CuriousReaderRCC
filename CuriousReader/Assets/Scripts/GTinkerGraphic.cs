@@ -247,7 +247,7 @@ public class GTinkerGraphic : MonoBehaviour{
 	public void ResetandZoom()
 	{
         forcestop = true;
-        this.gameObject.transform.position = new Vector3 (dataTinkerGraphic.posX,dataTinkerGraphic.posY,0);
+        this.gameObject.transform.position = new Vector3 (dataTinkerGraphic.posX,dataTinkerGraphic.posY,dataTinkerGraphic.posZ);
 		LoadAssetFromJSON.LoadAssetImage (this,dataTinkerGraphic.imageName);
 		StartCoroutine (Zoom());
         
@@ -270,7 +270,7 @@ public class GTinkerGraphic : MonoBehaviour{
     public void reset()
     {
         forcestop = true;
-        this.gameObject.transform.position = new Vector3(dataTinkerGraphic.posX, dataTinkerGraphic.posY, 0);
+        this.gameObject.transform.position = new Vector3(dataTinkerGraphic.posX, dataTinkerGraphic.posY, dataTinkerGraphic.posZ);
         LoadAssetFromJSON.LoadAssetImage(this, dataTinkerGraphic.imageName);
     }
 
