@@ -271,7 +271,7 @@ public class BookEditor : EditorWindow
                     EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.BeginVertical();
 
-                    EditTimestamps(i_rcPage.timestamps[j], m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], j);
+                    EditTimestamps(i_rcPage.timestamps[j], m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], i_rcPage.texts, j);
 
                     EditorGUILayout.EndVertical();
                     EditorGUILayout.BeginVertical();
@@ -487,9 +487,34 @@ public class BookEditor : EditorWindow
         }
     }
 
-    private void EditTimestamps(TimeStampClass i_rcTimestamp, AudioClip i_rcClip, Rect i_rcRect, int i_nOrdinal)
+    private void EditTimestamps(TimeStampClass i_rcTimestamp, AudioClip i_rcClip, Rect i_rcRect, TextClass[] i_rcTexts, int i_nOrdinal)
     {
-        i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal);
+        if ( (i_rcTexts != null) && !string.IsNullOrEmpty(i_rcTexts[0].text ))
+        {
+            List<string> rcWords = GetTextWords(i_rcTexts);
+
+            if (rcWords != null)
+            {
+                string[] rastrWords = rcWords.ToArray();
+
+                if (rastrWords.Length > i_nOrdinal)
+                {
+                    i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal + " - " + rastrWords[i_nOrdinal]);
+                }
+                else
+                {
+                    i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal);
+                }
+            }
+            else
+            {
+                i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal);
+            }
+        }
+        else
+        {
+            i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal);
+        }
 
         EditorGUI.indentLevel++;
 
@@ -558,8 +583,14 @@ public class BookEditor : EditorWindow
 
     private void EditText(TextClass i_rcText, int i_nOrdinal)
     {
-        i_rcText.Show = EditorGUILayout.Foldout(i_rcText.Show, "Text " + i_nOrdinal);
-
+        if (!string.IsNullOrEmpty(i_rcText.text))
+        {
+            i_rcText.Show = EditorGUILayout.Foldout(i_rcText.Show, "Text " + i_nOrdinal + " - " + i_rcText.text);
+        }
+        else
+        {
+            i_rcText.Show = EditorGUILayout.Foldout(i_rcText.Show, "Text " + i_nOrdinal);
+        }
         EditorGUI.indentLevel++;
 
         if (i_rcText.Show)
@@ -573,7 +604,14 @@ public class BookEditor : EditorWindow
 
     private void EditGameObject(GameObjectClass i_rcGameObject, int i_nOrdinal)
     {
-        i_rcGameObject.Show = EditorGUILayout.Foldout(i_rcGameObject.Show, "GameObject " + i_nOrdinal);
+        if (!string.IsNullOrEmpty(i_rcGameObject.imageName))
+        {
+            i_rcGameObject.Show = EditorGUILayout.Foldout(i_rcGameObject.Show, "GameObject " + i_nOrdinal + " - " + i_rcGameObject.imageName);
+        }
+        else
+        {
+            i_rcGameObject.Show = EditorGUILayout.Foldout(i_rcGameObject.Show, "GameObject " + i_nOrdinal);
+        }
 
         EditorGUI.indentLevel++;
 
