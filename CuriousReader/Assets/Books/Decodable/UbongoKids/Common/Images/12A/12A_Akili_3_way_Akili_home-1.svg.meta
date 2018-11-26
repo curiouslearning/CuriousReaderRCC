@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: dddb734ff5b13064bbb05ee7d46646c3
+guid: 11a58a0b2c5094248b2c6b27b6691e35
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/7A_Akili_3_way_ocean-1
-    400000: gameObject/7A_Akili_3_way_ocean-1/Transform
+    100000: gameObject/12A_Akili_3_way_Akili_home-1
+    400000: gameObject/12A_Akili_3_way_Akili_home-1/Transform
     2800000: texAtlas
-    21200000: gameObject/7A_Akili_3_way_ocean-1/SpriteRenderer
+    21200000: gameObject/12A_Akili_3_way_Akili_home-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: differentplaces
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -52,5 +52,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 7206a695721adec4d9a982c5cb00e8fd
+      spriteID: 492d9830b68694fb9bc24c6325b419ce
     PhysicsOutlines: []
