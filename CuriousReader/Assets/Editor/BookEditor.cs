@@ -566,6 +566,14 @@ public class BookEditor : EditorWindow
     {
         i_rcTrigger.Show = EditorGUILayout.Foldout(i_rcTrigger.Show, "Trigger " + i_nOrdinal);
 
+        // Add Highlight Trigger 
+        // Choose a gameobject, choose a word
+        // If the button is pressed, create it and add it to the list
+
+        // Add Animation Trigger
+        // Choose a gameobject, choose an animation, choose a word
+        // If the button is pressed, create it and add it to the list
+
         EditorGUI.indentLevel++;
 
         if (i_rcTrigger.Show)
@@ -645,6 +653,9 @@ public class BookEditor : EditorWindow
             i_rcGameObject.posX = EditorGUILayout.FloatField("Pos X", i_rcGameObject.posX, EditorStyles.numberField);
             i_rcGameObject.posY = EditorGUILayout.FloatField("Pos Y", i_rcGameObject.posY, EditorStyles.numberField);
             i_rcGameObject.posZ = EditorGUILayout.FloatField("Pos Z", i_rcGameObject.posZ, EditorStyles.numberField);
+            i_rcGameObject.rotX = EditorGUILayout.FloatField("Rot X", i_rcGameObject.rotX, EditorStyles.numberField);
+            i_rcGameObject.rotY = EditorGUILayout.FloatField("Rot Y", i_rcGameObject.rotY, EditorStyles.numberField);
+            i_rcGameObject.rotZ = EditorGUILayout.FloatField("Rot Z", i_rcGameObject.rotZ, EditorStyles.numberField);
             i_rcGameObject.scaleX = EditorGUILayout.FloatField("Scale X", i_rcGameObject.scaleX, EditorStyles.numberField);
             i_rcGameObject.scaleY = EditorGUILayout.FloatField("Scale Y", i_rcGameObject.scaleY, EditorStyles.numberField);
             i_rcGameObject.orderInLayer = EditorGUILayout.IntField("Order In Layer", i_rcGameObject.orderInLayer, EditorStyles.numberField);

@@ -248,6 +248,7 @@ public class GTinkerGraphic : MonoBehaviour{
 	{
         forcestop = true;
         this.gameObject.transform.position = new Vector3 (dataTinkerGraphic.posX,dataTinkerGraphic.posY,dataTinkerGraphic.posZ);
+        this.gameObject.transform.rotation = Quaternion.Euler(dataTinkerGraphic.rotX, dataTinkerGraphic.rotY, dataTinkerGraphic.rotZ);
 		LoadAssetFromJSON.LoadAssetImage (this,dataTinkerGraphic.imageName);
 		StartCoroutine (Zoom());
         
@@ -271,6 +272,7 @@ public class GTinkerGraphic : MonoBehaviour{
     {
         forcestop = true;
         this.gameObject.transform.position = new Vector3(dataTinkerGraphic.posX, dataTinkerGraphic.posY, dataTinkerGraphic.posZ);
+        this.gameObject.transform.rotation = Quaternion.Euler(dataTinkerGraphic.rotX, dataTinkerGraphic.rotY, dataTinkerGraphic.rotZ);
         LoadAssetFromJSON.LoadAssetImage(this, dataTinkerGraphic.imageName);
     }
 

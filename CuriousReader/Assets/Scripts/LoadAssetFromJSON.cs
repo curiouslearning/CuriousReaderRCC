@@ -540,8 +540,12 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
         Vector3 position = new Vector3(gameObjectData.posX, gameObjectData.posY, gameObjectData.posZ);
 		Vector3 scale = new Vector3(gameObjectData.scaleX, gameObjectData.scaleY);
+        Quaternion rotation = Quaternion.Euler(gameObjectData.rotX, gameObjectData.rotY, gameObjectData.rotZ);
+
 		go.transform.position = position;
 		go.transform.localScale = scale;
+        go.transform.rotation = rotation;
+
 		go.AddComponent<GTinkerGraphic>();
 		go.GetComponent<GTinkerGraphic>().dataTinkerGraphic = gameObjectData;
 		go.GetComponent<GTinkerGraphic>().sceneManager = GameObject.Find("SceneManager" + (pageNumber)).GetComponent<GSManager>();

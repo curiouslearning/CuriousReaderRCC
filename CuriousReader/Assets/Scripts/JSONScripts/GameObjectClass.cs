@@ -13,6 +13,9 @@ public class GameObjectClass
     public float posZ;
     public float scaleX;
     public float scaleY;
+    public float rotX;
+    public float rotY;
+    public float rotZ;
     public int orderInLayer;
     public string imageName;
     public bool inText;
