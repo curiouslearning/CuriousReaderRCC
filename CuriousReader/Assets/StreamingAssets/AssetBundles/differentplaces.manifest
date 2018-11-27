@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 728652085
+CRC: 883991647
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: edc37110aa897e7fab69b2d116f9bfef
+    Hash: e14ab6aa2fbcc05b881d406026bf9ac8
   TypeTreeHash:
     serializedVersion: 2
     Hash: c229f1531c5b0cb0fe6debd87a58514c
@@ -42,6 +42,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/3/small_bird_flapping/03_a_small_bird_flapping-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/9/9_giraffe_stand_up-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/10/10_monkeys_playing_passing_the_sticks-7.svg
+- Assets/Books/Decodable/UbongoKids/Common/Images/7A/7A_Akili_3_way-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/3/big_bird_flapping/03_big_bird_flapping-3.svg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_3.wav
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between night to day SVG/7_between_night_bg_day_bg-2.svg
