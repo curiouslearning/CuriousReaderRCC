@@ -233,7 +233,7 @@ public class GTinkerGraphic : MonoBehaviour{
 			//if (dataTinkerGraphic.anim [pairedAnim].onTouch) 
 			{
 				
-				LoadAssetFromJSON.LoadAssetImages(this, dataTinkerGraphic.anim[pairedAnim].animName, dataTinkerGraphic.anim[pairedAnim].startIndex,dataTinkerGraphic.anim[pairedAnim].endIndex,dataTinkerGraphic.anim[pairedAnim].startX,dataTinkerGraphic.anim[pairedAnim].startY);
+                LoadAssetFromJSON.LoadAssetImages(this, dataTinkerGraphic.anim[pairedAnim].animName, dataTinkerGraphic.anim[pairedAnim].startIndex,dataTinkerGraphic.anim[pairedAnim].endIndex,dataTinkerGraphic.anim[pairedAnim].startX,dataTinkerGraphic.anim[pairedAnim].startY, dataTinkerGraphic.anim[pairedAnim].startZ);
 				secPerFrame = dataTinkerGraphic.anim [pairedAnim].secPerFrame;
 				sequences = dataTinkerGraphic.anim [pairedAnim].sequences;
 				PlayAnimation();
@@ -247,7 +247,8 @@ public class GTinkerGraphic : MonoBehaviour{
 	public void ResetandZoom()
 	{
         forcestop = true;
-        this.gameObject.transform.position = new Vector3 (dataTinkerGraphic.posX,dataTinkerGraphic.posY,0);
+        this.gameObject.transform.position = new Vector3 (dataTinkerGraphic.posX,dataTinkerGraphic.posY,dataTinkerGraphic.posZ);
+        this.gameObject.transform.rotation = Quaternion.Euler(dataTinkerGraphic.rotX, dataTinkerGraphic.rotY, dataTinkerGraphic.rotZ);
 		LoadAssetFromJSON.LoadAssetImage (this,dataTinkerGraphic.imageName);
 		StartCoroutine (Zoom());
         
@@ -270,7 +271,8 @@ public class GTinkerGraphic : MonoBehaviour{
     public void reset()
     {
         forcestop = true;
-        this.gameObject.transform.position = new Vector3(dataTinkerGraphic.posX, dataTinkerGraphic.posY, 0);
+        this.gameObject.transform.position = new Vector3(dataTinkerGraphic.posX, dataTinkerGraphic.posY, dataTinkerGraphic.posZ);
+        this.gameObject.transform.rotation = Quaternion.Euler(dataTinkerGraphic.rotX, dataTinkerGraphic.rotY, dataTinkerGraphic.rotZ);
         LoadAssetFromJSON.LoadAssetImage(this, dataTinkerGraphic.imageName);
     }
 

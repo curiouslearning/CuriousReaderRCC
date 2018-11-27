@@ -82,7 +82,7 @@ public class BookEditor : EditorWindow
                     m_rcPageAudio = new AudioClip[m_rcStoryBook.pages.Length];
                 }
 
-                m_rcImageNames = GetImagesInPath(m_strCommonPath);
+                m_rcImageNames = GetImagesInPath(m_strCommonPath,"-1");
 
             }
             return;
@@ -186,8 +186,17 @@ public class BookEditor : EditorWindow
 
     private void EditPage(PageClass i_rcPage, int i_nOrdinal)
     {
-        i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber));
-
+        if (i_rcPage.texts != null)
+        {
+            if ( i_rcPage.texts[0] != null )
+            {
+                i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber + " - " + i_rcPage.texts[0].text ));
+            }
+        }
+        else
+        {
+            i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber));
+        }
         EditorGUI.indentLevel++;
 
         if (i_rcPage.Show)
@@ -262,7 +271,7 @@ public class BookEditor : EditorWindow
                     EditorGUILayout.BeginHorizontal();
                     EditorGUILayout.BeginVertical();
 
-                    EditTimestamps(i_rcPage.timestamps[j], m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], j);
+                    EditTimestamps(i_rcPage.timestamps[j], m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], i_rcPage.texts, j);
 
                     EditorGUILayout.EndVertical();
                     EditorGUILayout.BeginVertical();
@@ -478,9 +487,34 @@ public class BookEditor : EditorWindow
         }
     }
 
-    private void EditTimestamps(TimeStampClass i_rcTimestamp, AudioClip i_rcClip, Rect i_rcRect, int i_nOrdinal)
+    private void EditTimestamps(TimeStampClass i_rcTimestamp, AudioClip i_rcClip, Rect i_rcRect, TextClass[] i_rcTexts, int i_nOrdinal)
     {
-        i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal);
+        if ( (i_rcTexts != null) && !string.IsNullOrEmpty(i_rcTexts[0].text ))
+        {
+            List<string> rcWords = GetTextWords(i_rcTexts);
+
+            if (rcWords != null)
+            {
+                string[] rastrWords = rcWords.ToArray();
+
+                if (rastrWords.Length > i_nOrdinal)
+                {
+                    i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal + " - " + rastrWords[i_nOrdinal]);
+                }
+                else
+                {
+                    i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal);
+                }
+            }
+            else
+            {
+                i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal);
+            }
+        }
+        else
+        {
+            i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal);
+        }
 
         EditorGUI.indentLevel++;
 
@@ -532,6 +566,14 @@ public class BookEditor : EditorWindow
     {
         i_rcTrigger.Show = EditorGUILayout.Foldout(i_rcTrigger.Show, "Trigger " + i_nOrdinal);
 
+        // Add Highlight Trigger 
+        // Choose a gameobject, choose a word
+        // If the button is pressed, create it and add it to the list
+
+        // Add Animation Trigger
+        // Choose a gameobject, choose an animation, choose a word
+        // If the button is pressed, create it and add it to the list
+
         EditorGUI.indentLevel++;
 
         if (i_rcTrigger.Show)
@@ -549,8 +591,14 @@ public class BookEditor : EditorWindow
 
     private void EditText(TextClass i_rcText, int i_nOrdinal)
     {
-        i_rcText.Show = EditorGUILayout.Foldout(i_rcText.Show, "Text " + i_nOrdinal);
-
+        if (!string.IsNullOrEmpty(i_rcText.text))
+        {
+            i_rcText.Show = EditorGUILayout.Foldout(i_rcText.Show, "Text " + i_nOrdinal + " - " + i_rcText.text);
+        }
+        else
+        {
+            i_rcText.Show = EditorGUILayout.Foldout(i_rcText.Show, "Text " + i_nOrdinal);
+        }
         EditorGUI.indentLevel++;
 
         if (i_rcText.Show)
@@ -564,7 +612,14 @@ public class BookEditor : EditorWindow
 
     private void EditGameObject(GameObjectClass i_rcGameObject, int i_nOrdinal)
     {
-        i_rcGameObject.Show = EditorGUILayout.Foldout(i_rcGameObject.Show, "GameObject " + i_nOrdinal);
+        if (!string.IsNullOrEmpty(i_rcGameObject.imageName))
+        {
+            i_rcGameObject.Show = EditorGUILayout.Foldout(i_rcGameObject.Show, "GameObject " + i_nOrdinal + " - " + i_rcGameObject.imageName);
+        }
+        else
+        {
+            i_rcGameObject.Show = EditorGUILayout.Foldout(i_rcGameObject.Show, "GameObject " + i_nOrdinal);
+        }
 
         EditorGUI.indentLevel++;
 
@@ -583,6 +638,11 @@ public class BookEditor : EditorWindow
                     i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
                     i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
                 }
+                else
+                {
+                    i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
+                    i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
+                }
             }
 
             i_rcGameObject.imageName = EditorGUILayout.TextField("Image Name", i_rcGameObject.imageName, EditorStyles.textField);
@@ -593,6 +653,9 @@ public class BookEditor : EditorWindow
             i_rcGameObject.posX = EditorGUILayout.FloatField("Pos X", i_rcGameObject.posX, EditorStyles.numberField);
             i_rcGameObject.posY = EditorGUILayout.FloatField("Pos Y", i_rcGameObject.posY, EditorStyles.numberField);
             i_rcGameObject.posZ = EditorGUILayout.FloatField("Pos Z", i_rcGameObject.posZ, EditorStyles.numberField);
+            i_rcGameObject.rotX = EditorGUILayout.FloatField("Rot X", i_rcGameObject.rotX, EditorStyles.numberField);
+            i_rcGameObject.rotY = EditorGUILayout.FloatField("Rot Y", i_rcGameObject.rotY, EditorStyles.numberField);
+            i_rcGameObject.rotZ = EditorGUILayout.FloatField("Rot Z", i_rcGameObject.rotZ, EditorStyles.numberField);
             i_rcGameObject.scaleX = EditorGUILayout.FloatField("Scale X", i_rcGameObject.scaleX, EditorStyles.numberField);
             i_rcGameObject.scaleY = EditorGUILayout.FloatField("Scale Y", i_rcGameObject.scaleY, EditorStyles.numberField);
             i_rcGameObject.orderInLayer = EditorGUILayout.IntField("Order In Layer", i_rcGameObject.orderInLayer, EditorStyles.numberField);
@@ -716,6 +779,7 @@ public class BookEditor : EditorWindow
             i_rcAnim.animName = EditorGUILayout.TextField("Anim Name", i_rcAnim.animName, EditorStyles.textField);
             i_rcAnim.startX = EditorGUILayout.IntField("Start X", i_rcAnim.startX, EditorStyles.numberField);
             i_rcAnim.startY = EditorGUILayout.IntField("Start Y", i_rcAnim.startY, EditorStyles.numberField);
+            i_rcAnim.startZ = EditorGUILayout.IntField("Start Z", i_rcAnim.startZ, EditorStyles.numberField);
             i_rcAnim.startIndex = EditorGUILayout.IntField("Start Index", i_rcAnim.startIndex, EditorStyles.numberField);
             i_rcAnim.endIndex = EditorGUILayout.IntField("End Index", i_rcAnim.endIndex, EditorStyles.numberField);
             i_rcAnim.onStart = EditorGUILayout.ToggleLeft("On Start", i_rcAnim.onStart, EditorStyles.textField);
@@ -1010,7 +1074,7 @@ public class BookEditor : EditorWindow
         int position = newPosition;
     }
 
-    public List<string> GetImagesInPath(string i_strPath)
+    public List<string> GetImagesInPath(string i_strPath, string i_strPattern="")
     {
         List<string> rcFiles = new List<string>();
         string[] allowedExtensions = new string[] { "*.svg", "*.png", "prefab_*" };
@@ -1018,7 +1082,7 @@ public class BookEditor : EditorWindow
 
         foreach (string strDir in Directories)
         {
-            List<string> rcReturnFiles = GetImagesInPath(strDir);
+            List<string> rcReturnFiles = GetImagesInPath(strDir,i_strPattern);
 
             if (rcReturnFiles != null)
             {
@@ -1033,7 +1097,17 @@ public class BookEditor : EditorWindow
         {
             foreach (string strFile in Directory.GetFiles(i_strPath, strType))
             {
-                rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+                if (string.IsNullOrEmpty(i_strPattern))
+                {
+                    rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+                }
+                else
+                {
+                    if ( strFile.Contains(i_strPattern))
+                    {
+                        rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
+                    }
+                }
             }
         }
 

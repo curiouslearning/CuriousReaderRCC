@@ -540,8 +540,12 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
         Vector3 position = new Vector3(gameObjectData.posX, gameObjectData.posY, gameObjectData.posZ);
 		Vector3 scale = new Vector3(gameObjectData.scaleX, gameObjectData.scaleY);
+        Quaternion rotation = Quaternion.Euler(gameObjectData.rotX, gameObjectData.rotY, gameObjectData.rotZ);
+
 		go.transform.position = position;
 		go.transform.localScale = scale;
+        go.transform.rotation = rotation;
+
 		go.AddComponent<GTinkerGraphic>();
 		go.GetComponent<GTinkerGraphic>().dataTinkerGraphic = gameObjectData;
 		go.GetComponent<GTinkerGraphic>().sceneManager = GameObject.Find("SceneManager" + (pageNumber)).GetComponent<GSManager>();
@@ -549,7 +553,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		go.GetComponent<GTinkerGraphic>().SetDraggable(gameObjectData.draggable);
 		if (gameObjectData.anim.Length > 0)
 		{
-			LoadAssetImages(go.GetComponent<GTinkerGraphic>(), gameObjectData.anim[0].animName, gameObjectData.anim[0].startIndex, gameObjectData.anim[0].endIndex, gameObjectData.anim[0].startX, gameObjectData.anim[0].startY);// call the LoadAssetImages function which load the anim images from bundle and fill the array of sprites with it
+            LoadAssetImages(go.GetComponent<GTinkerGraphic>(), gameObjectData.anim[0].animName, gameObjectData.anim[0].startIndex, gameObjectData.anim[0].endIndex, gameObjectData.anim[0].startX, gameObjectData.anim[0].startY,gameObjectData.anim[0].startZ);// call the LoadAssetImages function which load the anim images from bundle and fill the array of sprites with it
 			go.GetComponent<GTinkerGraphic>().secPerFrame = gameObjectData.anim[0].secPerFrame;// set the secperframe field of tinkergraphic class
 
 			if (gameObjectData.anim[0].onStart)
@@ -608,10 +612,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// <param name="tinkerGraphic">Tinker graphic.</param>
 	/// <param name="startName">Start name.</param>
 	/// <param name="length">Number of the animation frames.</param>
-	public static void LoadAssetImages(GTinkerGraphic tinkerGraphic,string startName,int startindex,int endindex,int startx,int starty)
+	public static void LoadAssetImages(GTinkerGraphic tinkerGraphic,string startName,int startindex,int endindex,int startx,int starty, int startz)
 	{
 		int j = 0;
-		tinkerGraphic.transform.position = new Vector3 (startx, starty, 0);
+		tinkerGraphic.transform.position = new Vector3 (startx, starty, startz);
 		int length = endindex - startindex + 1;
 		tinkerGraphic.sprite= new Sprite[length];
 		for (int i = startindex; i <=endindex; i++)
