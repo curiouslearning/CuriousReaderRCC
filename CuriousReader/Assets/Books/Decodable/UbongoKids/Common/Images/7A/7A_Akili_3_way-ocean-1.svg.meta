@@ -1,10 +1,11 @@
 fileFormatVersion: 2
-guid: a5a50cf08d2b5e3448bd6af426ed5816
+guid: c9555d559628a4a91ab40205a990ebc0
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/7A_Akili_3_way-1
-    400000: gameObject/7A_Akili_3_way-1/Transform
-    21200000: gameObject/7A_Akili_3_way-1/SpriteRenderer
+    100000: gameObject/7A_Akili_3_way-ocean-1
+    400000: gameObject/7A_Akili_3_way-ocean-1/Transform
+    2800000: texAtlas
+    21200000: gameObject/7A_Akili_3_way-ocean-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -19,7 +20,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  preserveViewport: 1
+  preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
   targetResolution: 1080
@@ -51,5 +52,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 7c590facc8ae7804ab900e83853164c3
+      spriteID: c4a37b3d08c4c4344a65bda6b6159ee4
     PhysicsOutlines: []
