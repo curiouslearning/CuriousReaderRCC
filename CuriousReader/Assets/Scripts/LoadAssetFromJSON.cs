@@ -495,25 +495,36 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
         GameObject rcPrefab = ShelfManager.bundleLoaded.LoadAsset<GameObject>(gameObjectData.imageName);
 
-        if ( rcPrefab != null )
+        if (rcPrefab != null)
         {
             go = GameObject.Instantiate(rcPrefab);
             go.name = gameObjectData.label;
+        
             SpriteRenderer rcRenderer = go.GetComponent<SpriteRenderer>();
 
-            if ( rcRenderer != null )
+            if (rcRenderer != null)
             {
                 Material rcMaterial = rcRenderer.material;
 
-                if ( rcMaterial != null )
-                {
-                    Material rcShader = ShelfManager.bundleLoaded.LoadAsset<Material>(rcMaterial.name.Replace(" (Instance)",""));
+                Material rcShader = ShelfManager.bundleLoaded.LoadAsset<Material>(rcMaterial.name.Replace(" (Instance)", ""));
 
-                    if ( rcShader != null )
-                    {
-                        rcRenderer.material = new Material(rcShader);  
-                    }
+                if (rcShader != null)
+                {
+                    rcRenderer.material = Material.Instantiate(rcShader); 
                 }
+
+#if UNITY_EDITOR
+
+                if (rcMaterial.name.Contains("Unlit_VectorGradient"))
+                {
+                    rcRenderer.material = new Material(Shader.Find("Unlit/VectorGradient"));
+                }
+                else if (rcMaterial.name.Contains("Unlit_Vector"))
+                {
+                    rcRenderer.material = new Material(Shader.Find("Unlit/Vector"));
+                }
+#endif
+
             }
         }
         else
