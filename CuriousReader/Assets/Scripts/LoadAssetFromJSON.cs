@@ -509,15 +509,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 {
                     Material rcShader = ShelfManager.bundleLoaded.LoadAsset<Material>(rcMaterial.name.Replace(" (Instance)",""));
 
-                    if (rcMaterial.name.Contains("Unlit_VectorGradient"))
+                    if ( rcShader != null )
                     {
-                        rcRenderer.material = new Material(Shader.Find("Unlit/VectorGradient"));
-                    } else if (rcMaterial.name.Contains("Unlit_Vector"))
-                    {
-                        rcRenderer.material = new Material(Shader.Find("Unlit/Vector"));
+                        rcRenderer.material = new Material(rcShader);  
                     }
-
-
                 }
             }
         }
