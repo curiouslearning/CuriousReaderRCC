@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 883991647
+CRC: 1071917937
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e14ab6aa2fbcc05b881d406026bf9ac8
+    Hash: dbe5815d425c4041ebfaa59f18114906
   TypeTreeHash:
     serializedVersion: 2
     Hash: c229f1531c5b0cb0fe6debd87a58514c
@@ -104,6 +104,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/2/2_clouds_move_up_and_down-1.svg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_sky2.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/sad face on the little fish/16_sad_face_on_the_little_fish-3.svg
+- Assets/Books/Decodable/UbongoKids/Common/Images/7A/7A_Akili_3_way-ocean-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/18/18_bobbing_together-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/7/between day to night/7_between_day_bg_night_bg-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/The happy fish smiles/16_the_happy_fish_smiles-2.svg
@@ -173,6 +174,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/sad fish swimming below the
   big fish across/16_the_sad_fish_swimming-7.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between day to night SVG/7_between_day_bg_night_bg-1.svg
+- Assets/Books/Decodable/UbongoKids/Common/Images/12A/12A_Akili_3_way_Akili_home-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/20/20_Akili_takes_food_and_eat-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/3/3_small_singing_bird-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-2.svg
