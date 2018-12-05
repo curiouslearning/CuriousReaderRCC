@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1071917937
+CRC: 3175248112
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: dbe5815d425c4041ebfaa59f18114906
+    Hash: be4f1b38ac3f33db25a46e28137c69c6
   TypeTreeHash:
     serializedVersion: 2
     Hash: c229f1531c5b0cb0fe6debd87a58514c
@@ -29,7 +29,6 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/3/small_bird_flapping/03_a_small_bird_flapping-1.svg
-- Assets/Vector Shaders/Unlit_VectorGradient.mat
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_14.wav
 - Assets/Books/Decodable/UbongoKids/Common/Images/11/11_short_stick-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/20/20_stool-1.svg
@@ -47,7 +46,6 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_3.wav
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between night to day SVG/7_between_night_bg_day_bg-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/5/5_orange_sun-1.svg
-- Assets/Vector Shaders/Unlit_Vector.mat
 - Assets/Books/Decodable/UbongoKids/Common/Animations/18/18_bobbing_together-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/The happy fish smiles/16_the_happy_fish_smiles-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-3.svg

@@ -287,9 +287,11 @@ public class GTinkerGraphic : MonoBehaviour{
 		for (seqIterator = 0; seqIterator < sequences.Length; seqIterator++) {
 			
 			//animate for non moving sequences of PNGs
-			if (sequences [seqIterator].movable.speed == 0 ) {
+			if (sequences [seqIterator].movable.speed == 0 )
+            {
 				i = 1;       //count the number of loops from start for every sequence!
-				while (i <= sequences [seqIterator].noOfLoops) {
+				while (i <= sequences [seqIterator].noOfLoops)
+                {
 					for (currentframe = sequences [seqIterator].startFrame; currentframe <= sequences [seqIterator].endFrame; currentframe++) {
 						spr.sprite = sprite [currentframe];
 						yield return new WaitForSeconds (secPerFrame [currentframe]);

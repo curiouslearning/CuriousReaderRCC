@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 //20.3,-18.8 (yellow), 0,-17.4 (white),blue (22.9,-0.4)
 public class GTinkerText : MonoBehaviour {
     //private static bool check=false;
@@ -150,7 +151,7 @@ public class GTinkerText : MonoBehaviour {
 			//sending data directly to firebase using "72 hours rule"! (removed local data storage)
 			//DataCollection.AddInTouchData( ("Text_"+gameObject.GetComponent<Text>().text) , time.ToString());
 
-			FirebaseHelper.LogInAppTouch (("Text_" + gameObject.GetComponent<Text> ().text), time.ToString ());
+			FirebaseHelper.LogInAppTouch (("Text_" + gameObject.GetComponent<TextMeshPro> ().text), time.ToString ());
 
 			if (!stanza.stanzaManager.sceneManager.disableSounds) {
 				PlaySound();
