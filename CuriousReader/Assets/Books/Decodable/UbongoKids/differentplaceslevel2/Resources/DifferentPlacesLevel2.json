@@ -96,6 +96,139 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_stars-1",
+                    "inText": false,
+                    "label": "Stars",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -156.0,
+                    "posY": -10.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_cloud-1",
+                    "inText": false,
+                    "label": "Cloud0",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 161.0,
+                    "posY": 29.0,
+                    "posZ": 95.0,
+                    "scaleX": -125.0,
+                    "scaleY": 125.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_cloud-1",
+                    "inText": false,
+                    "label": "Cloud1",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": -370.0,
+                    "posY": -179.0,
+                    "posZ": 95.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_cloud-1",
+                    "inText": false,
+                    "label": "Cloud2",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 277.0,
+                    "posY": -248.0,
+                    "posZ": 85.0,
+                    "scaleX": -300.0,
+                    "scaleY": -300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_cloud-1",
+                    "inText": false,
+                    "label": "Cloud3",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": -337.0,
+                    "posY": 48.0,
+                    "posZ": 85.0,
+                    "scaleX": -90.0,
+                    "scaleY": -90.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_cloud-1",
+                    "inText": false,
+                    "label": "Cloud4",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 7,
+                    "tag": "",
+                    "posX": -337.0,
+                    "posY": 48.0,
+                    "posZ": 85.0,
+                    "scaleX": -90.0,
+                    "scaleY": -90.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_cloud-1",
+                    "inText": false,
+                    "label": "Cloud5",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
                 }
             ],
             "texts": [
@@ -163,16 +296,7 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": [
-                {
-                    "stanzaID": 0,
-                    "textId": 0,
-                    "timestamp": 5,
-                    "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3
-                }
-            ]
+            "triggers": []
         },
         {
             "pageNumber": 1,
@@ -288,6 +412,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -296,6 +422,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -304,6 +432,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -312,6 +442,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -320,6 +452,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -328,6 +462,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -501,6 +637,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -509,6 +647,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -517,6 +657,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -525,6 +667,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -533,6 +677,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -541,6 +687,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -805,6 +953,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -813,6 +963,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -821,6 +973,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -829,6 +983,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 5,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -837,6 +993,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -847,7 +1005,7 @@
         },
         {
             "pageNumber": 4,
-            "script": "GSManager",
+            "script": "L2DifferentPlacesManager5",
             "audio": {
                 "audioName": "",
                 "isAnim": false,
@@ -856,7 +1014,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "sun",
+                    "tag": "",
                     "posX": -120.0,
                     "posY": 0.0,
                     "posZ": 0.0,
@@ -868,7 +1026,7 @@
                     "orderInLayer": 0,
                     "imageName": "05_orange_portion_sun-1",
                     "inText": false,
-                    "label": "sun",
+                    "label": "Sun",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [
@@ -903,7 +1061,7 @@
                 },
                 {
                     "id": 2,
-                    "tag": "moon",
+                    "tag": "",
                     "posX": 155.0,
                     "posY": 35.0,
                     "posZ": 0.0,
@@ -915,14 +1073,14 @@
                     "orderInLayer": 0,
                     "imageName": "5_moon-1",
                     "inText": false,
-                    "label": "moon",
+                    "label": "Moon",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
                 },
                 {
                     "id": 3,
-                    "tag": "star",
+                    "tag": "",
                     "posX": 120.0,
                     "posY": -75.0,
                     "posZ": 0.0,
@@ -934,7 +1092,7 @@
                     "orderInLayer": 0,
                     "imageName": "05_star_vibrates-1",
                     "inText": false,
-                    "label": "star",
+                    "label": "Star",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [
@@ -981,10 +1139,69 @@
                     "orderInLayer": 0,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
-                    "label": "background",
+                    "label": "Sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "7_between_day_bg_night_bg",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "animName": "7_between_night_bg_day_bg",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "texts": [
@@ -1027,6 +1244,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -1035,6 +1254,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -1043,6 +1264,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -1051,6 +1274,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -1256,6 +1481,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -1264,6 +1491,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -1272,6 +1501,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -1280,6 +1511,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 5,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -1288,6 +1521,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -1754,6 +1989,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2028,6 +2265,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2036,6 +2275,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2044,6 +2285,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -2052,6 +2295,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2281,6 +2526,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2289,6 +2536,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2526,6 +2775,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2534,6 +2785,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2542,6 +2795,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2550,6 +2805,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2558,6 +2815,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2566,6 +2825,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2796,6 +3057,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2804,6 +3067,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2812,6 +3077,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2820,6 +3087,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2828,6 +3097,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2836,6 +3107,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3030,6 +3303,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -3038,6 +3313,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3046,6 +3323,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -3054,6 +3333,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3062,6 +3343,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -3070,6 +3353,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3352,6 +3637,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -3360,6 +3647,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3368,6 +3657,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -3376,6 +3667,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3490,6 +3783,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -3498,6 +3793,8 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -3721,6 +4018,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -3832,6 +4131,8 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
                     "sceneObjectId": 0,

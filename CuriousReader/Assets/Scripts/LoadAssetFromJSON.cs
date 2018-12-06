@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.IO;
 using UnityEngine.SceneManagement;
 using System;
+using TMPro;
 
 /// <summary>
 /// Script to load the scene based on JSON describing the book.
@@ -33,7 +34,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	public static float startingX, startingY;
 	//private int wordCount = 0;
 	float height = 138.94f;  //height of text:32.94
-	private readonly float minWordSpace = 30.0f;
+	private readonly float minWordSpace =  30.0f;
 	private readonly float minLineSpace = 30.0f;
 
 	//variables for logging data
@@ -308,6 +309,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		TriggerClass[] triggers = storyBookJson.pages[pageNumber].triggers;
 		for (int i = 0; i < triggers.Length; i++)
 		{
+            // BehaviorTrigger rcTrigger = TriggerFactory.BuildTrigger( trigger[i] );
+            // Add it to the relevent GTinkerObjects
+            // AnimationTrigger 
+
 			if (triggers[i].typeOfLinking == 1)
 			{
 
@@ -440,18 +445,25 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	{   
 		GameObject UItextGO = new GameObject("Text_"+textToPrint);
 		UItextGO.transform.SetParent(parent.transform);
-		// Debug.Log(anim.runtimeAnimatorController);
-		Text text = UItextGO.AddComponent<Text>();
+        // Debug.Log(anim.runtimeAnimatorController);
+//		Text text = UItextGO.AddComponent<Text>();
 
-		text.text = textToPrint;
-		text.fontSize = storyBookJson.textFontSize;
-		text.color = textColor;
-		text.font = font;
-		text.transform.localScale = new Vector3(1,1,1);
+        TextMeshPro rcTextMeshPro = UItextGO.AddComponent<TextMeshPro>();
+        rcTextMeshPro.text = textToPrint;
+        rcTextMeshPro.color = textColor;
+        // Have to figure out how to get the font
+        rcTextMeshPro.fontSize = storyBookJson.textFontSize * 10.0f;
+        rcTextMeshPro.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+
+//		text.text = textToPrint;
+//		text.fontSize = storyBookJson.textFontSize;
+//		text.color = textColor;
+//		text.font = font;
+//		text.transform.localScale = new Vector3(1,1,1);
 
 		//used for fitting the text box to the size of text.
 		ContentSizeFitter csf= UItextGO.AddComponent<ContentSizeFitter> ();
-		csf.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+        csf.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
 		csf.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
 
 		VerticalLayoutGroup vlg = UItextGO.AddComponent<VerticalLayoutGroup> ();
@@ -460,17 +472,18 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 
 		RectTransform trans = UItextGO.GetComponent<RectTransform>();
-		text.alignment = TextAnchor.UpperLeft;
-		trans.anchoredPosition = new Vector3(x, y,0);
-		UItextGO.GetComponent<RectTransform> ().pivot = new Vector2 (0.5f, 0.5f);
-		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate (trans);
+        //        rcTextMeshPro.alignment = TextAlignmentOptions.TopLeft;
+        rcTextMeshPro.alignment = TextAlignmentOptions.TopLeft; // .alignment = TextAnchor.UpperLeft;
+        trans.anchoredPosition = new Vector3(x, y,0);
+        UItextGO.GetComponent<RectTransform> ().pivot = new Vector2 (0.5f, 0.5f);
+        UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate (trans);
 
-		trans.anchoredPosition = new Vector3(x+trans.rect.width/2, y,0);
-		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate (trans);
+        trans.anchoredPosition = new Vector3(x+trans.rect.width/2, y,0);
+        UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate (trans);
 
-		width = width+trans.rect.width+minWordSpace;
-		stanzaLength = width;
+        width = width + rcTextMeshPro.rectTransform.rect.width + minWordSpace; // trans.rect.width + rcTextMeshPro.characterSpacing; //minWordSpace;
 
+        stanzaLength = width;
 		//audio to each word
 		//		TimeStampClass[] timeStamps = storyBookJson.pages[pageNumber].timestamps;
 		//		UItextGO.AddComponent<AudioSource> ().clip = LoadAudioAsset (timeStamps [wordCount].audio);
@@ -499,7 +512,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
         {
             go = GameObject.Instantiate(rcPrefab);
             go.name = gameObjectData.label;
-        
+    
             SpriteRenderer rcRenderer = go.GetComponent<SpriteRenderer>();
 
             if (rcRenderer != null)
@@ -523,6 +536,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 {
                     rcRenderer.material = new Material(Shader.Find("Unlit/Vector"));
                 }
+                
 #endif
 
             }
@@ -557,7 +571,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		go.GetComponent<GTinkerGraphic>().sceneManager = GameObject.Find("SceneManager" + (pageNumber)).GetComponent<GSManager>();
 		go.GetComponent<GTinkerGraphic>().myCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
 		go.GetComponent<GTinkerGraphic>().SetDraggable(gameObjectData.draggable);
-		if (gameObjectData.anim.Length > 0)
+
+        
+        if (gameObjectData.anim.Length > 0)
 		{
             LoadAssetImages(go.GetComponent<GTinkerGraphic>(), gameObjectData.anim[0].animName, gameObjectData.anim[0].startIndex, gameObjectData.anim[0].endIndex, gameObjectData.anim[0].startX, gameObjectData.anim[0].startY,gameObjectData.anim[0].startZ);// call the LoadAssetImages function which load the anim images from bundle and fill the array of sprites with it
 			go.GetComponent<GTinkerGraphic>().secPerFrame = gameObjectData.anim[0].secPerFrame;// set the secperframe field of tinkergraphic class
@@ -579,6 +595,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		{
 			LoadAssetImage(go.GetComponent<GTinkerGraphic>(), gameObjectData.imageName);
 		}
+        
 
 		if (gameObjectData.destroyOnCollision != "NIL")
 		{
@@ -591,7 +608,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		PolygonCollider2D col = go.AddComponent<PolygonCollider2D>();
 		// BoxCollider col = go.AddComponent<BoxCollider>();
 		col.isTrigger = true;
-		tinkerGraphicObjects.Add(go);
+		tinkerGraphicObjects.Add(go); 
 	}
 
 	public void LoadAssetFromBundle(string name)
