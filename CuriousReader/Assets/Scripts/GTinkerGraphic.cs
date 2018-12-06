@@ -36,6 +36,7 @@ public class GTinkerGraphic : MonoBehaviour{
 	public Color resetColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
 	public Color highlightColor = GGameManager.yellow;
 	private Coroutine destroyObject;
+
     /// <summary>
     /// fetch the sprite renderer attached to given graphical object 
     /// </summary>
@@ -94,12 +95,15 @@ public class GTinkerGraphic : MonoBehaviour{
         
 		FirebaseHelper.LogInAppTouch(("Graphic_"+dataTinkerGraphic.label) ,  time.ToString());
 		int length = dataTinkerGraphic.anim.Length;
-        //for (int i = 0; i < length; i++) {
-        //Debug.Log ("anim_no "+ i);
-        //LoadAndPlayAnimation (i);
-        //StartCoroutine (animdelay());
-        //}
-        PlayCompleteAnim();
+
+        for (int i = 0; i < length; i++)
+        {
+            if (dataTinkerGraphic.anim[i].onTouch)
+            {
+                LoadAndPlayAnimation(i);
+            }
+        }
+
 		sceneManager.OnMouseDown (this);
 }
 	public void PlayCompleteAnim()
@@ -287,9 +291,11 @@ public class GTinkerGraphic : MonoBehaviour{
 		for (seqIterator = 0; seqIterator < sequences.Length; seqIterator++) {
 			
 			//animate for non moving sequences of PNGs
-			if (sequences [seqIterator].movable.speed == 0 ) {
+			if (sequences [seqIterator].movable.speed == 0 )
+            {
 				i = 1;       //count the number of loops from start for every sequence!
-				while (i <= sequences [seqIterator].noOfLoops) {
+				while (i <= sequences [seqIterator].noOfLoops)
+                {
 					for (currentframe = sequences [seqIterator].startFrame; currentframe <= sequences [seqIterator].endFrame; currentframe++) {
 						spr.sprite = sprite [currentframe];
 						yield return new WaitForSeconds (secPerFrame [currentframe]);
