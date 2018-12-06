@@ -309,6 +309,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		TriggerClass[] triggers = storyBookJson.pages[pageNumber].triggers;
 		for (int i = 0; i < triggers.Length; i++)
 		{
+            // BehaviorTrigger rcTrigger = TriggerFactory.BuildTrigger( trigger[i] );
+            // Add it to the relevent GTinkerObjects
+            // AnimationTrigger 
+
 			if (triggers[i].typeOfLinking == 1)
 			{
 
@@ -508,8 +512,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
         {
             go = GameObject.Instantiate(rcPrefab);
             go.name = gameObjectData.label;
-        
-/*            SpriteRenderer rcRenderer = go.GetComponent<SpriteRenderer>();
+    
+            SpriteRenderer rcRenderer = go.GetComponent<SpriteRenderer>();
 
             if (rcRenderer != null)
             {
@@ -535,7 +539,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 
 #endif
 
-            }*/
+            }
         }
         else
         {
@@ -567,7 +571,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		go.GetComponent<GTinkerGraphic>().sceneManager = GameObject.Find("SceneManager" + (pageNumber)).GetComponent<GSManager>();
 		go.GetComponent<GTinkerGraphic>().myCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
 		go.GetComponent<GTinkerGraphic>().SetDraggable(gameObjectData.draggable);
-		if (gameObjectData.anim.Length > 0)
+
+        
+        if (gameObjectData.anim.Length > 0)
 		{
             LoadAssetImages(go.GetComponent<GTinkerGraphic>(), gameObjectData.anim[0].animName, gameObjectData.anim[0].startIndex, gameObjectData.anim[0].endIndex, gameObjectData.anim[0].startX, gameObjectData.anim[0].startY,gameObjectData.anim[0].startZ);// call the LoadAssetImages function which load the anim images from bundle and fill the array of sprites with it
 			go.GetComponent<GTinkerGraphic>().secPerFrame = gameObjectData.anim[0].secPerFrame;// set the secperframe field of tinkergraphic class
@@ -589,6 +595,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		{
 			LoadAssetImage(go.GetComponent<GTinkerGraphic>(), gameObjectData.imageName);
 		}
+        
 
 		if (gameObjectData.destroyOnCollision != "NIL")
 		{
@@ -601,7 +608,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		PolygonCollider2D col = go.AddComponent<PolygonCollider2D>();
 		// BoxCollider col = go.AddComponent<BoxCollider>();
 		col.isTrigger = true;
-		tinkerGraphicObjects.Add(go);
+		tinkerGraphicObjects.Add(go); 
 	}
 
 	public void LoadAssetFromBundle(string name)
