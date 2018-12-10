@@ -14,10 +14,13 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	private string[] allPagesJsons; //
 	public static StoryBookJson storyBookJson;
 	public static int pageNumber;
+    public static int m_nLastPageNumber = 0;
 	public GStanzaManager stanzaManager;
 	public List<GameObject> tinkerGraphicObjects;
 	public List<GameObject> tinkerTextObjects;
 	public List<GameObject> stanzaObjects;
+
+    public Stack<int> m_stackPageHistory = new Stack<int>();
 
 	private string[] allStanzaJsons;
 	private string page;
@@ -103,76 +106,160 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			FirebaseHelper.AddBook(storyBookJson.id);
 			left.SetActive(false);
 			right.SetActive(true);
-			LoadCompletePage();
+			LoadPage(0);
 
 		}
 	}
 
+    /// <summary>
+    /// ValidatePageNumber -- Is the page in the book?
+    /// </summary>
+    /// <param name="i_nPageNumber"></param>
+    /// <returns></returns>
+    public bool ValidatePageNumber( int i_nPageNumber )
+    {
+        if ( storyBookJson != null )
+        {
+            if ( storyBookJson.pages != null )
+            {
+                if ( (i_nPageNumber >= 0) && (i_nPageNumber < storyBookJson.pages.Length))
+                {
+                    return true;
+                }
+            }
+        }
 
-	/// <summary>
-	/// Loads the next page on "next" arrow/button click.
-	/// </summary>
-	public void LoadNextPage()
-	{  
-		stanzaManager.RequestCancelAutoPlay();
-		left.SetActive(true);
-		DateTime time = DateTime.Now;
+        return false;
+    }
 
-		TimeSpan span = (time - inTime);
-		FirebaseHelper.LogInAppTouch("Button_Page_Right_Arrow", time.ToString());
+    /// <summary>
+    /// Resets the default state of the arrows on the page.
+    /// </summary>
+    /// <param name="i_nPageNumber"></param>
+    public void ResetArrowsForPage(int i_nPageNumber)
+    {
+        // Now that we can load a page from any other page, we need to be able to deactivate the first page left arrow when we 
+        // arrive at the first page.
+        if (left != null)
+        {
+            if (i_nPageNumber > 0)
+            {
+                left.SetActive(true);
+            }
+            else
+            {
+                left.SetActive(false);
+            }
+        }
 
-		//sending data directly to firebase using "72 hours rule"! (removed local data storage)
-		//DataCollection.AddInSectionData (inTime.ToString(), span.ToString());
+        if ( right != null )
+        {
+            // Deactivate the right navigation if the page number is the last page of the book.
+            // Because we can jump around also allow us to activate the right arrow.
+            if (i_nPageNumber == (noOfPages - 1))
+            {
+                right.SetActive(false);
+            }
+            else
+            {
+                right.SetActive(true);
+            }
+        }
+    }
 
-		FirebaseHelper.LogInAppSection(inTime.ToString(), span.TotalSeconds);
+    /// <summary>
+    /// LoadPage -- This method is called to clean up the current page and load the specified page.
+    /// </summary>
+    /// <param name="i_nPageNumber">Which page to load!</param>
+    /// <param name="i_rcGameObject">The object that requested the page load for analytics purposes.</param>
+    public void LoadPage(int i_nPageNumber, GameObject i_rcGameObject = null)
+    {
+        if ( !ValidatePageNumber(i_nPageNumber) )
+        {
+            Debug.Log("Error!  You tried to navigate to page " + i_nPageNumber + " which doesn't exist in this book.");
+            return;
+        }
 
-		Destroy(GameObject.Find("SceneManager" + (pageNumber)));
+        stanzaManager.RequestCancelAutoPlay();
 
-		pageNumber++;
+        // NOTE: This needs to be called before the page is loaded because Triggers can affect the display of the arrows.
+        ResetArrowsForPage(i_nPageNumber);
 
-		if (pageNumber == (noOfPages - 1)) {
-			right.SetActive(false);
+        DateTime time = DateTime.Now;
+        TimeSpan span = (time - inTime);
 
-		}
+        if ( i_rcGameObject != null )
+        {
+            FirebaseHelper.LogInAppTouch(i_rcGameObject.name, time.ToString());
+        }
+        else
+        {
+            FirebaseHelper.LogInAppTouch("Button_Page_Right_Arrow", time.ToString());
+        }
 
-		EmptyPage();
-		LoadCompletePage();
+        //sending data directly to firebase using "72 hours rule"! (removed local data storage)
+        //DataCollection.AddInSectionData (inTime.ToString(), span.ToString());
+
+        FirebaseHelper.LogInAppSection(inTime.ToString(), span.TotalSeconds);
+
+        Destroy(GameObject.Find("SceneManager" + (pageNumber)));
+
+        pageNumber = i_nPageNumber;
+
+        EmptyPage();
+        LoadCompletePage();
+    }
+
+    /// <summary>
+    /// RecordPageHistory -- This method records the current page that is loaded into the page history.
+    /// </summary>
+    public void RecordPageHistory()
+    {
+        if (m_stackPageHistory == null) m_stackPageHistory = new Stack<int>();
+
+        if ( ValidatePageNumber(pageNumber) )
+        {
+            m_stackPageHistory.Push(pageNumber);
+        }
+        else
+        {
+            Debug.Log("Error: We tried to push an invalid page.");
+        }
+    }
+
+    /// <summary>
+    /// Loads the next page on "next" arrow/button click.
+    /// </summary>
+    public void LoadNextPage()
+	{
+        if (ValidatePageNumber(pageNumber + 1))
+        {
+            if (right != null)
+            {
+                m_stackPageHistory.Push(pageNumber);
+                LoadPage(pageNumber + 1, right);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Loads the previous page on "previous" arrow/button click.
+    /// </summary>
+    public void LoadPreviousPage()
+	{
+        int nPreviousPage = m_stackPageHistory.Pop();
+
+        if (ValidatePageNumber(nPreviousPage))
+        {
+            if (left != null)
+            {
+                LoadPage(nPreviousPage, left);
+            }
+        }
 	}
 
-
 	/// <summary>
-	/// Loads the previous page on "previous" arrow/button click.
-	/// </summary>
-	public void LoadPreviousPage()
-	{  
-		stanzaManager.RequestCancelAutoPlay();
-
-		//previousTextWidth = 0;
-		DateTime time = DateTime.Now;
-		TimeSpan span = ( time- inTime);
-		FirebaseHelper.LogInAppTouch("Button_Page_Left_Arrow", time.ToString());
-
-		//sending data directly to firebase using "72 hours rule"! (removed local data storage)
-		//DataCollection.AddInSectionData (inTime.ToString(), span.ToString());
-		FirebaseHelper.LogInAppSection(inTime.ToString(), span.TotalSeconds);
-
-
-		Destroy(GameObject.Find("SceneManager" + (pageNumber)));
-		pageNumber--;
-		if (pageNumber == 0) {
-			left.SetActive(false);
-		}
-		else if (pageNumber == (noOfPages-2))
-		{
-			right.SetActive(true);
-		}
-		EmptyPage();
-		LoadCompletePage();
-
-	}
-
-	/// <summary>
-	/// Destrroys all the scene objects before loading another page.
+	/// Destroys all the scene objects before loading another page.
 	/// </summary>
 	public void EmptyPage()
 	{   if (tinkerGraphicObjects != null) {
@@ -301,6 +388,22 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 	}
 
+    public bool ValidateTinkerGraphicObject(int i_nObjectNumber)
+    {
+        // Is the graphic object array valid?
+        if (tinkerGraphicObjects != null)
+        {
+
+            // Is the number in array bounds?
+            if ((i_nObjectNumber >= 0) && (i_nObjectNumber < tinkerGraphicObjects.Count))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
 	/// <summary>
 	/// Links/Pairs TinkerTexts and TinkerGraphics.
 	/// </summary>
@@ -309,28 +412,62 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		TriggerClass[] triggers = storyBookJson.pages[pageNumber].triggers;
 		for (int i = 0; i < triggers.Length; i++)
 		{
-            // BehaviorTrigger rcTrigger = TriggerFactory.BuildTrigger( trigger[i] );
-            // Add it to the relevent GTinkerObjects
-            // AnimationTrigger 
+            if ( triggers[i].type == TriggerType.Navigation)
+            {
+                if ( triggers[i].DeactivateNextButton )
+                {
+                    // Deactivate the right button in the scene.  
+                    // NOTE: If any single trigger on the page sets this it will deactivate it.
+                    if ( right != null )
+                    {
+                        right.SetActive(false);
+                    }
+                }
 
-			if (triggers[i].typeOfLinking == 1)
-			{
+                if ( ValidateTinkerGraphicObject(triggers[i].sceneObjectId) )
+                {
+                    GameObject rcObject = tinkerGraphicObjects[triggers[i].sceneObjectId];
 
-			}
-			if (triggers[i].typeOfLinking == 2)
-			{
+                    if ( rcObject != null )
+                    {
+                        GTinkerGraphic rcTinkerGraphic = rcObject.GetComponent<GTinkerGraphic>();
 
-			}
-			if (triggers[i].typeOfLinking == 3)//two way linking of tinker graphic and tinker texts.
-			{
-				GameObject text = tinkerTextObjects[triggers[i].textId];
-				GameObject graphic = tinkerGraphicObjects[triggers[i].sceneObjectId];
-				text.GetComponent<GTinkerText> ().pairedGraphics.Add(graphic.GetComponent<GTinkerGraphic> ());
-				text.GetComponent<GTinkerText> ().pairedAnim = triggers [i].animId;
-				graphic.GetComponent<GTinkerGraphic>().pairedText1 = text.GetComponent<GTinkerText>();
-			}
-		}
+                        if ( rcTinkerGraphic != null )
+                        {
+                            int nPageNumber = triggers[i].NavigationPage;
 
+                            if ( ValidatePageNumber(nPageNumber))
+                            {
+                                rcTinkerGraphic.m_nNavigationPage = nPageNumber;
+                            }
+                            else
+                            {
+                                Debug.Log("Error: trigger " + i + " pointed to invalid page number " + nPageNumber);
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if (triggers[i].typeOfLinking == 1)
+                {
+
+                }
+                if (triggers[i].typeOfLinking == 2)
+                {
+
+                }
+                if (triggers[i].typeOfLinking == 3)//two way linking of tinker graphic and tinker texts.
+                {
+                    GameObject text = tinkerTextObjects[triggers[i].textId];
+                    GameObject graphic = tinkerGraphicObjects[triggers[i].sceneObjectId];
+                    text.GetComponent<GTinkerText>().pairedGraphics.Add(graphic.GetComponent<GTinkerGraphic>());
+                    text.GetComponent<GTinkerText>().pairedAnim = triggers[i].animId;
+                    graphic.GetComponent<GTinkerGraphic>().pairedText1 = text.GetComponent<GTinkerText>();
+                }
+            }
+        }
 	}
 
 
