@@ -8,7 +8,8 @@ public enum TriggerType
     Deactivate = 2, 
 //    BiDirectional = 3,
     FadeIn = 4,
-    FadeOut = 5
+    FadeOut = 5,
+    Navigation = 6
 }
 
 [System.Serializable]
@@ -23,4 +24,6 @@ public class TriggerClass
     public int sceneObjectId;
 	public int animId;
     public int typeOfLinking;
+    public bool DeactivateNextButton;
+    public int NavigationPage;
 }

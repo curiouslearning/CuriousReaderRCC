@@ -578,12 +578,23 @@ public class BookEditor : EditorWindow
 
         if (i_rcTrigger.Show)
         {
-            i_rcTrigger.animId = EditorGUILayout.IntField("Anim ID", i_rcTrigger.animId, EditorStyles.numberField);
-            i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
-            i_rcTrigger.textId = EditorGUILayout.IntField("Text ID", i_rcTrigger.textId, EditorStyles.numberField);
-            i_rcTrigger.timestamp = EditorGUILayout.IntField("Timestamp", i_rcTrigger.timestamp, EditorStyles.numberField);
-            i_rcTrigger.sceneObjectId = EditorGUILayout.IntField("SceneObject ID", i_rcTrigger.sceneObjectId, EditorStyles.numberField);
-            i_rcTrigger.typeOfLinking = EditorGUILayout.IntField("Type of Linking", i_rcTrigger.typeOfLinking, EditorStyles.numberField);
+            i_rcTrigger.type = (TriggerType)EditorGUILayout.EnumPopup(i_rcTrigger.type, EditorStyles.popup);
+
+            if ( i_rcTrigger.type == TriggerType.Navigation )
+            {
+                i_rcTrigger.DeactivateNextButton = EditorGUILayout.ToggleLeft("Deactivate Next", i_rcTrigger.DeactivateNextButton);
+                i_rcTrigger.NavigationPage = EditorGUILayout.IntField("Page Number", i_rcTrigger.NavigationPage, EditorStyles.numberField);
+                i_rcTrigger.sceneObjectId = EditorGUILayout.IntField("SceneObject ID", i_rcTrigger.sceneObjectId, EditorStyles.numberField);
+            }
+            else
+            {
+                i_rcTrigger.animId = EditorGUILayout.IntField("Anim ID", i_rcTrigger.animId, EditorStyles.numberField);
+                i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
+                i_rcTrigger.textId = EditorGUILayout.IntField("Text ID", i_rcTrigger.textId, EditorStyles.numberField);
+                i_rcTrigger.timestamp = EditorGUILayout.IntField("Timestamp", i_rcTrigger.timestamp, EditorStyles.numberField);
+                i_rcTrigger.sceneObjectId = EditorGUILayout.IntField("SceneObject ID", i_rcTrigger.sceneObjectId, EditorStyles.numberField);
+                i_rcTrigger.typeOfLinking = EditorGUILayout.IntField("Type of Linking", i_rcTrigger.typeOfLinking, EditorStyles.numberField);
+            }
         }
 
         EditorGUI.indentLevel--;
