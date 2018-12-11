@@ -36,6 +36,7 @@ public class GTinkerGraphic : MonoBehaviour{
 	public Color resetColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
 	public Color highlightColor = GGameManager.yellow;
 	private Coroutine destroyObject;
+    public int m_nNavigationPage =-1;       // -1 denotes that there is no navigation trigger tied to this object.
 
     /// <summary>
     /// fetch the sprite renderer attached to given graphical object 
@@ -101,6 +102,17 @@ public class GTinkerGraphic : MonoBehaviour{
             if (dataTinkerGraphic.anim[i].onTouch)
             {
                 LoadAndPlayAnimation(i);
+            }
+        }
+
+        if (m_nNavigationPage != -1)
+        {
+            LoadAssetFromJSON rcPageLoader = BookSystem.GetPageLoader();
+
+            if ( rcPageLoader != null )
+            {
+                rcPageLoader.RecordPageHistory();
+                rcPageLoader.LoadPage(m_nNavigationPage, this.gameObject);
             }
         }
 
