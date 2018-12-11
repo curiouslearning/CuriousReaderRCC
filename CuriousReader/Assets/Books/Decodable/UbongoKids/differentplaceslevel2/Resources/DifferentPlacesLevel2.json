@@ -418,7 +418,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -428,7 +430,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -438,7 +442,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -448,7 +454,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -458,7 +466,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -468,7 +478,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -643,7 +655,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -653,7 +667,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -663,7 +679,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -673,7 +691,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -683,7 +703,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -693,7 +715,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -959,7 +983,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -969,7 +995,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -979,7 +1007,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -989,7 +1019,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -999,7 +1031,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -1250,7 +1284,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -1260,7 +1296,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -1270,7 +1308,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -1280,7 +1320,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -1487,7 +1529,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -1497,7 +1541,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -1507,7 +1553,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -1517,7 +1565,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -1527,7 +1577,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -1922,7 +1974,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -1932,7 +1986,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -2060,7 +2116,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -2196,7 +2254,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -2206,7 +2266,9 @@
                     "timestamp": 2,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -2216,7 +2278,9 @@
                     "timestamp": 1,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -2226,7 +2290,9 @@
                     "timestamp": 1,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -2236,7 +2302,9 @@
                     "timestamp": 1,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -2246,7 +2314,9 @@
                     "timestamp": 3,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -2435,7 +2505,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -2445,7 +2517,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -2455,7 +2529,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -2465,7 +2541,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -2812,7 +2890,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -2822,7 +2902,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -3061,7 +3143,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3071,7 +3155,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3081,7 +3167,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3091,7 +3179,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3101,7 +3191,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3111,7 +3203,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -3343,7 +3437,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3353,7 +3449,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3363,7 +3461,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3373,7 +3473,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3383,7 +3485,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3393,7 +3497,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -3589,7 +3695,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3599,7 +3707,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3609,7 +3719,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3619,7 +3731,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3629,7 +3743,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3639,7 +3755,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -3923,7 +4041,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3933,7 +4053,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3943,7 +4065,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3953,7 +4077,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3963,7 +4089,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -3973,7 +4101,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -4631,7 +4761,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -4641,7 +4773,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -4781,7 +4915,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 },
                 {
                     "stanzaID": 0,
@@ -4791,7 +4927,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "animId": -1,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
@@ -4942,7 +5080,9 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "animId": 0,
-                    "typeOfLinking": 3
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
                 }
             ]
         },
