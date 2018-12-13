@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 public class GTinkerGraphic : MonoBehaviour{
 	public GameObjectClass dataTinkerGraphic;
@@ -53,6 +54,7 @@ public class GTinkerGraphic : MonoBehaviour{
 		final_scale_y = initial_scale_y * totalchange;
 		deltasize = (final_scale_x - initial_scale_x) / framecount;
 		deltatime = totaltime / framecount;
+        DOTween.Init();
 	}
     private void Update()
     {
@@ -374,21 +376,27 @@ public class GTinkerGraphic : MonoBehaviour{
 	}
 	public IEnumerator Zoom()
 	{
-		while(this.transform.localScale.x<=final_scale_x && this.transform.localScale.y<=final_scale_y)
-		{
-			Vector3 temp = this.transform.localScale;
-			temp.x += deltasize;
-			temp.y += deltasize;
-			this.transform.localScale = temp;
-			yield return new WaitForSeconds(deltatime/2);
-		}
-		while (this.transform.localScale.x >= initial_scale_x && this.transform.localScale.y >= initial_scale_y)
-		{
-			Vector3 temp = this.transform.localScale;
-			temp.x -= deltasize;
-			temp.y -= deltasize;
-			this.transform.localScale = temp;
-			yield return new WaitForSeconds(deltatime/2);
-		}
-	}
+        if (transform.localPosition.z <= 0)
+        {
+            this.transform.localPosition = new Vector3(this.transform.localPosition.x, this.transform.localPosition.y, 91f);
+        }
+     //this.transform.DOScale(new Vector3(0, 0, 91f), 5f).SetLoops(1, LoopType.Yoyo).From(true);
+     //transform.DOPlay();
+     while(this.transform.localScale.x<=final_scale_x && this.transform.localScale.y<=final_scale_y)
+     {
+         Vector3 temp = this.transform.localScale;
+         temp.x += deltasize;
+         temp.y += deltasize;
+         this.transform.localScale = temp;
+         yield return new WaitForSeconds(deltatime/2);
+     }
+     while (this.transform.localScale.x >= initial_scale_x && this.transform.localScale.y >= initial_scale_y)
+     {
+         Vector3 temp = this.transform.localScale;
+         temp.x -= deltasize;
+         temp.y -= deltasize;
+         this.transform.localScale = temp;
+         yield return new WaitForSeconds(deltatime/2);
+     }
+    }
 }

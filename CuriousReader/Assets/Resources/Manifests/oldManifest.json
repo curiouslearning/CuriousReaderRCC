@@ -1,0 +1,125 @@
+﻿{
+  "manifestName": "first_grade_english_us_curriculum",
+  "books": [
+    {
+      "bookId": 0,
+      "title": "Cat's Tale(level 0)",
+      "author": "",
+      "language": "English (U.S.)",
+      "readingLevel": 1,
+      "tags": [
+        "frog",
+        "jump"
+      ],
+      "fileName": "CatStoryLevel0",
+      "pathToThumbnail": "Thumbnail/cat",
+      "version": 1
+    },
+    {
+      "bookId": 1,
+      "title": "Cat's Tale(level 1)",
+      "author": "",
+      "language": "English (U.S.)",
+      "readingLevel": 1,
+      "tags": [
+        "frog",
+        "jump"
+      ],
+      "fileName": "CatStoryLevel1",
+      "pathToThumbnail": "Thumbnail/cat",
+      "version": 1
+    },
+    {
+      "bookId": 2,
+      "title": "Cat's Tale(level 2)",
+      "author": "",
+      "language": "English (U.S.)",
+      "readingLevel": 1,
+      "tags": [
+        "lion",
+        "eats"
+      ],
+      "fileName": "CatStoryLevel2",
+      "pathToThumbnail": "Thumbnail/cat",
+      "version": 1
+
+    },
+    {
+      "bookId": 3,
+      "title": "Cat's Tale(level 3)",
+      "author": "",
+      "language": "English (U.S.)",
+      "readingLevel": 1,
+      "tags": [
+        "cat",
+        "man"
+      ],
+      "fileName": "CatStoryLevel3",
+      "pathToThumbnail": "Thumbnail/cat",
+      "version": 1
+
+    },
+    {
+      "bookId": 4,
+      "title": "Cat's Tale(level 4)",
+      "author": "",
+      "language": "English (U.S.)",
+      "readingLevel": 1,
+      "tags": [
+        "some animals",
+        "some actions"
+      ],
+      "fileName": "CatStoryLevel4",
+      "pathToThumbnail": "Thumbnail/cat",
+      "version": 1
+    },
+    {
+      "bookId": 5,
+      "title": "Cat's Tale(level 5)",
+      "author": "",
+      "language": "English (U.S.)",
+      "readingLevel": 1,
+      "tags": [
+        "cat",
+        "man"
+      ],
+      "fileName": "CatStoryLevel5",
+      "pathToThumbnail": "Thumbnail/cat",
+      "version": 1
+
+    },
+    {
+      "bookId": 6,
+      "title": "Baby Duck Story",
+      "author": "",
+      "language": "English (U.S.)",
+      "readingLevel": 1,
+      "tags": [
+        "duck",
+        "babyD"
+      ],
+      "fileName": "BabyD",
+      "pathToThumbnail": "Thumbnail/duck",
+      "version": 1
+    },
+
+
+    {
+      "bookId": 7,
+      "title": "Different Places",
+      "author": "",
+      "language": "English (U.S.)",
+      "readingLevel": 1,
+      "tags": [
+        "places",
+        "Ubongo"
+      ],
+      "fileName": "DifferentPlacesLevel2",
+      "pathToThumbnail": "Thumbnail/duck",
+      "version": 1
+    },
+
+
+
+  ]
+}
