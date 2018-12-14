@@ -443,7 +443,6 @@ public class ShelfManager : MonoBehaviour, IPointerClickHandler
         {
             Debug.LogError("Cannot load shelf data!");
         }
-
     }
     /// <summary>
     /// Loads new book on clicking left arrow 

@@ -7,24 +7,14 @@ public class L2DifferentPlacesManager6 : GSManager
 {
     private bool m_bIsDay = true;
 
-    GameObject m_rcSky;
-    GameObject m_rcStars;
-    List<GameObject> m_racClouds = new List<GameObject>();
+    private GameObject m_rcSky;
+    private GameObject m_rcStar;
+    private GameObject m_rcSun;
+    private GameObject m_rcInnerSun;
 
     public override void Start()
     {
-        GameObject[] racAllObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
-        foreach (GameObject rcGameObject in racAllObjects)
-        {
-            if (rcGameObject.activeInHierarchy)
-            {
-                if (rcGameObject.name.Contains("Cloud"))
-                {
-                    m_racClouds.Add(rcGameObject);
-                }
-            }
-        }
-
+        m_bIsDay = true;
         m_rcSky = GameObject.Find("Sky");
 
         if (m_rcSky == null)
@@ -32,15 +22,29 @@ public class L2DifferentPlacesManager6 : GSManager
             Debug.Log("Couldn't find Sky Object");
         }
 
-        m_rcStars = GameObject.Find("Stars");
+        m_rcSun = GameObject.Find("Sun");
 
-        if (m_rcStars == null)
+        if ( m_rcSun == null)
+        {
+            Debug.Log("Couldn't find Sun Object");
+        }
+
+        m_rcInnerSun = GameObject.Find("InnerSun");
+
+        if ( m_rcInnerSun == null )
+        {
+            Debug.Log("Couldn't find Inner Sun");
+        }
+
+        m_rcStar = GameObject.Find("Star");
+
+        if (m_rcStar == null)
         {
             Debug.Log("Couldn't find Stars Object");
         }
         else
         {
-            SpriteRenderer rcSpriteRenderer = m_rcStars.GetComponent<SpriteRenderer>();
+            SpriteRenderer rcSpriteRenderer = m_rcStar.GetComponent<SpriteRenderer>();
 
             if ( rcSpriteRenderer != null )
             {
@@ -48,51 +52,46 @@ public class L2DifferentPlacesManager6 : GSManager
             }
         }
 
-
         base.Start();
     }
 
     public override void OnMouseDown(GameObject go)
 	{
-        if (m_rcSky == null) return;
-
-        if ( go != null )
+        if (m_rcSky != null)
         {
-            GTinkerGraphic rcGraphic = m_rcSky.GetComponent<GTinkerGraphic>();
 
-            if (rcGraphic != null)
+            if (go != null)
             {
-                if (go.name == "Text_day")
+                GTinkerGraphic rcGraphic = m_rcSky.GetComponent<GTinkerGraphic>();
+
+                if (rcGraphic != null)
                 {
-                    // If it's day already and they click day don't do anything
-                    // If it's night, then change the sky to day.
-                    if (!m_bIsDay)
+                    if ((go.name == "Text_sun.") || (go.name == "Text_shining"))
                     {
-                        rcGraphic.LoadAndPlayAnimation(1);
-                        m_bIsDay = true;
-
-                        FadeOut(m_rcStars, 4.0f);
-
-                        foreach (GameObject rcCloud in m_racClouds)
+                        // If it's day already and they click day don't do anything
+                        // If it's night, then change the sky to day.
+                        if (!m_bIsDay)
                         {
-                            FadeIn(rcCloud, 4.0f);
+                            rcGraphic.LoadAndPlayAnimation(1);
+                            m_bIsDay = true;
+
+                            FadeOut(m_rcStar, 4.0f);
+                            FadeIn(m_rcSun, 4.0f);
+                            FadeIn(m_rcInnerSun, 4.0f);
                         }
                     }
-                }
-                else if (go.name == "Text_night.")
-                {
-                    // If it's night already and they click night doesn't do anything
-                    // If it's day, then change the sky to night.
-                    if (m_bIsDay)
+                    else if (go.name == "Text_star." || (go.name == "Text_sparkling"))
                     {
-                        rcGraphic.LoadAndPlayAnimation(0);
-                        m_bIsDay = false;
-
-                        FadeIn(m_rcStars, 4.0f);
-
-                        foreach (GameObject rcCloud in m_racClouds)
+                        // If it's night already and they click night doesn't do anything
+                        // If it's day, then change the sky to night.
+                        if (m_bIsDay)
                         {
-                            FadeOut(rcCloud,4.0f);
+                            rcGraphic.LoadAndPlayAnimation(0);
+                            m_bIsDay = false;
+
+                            FadeIn(m_rcStar, 4.0f);
+                            FadeOut(m_rcSun, 4.0f);
+                            FadeOut(m_rcInnerSun, 4.0f);
                         }
                     }
                 }

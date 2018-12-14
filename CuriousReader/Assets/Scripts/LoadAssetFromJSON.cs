@@ -202,7 +202,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
         FirebaseHelper.LogInAppSection(inTime.ToString(), span.TotalSeconds);
 
-        Destroy(GameObject.Find("SceneManager" + (pageNumber)));
+        DestroyImmediate(GameObject.Find("SceneManager" + (pageNumber)));
 
         pageNumber = i_nPageNumber;
 
@@ -264,12 +264,12 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	public void EmptyPage()
 	{   if (tinkerGraphicObjects != null) {
 			for (int i = 0; i < tinkerGraphicObjects.Count; i++) {
-				Destroy (tinkerGraphicObjects [i]);
+				DestroyImmediate (tinkerGraphicObjects [i]);
 			}
 		}
 		if (stanzaObjects != null) {
 			for (int j = 0; j < stanzaObjects.Count; j++) {
-				Destroy (stanzaObjects [j]);
+				DestroyImmediate (stanzaObjects [j]);
 			}
 		}
 		stanzaObjects = null;
@@ -303,7 +303,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// </summary>
 	public void LoadSceneSpecificScript()
 	{
-
 		GameObject go = new GameObject();
 		go.transform.SetParent(canvasTransform);
 		go.name = "SceneManager" + pageNumber;
@@ -649,7 +648,12 @@ public class LoadAssetFromJSON : MonoBehaviour {
         {
             go = GameObject.Instantiate(rcPrefab);
             go.name = gameObjectData.label;
-    
+
+            if ( !string.IsNullOrEmpty(gameObjectData.tag) )
+            {
+                go.tag = gameObjectData.tag;
+            }
+
             SpriteRenderer rcRenderer = go.GetComponent<SpriteRenderer>();
 
             if (rcRenderer != null)

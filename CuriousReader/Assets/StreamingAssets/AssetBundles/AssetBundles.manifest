@@ -1,10 +1,10 @@
 ManifestFileVersion: 0
-CRC: 3350542437
+CRC: 3714282664
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: differentplaces
+      Name: catstory
       Dependencies: {}
     Info_1:
-      Name: catstory
+      Name: differentplaces
       Dependencies: {}

@@ -8,19 +8,33 @@ public class L2DifferentPlacesManager7: GSManager
     private bool m_bIsDay = true;
 
     GameObject m_rcSky;
-    GameObject m_rcStars;
-    List<GameObject> m_racClouds = new List<GameObject>();
+    List<GameObject> m_racDayGroup = new List<GameObject>();
+    List<GameObject> m_racNightGroup = new List<GameObject>();
 
     public override void Start()
     {
         GameObject[] racAllObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
+
+        // Sort the gameobjects into day and night objects.
         foreach (GameObject rcGameObject in racAllObjects)
         {
             if (rcGameObject.activeInHierarchy)
             {
-                if (rcGameObject.name.Contains("Cloud"))
+                if (rcGameObject.tag.Contains("day"))
                 {
-                    m_racClouds.Add(rcGameObject);
+                    m_racDayGroup.Add(rcGameObject);
+                }
+                else if ( rcGameObject.tag.Contains("night"))
+                {
+                    m_racNightGroup.Add(rcGameObject);
+
+                    // Start this object off transparent.
+                    SpriteRenderer rcSpriteRenderer = rcGameObject.GetComponent<SpriteRenderer>();
+
+                    if (rcSpriteRenderer != null)
+                    {
+                        rcSpriteRenderer.material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                    }
                 }
             }
         }
@@ -31,23 +45,6 @@ public class L2DifferentPlacesManager7: GSManager
         {
             Debug.Log("Couldn't find Sky Object");
         }
-
-        m_rcStars = GameObject.Find("Stars");
-
-        if (m_rcStars == null)
-        {
-            Debug.Log("Couldn't find Stars Object");
-        }
-        else
-        {
-            SpriteRenderer rcSpriteRenderer = m_rcStars.GetComponent<SpriteRenderer>();
-
-            if ( rcSpriteRenderer != null )
-            {
-                rcSpriteRenderer.material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
-            }
-        }
-
 
         base.Start();
     }
@@ -71,12 +68,15 @@ public class L2DifferentPlacesManager7: GSManager
                         rcGraphic.LoadAndPlayAnimation(1);
                         m_bIsDay = true;
 
-                        FadeOut(m_rcStars, 4.0f);
-
-                        foreach (GameObject rcCloud in m_racClouds)
+                        foreach (GameObject rcObject in m_racDayGroup)
                         {
-                            FadeIn(rcCloud, 4.0f);
+                            FadeIn(rcObject, 4.0f);
                         }
+                        foreach (GameObject rcObject in m_racNightGroup)
+                        {
+                            FadeOut(rcObject, 4.0f);
+                        }
+
                     }
                 }
                 else if (go.name == "Text_night.")
@@ -88,11 +88,13 @@ public class L2DifferentPlacesManager7: GSManager
                         rcGraphic.LoadAndPlayAnimation(0);
                         m_bIsDay = false;
 
-                        FadeIn(m_rcStars, 4.0f);
-
-                        foreach (GameObject rcCloud in m_racClouds)
+                        foreach (GameObject rcObject in m_racDayGroup)
                         {
-                            FadeOut(rcCloud,4.0f);
+                            FadeOut(rcObject, 4.0f);
+                        }
+                        foreach (GameObject rcObject in m_racNightGroup)
+                        {
+                            FadeIn(rcObject, 4.0f);
                         }
                     }
                 }

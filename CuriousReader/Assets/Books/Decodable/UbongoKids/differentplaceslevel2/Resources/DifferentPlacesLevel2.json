@@ -12,7 +12,7 @@
     "pages": [
         {
             "pageNumber": 0,
-            "script": "L2DifferentPlacesManager1",
+            "script": "DayAndNightManager",
             "audio": {
                 "audioName": "",
                 "isAnim": false,
@@ -21,7 +21,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "Sky",
+                    "tag": "",
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 100.0,
@@ -99,7 +99,7 @@
                 },
                 {
                     "id": 1,
-                    "tag": "",
+                    "tag": "night",
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 0.0,
@@ -118,7 +118,7 @@
                 },
                 {
                     "id": 2,
-                    "tag": "",
+                    "tag": "day",
                     "posX": -156.0,
                     "posY": -10.0,
                     "posZ": 0.0,
@@ -137,7 +137,7 @@
                 },
                 {
                     "id": 3,
-                    "tag": "",
+                    "tag": "day",
                     "posX": 161.0,
                     "posY": 29.0,
                     "posZ": 95.0,
@@ -156,7 +156,7 @@
                 },
                 {
                     "id": 4,
-                    "tag": "",
+                    "tag": "day",
                     "posX": -370.0,
                     "posY": -179.0,
                     "posZ": 95.0,
@@ -175,7 +175,7 @@
                 },
                 {
                     "id": 5,
-                    "tag": "",
+                    "tag": "day",
                     "posX": 277.0,
                     "posY": -248.0,
                     "posZ": 85.0,
@@ -194,7 +194,7 @@
                 },
                 {
                     "id": 6,
-                    "tag": "",
+                    "tag": "day",
                     "posX": -337.0,
                     "posY": 48.0,
                     "posZ": 85.0,
@@ -213,7 +213,7 @@
                 },
                 {
                     "id": 7,
-                    "tag": "",
+                    "tag": "day",
                     "posX": -337.0,
                     "posY": 48.0,
                     "posZ": 85.0,
@@ -309,7 +309,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "backdrop",
+                    "tag": "",
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 100.0,
@@ -328,7 +328,7 @@
                 },
                 {
                     "id": 1,
-                    "tag": "thundercloud",
+                    "tag": "",
                     "posX": -120.0,
                     "posY": 0.0,
                     "posZ": 0.0,
@@ -495,7 +495,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "background",
+                    "tag": "",
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 100.0,
@@ -514,7 +514,7 @@
                 },
                 {
                     "id": 1,
-                    "tag": "bigbird",
+                    "tag": "",
                     "posX": -120.0,
                     "posY": 0.0,
                     "posZ": 0.0,
@@ -562,7 +562,7 @@
                 },
                 {
                     "id": 2,
-                    "tag": "smallbird",
+                    "tag": "",
                     "posX": 120.0,
                     "posY": 0.0,
                     "posZ": 0.0,
@@ -732,7 +732,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "bigbird",
+                    "tag": "",
                     "posX": 900.0,
                     "posY": 0.0,
                     "posZ": 0.0,
@@ -780,7 +780,7 @@
                 },
                 {
                     "id": 1,
-                    "tag": "smallbird",
+                    "tag": "",
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 0.0,
@@ -856,7 +856,7 @@
                 },
                 {
                     "id": 2,
-                    "tag": "music",
+                    "tag": "",
                     "posX": 60.0,
                     "posY": 60.0,
                     "posZ": 0.0,
@@ -905,7 +905,7 @@
                 },
                 {
                     "id": 3,
-                    "tag": "bg",
+                    "tag": "",
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 100.0,
@@ -1039,7 +1039,7 @@
         },
         {
             "pageNumber": 4,
-            "script": "L2DifferentPlacesManager5",
+            "script": "DayAndNightManager",
             "audio": {
                 "audioName": "",
                 "isAnim": false,
@@ -1048,7 +1048,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "",
+                    "tag": "day",
                     "posX": -120.0,
                     "posY": 0.0,
                     "posZ": 0.0,
@@ -1095,7 +1095,7 @@
                 },
                 {
                     "id": 2,
-                    "tag": "",
+                    "tag": "night",
                     "posX": 155.0,
                     "posY": 35.0,
                     "posZ": 0.0,
@@ -1114,7 +1114,7 @@
                 },
                 {
                     "id": 3,
-                    "tag": "",
+                    "tag": "night",
                     "posX": 120.0,
                     "posY": -75.0,
                     "posZ": 0.0,
@@ -1328,7 +1328,7 @@
         },
         {
             "pageNumber": 5,
-            "script": "GSManager",
+            "script": "DayAndNightManager",
             "audio": {
                 "audioName": "",
                 "isAnim": false,
@@ -1337,7 +1337,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "star",
+                    "tag": "night",
                     "posX": 120.0,
                     "posY": 0.0,
                     "posZ": 91.0,
@@ -1349,7 +1349,7 @@
                     "orderInLayer": 0,
                     "imageName": "06_star_twinkles-1",
                     "inText": false,
-                    "label": "star",
+                    "label": "Star",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [
@@ -1384,7 +1384,7 @@
                 },
                 {
                     "id": 1,
-                    "tag": "sun",
+                    "tag": "day",
                     "posX": -120.0,
                     "posY": 0.0,
                     "posZ": 0.0,
@@ -1396,7 +1396,7 @@
                     "orderInLayer": 0,
                     "imageName": "06_sunlight-1",
                     "inText": false,
-                    "label": "sun",
+                    "label": "Sun",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [
@@ -1432,7 +1432,7 @@
                 },
                 {
                     "id": 2,
-                    "tag": "",
+                    "tag": "day",
                     "posX": -120.0,
                     "posY": 0.0,
                     "posZ": -1.0,
@@ -1444,7 +1444,7 @@
                     "orderInLayer": 0,
                     "imageName": "5_orange_sun-1",
                     "inText": false,
-                    "label": "innersun",
+                    "label": "InnerSun",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
@@ -1463,10 +1463,69 @@
                     "orderInLayer": 0,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
-                    "label": "sky",
+                    "label": "Sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "7_between_day_bg_night_bg",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "animName": "7_between_night_bg_day_bg",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "texts": [
@@ -1585,7 +1644,7 @@
         },
         {
             "pageNumber": 6,
-            "script": "GSManager",
+            "script": "DayAndNightManager",
             "audio": {
                 "audioName": "",
                 "isAnim": false,
@@ -1606,14 +1665,73 @@
                     "orderInLayer": 0,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
-                    "label": "sky",
+                    "label": "Sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "7_between_day_bg_night_bg",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "animName": "7_between_night_bg_day_bg",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": 1,
-                    "tag": "",
+                    "tag": "day",
                     "posX": 144.0,
                     "posY": 72.0,
                     "posZ": 95.0,
@@ -1670,7 +1788,7 @@
                 },
                 {
                     "id": 4,
-                    "tag": "",
+                    "tag": "day",
                     "posX": -239.0,
                     "posY": 72.0,
                     "posZ": 95.0,
@@ -1689,7 +1807,7 @@
                 },
                 {
                     "id": 5,
-                    "tag": "",
+                    "tag": "day",
                     "posX": -239.0,
                     "posY": 72.0,
                     "posZ": 92.0,
@@ -1702,6 +1820,44 @@
                     "imageName": "5_orange_sun-1",
                     "inText": false,
                     "label": "innersun",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 6,
+                    "tag": "night",
+                    "posX": 0.0,
+                    "posY": -44.0,
+                    "posZ": 96.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_stars-1",
+                    "inText": false,
+                    "label": "Stars",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 7,
+                    "tag": "night",
+                    "posX": -282.0,
+                    "posY": -78.0,
+                    "posZ": 0.0,
+                    "scaleX": -50.0,
+                    "scaleY": 50.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 60.0,
+                    "orderInLayer": 0,
+                    "imageName": "5_moon-1",
+                    "inText": false,
+                    "label": "Moon",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
@@ -1785,7 +1941,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "branching_path",
+                    "tag": "",
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 90.0,
@@ -1804,7 +1960,7 @@
                 },
                 {
                     "id": 1,
-                    "tag": "forest_choice",
+                    "tag": "",
                     "posX": 204.0,
                     "posY": 101.0,
                     "posZ": 0.0,
@@ -1823,7 +1979,7 @@
                 },
                 {
                     "id": 2,
-                    "tag": "ocean_choice",
+                    "tag": "",
                     "posX": 233.0,
                     "posY": -121.0,
                     "posZ": 0.0,
@@ -4890,7 +5046,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "akili_eating_animation",
+                    "tag": "",
                     "posX": -3.0,
                     "posY": -47.0,
                     "posZ": 95.0,
@@ -4939,7 +5095,7 @@
                 },
                 {
                     "id": 1,
-                    "tag": "house_background",
+                    "tag": "",
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 105.0,
@@ -4958,7 +5114,7 @@
                 },
                 {
                     "id": 2,
-                    "tag": "food_on_plate",
+                    "tag": "",
                     "posX": -36.900001525878909,
                     "posY": -99.5999984741211,
                     "posZ": 91.0,
@@ -5044,7 +5200,7 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "akili_jumps_animation",
+                    "tag": "",
                     "posX": -79.0,
                     "posY": -61.0,
                     "posZ": 91.0,
@@ -5097,7 +5253,7 @@
                 },
                 {
                     "id": 1,
-                    "tag": "house_background",
+                    "tag": "",
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 105.0,
@@ -5116,7 +5272,7 @@
                 },
                 {
                     "id": 2,
-                    "tag": "stool",
+                    "tag": "",
                     "posX": 85.0,
                     "posY": -159.0,
                     "posZ": 91.0,
@@ -5188,7 +5344,7 @@
         },
         {
             "pageNumber": 24,
-            "script": "GSManager",
+            "script": "DayAndNightManager",
             "audio": {
                 "audioName": "",
                 "isAnim": false,
@@ -5197,22 +5353,81 @@
             "gameObjects": [
                 {
                     "id": 0,
-                    "tag": "day_background",
+                    "tag": "",
                     "posX": 0.0,
                     "posY": 0.0,
-                    "posZ": 0.0,
+                    "posZ": 100.0,
                     "scaleX": 710.0,
                     "scaleY": 710.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -4,
-                    "imageName": "1_day_bg-1",
+                    "orderInLayer": -7,
+                    "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
-                    "label": "day_background",
+                    "label": "Sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "7_between_day_bg_night_bg",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "animName": "7_between_night_bg_day_bg",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "id": 1,
@@ -5225,7 +5440,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
+                    "orderInLayer": -3,
                     "imageName": "13_water_wave-1",
                     "inText": false,
                     "label": "water",
@@ -5368,7 +5583,7 @@
                 },
                 {
                     "id": 9,
-                    "tag": "ground_and_bushes",
+                    "tag": "",
                     "posX": 151.0,
                     "posY": 9.0,
                     "posZ": 0.0,
@@ -5377,7 +5592,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -1,
+                    "orderInLayer": -2,
                     "imageName": "22_ground_and_bushes-1",
                     "inText": false,
                     "label": "ground_and_bushes",
@@ -5400,6 +5615,139 @@
                     "imageName": "10_small_monkeys-1",
                     "inText": false,
                     "label": "small_monkeys",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 11,
+                    "tag": "night",
+                    "posX": 189.0,
+                    "posY": 81.0,
+                    "posZ": 98.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "1_stars-1",
+                    "inText": false,
+                    "label": "Stars",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 12,
+                    "tag": "day",
+                    "posX": -320.0,
+                    "posY": 160.0,
+                    "posZ": 98.0,
+                    "scaleX": 30.0,
+                    "scaleY": 30.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "5_orange_sun-1",
+                    "inText": false,
+                    "label": "Sun",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 13,
+                    "tag": "day",
+                    "posX": -320.0,
+                    "posY": 160.0,
+                    "posZ": 98.0,
+                    "scaleX": -30.0,
+                    "scaleY": -30.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "5_orange_portion_sun-1",
+                    "inText": false,
+                    "label": "Sun",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 14,
+                    "tag": "night",
+                    "posX": -180.0,
+                    "posY": 86.0,
+                    "posZ": 98.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_stars-1",
+                    "inText": false,
+                    "label": "Stars",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 15,
+                    "tag": "day",
+                    "posX": 73.0,
+                    "posY": 64.0,
+                    "posZ": 97.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "2_small_fluffy_cloud-1",
+                    "inText": false,
+                    "label": "Cloud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 16,
+                    "tag": "day",
+                    "posX": 178.0,
+                    "posY": 93.0,
+                    "posZ": 97.0,
+                    "scaleX": -75.0,
+                    "scaleY": 75.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "2_small_fluffy_cloud-1",
+                    "inText": false,
+                    "label": "Cloud2",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": []
+                },
+                {
+                    "id": 17,
+                    "tag": "day",
+                    "posX": 270.0,
+                    "posY": 71.0,
+                    "posZ": 97.0,
+                    "scaleX": -60.0,
+                    "scaleY": -60.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "2_small_fluffy_cloud-1",
+                    "inText": false,
+                    "label": "Cloud3",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []

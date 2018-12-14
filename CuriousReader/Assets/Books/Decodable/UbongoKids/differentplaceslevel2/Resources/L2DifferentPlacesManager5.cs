@@ -14,6 +14,8 @@ public class L2DifferentPlacesManager5 : GSManager
 
     public override void Start()
     {
+        m_bIsDay = true;
+
         m_rcSky = GameObject.Find("Sky");
 
         if (m_rcSky == null)

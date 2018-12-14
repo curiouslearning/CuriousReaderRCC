@@ -7,6 +7,8 @@ TagManager:
   - left_arrow
   - right_arrow
   - stanza
+  - night
+  - day
   layers:
   - Default
   - TransparentFX
