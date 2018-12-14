@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1188445413
+CRC: 1988924167
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7cd3b0ba9fadfed4d3ce063ee713a992
+    Hash: af2b46f86cf9bff20c9737d95216d0e6
   TypeTreeHash:
     serializedVersion: 2
     Hash: c229f1531c5b0cb0fe6debd87a58514c
@@ -42,11 +42,14 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/10/10_monkeys_playing_passing_the_sticks-7.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/7A/7A_Akili_3_way-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/3/big_bird_flapping/03_big_bird_flapping-3.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P3_bird.ogg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_3.wav
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between night to day SVG/7_between_night_bg_day_bg-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/5/5_orange_sun-1.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P2_bird2.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/18/18_bobbing_together-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/The happy fish smiles/16_the_happy_fish_smiles-1.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P3_a2.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/7A/7A_Akili_3_way_forest-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/10/10_monkeys_playing_passing_the_sticks-3.svg
@@ -57,6 +60,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/4/small_bird_singing/04_a_small_singing_bird-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/3/3_big_flying_bird-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/4/music_note/04_a_small_singing_bird_music-4.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P0_and.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Images/9/9_short_and_tall_tree-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/21/21_Akili_smiles_and_jumps-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/21/21_Akili_smiles_and_jumps-4.svg
@@ -66,6 +70,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/6/sunlight/06_sunlight-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/6/star_twinkles/06_star_twinkles-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/17/small octopus move flap legs/17_small_octopus_move_flap_legs-2.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P2_bird.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/The happy fish smiles/16_the_happy_fish_smiles-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/sad fish swimming below the
   big fish across/16_the_sad_fish_swimming-5.svg
@@ -74,6 +79,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/17/big octopus move flap legs/17_big_octopus_move_flap_legs-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/10/10_monkeys_playing_passing_the_sticks-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/12/12_giraffe_and_monkey-1.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P2_big.ogg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_0.wav
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_love.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-5.svg
@@ -88,11 +94,13 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/11/11_long_stick-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/21/21_Akili_smiles_and_jumps-5.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P0_I.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/7/between night to day/7_between_night_bg_day_bg_03.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/20/20_Akili_s_house_bg-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/7/between day to night/7_between_day_bg_night_bg-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/7/between night to day/7_between_night_bg_day_bg_01.svg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_15.wav
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P3_flying.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Images/22/22_ground_and_bushes-1.png
 - Assets/Books/Decodable/UbongoKids/Common/Animations/7/between night to day/7_between_night_bg_day_bg_02.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/13/13_water_wave-4.svg
@@ -109,13 +117,17 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_23.wav
 - Assets/Books/Decodable/UbongoKids/Common/Animations/17/highlight the small octopus/17_highlight_the_small_octopus-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/7/between day to night/7_between_day_bg_night_bg-1.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P3_a.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/18/18_bobbing_together-2.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P0_love.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-5.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/9/9_giraffe_stand_up-4.svg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_19.wav
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/big_boat_move_fast/14_big_boat_moves_fast-5.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/ReadAgain.png
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P0_day.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/17/small octopus move flap legs/17_small_octopus_move_flap_legs-4.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P1_cloud.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/5/orange_portion_of_the_sun_rotates/05_orange_portion_sun-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-6.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between night to day SVG/7_between_night_bg_day_bg-3.svg
@@ -124,6 +136,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/18/18_bobbing_together-4.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/sad fish swimming below the
   big fish across/16_the_sad_fish_swimming-2.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P3_singing.ogg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_1.wav
 - Assets/Books/Decodable/UbongoKids/Common/Images/7/7_clouds-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/20/20_Akili_takes_food_and_eat-1.svg
@@ -137,6 +150,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/3/big_bird_flapping/03_big_bird_flapping-2.svg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_22.wav
 - Assets/Books/Decodable/UbongoKids/Common/Animations/9/9_giraffe_stand_up-3.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P0_sky.ogg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_9.wav
 - Assets/Books/Decodable/UbongoKids/Common/Images/1/1_stars-1.svg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_the.ogg
@@ -145,11 +159,13 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/10/10_monkeys_playing_passing_the_sticks-5.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/17/small octopus move flap legs/17_small_octopus_move_flap_legs-5.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between night to day SVG/7_between_night_bg_day_bg-4.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P1_small.ogg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_4.wav
 - Assets/Books/Decodable/UbongoKids/Common/Images/5/5_star-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-4.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/4/small_bird_singing/04_a_small_singing_bird-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/10/10_monkeys_playing_passing_the_sticks-6.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P3_bird2.ogg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel2.json
 - Assets/Books/Decodable/UbongoKids/Common/Images/Home.png
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_7.wav
@@ -159,7 +175,9 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/21/21_Akili_smiles_and_jumps-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/2/2_big_thunderstorm_cloud-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/20/20_Akili_takes_food_and_eat-3.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P0_the.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between day to night SVG/7_between_day_bg_night_bg-3.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P2_small.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/17/big octopus move flap legs/17_big_octopus_move_flap_legs-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/6/sunlight/06_sunlight-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/17/big octopus move flap legs/17_big_octopus_move_flap_legs-6.svg
@@ -203,6 +221,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Images/10/10_forest_floor_bg-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/sad fish swimming below the
   big fish across/16_the_sad_fish_swimming-4.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P1_look.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/5/star_vibrates/05_star_vibrates-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/21/21_Akili_smiles_and_jumps-8.svg
 - Assets/Books/Decodable/UbongoKids/Common/Images/9/9_giraffe-1.svg
@@ -210,6 +229,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/4/small_bird_singing/04_a_small_singing_bird-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-8.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/2/2_clouds_move_up_and_down-4.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P0_night.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/sad face on the little fish/16_sad_face_on_the_little_fish-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/16/sad face on the little fish/16_sad_face_on_the_little_fish-2.svg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_8.wav
@@ -229,6 +249,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-4.svg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/Label Track.txt
 - Assets/Books/Decodable/UbongoKids/Common/Animations/4/music_note/04_a_small_singing_bird_music-1.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P1_big.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/big_boat_move_fast/14_big_boat_moves_fast-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/5/star_vibrates/05_star_vibrates-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/21/21_Akili_smiles_and_jumps-7.svg
@@ -238,9 +259,11 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Images/10/10_small_monkeys-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-7.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P1_cloud2.ogg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_and.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/10/10_monkeys_playing_passing_the_sticks-8.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/2/2_clouds_move_up_and_down-2.svg
+- Assets/Books/Decodable/UbongoKids/Common/Audio/SingleWord/L2P0_sky2.ogg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/Stanza/audio_stanza_page_17.wav
 - Assets/Books/Decodable/UbongoKids/Common/Animations/20/20_Akili_takes_food_and_eat-4.svg
 Dependencies: []

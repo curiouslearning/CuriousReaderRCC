@@ -7,7 +7,7 @@ using System;
 public class DayAndNightManager: GSManager
 {
     public string[] m_rastrDayWords = { "Text_day", "Text_sun", "Text_shining","Text_Big","Text_sun." };
-    public string[] m_rastrNightWords = { "Text_night.", "Text_star.", "Text_star","Text_small","Text_sparkling", "Text_moon" };
+    public string[] m_rastrNightWords = { "Text_night.", "Text_star.", "Text_star","Text_small","Text_Small","Text_sparkling", "Text_moon" };
 
     private bool m_bIsDay = true;
 
@@ -91,11 +91,11 @@ public class DayAndNightManager: GSManager
 
                         foreach (GameObject rcObject in m_racDayGroup)
                         {
-                            FadeIn(rcObject, 4.0f);
+                            BookSystem.FadeIn(rcObject, 4.0f);
                         }
                         foreach (GameObject rcObject in m_racNightGroup)
                         {
-                            FadeOut(rcObject, 4.0f);
+                            BookSystem.FadeOut(rcObject, 4.0f);
                         }
 
                     }
@@ -111,11 +111,11 @@ public class DayAndNightManager: GSManager
 
                         foreach (GameObject rcObject in m_racDayGroup)
                         {
-                            FadeOut(rcObject, 4.0f);
+                            BookSystem.FadeOut(rcObject, 4.0f);
                         }
                         foreach (GameObject rcObject in m_racNightGroup)
                         {
-                            FadeIn(rcObject, 4.0f);
+                            BookSystem.FadeIn(rcObject, 4.0f);
                         }
                     }
                 }
@@ -124,30 +124,4 @@ public class DayAndNightManager: GSManager
 
 		base.OnMouseDown (go);
 	}
-
-    public void FadeIn(GameObject i_rcObject, float i_fTime)
-    {
-        if (i_rcObject != null)
-        {
-            SpriteRenderer rcRenderer = i_rcObject.GetComponent<SpriteRenderer>();
-
-            if (rcRenderer != null)
-            {
-                rcRenderer.material.DOColor(new Color(1.0f, 1.0f, 1.0f, 1.0f), i_fTime);
-            }
-        }
-    }
-
-    public void FadeOut(GameObject i_rcObject, float i_fTime)
-    {
-        if (i_rcObject != null)
-        {
-            SpriteRenderer rcRenderer = i_rcObject.GetComponent<SpriteRenderer>();
-
-            if (rcRenderer != null)
-            {
-                rcRenderer.material.DOColor(new Color(1.0f, 1.0f, 1.0f, 0.0f), i_fTime);
-            }
-        }
-    }
 }
