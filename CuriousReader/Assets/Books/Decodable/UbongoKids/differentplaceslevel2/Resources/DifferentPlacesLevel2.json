@@ -240,59 +240,59 @@
             "audioFile": "audio_stanza_page_0.wav",
             "timestamps": [
                 {
-                    "start": 900,
+                    "start": 0,
                     "wordIdx": 0,
-                    "audio": "L2P0_sky",
-                    "end": 1250,
+                    "audio": "",
+                    "end": 666,
                     "starWord": "No"
                 },
                 {
-                    "start": 2000,
+                    "start": 666,
                     "wordIdx": 1,
-                    "audio": "L2P0_I",
-                    "end": 2200,
+                    "audio": "",
+                    "end": 1332,
                     "starWord": "No"
                 },
                 {
-                    "start": 2201,
+                    "start": 1333,
                     "wordIdx": 2,
-                    "audio": "L2P0_love",
-                    "end": 2301,
+                    "audio": "",
+                    "end": 1999,
                     "starWord": "No"
                 },
                 {
-                    "start": 2301,
+                    "start": 1999,
                     "wordIdx": 3,
-                    "audio": "L2P0_the",
-                    "end": 2401,
+                    "audio": "",
+                    "end": 2665,
                     "starWord": "No"
                 },
                 {
-                    "start": 2401,
+                    "start": 2666,
                     "wordIdx": 4,
-                    "audio": "L2P0_sky",
-                    "end": 2501,
+                    "audio": "",
+                    "end": 3332,
                     "starWord": "No"
                 },
                 {
-                    "start": 2502,
+                    "start": 3332,
                     "wordIdx": 5,
-                    "audio": "L2P0_day",
-                    "end": 2600,
+                    "audio": "",
+                    "end": 3998,
                     "starWord": "No"
                 },
                 {
-                    "start": 2601,
+                    "start": 3999,
                     "wordIdx": 6,
-                    "audio": "L2P0_and",
-                    "end": 2700,
+                    "audio": "",
+                    "end": 4665,
                     "starWord": "No"
                 },
                 {
-                    "start": 2701,
+                    "start": 4665,
                     "wordIdx": 7,
-                    "audio": "L2P0_night",
-                    "end": 2800,
+                    "audio": "",
+                    "end": 5331,
                     "starWord": "No"
                 }
             ],
@@ -376,35 +376,35 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "L2P1_look",
+                    "audio": "",
                     "end": 929,
                     "starWord": "No"
                 },
                 {
                     "start": 929,
                     "wordIdx": 1,
-                    "audio": "L2P1_big",
+                    "audio": "",
                     "end": 1858,
                     "starWord": "No"
                 },
                 {
                     "start": 1859,
                     "wordIdx": 2,
-                    "audio": "L2P1_cloud",
+                    "audio": "",
                     "end": 2788,
                     "starWord": "No"
                 },
                 {
                     "start": 2788,
                     "wordIdx": 3,
-                    "audio": "L2P1_small",
+                    "audio": "",
                     "end": 3717,
                     "starWord": "No"
                 },
                 {
                     "start": 3718,
                     "wordIdx": 4,
-                    "audio": "L2P1_cloud2",
+                    "audio": "",
                     "end": 4647,
                     "starWord": "No"
                 }
@@ -620,28 +620,28 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "L2P2_big",
+                    "audio": "",
                     "end": 681,
                     "starWord": "No"
                 },
                 {
                     "start": 681,
                     "wordIdx": 1,
-                    "audio": "L2P2_bird",
+                    "audio": "",
                     "end": 1362,
                     "starWord": "No"
                 },
                 {
                     "start": 1363,
                     "wordIdx": 2,
-                    "audio": "L2P2_small",
+                    "audio": "",
                     "end": 2044,
                     "starWord": "No"
                 },
                 {
                     "start": 2045,
                     "wordIdx": 3,
-                    "audio": "L2P2_bird2",
+                    "audio": "",
                     "end": 2726,
                     "starWord": "No"
                 }
@@ -934,42 +934,42 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "L2P3_a",
+                    "audio": "",
                     "end": 654,
                     "starWord": "No"
                 },
                 {
                     "start": 654,
                     "wordIdx": 1,
-                    "audio": "L2P3_flying",
+                    "audio": "",
                     "end": 1308,
                     "starWord": "No"
                 },
                 {
                     "start": 1308,
                     "wordIdx": 2,
-                    "audio": "L2P3_bird",
+                    "audio": "",
                     "end": 1962,
                     "starWord": "No"
                 },
                 {
                     "start": 1963,
                     "wordIdx": 3,
-                    "audio": "L2P3_a2",
+                    "audio": "",
                     "end": 2617,
                     "starWord": "No"
                 },
                 {
                     "start": 2617,
                     "wordIdx": 4,
-                    "audio": "L2P3_singing",
+                    "audio": "",
                     "end": 3271,
                     "starWord": "No"
                 },
                 {
                     "start": 3271,
                     "wordIdx": 5,
-                    "audio": "L2P3_bird2",
+                    "audio": "",
                     "end": 3925,
                     "starWord": "No"
                 }
