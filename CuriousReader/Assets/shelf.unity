@@ -758,6 +758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -903,6 +904,8 @@ MonoBehaviour:
   - {fileID: 1878997210}
   - {fileID: 1402337029}
   - {fileID: 469213761}
+  m_bundleList:
+  - differentplaces
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -1035,6 +1038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -1806,6 +1810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -2008,6 +2013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -2267,6 +2273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -2400,6 +2407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -2533,6 +2541,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -2862,6 +2871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -3190,6 +3200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -3445,6 +3456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -3578,6 +3590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
@@ -3806,6 +3819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 0}
   Left: {fileID: 0}
   Right: {fileID: 0}
@@ -4039,6 +4053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bookInfos: []
+  m_bundleList: []
   bookwheel: {fileID: 363886629}
   Left: {fileID: 941557322}
   Right: {fileID: 1800835710}
