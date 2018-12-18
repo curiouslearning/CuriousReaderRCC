@@ -107,6 +107,42 @@ public class GTinkerText : MonoBehaviour {
 
 
     }
+
+    public void setFaceColor (Color i_color)
+    {
+        TextMeshProUGUI rcText = GetComponent<TextMeshProUGUI>();
+        if(rcText != null)
+        {
+            rcText.color = i_color;
+            rcText.havePropertiesChanged = true;
+            rcText.Rebuild(CanvasUpdate.Prelayout);
+            rcText.ForceMeshUpdate();
+        }
+    }
+
+    public void toggleHighlight(bool i_highlight)
+    {
+        if(i_highlight)
+        {
+            setFaceColor(Color.yellow);
+        }
+        else
+        {
+            setFaceColor(Color.black);
+        }
+    }
+
+    public void highlightText ()
+    {
+        Debug.Log("highlight");
+        toggleHighlight(true);
+    }
+
+    public void unhighlightText()
+    {
+        Debug.Log("unhighlight");
+        toggleHighlight(false);
+    }
     public void iconanimPlay()
 
 	{
@@ -151,7 +187,7 @@ public class GTinkerText : MonoBehaviour {
 			//sending data directly to firebase using "72 hours rule"! (removed local data storage)
 			//DataCollection.AddInTouchData( ("Text_"+gameObject.GetComponent<Text>().text) , time.ToString());
 
-			FirebaseHelper.LogInAppTouch (("Text_" + gameObject.GetComponent<TextMeshPro> ().text), time.ToString ());
+			FirebaseHelper.LogInAppTouch (("Text_" + gameObject.GetComponent<TextMeshProUGUI> ().text), time.ToString ());
 
 			if (!stanza.stanzaManager.sceneManager.disableSounds) {
 				PlaySound();
