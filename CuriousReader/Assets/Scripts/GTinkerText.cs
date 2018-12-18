@@ -108,6 +108,10 @@ public class GTinkerText : MonoBehaviour {
 
     }
 
+    /// <summary>
+    /// Change the face color of this object's text to the given Colo
+    /// </summary>
+    /// <param name="i_color">the desired color.</param>
     public void setFaceColor (Color i_color)
     {
         TextMeshProUGUI rcText = GetComponent<TextMeshProUGUI>();
@@ -120,6 +124,10 @@ public class GTinkerText : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Toggles the text highlighting between the desired colors.
+    /// </summary>
+    /// <param name="i_highlight">If set to <c>true</c> i highlight.</param>
     public void toggleHighlight(bool i_highlight)
     {
         if(i_highlight)
@@ -132,15 +140,19 @@ public class GTinkerText : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Highlights the text.
+    /// </summary>
     public void highlightText ()
     {
-        Debug.Log("highlight");
         toggleHighlight(true);
     }
 
+    /// <summary>
+    /// return text to original color
+    /// </summary>
     public void unhighlightText()
     {
-        Debug.Log("unhighlight");
         toggleHighlight(false);
     }
     public void iconanimPlay()
