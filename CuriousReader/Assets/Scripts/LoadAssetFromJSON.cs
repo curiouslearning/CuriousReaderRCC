@@ -584,11 +584,11 @@ public class LoadAssetFromJSON : MonoBehaviour {
         // Debug.Log(anim.runtimeAnimatorController);
 //		Text text = UItextGO.AddComponent<Text>();
 
-        TextMeshPro rcTextMeshPro = UItextGO.AddComponent<TextMeshPro>();
+        TextMeshProUGUI rcTextMeshPro = UItextGO.AddComponent<TextMeshProUGUI>();
         rcTextMeshPro.text = textToPrint;
         rcTextMeshPro.color = textColor;
         // Have to figure out how to get the font
-        rcTextMeshPro.fontSize = storyBookJson.textFontSize * 10.0f;
+        rcTextMeshPro.fontSize = storyBookJson.textFontSize; //* 10.0f;
         rcTextMeshPro.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
 //		text.text = textToPrint;
