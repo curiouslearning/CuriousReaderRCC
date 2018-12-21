@@ -179,6 +179,8 @@ public class BookEditor : EditorWindow
             StreamWriter rcWriter = new StreamWriter(m_strBookPath, false);
             rcWriter.Write(JsonUtility.ToJson(m_rcStoryBook, true));
             rcWriter.Close();
+
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
         }
 
         GUILayout.EndScrollView();

@@ -50,7 +50,7 @@ public class ShelfManager : MonoBehaviour, IPointerClickHandler
     public Sprite read;
     public Sprite mute;
 
-    public static bool autoNarrate = false;
+    public static bool autoNarrate = true;
 
     void Awake()
     {
