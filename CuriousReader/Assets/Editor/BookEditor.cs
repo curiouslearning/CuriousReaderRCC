@@ -100,10 +100,10 @@ public class BookEditor : EditorWindow
         GUILayout.EndHorizontal();
 
 
-        if (!string.IsNullOrEmpty(m_strBookPath)) GUILayout.Label(m_strBookPath);
-        if (!string.IsNullOrEmpty(m_strCommonPath)) GUILayout.Label(m_strCommonPath);
-        if (!string.IsNullOrEmpty(m_strAnimPath)) GUILayout.Label(m_strAnimPath);
-        if (!string.IsNullOrEmpty(m_strAssetPath)) GUILayout.Label(m_strAssetPath);
+        if (!string.IsNullOrEmpty(m_strBookPath)) GUILayout.Label(m_strBookPath.Replace("/","\\"));
+        if (!string.IsNullOrEmpty(m_strCommonPath)) GUILayout.Label(m_strCommonPath.Replace("/", "\\"));
+        if (!string.IsNullOrEmpty(m_strAnimPath)) GUILayout.Label(m_strAnimPath.Replace("/", "\\"));
+        if (!string.IsNullOrEmpty(m_strAssetPath)) GUILayout.Label(m_strAssetPath.Replace("/", "\\"));
 
         m_vScrollPosition = GUILayout.BeginScrollView(m_vScrollPosition);
 
@@ -188,12 +188,9 @@ public class BookEditor : EditorWindow
 
     private void EditPage(PageClass i_rcPage, int i_nOrdinal)
     {
-        if (i_rcPage.texts != null)
+        if (i_rcPage.texts != null && i_rcPage.texts.Length != 0)
         {
-            if ( i_rcPage.texts[0] != null )
-            {
-                i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber + " - " + i_rcPage.texts[0].text ));
-            }
+            i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber + " - " + i_rcPage.texts[0].text ));
         }
         else
         {
@@ -409,7 +406,7 @@ public class BookEditor : EditorWindow
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.BeginVertical();
 
-                EditTriggers(i_rcPage.triggers[j], j);
+                EditTriggers(i_rcPage.triggers[j], j, i_nOrdinal);
 
                 EditorGUILayout.EndVertical();
                 EditorGUILayout.BeginVertical();
@@ -564,7 +561,7 @@ public class BookEditor : EditorWindow
         EditorGUI.indentLevel--;
     }
 
-    private void EditTriggers(TriggerClass i_rcTrigger, int i_nOrdinal)
+    private void EditTriggers(TriggerClass i_rcTrigger, int i_nOrdinal, int i_pageOrdinal)
     {
         i_rcTrigger.Show = EditorGUILayout.Foldout(i_rcTrigger.Show, "Trigger " + i_nOrdinal);
 
@@ -586,7 +583,17 @@ public class BookEditor : EditorWindow
             {
                 i_rcTrigger.DeactivateNextButton = EditorGUILayout.ToggleLeft("Deactivate Next", i_rcTrigger.DeactivateNextButton);
                 i_rcTrigger.NavigationPage = EditorGUILayout.IntField("Page Number", i_rcTrigger.NavigationPage, EditorStyles.numberField);
-                i_rcTrigger.sceneObjectId = EditorGUILayout.IntField("SceneObject ID", i_rcTrigger.sceneObjectId, EditorStyles.numberField);
+                string[] gameObjectsDropdownNames;
+
+                FormatGameObjectIDsAndLabels(m_rcStoryBook.pages[i_pageOrdinal].gameObjects, out gameObjectsDropdownNames);
+                EditorGUI.BeginDisabledGroup(gameObjectsDropdownNames.Length == 0);
+                if (gameObjectsDropdownNames.Length == 0) {
+                    i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, 
+                        new string[]{ "No GameObjects have been entered for this page" });
+                } else {
+                    i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, gameObjectsDropdownNames);
+                }
+                EditorGUI.EndDisabledGroup();
             }
             else
             {
@@ -594,12 +601,29 @@ public class BookEditor : EditorWindow
                 i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
                 i_rcTrigger.textId = EditorGUILayout.IntField("Text ID", i_rcTrigger.textId, EditorStyles.numberField);
                 i_rcTrigger.timestamp = EditorGUILayout.IntField("Timestamp", i_rcTrigger.timestamp, EditorStyles.numberField);
-                i_rcTrigger.sceneObjectId = EditorGUILayout.IntField("SceneObject ID", i_rcTrigger.sceneObjectId, EditorStyles.numberField);
+                string[] gameObjectsDropdownNames;
+                FormatGameObjectIDsAndLabels(m_rcStoryBook.pages[i_pageOrdinal].gameObjects, out gameObjectsDropdownNames);
+                EditorGUI.BeginDisabledGroup(gameObjectsDropdownNames.Length == 0);
+                if (gameObjectsDropdownNames.Length == 0) {
+                    i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, 
+                        new string[]{ "No GameObjects have been entered for this page" });
+                } else {
+                    i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, gameObjectsDropdownNames);
+                }
+                EditorGUI.EndDisabledGroup();
                 i_rcTrigger.typeOfLinking = EditorGUILayout.IntField("Type of Linking", i_rcTrigger.typeOfLinking, EditorStyles.numberField);
             }
         }
 
         EditorGUI.indentLevel--;
+    }
+
+    private void FormatGameObjectIDsAndLabels(GameObjectClass[] i_sceneObjects, out string[] i_gameObjectNames) {
+        i_gameObjectNames = new string[i_sceneObjects.Length];
+        for (int i = 0; i < i_sceneObjects.Length; i++) {
+            i_gameObjectNames[i] = string.Format("{0} - {1}", i, 
+                string.IsNullOrEmpty(i_sceneObjects[i].label) ? i_sceneObjects[i].imageName : i_sceneObjects[i].label);
+        }
     }
 
     private void EditText(TextClass i_rcText, int i_nOrdinal)
@@ -1149,7 +1173,7 @@ public class BookEditor : EditorWindow
 
 public class OpenBookEditor
 {
-    [MenuItem("Window/Book Editor")]
+    [MenuItem("Curious Reader/Book Editor")]
     static void ShowWindow()
     {
 

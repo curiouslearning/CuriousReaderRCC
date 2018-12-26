@@ -4,6 +4,9 @@
 [Bb]uild/
 [Bb]uilds/
 Assets/AssetStoreTools*
+**/.vscode
+**/Plugins/ConsoleE
+**/Plugins/ConsoleE.meta
 
 # Visual Studio cache directory
 .vs/
