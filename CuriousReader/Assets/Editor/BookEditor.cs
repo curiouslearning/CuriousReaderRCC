@@ -5,6 +5,7 @@ using UnityEditor;
 using UnityEditor.Audio;
 using System.IO;
 using System;
+using System.Text.RegularExpressions;
 using Unity.VectorGraphics;
 
 public class BookEditor : EditorWindow
@@ -599,8 +600,23 @@ public class BookEditor : EditorWindow
             {
                 i_rcTrigger.animId = EditorGUILayout.IntField("Anim ID", i_rcTrigger.animId, EditorStyles.numberField);
                 i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
-                i_rcTrigger.textId = EditorGUILayout.IntField("Text ID", i_rcTrigger.textId, EditorStyles.numberField);
+
+                // Text ID dropdown which is now an actual Word
+                string[] formattedTextIDDropdownValues;
+                FormatTextDropdownListForTextID(m_rcStoryBook.pages[i_pageOrdinal].texts, out formattedTextIDDropdownValues);
+                bool textIDValuesEmpty = formattedTextIDDropdownValues.Length == 0 || formattedTextIDDropdownValues.Length == 1 && formattedTextIDDropdownValues[0] == null;
+                EditorGUI.BeginDisabledGroup(textIDValuesEmpty);
+                if (textIDValuesEmpty) {
+                    i_rcTrigger.textId = EditorGUILayout.Popup("Word", i_rcTrigger.textId, 
+                        new string[]{ "No Text have been entered for this page" });
+                } else {
+                    i_rcTrigger.textId = EditorGUILayout.Popup("Word", i_rcTrigger.textId, formattedTextIDDropdownValues);
+                }
+                EditorGUI.EndDisabledGroup();
+
                 i_rcTrigger.timestamp = EditorGUILayout.IntField("Timestamp", i_rcTrigger.timestamp, EditorStyles.numberField);
+
+                // Scene Object Dropdown
                 string[] gameObjectsDropdownNames;
                 FormatGameObjectIDsAndLabels(m_rcStoryBook.pages[i_pageOrdinal].gameObjects, out gameObjectsDropdownNames);
                 EditorGUI.BeginDisabledGroup(gameObjectsDropdownNames.Length == 0);
@@ -618,10 +634,68 @@ public class BookEditor : EditorWindow
         EditorGUI.indentLevel--;
     }
 
+    /// <summary>
+    /// Joins the array of strings together and then split on ' ', each string in array should be trimmed and
+    /// multiple whitespace characters should be replaced with one before calling this method. 
+    /// </summary>
+    /// <param name="array">Input array of strings</param>
+    /// <returns>Simple word count</returns>
+    private int GetSimpleWordCountInStringArray(string[] array) {
+        return String.Join(" ", array).Split(' ').Length;
+    }
+
+    /// <summary>
+    /// Uses regex replace to remove consecutive whitespaces from the input string and trim it
+    /// </summary>
+    /// <param name="i_input">Input string</param>
+    /// <returns>String that doesn't have consecutive whitespaces and trimmed</returns>
+    private string TrimAndRemoveWhitespace(string i_input) {
+        return Regex.Replace(i_input, @"\s+", " ").Trim();
+    }
+
+    /// <summary>
+    /// Uses TrimAndRemoveWhitespace method to filter and make a string array from an array of TextClass objects
+    /// </summary>
+    /// <param name="i_textObjects">TextClass objects array</param>
+    /// <returns>Cleaned up string array of page texts</returns>
+    private string[] MakeCleanedUpStringArray(TextClass[] i_textObjects) {
+        string[] cleanedUpSentences = new string[i_textObjects.Length];
+        for (int i = 0; i < i_textObjects.Length; i++)
+            cleanedUpSentences[i] = TrimAndRemoveWhitespace(i_textObjects[i].text); // removed whitespace
+        return cleanedUpSentences;
+    }
+
+    /// <summary>
+    /// Formats TextClass page sentences that creates string array of each individual words with a decoration that
+    /// highlights the chosen word for that particular dropdown option, which underneath is just a Text ID
+    /// Adding "Sentence" / for the page that has multiple TextClass objects to make it clear which sentence are we
+    /// selecting the word from
+    /// </summary>
+    /// <param name="i_textObjects">TextClass objects array</param>
+    /// <param name="i_formattedDropDownValues">Out parameter that is being filled up with dropdown values</param>
+    private void FormatTextDropdownListForTextID(TextClass[] i_textObjects, out string[] i_formattedDropDownValues) {
+        string[] cleanedUpSentences = MakeCleanedUpStringArray(i_textObjects);
+        int totalWordCount = GetSimpleWordCountInStringArray(cleanedUpSentences);
+        i_formattedDropDownValues = new string[totalWordCount];
+        int formattedIndex = 0;
+        for (int i = 0; i < cleanedUpSentences.Length; i++) {
+            string[] words = cleanedUpSentences[i].Split();
+            for (int j = 0; j < words.Length; j++) {
+                string[] formattedWords = new string[words.Length];
+                words.CopyTo(formattedWords, 0);
+                formattedWords[j] = String.Format("▶ {0} ◀", words[j]);
+                if (cleanedUpSentences.Length > 1)
+                    i_formattedDropDownValues[formattedIndex++] = String.Format("{0} / [{1}] {2}", cleanedUpSentences[i], formattedIndex, String.Join(" ", formattedWords));
+                else
+                    i_formattedDropDownValues[formattedIndex++] = String.Format("[{0}] {1}", formattedIndex, String.Join(" ", formattedWords));
+            }
+        }
+    }
+
     private void FormatGameObjectIDsAndLabels(GameObjectClass[] i_sceneObjects, out string[] i_gameObjectNames) {
         i_gameObjectNames = new string[i_sceneObjects.Length];
         for (int i = 0; i < i_sceneObjects.Length; i++) {
-            i_gameObjectNames[i] = string.Format("{0} - {1}", i, 
+            i_gameObjectNames[i] = string.Format("[{0}] {1}", i + 1, 
                 string.IsNullOrEmpty(i_sceneObjects[i].label) ? i_sceneObjects[i].imageName : i_sceneObjects[i].label);
         }
     }
