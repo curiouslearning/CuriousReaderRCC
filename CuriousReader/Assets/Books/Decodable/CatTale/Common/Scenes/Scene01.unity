@@ -556,8 +556,8 @@ MonoBehaviour:
   tinkerTextObjects: []
   stanzaObjects: []
   stanzaLength: 0
-  right: {fileID: 201930033}
-  left: {fileID: 412334967}
+  PageTurnArrowRight: {fileID: 201930033}
+  PageTurnArrowLeft: {fileID: 412334967}
 --- !u!114 &455597627
 MonoBehaviour:
   m_ObjectHideFlags: 0

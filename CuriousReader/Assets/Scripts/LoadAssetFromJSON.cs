@@ -1,38 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
+using TMPro;
+using System;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using System;
-using TMPro;
 
 /// <summary>
 /// Script to load the scene based on JSON describing the book.
 /// </summary>
 public class LoadAssetFromJSON : MonoBehaviour {
-	private string[] allPagesJsons; //
+	// private string[] allPagesJsons;
 	public static StoryBookJson storyBookJson;
 	public static int pageNumber;
-    public static int m_nLastPageNumber = 0;
+    // public static int m_nLastPageNumber = 0;
 	public GStanzaManager stanzaManager;
 	public List<GameObject> tinkerGraphicObjects;
 	public List<GameObject> tinkerTextObjects;
 	public List<GameObject> stanzaObjects;
 
-    public Stack<int> m_stackPageHistory = new Stack<int>();
+	public Stack<int> m_stackPageHistory = new Stack<int>();
 
-	private string[] allStanzaJsons;
-	private string page;
+	// private string[] allStanzaJsons;
+	// private string page;
 	public float stanzaLength;
-	public GameObject right;
-	public GameObject left;
+	public GameObject PageTurnArrowRight;
+	public GameObject PageTurnArrowLeft;
 	//static float previousTextWidth;
 	public static string sceneScript;
-	Font font;
+	// Font font;
 	Transform canvasTransform;
 
-	private int noOfPages, i, j,count;
+	private int noOfPages, i, j, count;
 	float width = 0.0f, fontSize, startingXText, startingYText;
 	public static float startingX, startingY;
 	//private int wordCount = 0;
@@ -42,73 +42,90 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 	//variables for logging data
 	public DateTime inTime;
-	int timeSpent;
+	// int timeSpent;
 
 	//sending data directly to firebase using "72 hours rule"! (removed local data storage)
 	//public DataCollection dataCollector;
 
 	public void Awake()
 	{
-
 		//font = Resources.GetBuiltinResource<Font>("Arial.ttf");
-		font = Resources.Load<Font>("Font/OpenDyslexic-Regular");
+		// font = Resources.Load<Font>("Font/OpenDyslexic-Regular");
 
 		canvasTransform = this.transform;  //if this script is attached to canvas; otherwise update this line to store canvas transform.
-
-		if (!ShelfManager.bundleLoaded)
-		{
-
-            ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplaces"));  //ShelfManager.selectedBook.ToLower())
-//            ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/catstory"));  //ShelfManager.selectedBook.ToLower())
-			if (ShelfManager.bundleLoaded == null)
-			{
-				Debug.Log("Failed to load AssetBundle!");
-
+		if (ShelfManager.bundleLoaded == null) {
+			Debug.Log("Book asset bundle is not loaded, attempting to load it...");
+			try {
+            	ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplacs"));  //ShelfManager.selectedBook.ToLower())
+				LoadStoryData();
+			} catch (Exception e) {
+				Debug.LogError("Failed to load \"differentplaces\" asset bundle! Message: " + e.Message);
 			}
+		} else {
+			Debug.Log("Book asset bundle is loaded, loading the story data...");
+			LoadStoryData();
 		}
+
 		//sending data directly to firebase using "72 hours rule"! (removed local data storage)
 		//dataCollector.LoadLocalJSON ();
 
 		//FirebaseHelper.AddBook(ShelfManager.selectedBook);
-
-		LoadStoryData();
 	}
 
 	void Start() {
-
 		//startingX = storyBookJson.textStartPositionX;
-		startingX=0;
+		startingX = 0;
+		if (storyBookJson == null) {
+			Debug.LogError("Unable to set startingY and fontSize variables due to StoryBookJson being null");
+			return;
+		}
 		startingY = storyBookJson.textStartPositionY;
 		fontSize = storyBookJson.textFontSize;
+	}
+
+	public void LoadStoryData()
+	{
+		if (string.IsNullOrEmpty(ShelfManager.selectedBook)) {
+			Debug.LogError("ShelfManager's selected book is not set. ");
+			return;
+		}
+		string selectedBookJsonFileName = ShelfManager.selectedBook.ToLower() + ".json"; 
+
+		TextAsset selectedBookJson = ShelfManager.bundleLoaded.LoadAsset(selectedBookJsonFileName) as TextAsset;
+		if (selectedBookJson == null) {
+			Debug.LogError("Unable to load selected book Json file and load the story data.");
+			return;
+		}
+
+		pageNumber = 0;
+
+		string selectedBookJsonContent = selectedBookJson.text;
+
+		try {
+			// Try-catch block is necessary here in case JsonUtility throws an exception if it's unable to parse
+			setPageTurnLeftArrowActive(false);
+			setPageTurnRightArrowActive(true);
+			storyBookJson = JsonUtility.FromJson<StoryBookJson>(selectedBookJsonContent);
+			noOfPages = storyBookJson.pages.Length;
+			FirebaseHelper.AddBook(storyBookJson.id);
+			LoadPage(0);
+		} catch (Exception e) {
+			Debug.LogError("Unable to load page. Error message: " + e.Message);
+		}
+
+		//sending data directly to firebase using "72 hours rule"! (removed local data storage)
+		//dataCollector.AddNewBook (storyBookJson.id.ToString());
 
 	}
 
+	void setPageTurnLeftArrowActive(bool i_active) {
+		if (PageTurnArrowLeft != null)
+			PageTurnArrowLeft.SetActive(i_active);
+	}
 
-
-	/// <summary>
-	/// Loads the story data.
-	/// </summary>
-	public void LoadStoryData()
-	{
-		string fileName = ShelfManager.selectedBook.ToLower() + ".json"; 
-
-		pageNumber = 0;
-		TextAsset charDataFile = ShelfManager.bundleLoaded.LoadAsset(fileName) as TextAsset;// load the book specific json file 
-		if (charDataFile !=null)
-		{
-			string json = charDataFile.ToString();
-			storyBookJson = JsonUtility.FromJson<StoryBookJson>(json);// serializing the the json into specific c# class
-			noOfPages = storyBookJson.pages.Length;
-
-			//sending data directly to firebase using "72 hours rule"! (removed local data storage)
-			//dataCollector.AddNewBook (storyBookJson.id.ToString());
-
-			FirebaseHelper.AddBook(storyBookJson.id);
-			left.SetActive(false);
-			right.SetActive(true);
-			LoadPage(0);
-
-		}
+	void setPageTurnRightArrowActive(bool i_active) {
+		if (PageTurnArrowRight != null)
+			PageTurnArrowRight.SetActive(i_active);
 	}
 
     /// <summary>
@@ -118,18 +135,18 @@ public class LoadAssetFromJSON : MonoBehaviour {
     /// <returns></returns>
     public bool ValidatePageNumber( int i_nPageNumber )
     {
-        if ( storyBookJson != null )
-        {
-            if ( storyBookJson.pages != null )
-            {
-                if ( (i_nPageNumber >= 0) && (i_nPageNumber < storyBookJson.pages.Length))
-                {
-                    return true;
-                }
-            }
-        }
+		if (storyBookJson != null) 
+		{
+			if (storyBookJson.pages != null)
+			{
+				if (i_nPageNumber >= 0 && i_nPageNumber < storyBookJson.pages.Length)
+				{
+					return true;
+				}
+			}
+		}
 
-        return false;
+		return false;
     }
 
     /// <summary>
@@ -140,31 +157,11 @@ public class LoadAssetFromJSON : MonoBehaviour {
     {
         // Now that we can load a page from any other page, we need to be able to deactivate the first page left arrow when we 
         // arrive at the first page.
-        if (left != null)
-        {
-            if (i_nPageNumber > 0)
-            {
-                left.SetActive(true);
-            }
-            else
-            {
-                left.SetActive(false);
-            }
-        }
+		setPageTurnLeftArrowActive(i_nPageNumber > 0);
 
-        if ( right != null )
-        {
-            // Deactivate the right navigation if the page number is the last page of the book.
-            // Because we can jump around also allow us to activate the right arrow.
-            if (i_nPageNumber == (noOfPages - 1))
-            {
-                right.SetActive(false);
-            }
-            else
-            {
-                right.SetActive(true);
-            }
-        }
+		// Deactivate the right navigation if the page number is the last page of the book.
+        // Because we can jump around also allow us to activate the right arrow.
+		setPageTurnRightArrowActive(i_nPageNumber != (noOfPages -1));
     }
 
     /// <summary>
@@ -176,7 +173,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
     {
         if ( !ValidatePageNumber(i_nPageNumber) )
         {
-            Debug.Log("Error!  You tried to navigate to page " + i_nPageNumber + " which doesn't exist in this book.");
+            Debug.LogError("You tried to navigate to page " + i_nPageNumber + " which doesn't exist in this book.");
             return;
         }
 
@@ -185,22 +182,22 @@ public class LoadAssetFromJSON : MonoBehaviour {
         // NOTE: This needs to be called before the page is loaded because Triggers can affect the display of the arrows.
         ResetArrowsForPage(i_nPageNumber);
 
-        DateTime time = DateTime.Now;
-        TimeSpan span = (time - inTime);
+        DateTime currentTime = DateTime.Now;
+        TimeSpan sectionTimeSpan = currentTime - inTime;
 
         if ( i_rcGameObject != null )
         {
-            FirebaseHelper.LogInAppTouch(i_rcGameObject.name, time.ToString());
+            FirebaseHelper.LogInAppTouch(i_rcGameObject.name, currentTime.ToString());
         }
         else
         {
-            FirebaseHelper.LogInAppTouch("Button_Page_Right_Arrow", time.ToString());
+            FirebaseHelper.LogInAppTouch("Button_Page_Right_Arrow", currentTime.ToString());
         }
 
         //sending data directly to firebase using "72 hours rule"! (removed local data storage)
         //DataCollection.AddInSectionData (inTime.ToString(), span.ToString());
 
-        FirebaseHelper.LogInAppSection(inTime.ToString(), span.TotalSeconds);
+        FirebaseHelper.LogInAppSection(inTime.ToString(), sectionTimeSpan.TotalSeconds);
 
         DestroyImmediate(GameObject.Find("SceneManager" + (pageNumber)));
 
@@ -234,10 +231,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	{
         if (ValidatePageNumber(pageNumber + 1))
         {
-            if (right != null)
+            if (PageTurnArrowRight != null)
             {
                 m_stackPageHistory.Push(pageNumber);
-                LoadPage(pageNumber + 1, right);
+                LoadPage(pageNumber + 1, PageTurnArrowRight);
             }
         }
     }
@@ -251,9 +248,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
         if (ValidatePageNumber(nPreviousPage))
         {
-            if (left != null)
+            if (PageTurnArrowLeft != null)
             {
-                LoadPage(nPreviousPage, left);
+                LoadPage(nPreviousPage, PageTurnArrowLeft);
             }
         }
 	}
@@ -262,7 +259,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// Destroys all the scene objects before loading another page.
 	/// </summary>
 	public void EmptyPage()
-	{   if (tinkerGraphicObjects != null) {
+	{   
+		if (tinkerGraphicObjects != null) {
 			for (int i = 0; i < tinkerGraphicObjects.Count; i++) {
 				DestroyImmediate (tinkerGraphicObjects [i]);
 			}
@@ -272,8 +270,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
 				DestroyImmediate (stanzaObjects [j]);
 			}
 		}
-		stanzaObjects = null;
-		tinkerTextObjects.Clear ();
+		stanzaObjects.Clear();
+		tinkerTextObjects.Clear();
+		tinkerGraphicObjects.Clear();
 		//stanzaManager.RequestCancelAutoPlay();
 	}
 
@@ -287,7 +286,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 		FirebaseHelper.AddSection(pageNumber);
 		inTime = DateTime.Now;
-		LoadSceneSpecificScript ();
+		LoadSceneSpecificScript();
 		LoadPageData(pageNumber);
 		LoadStanzaData();
 		//TokenizeStanza();
@@ -303,27 +302,70 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// </summary>
 	public void LoadSceneSpecificScript()
 	{
-		GameObject go = new GameObject();
-		go.transform.SetParent(canvasTransform);
-		go.name = "SceneManager" + pageNumber;
-		//if (pageNumber != 18)
-		//{
+		if (!ValidatePageNumber(pageNumber)) {
+			Debug.LogError("Unable to validate page index while attempting to load scene manager script.");
+			return;
+		}
+
 		sceneScript = storyBookJson.pages[pageNumber].script;
-		go.AddComponent(Type.GetType(sceneScript));
-		GameObject.Find("Canvas").GetComponent<GStanzaManager>().sceneManager = GameObject.Find("SceneManager" + pageNumber).GetComponent<GSManager>();
-		GameObject.Find("SceneManager" + pageNumber).GetComponent<GSManager>().gameManager = GameObject.Find("GameManager").GetComponent<GGameManager>();
-		GameObject.Find("SceneManager" + pageNumber).GetComponent<GSManager>().stanzaManager = GameObject.Find("Canvas").GetComponent<GStanzaManager>();
-		GameObject.Find("SceneManager" + pageNumber).GetComponent<GSManager>().myCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-		GameObject.Find("SceneManager" + pageNumber).GetComponent<GSManager>().Lbutton = GameObject.FindWithTag("left_arrow");
-		GameObject.Find("SceneManager" + pageNumber).GetComponent<GSManager>().Rbutton = GameObject.FindWithTag("right_arrow");
-		GameObject.Find("GameManager").GetComponent<GGameManager>().sceneManager = GameObject.Find("SceneManager" + pageNumber).GetComponent<GSManager>();
-		//}
-		//else {
-		//    sceneScript = storyBookJson.pages[pageNumber].script;
-		//    go.AddComponent(Type.GetType(sceneScript));
 
-		//}
+		if (string.IsNullOrEmpty(sceneScript)) {
+			Debug.LogError("Unable to add Script: " + sceneScript + " to the scene.");
+			return;
+		}
 
+		Type sceneScriptType = Type.GetType(sceneScript);
+
+		if (!typeof(GSManager).IsAssignableFrom(sceneScriptType)) {
+			Debug.LogError("Scene script type: " + sceneScript + " does not inherit GSManager. Not adding it to scene manager");
+			return;
+		}
+
+		GameObject sceneManagerObject = new GameObject();
+		sceneManagerObject.transform.SetParent(canvasTransform);
+		sceneManagerObject.name = "SceneManager" + pageNumber;
+
+		sceneManagerObject.AddComponent(sceneScriptType);
+
+		GSManager sceneManager = sceneManagerObject.GetComponent<GSManager>();
+		GStanzaManager stanzaManager = canvasTransform.GetComponent<GStanzaManager>();
+
+		sceneManager.myCanvas = canvasTransform.GetComponent<Canvas>();
+
+		GameObject leftArrowObject = GameObject.FindWithTag("left_arrow");
+		if (leftArrowObject == null)
+			Debug.LogError("Unable to find left arrow object on scene " + pageNumber);
+		else 
+			sceneManager.Lbutton = leftArrowObject;
+
+		GameObject rightArrowObject = GameObject.FindWithTag("right_arrow");
+		if (rightArrowObject == null)
+			Debug.LogError("Unable to find right arrow object on scene " + pageNumber);
+		else 
+			sceneManager.Rbutton = rightArrowObject;
+
+		if (stanzaManager == null) {
+			Debug.LogError("Unable to get Stanza Manager component from " + canvasTransform.name);
+			return;
+		}
+
+		sceneManager.stanzaManager = stanzaManager;
+		stanzaManager.sceneManager = sceneManager;
+
+		GameObject gameManagerObject = GameObject.Find("GameManager");
+		if (gameManagerObject == null) {
+			Debug.LogError("Unable to find \"GameManager\" game object in scene while adding a scene script");
+			return;
+		}
+		
+		GGameManager gameManager = gameManagerObject.GetComponent<GGameManager>();
+		if (gameManager == null) {
+			Debug.LogError("Unable to get \"GGameManager\" component from game manager object while adding a scene script");
+			return;
+		}
+
+		sceneManager.gameManager = gameManager;
+		gameManager.sceneManager = sceneManager;
 
 	}
 
@@ -331,9 +373,16 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// Loads the audio for stanza auto narration to the canvas.
 	/// </summary>
 	public void LoadStanzaAudio()
-	{  
-		Destroy(GameObject.Find("Canvas").GetComponent<AudioSource>());
-		GameObject.Find("Canvas").AddComponent<AudioSource>().clip = LoadAudioAsset(storyBookJson.pages[pageNumber].audioFile);
+	{
+		AudioSource canvasAudio = canvasTransform.GetComponent<AudioSource>();
+		if (canvasAudio == null)
+			canvasAudio = canvasTransform.gameObject.AddComponent<AudioSource>();
+
+		if (ValidatePageNumber(pageNumber)) {
+			string audioFileName = storyBookJson.pages[pageNumber].audioFile;
+			if (!string.IsNullOrEmpty(audioFileName))
+				canvasAudio.clip = LoadAudioAsset(audioFileName);
+		}
 	}
 
 	/// <summary>
@@ -341,11 +390,27 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// </summary>
 	public void LoadAudios()
 	{
-		TimeStampClass[] timeStamps = storyBookJson.pages[pageNumber].timestamps;
-		for (int i = 0; i < timeStamps.Length; i++)
-		{
-			tinkerTextObjects[i].AddComponent<AudioSource>().clip = LoadAudioAsset(timeStamps[i].audio);
+		if (!ValidatePageNumber(pageNumber)) {
+			Debug.LogError("Unable to validate page index while loading audio");
+			return;
+		}
 
+		TimeStampClass[] timeStamps = storyBookJson.pages[pageNumber].timestamps;
+		if (timeStamps == null) {
+			Debug.LogError("Page Timestamps object is null while trying to load audio for TextObjects");
+			return;
+		}
+
+		for (int i = 0; i < timeStamps.Length; i++) {
+			string timestampAudio = timeStamps[i].audio;
+			// Adding audio source component here because GTinkerText.PlaySound doesn't have a check for AudioSource
+			// not being attached to this text object. Only setting the actual audio if the name is not empty. Even then
+			// it could just be null as the actual audio might not be found in some cases which seems to be fine with
+			// Unity's AudioSource.Play() method.
+			// TODO: fix it in GTinkerText class
+			AudioSource textAudioSource = tinkerTextObjects[i].AddComponent<AudioSource>();
+			if (!string.IsNullOrEmpty(timestampAudio))
+				textAudioSource.clip = LoadAudioAsset(timeStamps[i].audio);
 		}
 	}
 
@@ -353,79 +418,98 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// Loads the audio asset from asset bundle.
 	/// </summary>
 	/// <returns>The audio asset.</returns>
-	/// <param name="name">Name of the audio.</param>
-	public AudioClip LoadAudioAsset(string name)
-	{if (name != "") {
-
-			return ShelfManager.bundleLoaded.LoadAsset<AudioClip> (name);
-	} else {
-
-		return null;
-	} 
-}
+	/// <param name="assetName">Name of the audio.</param>
+	public AudioClip LoadAudioAsset(string assetName) 
+	{
+		if (!string.IsNullOrEmpty(assetName))
+		{
+			return ShelfManager.bundleLoaded.LoadAsset<AudioClip>(assetName);
+		}
+		return null;	
+	}
 
 	/// <summary>
 	/// Loads the game objects related to any page number.
 	/// </summary>
 	/// <param name="pageNo">Page no.</param>
 	public void LoadPageData(int pageNo)
-	{ tinkerGraphicObjects.Clear();
-		if (storyBookJson != null)
-		{
-			if (storyBookJson.pages[pageNo] != null)
-			{
-				PageClass page = storyBookJson.pages[pageNo];
-				GameObjectClass[] gameObjects = page.gameObjects;
-				for (int i = 0; i < gameObjects.Length; i++)
-				{
-					CreateGameObject(gameObjects[i]);
-
-				}
-
-			}
+	{ 
+		if (!ValidatePageNumber(pageNumber)) {
+			Debug.LogError("Unable to validate page index while loading page data");
+			return;
+		}
+		
+		PageClass page = storyBookJson.pages[pageNo];
+		if (page.gameObjects == null) {
+			Debug.LogError("GameObjects reference is null on page: " + pageNo);
+			return;
 		}
 
+		GameObjectClass[] gameObjects = page.gameObjects;
+		for (int i = 0; i < gameObjects.Length; i++)
+		{
+			CreateGameObject(gameObjects[i]);
+		}
 	}
 
     public bool ValidateTinkerGraphicObject(int i_nObjectNumber)
     {
-        // Is the graphic object array valid?
-        if (tinkerGraphicObjects != null)
-        {
-
-            // Is the number in array bounds?
-            if ((i_nObjectNumber >= 0) && (i_nObjectNumber < tinkerGraphicObjects.Count))
-            {
-                return true;
-            }
-        }
-
-        return false;
+		// Return true if graphic object array is not null and the given index of the object is in range
+		if (tinkerGraphicObjects != null) 
+		{
+			if (i_nObjectNumber >= 0 && i_nObjectNumber < tinkerGraphicObjects.Count)
+			{
+				return true;
+			}
+		}
+		return false;
     }
+
+	public bool ValidateTinkerTextObject(int i_nObjectNumber) 
+	{
+		// Return true if textobjects array is not null and the given index of the text object is in range
+		if (tinkerTextObjects != null) 
+		{
+			if (i_nObjectNumber >= 0 && i_nObjectNumber < tinkerTextObjects.Count) 
+			{
+				return true;
+			}
+		} 
+		return false;
+	}
 
 	/// <summary>
 	/// Links/Pairs TinkerTexts and TinkerGraphics.
 	/// </summary>
 	public void LoadTriggers()
 	{
+		if (!ValidatePageNumber(pageNumber)) {
+			Debug.LogError("Unable to validate page index");
+			return;
+		}
+
 		TriggerClass[] triggers = storyBookJson.pages[pageNumber].triggers;
+
+		if (triggers == null) {
+			Debug.LogError("Page triggers object is null, not loading any triggers");
+			return;
+		}
+
 		for (int i = 0; i < triggers.Length; i++)
 		{
-            if ( triggers[i].type == TriggerType.Navigation)
+			TriggerClass trigger = triggers[i];
+            if ( trigger.type == TriggerType.Navigation)
             {
-                if ( triggers[i].DeactivateNextButton )
+                if ( trigger.DeactivateNextButton )
                 {
                     // Deactivate the right button in the scene.  
                     // NOTE: If any single trigger on the page sets this it will deactivate it.
-                    if ( right != null )
-                    {
-                        right.SetActive(false);
-                    }
+					setPageTurnRightArrowActive(false);
                 }
 
-                if ( ValidateTinkerGraphicObject(triggers[i].sceneObjectId) )
+                if ( ValidateTinkerGraphicObject(trigger.sceneObjectId) )
                 {
-                    GameObject rcObject = tinkerGraphicObjects[triggers[i].sceneObjectId];
+                    GameObject rcObject = tinkerGraphicObjects[trigger.sceneObjectId];
 
                     if ( rcObject != null )
                     {
@@ -433,7 +517,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
                         if ( rcTinkerGraphic != null )
                         {
-                            int nPageNumber = triggers[i].NavigationPage;
+                            int nPageNumber = trigger.NavigationPage;
 
                             if ( ValidatePageNumber(nPageNumber))
                             {
@@ -449,103 +533,112 @@ public class LoadAssetFromJSON : MonoBehaviour {
             }
             else
             {
-                if (triggers[i].typeOfLinking == 1)
-                {
+				switch (trigger.typeOfLinking) {
+					case 0: case 1: case 2:
+						break;
+					case 3:
+						if (!ValidateTinkerTextObject(trigger.textId)) {
+							Debug.LogErrorFormat("Unable to validate trigger ({0}) on page ({1}) with textID ({2})",
+								i, pageNumber, trigger.textId);
+							continue;
+						}
 
-                }
-                if (triggers[i].typeOfLinking == 2)
-                {
+						GameObject textObject = tinkerTextObjects[trigger.textId];
+						if (textObject == null) {
+							Debug.LogErrorFormat("Unable to find text object ({0}) on page ({1}) from trigger ({2})",
+								trigger.textId, pageNumber, i);
+							continue;
+						}
 
-                }
-                if (triggers[i].typeOfLinking == 3)//two way linking of tinker graphic and tinker texts.
-                {
-                    GameObject text = tinkerTextObjects[triggers[i].textId];
-                    GameObject graphic = tinkerGraphicObjects[triggers[i].sceneObjectId];
-                    text.GetComponent<GTinkerText>().pairedGraphics.Add(graphic.GetComponent<GTinkerGraphic>());
-                    text.GetComponent<GTinkerText>().pairedAnim = triggers[i].animId;
-                    graphic.GetComponent<GTinkerGraphic>().pairedText1 = text.GetComponent<GTinkerText>();
-                }
+						if (!ValidateTinkerGraphicObject(trigger.sceneObjectId)) {
+							Debug.LogErrorFormat("Unable to validate tinker graphic object ({0})", 
+								trigger.sceneObjectId);
+							continue;
+						}
+
+						GameObject graphicObject = tinkerGraphicObjects[trigger.sceneObjectId];
+						if (graphicObject == null) {
+							Debug.LogErrorFormat("Unable to find graphic object ({0}) on page ({1}) from trigger ({2})",
+								trigger.sceneObjectId, pageNumber, i);
+							continue;
+						}
+
+						GTinkerText tinkerText = textObject.GetComponent<GTinkerText>();
+						if (tinkerText == null) {
+							Debug.LogError("Unable to get GTinkerText component from tinker text object");
+							continue;
+						}
+
+						tinkerText.pairedAnim = trigger.animId;
+
+						GTinkerGraphic tinkerGraphic = graphicObject.GetComponent<GTinkerGraphic>();
+						if (tinkerGraphic == null) {
+							Debug.LogError("Unable to get GTinkerGraphic component from graphic object");
+							continue;
+						}
+
+						if (tinkerText.pairedGraphics == null) {
+							Debug.LogWarning("Tinkertext paired graphics object is null allocating a new list");
+							tinkerText.pairedGraphics = new List<GTinkerGraphic>();
+						}
+
+						tinkerText.pairedGraphics.Add(tinkerGraphic);
+						tinkerGraphic.pairedText1 = tinkerText;
+						break;
+					default:
+						Debug.LogError("Trigger has invalid type of linking. Valid range: "); // TODO: add a valid range
+						break;
+				}
             }
         }
 	}
-
 
 	/// <summary>
 	/// Loads all the stanzas on the page and set the initial starting position depending on the number of words 
 	/// </summary>
 	public void LoadStanzaData()
 	{
-
-
 		//startingX = storyBookJson.textStartPositionX;
+		if (storyBookJson == null) {
+			Debug.LogError("Unable to load stanza data due to Story Book Json being null");
+			return;
+		}
+
 		startingY = storyBookJson.textStartPositionY;
-		stanzaManager.stanzas.Clear();
-		count  = 0;
-		stanzaObjects = new List<GameObject>();// stanzaObjects list to keep track of all the stanzaobjects in one page 
+
+		if (stanzaManager.stanzas == null)
+			stanzaManager.stanzas = new List<StanzaObject>();
+		else
+			stanzaManager.stanzas.Clear();
+		// stanzaObjects = new List<GameObject>(); NOTE: we have already used clear, should we not avoid GC allocation?
 		//Debug.Log(storyBookJson.pages[pageNumber].texts);
+
+		if (!ValidatePageNumber(pageNumber)) {
+			Debug.LogError("Unable to validate page index while loading stanza data");
+			return;
+		}
 
 		TextClass[] texts = storyBookJson.pages[pageNumber].texts;
 
-
 		foreach (TextClass text in texts)
 		{
-			stanzaManager.stanzas.Add(CreateStanza(startingX, startingY));
-			stanzaManager.stanzas[count].transform.SetParent(canvasTransform);
-			stanzaManager.stanzas[count].stanzaValue = text;//add string object as JSONObject to array of books
-			TokenizeStanza(count);
+			StanzaObject stanzaObject = CreateStanza(startingX, startingY);
+			if (stanzaObject == null) {
+				Debug.LogError("Unable to create stanza object");
+				break;
+			}
+			stanzaObject.stanzaManager = canvasTransform.GetComponent<GStanzaManager>();
+			stanzaObjects.Add(stanzaObject.gameObject);
+			stanzaManager.stanzas.Add(stanzaObject);
+			stanzaObject.stanzaValue = text;
+			TokenizeStanza(stanzaObject);
 			if (texts.Length > 1) { // if more than one line
 				startingY = startingY - height - minLineSpace;
 				if (storyBookJson.id == 1) {
 					startingY = -198.0f;
 				}
 			} 
-
-			count++;
 		}
-
-	}
-
-	/// <summary>
-	/// Tokenizes the stanza into TinkerTexts.
-	/// </summary>
-	public void TokenizeStanza (int i)
-	{  
-		//tinkerTextObjects.Clear ();
-		string[] words;
-
-		//for (i = 0; i < stanzaManager.stanzas.Count; i++) {
-		words = stanzaManager.stanzas [i].stanzaValue.text.Split (' ');
-
-
-		for (j = 0; j < words.Length; j++) {
-			stanzaManager.stanzas [i].tinkerTexts.Add (CreateText (stanzaManager.stanzas [i], startingXText + width, startingYText, words [j], 30, Color.black));
-
-		}
-
-		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate (stanzaManager.stanzas [i].GetComponent<RectTransform> ());
-		width = 0.0f;
-		float lineLength = stanzaLength - 30;
-		alignText (lineLength,stanzaManager.stanzas[i]);
-		//}
-
-
-	}
-	public void alignText(float length,StanzaObject parent)
-	{   startingX = -(length / 2);
-		//GameObject [] go=GameObject.FindGameObjectsWithTag("stanzaobject");
-		//Debug.Log (go);
-		parent.transform.localPosition= new Vector3 (startingX, startingY, 0);
-
-		//foreach (GameObject stanza in go)
-		//if (storyBookJson.id != 1)
-		//stanza.GetComponent<RectTransform> ().localPosition = new Vector3 (startingX, startingY, 0);
-		//else 
-		//{ stanza.GetComponent<RectTransform> ().localPosition = new Vector3 (startingX, startingY, 0);
-
-		//}
-
-
-
 	}
 
 	/// <summary>
@@ -554,17 +647,61 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// <returns>The StanzaObject object.</returns>
 	/// <param name="x">The x coordinate.</param>
 	/// <param name="y">The y coordinate.</param>
-	StanzaObject CreateStanza( float x, float y)
+	StanzaObject CreateStanza(float x, float y)
 	{   
-		GameObject go = Instantiate (Resources.Load ("Prefabs/StanzaObject")) as GameObject;
-		go.transform.SetParent(canvasTransform);
-		go.transform.localScale = new Vector3(1,1,1);
+		GameObject stanzaObjectPrefab = Resources.Load("Prefabs/StanzaObject") as GameObject;
+		if (stanzaObjectPrefab == null) {
+			Debug.LogError("Unable to load StanzaObject");
+			return null;
+		}
+
+		GameObject stanzaGameObject = Instantiate(stanzaObjectPrefab, canvasTransform);
+		StanzaObject stanzaObject = stanzaGameObject.GetComponent<StanzaObject>();
+		if (stanzaObject == null) {
+			Debug.LogError("Unable to get StanzaObject component from newly instantiated Stanza prefab. Destroying game object");
+			DestroyImmediate(stanzaGameObject);
+			return null;
+		}
 		//go.tag ="stanzaobject";
-		RectTransform trans = go.GetComponent<RectTransform>();
-		trans.position=new Vector3(0,0,0);
-		go.GetComponent<StanzaObject>().stanzaManager = GameObject.Find("Canvas").GetComponent<GStanzaManager>();
-		stanzaObjects.Add (go);
-		return go.GetComponent<StanzaObject>();
+		return stanzaObject;
+	}
+
+	/// <summary>
+	/// Tokenizes the stanza into TinkerTexts.
+	/// </summary>
+	public void TokenizeStanza(StanzaObject i_stanzaObject)
+	{  
+		string[] words;
+
+		//for (i = 0; i < stanzaManager.stanzas.Count; i++) {
+		words = i_stanzaObject.stanzaValue.text.Split(' ');
+
+		for (j = 0; j < words.Length; j++) {
+			GTinkerText tinkerText = CreateText(i_stanzaObject, startingXText + width, 
+				startingYText, words [j], 30, Color.black);
+			i_stanzaObject.tinkerTexts.Add(tinkerText);
+		}
+
+		UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(i_stanzaObject.GetComponent<RectTransform>());
+		width = 0;
+		float lineLength = stanzaLength - 30;
+		alignText(lineLength, i_stanzaObject);
+		//}
+	}
+
+	public void alignText(float length, StanzaObject parent)
+	{   
+		startingX = -(length / 2);
+		parent.transform.localPosition = new Vector3(startingX, startingY, 0);
+
+		//GameObject [] go=GameObject.FindGameObjectsWithTag("stanzaobject");
+		//Debug.Log (go);
+		//foreach (GameObject stanza in go)
+		//if (storyBookJson.id != 1)
+		//stanza.GetComponent<RectTransform> ().localPosition = new Vector3 (startingX, startingY, 0);
+		//else 
+		//{ stanza.GetComponent<RectTransform> ().localPosition = new Vector3 (startingX, startingY, 0);
+		//}
 	}
 
 	/// <summary>
@@ -577,45 +714,42 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// <param name="textToPrint">Text to print (word).</param>
 	/// <param name="fontSize">Font size.</param>
 	/// <param name="textColor">Text color.</param>
-	GTinkerText CreateText( StanzaObject parent, float x, float y, string textToPrint, int fontSize, Color textColor)
+	GTinkerText CreateText(StanzaObject parent, float x, float y, string textToPrint, int fontSize, Color textColor)
 	{   
-		GameObject UItextGO = new GameObject("Text_"+textToPrint);
-		UItextGO.transform.SetParent(parent.transform);
-        // Debug.Log(anim.runtimeAnimatorController);
-//		Text text = UItextGO.AddComponent<Text>();
+		GameObject uiTextObject = new GameObject("Text_" + textToPrint);
+		uiTextObject.transform.SetParent(parent.transform);
 
-        TextMeshProUGUI rcTextMeshPro = UItextGO.AddComponent<TextMeshProUGUI>();
+        TextMeshProUGUI rcTextMeshPro = uiTextObject.AddComponent<TextMeshProUGUI>();
         rcTextMeshPro.text = textToPrint;
         rcTextMeshPro.color = textColor;
         // Have to figure out how to get the font
         rcTextMeshPro.fontSize = storyBookJson.textFontSize; //* 10.0f;
         rcTextMeshPro.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
 
-//		text.text = textToPrint;
+//		text.text = textToPrint; // TODO: figure out if this works or not, if not then why and if it's needed
 //		text.fontSize = storyBookJson.textFontSize;
 //		text.color = textColor;
 //		text.font = font;
 //		text.transform.localScale = new Vector3(1,1,1);
 
 		//used for fitting the text box to the size of text.
-		ContentSizeFitter csf= UItextGO.AddComponent<ContentSizeFitter> ();
+		ContentSizeFitter csf = uiTextObject.AddComponent<ContentSizeFitter>();
         csf.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
 		csf.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
 
-		VerticalLayoutGroup vlg = UItextGO.AddComponent<VerticalLayoutGroup> ();
+		VerticalLayoutGroup vlg = uiTextObject.AddComponent<VerticalLayoutGroup> ();
 		vlg.childControlHeight = true;
 		vlg.childControlWidth = true;
 
-
-		RectTransform trans = UItextGO.GetComponent<RectTransform>();
+		RectTransform trans = uiTextObject.GetComponent<RectTransform>();
         //        rcTextMeshPro.alignment = TextAlignmentOptions.TopLeft;
         rcTextMeshPro.alignment = TextAlignmentOptions.TopLeft; // .alignment = TextAnchor.UpperLeft;
-        trans.anchoredPosition = new Vector3(x, y,0);
-        UItextGO.GetComponent<RectTransform> ().pivot = new Vector2 (0.5f, 0.5f);
-        UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate (trans);
+        trans.anchoredPosition = new Vector3(x, y, 0);
+        uiTextObject.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
+        UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(trans);
 
-        trans.anchoredPosition = new Vector3(x+trans.rect.width/2, y,0);
-        UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate (trans);
+        trans.anchoredPosition = new Vector3(x + trans.rect.width / 2, y, 0);
+        UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(trans);
 
         width = width + rcTextMeshPro.rectTransform.rect.width + minWordSpace; // trans.rect.width + rcTextMeshPro.characterSpacing; //minWordSpace;
 
@@ -626,137 +760,118 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		//		wordCount++;
 
 		//add the animator and script to the word.
-		UItextGO.AddComponent<Animator>().runtimeAnimatorController = Resources.Load("TextAnimations/textzoomcontroller") as RuntimeAnimatorController;
-		GTinkerText tinkerText= UItextGO.AddComponent<GTinkerText>();
-		tinkerText.stanza =UItextGO.GetComponentInParent<StanzaObject>();
-		tinkerTextObjects.Add(UItextGO);
-		return UItextGO.GetComponent<GTinkerText>();
+		uiTextObject.AddComponent<Animator>().runtimeAnimatorController = Resources.Load("TextAnimations/textzoomcontroller") as RuntimeAnimatorController;
+		GTinkerText tinkerText= uiTextObject.AddComponent<GTinkerText>();
+		tinkerText.stanza = uiTextObject.GetComponentInParent<StanzaObject>();
+		tinkerTextObjects.Add(uiTextObject);
+		return uiTextObject.GetComponent<GTinkerText>();
 	}
 
 	/// <summary>
 	/// Creates the  graphical game object and play the corresponding animation of that graphic if it is set to onStart
 	/// </summary>
 	/// <param name="gameObjectData">Game object data.</param>
-
 	public void CreateGameObject(GameObjectClass gameObjectData)
 	{
-        GameObject go;
-
         GameObject rcPrefab = ShelfManager.bundleLoaded.LoadAsset<GameObject>(gameObjectData.imageName);
+        
+		GameObject go;
+		
+		if (rcPrefab == null)
+		{
+			go = new GameObject();
+		}
+		else
+		{
+			go = GameObject.Instantiate(rcPrefab);
+		}
 
-        if (rcPrefab != null)
-        {
-            go = GameObject.Instantiate(rcPrefab);
-            go.name = gameObjectData.label;
+		if (!string.IsNullOrEmpty(gameObjectData.tag))
+		{
+			go.tag = gameObjectData.tag;
+		}
 
-            if ( !string.IsNullOrEmpty(gameObjectData.tag) )
-            {
-                go.tag = gameObjectData.tag;
-            }
+		go.name = gameObjectData.label;
+		
+		SpriteRenderer rcRenderer = go.GetComponent<SpriteRenderer>();
+		
+		if (rcRenderer != null)
+		{
+            rcRenderer.sortingOrder = gameObjectData.orderInLayer;
 
-            SpriteRenderer rcRenderer = go.GetComponent<SpriteRenderer>();
+			Material rcMaterial = rcRenderer.material;
 
-            if (rcRenderer != null)
-            {
-                Material rcMaterial = rcRenderer.material;
+			Material rcShader = ShelfManager.bundleLoaded.LoadAsset<Material>(rcMaterial.name.Replace(" (Instance)", ""));
 
-                Material rcShader = ShelfManager.bundleLoaded.LoadAsset<Material>(rcMaterial.name.Replace(" (Instance)", ""));
-
-                if (rcShader != null)
-                {
-                    rcRenderer.material = Material.Instantiate(rcShader); 
-                }
+			if (rcShader != null)
+			{
+				rcRenderer.material = Material.Instantiate(rcShader); 
+			}
 
 #if UNITY_EDITOR
 
-                if (rcMaterial.name.Contains("Unlit_VectorGradient"))
-                {
-                    rcRenderer.material = new Material(Shader.Find("Unlit/VectorGradient"));
-                }
-                else if (rcMaterial.name.Contains("Unlit_Vector"))
-                {
-                    rcRenderer.material = new Material(Shader.Find("Unlit/Vector"));
-                }
-                
+			if (rcMaterial.name.Contains("Unlit_VectorGradient"))
+			{
+				rcRenderer.material = new Material(Shader.Find("Unlit/VectorGradient"));
+			}
+			else if (rcMaterial.name.Contains("Unlit_Vector"))
+			{
+				rcRenderer.material = new Material(Shader.Find("Unlit/Vector"));
+			}
+			
 #endif
 
-            }
-        }
-        else
-        {
-            go = new GameObject(gameObjectData.label);
-        }
-
-        SpriteRenderer rcRender = go.GetComponent<SpriteRenderer>();
-
-        if ( rcRender == null )
-        {
+		} else {
             go.AddComponent<SpriteRenderer>();
             go.GetComponent<SpriteRenderer>().sortingOrder = gameObjectData.orderInLayer;
-        }
-        else
-        {
-            rcRender.sortingOrder = gameObjectData.orderInLayer;
-        }
+		}
 
-        Vector3 position = new Vector3(gameObjectData.posX, gameObjectData.posY, gameObjectData.posZ);
-		Vector3 scale = new Vector3(gameObjectData.scaleX, gameObjectData.scaleY);
-        Quaternion rotation = Quaternion.Euler(gameObjectData.rotX, gameObjectData.rotY, gameObjectData.rotZ);
+		go.transform.position = new Vector3(gameObjectData.posX, gameObjectData.posY, gameObjectData.posZ);
+		go.transform.localScale = new Vector3(gameObjectData.scaleX, gameObjectData.scaleY);
+        go.transform.rotation = Quaternion.Euler(gameObjectData.rotX, gameObjectData.rotY, gameObjectData.rotZ);
 
-		go.transform.position = position;
-		go.transform.localScale = scale;
-        go.transform.rotation = rotation;
-
-		go.AddComponent<GTinkerGraphic>();
-		go.GetComponent<GTinkerGraphic>().dataTinkerGraphic = gameObjectData;
-		go.GetComponent<GTinkerGraphic>().sceneManager = GameObject.Find("SceneManager" + (pageNumber)).GetComponent<GSManager>();
-		go.GetComponent<GTinkerGraphic>().myCanvas = GameObject.Find("Canvas").GetComponent<Canvas>();
-		go.GetComponent<GTinkerGraphic>().SetDraggable(gameObjectData.draggable);
-
+		GTinkerGraphic tinkerGraphic = go.AddComponent<GTinkerGraphic>();
+		tinkerGraphic.dataTinkerGraphic = gameObjectData;
+		tinkerGraphic.sceneManager = GameObject.Find("SceneManager" + pageNumber).GetComponent<GSManager>();
+		tinkerGraphic.myCanvas = canvasTransform.GetComponent<Canvas>();
+		tinkerGraphic.SetDraggable(gameObjectData.draggable);
         
         if (gameObjectData.anim.Length > 0)
 		{
-            LoadAssetImages(go.GetComponent<GTinkerGraphic>(), gameObjectData.anim[0].animName, gameObjectData.anim[0].startIndex, gameObjectData.anim[0].endIndex, gameObjectData.anim[0].startX, gameObjectData.anim[0].startY,gameObjectData.anim[0].startZ);// call the LoadAssetImages function which load the anim images from bundle and fill the array of sprites with it
-			go.GetComponent<GTinkerGraphic>().secPerFrame = gameObjectData.anim[0].secPerFrame;// set the secperframe field of tinkergraphic class
+            LoadAssetImages(tinkerGraphic, gameObjectData.anim[0].animName, gameObjectData.anim[0].startIndex, gameObjectData.anim[0].endIndex, gameObjectData.anim[0].startX, gameObjectData.anim[0].startY,gameObjectData.anim[0].startZ);// call the LoadAssetImages function which load the anim images from bundle and fill the array of sprites with it
+			tinkerGraphic.secPerFrame = gameObjectData.anim[0].secPerFrame;// set the secperframe field of tinkergraphic class
 
 			if (gameObjectData.anim[0].onStart)
-			{ // if the animation is set to on start play it
-
-				go.GetComponent<GTinkerGraphic>().secPerFrame = gameObjectData.anim[0].secPerFrame;
-				go.GetComponent<GTinkerGraphic>().sequences = gameObjectData.anim[0].sequences;
+			{ 
+				// if the animation is set to on start play it
+				tinkerGraphic.secPerFrame = gameObjectData.anim[0].secPerFrame;
+				tinkerGraphic.sequences = gameObjectData.anim[0].sequences;
 				//go.GetComponent<GTinkerGraphic> ().PlayAnimation ();
 			}
 			else
 			{
-				LoadAssetImage(go.GetComponent<GTinkerGraphic>(), gameObjectData.imageName); // if not anim load the image
-
+				LoadAssetImage(tinkerGraphic, gameObjectData.imageName); // if not anim load the image
 			}
 		}
 		else
 		{
-			LoadAssetImage(go.GetComponent<GTinkerGraphic>(), gameObjectData.imageName);
+			LoadAssetImage(tinkerGraphic, gameObjectData.imageName);
 		}
-        
 
 		if (gameObjectData.destroyOnCollision != "NIL")
-		{
-			var rigidbody = go.AddComponent<Rigidbody2D>();
-			rigidbody.isKinematic = true;
-			//rigidbody.bodyType = RigidbodyType2D.Static;
-			//rigidbody.useFullKinematicContacts = true;
-		}
+			go.AddComponent<Rigidbody2D>().isKinematic = true;
+
 		//add BoxCollider after adding the sprite for proper size!
 		PolygonCollider2D col = go.AddComponent<PolygonCollider2D>();
 		// BoxCollider col = go.AddComponent<BoxCollider>();
 		col.isTrigger = true;
-		tinkerGraphicObjects.Add(go); 
+		tinkerGraphicObjects.Add(go);
 	}
 
 	public void LoadAssetFromBundle(string name)
 	{
-
 		var prefab = ShelfManager.bundleLoaded.LoadAsset<GameObject>(name);
-		Instantiate(prefab);     
+		Instantiate(prefab);
 	}
 
 	/// <summary>
@@ -764,7 +879,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// </summary>
 	/// <param name="name">Namevof the asset image.</param>
 	/// <param name="sr">Sprite Renderer.</param>
-	public  static void LoadAssetImage(GTinkerGraphic tinkergraphic,string name)
+	public  static void LoadAssetImage(GTinkerGraphic tinkergraphic, string name)
 	{   
 		var sprite = ShelfManager.bundleLoaded.LoadAsset<Sprite>(name);
 		tinkergraphic.spr.sprite = sprite;
@@ -776,20 +891,19 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// <param name="tinkerGraphic">Tinker graphic.</param>
 	/// <param name="startName">Start name.</param>
 	/// <param name="length">Number of the animation frames.</param>
-	public static void LoadAssetImages(GTinkerGraphic tinkerGraphic,string startName,int startindex,int endindex,int startx,int starty, int startz)
+	public static void LoadAssetImages(GTinkerGraphic tinkerGraphic, string startName, int startindex, int endindex, int startx, int starty, int startz)
 	{
 		int j = 0;
-		tinkerGraphic.transform.position = new Vector3 (startx, starty, startz);
+		tinkerGraphic.transform.position = new Vector3(startx, starty, startz);
 		int length = endindex - startindex + 1;
-		tinkerGraphic.sprite= new Sprite[length];
-		for (int i = startindex; i <=endindex; i++)
+		tinkerGraphic.sprite = new Sprite[length];
+		for (int i = startindex; i <= endindex; i++)
 		{
-			var sprite = ShelfManager.bundleLoaded.LoadAsset<Sprite>(startName+"-"+(i+1));
+			var sprite = ShelfManager.bundleLoaded.LoadAsset<Sprite>(startName + "-" + (i + 1));
 			tinkerGraphic.sprite[j] = sprite;
 			j++;
 		}     
 	}
-
 
 	public void LoadScene()
 	{
@@ -798,16 +912,14 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/books"));
 			if (ShelfManager.bundleLoaded == null)
 			{
-				Debug.Log("Failed to load AssetBundle!");
+				Debug.LogError("Failed to load AssetBundle!");
 				return;
 			}
 		}
 		else
 		{
-
 			string[] scenes = ShelfManager.bundleLoaded.GetAllScenePaths();
 			//SceneManager.LoadScene(scenes[0]);
-
 			StartCoroutine(LoadYourAsyncScene(scenes));
 		}
 	}
