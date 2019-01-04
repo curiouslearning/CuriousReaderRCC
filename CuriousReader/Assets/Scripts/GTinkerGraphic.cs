@@ -268,7 +268,8 @@ public class GTinkerGraphic : MonoBehaviour{
         this.gameObject.transform.position = new Vector3 (dataTinkerGraphic.posX,dataTinkerGraphic.posY,dataTinkerGraphic.posZ);
         this.gameObject.transform.rotation = Quaternion.Euler(dataTinkerGraphic.rotX, dataTinkerGraphic.rotY, dataTinkerGraphic.rotZ);
 		LoadAssetFromJSON.LoadAssetImage (this,dataTinkerGraphic.imageName);
-		StartCoroutine (Zoom());
+        //		StartCoroutine (Zoom());
+        Zoom();
         
 	}
 	/// <summary>
@@ -374,29 +375,25 @@ public class GTinkerGraphic : MonoBehaviour{
 		yield break;
 
 	}
-	public IEnumerator Zoom()
+	public void Zoom(float i_scaleMultiplier = 1.5f, float i_duration = 1f)
 	{
-        if (transform.localPosition.z <= 0)
-        {
-            this.transform.localPosition = new Vector3(this.transform.localPosition.x, this.transform.localPosition.y, 91f);
-        }
-     //this.transform.DOScale(new Vector3(0, 0, 91f), 5f).SetLoops(1, LoopType.Yoyo).From(true);
-     //transform.DOPlay();
-     while(this.transform.localScale.x<=final_scale_x && this.transform.localScale.y<=final_scale_y)
-     {
-         Vector3 temp = this.transform.localScale;
-         temp.x += deltasize;
-         temp.y += deltasize;
-         this.transform.localScale = temp;
-         yield return new WaitForSeconds(deltatime/2);
-     }
-     while (this.transform.localScale.x >= initial_scale_x && this.transform.localScale.y >= initial_scale_y)
-     {
-         Vector3 temp = this.transform.localScale;
-         temp.x -= deltasize;
-         temp.y -= deltasize;
-         this.transform.localScale = temp;
-         yield return new WaitForSeconds(deltatime/2);
-     }
+        Vector3 endValue = this.transform.localScale * i_scaleMultiplier;
+        Tweener tween = this.transform.DOScale(endValue, i_duration).SetLoops(2, LoopType.Yoyo).Play();
+        /*        while (this.transform.localScale.x<=final_scale_x && this.transform.localScale.y<=final_scale_y)
+             {
+                 Vector3 temp = this.transform.localScale;
+                 temp.x += deltasize;
+                 temp.y += deltasize;
+                 this.transform.localScale = temp;
+                 yield return new WaitForSeconds(deltatime/2);
+             }
+             while (this.transform.localScale.x >= initial_scale_x && this.transform.localScale.y >= initial_scale_y)
+             {
+                 Vector3 temp = this.transform.localScale;
+                 temp.x -= deltasize;
+                 temp.y -= deltasize;
+                 this.transform.localScale = temp;
+                 yield return new WaitForSeconds(deltatime/2);
+             }*/
     }
 }

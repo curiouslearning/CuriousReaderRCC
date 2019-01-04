@@ -100,9 +100,9 @@
                 {
                     "id": 1,
                     "tag": "night",
-                    "posX": 0.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
+                    "posX": -10.5,
+                    "posY": -35.900001525878909,
+                    "posZ": 91.0,
                     "scaleX": 500.0,
                     "scaleY": 500.0,
                     "rotX": 0.0,
@@ -330,17 +330,17 @@
                     "id": 1,
                     "tag": "",
                     "posX": -120.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
-                    "scaleX": 50.0,
-                    "scaleY": 50.0,
+                    "posY": -11.0,
+                    "posZ": 91.0,
+                    "scaleX": 275.0,
+                    "scaleY": 275.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "2_big_thunderstorm_cloud-1",
+                    "imageName": "2_small_fluffy_cloud-1",
                     "inText": false,
-                    "label": "thundercloud",
+                    "label": "bigcloud",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
@@ -348,9 +348,9 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 120.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
+                    "posX": 156.60000610351563,
+                    "posY": -29.100000381469728,
+                    "posZ": 91.0,
                     "scaleX": 75.0,
                     "scaleY": 75.0,
                     "rotX": 0.0,
@@ -491,9 +491,9 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -120.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
+                    "posX": -86.4000015258789,
+                    "posY": -21.200000762939454,
+                    "posZ": 91.0,
                     "scaleX": 100.0,
                     "scaleY": 100.0,
                     "rotX": 0.0,
@@ -539,9 +539,9 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 120.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
+                    "posX": 153.60000610351563,
+                    "posY": -21.200000762939454,
+                    "posZ": 91.0,
                     "scaleX": 100.0,
                     "scaleY": 100.0,
                     "rotX": 0.0,
@@ -687,7 +687,7 @@
                     "tag": "",
                     "posX": 900.0,
                     "posY": 0.0,
-                    "posZ": 0.0,
+                    "posZ": 105.0,
                     "scaleX": 100.0,
                     "scaleY": 100.0,
                     "rotX": 0.0,
@@ -705,7 +705,7 @@
                             "animName": "04_a_big_bird_flying",
                             "startX": 900,
                             "startY": 0,
-                            "startZ": 0,
+                            "startZ": 105,
                             "startIndex": 0,
                             "endIndex": 2,
                             "onTouch": true,
@@ -722,6 +722,34 @@
                                     "noOfLoops": 1,
                                     "movable": {
                                         "finalx": -900.0,
+                                        "finaly": 0.0,
+                                        "speed": -100.0
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "animName": "04_a_big_bird_peek",
+                            "startX": 900,
+                            "startY": 0,
+                            "startZ": 105,
+                            "startIndex": 0,
+                            "endIndex": 2,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.20000000298023225,
+                                0.20000000298023225,
+                                0.20000000298023225
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 2,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 384.0,
                                         "finaly": 0.0,
                                         "speed": -100.0
                                     }
@@ -969,7 +997,7 @@
                     "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
-                    "sceneObjectId": 1,
+                    "sceneObjectId": 0,
                     "animId": 1,
                     "typeOfLinking": 3,
                     "DeactivateNextButton": false,
@@ -982,7 +1010,7 @@
                     "textId": 5,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 1,
+                    "animId": -1,
                     "typeOfLinking": 3,
                     "DeactivateNextButton": false,
                     "NavigationPage": 0
@@ -1001,9 +1029,9 @@
                 {
                     "id": 0,
                     "tag": "day",
-                    "posX": -120.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
+                    "posX": -90.0,
+                    "posY": -22.0,
+                    "posZ": 91.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
@@ -1024,7 +1052,7 @@
                             "startZ": 0,
                             "startIndex": 0,
                             "endIndex": 1,
-                            "onTouch": false,
+                            "onTouch": true,
                             "onStart": false,
                             "secPerFrame": [
                                 0.5,
@@ -1046,30 +1074,11 @@
                     ]
                 },
                 {
-                    "id": 2,
-                    "tag": "night",
-                    "posX": 155.0,
-                    "posY": 35.0,
-                    "posZ": 0.0,
-                    "scaleX": 75.0,
-                    "scaleY": 75.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "5_moon-1",
-                    "inText": false,
-                    "label": "Moon",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": []
-                },
-                {
                     "id": 3,
                     "tag": "night",
-                    "posX": 120.0,
-                    "posY": -75.0,
-                    "posZ": 0.0,
+                    "posX": 46.0,
+                    "posY": 2.0,
+                    "posZ": 91.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
@@ -1085,9 +1094,9 @@
                         {
                             "id": 0,
                             "animName": "05_star_vibrates",
-                            "startX": 120,
-                            "startY": -75,
-                            "startZ": 0,
+                            "startX": 46,
+                            "startY": 2,
+                            "startZ": 91,
                             "startIndex": 0,
                             "endIndex": 1,
                             "onTouch": false,
@@ -1982,6 +1991,30 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
                     "type": 6,
                     "timing": 0.0,
                     "textId": 0,
@@ -2200,7 +2233,35 @@
                     "label": "backdrop",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "7_between_day_bg_night_bg",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 1,
+                            "onTouch": false,
+                            "onStart": true,
+                            "secPerFrame": [
+                                0.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 1,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "texts": [
@@ -2874,6 +2935,30 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
                     "type": 6,
                     "timing": 0.0,
                     "textId": 0,
@@ -3100,10 +3185,11 @@
                             "startY": 20,
                             "startZ": 92,
                             "startIndex": 0,
-                            "endIndex": 5,
+                            "endIndex": 6,
                             "onTouch": false,
                             "onStart": false,
                             "secPerFrame": [
+                                0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612,
                                 0.10000000149011612,
@@ -3114,7 +3200,7 @@
                             "sequences": [
                                 {
                                     "startFrame": 0,
-                                    "endFrame": 5,
+                                    "endFrame": 6,
                                     "noOfLoops": 1,
                                     "movable": {
                                         "finalx": -120.0,
@@ -3377,7 +3463,7 @@
                             "startY": 42,
                             "startZ": 92,
                             "startIndex": 0,
-                            "endIndex": 5,
+                            "endIndex": 6,
                             "onTouch": false,
                             "onStart": false,
                             "secPerFrame": [
@@ -3391,7 +3477,7 @@
                             "sequences": [
                                 {
                                     "startFrame": 0,
-                                    "endFrame": 5,
+                                    "endFrame": 6,
                                     "noOfLoops": 1,
                                     "movable": {
                                         "finalx": -120.0,
@@ -3649,7 +3735,7 @@
                             "startIndex": 0,
                             "endIndex": 3,
                             "onTouch": false,
-                            "onStart": false,
+                            "onStart": true,
                             "secPerFrame": [
                                 0.10000000149011612,
                                 0.10000000149011612,
@@ -3698,7 +3784,7 @@
                             "startIndex": 0,
                             "endIndex": 3,
                             "onTouch": false,
-                            "onStart": false,
+                            "onStart": true,
                             "secPerFrame": [
                                 0.10000000149011612,
                                 0.10000000149011612,
@@ -3859,11 +3945,11 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -115.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
-                    "scaleX": 45.0,
-                    "scaleY": 45.0,
+                    "posX": -97.0,
+                    "posY": -35.0,
+                    "posZ": 91.0,
+                    "scaleX": 62.0,
+                    "scaleY": 62.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -3877,9 +3963,9 @@
                         {
                             "id": 0,
                             "animName": "17_big_octopus_move_flap_legs",
-                            "startX": -115,
-                            "startY": 0,
-                            "startZ": 0,
+                            "startX": -97,
+                            "startY": -35,
+                            "startZ": 91,
                             "startIndex": 0,
                             "endIndex": 5,
                             "onTouch": false,
@@ -3898,8 +3984,8 @@
                                     "endFrame": 5,
                                     "noOfLoops": 1,
                                     "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
+                                        "finalx": -97.0,
+                                        "finaly": -35.0,
                                         "speed": 0.0
                                     }
                                 }
@@ -3908,9 +3994,9 @@
                         {
                             "id": 1,
                             "animName": "17_highlight_the_big_octopus",
-                            "startX": -115,
-                            "startY": 0,
-                            "startZ": 0,
+                            "startX": -97,
+                            "startY": -35,
+                            "startZ": 91,
                             "startIndex": 0,
                             "endIndex": 1,
                             "onTouch": false,
@@ -3925,8 +4011,8 @@
                                     "endFrame": 1,
                                     "noOfLoops": 3,
                                     "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
+                                        "finalx": -97.0,
+                                        "finaly": -35.0,
                                         "speed": 0.0
                                     }
                                 }
@@ -3937,9 +4023,9 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 135.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
+                    "posX": 181.0,
+                    "posY": -78.0,
+                    "posZ": 91.0,
                     "scaleX": 40.0,
                     "scaleY": 40.0,
                     "rotX": 0.0,
@@ -3955,9 +4041,9 @@
                         {
                             "id": 0,
                             "animName": "17_small_octopus_move_flap_legs",
-                            "startX": 135,
-                            "startY": 0,
-                            "startZ": 0,
+                            "startX": 181,
+                            "startY": -78,
+                            "startZ": 91,
                             "startIndex": 0,
                             "endIndex": 5,
                             "onTouch": false,
@@ -3976,8 +4062,8 @@
                                     "endFrame": 5,
                                     "noOfLoops": 1,
                                     "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
+                                        "finalx": 181.0,
+                                        "finaly": -78.0,
                                         "speed": 0.0
                                     }
                                 }
@@ -4722,6 +4808,30 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
                     "type": 6,
                     "timing": 0.0,
                     "textId": 0,
@@ -4811,6 +4921,54 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 105.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "7_between_day_bg_night_bg-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "",
+                            "startX": 0,
+                            "startY": 0,
+                            "startZ": 105,
+                            "startIndex": 0,
+                            "endIndex": 2,
+                            "onTouch": false,
+                            "onStart": true,
+                            "secPerFrame": [
+                                0.30000001192092898,
+                                0.30000001192092898,
+                                0.30000001192092898
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "texts": [
