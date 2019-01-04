@@ -36,6 +36,17 @@ public class BookEditor : EditorWindow
 
     Vector2 m_vScrollPosition;
 
+    GUIStyle m_boldFoldoutStyle;
+    bool    m_foldoutPathsText      = false;
+    bool    m_foldoutPageData       = false;
+    bool    m_foldoutPageText       = false;
+    bool    m_foldoutPageAudio      = false;
+    bool    m_foldoutTimestamps     = false;
+    bool    m_foldoutGameObjects    = false;
+    bool    m_foldoutTriggers       = false;
+
+    int     m_activePageID = 0;
+
     VectorUtils.TessellationOptions tessOptions = new VectorUtils.TessellationOptions()
     {
         StepDistance = 100.0f,
@@ -46,6 +57,8 @@ public class BookEditor : EditorWindow
 
     private void OnGUI()
     {
+        m_boldFoldoutStyle = EditorStyles.foldout;
+
         if (m_rcStoryBook == null)
         {
             if (!string.IsNullOrEmpty(m_strBookPath))
@@ -89,91 +102,255 @@ public class BookEditor : EditorWindow
             return;
         }
 
-        GUILayout.BeginHorizontal();
-        GUILayout.Label("Book Editor", EditorStyles.boldLabel);
+        #region Title & Current Page 
 
-        if (GUILayout.Button("Add Images To AssetBundle"))
-        {
-            Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
-            AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
-            AddImagesInPath(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
-        }
-        GUILayout.EndHorizontal();
+        // Editor Title
+        GUILayout.Space(8);
 
+        GUIStyle bookEditorLabelStyle = new GUIStyle();
+        bookEditorLabelStyle.alignment = TextAnchor.UpperCenter;
+        bookEditorLabelStyle.fontStyle = FontStyle.Bold;
 
-        if (!string.IsNullOrEmpty(m_strBookPath)) GUILayout.Label(m_strBookPath.Replace("/","\\"));
-        if (!string.IsNullOrEmpty(m_strCommonPath)) GUILayout.Label(m_strCommonPath.Replace("/", "\\"));
-        if (!string.IsNullOrEmpty(m_strAnimPath)) GUILayout.Label(m_strAnimPath.Replace("/", "\\"));
-        if (!string.IsNullOrEmpty(m_strAssetPath)) GUILayout.Label(m_strAssetPath.Replace("/", "\\"));
+        GUILayout.Label("Book Editor", bookEditorLabelStyle);
 
+        GUILayout.Space(4);
+        
+        // Edit Page
         m_vScrollPosition = GUILayout.BeginScrollView(m_vScrollPosition);
+        
+        string[] pageTexts = new string[m_rcStoryBook.pages.Length];
+        for (int i = 0; i < m_rcStoryBook.pages.Length; i++) {
+            if (m_rcStoryBook.pages[i].texts != null && m_rcStoryBook.pages[i].texts.Length != 0)
+                pageTexts[i] = "Page " + i.ToString() + " " + m_rcStoryBook.pages[i].texts[0].text;
+            else
+                pageTexts[i] = "Page " + i.ToString();
+        }
 
-        m_rcStoryBook.id = EditorGUILayout.IntField("id", m_rcStoryBook.id, EditorStyles.numberField);
-        m_rcStoryBook.language = EditorGUILayout.TextField("Language", m_rcStoryBook.language, EditorStyles.textField);
-        m_rcStoryBook.fontFamily = EditorGUILayout.TextField("Font Family", m_rcStoryBook.fontFamily, EditorStyles.textField);
-        m_rcStoryBook.fontColor = EditorGUILayout.TextField("Font Family", m_rcStoryBook.fontColor, EditorStyles.textField);
-        m_rcStoryBook.textFontSize = EditorGUILayout.IntField("Font Size", m_rcStoryBook.textFontSize, EditorStyles.numberField);
-        m_rcStoryBook.textStartPositionX = EditorGUILayout.FloatField("Text Start X", m_rcStoryBook.textStartPositionX, EditorStyles.numberField);
-        m_rcStoryBook.textStartPositionY = EditorGUILayout.FloatField("Text Start Y", m_rcStoryBook.textStartPositionY, EditorStyles.numberField);
 
-        int nRemove = -1;
+        GUIStyle currentPageDropdownStyle = EditorStyles.popup;
+        currentPageDropdownStyle.fontStyle = FontStyle.Bold;
+        currentPageDropdownStyle.fontSize = 10;
+        currentPageDropdownStyle.fixedHeight = 20;
+        
+        m_activePageID = EditorGUILayout.Popup("Current Page", m_activePageID, pageTexts, currentPageDropdownStyle, GUILayout.ExpandWidth(false), GUILayout.Width(580));
 
-        for (int i = 0; i < m_rcStoryBook.pages.Length; i++)
-        {
-            // for statement here
+        currentPageDropdownStyle.fontStyle = FontStyle.Normal;
+        currentPageDropdownStyle.fontSize = 9;
+        currentPageDropdownStyle.fixedHeight = 16;
 
-            EditorGUILayout.BeginHorizontal();
-            EditorGUILayout.BeginVertical();
+        GUILayout.Space(10);
 
-            EditPage(m_rcStoryBook.pages[i], i);
+        EditPage(m_rcStoryBook.pages[m_activePageID], m_activePageID);
 
-            EditorGUILayout.EndVertical();
-            EditorGUILayout.BeginVertical();
+        GUILayout.EndScrollView();
 
-            if (GUILayout.Button("Remove"))
-            {
-                nRemove = i;
+        #endregion
+
+        #region Story Info & Parameters
+
+        GUILayout.FlexibleSpace();
+
+        GUILayout.Space(4);
+
+        EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+
+        SetBoldFoldoutStyleToBold();
+
+        m_foldoutPathsText = EditorGUILayout.Foldout(m_foldoutPathsText, "Story Info & Parameters", m_boldFoldoutStyle);
+
+        // Setting this back to normal, else we see bold font on all foldouts
+        SetBoldFoldoutStyleToNormal();
+
+        if (m_foldoutPathsText) {
+            GUILayout.Label("Path Values");
+
+            if (!string.IsNullOrEmpty(m_strBookPath)) {
+                EditorGUI.BeginDisabledGroup(true);
+                EditorGUILayout.TextField("Story Book Path", m_strBookPath.Replace("/","\\"));
+                EditorGUI.EndDisabledGroup();
             }
 
-            EditorGUILayout.EndVertical();
-            EditorGUILayout.EndHorizontal();
+            if (!string.IsNullOrEmpty(m_strCommonPath)) {
+                EditorGUI.BeginDisabledGroup(true);
+                EditorGUILayout.TextField("Common Path", m_strCommonPath.Replace("/", "\\"));
+                EditorGUI.EndDisabledGroup();
+            }
+
+            if (!string.IsNullOrEmpty(m_strAnimPath)) {
+                EditorGUI.BeginDisabledGroup(true);
+                EditorGUILayout.TextField("Animations Path", m_strAnimPath.Replace("/", "\\"));
+                EditorGUI.EndDisabledGroup();
+            }
+
+            if (!string.IsNullOrEmpty(m_strAssetPath)) {
+                EditorGUI.BeginDisabledGroup(true);
+                EditorGUILayout.TextField("Assets Path", m_strAssetPath.Replace("/", "\\"));
+                EditorGUI.EndDisabledGroup();
+            }
+
+            GUILayout.Space(10);
+        
+            GUILayout.Label("Story Parameters");
+
+            m_rcStoryBook.id = EditorGUILayout.IntField("id", m_rcStoryBook.id, EditorStyles.numberField);
+            m_rcStoryBook.language = EditorGUILayout.TextField("Language", m_rcStoryBook.language, EditorStyles.textField);
+            m_rcStoryBook.fontFamily = EditorGUILayout.TextField("Font Family", m_rcStoryBook.fontFamily, EditorStyles.textField);
+            m_rcStoryBook.fontColor = EditorGUILayout.TextField("Font Family", m_rcStoryBook.fontColor, EditorStyles.textField);
+            m_rcStoryBook.textFontSize = EditorGUILayout.IntField("Font Size", m_rcStoryBook.textFontSize, EditorStyles.numberField);
+            m_rcStoryBook.textStartPositionX = EditorGUILayout.FloatField("Text Start X", m_rcStoryBook.textStartPositionX, EditorStyles.numberField);
+            m_rcStoryBook.textStartPositionY = EditorGUILayout.FloatField("Text Start Y", m_rcStoryBook.textStartPositionY, EditorStyles.numberField);
         }
 
-        if (nRemove != -1)
-        {
-            m_rcStoryBook.pages = m_rcStoryBook.pages.RemoveAt(nRemove);
-        }
+        EditorGUILayout.EndVertical();
+
+        #endregion
+
+        #region First Buttons Row at the Bottom (Add Text, Timestamps, Add GameObject, Add Trigger)
 
         GUILayout.BeginHorizontal();
-        GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
-        if (GUILayout.Button("Add Page"))
+
+        if (GUILayout.Button("Add Page Text", GUILayout.Height(24)))
+        {
+            PageClass currentPage = m_rcStoryBook.pages[m_activePageID];
+            TextClass[] rcNewArray = new TextClass[currentPage.texts.Length + 1];
+            Array.Copy(currentPage.texts, rcNewArray, currentPage.texts.Length);
+            rcNewArray[currentPage.texts.Length] = new TextClass();
+            rcNewArray[currentPage.texts.Length].id = currentPage.texts.Length;
+            rcNewArray[currentPage.texts.Length].text = "";
+
+            currentPage.texts = rcNewArray;
+
+            this.ShowNotification(new GUIContent("New Text Object Added to Page " + m_activePageID));
+        }
+
+        if (GUILayout.Button("Generate Timestamps", GUILayout.Height(24)))
+        {
+            PageClass currentPage = m_rcStoryBook.pages[m_activePageID];
+            if (!string.IsNullOrEmpty(currentPage.audioFile))
+            {
+                List<string> rcWords = GetTextWords(currentPage.texts);
+
+                TimeStampClass[] rcNewArray = new TimeStampClass[rcWords.Count];
+
+                for (int i = 0; i < rcWords.Count; i++)
+                {
+                    rcNewArray[i] = new TimeStampClass();
+                    rcNewArray[i].start = i * Convert.ToInt32(m_rcPageAudio[m_activePageID].length * 1000) / rcWords.Count;
+                    rcNewArray[i].end = rcNewArray[i].start + Convert.ToInt32(m_rcPageAudio[m_activePageID].length * 1000) / rcWords.Count;
+                    rcNewArray[i].starWord = "No";
+                    rcNewArray[i].wordIdx = i;
+                }
+
+                currentPage.timestamps = rcNewArray;
+
+                this.ShowNotification(new GUIContent("Timestamps Generated for Page " + m_activePageID));
+            }
+        }
+
+        if (GUILayout.Button("Add Page GameObject", GUILayout.Height(24)))
+        {
+            PageClass currentPage = m_rcStoryBook.pages[m_activePageID];
+            GameObjectClass[] rcNewArray = new GameObjectClass[currentPage.gameObjects.Length + 1];
+            Array.Copy(currentPage.gameObjects, rcNewArray, currentPage.gameObjects.Length);
+            rcNewArray[currentPage.gameObjects.Length] = new GameObjectClass();
+            rcNewArray[currentPage.gameObjects.Length].anim = new Anim[0];
+            rcNewArray[currentPage.gameObjects.Length].draggable = false;
+            rcNewArray[currentPage.gameObjects.Length].id = currentPage.gameObjects.Length;
+            currentPage.gameObjects = rcNewArray;
+
+            this.ShowNotification(new GUIContent("New Scene Game Object Added to Page " + m_activePageID));
+        }
+
+        if (GUILayout.Button("Add Page Trigger", GUILayout.Height(24)))
+        {
+            PageClass currentPage = m_rcStoryBook.pages[m_activePageID];
+            TriggerClass[] rcNewArray = new TriggerClass[currentPage.triggers.Length + 1];
+            Array.Copy(currentPage.triggers, rcNewArray, currentPage.triggers.Length);
+            rcNewArray[currentPage.triggers.Length] = new TriggerClass();
+            currentPage.triggers = rcNewArray;
+
+            this.ShowNotification(new GUIContent("New Scene Trigger Added to Page " + m_activePageID));
+        }
+
+        GUILayout.EndHorizontal();
+
+        #endregion
+
+        #region Second Buttons Row At the Bottom (Add Page, Previous, Next, Delete, Add Images, Save JSON)
+
+        GUILayout.BeginHorizontal();
+
+        if (GUILayout.Button("Add Page", GUILayout.Height(24)))
         {
             PageClass[] rcNewArray = new PageClass[m_rcStoryBook.pages.Length + 1];
             Array.Copy(m_rcStoryBook.pages, rcNewArray, m_rcStoryBook.pages.Length);
-
-            rcNewArray[m_rcStoryBook.pages.Length] = new PageClass();
-            rcNewArray[m_rcStoryBook.pages.Length].gameObjects = new GameObjectClass[0];
-            rcNewArray[m_rcStoryBook.pages.Length].triggers = new TriggerClass[0];
-            rcNewArray[m_rcStoryBook.pages.Length].timestamps = new TimeStampClass[0];
-            rcNewArray[m_rcStoryBook.pages.Length].texts = new TextClass[0];
-            rcNewArray[m_rcStoryBook.pages.Length].audio = new AudioClass();
-            rcNewArray[m_rcStoryBook.pages.Length].pageNumber = m_rcStoryBook.pages.Length;
-            rcNewArray[m_rcStoryBook.pages.Length].script = "GSManager";
+            int newIndex = m_rcStoryBook.pages.Length;
+            rcNewArray[newIndex] = new PageClass();
+            rcNewArray[newIndex].gameObjects = new GameObjectClass[0];
+            rcNewArray[newIndex].triggers = new TriggerClass[0];
+            rcNewArray[newIndex].timestamps = new TimeStampClass[0];
+            rcNewArray[newIndex].texts = new TextClass[0];
+            rcNewArray[newIndex].audio = new AudioClass();
+            rcNewArray[newIndex].pageNumber = m_rcStoryBook.pages.Length;
+            rcNewArray[newIndex].script = "GSManager";
 
             Rect[] NewAudioRects = new Rect[m_rcStoryBook.pages.Length + 1];
-            Array.Copy(m_rcAudioRects, NewAudioRects, m_rcStoryBook.pages.Length);
+            Array.Copy(m_rcAudioRects, NewAudioRects, newIndex);
 
             AudioClip[] NewAudioClips = new AudioClip[m_rcStoryBook.pages.Length + 1];
-            Array.Copy(m_rcPageAudio, NewAudioClips, m_rcStoryBook.pages.Length);
+            Array.Copy(m_rcPageAudio, NewAudioClips, newIndex);
 
             m_rcPageAudio = NewAudioClips;
             m_rcAudioRects = NewAudioRects;
             m_rcStoryBook.pages = rcNewArray;
 
+            this.ShowNotification(new GUIContent("New Page Added at Index " + newIndex));
         }
-        GUILayout.EndHorizontal();
 
-        if (GUILayout.Button("Save JSON"))
+        EditorStyles.popup.fontSize = 12;
+        EditorStyles.popup.fontStyle = FontStyle.Bold;
+
+        EditorGUI.BeginDisabledGroup(m_activePageID == 0);
+        string previousButtonLabel = m_activePageID == 0 ? 
+            "Previous Page" : 
+            string.Format("Previous Page({0})", Mathf.Clamp(m_activePageID - 1, 0, m_rcStoryBook.pages.Length - 2));
+        if (GUILayout.Button(previousButtonLabel, GUILayout.Height(24))) {
+            if (m_activePageID > 0)
+                m_activePageID--;
+        }
+        EditorGUI.EndDisabledGroup();
+
+        EditorGUI.BeginDisabledGroup(m_activePageID == m_rcStoryBook.pages.Length - 1);
+        string nextButtonLabel = m_activePageID == m_rcStoryBook.pages.Length - 1 ? 
+            "Next Page" : 
+            string.Format("Next Page({0})", Mathf.Clamp(m_activePageID + 1, 1, m_rcStoryBook.pages.Length - 1));
+        if (GUILayout.Button(nextButtonLabel, GUILayout.Height(24))) {
+            if (m_activePageID < m_rcStoryBook.pages.Length -1)
+                m_activePageID++;
+        }
+        EditorGUI.EndDisabledGroup();
+
+        if (GUILayout.Button("Delete Page", GUILayout.Height(24))) {
+            bool confirmedDeletion = EditorUtility.DisplayDialog(
+                "Confirm Deletion", "Are you sure you want to delete page(" + m_activePageID + ")?", 
+                "Trash it", 
+                "Thanks for saving me");
+            if (confirmedDeletion) {
+                int tempIndex = m_activePageID;
+                m_activePageID = 0;
+                m_rcStoryBook.pages = m_rcStoryBook.pages.RemoveAt(tempIndex);
+                this.ShowNotification(new GUIContent("Page " + tempIndex + " Deleted!"));
+            }
+        }
+
+        if (GUILayout.Button("Add Images To AssetBundle", GUILayout.Height(24)))
+        {
+            Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+            AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+            AddImagesInPath(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+        }
+
+        if (GUILayout.Button("Save JSON", GUILayout.Height(24)))
         {
             Debug.Log(m_strBookPath + " file to be saved.");
 
@@ -182,32 +359,130 @@ public class BookEditor : EditorWindow
             rcWriter.Close();
 
             AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+
+            this.ShowNotification(new GUIContent("Changes Saved!"));
         }
 
-        GUILayout.EndScrollView();
+        GUILayout.EndHorizontal();
+
+        GUILayout.Space(4);
+
+        #endregion
+    
+    }
+
+    private void SetBoldFoldoutStyleToBold() {
+        m_boldFoldoutStyle.fontStyle = FontStyle.Bold;
+    }
+
+    private void SetBoldFoldoutStyleToNormal() {
+        m_boldFoldoutStyle.fontStyle = FontStyle.Normal;
     }
 
     private void EditPage(PageClass i_rcPage, int i_nOrdinal)
     {
-        if (i_rcPage.texts != null && i_rcPage.texts.Length != 0)
-        {
-            i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber + " - " + i_rcPage.texts[0].text ));
-        }
-        else
-        {
-            i_rcPage.Show = EditorGUILayout.Foldout(i_rcPage.Show, new GUIContent("Page " + i_rcPage.pageNumber));
-        }
-        EditorGUI.indentLevel++;
 
-        if (i_rcPage.Show)
+        #region Page Data
+
+        EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+
+        SetBoldFoldoutStyleToBold();
+
+        m_foldoutPageData = EditorGUILayout.Foldout(m_foldoutPageData, "Page Parameters", m_boldFoldoutStyle);
+
+        SetBoldFoldoutStyleToNormal();
+
+        if (m_foldoutPageData)
         {
+            EditorGUI.indentLevel++;
+
             i_rcPage.pageNumber = EditorGUILayout.IntField("Page Number", i_rcPage.pageNumber, EditorStyles.numberField);
             i_rcPage.script = EditorGUILayout.TextField("Script", i_rcPage.script, EditorStyles.textField);
+
+            EditorGUI.indentLevel--;
+        }
+
+        EditorGUILayout.EndVertical();
+        
+        #endregion
+
+        #region Page Text
+        
+        EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+
+        SetBoldFoldoutStyleToBold();
+
+        m_foldoutPageText = EditorGUILayout.Foldout(m_foldoutPageText, "Page Text", m_boldFoldoutStyle);
+
+        SetBoldFoldoutStyleToNormal();
+
+        int nRemove = -1;
+
+        if (m_foldoutPageText) 
+        {
+            
+            EditorGUI.indentLevel++;
+
+            for (int j = 0; j < i_rcPage.texts.Length; j++)
+            {
+
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.BeginVertical();
+
+                EditText(i_rcPage.texts[j], j);
+
+                EditorGUILayout.EndVertical();
+                EditorGUILayout.BeginVertical();
+
+                if (GUILayout.Button("Remove"))
+                {
+                    nRemove = j;
+                }
+
+                EditorGUILayout.EndVertical();
+                EditorGUILayout.EndHorizontal();
+            }
+
+            if (nRemove != -1)
+            {
+                i_rcPage.texts = i_rcPage.texts.RemoveAt(nRemove);
+                this.ShowNotification(new GUIContent("Page(" + m_activePageID + ") Text(" + nRemove + ") Has Been Removed!"));
+            }
+
+            EditorGUI.indentLevel--;
+        }
+
+        EditorGUILayout.EndVertical();
+        
+        #endregion
+
+        #region Page Audio
+        
+        EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+
+        SetBoldFoldoutStyleToBold();
+
+        m_foldoutPageAudio = EditorGUILayout.Foldout(m_foldoutPageAudio, "Page Audio", m_boldFoldoutStyle);
+
+        SetBoldFoldoutStyleToNormal();
+
+        if (m_foldoutPageAudio) {
+            EditorGUI.indentLevel++;
+
             i_rcPage.audioFile = EditorGUILayout.TextField("Audio File", i_rcPage.audioFile, EditorStyles.textField);
 
-            GUILayout.BeginHorizontal();
-            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
+            EditorGUILayout.BeginHorizontal();
+
+            GUILayout.Space(EditorGUI.indentLevel * 10);
+
             m_bMicrophoneHot = GUILayout.Button("Record");
+
+            if (GUILayout.Button("Play"))
+            {
+                AudioUtility.PlayClip(m_rcPageAudio[i_nOrdinal], 0);
+            }
+
+            EditorGUILayout.EndHorizontal();
 
             if (m_bMicrophoneHot)
             {
@@ -231,9 +506,8 @@ public class BookEditor : EditorWindow
                     m_rcRecordingClip = Microphone.Start(Microphone.devices[0], false, 300, 44100);
                 }
             }
-            GUILayout.EndHorizontal();
 
-            if (!string.IsNullOrEmpty(i_rcPage.audioFile))
+            if (!string.IsNullOrEmpty(i_rcPage.audioFile)) 
             {
                 string strPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "Audio/Stanza/" + i_rcPage.audioFile);
                 string strAssetPath = Application.dataPath.Replace("/Assets", "");
@@ -256,68 +530,87 @@ public class BookEditor : EditorWindow
 
                     GUILayout.BeginHorizontal();
                     GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
-                    if (GUILayout.Button("Play"))
-                    {
-                        AudioUtility.PlayClip(m_rcPageAudio[i_nOrdinal], 0);
-                    }
 
                     GUILayout.EndHorizontal();
                 }
-
-                int nDelete = -1;
-
-                for (int j = 0; j < i_rcPage.timestamps.Length; j++)
-                {
-                    EditorGUILayout.BeginHorizontal();
-                    EditorGUILayout.BeginVertical();
-
-                    EditTimestamps(i_rcPage.timestamps[j], m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], i_rcPage.texts, j);
-
-                    EditorGUILayout.EndVertical();
-                    EditorGUILayout.BeginVertical();
-
-                    if (GUILayout.Button("Remove"))
-                    {
-                        nDelete = j;
-                    }
-
-                    EditorGUILayout.EndVertical();
-                    EditorGUILayout.EndHorizontal();
-                }
-
-                if (nDelete != -1)
-                {
-                    i_rcPage.timestamps = i_rcPage.timestamps.RemoveAt(nDelete);
-                }
-
-                if (m_rcPageAudio[i_nOrdinal] != null)
-                {
-                    DrawTextOnAudioClip(m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], i_rcPage.timestamps, i_rcPage.texts);
-                }
-
-                GUILayout.BeginHorizontal();
-                GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
-                if (GUILayout.Button("Generate Timestamps"))
-                {
-                    List<string> rcWords = GetTextWords(i_rcPage.texts);
-
-                    TimeStampClass[] rcNewArray = new TimeStampClass[rcWords.Count];
-
-                    for (int i = 0; i < rcWords.Count; i++)
-                    {
-                        rcNewArray[i] = new TimeStampClass();
-                        rcNewArray[i].start = i * Convert.ToInt32(m_rcPageAudio[i_nOrdinal].length * 1000) / rcWords.Count;
-                        rcNewArray[i].end = rcNewArray[i].start + Convert.ToInt32(m_rcPageAudio[i_nOrdinal].length * 1000) / rcWords.Count;
-                        rcNewArray[i].starWord = "No";
-                        rcNewArray[i].wordIdx = i;
-                    }
-
-                    i_rcPage.timestamps = rcNewArray;
-                }
-                GUILayout.EndHorizontal();
             }
 
-            int nRemove = -1;
+
+            EditorGUI.indentLevel--;
+        }
+
+        EditorGUILayout.EndVertical();
+        
+        #endregion
+
+        #region Audio Timestamps
+        
+        EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+
+        SetBoldFoldoutStyleToBold();
+
+        m_foldoutTimestamps = EditorGUILayout.Foldout(m_foldoutTimestamps, "Page Timestamps", m_boldFoldoutStyle);
+
+        SetBoldFoldoutStyleToNormal();
+
+        if (m_foldoutTimestamps)
+        {
+            EditorGUI.indentLevel++;
+
+            int nDelete = -1;
+
+            for (int j = 0; j < i_rcPage.timestamps.Length; j++)
+            {
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.BeginVertical();
+
+                EditTimestamps(i_rcPage.timestamps[j], m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], i_rcPage.texts, j);
+
+                EditorGUILayout.EndVertical();
+                EditorGUILayout.BeginVertical();
+
+                if (GUILayout.Button("Remove"))
+                {
+                    nDelete = j;
+                }
+
+                EditorGUILayout.EndVertical();
+                EditorGUILayout.EndHorizontal();
+            }
+
+            if (nDelete != -1)
+            {
+                i_rcPage.timestamps = i_rcPage.timestamps.RemoveAt(nDelete);
+                this.ShowNotification(new GUIContent("Page(" + m_activePageID + ") Timestamp(" + nDelete + ") Has Been Removed!"));
+            }
+
+            if (m_rcPageAudio[i_nOrdinal] != null)
+            {
+                DrawTextOnAudioClip(m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], i_rcPage.timestamps, i_rcPage.texts);
+            }
+
+            EditorGUI.indentLevel--;
+        }
+
+        EditorGUILayout.EndVertical();
+        
+        #endregion
+
+        #region Page Objects
+        
+        EditorGUILayout.BeginVertical(EditorStyles.helpBox);
+
+        SetBoldFoldoutStyleToBold();
+
+        m_foldoutGameObjects = EditorGUILayout.Foldout(m_foldoutGameObjects, "Page Objects", m_boldFoldoutStyle);
+
+        SetBoldFoldoutStyleToNormal();
+
+        if (m_foldoutGameObjects)
+        {
+            EditorGUI.indentLevel++;
+
+            nRemove = -1;
 
             for (int j = 0; j < i_rcPage.gameObjects.Length; j++)
             {
@@ -343,62 +636,29 @@ public class BookEditor : EditorWindow
             if (nRemove != -1)
             {
                 i_rcPage.gameObjects = i_rcPage.gameObjects.RemoveAt(nRemove);
+                this.ShowNotification(new GUIContent("Page(" + m_activePageID + ") Object(" + nRemove + ") Has Been Removed!"));
             }
 
-            GUILayout.BeginHorizontal();
-            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
-            if (GUILayout.Button("Add GameObject"))
-            {
-                GameObjectClass[] rcNewArray = new GameObjectClass[i_rcPage.gameObjects.Length + 1];
-                Array.Copy(i_rcPage.gameObjects, rcNewArray, i_rcPage.gameObjects.Length);
-                rcNewArray[i_rcPage.gameObjects.Length] = new GameObjectClass();
-                rcNewArray[i_rcPage.gameObjects.Length].anim = new Anim[0];
-                rcNewArray[i_rcPage.gameObjects.Length].draggable = false;
-                rcNewArray[i_rcPage.gameObjects.Length].id = i_rcPage.gameObjects.Length;
-                i_rcPage.gameObjects = rcNewArray;
-            }
-            GUILayout.EndHorizontal();
+            EditorGUI.indentLevel--;
+        }
 
-            nRemove = -1;
+        EditorGUILayout.EndVertical();
+        
+        #endregion
 
-            for (int j = 0; j < i_rcPage.texts.Length; j++)
-            {
+        #region Page Triggers
+        
+        EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 
-                EditorGUILayout.BeginHorizontal();
-                EditorGUILayout.BeginVertical();
+        SetBoldFoldoutStyleToBold();
 
-                EditText(i_rcPage.texts[j], j);
+        m_foldoutTriggers = EditorGUILayout.Foldout(m_foldoutTriggers, "Page Triggers", m_boldFoldoutStyle);
 
-                EditorGUILayout.EndVertical();
-                EditorGUILayout.BeginVertical();
+        SetBoldFoldoutStyleToNormal();
 
-                if (GUILayout.Button("Remove"))
-                {
-                    nRemove = j;
-                }
-
-                EditorGUILayout.EndVertical();
-                EditorGUILayout.EndHorizontal();
-            }
-
-            if (nRemove != -1)
-            {
-                i_rcPage.texts = i_rcPage.texts.RemoveAt(nRemove);
-            }
-
-            GUILayout.BeginHorizontal();
-            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
-            if (GUILayout.Button("Add Text"))
-            {
-                TextClass[] rcNewArray = new TextClass[i_rcPage.texts.Length + 1];
-                Array.Copy(i_rcPage.texts, rcNewArray, i_rcPage.texts.Length);
-                rcNewArray[i_rcPage.texts.Length] = new TextClass();
-                rcNewArray[i_rcPage.texts.Length].id = i_rcPage.texts.Length;
-                rcNewArray[i_rcPage.texts.Length].text = "";
-
-                i_rcPage.texts = rcNewArray;
-            }
-            GUILayout.EndHorizontal();
+        if (m_foldoutTriggers)
+        {
+            EditorGUI.indentLevel++;
 
             nRemove = -1;
 
@@ -424,23 +684,16 @@ public class BookEditor : EditorWindow
             if (nRemove != -1)
             {
                 i_rcPage.triggers = i_rcPage.triggers.RemoveAt(nRemove);
+                this.ShowNotification(new GUIContent("Page(" + m_activePageID + ") Trigger(" + nRemove + ") Has Been Removed!"));
             }
 
-            GUILayout.BeginHorizontal();
-            GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
-            if (GUILayout.Button("Add Trigger"))
-            {
-                TriggerClass[] rcNewArray = new TriggerClass[i_rcPage.triggers.Length + 1];
-                Array.Copy(i_rcPage.triggers, rcNewArray, i_rcPage.triggers.Length);
-                rcNewArray[i_rcPage.triggers.Length] = new TriggerClass();
-                i_rcPage.triggers = rcNewArray;
-            }
-            GUILayout.EndHorizontal();
-
-
+            EditorGUI.indentLevel--;
         }
 
-        EditorGUI.indentLevel--;
+        EditorGUILayout.EndVertical();
+        
+        #endregion
+
     }
 
     private List<string> GetTextWords(TextClass[] i_racTexts)
