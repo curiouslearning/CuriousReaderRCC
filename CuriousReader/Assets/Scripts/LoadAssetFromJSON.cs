@@ -580,7 +580,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
                             if (rcPerf == null)
                             {
-                                rcPerf = gameObject.AddComponent<PerformanceComponent>();
+                                rcPerf = graphicObject.AddComponent<PerformanceComponent>();
                             }
 
                             if (tinkerText.pairedAnim == -1)
