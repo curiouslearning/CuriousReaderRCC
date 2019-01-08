@@ -19,20 +19,11 @@ public class L4CatSManager9 : GSManager {
 			GTinkerGraphic catJam = GameObject.Find ("CatJam").GetComponent<GTinkerGraphic> ();
 			if (catJam != null)
 			{
-                catJam.reset();
+//                catJam.reset();
 			}
 
 
 		}
-//		else if (go.name == "Jam") 
-//		{   
-//			jam = go;
-//			GTinkerGraphic catJam = GameObject.Find("CatJam").GetComponent<GTinkerGraphic>();
-//			if (catJam != null)
-//			{ 
-//				catJam.MyOnMouseDown();
-//			}
-//		}
 
 		base.OnMouseDown (go);
 	}

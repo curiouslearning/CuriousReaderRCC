@@ -19,7 +19,7 @@ public class L5CatSManager9 : GSManager {
 		}
 		else if ( go.name == "Text_jam."){
             jam.SetActive (true);
-            catJam.reset();
+  //          catJam.reset();
          }
 		/*else if (go.name == "Jam") 
 		{   

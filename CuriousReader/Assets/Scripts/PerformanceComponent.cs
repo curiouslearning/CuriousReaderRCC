@@ -9,6 +9,19 @@ public class PerformanceComponent : MonoBehaviour
 {
     Dictionary<PromptType, List<Performance>> Performances = new Dictionary<PromptType,List<Performance>>();
 
+    public void AddPerformance(Performance i_rcPerformance, PromptType i_ePromptType)
+    {
+        if ( i_rcPerformance != null )
+        {
+            if ( !Performances.ContainsKey(i_ePromptType))
+            {
+                Performances[i_ePromptType] = new List<Performance>();
+            }
+
+            Performances[i_ePromptType].Add(i_rcPerformance);
+        }
+    }
+
     public void Prompt( GameObject i_rcInvokingActor, PromptType i_ePromptType)
     {
         if ( Performances != null )

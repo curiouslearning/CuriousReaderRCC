@@ -14,6 +14,9 @@ public class GameObjectClass
     public float posZ;
     public float scaleX;
     public float scaleY;
+    public float rotX;
+    public float rotY;
+    public float rotZ;
     public int orderInLayer;
     public string imageName;
     public bool inText;
@@ -21,5 +24,5 @@ public class GameObjectClass
 	public string destroyOnCollision;
     public bool draggable;
     public Anim[] anim;
-    public SpriteAnimation SpriteAnimation;
+    public SpriteAnimation[] SpriteAnimation;
 }

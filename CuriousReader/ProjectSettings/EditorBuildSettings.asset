@@ -11,3 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Books/Decodable/CatTale/Common/Scenes/Scene01.unity
     guid: b93a5c02453e2ee42815e3d3a3ab24cb
+  m_configObjects: {}

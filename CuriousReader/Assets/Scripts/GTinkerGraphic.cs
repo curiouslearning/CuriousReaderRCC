@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 using Elendow.SpritedowAnimator;
 
 public class GTinkerGraphic : MonoBehaviour
@@ -18,12 +19,13 @@ public class GTinkerGraphic : MonoBehaviour
 	// Reset and highlight colors defaults (change from scene manager subclasses)
 	public Color resetColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
 	public Color highlightColor = GGameManager.yellow;
+    public int m_nNavigationPage = -1;
 
     /// <summary>
     /// set the draggable property for that tinkergraphic
     /// </summary>
     /// <param name="value">bool value to be set</param>
-	public void SetDraggable(bool value)
+    public void SetDraggable(bool value)
     {
 		dataTinkerGraphic.draggable = value;
 	}
@@ -50,6 +52,17 @@ public class GTinkerGraphic : MonoBehaviour
         
 		FirebaseHelper.LogInAppTouch(("Graphic_"+dataTinkerGraphic.label) ,  time.ToString());
 
+        if (m_nNavigationPage != -1)
+        {
+            LoadAssetFromJSON rcPageLoader = BookSystem.GetPageLoader();
+
+            if ( rcPageLoader != null )
+            {
+                rcPageLoader.RecordPageHistory();
+                rcPageLoader.LoadPage(m_nNavigationPage, this.gameObject);
+            }
+        }
+
         PerformanceComponent rcPerformance = GetComponent<PerformanceComponent>();
 
         if (rcPerformance != null)
@@ -57,7 +70,7 @@ public class GTinkerGraphic : MonoBehaviour
             rcPerformance.Prompt(gameObject, PromptType.Click);
         }
 
-		sceneManager.OnMouseDown (this);
+        sceneManager.OnMouseDown (this);
     }
 
         /// <summary>

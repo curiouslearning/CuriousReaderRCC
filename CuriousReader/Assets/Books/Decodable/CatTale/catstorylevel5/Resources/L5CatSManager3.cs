@@ -12,7 +12,7 @@ public class L5CatSManager3 : GSManager {
         cat= GameObject.Find("Cat").GetComponent<GTinkerGraphic>();
         base.Start();
     }
-
+ 
     public override void OnMouseDown(GameObject go)
 	{
 		if (go.name == "Cat") {
@@ -27,11 +27,11 @@ public class L5CatSManager3 : GSManager {
 		}
         else if(go.name=="Text_cat")
         {
-            ranman.reset();
+//            ranman.reset();
         }
         else if(go.name=="Text_ran")
         {
-            cat.reset();
+//            cat.reset();
         }
 		base.OnMouseDown (go);
 	}

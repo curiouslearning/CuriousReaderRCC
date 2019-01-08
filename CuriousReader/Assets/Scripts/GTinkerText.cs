@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 //20.3,-18.8 (yellow), 0,-17.4 (white),blue (22.9,-0.4)
 public class GTinkerText : MonoBehaviour {
     //private static bool check=false;
@@ -106,6 +107,54 @@ public class GTinkerText : MonoBehaviour {
 
 
     }
+
+    /// <summary>
+    /// Change the face color of this object's text to the given Colo
+    /// </summary>
+    /// <param name="i_color">the desired color.</param>
+    public void setFaceColor (Color i_color)
+    {
+        TextMeshProUGUI rcText = GetComponent<TextMeshProUGUI>();
+        if(rcText != null)
+        {
+            rcText.color = i_color;
+            rcText.havePropertiesChanged = true;
+            rcText.Rebuild(CanvasUpdate.Prelayout);
+            rcText.ForceMeshUpdate();
+        }
+    }
+
+    /// <summary>
+    /// Toggles the text highlighting between the desired colors.
+    /// </summary>
+    /// <param name="i_highlight">If set to <c>true</c> i highlight.</param>
+    public void toggleHighlight(bool i_highlight)
+    {
+        if(i_highlight)
+        {
+            setFaceColor(Color.yellow);
+        }
+        else
+        {
+            setFaceColor(Color.black);
+        }
+    }
+
+    /// <summary>
+    /// Highlights the text.
+    /// </summary>
+    public void highlightText ()
+    {
+        toggleHighlight(true);
+    }
+
+    /// <summary>
+    /// return text to original color
+    /// </summary>
+    public void unhighlightText()
+    {
+        toggleHighlight(false);
+    }
     public void iconanimPlay()
 
 	{
@@ -150,7 +199,7 @@ public class GTinkerText : MonoBehaviour {
 			//sending data directly to firebase using "72 hours rule"! (removed local data storage)
 			//DataCollection.AddInTouchData( ("Text_"+gameObject.GetComponent<Text>().text) , time.ToString());
 
-			FirebaseHelper.LogInAppTouch (("Text_" + gameObject.GetComponent<Text> ().text), time.ToString ());
+			FirebaseHelper.LogInAppTouch (("Text_" + gameObject.GetComponent<TextMeshProUGUI> ().text), time.ToString ());
 
 			if (!stanza.stanzaManager.sceneManager.disableSounds) {
 				PlaySound();
@@ -181,7 +230,7 @@ public class GTinkerText : MonoBehaviour {
 		    else 
 				{   //StopCoroutine ("Animate");
 					//StopCoroutine (pairedGraphics[i].Animdelay ());
-				    pairedGraphics [i].ResetandZoom ();
+// FIX				    pairedGraphics [i].ResetandZoom ();
 			}
 			}
         

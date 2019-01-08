@@ -21,7 +21,7 @@ public class L3CatSManager7 : GSManager {
         else if (go.name == "Text_ham.")
         {
             ham.SetActive(true);
-            catHam.reset();
+//            catHam.reset();
 
         }
         else if(go.name=="Text_eats")
