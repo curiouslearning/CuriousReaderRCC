@@ -58,7 +58,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		if (ShelfManager.bundleLoaded == null) {
 			Debug.Log("Book asset bundle is not loaded, attempting to load it...");
 			try {
-            	ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplacs"));  //ShelfManager.selectedBook.ToLower())
+            	ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplaces"));  //ShelfManager.selectedBook.ToLower())
 				LoadStoryData();
 			} catch (Exception e) {
 				Debug.LogError("Failed to load \"differentplaces\" asset bundle! Message: " + e.Message);
@@ -811,7 +811,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	public void CreateGameObject(GameObjectClass gameObjectData)
 	{
         GameObject rcPrefab = ShelfManager.bundleLoaded.LoadAsset<GameObject>(gameObjectData.imageName);
-        
+
+//        UnityEngine.Object [] rcObjects = ShelfManager.bundleLoaded.LoadAllAssets();
+
 		GameObject go;
 		
 		if (rcPrefab == null)
@@ -825,7 +827,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 		if (!string.IsNullOrEmpty(gameObjectData.tag))
 		{
-			go.tag = gameObjectData.tag;
+//			go.tag = gameObjectData.tag;
 		}
 
 		go.name = gameObjectData.label;
@@ -923,9 +925,22 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// </summary>
 	/// <param name="name">Namevof the asset image.</param>
 	/// <param name="sr">Sprite Renderer.</param>
-	public  static void LoadAssetImage(GTinkerGraphic tinkergraphic, string name)
-	{   
-		var sprite = ShelfManager.bundleLoaded.LoadAsset<Sprite>(name);
+	public  static void LoadAssetImage(GTinkerGraphic i_rcObject, string i_strName)
+	{
+        var sprite = ShelfManager.bundleLoaded.LoadAsset<Sprite>(i_strName);
+
+        
+        //		Sprite rcSprite = ShelfManager.bundleLoaded.LoadAsset<Sprite>(i_strName);
+        
+//        if (rcSprite != null)
+//        {
+//            SpriteRenderer rcSpriteRenderer = i_rcObject.GetComponent<SpriteRenderer>();
+
+//            if ( rcSpriteRenderer != null)
+//            {
+//                rcSpriteRenderer.sprite = rcSprite;
+//            }
+//        }
 	}
 
 	/// <summary>

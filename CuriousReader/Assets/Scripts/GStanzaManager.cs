@@ -76,9 +76,11 @@ public class GStanzaManager : MonoBehaviour {
 
 	// Method to request an auto play starting w/ a stanza
 	public void RequestAutoPlay(StanzaObject startingStanza, GTinkerText startingTinkerText = null)
-	{   Debug.Log ("request auto play");
+	{
+//        Debug.Log ("request auto play");
 		if (!autoPlaying)  // && !sceneManager.disableAutoplay)
-		{   Debug.Log("not auto playing");
+		{
+//            Debug.Log("not auto playing");
 			autoPlaying = true;
 			cancelAutoPlay = false; // reset our cancel flag
 			StartCoroutine(StartAutoPlay(startingStanza, startingTinkerText));
@@ -104,7 +106,7 @@ public class GStanzaManager : MonoBehaviour {
 	// Begins an auto play starting w/ a stanza
 	private IEnumerator StartAutoPlay(StanzaObject startingStanza, GTinkerText startingTinkerText)
 	{
-        Debug.Log("autoplay started");
+//        Debug.Log("autoplay started");
 
 		// If we aren't starting from the beginning, read the audio progress from the startingTinkerText
 		GetComponent<AudioSource>().time = startingTinkerText.GetStartTime();
