@@ -95,7 +95,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -114,7 +115,8 @@
                     "label": "Stars",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -133,7 +135,8 @@
                     "label": "Cloud0",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -152,7 +155,8 @@
                     "label": "Cloud1",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 4,
@@ -171,7 +175,8 @@
                     "label": "Cloud2",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 5,
@@ -190,7 +195,8 @@
                     "label": "Cloud3",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 6,
@@ -209,7 +215,8 @@
                     "label": "Cloud4",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 7,
@@ -228,7 +235,8 @@
                     "label": "Cloud5",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -324,7 +332,8 @@
                     "label": "backdrop",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -343,7 +352,8 @@
                     "label": "bigcloud",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -362,7 +372,8 @@
                     "label": "smallcloud",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -486,7 +497,8 @@
                     "label": "background",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -534,6 +546,11 @@
                                 }
                             ]
                         }
+                    ],
+                    "SpriteAnimation": [
+                        {
+                            "instanceID": 14722
+                        }
                     ]
                 },
                 {
@@ -553,34 +570,10 @@
                     "label": "smallbird",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
+                    "anim": [],
+                    "SpriteAnimation": [
                         {
-                            "id": 0,
-                            "animName": "03_a_small_bird_flapping",
-                            "startX": 120,
-                            "startY": 0,
-                            "startZ": 0,
-                            "startIndex": 0,
-                            "endIndex": 2,
-                            "onTouch": true,
-                            "onStart": false,
-                            "secPerFrame": [
-                                0.20000000298023225,
-                                0.20000000298023225,
-                                0.20000000298023225
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 2,
-                                    "noOfLoops": 3,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -88882
                         }
                     ]
                 }
@@ -756,7 +749,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -832,7 +826,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -881,7 +876,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -900,7 +896,8 @@
                     "label": "background",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -1071,7 +1068,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -1118,7 +1116,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -1196,7 +1195,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -1341,7 +1341,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -1389,7 +1390,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -1408,7 +1410,8 @@
                     "label": "InnerSun",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -1486,7 +1489,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -1688,7 +1692,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -1707,7 +1712,8 @@
                     "label": "clouds",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -1726,7 +1732,8 @@
                     "label": "bigbird",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -1745,7 +1752,8 @@
                     "label": "singingbird",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 4,
@@ -1764,7 +1772,8 @@
                     "label": "sun",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 5,
@@ -1783,7 +1792,8 @@
                     "label": "innersun",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 6,
@@ -1802,7 +1812,8 @@
                     "label": "Stars",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 7,
@@ -1821,7 +1832,8 @@
                     "label": "Moon",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -1917,7 +1929,8 @@
                     "label": "branching_path",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -1936,7 +1949,8 @@
                     "label": "forest_choice",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -1955,7 +1969,8 @@
                     "label": "ocean_choice",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -2065,7 +2080,8 @@
                     "label": "day_background",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -2084,7 +2100,8 @@
                     "label": "forest_trees",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -2214,7 +2231,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -2261,7 +2279,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -2342,7 +2361,8 @@
                     "label": "bigmonkey",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -2361,7 +2381,8 @@
                     "label": "smallmonkeys",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -2380,7 +2401,8 @@
                     "label": "forestfloor",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -2399,7 +2421,8 @@
                     "label": "backdrop",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -2574,7 +2597,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -2593,7 +2617,8 @@
                     "label": "longstick",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -2612,7 +2637,8 @@
                     "label": "shortstick",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -2631,7 +2657,8 @@
                     "label": "backdrop",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 4,
@@ -2650,7 +2677,8 @@
                     "label": "forest floor",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -2767,7 +2795,8 @@
                     "label": "giraffe_and_monkey",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -2786,7 +2815,8 @@
                     "label": "backdrop",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -2861,7 +2891,8 @@
                     "label": "branching_path",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -2880,7 +2911,8 @@
                     "label": "ocean_choice",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -2899,7 +2931,8 @@
                     "label": "home_choice",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -3039,7 +3072,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -3058,7 +3092,8 @@
                     "label": "background",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -3077,7 +3112,8 @@
                     "label": "sun",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -3210,7 +3246,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -3263,7 +3300,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -3312,7 +3350,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -3331,7 +3370,8 @@
                     "label": "sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -3487,7 +3527,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -3540,7 +3581,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -3589,7 +3631,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -3608,7 +3651,8 @@
                     "label": "sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -3755,7 +3799,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -3804,7 +3849,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -3823,7 +3869,8 @@
                     "label": "water",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -3842,7 +3889,8 @@
                     "label": "sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -4018,7 +4066,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -4096,7 +4145,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -4145,7 +4195,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -4164,7 +4215,8 @@
                     "label": "sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -4313,7 +4365,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -4366,7 +4419,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -4415,7 +4469,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -4466,7 +4521,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 4,
@@ -4517,7 +4573,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 5,
@@ -4566,7 +4623,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 6,
@@ -4615,7 +4673,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 7,
@@ -4634,7 +4693,8 @@
                     "label": "backdrop",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -4734,7 +4794,8 @@
                     "label": "branching_path",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -4753,7 +4814,8 @@
                     "label": "forest_choice",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -4772,7 +4834,8 @@
                     "label": "home_choice",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -4882,7 +4945,8 @@
                     "label": "treebackground",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -4901,7 +4965,8 @@
                     "label": "house",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -4920,7 +4985,8 @@
                     "label": "AKILI",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -4968,7 +5034,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -5105,7 +5172,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -5124,7 +5192,8 @@
                     "label": "house_background",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -5143,7 +5212,8 @@
                     "label": "food_on_plate",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -5263,7 +5333,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -5282,7 +5353,8 @@
                     "label": "house_background",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -5301,7 +5373,8 @@
                     "label": "stool",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
@@ -5441,7 +5514,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 1,
@@ -5460,7 +5534,8 @@
                     "label": "water",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 2,
@@ -5511,7 +5586,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 3,
@@ -5562,7 +5638,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 4,
@@ -5581,7 +5658,8 @@
                     "label": "big_boat",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 5,
@@ -5600,7 +5678,8 @@
                     "label": "small_boat",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 6,
@@ -5649,7 +5728,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 7,
@@ -5698,7 +5778,8 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 8,
@@ -5717,7 +5798,8 @@
                     "label": "trees",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 9,
@@ -5736,7 +5818,8 @@
                     "label": "ground_and_bushes",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 10,
@@ -5755,7 +5838,8 @@
                     "label": "small_monkeys",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 11,
@@ -5774,7 +5858,8 @@
                     "label": "Stars",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 12,
@@ -5793,7 +5878,8 @@
                     "label": "Sun",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 13,
@@ -5812,7 +5898,8 @@
                     "label": "Sun",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 14,
@@ -5831,7 +5918,8 @@
                     "label": "Stars",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 15,
@@ -5850,7 +5938,8 @@
                     "label": "Cloud",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 16,
@@ -5869,7 +5958,8 @@
                     "label": "Cloud2",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 },
                 {
                     "id": 17,
@@ -5888,7 +5978,8 @@
                     "label": "Cloud3",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": []
+                    "anim": [],
+                    "SpriteAnimation": []
                 }
             ],
             "texts": [
