@@ -36,67 +36,15 @@
                     "label": "Sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
+                    "anim": [],
+                    "SpriteAnimation": [
                         {
-                            "id": 0,
-                            "animName": "7_between_day_bg_night_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -64482
                         },
                         {
-                            "id": 1,
-                            "animName": "7_between_night_bg_day_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -77570
                         }
-                    ],
-                    "SpriteAnimation": []
+                    ]
                 },
                 {
                     "id": 1,
@@ -817,38 +765,12 @@
                     "label": "music",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
+                    "anim": [],
+                    "SpriteAnimation": [
                         {
-                            "id": 0,
-                            "animName": "04_a_small_singing_bird_music",
-                            "startX": 60,
-                            "startY": 60,
-                            "startZ": 0,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": true,
-                            "onStart": false,
-                            "secPerFrame": [
-                                0.20000000298023225,
-                                0.20000000298023225,
-                                0.20000000298023225,
-                                0.20000000298023225
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 2,
-                                    "movable": {
-                                        "finalx": 180.0,
-                                        "finaly": 100.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": 0
                         }
-                    ],
-                    "SpriteAnimation": []
+                    ]
                 },
                 {
                     "id": 3,
@@ -949,7 +871,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
@@ -961,7 +883,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
@@ -1107,67 +1029,15 @@
                     "label": "Sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
+                    "anim": [],
+                    "SpriteAnimation": [
                         {
-                            "id": 0,
-                            "animName": "7_between_day_bg_night_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -64482
                         },
                         {
-                            "id": 1,
-                            "animName": "7_between_night_bg_day_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -77570
                         }
-                    ],
-                    "SpriteAnimation": []
+                    ]
                 }
             ],
             "texts": [
@@ -1401,67 +1271,15 @@
                     "label": "Sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
+                    "anim": [],
+                    "SpriteAnimation": [
                         {
-                            "id": 0,
-                            "animName": "7_between_day_bg_night_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -64482
                         },
                         {
-                            "id": 1,
-                            "animName": "7_between_night_bg_day_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -77570
                         }
-                    ],
-                    "SpriteAnimation": []
+                    ]
                 }
             ],
             "texts": [
@@ -1604,67 +1422,15 @@
                     "label": "Sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
+                    "anim": [],
+                    "SpriteAnimation": [
                         {
-                            "id": 0,
-                            "animName": "7_between_day_bg_night_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -64482
                         },
                         {
-                            "id": 1,
-                            "animName": "7_between_night_bg_day_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -77570
                         }
-                    ],
-                    "SpriteAnimation": []
+                    ]
                 },
                 {
                     "id": 1,
@@ -5426,67 +5192,15 @@
                     "label": "Sky",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
+                    "anim": [],
+                    "SpriteAnimation": [
                         {
-                            "id": 0,
-                            "animName": "7_between_day_bg_night_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -64482
                         },
                         {
-                            "id": 1,
-                            "animName": "7_between_night_bg_day_bg",
-                            "startX": 0,
-                            "startY": 0,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": false,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
+                            "instanceID": -77570
                         }
-                    ],
-                    "SpriteAnimation": []
+                    ]
                 },
                 {
                     "id": 1,

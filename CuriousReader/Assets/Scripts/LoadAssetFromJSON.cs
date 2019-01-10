@@ -814,7 +814,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 		if (!string.IsNullOrEmpty(gameObjectData.tag))
 		{
-//			go.tag = gameObjectData.tag;
+			go.tag = gameObjectData.tag;
 		}
 
 		go.name = gameObjectData.label;
@@ -856,6 +856,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
             if ( gameObjectData.SpriteAnimation.Length > 0)
             {
                 Elendow.SpritedowAnimator.SpriteAnimator rcAnimator =  go.AddComponent<Elendow.SpritedowAnimator.SpriteAnimator>();
+                rcAnimator.enabled = true;
 
                 List<SpriteAnimation> rcAnimations = new List<SpriteAnimation>();
 

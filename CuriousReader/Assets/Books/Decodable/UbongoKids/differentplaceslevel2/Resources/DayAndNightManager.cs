@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System;
+using Elendow.SpritedowAnimator;
 
 public class DayAndNightManager: GSManager
 {
@@ -75,9 +76,9 @@ public class DayAndNightManager: GSManager
 
         if ( go != null )
         {
-            GTinkerGraphic rcGraphic = m_rcSky.GetComponent<GTinkerGraphic>();
+            SpriteAnimator rcAnimator = m_rcSky.GetComponent<SpriteAnimator>();
 
-            if (rcGraphic != null)
+            if (rcAnimator != null)
             {
                 
                 if ( IsWordInArray( m_rastrDayWords, go.name ) )
@@ -86,7 +87,7 @@ public class DayAndNightManager: GSManager
                     // If it's night, then change the sky to day.
                     if (!m_bIsDay)
                     {
-//                        rcGraphic.LoadAndPlayAnimation(1);
+                        rcAnimator.Play("7_between_night_to_day", true);
                         m_bIsDay = true;
 
                         foreach (GameObject rcObject in m_racDayGroup)
@@ -106,7 +107,7 @@ public class DayAndNightManager: GSManager
                     // If it's day, then change the sky to night.
                     if (m_bIsDay)
                     {
-//                        rcGraphic.LoadAndPlayAnimation(0);
+                        rcAnimator.Play("7_between_day_to_night", true);
                         m_bIsDay = false;
 
                         foreach (GameObject rcObject in m_racDayGroup)
