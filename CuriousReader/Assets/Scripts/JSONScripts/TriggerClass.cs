@@ -9,7 +9,8 @@ public enum TriggerType
 //    BiDirectional = 3,
     FadeIn = 4,
     FadeOut = 5,
-    Navigation = 6
+    Navigation = 6,
+    Animation = 7
 }
 
 [System.Serializable]
@@ -27,3 +28,4 @@ public class TriggerClass
     public bool DeactivateNextButton;
     public int NavigationPage;
 }
+

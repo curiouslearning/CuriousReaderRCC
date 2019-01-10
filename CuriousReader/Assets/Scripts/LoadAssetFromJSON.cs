@@ -497,135 +497,122 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			return;
 		}
 
-		for (int i = 0; i < triggers.Length; i++)
+        // A trigger at it's root is 
+        //
+        // a) TinkerTextObject
+        // b) SceneObject
+        // c) Performance
+        // d) Performance Specific Information
+
+        for (int i = 0; i < triggers.Length; i++)
 		{
 			TriggerClass trigger = triggers[i];
-            if ( trigger.type == TriggerType.Navigation)
+
+            if (!ValidateTinkerTextObject(trigger.textId))
             {
-                if ( trigger.DeactivateNextButton )
+                Debug.LogErrorFormat("Unable to validate trigger ({0}) on page ({1}) with textID ({2})",
+                    i, pageNumber, trigger.textId);
+                continue;
+            }
+
+            GameObject textObject = tinkerTextObjects[trigger.textId];
+            if (textObject == null)
+            {
+                Debug.LogErrorFormat("Unable to find text object ({0}) on page ({1}) from trigger ({2})",
+                    trigger.textId, pageNumber, i);
+                continue;
+            }
+
+            if (!ValidateTinkerGraphicObject(trigger.sceneObjectId))
+            {
+                Debug.LogErrorFormat("Unable to validate tinker graphic object ({0})",
+                    trigger.sceneObjectId);
+                continue;
+            }
+
+            GameObject graphicObject = tinkerGraphicObjects[trigger.sceneObjectId];
+            if (graphicObject == null)
+            {
+                Debug.LogErrorFormat("Unable to find graphic object ({0}) on page ({1}) from trigger ({2})",
+                    trigger.sceneObjectId, pageNumber, i);
+                continue;
+            }
+
+            GTinkerText tinkerText = textObject.GetComponent<GTinkerText>();
+            if (tinkerText == null)
+            {
+                Debug.LogError("Unable to get GTinkerText component from tinker text object");
+                continue;
+            }
+
+            tinkerText.pairedAnim = trigger.animId;
+
+            GTinkerGraphic tinkerGraphic = graphicObject.GetComponent<GTinkerGraphic>();
+            if (tinkerGraphic == null)
+            {
+                Debug.LogError("Unable to get GTinkerGraphic component from graphic object");
+                continue;
+            }
+
+            if (tinkerText.pairedGraphics == null)
+            {
+                Debug.LogWarning("Tinkertext paired graphics object is null allocating a new list");
+                tinkerText.pairedGraphics = new List<GTinkerGraphic>();
+            }
+
+            tinkerText.pairedGraphics.Add(tinkerGraphic);
+            tinkerGraphic.pairedText1 = tinkerText;
+
+            if (trigger.type == TriggerType.Navigation)
+            {
+                if (trigger.DeactivateNextButton)
                 {
                     // Deactivate the right button in the scene.  
                     // NOTE: If any single trigger on the page sets this it will deactivate it.
-					setPageTurnRightArrowActive(false);
+                    setPageTurnRightArrowActive(false);
                 }
 
-                if ( ValidateTinkerGraphicObject(trigger.sceneObjectId) )
-                {
-                    GameObject rcObject = tinkerGraphicObjects[trigger.sceneObjectId];
+                if (tinkerGraphic !=  null)
+                { 
+                    int nPageNumber = trigger.NavigationPage;
 
-                    if ( rcObject != null )
+                    if (ValidatePageNumber(nPageNumber))
                     {
-                        GTinkerGraphic rcTinkerGraphic = rcObject.GetComponent<GTinkerGraphic>();
+                        tinkerGraphic.m_nNavigationPage = nPageNumber;
+                    }
+                    else
+                    {
+                        Debug.Log("Error: trigger " + i + " pointed to invalid page number " + nPageNumber);
+                    }
+                }
+            }
+            else if (trigger.type == TriggerType.Animation)
+            {
+                if (graphicObject != null)
+                {
+                    PerformanceComponent rcPerf = graphicObject.GetComponent<PerformanceComponent>();
 
-                        if ( rcTinkerGraphic != null )
+                    if (rcPerf == null)
+                    {
+                        rcPerf = graphicObject.AddComponent<PerformanceComponent>();
+                    }
+
+                    SpriteAnimationPerformance rcPerformance = SpriteAnimationPerformance.CreateInstance<SpriteAnimationPerformance>();
+
+                    if (rcPerformance != null)
+                    {
+                        SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
+
+                        if (rcAnimator != null)
                         {
-                            int nPageNumber = trigger.NavigationPage;
-
-                            if ( ValidatePageNumber(nPageNumber))
+                            if ((trigger.animId >= 0) && (trigger.animId < rcAnimator.animations.Count))
                             {
-                                rcTinkerGraphic.m_nNavigationPage = nPageNumber;
-                            }
-                            else
-                            {
-                                Debug.Log("Error: trigger " + i + " pointed to invalid page number " + nPageNumber);
+                                rcPerformance.AnimationName = rcAnimator.animations[trigger.animId].Name;
+                                rcPerf.AddPerformance(rcPerformance, PromptType.PairedClick);
                             }
                         }
                     }
                 }
-            }
-            else
-            {
-				switch (trigger.typeOfLinking) {
-					case 0: case 1: case 2:
-						break;
-					case 3:
-						if (!ValidateTinkerTextObject(trigger.textId)) {
-							Debug.LogErrorFormat("Unable to validate trigger ({0}) on page ({1}) with textID ({2})",
-								i, pageNumber, trigger.textId);
-							continue;
-						}
-
-						GameObject textObject = tinkerTextObjects[trigger.textId];
-						if (textObject == null) {
-							Debug.LogErrorFormat("Unable to find text object ({0}) on page ({1}) from trigger ({2})",
-								trigger.textId, pageNumber, i);
-							continue;
-						}
-
-						if (!ValidateTinkerGraphicObject(trigger.sceneObjectId)) {
-							Debug.LogErrorFormat("Unable to validate tinker graphic object ({0})", 
-								trigger.sceneObjectId);
-							continue;
-						}
-
-						GameObject graphicObject = tinkerGraphicObjects[trigger.sceneObjectId];
-                        if (graphicObject == null)
-                        {
-							Debug.LogErrorFormat("Unable to find graphic object ({0}) on page ({1}) from trigger ({2})",
-								trigger.sceneObjectId, pageNumber, i);
-							continue;
-						}
-
-						GTinkerText tinkerText = textObject.GetComponent<GTinkerText>();
-						if (tinkerText == null) {
-							Debug.LogError("Unable to get GTinkerText component from tinker text object");
-							continue;
-						}
-
-						tinkerText.pairedAnim = trigger.animId;
-
-                        if ( graphicObject != null )
-                        {
-                            PerformanceComponent rcPerf = graphicObject.GetComponent<PerformanceComponent>();
-
-                            if (rcPerf == null)
-                            {
-                                rcPerf = graphicObject.AddComponent<PerformanceComponent>();
-                            }
-
-                            if (tinkerText.pairedAnim == -1)
-                            {
-                                // Create a highlight performance and add it to the gameobject
-                            }
-                            else
-                            {
-                                SpriteAnimationPerformance rcPerformance = SpriteAnimationPerformance.CreateInstance<SpriteAnimationPerformance>();
-
-                                if ( rcPerformance != null)
-                                {
-                                    SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
-
-                                    if ( rcAnimator != null )
-                                    {
-                                        if ((trigger.animId >= 0) && (trigger.animId < rcAnimator.animations.Count))
-                                        {
-                                            rcPerformance.AnimationName = rcAnimator.animations[trigger.animId].Name;
-                                            rcPerf.AddPerformance(rcPerformance, PromptType.PairedClick);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        GTinkerGraphic tinkerGraphic = graphicObject.GetComponent<GTinkerGraphic>();
-						if (tinkerGraphic == null)
-                        {
-							Debug.LogError("Unable to get GTinkerGraphic component from graphic object");
-							continue;
-						}
-
-						if (tinkerText.pairedGraphics == null) {
-							Debug.LogWarning("Tinkertext paired graphics object is null allocating a new list");
-							tinkerText.pairedGraphics = new List<GTinkerGraphic>();
-						}
-
-						tinkerText.pairedGraphics.Add(tinkerGraphic);
-						tinkerGraphic.pairedText1 = tinkerText;
-						break;
-					default:
-						Debug.LogError("Trigger has invalid type of linking. Valid range: "); // TODO: add a valid range
-						break;
-				}
             }
         }
 	}

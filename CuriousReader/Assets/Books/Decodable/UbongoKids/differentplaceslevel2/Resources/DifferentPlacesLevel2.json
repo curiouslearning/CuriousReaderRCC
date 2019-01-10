@@ -517,39 +517,10 @@
                     "label": "bigbird",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
-                        {
-                            "id": 0,
-                            "animName": "03_big_bird_flapping",
-                            "startX": -120,
-                            "startY": 0,
-                            "startZ": 0,
-                            "startIndex": 0,
-                            "endIndex": 2,
-                            "onTouch": true,
-                            "onStart": false,
-                            "secPerFrame": [
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 2,
-                                    "noOfLoops": 3,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
-                        }
-                    ],
+                    "anim": [],
                     "SpriteAnimation": [
                         {
-                            "instanceID": 14722
+                            "instanceID": 14710
                         }
                     ]
                 },
@@ -573,7 +544,7 @@
                     "anim": [],
                     "SpriteAnimation": [
                         {
-                            "instanceID": -88882
+                            "instanceID": 15178
                         }
                     ]
                 }
@@ -642,7 +613,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
@@ -654,7 +625,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,

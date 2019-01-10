@@ -32,7 +32,7 @@ public class SpriteAnimationPerformance : Performance
             {
                 rcAnimator.enabled = true;
                 rcAnimator.SetActiveRenderer(true);
-                rcAnimator.Play(AnimationName);
+                rcAnimator.Play(AnimationName,true);
                 return true;
             }
         }
