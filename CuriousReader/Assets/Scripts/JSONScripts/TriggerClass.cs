@@ -10,7 +10,11 @@ public enum TriggerType
     FadeIn = 4,
     FadeOut = 5,
     Navigation = 6,
-    Animation = 7
+    Animation = 7,
+    Highlight = 8,
+    Move = 9,
+    Rotate = 10,
+    Scale = 11
 }
 
 [System.Serializable]

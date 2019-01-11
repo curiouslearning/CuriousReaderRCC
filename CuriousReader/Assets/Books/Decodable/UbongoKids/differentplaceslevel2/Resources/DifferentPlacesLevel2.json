@@ -367,7 +367,7 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 3,
                     "timestamp": 0,
@@ -379,7 +379,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
@@ -391,7 +391,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
@@ -403,7 +403,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,

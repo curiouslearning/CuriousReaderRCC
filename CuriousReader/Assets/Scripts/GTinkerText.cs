@@ -216,26 +216,15 @@ public class GTinkerText : MonoBehaviour {
         
 	}
     public void CheckPairedGraphic()
-	{   
-		for (int i = 0; i < pairedGraphics.Count; i++){
-		if (pairedGraphics[i]!= null) 
-		    {
-            
-                //if animation is present
-			if (pairedAnim>=0) 
-				{ 
-				pairedGraphics [i].OnPairedMouseDown (this);
-		
-			} 
-		    else 
-				{   //StopCoroutine ("Animate");
-					//StopCoroutine (pairedGraphics[i].Animdelay ());
-// FIX				    pairedGraphics [i].ResetandZoom ();
-			}
-			}
-        
-		  }
-	}
+    {
+        for (int i = 0; i < pairedGraphics.Count; i++)
+        {
+            if (pairedGraphics[i] != null)
+            {
+                pairedGraphics[i].OnPairedMouseDown(this);
+            }
+        }
+    }
 
 
 	// Paired Mouse Down Event

@@ -82,13 +82,7 @@ public class GTinkerGraphic : MonoBehaviour
     public void OnPairedMouseDown(GTinkerText tinkerText)
 	{
 		sceneManager.OnPairedMouseDown(tinkerText);
-
-        PerformanceComponent rcPerformance = GetComponent<PerformanceComponent>();
-
-        if (rcPerformance != null)
-        {
-            rcPerformance.Prompt(gameObject, PromptType.PairedClick);
-        }
+        PerformanceSystem.SendPrompt(tinkerText.gameObject, this.gameObject, PromptType.PairedClick);
     }
 
     /// <summary>

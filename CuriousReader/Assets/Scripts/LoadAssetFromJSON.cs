@@ -572,8 +572,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     setPageTurnRightArrowActive(false);
                 }
 
-                if (tinkerGraphic !=  null)
-                { 
+                if (tinkerGraphic != null)
+                {
                     int nPageNumber = trigger.NavigationPage;
 
                     if (ValidatePageNumber(nPageNumber))
@@ -586,31 +586,46 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     }
                 }
             }
-            else if (trigger.type == TriggerType.Animation)
+            else if (trigger.type.Equals(TriggerType.Animation) || (trigger.animId >=0))
             {
                 if (graphicObject != null)
                 {
-                    PerformanceComponent rcPerf = graphicObject.GetComponent<PerformanceComponent>();
-
-                    if (rcPerf == null)
+                    SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
+                    if(rcAnimator != null)
                     {
-                        rcPerf = graphicObject.AddComponent<PerformanceComponent>();
-                    }
-
-                    SpriteAnimationPerformance rcPerformance = SpriteAnimationPerformance.CreateInstance<SpriteAnimationPerformance>();
-
-                    if (rcPerformance != null)
-                    {
-                        SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
-
-                        if (rcAnimator != null)
+                        Anim rcAnim = tinkerGraphic.dataTinkerGraphic.anim[trigger.animId];
+                        PromptType prompt;
+                        if (rcAnim.onStart) 
                         {
-                            if ((trigger.animId >= 0) && (trigger.animId < rcAnimator.animations.Count))
-                            {
-                                rcPerformance.AnimationName = rcAnimator.animations[trigger.animId].Name;
-                                rcPerf.AddPerformance(rcPerformance, PromptType.PairedClick);
-                            }
+                            prompt = PromptType.OnPageLoad; 
                         }
+                        else if (rcAnim.onTouch)
+                        {
+                            prompt = PromptType.Click;
+                        }
+                        else
+                        {
+                            prompt = PromptType.PairedClick;
+                        }
+                        SpriteAnimationPerformance performance = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, trigger);
+                        bool success = PerformanceSystem.AddPerformance(graphicObject, performance, prompt);
+                        if(!success)
+                        {
+                            Debug.LogWarning("Failed to add Animation: " + performance.name + " to " + graphicObject.name + "!");
+                        }
+                    }
+                }
+            }
+            else if (trigger.type.Equals(TriggerType.Highlight) || (trigger.animId == -1)) //using both highlight indicators for backwards compatibility
+            {
+                if (graphicObject != null)
+                {
+                    HighlightActorPerformance performance = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
+                    performance.Init();
+                    bool success = PerformanceSystem.AddPerformance(graphicObject, performance, PromptType.PairedClick);
+                    if(!success)
+                    {
+                        Debug.LogWarning("Failed to add Highlight to " + graphicObject.name + "!");
                     }
                 }
             }

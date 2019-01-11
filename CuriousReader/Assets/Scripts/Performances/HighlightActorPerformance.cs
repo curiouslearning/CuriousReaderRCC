@@ -11,14 +11,17 @@ using DG.Tweening;
 public class HighlightActorPerformance : TweenActorPerformance {
     public float ScaleMultiplier;
 
-    public ScaleActorPerformance Init (Vector3 i_values, float i_scaleMultiplier = 1.5f, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback))
+    public HighlightActorPerformance Init (float i_scaleMultiplier = 1.5f, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback))
     {
-        ScaleActorPerformance instance = Init (i_values, i_duration, i_speed, i_callback) as ScaleActorPerformance;
+        HighlightActorPerformance instance = Init (Vector3.zero, i_duration, i_speed, i_callback) as HighlightActorPerformance;
         ScaleMultiplier = i_scaleMultiplier;
         return instance;
     }
 
-
+    public void SetScaleMultiplier (float i_scaleMultiplier = 1.5f)
+    {
+        ScaleMultiplier = i_scaleMultiplier;
+    }
     public override bool Perform(GameObject i_rcActor)
     {
         StartValues = i_rcActor.transform.localScale;
