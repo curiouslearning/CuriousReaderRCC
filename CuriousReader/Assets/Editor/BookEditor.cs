@@ -255,7 +255,7 @@ public class BookEditor : EditorWindow
             Array.Copy(currentPage.gameObjects, rcNewArray, currentPage.gameObjects.Length);
             rcNewArray[currentPage.gameObjects.Length] = new GameObjectClass();
             rcNewArray[currentPage.gameObjects.Length].anim = new Anim[0];
-            rcNewArray[currentPage.gameObjects.Length].SpriteAnimation = new Elendow.SpritedowAnimator.SpriteAnimation[0];
+            rcNewArray[currentPage.gameObjects.Length].Animations = new string[0];
             rcNewArray[currentPage.gameObjects.Length].draggable = false;
             rcNewArray[currentPage.gameObjects.Length].id = currentPage.gameObjects.Length;
             currentPage.gameObjects = rcNewArray;
@@ -350,6 +350,12 @@ public class BookEditor : EditorWindow
             Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
             AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
             AddImagesInPath(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+        }
+
+        if (GUILayout.Button("Create Animations", GUILayout.Height(24)))
+        {
+            Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+            ConstructAnimationsInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
         }
 
         if (GUILayout.Button("Save JSON", GUILayout.Height(24)))
@@ -1075,13 +1081,13 @@ public class BookEditor : EditorWindow
 
             nRemove = -1;
 
-            for (int l = 0; l < i_rcGameObject.SpriteAnimation.Length; l++)
+            for (int l = 0; l < i_rcGameObject.Animations.Length; l++)
             {
                 EditorGUILayout.BeginHorizontal();
 
                 EditorGUILayout.BeginVertical();
 
-                i_rcGameObject.SpriteAnimation[l] = (Elendow.SpritedowAnimator.SpriteAnimation)EditorGUILayout.ObjectField(i_rcGameObject.SpriteAnimation[l], typeof(Elendow.SpritedowAnimator.SpriteAnimation), false);
+                i_rcGameObject.Animations[l] = EditorGUILayout.TextField(i_rcGameObject.Animations[l]);
 
                 EditorGUILayout.EndVertical();
 
@@ -1098,18 +1104,19 @@ public class BookEditor : EditorWindow
 
             if (nRemove != -1)
             {
-                i_rcGameObject.SpriteAnimation = i_rcGameObject.SpriteAnimation.RemoveAt(nRemove);
+                i_rcGameObject.Animations = i_rcGameObject.Animations.RemoveAt(nRemove);
             }
 
             GUILayout.BeginHorizontal();
             GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
 
-            if (GUILayout.Button("Add Sprite Animation"))
+            if (GUILayout.Button("Add Animation"))
             {
-                SpriteAnimation[] rcNewArray = new SpriteAnimation[i_rcGameObject.SpriteAnimation.Length + 1];
-                Array.Copy(i_rcGameObject.SpriteAnimation, rcNewArray, i_rcGameObject.SpriteAnimation.Length);
+                string[] rcNewArray = new string[i_rcGameObject.Animations.Length + 1];
+                Array.Copy(i_rcGameObject.Animations, rcNewArray, i_rcGameObject.Animations.Length);
+                i_rcGameObject.Animations = rcNewArray;
+                i_rcGameObject.Animations[i_rcGameObject.Animations.Length] = "";
 
-                i_rcGameObject.SpriteAnimation = rcNewArray;
             }
 
             GUILayout.EndHorizontal();
@@ -1538,6 +1545,66 @@ public class BookEditor : EditorWindow
             }
         }
     }
+
+    public void ConstructAnimationsInPath(string i_strPath)
+    {
+        string[] allowedExtensions = new string[] { "*.svg", "*.png" };
+        string[] Directories = Directory.GetDirectories(i_strPath);
+
+        // Presuming path like /Animations/1/<name>/<name>-1
+        // Presuming path like /Animations/1/<name>/<name>-2
+        // Presuming path like /Animations/1/<name>/<name>-.
+        // Presuming path like /Animations/1/<name>/<name>-N
+
+        // Walk through the page directories
+        foreach (string strPage in Directories)
+        {
+            Debug.Log(strPage + " is the page.");
+            string strPageNumber = strPage.Replace(i_strPath + "\\", "");
+            Debug.Log(strPageNumber + " is the the stripped page.");
+
+            string[] GameObjects = Directory.GetDirectories(strPage);
+
+            foreach (string strGameObjectDirectories in GameObjects)
+            {
+                Debug.Log("GameObject Directory: " + strGameObjectDirectories);
+                string strGameObject = strGameObjectDirectories.Replace(strPage + "\\", "");
+
+                foreach (string strType in allowedExtensions)
+                {
+                    string [] AnimationFiles = Directory.GetFiles( strGameObjectDirectories , strType);
+
+                    if ( AnimationFiles != null )
+                    {
+                        if ( AnimationFiles.Length > 0)
+                        {
+                            string strAnimationName = AnimationFiles[0].Replace(strGameObjectDirectories + "\\","\\");
+
+                            Debug.Log("Animation Name = " + strAnimationName);
+
+                            foreach (string strAnimation in AnimationFiles)
+                            {
+                                Debug.Log("AnimationFrame = " + strAnimation);
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+        //        foreach (string strType in allowedExtensions)
+        //        {
+        //            foreach (string strFile in Directory.GetFiles(i_strPath, strType))
+        //            {
+        //                AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant("differentplaces", "");
+        //            }
+        //        }
+    }
+
+
 }
 
 public class OpenBookEditor

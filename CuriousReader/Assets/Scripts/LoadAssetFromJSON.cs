@@ -851,23 +851,24 @@ public class LoadAssetFromJSON : MonoBehaviour {
             go = new GameObject(gameObjectData.label);
         }
 
-        if ( gameObjectData.SpriteAnimation != null )
+        if ( gameObjectData.Animations != null )
         {
-            if ( gameObjectData.SpriteAnimation.Length > 0)
+            if ( gameObjectData.Animations.Length > 0)
             {
                 Elendow.SpritedowAnimator.SpriteAnimator rcAnimator =  go.AddComponent<Elendow.SpritedowAnimator.SpriteAnimator>();
                 rcAnimator.enabled = true;
 
                 List<SpriteAnimation> rcAnimations = new List<SpriteAnimation>();
 
-                foreach (SpriteAnimation rcAnimation in gameObjectData.SpriteAnimation)
+                foreach (string strAnimationName in gameObjectData.Animations)
                 {
+                    SpriteAnimation rcAnimation = ShelfManager.bundleLoaded.LoadAsset<SpriteAnimation>(strAnimationName);    
                     rcAnimations.Add(rcAnimation);
                 }
 
                 if ( rcAnimator != null )
                 {
-                    rcAnimator.Initialize(false, rcAnimations, gameObjectData.SpriteAnimation[0].Name);
+                    rcAnimator.Initialize(false, rcAnimations, gameObjectData.Animations[0]);
                 }
             }
         }
