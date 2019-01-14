@@ -462,7 +462,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "03_big_bird_flapping-1"
+                    ]
                 },
                 {
                     "id": 2,
@@ -1160,7 +1162,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        ""
+                    ]
                 },
                 {
                     "id": 1,

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: 13_water_wave
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 21300000, guid: 82eb0190a9396794595835e5a23ebba1, type: 3}
+  - {fileID: 21300000, guid: f41ee62cd20a4fd489669fc2d0f67054, type: 3}
+  - {fileID: 21300000, guid: 2639079c1a7a7644fa5a53dc58a74eed, type: 3}
+  - {fileID: 21300000, guid: f438b305b1b211147908e87b6e6ecdaa, type: 3}
+  - {fileID: 21300000, guid: 514e357f98ffc9443a4e0fa017c70ce3, type: 3}
+  - {fileID: 21300000, guid: 6e5a1593b8ef2154092b541d38d5dd3b, type: 3}
+  framesDuration: 050000000500000005000000050000000500000005000000

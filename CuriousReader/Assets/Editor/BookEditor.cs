@@ -18,6 +18,8 @@ public class BookEditor : EditorWindow
     public AudioClip m_rcRecordingClip;
     float m_fRecordingStart;
 
+    string m_strAssetBundleName = "differentplaces";
+
     public string m_strBookPath;
     string m_strAssetPath;
     string m_strCommonPath;
@@ -1579,7 +1581,7 @@ public class BookEditor : EditorWindow
                         {
                             string strAnimationName = AnimationFiles[0].Replace(strGameObjectDirectories + "\\","");
                             strAnimationName = strAnimationName.Replace(strType.Replace("*",""), "");
-
+                            strAnimationName = strAnimationName.Replace("-1", "");
                             Debug.Log("Animation Name = " + strAnimationName);
 
                             CreateNewAnimation(strAnimationName, strGameObjectDirectories, AnimationFiles);
@@ -1593,7 +1595,7 @@ public class BookEditor : EditorWindow
         }
     }
 
-    public static void CreateNewAnimation(string i_strFile, string i_strPath, string[] i_strFrames)
+    public void CreateNewAnimation(string i_strFile, string i_strPath, string[] i_strFrames)
     {
         // First Create the Asset
         SpriteAnimation asset = CreateInstance<SpriteAnimation>();
@@ -1612,12 +1614,13 @@ public class BookEditor : EditorWindow
             }
         }
 
-        AssetDatabase.CreateAsset(asset, i_strPath + "\\" + i_strFile + ".asset");
+        string strFile = i_strPath + "\\" + i_strFile + ".asset";
+
+        AssetDatabase.CreateAsset(asset, strFile);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
-        // Select it
-        //Selection.activeObject = asset;
+        AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
     }
 
 

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: 06_sunlight
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 21300000, guid: ca013a6a429b00d4d8f339f1917cdceb, type: 3}
+  - {fileID: 21300000, guid: 695eb7a61d390824fa7d23fb5bddecee, type: 3}
+  - {fileID: 21300000, guid: 02630fa2c46ffa64c8493e966bfac6b4, type: 3}
+  framesDuration: 0a0000000a0000000a000000
