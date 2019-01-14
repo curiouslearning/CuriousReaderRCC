@@ -1116,7 +1116,6 @@ public class BookEditor : EditorWindow
                 Array.Copy(i_rcGameObject.Animations, rcNewArray, i_rcGameObject.Animations.Length);
                 i_rcGameObject.Animations = rcNewArray;
                 i_rcGameObject.Animations[i_rcGameObject.Animations.Length] = "";
-
             }
 
             GUILayout.EndHorizontal();
@@ -1578,14 +1577,12 @@ public class BookEditor : EditorWindow
                     {
                         if ( AnimationFiles.Length > 0)
                         {
-                            string strAnimationName = AnimationFiles[0].Replace(strGameObjectDirectories + "\\","\\");
+                            string strAnimationName = AnimationFiles[0].Replace(strGameObjectDirectories + "\\","");
+                            strAnimationName = strAnimationName.Replace(strType.Replace("*",""), "");
 
                             Debug.Log("Animation Name = " + strAnimationName);
 
-                            foreach (string strAnimation in AnimationFiles)
-                            {
-                                Debug.Log("AnimationFrame = " + strAnimation);
-                            }
+                            CreateNewAnimation(strAnimationName, strGameObjectDirectories, AnimationFiles);
                         }
                     }
 
@@ -1594,15 +1591,35 @@ public class BookEditor : EditorWindow
             }
 
         }
-
-        //        foreach (string strType in allowedExtensions)
-        //        {
-        //            foreach (string strFile in Directory.GetFiles(i_strPath, strType))
-        //            {
-        //                AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant("differentplaces", "");
-        //            }
-        //        }
     }
+
+    public static void CreateNewAnimation(string i_strFile, string i_strPath, string[] i_strFrames)
+    {
+        // First Create the Asset
+        SpriteAnimation asset = CreateInstance<SpriteAnimation>();
+
+        asset.Frames = new List<Sprite>();
+        asset.FramesDuration = new List<int>();
+
+        // Add the sprites to the frames
+        foreach (string strFrame in i_strFrames)
+        {
+            Sprite rcSprite = AssetDatabase.LoadAssetAtPath<Sprite>(strFrame);
+            if (rcSprite != null)
+            {
+                asset.Frames.Add(rcSprite);
+                asset.FramesDuration.Add(30 / i_strFrames.Length);
+            }
+        }
+
+        AssetDatabase.CreateAsset(asset, i_strPath + "\\" + i_strFile + ".asset");
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+
+        // Select it
+        //Selection.activeObject = asset;
+    }
+
 
 
 }

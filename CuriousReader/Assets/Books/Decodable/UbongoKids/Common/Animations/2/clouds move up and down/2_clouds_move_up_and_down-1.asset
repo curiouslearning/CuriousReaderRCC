@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
-  m_Name: 2_clouds_move_up_and_down
+  m_Name: 2_clouds_move_up_and_down-1
   m_EditorClassIdentifier: 
   fps: 30
   frames:
@@ -17,4 +17,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 36a511ef94db7ea42addfde14f6f3403, type: 3}
   - {fileID: 21300000, guid: 3e98682232a9e2f40b1b996ff3b422f7, type: 3}
   - {fileID: 21300000, guid: f2dc6c4d75357304796f429840f5ab94, type: 3}
-  framesDuration: 1e0000001e0000001e0000001e000000
+  framesDuration: 07000000070000000700000007000000
