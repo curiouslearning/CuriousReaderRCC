@@ -16,9 +16,9 @@ public class RotateActorPerformance : TweenActorPerformance {
         return instance;
     }
 
-    public override bool Perform (GameObject i_rcActor)
+    public override bool Perform (GameObject i_rcActor, GameObject i_rcInvoker = null)
     {
-        if((i_rcActor !=null) && CanPerform(i_rcActor))
+        if((i_rcActor !=null) && CanPerform(i_rcActor, i_rcInvoker))
         {
             StartValues = i_rcActor.transform.rotation.eulerAngles;
             TweenSystem.Rotate(i_rcActor, EndValues, duration, speed, OnComplete);

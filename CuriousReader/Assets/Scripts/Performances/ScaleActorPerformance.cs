@@ -14,9 +14,9 @@ public class ScaleActorPerformance : TweenActorPerformance
         ScaleActorPerformance instance = base.Init(i_endPos, duration, speed, i_callback) as ScaleActorPerformance;
         return instance;
     }
-    public override bool Perform(GameObject i_rcActor)
+    public override bool Perform(GameObject i_rcActor, GameObject i_rcInvoker)
     {
-        if((i_rcActor != null) && CanPerform(i_rcActor))
+        if((i_rcActor != null) && CanPerform(i_rcActor, i_rcInvoker))
         {
             StartValues = i_rcActor.transform.localScale;
             TweenSystem.Scale(i_rcActor, EndValues, duration, speed, OnComplete);

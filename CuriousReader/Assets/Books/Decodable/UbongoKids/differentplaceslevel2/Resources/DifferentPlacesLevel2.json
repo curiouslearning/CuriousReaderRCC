@@ -38,8 +38,8 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "7_between_day_to_night",
-                        "7_between_night_to_day"
+                        "7_between_day_bg_night_bg",
+                        "7_between_night_bg_day_bg"
                     ]
                 },
                 {
@@ -462,7 +462,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "03_big_bird_flapping"
+                    ]
                 },
                 {
                     "id": 2,
@@ -477,12 +479,14 @@
                     "rotZ": 0.0,
                     "orderInLayer": 0,
                     "imageName": "03_a_small_bird_flapping-1",
-                    "inText": false,
+                    "inText": true,
                     "label": "smallbird",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "03_a_small_bird_flapping"
+                    ]
                 }
             ],
             "texts": [
@@ -525,7 +529,7 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
@@ -537,7 +541,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 2,
                     "timestamp": 0,
@@ -1160,7 +1164,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        ""
+                    ]
                 },
                 {
                     "id": 1,

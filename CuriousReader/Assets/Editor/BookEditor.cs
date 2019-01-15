@@ -18,6 +18,8 @@ public class BookEditor : EditorWindow
     public AudioClip m_rcRecordingClip;
     float m_fRecordingStart;
 
+    string m_strAssetBundleName = "differentplaces";
+
     public string m_strBookPath;
     string m_strAssetPath;
     string m_strCommonPath;
@@ -1116,7 +1118,6 @@ public class BookEditor : EditorWindow
                 Array.Copy(i_rcGameObject.Animations, rcNewArray, i_rcGameObject.Animations.Length);
                 i_rcGameObject.Animations = rcNewArray;
                 i_rcGameObject.Animations[i_rcGameObject.Animations.Length] = "";
-
             }
 
             GUILayout.EndHorizontal();
@@ -1578,14 +1579,12 @@ public class BookEditor : EditorWindow
                     {
                         if ( AnimationFiles.Length > 0)
                         {
-                            string strAnimationName = AnimationFiles[0].Replace(strGameObjectDirectories + "\\","\\");
-
+                            string strAnimationName = AnimationFiles[0].Replace(strGameObjectDirectories + "\\","");
+                            strAnimationName = strAnimationName.Replace(strType.Replace("*",""), "");
+                            strAnimationName = strAnimationName.Replace("-1", "");
                             Debug.Log("Animation Name = " + strAnimationName);
 
-                            foreach (string strAnimation in AnimationFiles)
-                            {
-                                Debug.Log("AnimationFrame = " + strAnimation);
-                            }
+                            CreateNewAnimation(strAnimationName, strGameObjectDirectories, AnimationFiles);
                         }
                     }
 
@@ -1594,15 +1593,40 @@ public class BookEditor : EditorWindow
             }
 
         }
-
-        //        foreach (string strType in allowedExtensions)
-        //        {
-        //            foreach (string strFile in Directory.GetFiles(i_strPath, strType))
-        //            {
-        //                AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant("differentplaces", "");
-        //            }
-        //        }
     }
+
+    public void CreateNewAnimation(string i_strFile, string i_strPath, string[] i_strFrames)
+    {
+        // First Create the Asset
+        SpriteAnimation asset = CreateInstance<SpriteAnimation>();
+
+        asset.Frames = new List<Sprite>();
+        asset.FramesDuration = new List<int>();
+
+        // Add the sprites to the frames
+        foreach (string strFrame in i_strFrames)
+        {
+            Sprite rcSprite = AssetDatabase.LoadAssetAtPath<Sprite>(strFrame);
+            if (rcSprite != null)
+            {
+                asset.Frames.Add(rcSprite);
+                asset.FramesDuration.Add(30 / i_strFrames.Length);
+            }
+        }
+
+        AssetDatabase.CreateAsset(asset, i_strFile + ".asset");
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+
+#if UNITY_EDITOR_OSX 
+        AssetImporter importer = AssetImporter.GetAtPath(i_strFile + ".asset");
+        importer.SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+#endif
+#if UNITY_EDITOR
+        AssetImporter.GetAtPath(i_strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+#endif
+    }
+
 
 
 }

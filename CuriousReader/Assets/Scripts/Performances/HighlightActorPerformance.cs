@@ -22,10 +22,10 @@ public class HighlightActorPerformance : TweenActorPerformance {
     {
         ScaleMultiplier = i_scaleMultiplier;
     }
-    public override bool Perform(GameObject i_rcActor)
+    public override bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)
     {
         StartValues = i_rcActor.transform.localScale;
-        if((i_rcActor != null) && CanPerform(i_rcActor))
+        if((i_rcActor != null) && CanPerform(i_rcActor, i_rcInvoker))
         {
             TweenSystem.Highlight(i_rcActor, ScaleMultiplier, duration, speed, OnComplete);
             return true;

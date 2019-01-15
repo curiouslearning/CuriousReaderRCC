@@ -145,7 +145,6 @@ public class GTinkerText : MonoBehaviour {
     /// </summary>
     public void highlightText ()
     {
-        toggleHighlight(true);
     }
 
     /// <summary>
@@ -153,7 +152,6 @@ public class GTinkerText : MonoBehaviour {
     /// </summary>
     public void unhighlightText()
     {
-        toggleHighlight(false);
     }
     public void iconanimPlay()
 
@@ -195,20 +193,21 @@ public class GTinkerText : MonoBehaviour {
     /// <param name="suppressAnim"></param>
 	public void MyMouseDown(bool suppressAnim = false)
 	{   
-			System.DateTime time = System.DateTime.Now;
-			//sending data directly to firebase using "72 hours rule"! (removed local data storage)
-			//DataCollection.AddInTouchData( ("Text_"+gameObject.GetComponent<Text>().text) , time.ToString());
+		System.DateTime time = System.DateTime.Now;
+		//sending data directly to firebase using "72 hours rule"! (removed local data storage)
+		//DataCollection.AddInTouchData( ("Text_"+gameObject.GetComponent<Text>().text) , time.ToString());
 
-			FirebaseHelper.LogInAppTouch (("Text_" + gameObject.GetComponent<TextMeshProUGUI> ().text), time.ToString ());
+		FirebaseHelper.LogInAppTouch (("Text_" + gameObject.GetComponent<TextMeshProUGUI> ().text), time.ToString ());
 
-			if (!stanza.stanzaManager.sceneManager.disableSounds) {
-				PlaySound();
-			}
-			clipPlay ();
-			iconanimPlay ();
+		if (!stanza.stanzaManager.sceneManager.disableSounds) {
+			//PlaySound();
+		}
+        PerformanceSystem.SendPrompt(this.gameObject, this.gameObject, PromptType.Click);
+        //clipPlay ();
+        //iconanimPlay();
 
 			if (!suppressAnim) {
-				graphicPlay ();
+				//graphicPlay ();
 			}
         CheckPairedGraphic();
 
@@ -235,11 +234,11 @@ public class GTinkerText : MonoBehaviour {
 	{
 		if (!stanza.stanzaManager.sceneManager.disableSounds)
       		{   
-			PlaySound();
+			//PlaySound();
 		}
 
-		clipPlay();
-		iconanimPlay();
+		//clipPlay();
+		//iconanimPlay();
 	}
 
 	// Mouse Currently Down Event
@@ -247,11 +246,11 @@ public class GTinkerText : MonoBehaviour {
 	{
 		if (!stanza.stanzaManager.sceneManager.disableSounds)
 		{   
-			PlaySound();
+			//PlaySound();
 		}
 
-		clipPlay();
-		iconanimPlay();
+		//clipPlay();
+		//iconanimPlay();
 
 		// Is there a TinkerGraphic paired with this TinkerText?
 		/*if (pairedGraphic)
@@ -266,11 +265,11 @@ public class GTinkerText : MonoBehaviour {
 	{
 		if (!stanza.stanzaManager.sceneManager.disableSounds)
 		{    
-			PlaySound();
+			//PlaySound();
 		} 
 
-		clipPlay();
-		iconanimPlay();
+		//clipPlay();
+		//iconanimPlay();
 	}
 
 	// Mouse Up Event
@@ -287,9 +286,9 @@ public class GTinkerText : MonoBehaviour {
 			//pairedGraphic.OnPairedMouseUp(this);
 		}*/
 
-        clipResume();
+        /*clipResume();
 		iconanimResume();
-		graphicResume();
+		graphicResume();*/
 	}
 		
 	// Plays any sound that is attached
@@ -321,8 +320,8 @@ public class GTinkerText : MonoBehaviour {
 	{
 
         // If there is an anim attached, stop it from playing and hide it
-        clipResume();
-		iconanimResume();
+        //clipResume();
+		//iconanimResume();
 
 		/*if (pairedGraphic != null)
 		{

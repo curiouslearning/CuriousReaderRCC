@@ -7,8 +7,12 @@ public class SpriteAnimationPerformance : Performance
 {
     public string AnimationName;
 
-    public override bool CanPerform(GameObject i_rcActor)
+    public override bool CanPerform(GameObject i_rcActor, GameObject i_rcInvoker = null)
     {
+        if(!base.CanPerform(i_rcActor, i_rcInvoker))
+        {
+            return false;
+        }
         SpriteAnimator rcAnimator = i_rcActor.GetComponent<SpriteAnimator>();
 
         if (rcAnimator != null)
@@ -22,7 +26,7 @@ public class SpriteAnimationPerformance : Performance
         return false;
     }
 
-    public override bool Perform(GameObject i_rcActor)
+    public override bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)
     {
         if ( (i_rcActor != null) && !string.IsNullOrEmpty(AnimationName))
         {
@@ -35,8 +39,9 @@ public class SpriteAnimationPerformance : Performance
                 rcAnimator.Play(AnimationName,true);
                 return true;
             }
+            Debug.LogError("SpriteAnimator is null!");
         }
-
+        Debug.LogError("Actor and/or Anim is null");
         return false;
     }
 

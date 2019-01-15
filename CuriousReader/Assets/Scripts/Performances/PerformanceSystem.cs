@@ -41,11 +41,14 @@ public static class PerformanceSystem
 
         if ((rcPerformance) != null && (rcAnimator != null))
         {
-            if ((trigger.animId > 0) && (trigger.animId < rcAnimator.animations.Count))
+            if ((trigger.animId >= 0) && (trigger.animId < rcAnimator.animations.Count))
             {
                 rcPerformance.AnimationName = rcAnimator.animations[trigger.animId].Name;
+                Debug.Log("Animation name is: " + rcAnimator.animations[trigger.animId].Name);
             }
+            else { Debug.LogWarning("trigger is out of bounds!");}
         }
+        else { Debug.LogWarning("Performance and/or animator is null!"); }
         return rcPerformance;
     }
 
@@ -62,7 +65,7 @@ public static class PerformanceSystem
     public static T GetTweenPerformance<T>(bool doInit = false, Vector3 endValues = default(Vector3), float duration = 1f, float speed = default(float), TweenCallback OnComplete = default(TweenCallback)) where T : TweenActorPerformance
     {
         T rcPerformance = ScriptableObject.CreateInstance<T>();
-        if (rcPerformance != null && doInit);
+        if (rcPerformance != null && doInit)
         {
             rcPerformance.Init(endValues, duration, speed, OnComplete);
         }
@@ -76,12 +79,12 @@ public static class PerformanceSystem
     /// <param name="rcActor">The Performing Actor.</param>
     /// <param name="rcPerformance">The desired Performance.</param>
     /// <param name="promptType">The type of input that prompts this performance</param>
-    public static bool AddPerformance (GameObject rcActor, Performance rcPerformance, PromptType promptType)
+    public static bool AddPerformance (GameObject rcActor, Performance rcPerformance, PromptType promptType, GameObject rcInvoker = null)
     {
         PerformanceComponent rcComponent = InitializeComponent(rcActor);
         if(rcPerformance != null)
         {
-            rcComponent.AddPerformance(rcPerformance, promptType);
+            rcComponent.AddPerformance(rcPerformance, promptType, rcInvoker);
             return true;
         }
         return false;

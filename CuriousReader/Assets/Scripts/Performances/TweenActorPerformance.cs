@@ -30,8 +30,12 @@ public abstract class TweenActorPerformance : Performance {
     /// </summary>
     /// <returns><c>true</c>, if we can perform right now, <c>false</c> otherwise.</returns>
     /// <param name="i_rcActor">The actor to perform the Performance</param>
-    public override bool CanPerform (GameObject i_rcActor)
+    public override bool CanPerform (GameObject i_rcActor, GameObject i_rcInvoker =null)
     {
+        if (!base.CanPerform(i_rcActor, i_rcInvoker))
+        {
+            return false;
+        }
         if (i_rcActor != null && !TweenSystem.IsTweening(i_rcActor))
         {
             return true;
@@ -45,9 +49,9 @@ public abstract class TweenActorPerformance : Performance {
     /// </summary>
     /// <returns><c>true</c> if the Peformance was successfully completed, <c>false</c> otherwise </returns>
     /// <param name="i_rcActor">the actor that will performthe performance</param>
-    public override bool Perform (GameObject i_rcActor)
+    public override bool Perform (GameObject i_rcActor, GameObject i_rcInvoker = null)
     {
-        base.Perform(i_rcActor);
+        base.Perform(i_rcActor, i_rcInvoker);
         return true;
     }
 

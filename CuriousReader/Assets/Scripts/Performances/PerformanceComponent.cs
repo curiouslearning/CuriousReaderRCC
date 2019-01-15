@@ -9,10 +9,14 @@ public class PerformanceComponent : MonoBehaviour
 {
     Dictionary<PromptType, List<Performance>> Performances = new Dictionary<PromptType,List<Performance>>();
 
-    public void AddPerformance(Performance i_rcPerformance, PromptType i_ePromptType)
+    public void AddPerformance(Performance i_rcPerformance, PromptType i_ePromptType, GameObject i_rcInvoker = null)
     {
         if ( i_rcPerformance != null )
         {
+            if(i_rcInvoker != null)
+            {
+                i_rcPerformance.AddInvoker(i_rcInvoker);
+            }
             if ( !Performances.ContainsKey(i_ePromptType))
             {
                 Performances[i_ePromptType] = new List<Performance>();
@@ -32,10 +36,10 @@ public class PerformanceComponent : MonoBehaviour
                 {
                     foreach (Performance rcPerformance in rcPair.Value)
                     {
-                        if (rcPerformance.CanPerform(this.gameObject))
+                        bool success  = rcPerformance.Perform(this.gameObject, i_rcInvokingActor);
+                        if (success)
                         {
                             Debug.Log(this.gameObject.name + " can perform " + rcPerformance.name + ".");
-                            rcPerformance.Perform(this.gameObject);
                             // Need to add a callback for completion here.  
                         }
                         else

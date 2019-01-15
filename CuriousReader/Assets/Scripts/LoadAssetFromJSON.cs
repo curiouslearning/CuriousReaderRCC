@@ -562,80 +562,173 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
             tinkerText.pairedGraphics.Add(tinkerGraphic);
             tinkerGraphic.pairedText1 = tinkerText;
-
-            if (trigger.type == TriggerType.Navigation)
+            bool addSuccess = false; //to make sure adding the performance goes through
+            switch (trigger.type)
             {
-                if (trigger.DeactivateNextButton)
-                {
-                    // Deactivate the right button in the scene.  
-                    // NOTE: If any single trigger on the page sets this it will deactivate it.
-                    setPageTurnRightArrowActive(false);
-                }
-
-                if (tinkerGraphic != null)
-                {
-                    int nPageNumber = trigger.NavigationPage;
-
-                    if (ValidatePageNumber(nPageNumber))
+                case TriggerType.Navigation:
+                    if (trigger.DeactivateNextButton)
                     {
-                        tinkerGraphic.m_nNavigationPage = nPageNumber;
+                        // Deactivate the right button in the scene.  
+                        // NOTE: If any single trigger on the page sets this it will deactivate it.
+                        setPageTurnRightArrowActive(false);
                     }
-                    else
+
+                    if (tinkerGraphic != null)
                     {
-                        Debug.Log("Error: trigger " + i + " pointed to invalid page number " + nPageNumber);
-                    }
-                }
-            }
-            else if (trigger.type.Equals(TriggerType.Animation) || (trigger.animId >=0))
-            {
-                if (graphicObject != null)
-                {
-                    SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
-                    if(rcAnimator != null)
-                    {
-                        Anim rcAnim = tinkerGraphic.dataTinkerGraphic.anim[trigger.animId];
-                        PromptType prompt;
-                        if (rcAnim.onStart) 
+                        int nPageNumber = trigger.NavigationPage;
+
+                        if (ValidatePageNumber(nPageNumber))
                         {
-                            prompt = PromptType.OnPageLoad; 
-                        }
-                        else if (rcAnim.onTouch)
-                        {
-                            prompt = PromptType.Click;
+                            tinkerGraphic.m_nNavigationPage = nPageNumber;
                         }
                         else
                         {
-                            prompt = PromptType.PairedClick;
-                        }
-                        SpriteAnimationPerformance performance = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, trigger);
-                        bool success = PerformanceSystem.AddPerformance(graphicObject, performance, prompt);
-                        if(!success)
-                        {
-                            Debug.LogWarning("Failed to add Animation: " + performance.name + " to " + graphicObject.name + "!");
+                            Debug.Log("Error: trigger " + i + " pointed to invalid page number " + nPageNumber);
                         }
                     }
-                }
-            }
-            else if (trigger.type.Equals(TriggerType.Highlight) || (trigger.animId == -1)) //using both highlight indicators for backwards compatibility
-            {
-                if (graphicObject != null)
-                {
-                    HighlightActorPerformance performance = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
-                    performance.Init();
-                    bool success = PerformanceSystem.AddPerformance(graphicObject, performance, PromptType.PairedClick);
-                    if(!success)
+                    break;
+
+                case TriggerType.Animation:
+                    if (graphicObject != null)
                     {
-                        Debug.LogWarning("Failed to add Highlight to " + graphicObject.name + "!");
+                        SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
+                        if(rcAnimator != null)
+                        {
+                            GameObject rcInvoker; //what object is allowed to prompt this performance?
+                            PromptType ePrompt;    //what kind of prompt does this performance listen for?
+/*                            Anim rcAnim = tinkerGraphic.dataTinkerGraphic.anim[trigger.animId];
+                            if (rcAnim.onStart) 
+                            {
+                                ePrompt = PromptType.OnPageLoad;
+                                rcInvoker = null;
+                            }
+                            else if (rcAnim.onTouch)
+                            {
+                                ePrompt = PromptType.Click;
+                                rcInvoker = graphicObject;
+                            }
+                            else
+                            {
+                                ePrompt = PromptType.PairedClick;
+                                rcInvoker = tinkerText.gameObject;
+                            }*/
+                            SpriteAnimationPerformance pSpriteAnim = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, trigger);
+                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, PromptType.PairedClick, tinkerText.gameObject);
+                            if(!addSuccess)
+                            {
+                                Debug.LogWarning("Failed to add Animation: " + pSpriteAnim.AnimationName + " to " + graphicObject.name + "!");
+                            }
+                            else
+                            {
+                                Debug.Log("Successfully added " + pSpriteAnim.AnimationName + "to " + graphicObject.name);
+                            }
+                        }
                     }
-                }
+                    break;
+                case TriggerType.Highlight:
+                    if (graphicObject != null)
+                    {
+                        HighlightActorPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
+                        pHighlight.Init();
+                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pHighlight, PromptType.PairedClick, tinkerText.gameObject);
+                        if(!addSuccess)
+                        {
+                            Debug.LogWarning("Failed to add Highlight to " + graphicObject.name + "!");
+                        }
+                    }
+                    break;
+                case TriggerType.Move:
+                    if(graphicObject!= null)
+                    {
+                        MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
+                        pMove.Init(Vector3.zero);
+                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, PromptType.PairedClick, tinkerText.gameObject);
+                        if (!addSuccess)
+                        {
+                            Debug.LogWarning("Failed to add Move Tween to " + graphicObject.name + "!");
+                        }
+                    }
+                    break;
+                case TriggerType.Scale:
+                    ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
+                    pScale.Init(new Vector3(1.5f, 1.5f, 1.5f));
+                    addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, PromptType.PairedClick, tinkerText.gameObject);
+                    if (!addSuccess)
+                    {
+                        Debug.LogWarning("Failed to add Scale Tween to " + graphicObject.name + "!");
+                    }
+                    break;
+                case TriggerType.Rotate:
+                    RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
+                    pRotate.Init(new Vector3(0, 0, 90));
+                    addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate, PromptType.PairedClick, tinkerText.gameObject);
+                    if (!addSuccess)
+                    {
+                        Debug.LogWarning("Failed to add Rotate Tween to " + graphicObject.name + "!");
+                    }
+                    break;
+                default: //Legacy triggers, to be removed pending Book Editor changes
+                    if(trigger.animId >=0)
+                    {
+                        if (graphicObject != null)
+                        {
+                            GameObject rcInvoker;
+                            SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
+                            if (rcAnimator != null)
+                            {
+                                /*Anim rcAnim = tinkerGraphic.dataTinkerGraphic.anim[trigger.animId];
+                                PromptType prompt;
+                                if (rcAnim.onStart)
+                                {
+                                    prompt = PromptType.OnPageLoad;
+                                    rcInvoker = null;
+                                }
+                                else if (rcAnim.onTouch)
+                                {
+                                    prompt = PromptType.Click;
+                                    rcInvoker = graphicObject;
+                                }
+                                else
+                                {
+                                    prompt = PromptType.PairedClick;
+                                    rcInvoker = tinkerText.gameObject;
+                                }*/
+                                SpriteAnimationPerformance performance = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, trigger);
+                                addSuccess = PerformanceSystem.AddPerformance(graphicObject, performance, PromptType.PairedClick, graphicObject);
+                                if (!addSuccess)
+                                {
+                                    Debug.LogWarning("Failed to add Animation: " + performance.name + " to " + graphicObject.name + "!");
+                                }
+                                else
+                                {
+                                    Debug.Log("Successfully added " + performance.AnimationName + "to " + graphicObject.name);
+                                }
+                            }
+                        }
+                    }
+                    else if (trigger.animId.Equals(-1))
+                    {
+                        if (graphicObject != null)
+                        {
+                            HighlightActorPerformance performance = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
+                            performance.Init();
+                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, performance, PromptType.PairedClick, tinkerText.gameObject);
+                            if (!addSuccess)
+                            {
+                                Debug.LogWarning("Failed to add Highlight to " + graphicObject.name + "!");
+                            }
+                        }
+                    }
+                    break;
             }
         }
 	}
 
-	/// <summary>
-	/// Loads all the stanzas on the page and set the initial starting position depending on the number of words 
-	/// </summary>
-	public void LoadStanzaData()
+
+    /// <summary>
+    /// Loads all the stanzas on the page and set the initial starting position depending on the number of words 
+    /// </summary>
+    public void LoadStanzaData()
 	{
 		//startingX = storyBookJson.textStartPositionX;
 		if (storyBookJson == null) {
@@ -793,13 +886,20 @@ public class LoadAssetFromJSON : MonoBehaviour {
         width = width + rcTextMeshPro.rectTransform.rect.width + minWordSpace; // trans.rect.width + rcTextMeshPro.characterSpacing; //minWordSpace;
 
         stanzaLength = width;
-		//audio to each word
-		//		TimeStampClass[] timeStamps = storyBookJson.pages[pageNumber].timestamps;
-		//		UItextGO.AddComponent<AudioSource> ().clip = LoadAudioAsset (timeStamps [wordCount].audio);
-		//		wordCount++;
+        //audio to each word
+        //		TimeStampClass[] timeStamps = storyBookJson.pages[pageNumber].timestamps;
+        //		UItextGO.AddComponent<AudioSource> ().clip = LoadAudioAsset (timeStamps [wordCount].audio);
+        //		wordCount++;
 
-		//add the animator and script to the word.
-		uiTextObject.AddComponent<Animator>().runtimeAnimatorController = Resources.Load("TextAnimations/textzoomcontroller") as RuntimeAnimatorController;
+        //add the animator and script to the word.
+        HighlightTextPerformance performance = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
+        performance.Init(Color.yellow, 5f);
+        bool addSuccess = PerformanceSystem.AddPerformance(uiTextObject, performance, PromptType.Click, uiTextObject);
+        if(!addSuccess)
+        {
+            Debug.LogWarning("Could not add text highlight to " + uiTextObject.name);
+        }
+        uiTextObject.AddComponent<Animator>().runtimeAnimatorController = Resources.Load("TextAnimations/textzoomcontroller") as RuntimeAnimatorController;
 		GTinkerText tinkerText= uiTextObject.AddComponent<GTinkerText>();
 		tinkerText.stanza = uiTextObject.GetComponentInParent<StanzaObject>();
 		tinkerTextObjects.Add(uiTextObject);
