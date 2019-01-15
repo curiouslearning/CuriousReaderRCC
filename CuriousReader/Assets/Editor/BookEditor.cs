@@ -37,6 +37,8 @@ public class BookEditor : EditorWindow
 
     AudioClip[] m_rcPageAudio;
 
+    public string[] m_rastrAnimationNames;
+
     Vector2 m_vScrollPosition;
 
     GUIStyle m_boldFoldoutStyle;
@@ -100,6 +102,12 @@ public class BookEditor : EditorWindow
                 }
 
                 m_rcImageNames = GetImagesInPath(m_strCommonPath,"-1");
+                m_rastrAnimationNames = GetAnimationNames();
+
+                foreach (string strAnimName in m_rastrAnimationNames)
+                {
+                    Debug.Log(strAnimName);
+                }
 
             }
             return;
@@ -258,6 +266,7 @@ public class BookEditor : EditorWindow
             rcNewArray[currentPage.gameObjects.Length] = new GameObjectClass();
             rcNewArray[currentPage.gameObjects.Length].anim = new Anim[0];
             rcNewArray[currentPage.gameObjects.Length].Animations = new string[0];
+            rcNewArray[currentPage.gameObjects.Length].AnimationsID = new int[0];
             rcNewArray[currentPage.gameObjects.Length].draggable = false;
             rcNewArray[currentPage.gameObjects.Length].id = currentPage.gameObjects.Length;
             currentPage.gameObjects = rcNewArray;
@@ -379,6 +388,33 @@ public class BookEditor : EditorWindow
 
         #endregion
     
+    }
+
+    private string[] GetAnimationNames()
+    {
+        List<string> racAnimNames = new List<string>();
+
+        string [] strAnimations = AssetDatabase.FindAssets("t:SpriteAnimation");
+
+        if ( strAnimations != null )
+        {
+            foreach( string strAnim in strAnimations)
+            {
+                string strPath = AssetDatabase.GUIDToAssetPath(strAnim);
+
+                if ( !string.IsNullOrEmpty(strPath))
+                {
+                    SpriteAnimation rcAnim = AssetDatabase.LoadAssetAtPath<SpriteAnimation>(strPath);
+
+                    if ( rcAnim != null )
+                    {
+                        racAnimNames.Add(rcAnim.name);
+                    }
+                }
+            }
+        }
+
+        return racAnimNames.ToArray();
     }
 
     private void SetBoldFoldoutStyleToBold() {
@@ -1083,30 +1119,56 @@ public class BookEditor : EditorWindow
 
             nRemove = -1;
 
-            for (int l = 0; l < i_rcGameObject.Animations.Length; l++)
+            if (i_rcGameObject.Animations != null)
             {
-                EditorGUILayout.BeginHorizontal();
+                if (i_rcGameObject.AnimationsID == null) i_rcGameObject.AnimationsID = new int[i_rcGameObject.Animations.Length];
 
-                EditorGUILayout.BeginVertical();
-
-                i_rcGameObject.Animations[l] = EditorGUILayout.TextField(i_rcGameObject.Animations[l]);
-
-                EditorGUILayout.EndVertical();
-
-                EditorGUILayout.BeginVertical();
-
-                if (GUILayout.Button("Remove"))
+                if (i_rcGameObject.Animations.Length != i_rcGameObject.AnimationsID.Length)
                 {
-                    nRemove = l;
+                    i_rcGameObject.AnimationsID = new int[i_rcGameObject.Animations.Length];
                 }
 
-                EditorGUILayout.EndVertical();
-                EditorGUILayout.EndHorizontal();
-            }
+                for (int l = 0; l < i_rcGameObject.Animations.Length; l++)
+                {
+                    EditorGUILayout.BeginHorizontal();
+                    EditorGUILayout.BeginVertical();
 
-            if (nRemove != -1)
-            {
-                i_rcGameObject.Animations = i_rcGameObject.Animations.RemoveAt(nRemove);
+
+
+                    // Find it in the list if it is there.  Make the the text field disabled by default.
+                    for (int n = 0; n < m_rastrAnimationNames.Length; n++)
+                    {
+                        if (m_rastrAnimationNames[n].Equals(i_rcGameObject.Animations[l]))
+                        {
+                            i_rcGameObject.AnimationsID[l] = n;
+                            break;
+                        }
+                    }
+
+                    i_rcGameObject.AnimationsID[l] = EditorGUILayout.Popup(i_rcGameObject.AnimationsID[l], m_rastrAnimationNames);
+
+                    EditorGUI.BeginDisabledGroup(true);
+                    i_rcGameObject.Animations[l] = EditorGUILayout.TextField(m_rastrAnimationNames[i_rcGameObject.AnimationsID[l]]);
+                    EditorGUI.EndDisabledGroup();
+
+
+                    EditorGUILayout.EndVertical();
+                    EditorGUILayout.BeginVertical();
+
+                    if (GUILayout.Button("Remove"))
+                    {
+                        nRemove = l;
+                    }
+
+                    EditorGUILayout.EndVertical();
+                    EditorGUILayout.EndHorizontal();
+                }
+
+                if (nRemove != -1)
+                {
+                    i_rcGameObject.Animations = i_rcGameObject.Animations.RemoveAt(nRemove);
+                    i_rcGameObject.AnimationsID = i_rcGameObject.AnimationsID.RemoveAt(nRemove);
+                }
             }
 
             GUILayout.BeginHorizontal();
@@ -1117,7 +1179,12 @@ public class BookEditor : EditorWindow
                 string[] rcNewArray = new string[i_rcGameObject.Animations.Length + 1];
                 Array.Copy(i_rcGameObject.Animations, rcNewArray, i_rcGameObject.Animations.Length);
                 i_rcGameObject.Animations = rcNewArray;
-                i_rcGameObject.Animations[i_rcGameObject.Animations.Length] = "";
+                i_rcGameObject.Animations[i_rcGameObject.Animations.Length-1] = "";
+
+                int[] rcNewArray2 = new int[i_rcGameObject.AnimationsID.Length + 1];
+                Array.Copy(i_rcGameObject.AnimationsID, rcNewArray2, i_rcGameObject.AnimationsID.Length);
+                i_rcGameObject.AnimationsID = rcNewArray2;
+                i_rcGameObject.AnimationsID[i_rcGameObject.AnimationsID.Length-1] = 0;
             }
 
             GUILayout.EndHorizontal();
@@ -1589,7 +1656,6 @@ public class BookEditor : EditorWindow
                     }
 
                 }
-
             }
 
         }
@@ -1614,7 +1680,13 @@ public class BookEditor : EditorWindow
             }
         }
 
+#if UNITY_EDITOR_OSX
+        string strFile = i_strPath + "/" + i_strFile + ".asset";
+#endif
+
+#if UNITY_EDITOR_WIN
         string strFile = i_strPath + "\\" + i_strFile + ".asset";
+#endif
 
         AssetDatabase.CreateAsset(asset, strFile);
         AssetDatabase.SaveAssets();

@@ -24,6 +24,6 @@ public class GameObjectClass
 	public string destroyOnCollision;
     public bool draggable;
     public Anim[] anim;
-//    public SpriteAnimation[] SpriteAnimation;
     public string[] Animations;
+    [System.NonSerialized] public int[] AnimationsID;
 }
