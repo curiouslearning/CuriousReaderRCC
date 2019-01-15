@@ -598,7 +598,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "04_a_big_bird_flying-1",
+                    "imageName": "03_big_bird_flapping-1",
                     "inText": false,
                     "label": "bigbird",
                     "destroyOnCollision": "",
@@ -661,7 +661,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "03_big_bird_flapping"
+                    ]
                 },
                 {
                     "id": 1,
@@ -738,7 +740,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "04_a_small_singing_bird"
+                    ]
                 },
                 {
                     "id": 2,
@@ -758,7 +762,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "04_a_small_singing_bird_music"
+                    ]
                 },
                 {
                     "id": 3,

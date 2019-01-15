@@ -1206,12 +1206,16 @@ public class BookEditor : EditorWindow
                 string[] rcNewArray = new string[i_rcGameObject.Animations.Length + 1];
                 Array.Copy(i_rcGameObject.Animations, rcNewArray, i_rcGameObject.Animations.Length);
                 i_rcGameObject.Animations = rcNewArray;
+<<<<<<< HEAD
+                i_rcGameObject.Animations[i_rcGameObject.Animations.Length] = "";
+=======
                 i_rcGameObject.Animations[i_rcGameObject.Animations.Length-1] = "";
 
                 int[] rcNewArray2 = new int[i_rcGameObject.AnimationsID.Length + 1];
                 Array.Copy(i_rcGameObject.AnimationsID, rcNewArray2, i_rcGameObject.AnimationsID.Length);
                 i_rcGameObject.AnimationsID = rcNewArray2;
                 i_rcGameObject.AnimationsID[i_rcGameObject.AnimationsID.Length-1] = 0;
+>>>>>>> animation_rewrite
             }
 
             GUILayout.EndHorizontal();
@@ -1706,6 +1710,7 @@ public class BookEditor : EditorWindow
                 asset.FramesDuration.Add(30 / i_strFrames.Length);
             }
         }
+<<<<<<< HEAD
 
         AssetDatabase.CreateAsset(asset, i_strFile + ".asset");
         AssetDatabase.SaveAssets();
@@ -1718,6 +1723,22 @@ public class BookEditor : EditorWindow
 #if UNITY_EDITOR
         AssetImporter.GetAtPath(i_strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
 #endif
+=======
+
+#if UNITY_EDITOR_OSX
+        string strFile = i_strPath + "/" + i_strFile + ".asset";
+#endif
+
+#if UNITY_EDITOR_WIN
+        string strFile = i_strPath + "\\" + i_strFile + ".asset";
+#endif
+
+        AssetDatabase.CreateAsset(asset, strFile);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+
+        AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+>>>>>>> animation_rewrite
     }
 
 
