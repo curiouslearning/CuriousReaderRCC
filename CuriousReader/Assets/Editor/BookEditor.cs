@@ -1160,6 +1160,33 @@ public class BookEditor : EditorWindow
                         nRemove = l;
                     }
 
+                    if (GUILayout.Button("Edit"))
+                    {
+                        if ( !string.IsNullOrEmpty( i_rcGameObject.Animations[l]))
+                        {
+                            string[] strAnimation = AssetDatabase.FindAssets(i_rcGameObject.Animations[l]);
+
+                            if ( strAnimation != null )
+                            {
+                                if (!string.IsNullOrEmpty(strAnimation[0]))
+                                {
+                                    string strAnimPath = AssetDatabase.GUIDToAssetPath(strAnimation[0]);
+
+                                    if ( !string.IsNullOrEmpty(strAnimPath))
+                                    {
+                                        SpriteAnimation rcAnimation = AssetDatabase.LoadAssetAtPath<SpriteAnimation>(strAnimPath);
+
+                                        if ( rcAnimation != null )
+                                        {
+                                            EditorSpriteAnimation rcWindow = EditorSpriteAnimation.GetWindow<EditorSpriteAnimation>();
+                                            rcWindow.selectedAnimation = rcAnimation;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     EditorGUILayout.EndVertical();
                     EditorGUILayout.EndHorizontal();
                 }

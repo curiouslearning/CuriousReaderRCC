@@ -23,7 +23,7 @@ namespace Elendow.SpritedowAnimator
         private bool justCreatedAnim = false;
         private int frameListSelectedIndex = -1;
         private Texture2D clockIcon = null;
-        private SpriteAnimation selectedAnimation = null;
+        public SpriteAnimation selectedAnimation = null;
         private Vector2 scrollWindowPosition = Vector2.zero;
         private List<Sprite> draggedSprites = null;
         private EditorPreviewSpriteAnimation spritePreview = null;
