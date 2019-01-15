@@ -1,9 +1,17 @@
 ManifestFileVersion: 0
+<<<<<<< refs/remotes/origin/animation_rewrite
 CRC: 2856788839
 Hashes:
   AssetFileHash:
     serializedVersion: 2
     Hash: 58ee35e68505a0ee6c06bd132f3cd0fc
+=======
+CRC: 3804222021
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4669d589f92e158323e20baf0fafa96f
+>>>>>>> Removed Validation from Performance.Perform
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4583ce2b0311bd8e6486ec49141039c5

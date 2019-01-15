@@ -1,5 +1,9 @@
 ManifestFileVersion: 0
+<<<<<<< refs/remotes/origin/animation_rewrite
 CRC: 2436936458
+=======
+CRC: 2125280950
+>>>>>>> Removed Validation from Performance.Perform
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
