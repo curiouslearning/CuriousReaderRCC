@@ -41,7 +41,7 @@ public class PerformanceComponent : MonoBehaviour
                         bool success = false;
                         if (rcPerformance.CanPerform(this.gameObject, i_rcInvokingActor))
                         {
-                            Debug.LogFormat("({0}) can perform Performance of type ({1}) invoked by ({2}).",this.gameObject.name, rcPerformance.GetType(), i_rcInvokingActor.name);
+                            Debug.LogFormat("{0} can perform Performance of type {1} invoked by {2}", this.gameObject.name, rcPerformance.GetType(), i_rcInvokingActor.name);
                             // Need to add a callback for completion here.  
                             success = rcPerformance.Perform(this.gameObject);
                             if (!success)
