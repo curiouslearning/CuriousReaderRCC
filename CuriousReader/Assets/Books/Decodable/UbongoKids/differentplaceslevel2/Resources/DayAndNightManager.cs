@@ -87,7 +87,7 @@ public class DayAndNightManager: GSManager
                     // If it's night, then change the sky to day.
                     if (!m_bIsDay)
                     {
-                        rcAnimator.Play("7_between_night_to_day", true);
+                        rcAnimator.Play("7_between_night_bg_day_bg", true);
                         m_bIsDay = true;
 
                         foreach (GameObject rcObject in m_racDayGroup)
@@ -107,7 +107,7 @@ public class DayAndNightManager: GSManager
                     // If it's day, then change the sky to night.
                     if (m_bIsDay)
                     {
-                        rcAnimator.Play("7_between_day_to_night", true);
+                        rcAnimator.Play("7_between_day_bg_night_bg", true);
                         m_bIsDay = false;
 
                         foreach (GameObject rcObject in m_racDayGroup)

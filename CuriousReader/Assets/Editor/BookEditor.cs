@@ -1219,55 +1219,38 @@ public class BookEditor : EditorWindow
             GUILayout.EndVertical();
 
             GUILayout.BeginVertical();
-
+/*
             if (!string.IsNullOrEmpty(i_rcGameObject.imageName))
             {
                 string[] strImgDir = i_rcGameObject.imageName.Split('-');
 
                 if (strImgDir != null)
                 {
-                    string strAssetPath = Application.dataPath.Replace("/Assets", "");
-                    string strPath = m_strAnimPath + "\\" + strImgDir[0] + "\\" + i_rcGameObject.imageName;
-                    strPath = strPath.Replace("\\", "/");
-                    strPath = strPath.Replace(strAssetPath, "").TrimStart('/');
+                    string[] strObjects = AssetDatabase.FindAssets(i_rcGameObject.imageName + " t:Sprite");
 
-                    GameObject rcGo = AssetDatabase.LoadAssetAtPath<GameObject>(strPath);
-
-                    Rect rcControl = EditorGUILayout.GetControlRect(GUILayout.MinWidth(300.0f), GUILayout.MinHeight(300.0f));
-
-                    if (rcGo != null)
+                    foreach (string strFile in strObjects)
                     {
-                        Texture2D rcTexture = AssetPreview.GetAssetPreview(rcGo);
+                        string strImagePath = AssetDatabase.GUIDToAssetPath(strFile);
 
-                        if (rcTexture != null)
+                        if ( !string.IsNullOrEmpty(strImagePath))
                         {
-                            EditorGUI.DrawTextureTransparent(rcControl, rcTexture, ScaleMode.ScaleToFit, 0, -1);
+                            Rect rcControl = EditorGUILayout.GetControlRect(GUILayout.MinWidth(300.0f), GUILayout.MinHeight(300.0f));
+
+                            Sprite rcImage = AssetDatabase.LoadAssetAtPath<Sprite>(strImagePath);
+
+                            if (rcImage != null)
+                            {
+                                if ( rcImage.texture != null )
+                                {
+                                    EditorGUI.DrawTextureTransparent(rcControl, rcImage.texture, ScaleMode.ScaleToFit,0, -1);
+                                }
+                            }
+
                         }
                     }
-
-
-                    /*                    if (strPath.Contains(".svg") || strPath.Contains(".SVG"))
-                                        {
-
-                                            string strContents = File.ReadAllText(strPath);
-
-                                            // Dynamically import the SVG data, and tessellate the resulting vector scene.
-                                            var sceneInfo = SVGParser.ImportSVG(new StringReader(strContents));
-                                            var geoms = VectorUtils.TessellateScene(sceneInfo.Scene, tessOptions);
-
-                                            // Build a sprite with the tessellated geometry.
-                                            var sprite = VectorUtils.BuildSprite(geoms, 10.0f, VectorUtils.Alignment.Center, Vector2.zero, 128);
-
-                                            //                        Texture rcTexture = (Texture)AssetDatabase.LoadAssetAtPath(strPath, typeof(Texture));
-
-
-                                            var mat = new Material(Shader.Find("Unlit/Vector"));
-
-                                            Texture2D rcText = VectorUtils.RenderSpriteToTexture2D(sprite, (int)rcControl.width, (int)rcControl.height, mat);
-                                        }*/
                 }
             }
-
+*/
             GUILayout.EndVertical();
             GUILayout.EndHorizontal();
         }
@@ -1707,16 +1690,27 @@ public class BookEditor : EditorWindow
             }
         }
 
+#if UNITY_EDITOR_OSX
+        string strFile = i_strPath + "/" + i_strFile + ".asset";
         AssetDatabase.CreateAsset(asset, i_strFile + ".asset");
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
+#endif
 
-#if UNITY_EDITOR_OSX 
+#if UNITY_EDITOR_WIN
+        string strFile = i_strPath + "\\" + i_strFile + ".asset";
+        AssetDatabase.CreateAsset(asset, strFile);
+#endif
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+
+
+#if UNITY_EDITOR_OSX
         AssetImporter importer = AssetImporter.GetAtPath(i_strFile + ".asset");
         importer.SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
 #endif
-#if UNITY_EDITOR
-        AssetImporter.GetAtPath(i_strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+
+#if UNITY_EDITOR_WIN
+        AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
 #endif
     }
 
