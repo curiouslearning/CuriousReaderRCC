@@ -7,11 +7,22 @@ using UnityEngine;
 /// </summary>
 public abstract class Performance : ScriptableObject
 {
-    protected GameObject rcInvoker;
+    protected List<GameObject> InvokerList = new List<GameObject>();
 
     public virtual void AddInvoker(GameObject i_rcInvoker)
     {
-        rcInvoker = i_rcInvoker;
+        if((InvokerList != null) && !InvokerList.Contains(i_rcInvoker))
+        {
+            InvokerList.Add(i_rcInvoker);
+        }
+    }
+
+    public virtual void RemoveInvoker(GameObject i_rcInvoker)
+    {
+        if ((i_rcInvoker != null) && InvokerList.Contains(i_rcInvoker))
+        {
+            InvokerList.Remove(i_rcInvoker);
+        }
     }
     /// <summary>
     /// CanPerform -- Can this performance currently be performed by this actor?  Is the performance in progress?
@@ -21,10 +32,9 @@ public abstract class Performance : ScriptableObject
     /// <returns></returns>
     public virtual bool CanPerform(GameObject i_rcActor, GameObject i_rcInvoker = null)
     {
-        Debug.Log("Performance.CanPerform"); 
-        if ((rcInvoker != null))
+        if (InvokerList != null && InvokerList.Count > 0)
         {
-            if (!rcInvoker.Equals(i_rcInvoker))
+            if (!InvokerList.Contains(i_rcInvoker))
                 return false;
         }
         return true;
@@ -38,13 +48,8 @@ public abstract class Performance : ScriptableObject
     /// <returns></returns>
     public virtual bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)
     { 
-        if(CanPerform(i_rcActor, i_rcInvoker))
-        {
             Debug.Log("Performance.Perform entered.");
             return true;
-        }
-        return false;
-
     }
 
     /// <summary>

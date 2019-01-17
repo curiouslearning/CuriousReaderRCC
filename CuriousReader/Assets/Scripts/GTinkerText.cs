@@ -308,9 +308,10 @@ public class GTinkerText : MonoBehaviour {
 	// Stops any sound that is attached 
 	public void StopSound()
 	{
-		if (GetComponent<AudioSource>().isPlaying)
+        AudioSource a = GetComponent<AudioSource>();
+		if (a.isPlaying)
 		{
-			GetComponent<AudioSource>().Stop();
+			a.Stop();
 		}
 	}
 

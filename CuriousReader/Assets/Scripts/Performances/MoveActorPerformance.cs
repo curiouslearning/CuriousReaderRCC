@@ -20,7 +20,7 @@ public class MoveActorPerformance : TweenActorPerformance{
 
     public override bool Perform (GameObject i_rcActor, GameObject i_rcInvoker = null)
     {
-        if(CanPerform(i_rcActor, i_rcInvoker))
+        if(i_rcActor != null)
         {
             StartValues = i_rcActor.transform.position;
             TweenSystem.Move(i_rcActor, EndValues, duration, speed, OnComplete);

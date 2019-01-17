@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4247597794
+CRC: 2856788839
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 31fa555fd91c41c782a17bd439a08e1e
+    Hash: 58ee35e68505a0ee6c06bd132f3cd0fc
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4583ce2b0311bd8e6486ec49141039c5
@@ -136,6 +136,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Animations/17/small octopus move flap legs/17_small_octopus_move_flap_legs-4.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/5/orange_portion_of_the_sun_rotates/05_orange_portion_sun-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-6.svg
+- Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between day to night SVG/7_between_day_bg_night_bg.asset
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between night to day SVG/1_between_night_to_day-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/6/sunlight/06_sunlight-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/3/small_bird_flapping/03_a_small_bird_flapping.asset
@@ -263,6 +264,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Images/5/5_moon-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between day to night SVG/1_between_day_to_night-2.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/17/highlight the big octopus/17_highlight_the_big_octopus-1.svg
+- Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between night to day SVG/7_between_night_bg_day_bg.asset
 - Assets/Books/Decodable/UbongoKids/Common/Animations/1/1_between night to day SVG/1_between_night_to_day-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-4.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/25/25_Akili_smiles_and_jumps/25_Akili_smiles_and_jumps-2.svg

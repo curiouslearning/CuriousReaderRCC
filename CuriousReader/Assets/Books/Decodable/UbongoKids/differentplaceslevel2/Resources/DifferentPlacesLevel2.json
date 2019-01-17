@@ -192,38 +192,38 @@
             "audioFile": "audio_stanza_page_0.wav",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 900,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 666,
+                    "end": 1200,
                     "starWord": "No"
                 },
                 {
-                    "start": 666,
+                    "start": 2000,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1332,
+                    "end": 2350,
                     "starWord": "No"
                 },
                 {
-                    "start": 1333,
+                    "start": 2350,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1999,
+                    "end": 2575,
                     "starWord": "No"
                 },
                 {
-                    "start": 1999,
+                    "start": 2850,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2665,
+                    "end": 3000,
                     "starWord": "No"
                 },
                 {
-                    "start": 2666,
+                    "start": 3000,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3332,
+                    "end": 3200,
                     "starWord": "No"
                 },
                 {
@@ -529,7 +529,7 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 9,
                     "timing": 0.0,
                     "textId": 0,
                     "timestamp": 0,
@@ -611,49 +611,19 @@
                             "startY": 0,
                             "startZ": 105,
                             "startIndex": 0,
-                            "endIndex": 2,
-                            "onTouch": true,
-                            "onStart": false,
-                            "secPerFrame": [
-                                0.20000000298023225,
-                                0.20000000298023225,
-                                0.20000000298023225
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 2,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": -900.0,
-                                        "finaly": 0.0,
-                                        "speed": -100.0
-                                    }
-                                }
-                            ]
-                        },
-                        {
-                            "id": 1,
-                            "animName": "04_a_big_bird_peek",
-                            "startX": 900,
-                            "startY": 0,
-                            "startZ": 105,
-                            "startIndex": 0,
-                            "endIndex": 2,
+                            "endIndex": 0,
                             "onTouch": false,
                             "onStart": false,
                             "secPerFrame": [
-                                0.20000000298023225,
-                                0.20000000298023225,
-                                0.20000000298023225
+                                1.0
                             ],
                             "sequences": [
                                 {
                                     "startFrame": 0,
-                                    "endFrame": 2,
-                                    "noOfLoops": 1,
+                                    "endFrame": 0,
+                                    "noOfLoops": 5,
                                     "movable": {
-                                        "finalx": 384.0,
+                                        "finalx": -900.0,
                                         "finaly": 0.0,
                                         "speed": -100.0
                                     }
@@ -841,7 +811,7 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 1,
                     "timestamp": 0,
@@ -853,7 +823,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 4,
                     "timestamp": 0,
@@ -889,7 +859,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 5,
                     "timestamp": 0,

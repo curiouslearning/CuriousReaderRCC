@@ -63,6 +63,7 @@ public static class TweenSystem {
             {
                 tween.OnComplete(i_callBack);
             }
+            tween.SetId(i_rcActor);
             tween.Play();
         }
     }
@@ -95,6 +96,7 @@ public static class TweenSystem {
         {
             tween.OnComplete(i_callBack);
         }
+        tween.SetId(i_rcActor);
         tween.Play();
     }
 
@@ -126,7 +128,49 @@ public static class TweenSystem {
         {
             tween.OnComplete(i_callBack);
         }
+        tween.SetId(i_rcActor);
         tween.Play();
+
+    }
+
+    public static void HighlightText (GameObject i_rcActor, Color i_color, float i_scaleMultiplier = 1.5f, float i_delay =0, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback))
+    {
+        if(!ValidateArgs(i_rcActor, i_scaleMultiplier))
+        {
+            Debug.LogErrorFormat("HighlightText failed due to one of the following parameters being null: {0}, {1}", i_rcActor, i_scaleMultiplier);
+        }
+        Animator anim = i_rcActor.GetComponent<Animator>();
+        if(anim != null)
+        {
+            anim.enabled = false;
+        }
+        RectTransform rect = i_rcActor.GetComponent<RectTransform>();
+        Tween ScaleTween;
+        Tween ColorTween;
+        TextMeshProUGUI text = i_rcActor.GetComponent<TextMeshProUGUI>();
+        Vector3 endValues = rect.localScale * 1.5f;
+        if(rect != null)
+        {
+            if (!i_speed.Equals(default(float)))
+            {
+                ScaleTween = rect.DOScale(endValues, i_speed).SetDelay(i_delay).SetSpeedBased(true).SetLoops(2, LoopType.Yoyo);
+                ColorTween = text.DOColor(i_color, i_speed).SetDelay(i_delay).SetSpeedBased(true).SetLoops(2, LoopType.Yoyo);
+            }
+            else
+            {
+                ScaleTween = rect.DOScale(endValues, i_duration).SetDelay(i_delay).SetLoops(2, LoopType.Yoyo);
+                ColorTween = text.DOColor(i_color, i_duration).SetDelay(i_delay).SetLoops(2, LoopType.Yoyo);
+            }
+            if (i_callBack != null)
+            {
+                ScaleTween.OnComplete(i_callBack);
+            }
+            DG.Tweening.Sequence sequence = DOTween.Sequence();
+            sequence.Insert(0, ScaleTween);
+            sequence.Insert(0,ColorTween);
+            sequence.SetId(i_rcActor);
+            sequence.Play();
+        }
 
     }
     #endregion
@@ -157,6 +201,7 @@ public static class TweenSystem {
         {
             tween.OnComplete(i_callBack);
         }
+        tween.SetId(i_rcActor);
         tween.Play();
     }
 
@@ -208,16 +253,29 @@ public static class TweenSystem {
     /// </summary>
     /// <returns><c>true</c>, if there are any currently playing Tweens, <c>false</c> otherwise.</returns>
     /// <param name="i_rcActor">the actor to inspect.</param>
+    /// <param name="i_target">any specific tween target to check</param>
     public static bool IsTweening (GameObject i_rcActor)
     {
-        if(DOTween.IsTweening(i_rcActor.transform, alsoCheckIfIsPlaying: true))
-        {
-            return true;
+        if (DOTween.TweensById(i_rcActor) != null) {
+            Debug.LogFormat("{0} has {1} tweens assigned to it", i_rcActor.name, DOTween.TweensById(i_rcActor).Count);
         }
         else
         {
-            return false;
+            Debug.Log(i_rcActor.name + " has 0 tweens assigned to it!");
         }
+        if (DOTween.IsTweening(i_rcActor))
+        {
+            return true;
+        }
+        foreach (Component c in i_rcActor.GetComponents<Component>())
+        {
+            if (DOTween.IsTweening(c))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     #endregion
