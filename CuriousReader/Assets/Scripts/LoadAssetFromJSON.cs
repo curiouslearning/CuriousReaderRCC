@@ -6,8 +6,8 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using System;
 using Elendow.SpritedowAnimator;
+using DG.Tweening;
 
 /// <summary>
 /// Script to load the scene based on JSON describing the book.
@@ -179,7 +179,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
             return;
         }
 
-        stanzaManager.RequestCancelAutoPlay();
+        stanzaManager.CancelAutoPlay();
 
         // NOTE: This needs to be called before the page is loaded because Triggers can affect the display of the arrows.
         ResetArrowsForPage(i_nPageNumber);
@@ -594,9 +594,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
                         if(rcAnimator != null)
                         {
-                            GameObject rcInvoker; //what object is allowed to prompt this performance?
+/*                            GameObject rcInvoker; //what object is allowed to prompt this performance?
                             PromptType ePrompt;    //what kind of prompt does this performance listen for?
-/*                            Anim rcAnim = tinkerGraphic.dataTinkerGraphic.anim[trigger.animId];
+                            Anim rcAnim = tinkerGraphic.dataTinkerGraphic.anim[trigger.animId];
                             if (rcAnim.onStart) 
                             {
                                 ePrompt = PromptType.OnPageLoad;
@@ -893,7 +893,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
         //add the animator and script to the word.
         HighlightTextPerformance performance = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
-        performance.Init(Color.yellow, 5f);
+        performance.Init(Color.yellow, 2.5f);
         bool addSuccess = PerformanceSystem.AddPerformance(uiTextObject, performance, PromptType.Click, uiTextObject);
         if(!addSuccess)
         {

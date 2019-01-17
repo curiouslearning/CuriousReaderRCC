@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
+using Elendow.SpritedowAnimator;
 
 public class StanzaObject : MonoBehaviour {
 
@@ -13,6 +15,8 @@ public class StanzaObject : MonoBehaviour {
 
 	// Time delay at end of stanza during autoplay
 	public float endDelay;
+    public bool m_bIsWordPlaying = false;
+    private int currentWord = 0;
 
 	private GTinkerText mouseDownTinkerText;
 	private GTinkerText mouseCurrentlyDownTinkerText;
@@ -20,108 +24,47 @@ public class StanzaObject : MonoBehaviour {
 	// used as tracking to detect stanza auto play
 	private int lastTinkerTextIndex = -9999;
 
-	/// <summary>
-	/// Auto stanza play of.
-	/// calls on mouse down of each text to play its respective animation if present
-	/// zoomin and zoomout of texts with delays acoordinf to the start and end time of texts 
-	/// </summary>
-	/// <param name="startingTinkerText">Starting tinker text.</param>
-	public IEnumerator AutoPlay(GTinkerText startingTinkerText = null) { 
-	//{   stanzaNarrate = true;
-		Debug.Log("auto play");
-		int startingTinkerTextIndex = 0;
+    public void AutoPlay ()
+    {
+        m_bIsWordPlaying = true;
+        AutoPlayInternal();
+    }
+    private void AutoPlayInternal ()
+    {
+        if(!m_bIsWordPlaying)
+        {
+            return;
+        }
+        if ((currentWord >= 0) && currentWord < tinkerTexts.Count)
+        {
+            GTinkerText rcWord = tinkerTexts[currentWord];
+            if (!TweenSystem.IsTweening(rcWord.gameObject))
+            { 
+                HighlightTextPerformance autoHighlight = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
+                autoHighlight.Init(Color.yellow, rcWord.playTime/2, i_callback: new TweenCallback(AutoPlayInternal));
+                PerformanceSystem.AddPerformance(rcWord.gameObject, autoHighlight, PromptType.AutoPlay);
+                PerformanceSystem.SendPrompt(this.gameObject, rcWord.gameObject, PromptType.AutoPlay);
+                currentWord++;
+            }
+        }
+    }
 
-		if (startingTinkerText != null)
-		{
-			startingTinkerTextIndex = tinkerTexts.IndexOf(startingTinkerText);
-		}
 
-		for (int i = startingTinkerTextIndex; i < tinkerTexts.Count; i++)
-		{   
-           
-			//link the corresponding paried animation during auto play
-            GTinkerText t = null;
-            if (tinkerTexts[i]!=null)
-             t = tinkerTexts[i];
-			if (t.star) {
-				for (int j = 0; j < t.pairedGraphics.Count; j++) {
-// FIX					t.pairedGraphics [j].PlayCompleteAnim();
-				}
-			}
-			//GTinkerGraphic link = t.GetComponent<GTinkerText> ().pairedGraphic;
-			//if paired graphic is present
-			//if (link != null) {
-				//GSManager scenescript = stanzaManager.sceneManager;
-				//call its respective scene onmousedown
-				//scenescript.OnMouseDown(t.gameObject);
-				//scenescript.OnMouseUp (t.gameObject);
+    public void CancelAutoPlay ()
+    {
+        foreach (GTinkerText rcWord in tinkerTexts)
+        {
+            PerformanceSystem.CancelAndRemoveByType(rcWord.gameObject, PromptType.AutoPlay);
+            rcWord.StopSound();
+        }
+        m_bIsWordPlaying = false;
+    }
 
-			//}
-
-   
-			Animator anim = t.GetComponent<Animator>();
-
-            if(anim!=null)
-            anim.speed = 1 / t.playTime;
-
-			// If we aren't on last word, delay before playing next word
-			if (i < tinkerTexts.Count - 1)
-			{  
-				// delay according to timing data
-				float pauseDelay = tinkerTexts[i + 1].GetStartTime() - tinkerTexts[i].GetEndTime();
-                if(anim!=null)
-				anim.Play("textzoomout");
-				yield return new WaitForSeconds(t.playTime / 2);
-					
-                if (anim != null)
-                    anim.Play("textzoomin");
-				yield return new WaitForSeconds(t.playTime / 2);
-				if (pauseDelay != 0)
-				{
-                    if (anim != null)
-                        anim.speed = 1 / pauseDelay;
-					if (anim != null&&anim.GetCurrentAnimatorStateInfo(0).IsName("idle"))
-						anim.Play("pausedelay");
-					yield return new WaitForSeconds(pauseDelay);
-				}
-			}
-			else // Delay before next stanza
-			{   
-                if(anim!=null)
-				anim.Play("textzoomout");
-				yield return new WaitForSeconds(t.playTime / 2);
-
-                if (anim != null)
-                    anim.Play("textzoomin");
-				yield return new WaitForSeconds(t.playTime / 2);
-				if (anim != null&&endDelay != 0)
-				{
-					anim.speed = 1 / endDelay;
-					anim.Play("enddelay");
-				}
-
-				yield return new WaitForSeconds(endDelay);
-
-			}
-
-			// Abort early?
-			if (stanzaManager.CancelAutoPlay())
-			{   
-				yield break;
-			}
-
-		}
-		//stanzaNarrate=false;
-
-		// Stop the coroutine
-		yield break;
-	}
-
-/// <summary>
-/// this function handles the mousedown evens on the tinkertexts of the stanza
-/// </summary>
-/// <param name="tinkerText">tinkertext that is pressed</param>
-/// <param name="suppressAnim">bool to check whether animation is to be suppressed</param>
+    /// <summary>
+    /// this function handles the mousedown evens on the tinkertexts of the stanza
+    /// </summary>
+    /// <param name="tinkerText">tinkertext that is pressed</param>
+    /// <param name="suppressAnim">bool to check whether animation is to be suppressed</param>
     public void OnMouseDown(GTinkerText tinkerText, bool suppressAnim = false)
 	{   
 		// if we aren't already mouse down on this text

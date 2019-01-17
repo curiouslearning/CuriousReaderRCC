@@ -1714,8 +1714,7 @@ public class BookEditor : EditorWindow
 #if UNITY_EDITOR_OSX 
         AssetImporter importer = AssetImporter.GetAtPath(i_strFile + ".asset");
         importer.SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
-#endif
-#if UNITY_EDITOR
+#else
         AssetImporter.GetAtPath(i_strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
 #endif
     }

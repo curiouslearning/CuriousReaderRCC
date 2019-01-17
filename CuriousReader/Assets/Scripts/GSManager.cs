@@ -21,7 +21,7 @@ public class GSManager :  MonoBehaviour {
 	public bool inputAllowedDuringAutoplay = true;
 
 	// Whether to interrupt auto play if a single word is hit
-	public bool inputInterruptsAutoplay = false;
+	public bool inputInterruptsAutoplay = true;
 
 	// Disable auto play?
 	[HideInInspector]
@@ -65,16 +65,15 @@ public class GSManager :  MonoBehaviour {
 			}
 		}
         if(ShelfManager.autoNarrate == true)
-			StartCoroutine ("PlayStanzaAudio"); 
+			PlayStanzaAudio(); 
 		    
 	}
 
 	/// <summary>
 	/// Plays the stanza narration if sprite is narrateOn and stanzamanager and gamemanager are not null.
 	/// </summary>
-	IEnumerator PlayStanzaAudio(){
+	 void PlayStanzaAudio(){
 		
-		yield return new  WaitForSeconds(1);
 		if (stanzaManager != null && gameManager!= null)
 		{
 			stanzaManager.RequestAutoPlay (stanzaManager.stanzas [0], stanzaManager.stanzas [0].tinkerTexts [0]);
@@ -107,8 +106,7 @@ public class GSManager :  MonoBehaviour {
 	/// This function can be overriden by specific scene manager.
 	/// </summary>
 	public virtual void OnMouseDown(GameObject go)
-	{      
-		stanzaManager.RequestCancelAutoPlay (); // to stop auto narration when anything is clicked
+	{
             // Lock out other input during auto play?
             if (IsInputAllowed())
             {
@@ -124,7 +122,7 @@ public class GSManager :  MonoBehaviour {
                         {
                             // Is an autoplay in progress? If so, see if we should interrupt
 						    if (stanzaManager.IsAutoPlaying () && inputInterruptsAutoplay) {
-							    stanzaManager.RequestCancelAutoPlay ();
+                            stanzaManager.CancelAutoPlay();
 						}
                           stanzaManager.OnMouseDown(tinkerText);
                         }

@@ -83,7 +83,7 @@ public class GStanzaManager : MonoBehaviour {
 //            Debug.Log("not auto playing");
 			autoPlaying = true;
 			cancelAutoPlay = false; // reset our cancel flag
-			StartCoroutine(StartAutoPlay(startingStanza, startingTinkerText));
+			StartAutoPlay(startingStanza, startingTinkerText);
 		}
 	}
 
@@ -93,49 +93,38 @@ public class GStanzaManager : MonoBehaviour {
 		if (autoPlaying)
 		{
 			cancelAutoPlay = true;
+            CancelAutoPlay();
 		}
 	}
 
 	// Whether there is a cancel request in progress
-	public bool CancelAutoPlay()
+	public void CancelAutoPlay()
 	{
-		return cancelAutoPlay;
+        autoPlaying = false;
+        foreach(StanzaObject sObject in stanzas)
+        {
+            sObject.CancelAutoPlay();
+        }
 	}
 
 
 	// Begins an auto play starting w/ a stanza
-	private IEnumerator StartAutoPlay(StanzaObject startingStanza, GTinkerText startingTinkerText)
+	private void StartAutoPlay(StanzaObject startingStanza, GTinkerText startingTinkerText)
 	{
-//        Debug.Log("autoplay started");
 
 		// If we aren't starting from the beginning, read the audio progress from the startingTinkerText
 		GetComponent<AudioSource>().time = startingTinkerText.GetStartTime();
 		// Start playing the full stanza audio
 		GetComponent<AudioSource>().Play();
-
+        autoPlaying = true;
 		int startingStanzaIndex = stanzas.IndexOf(startingStanza);
 		for (int i = startingStanzaIndex; i < stanzas.Count; i++)
 		{
 			if (i == startingStanzaIndex)
 			{
-				yield return StartCoroutine(stanzas[i].AutoPlay(startingTinkerText));
-			}
-			else
-			{
-				yield return StartCoroutine(stanzas[i].AutoPlay());
-			}
-
-			// Abort early?
-			if (CancelAutoPlay())
-			{
-				autoPlaying = false;
-				GetComponent<AudioSource>().Stop();
-				yield break;
+                stanzas[i].AutoPlay();
 			}
 		}
-
-		autoPlaying = false;
-		yield break;
 	}
 
 	public void OnMouseDown(GTinkerText tinkerText, bool suppressAnim = false)

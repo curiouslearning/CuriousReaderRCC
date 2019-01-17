@@ -32,7 +32,7 @@ public abstract class TweenActorPerformance : Performance {
     /// <param name="i_rcActor">The actor to perform the Performance</param>
     public override bool CanPerform (GameObject i_rcActor, GameObject i_rcInvoker =null)
     {
-        if (!base.CanPerform(i_rcActor, i_rcInvoker))
+        if(!base.CanPerform(i_rcActor, i_rcInvoker))
         {
             return false;
         }
@@ -40,7 +40,6 @@ public abstract class TweenActorPerformance : Performance {
         {
             return true;
         }
-        Debug.LogWarning("Can't perform");
         return false;
     }
 
@@ -48,7 +47,7 @@ public abstract class TweenActorPerformance : Performance {
     /// Excecute this performance with the specified actor
     /// </summary>
     /// <returns><c>true</c> if the Peformance was successfully completed, <c>false</c> otherwise </returns>
-    /// <param name="i_rcActor">the actor that will performthe performance</param>
+    /// <param name="i_rcActor">the actor that will perform the performance</param>
     public override bool Perform (GameObject i_rcActor, GameObject i_rcInvoker = null)
     {
         base.Perform(i_rcActor, i_rcInvoker);
@@ -64,7 +63,8 @@ public abstract class TweenActorPerformance : Performance {
     {
         if(i_rcActor != null)
         {
-            DOTween.Kill(i_rcActor);
+            int kill = DOTween.Kill(i_rcActor);
+            Debug.LogFormat("Killed {1} tween(s) on {0}", i_rcActor.name, kill);
         }
     }
 
