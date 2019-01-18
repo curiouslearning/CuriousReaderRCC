@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using Elendow.SpritedowAnimator;
 using DG.Tweening;
+using CuriousReader.Performance;
 
 /// <summary>
 /// Script to load the scene based on JSON describing the book.

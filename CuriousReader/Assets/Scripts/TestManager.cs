@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CuriousReader.Performance;
 
 public class TestManager : MonoBehaviour {
     public GameObject rcActor;

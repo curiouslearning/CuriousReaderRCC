@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using Elendow.SpritedowAnimator;
+using CuriousReader.Performance;
 
 public class StanzaObject : MonoBehaviour {
 

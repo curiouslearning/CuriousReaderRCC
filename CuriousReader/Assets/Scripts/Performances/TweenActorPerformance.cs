@@ -4,26 +4,30 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using CuriousReader.BookBuilder;
 
 namespace CuriousReader.Performance
 {
+    public class TweenActorParams : PerformanceParams
+    {
+        [ExposeField]
+        public Vector3 EndValues;
+        [ExposeField]
+        protected Vector3 StartValues;
+        [ExposeField]
+        public float duration;
+        [ExposeField]
+        public float speed;
+        [ExposeField]
+        public TweenCallback OnComplete;
+
+    }
     /// <summary>
     /// An abstract class for creating performances that change an actor's sta abstract class TweenActorPerformance : Performance{
     /// </summary>
     public abstract class TweenActorPerformance : Performance
     {
-        [ExposePerformanceProp]
-        public Vector3 EndValues
-        {
-            get
-            {
-                return EndValues;
-            }
-            set
-            {
-                EndValues =  value;
-            }
-        }
+        public Vector3 EndValues;
         protected Vector3 StartValues;
         public float duration;
         public float speed;

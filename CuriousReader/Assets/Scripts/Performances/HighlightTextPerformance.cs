@@ -4,69 +4,82 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using CuriousReader.BookBuilder;
 
 
-public class HighlightTextPerformance : TweenActorPerformance
+namespace CuriousReader.Performance
 {
-    float scaleMultiplier;
-    float delay;
-    Color color;
-    Color startColor;
-    Vector3 startScale;
-
-    public HighlightTextPerformance Init(Color i_color, float i_scaleMultiplier = 1.5f, float i_delay = 0f, float i_duration = 1, float i_speed = 0, TweenCallback i_callback = null)
+    public class HighlightTextParams : TweenActorParams
     {
-        base.Init(Vector3.zero, i_duration, i_speed, i_callback);
-        scaleMultiplier = i_scaleMultiplier;
-        delay = i_delay;
-        color = i_color;
-        HighlightTextPerformance instance = this;
-        return instance;
+        [ExposeField]
+        float scaleMultiplier;
+        [ExposeField]
+        float delay;
+        [ExposeField]
+        Color color;
     }
-
-    public override bool Perform (GameObject i_rcActor, GameObject i_rcInvoker = null)
+    public class HighlightTextPerformance : TweenActorPerformance
     {
-        if (i_rcActor != null)
+        float scaleMultiplier;
+        float delay;
+        Color color;
+        Color startColor;
+        Vector3 startScale;
+
+        public HighlightTextPerformance Init(Color i_color, float i_scaleMultiplier = 1.5f, float i_delay = 0f, float i_duration = 1, float i_speed = 0, TweenCallback i_callback = null)
         {
-            startColor = GetActorColor(i_rcActor);
-            startScale = i_rcActor.transform.localScale;
-            //ChangeText(i_rcActor, color);
-            TweenSystem.HighlightText(i_rcActor, color, scaleMultiplier, delay, duration, speed, OnComplete);
-            return true;
+            base.Init(Vector3.zero, i_duration, i_speed, i_callback);
+            scaleMultiplier = i_scaleMultiplier;
+            delay = i_delay;
+            color = i_color;
+            HighlightTextPerformance instance = this;
+            return instance;
         }
-        return false;
-    }
 
-    void ChangeText(GameObject i_rcActor, Color color)
-    {
-        TextMeshProUGUI text = i_rcActor.GetComponent<TextMeshProUGUI>();
-        if (text != null)
+        public override bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)
         {
-            text.color = color;
+            if (i_rcActor != null)
+            {
+                startColor = GetActorColor(i_rcActor);
+                startScale = i_rcActor.transform.localScale;
+                //ChangeText(i_rcActor, color);
+                TweenSystem.HighlightText(i_rcActor, color, scaleMultiplier, delay, duration, speed, OnComplete);
+                return true;
+            }
+            return false;
         }
-    }
 
-    Color GetActorColor (GameObject i_rcActor)
-    {
-        TextMeshProUGUI text = i_rcActor.GetComponent<TextMeshProUGUI>();
-        Color retVal = Color.black;
-        if(text != null)
+        void ChangeText(GameObject i_rcActor, Color color)
         {
-            retVal = text.color;
+            TextMeshProUGUI text = i_rcActor.GetComponent<TextMeshProUGUI>();
+            if (text != null)
+            {
+                text.color = color;
+            }
         }
-        return retVal;
+
+        Color GetActorColor(GameObject i_rcActor)
+        {
+            TextMeshProUGUI text = i_rcActor.GetComponent<TextMeshProUGUI>();
+            Color retVal = Color.black;
+            if (text != null)
+            {
+                retVal = text.color;
+            }
+            return retVal;
+        }
+
+        public override void Cancel(GameObject i_rcActor)
+        {
+            base.Cancel(i_rcActor);
+            i_rcActor.transform.localScale = startScale;
+            ChangeText(i_rcActor, startColor);
+
+        }
+
+        public override void UnPerform(GameObject i_rcActor)
+        {
+        }
+
     }
-
-    public override void Cancel(GameObject i_rcActor)
-    {
-        base.Cancel(i_rcActor);
-        i_rcActor.transform.localScale = startScale;
-        ChangeText(i_rcActor, startColor);
-
-    }
-
-    public override void UnPerform(GameObject i_rcActor)
-    {
-    }
-
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using CuriousReader.Performance;
+using CuriousReader.BookBuilder;
 
 public enum TriggerType
 {

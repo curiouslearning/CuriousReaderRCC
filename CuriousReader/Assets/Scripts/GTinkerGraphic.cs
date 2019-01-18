@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using DG.Tweening;
 using Elendow.SpritedowAnimator;
+using CuriousReader.Performance;
 
 public class GTinkerGraphic : MonoBehaviour
 {

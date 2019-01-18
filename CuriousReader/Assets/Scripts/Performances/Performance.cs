@@ -3,10 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using CuriousReader.BookBuilder;
 
-public class PerformanceParams
+namespace CuriousReader.Performance
 {
-    public static string OnBookGUI<T>(TriggerClass i_rcTrigger) where T : PerformanceParams, new()
+    public class PerformanceParams
+{
+        [ExposeField]
+        List<GameObject> InvokerList;
+        public static string OnBookGUI<T>(TriggerClass i_rcTrigger) where T : PerformanceParams, new()
     {
         string strParams = "";
 
@@ -38,33 +43,13 @@ public class PerformanceParams
     }
 }
 
-public class HighlightPerformanceParams: PerformanceParams
-{
-    [ExposeField]
-    public float ScaleMultiplier;
-}
 
-namespace CuriousReader.Performance
-{
     /// <summary>
     /// Performance - Command pattern "Command" object that performs the "work"
     /// </summary>
     public abstract class Performance : ScriptableObject
     {
-        [ExposePerformancePropAttribute]
-        protected List<GameObject> InvokerList
-        {
-            get
-            {
-                return InvokerList;
-            }
-
-            set
-            {
-                InvokerList = value;
-            }
-        }
-
+        protected List<GameObject> InvokerList;
         public virtual void AddInvoker(GameObject i_rcInvoker)
         {
             if ((InvokerList != null) && !InvokerList.Contains(i_rcInvoker))

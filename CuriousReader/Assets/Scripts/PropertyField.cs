@@ -5,125 +5,128 @@ using System;
 using System.Reflection;
 using UnityEditor;
 
-public class PropertyField
+namespace CuriousReader.BookBuilder
 {
-    System.Object m_Instance;
-    FieldInfo m_Info;
-    SerializedPropertyType m_Type;
 
-    public SerializedPropertyType Type
+    public class PropertyField
     {
-        get
-        {
-            return m_Type;
-        }
-    }
+        System.Object m_Instance;
+        FieldInfo m_Info;
+        SerializedPropertyType m_Type;
 
-    public String Name
-    {
-        get
+        public SerializedPropertyType Type
         {
-            return ObjectNames.NicifyVariableName(m_Info.Name);
-        }
-    }
-
-    public string InspectorLabel
-    {
-        get
-        {
-            string returnValue = null;
-            object[] attributes = m_Info.GetCustomAttributes(true);
-            foreach (object o in attributes)
+            get
             {
-                if (o.GetType() == typeof(ExposeFieldAttribute))
+                return m_Type;
+            }
+        }
+
+        public String Name
+        {
+            get
+            {
+                return ObjectNames.NicifyVariableName(m_Info.Name);
+            }
+        }
+
+        public string InspectorLabel
+        {
+            get
+            {
+                string returnValue = null;
+                object[] attributes = m_Info.GetCustomAttributes(true);
+                foreach (object o in attributes)
                 {
-                    ExposeFieldAttribute exposeProperty = o as ExposeFieldAttribute;
-                    if (exposeProperty != null)
-                        returnValue = exposeProperty.InspectorLabel;
+                    if (o.GetType() == typeof(ExposeFieldAttribute))
+                    {
+                        ExposeFieldAttribute exposeProperty = o as ExposeFieldAttribute;
+                        if (exposeProperty != null)
+                            returnValue = exposeProperty.InspectorLabel;
+                    }
                 }
+
+                return returnValue;
+            }
+        }
+
+        public PropertyField(System.Object instance, FieldInfo info, SerializedPropertyType type)
+        {
+            m_Instance = instance;
+            m_Info = info;
+            m_Type = type;
+        }
+
+        public bool HasFlag()
+        {
+            return (m_Info.FieldType.GetCustomAttributes(typeof(FlagsAttribute), true).Length > 0);
+        }
+
+        public System.Object GetValue()
+        {
+            return m_Info.GetValue(m_Instance);
+        }
+
+        public void SetValue(System.Object value)
+        {
+            m_Info.SetValue(m_Instance, value);
+        }
+
+        public static bool GetPropertyType(FieldInfo info, out SerializedPropertyType propertyType)
+        {
+            propertyType = SerializedPropertyType.Generic;
+
+            Type type = info.FieldType;
+
+            if (type == typeof(int))
+            {
+                propertyType = SerializedPropertyType.Integer;
+                return true;
             }
 
-            return returnValue;
+            if (type == typeof(float))
+            {
+                propertyType = SerializedPropertyType.Float;
+                return true;
+            }
+
+            if (type == typeof(bool))
+            {
+                propertyType = SerializedPropertyType.Boolean;
+                return true;
+            }
+
+            if (type == typeof(string))
+            {
+                propertyType = SerializedPropertyType.String;
+                return true;
+            }
+
+            if (type == typeof(Vector2))
+            {
+                propertyType = SerializedPropertyType.Vector2;
+                return true;
+            }
+
+            if (type == typeof(Vector3))
+            {
+                propertyType = SerializedPropertyType.Vector3;
+                return true;
+            }
+
+            if (type.IsEnum)
+            {
+                propertyType = SerializedPropertyType.Enum;
+                return true;
+            }
+
+            if (type.IsArray)
+            {
+                propertyType = SerializedPropertyType.ArraySize;
+                return true;
+            }
+
+            return false;
         }
-    }
-
-    public PropertyField(System.Object instance, FieldInfo info, SerializedPropertyType type)
-    {
-        m_Instance = instance;
-        m_Info = info;
-        m_Type = type;
-    }
-
-    public bool HasFlag()
-    {
-        return (m_Info.FieldType.GetCustomAttributes(typeof(FlagsAttribute), true).Length > 0);
-    }
-
-    public System.Object GetValue()
-    {
-        return m_Info.GetValue(m_Instance);
-    }
-
-    public void SetValue(System.Object value)
-    {
-        m_Info.SetValue(m_Instance, value);
-    }
-
-    public static bool GetPropertyType(FieldInfo info, out SerializedPropertyType propertyType)
-    {
-        propertyType = SerializedPropertyType.Generic;
-
-        Type type = info.FieldType;
-
-        if (type == typeof(int))
-        {
-            propertyType = SerializedPropertyType.Integer;
-            return true;
-        }
-
-        if (type == typeof(float))
-        {
-            propertyType = SerializedPropertyType.Float;
-            return true;
-        }
-
-        if (type == typeof(bool))
-        {
-            propertyType = SerializedPropertyType.Boolean;
-            return true;
-        }
-
-        if (type == typeof(string))
-        {
-            propertyType = SerializedPropertyType.String;
-            return true;
-        }
-
-        if (type == typeof(Vector2))
-        {
-            propertyType = SerializedPropertyType.Vector2;
-            return true;
-        }
-
-        if (type == typeof(Vector3))
-        {
-            propertyType = SerializedPropertyType.Vector3;
-            return true;
-        }
-
-        if (type.IsEnum)
-        {
-            propertyType = SerializedPropertyType.Enum;
-            return true;
-        }
-
-        if (type.IsArray)
-        {
-            propertyType = SerializedPropertyType.ArraySize;
-            return true;
-        }
-
-        return false;
     }
 }
-

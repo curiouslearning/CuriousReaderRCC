@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using CuriousReader.Performance;
 //20.3,-18.8 (yellow), 0,-17.4 (white),blue (22.9,-0.4)
 public class GTinkerText : MonoBehaviour {
     //private static bool check=false;

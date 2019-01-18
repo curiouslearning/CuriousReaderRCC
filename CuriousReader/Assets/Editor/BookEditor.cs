@@ -8,6 +8,7 @@ using System;
 using System.Text.RegularExpressions;
 using Unity.VectorGraphics;
 using Elendow.SpritedowAnimator;
+using CuriousReader.Performance;
 
 public class BookEditor : EditorWindow
 {
@@ -906,9 +907,26 @@ public class BookEditor : EditorWindow
                 }
                 EditorGUI.EndDisabledGroup();
             }
+            else if (i_rcTrigger.type == TriggerType.Animation)
+            {
+                i_rcTrigger.Params = PerformanceParams.OnBookGUI<SpriteAnimationParams>(i_rcTrigger); 
+
+                EditorGUI.BeginDisabledGroup(true);
+                i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
+                EditorGUI.EndDisabledGroup();
+            }
+
+            else if (i_rcTrigger.type == TriggerType.Move)
+            {
+                i_rcTrigger.Params = PerformanceParams.OnBookGUI<MoveParams>(i_rcTrigger);
+
+                EditorGUI.BeginDisabledGroup(true);
+                i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
+                EditorGUI.EndDisabledGroup();
+            }
             else if (i_rcTrigger.type == TriggerType.Highlight)
             {
-                i_rcTrigger.Params = PerformanceParams.OnBookGUI<HighlightPerformanceParams>(i_rcTrigger);
+                i_rcTrigger.Params = PerformanceParams.OnBookGUI<HighlightParams>(i_rcTrigger);
 
                 EditorGUI.BeginDisabledGroup(true);
                 i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);

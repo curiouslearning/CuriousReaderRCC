@@ -1,65 +1,78 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Elendow.SpritedowAnimator;
+﻿
+using CuriousReader.BookBuilder;
 
-public class SpriteAnimationPerformance : Performance
+namespace CuriousReader.Performance
 {
-    public string AnimationName;
+    using System.Collections;
+    using System.Collections.Generic;
+    using UnityEngine;
+    using Elendow.SpritedowAnimator;
 
-    public override bool CanPerform(GameObject i_rcActor, GameObject i_rcInvoker = null)
+
+    public class SpriteAnimationParams : PerformanceParams
     {
-        if(!base.CanPerform(i_rcActor, i_rcInvoker))
+        [ExposeField]
+        string AnimationName;
+    }
+
+    public class SpriteAnimationPerformance : Performance
+    {
+        public string AnimationName;
+
+        public override bool CanPerform(GameObject i_rcActor, GameObject i_rcInvoker = null)
         {
+            if (!base.CanPerform(i_rcActor, i_rcInvoker))
+            {
+                return false;
+            }
+            SpriteAnimator rcAnimator = i_rcActor.GetComponent<SpriteAnimator>();
+
+            if (rcAnimator != null)
+            {
+                if (!rcAnimator.IsPlaying)
+                {
+                    return true;
+                }
+            }
+
             return false;
         }
-        SpriteAnimator rcAnimator = i_rcActor.GetComponent<SpriteAnimator>();
 
-        if (rcAnimator != null)
+        public override bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)
         {
-            if (!rcAnimator.IsPlaying)
+            if ((i_rcActor != null) && !string.IsNullOrEmpty(AnimationName))
             {
-                return true;
-            }
-        }
+                SpriteAnimator rcAnimator = i_rcActor.GetComponent<SpriteAnimator>();
 
-        return false;
-    }
-
-    public override bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)
-    {
-        if ( (i_rcActor != null) && !string.IsNullOrEmpty(AnimationName))
-        {
-            SpriteAnimator rcAnimator = i_rcActor.GetComponent<SpriteAnimator>();
-
-            if (rcAnimator != null)
-            {
-                rcAnimator.enabled = true;
-                rcAnimator.SetActiveRenderer(true);
-                rcAnimator.Play(AnimationName,true);
-                return true;
-            }
-            Debug.LogError("SpriteAnimator is null!");
-        }
-        Debug.LogError("Actor and/or Anim is null");
-        return false;
-    }
-
-    public override void Cancel(GameObject i_rcActor)
-    {
-        if ( i_rcActor != null )
-        {
-            SpriteAnimator rcAnimator = i_rcActor.GetComponent<SpriteAnimator>();
-
-            if (rcAnimator != null)
-            {
-                if (rcAnimator.IsPlaying)
+                if (rcAnimator != null)
                 {
-                    rcAnimator.Restart();
-                    rcAnimator.Stop();
+                    rcAnimator.enabled = true;
+                    rcAnimator.SetActiveRenderer(true);
+                    rcAnimator.Play(AnimationName, true);
+                    return true;
+                }
+                Debug.LogError("SpriteAnimator is null!");
+            }
+            Debug.LogError("Actor and/or Anim is null");
+            return false;
+        }
+
+        public override void Cancel(GameObject i_rcActor)
+        {
+            if (i_rcActor != null)
+            {
+                SpriteAnimator rcAnimator = i_rcActor.GetComponent<SpriteAnimator>();
+
+                if (rcAnimator != null)
+                {
+                    if (rcAnimator.IsPlaying)
+                    {
+                        rcAnimator.Restart();
+                        rcAnimator.Stop();
+                    }
                 }
             }
         }
-    }
 
+    }
 }
