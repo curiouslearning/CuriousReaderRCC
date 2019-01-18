@@ -5,6 +5,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine.UI;
 using Elendow.SpritedowAnimator;
+using System;
 
 public static class PerformanceSystem
 {
@@ -27,6 +28,13 @@ public static class PerformanceSystem
             rcComponent = rcActor.AddComponent<PerformanceComponent>();
         }
         return rcComponent;
+    }
+
+    public static string ExposeProperties(UnityEngine.Object i_rcObject)
+    {
+
+
+        return null;
     }
 
 

@@ -282,6 +282,8 @@ public class BookEditor : EditorWindow
             rcNewArray[currentPage.triggers.Length] = new TriggerClass();
             currentPage.triggers = rcNewArray;
 
+
+
             this.ShowNotification(new GUIContent("New Scene Trigger Added to Page " + m_activePageID));
         }
 
@@ -875,9 +877,18 @@ public class BookEditor : EditorWindow
 
         EditorGUI.indentLevel++;
 
+        TriggerType eLastTriggerType = i_rcTrigger.type;
+
         if (i_rcTrigger.Show)
         {
             i_rcTrigger.type = (TriggerType)EditorGUILayout.EnumPopup(i_rcTrigger.type, EditorStyles.popup);
+
+            if ( eLastTriggerType != i_rcTrigger.type)
+            {
+                i_rcTrigger.Params = "";
+                i_rcTrigger.EditorFields = null;
+                i_rcTrigger.PerformanceParams = null;
+            }
 
             if ( i_rcTrigger.type == TriggerType.Navigation )
             {
@@ -893,6 +904,14 @@ public class BookEditor : EditorWindow
                 } else {
                     i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, gameObjectsDropdownNames);
                 }
+                EditorGUI.EndDisabledGroup();
+            }
+            else if (i_rcTrigger.type == TriggerType.Highlight)
+            {
+                i_rcTrigger.Params = PerformanceParams.OnBookGUI<HighlightPerformanceParams>(i_rcTrigger);
+
+                EditorGUI.BeginDisabledGroup(true);
+                i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
                 EditorGUI.EndDisabledGroup();
             }
             else

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public enum TriggerType
 {
@@ -31,5 +32,8 @@ public class TriggerClass
     public int typeOfLinking;
     public bool DeactivateNextButton;
     public int NavigationPage;
+    public string Params;
+    [System.NonSerialized] public PropertyField[] EditorFields;
+    [System.NonSerialized] public PerformanceParams PerformanceParams;
 }
 
