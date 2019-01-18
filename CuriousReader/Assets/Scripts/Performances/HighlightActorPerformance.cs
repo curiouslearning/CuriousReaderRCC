@@ -28,6 +28,16 @@ namespace CuriousReader.Performance
             return instance;
         }
 
+        public HighlightActorPerformance Init (HighlightParams i_rcParams)
+        {
+            if(i_rcParams != null)
+            {
+                return Init(i_rcParams.ScaleMultiplier, i_rcParams.duration, i_rcParams.speed, i_rcParams.OnComplete);
+            }
+            Debug.LogWarningFormat("Performance of Type {0} received Null param object,using default Values", this.GetType());
+            return Init();
+        }
+
         public void SetScaleMultiplier(float i_scaleMultiplier = 1.5f)
         {
             ScaleMultiplier = i_scaleMultiplier;

@@ -310,7 +310,7 @@ public class GTinkerText : MonoBehaviour {
 	public void StopSound()
 	{
         AudioSource a = GetComponent<AudioSource>();
-		if (a.isPlaying)
+		if ((a != null) && a.isPlaying)
 		{
 			a.Stop();
 		}

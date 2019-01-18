@@ -10,7 +10,8 @@ namespace CuriousReader.Performance
     public class PerformanceParams
 {
         [ExposeField]
-        List<GameObject> InvokerList;
+        public List<GameObject> InvokerList = new List<GameObject>();
+#if UNITY_EDITOR
         public static string OnBookGUI<T>(TriggerClass i_rcTrigger) where T : PerformanceParams, new()
     {
         string strParams = "";
@@ -37,11 +38,10 @@ namespace CuriousReader.Performance
             T rcParams = (T)i_rcTrigger.PerformanceParams;
             strParams = JsonUtility.ToJson(rcParams);
         }
-
-        return strParams;
-
+            return strParams;
     }
-}
+#endif
+    }
 
 
     /// <summary>

@@ -12,11 +12,11 @@ namespace CuriousReader.Performance
     public class HighlightTextParams : TweenActorParams
     {
         [ExposeField]
-        float scaleMultiplier;
+        public float scaleMultiplier;
         [ExposeField]
-        float delay;
+        public float delay;
         [ExposeField]
-        Color color;
+        public Color color;
     }
     public class HighlightTextPerformance : TweenActorPerformance
     {
@@ -34,6 +34,16 @@ namespace CuriousReader.Performance
             color = i_color;
             HighlightTextPerformance instance = this;
             return instance;
+        }
+
+        public HighlightTextPerformance Init (HighlightTextParams i_rcParams)
+        {
+            if (i_rcParams != null)
+            {
+                return Init(i_rcParams.color, i_rcParams.scaleMultiplier, i_rcParams.delay, i_rcParams.duration, i_rcParams.speed, i_rcParams.OnComplete);
+            }
+            Debug.LogWarning("Null param object passed, using default values");
+            return Init(Color.yellow);
         }
 
         public override bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)

@@ -7,14 +7,13 @@ namespace CuriousReader.Performance
     using System.Collections.Generic;
     using UnityEngine;
     using Elendow.SpritedowAnimator;
-
-
     public class SpriteAnimationParams : PerformanceParams
     {
         [ExposeField]
-        string AnimationName;
+        public string AnimationName;
+        [ExposeField]
+        public PromptType StartPrompt;
     }
-
     public class SpriteAnimationPerformance : Performance
     {
         public string AnimationName;

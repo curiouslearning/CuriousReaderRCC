@@ -910,7 +910,6 @@ public class BookEditor : EditorWindow
             else if (i_rcTrigger.type == TriggerType.Animation)
             {
                 i_rcTrigger.Params = PerformanceParams.OnBookGUI<SpriteAnimationParams>(i_rcTrigger); 
-
                 EditorGUI.BeginDisabledGroup(true);
                 i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
                 EditorGUI.EndDisabledGroup();
@@ -935,39 +934,48 @@ public class BookEditor : EditorWindow
             else
             {
                 i_rcTrigger.animId = EditorGUILayout.IntField("Anim ID", i_rcTrigger.animId, EditorStyles.numberField);
-                i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
 
-                // Text ID dropdown which is now an actual Word
-                string[] formattedTextIDDropdownValues;
-                FormatTextDropdownListForTextID(m_rcStoryBook.pages[i_pageOrdinal].texts, out formattedTextIDDropdownValues);
-                bool textIDValuesEmpty = formattedTextIDDropdownValues.Length == 0 || formattedTextIDDropdownValues.Length == 1 && formattedTextIDDropdownValues[0] == null;
-                EditorGUI.BeginDisabledGroup(textIDValuesEmpty);
-                if (textIDValuesEmpty) {
-                    i_rcTrigger.textId = EditorGUILayout.Popup("Word", i_rcTrigger.textId, 
-                        new string[]{ "No Text have been entered for this page" });
-                } else {
-                    i_rcTrigger.textId = EditorGUILayout.Popup("Word", i_rcTrigger.textId, formattedTextIDDropdownValues);
-                }
-                EditorGUI.EndDisabledGroup();
-
-                i_rcTrigger.timestamp = EditorGUILayout.IntField("Timestamp", i_rcTrigger.timestamp, EditorStyles.numberField);
-
-                // Scene Object Dropdown
-                string[] gameObjectsDropdownNames;
-                FormatGameObjectIDsAndLabels(m_rcStoryBook.pages[i_pageOrdinal].gameObjects, out gameObjectsDropdownNames);
-                EditorGUI.BeginDisabledGroup(gameObjectsDropdownNames.Length == 0);
-                if (gameObjectsDropdownNames.Length == 0) {
-                    i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, 
-                        new string[]{ "No GameObjects have been entered for this page" });
-                } else {
-                    i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, gameObjectsDropdownNames);
-                }
-                EditorGUI.EndDisabledGroup();
-                i_rcTrigger.typeOfLinking = EditorGUILayout.IntField("Type of Linking", i_rcTrigger.typeOfLinking, EditorStyles.numberField);
             }
+            AddObjectWordLinking(i_rcTrigger, i_nOrdinal, i_pageOrdinal);
         }
 
         EditorGUI.indentLevel--;
+    }
+
+    private void AddObjectWordLinking (TriggerClass i_rcTrigger, int i_nOrdinal, int i_pageOrdinal)
+    {
+        i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
+        string[] formattedTextIDDropdownValues;
+        FormatTextDropdownListForTextID(m_rcStoryBook.pages[i_pageOrdinal].texts, out formattedTextIDDropdownValues);
+        bool textIDValuesEmpty = formattedTextIDDropdownValues.Length == 0 || formattedTextIDDropdownValues.Length == 1 && formattedTextIDDropdownValues[0] == null;
+        EditorGUI.BeginDisabledGroup(textIDValuesEmpty);
+        if (textIDValuesEmpty)
+        {
+            i_rcTrigger.textId = EditorGUILayout.Popup("Word", i_rcTrigger.textId,
+                new string[] { "No Text have been entered for this page" });
+        }
+        else
+        {
+            i_rcTrigger.textId = EditorGUILayout.Popup("Word", i_rcTrigger.textId, formattedTextIDDropdownValues);
+        }
+        EditorGUI.EndDisabledGroup();
+
+        i_rcTrigger.timestamp = EditorGUILayout.IntField("Timestamp", i_rcTrigger.timestamp, EditorStyles.numberField);
+
+        // Scene Object Dropdown
+        string[] gameObjectsDropdownNames;
+        FormatGameObjectIDsAndLabels(m_rcStoryBook.pages[i_pageOrdinal].gameObjects, out gameObjectsDropdownNames);
+        EditorGUI.BeginDisabledGroup(gameObjectsDropdownNames.Length == 0);
+        if (gameObjectsDropdownNames.Length == 0)
+        {
+            i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId,
+                new string[] { "No GameObjects have been entered for this page" });
+        }
+        else
+        {
+            i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, gameObjectsDropdownNames);
+        }
+        EditorGUI.EndDisabledGroup();
     }
 
     /// <summary>

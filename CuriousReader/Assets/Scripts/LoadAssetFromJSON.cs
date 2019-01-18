@@ -592,13 +592,14 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 case TriggerType.Animation:
                     if (graphicObject != null)
                     {
+                        SpriteAnimationParams animParams = trigger.PerformanceParams as SpriteAnimationParams;
                         SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
-                        if(rcAnimator != null)
+                        if ((rcAnimator != null) && (animParams != null))
                         {
-/*                            GameObject rcInvoker; //what object is allowed to prompt this performance?
-                            PromptType ePrompt;    //what kind of prompt does this performance listen for?
+                            GameObject rcInvoker; //what object is allowed to prompt this performance?
+                            PromptType ePrompt = animParams.StartPrompt;    //what kind of prompt does this performance listen for?
                             Anim rcAnim = tinkerGraphic.dataTinkerGraphic.anim[trigger.animId];
-                            if (rcAnim.onStart) 
+                            if (rcAnim.onStart)
                             {
                                 ePrompt = PromptType.OnPageLoad;
                                 rcInvoker = null;
@@ -612,10 +613,11 @@ public class LoadAssetFromJSON : MonoBehaviour {
                             {
                                 ePrompt = PromptType.PairedClick;
                                 rcInvoker = tinkerText.gameObject;
-                            }*/
-                            SpriteAnimationPerformance pSpriteAnim = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, trigger);
-                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, PromptType.PairedClick, tinkerText.gameObject);
-                            if(!addSuccess)
+                            }
+
+                            SpriteAnimationPerformance pSpriteAnim = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, animParams);
+                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, ePrompt, rcInvoker);
+                            if (!addSuccess)
                             {
                                 Debug.LogWarning("Failed to add Animation: " + pSpriteAnim.AnimationName + " to " + graphicObject.name + "!");
                             }
@@ -629,8 +631,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 case TriggerType.Highlight:
                     if (graphicObject != null)
                     {
+                        HighlightParams highlightParams = trigger.PerformanceParams as HighlightParams;
                         HighlightActorPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
-                        pHighlight.Init();
+                        pHighlight.Init(highlightParams);
                         addSuccess = PerformanceSystem.AddPerformance(graphicObject, pHighlight, PromptType.PairedClick, tinkerText.gameObject);
                         if(!addSuccess)
                         {
@@ -641,8 +644,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 case TriggerType.Move:
                     if(graphicObject!= null)
                     {
+                        MoveParams moveParams = trigger.PerformanceParams as MoveParams;
                         MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
-                        pMove.Init(Vector3.zero);
+                        pMove.Init(moveParams);
                         addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, PromptType.PairedClick, tinkerText.gameObject);
                         if (!addSuccess)
                         {
@@ -651,8 +655,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     }
                     break;
                 case TriggerType.Scale:
+                    ScaleParams scaleParams = trigger.PerformanceParams as ScaleParams;
                     ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
-                    pScale.Init(new Vector3(1.5f, 1.5f, 1.5f));
+                    pScale.Init(scaleParams);
                     addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, PromptType.PairedClick, tinkerText.gameObject);
                     if (!addSuccess)
                     {
@@ -660,8 +665,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     }
                     break;
                 case TriggerType.Rotate:
+                    RotateParams rotateParams = trigger.PerformanceParams as RotateParams;
                     RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
-                    pRotate.Init(new Vector3(0, 0, 90));
+                    pRotate.Init(rotateParams);
                     addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate, PromptType.PairedClick, tinkerText.gameObject);
                     if (!addSuccess)
                     {
@@ -669,58 +675,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     }
                     break;
                 default: //Legacy triggers, to be removed pending Book Editor changes
-                    if(trigger.animId >=0)
-                    {
-                        if (graphicObject != null)
-                        {
-                            GameObject rcInvoker;
-                            SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
-                            if (rcAnimator != null)
-                            {
-                                /*Anim rcAnim = tinkerGraphic.dataTinkerGraphic.anim[trigger.animId];
-                                PromptType prompt;
-                                if (rcAnim.onStart)
-                                {
-                                    prompt = PromptType.OnPageLoad;
-                                    rcInvoker = null;
-                                }
-                                else if (rcAnim.onTouch)
-                                {
-                                    prompt = PromptType.Click;
-                                    rcInvoker = graphicObject;
-                                }
-                                else
-                                {
-                                    prompt = PromptType.PairedClick;
-                                    rcInvoker = tinkerText.gameObject;
-                                }*/
-                                SpriteAnimationPerformance performance = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, trigger);
-                                addSuccess = PerformanceSystem.AddPerformance(graphicObject, performance, PromptType.PairedClick, graphicObject);
-                                if (!addSuccess)
-                                {
-                                    Debug.LogWarning("Failed to add Animation: " + performance.name + " to " + graphicObject.name + "!");
-                                }
-                                else
-                                {
-                                    Debug.Log("Successfully added " + performance.AnimationName + "to " + graphicObject.name);
-                                }
-                            }
-                        }
-                    }
-                    else if (trigger.animId.Equals(-1))
-                    {
-                        if (graphicObject != null)
-                        {
-                            HighlightActorPerformance performance = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
-                            performance.Init();
-                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, performance, PromptType.PairedClick, tinkerText.gameObject);
-                            if (!addSuccess)
-                            {
-                                Debug.LogWarning("Failed to add Highlight to " + graphicObject.name + "!");
-                            }
-                        }
-                    }
-                    break;
+                   break;
             }
         }
 	}

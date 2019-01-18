@@ -42,6 +42,15 @@ namespace CuriousReader.Performance
             OnComplete = i_callback;
             return instance;
         }
+        public TweenActorPerformance Init(TweenActorParams i_rcParams)
+        {
+            if (i_rcParams != null)
+            {
+                return Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.OnComplete);
+            }
+            Debug.LogWarningFormat("Performance of Type {0} received Null param object,using default Values", this.GetType());
+            return Init(Vector3.zero);
+        }
 
         /// <summary>
         /// Check to see if this Performance can currently be performed

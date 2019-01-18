@@ -80,19 +80,18 @@ namespace CuriousReader.Performance
         /// <returns>A new SpriteAnimationPerformance.</returns>
         /// <param name="rcAnimator">The SpriteAnimator to reference</param>
         /// <param name="trigger">the TriggerClass containing the id number of the desired animation</param>
-        public static SpriteAnimationPerformance GetSpriteAnimationPerformance(SpriteAnimator rcAnimator, TriggerClass trigger)
+        public static SpriteAnimationPerformance GetSpriteAnimationPerformance(SpriteAnimator rcAnimator, SpriteAnimationParams i_rcParams)
         {
 
             SpriteAnimationPerformance rcPerformance = SpriteAnimationPerformance.CreateInstance<SpriteAnimationPerformance>();
 
             if ((rcPerformance) != null && (rcAnimator != null))
             {
-                if ((trigger.animId >= 0) && (trigger.animId < rcAnimator.animations.Count))
+                rcPerformance.AnimationName = i_rcParams.AnimationName;
+                foreach (GameObject invoker in i_rcParams.InvokerList)
                 {
-                    rcPerformance.AnimationName = rcAnimator.animations[trigger.animId].Name;
-                    Debug.Log("Animation name is: " + rcAnimator.animations[trigger.animId].Name);
+                    rcPerformance.AddInvoker(invoker);
                 }
-                else { Debug.LogWarning("trigger is out of bounds!"); }
             }
             else { Debug.LogWarning("Performance and/or animator is null!"); }
             return rcPerformance;
