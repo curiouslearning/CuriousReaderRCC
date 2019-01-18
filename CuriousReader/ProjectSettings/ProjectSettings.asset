@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: TinkrPlayer
-  productName: TinkrPlayer
+  companyName: CuriousLearning
+  productName: CuriousReader
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -711,9 +711,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: a7ee635a-9e81-43f5-88c4-d9eb7d7776f9
-  projectName: TinkrPlayer
-  organizationId: unity_6stoqkzidzabkw
+  cloudProjectId: 98d4c379-9f17-43a5-a9e6-035670079c46
+  projectName: CuriousReader
+  organizationId: curious-learning
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
