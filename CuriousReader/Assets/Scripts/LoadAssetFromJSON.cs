@@ -592,7 +592,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 case TriggerType.Animation:
                     if (graphicObject != null)
                     {
-                        SpriteAnimationParams animParams = trigger.PerformanceParams as SpriteAnimationParams;
+                        SpriteAnimationParams animParams = JsonUtility.FromJson<SpriteAnimationParams>(trigger.Params);
                         SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
                         if ((rcAnimator != null) && (animParams != null))
                         {
@@ -644,7 +644,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 case TriggerType.Move:
                     if(graphicObject!= null)
                     {
-                        MoveParams moveParams = trigger.PerformanceParams as MoveParams;
+                        MoveParams moveParams = JsonUtility.FromJson<MoveParams>(trigger.Params);
                         MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
                         pMove.Init(moveParams);
                         addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, PromptType.PairedClick, tinkerText.gameObject);
@@ -655,7 +655,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     }
                     break;
                 case TriggerType.Scale:
-                    ScaleParams scaleParams = trigger.PerformanceParams as ScaleParams;
+                    ScaleParams scaleParams = JsonUtility.FromJson<ScaleParams>(trigger.Params);
                     ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
                     pScale.Init(scaleParams);
                     addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, PromptType.PairedClick, tinkerText.gameObject);
@@ -665,7 +665,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     }
                     break;
                 case TriggerType.Rotate:
-                    RotateParams rotateParams = trigger.PerformanceParams as RotateParams;
+                    RotateParams rotateParams = JsonUtility.FromJson<RotateParams>(trigger.Params);
                     RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
                     pRotate.Init(rotateParams);
                     addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate, PromptType.PairedClick, tinkerText.gameObject);

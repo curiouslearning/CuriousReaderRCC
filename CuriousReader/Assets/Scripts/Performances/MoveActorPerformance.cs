@@ -20,9 +20,8 @@
 
         public override TweenActorPerformance Init(Vector3 i_endPos, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback))
         {
-            MoveActorPerformance instance = base.Init(i_endPos, duration, speed, i_callback) as MoveActorPerformance;
+            MoveActorPerformance instance = base.Init(i_endPos, i_duration, i_speed, i_callback) as MoveActorPerformance;
             return instance;
-
         }
 
 

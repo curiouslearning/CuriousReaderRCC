@@ -841,7 +841,7 @@
                     "typeOfLinking": 3,
                     "DeactivateNextButton": false,
                     "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":900.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":20.0}"
+                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":20.0}"
                 },
                 {
                     "stanzaID": 0,

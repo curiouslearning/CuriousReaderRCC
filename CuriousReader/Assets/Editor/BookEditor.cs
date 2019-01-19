@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using Unity.VectorGraphics;
 using Elendow.SpritedowAnimator;
 using CuriousReader.Performance;
+using CuriousReader.BookBuilder;
 
 public class BookEditor : EditorWindow
 {
@@ -909,7 +910,7 @@ public class BookEditor : EditorWindow
             }
             else if (i_rcTrigger.type == TriggerType.Animation)
             {
-                i_rcTrigger.Params = PerformanceParams.OnBookGUI<SpriteAnimationParams>(i_rcTrigger); 
+                i_rcTrigger.Params = OnBookGUI<SpriteAnimationParams>(i_rcTrigger); 
                 EditorGUI.BeginDisabledGroup(true);
                 i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
                 EditorGUI.EndDisabledGroup();
@@ -917,7 +918,7 @@ public class BookEditor : EditorWindow
 
             else if (i_rcTrigger.type == TriggerType.Move)
             {
-                i_rcTrigger.Params = PerformanceParams.OnBookGUI<MoveParams>(i_rcTrigger);
+                i_rcTrigger.Params = OnBookGUI<MoveParams>(i_rcTrigger);
 
                 EditorGUI.BeginDisabledGroup(true);
                 i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
@@ -925,7 +926,7 @@ public class BookEditor : EditorWindow
             }
             else if (i_rcTrigger.type == TriggerType.Highlight)
             {
-                i_rcTrigger.Params = PerformanceParams.OnBookGUI<HighlightParams>(i_rcTrigger);
+                i_rcTrigger.Params = OnBookGUI<HighlightParams>(i_rcTrigger);
 
                 EditorGUI.BeginDisabledGroup(true);
                 i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
@@ -1759,8 +1760,34 @@ public class BookEditor : EditorWindow
 #endif
     }
 
+    public static string OnBookGUI<T>(TriggerClass i_rcTrigger) where T : PerformanceParams, new()
+    {
+        string strParams = "";
 
+        if (i_rcTrigger.EditorFields == null)
+        {
+            T rcParams = new T();
+            if (!string.IsNullOrEmpty(i_rcTrigger.Params))
+            {
+                rcParams = JsonUtility.FromJson<T>(i_rcTrigger.Params);
+            }
 
+            i_rcTrigger.EditorFields = ExposeFields.GetFields(rcParams);
+            i_rcTrigger.PerformanceParams = (PerformanceParams)rcParams;
+        }
+
+        if (i_rcTrigger.EditorFields != null)
+        {
+            ExposeFields.Expose(i_rcTrigger.EditorFields);
+        }
+
+        if (i_rcTrigger.PerformanceParams != null)
+        {
+            T rcParams = (T)i_rcTrigger.PerformanceParams;
+            strParams = JsonUtility.ToJson(rcParams);
+        }
+        return strParams;
+    }
 }
 
 public class OpenBookEditor
