@@ -260,14 +260,6 @@ namespace CuriousReader.Performance
         /// <param name="i_target">any specific tween target to check</param>
         public static bool IsTweening(GameObject i_rcActor)
         {
-            if (DOTween.TweensById(i_rcActor) != null)
-            {
-                Debug.LogFormat("{0} has {1} tweens assigned to it", i_rcActor.name, DOTween.TweensById(i_rcActor).Count);
-            }
-            else
-            {
-                Debug.Log(i_rcActor.name + " has 0 tweens assigned to it!");
-            }
             if (DOTween.IsTweening(i_rcActor))
             {
                 return true;

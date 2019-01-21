@@ -598,20 +598,17 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         {
                             GameObject rcInvoker; //what object is allowed to prompt this performance?
                             PromptType ePrompt = animParams.StartPrompt;    //what kind of prompt does this performance listen for?
-                            Anim rcAnim = tinkerGraphic.dataTinkerGraphic.anim[trigger.animId];
-                            if (rcAnim.onStart)
+                            if (ePrompt.Equals(PromptType.OnPageLoad))
                             {
-                                ePrompt = PromptType.OnPageLoad;
                                 rcInvoker = null;
                             }
-                            else if (rcAnim.onTouch)
+                            else if (ePrompt.Equals(PromptType.Click))
                             {
                                 ePrompt = PromptType.Click;
                                 rcInvoker = graphicObject;
                             }
                             else
                             {
-                                ePrompt = PromptType.PairedClick;
                                 rcInvoker = tinkerText.gameObject;
                             }
 
@@ -646,6 +643,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     {
                         MoveParams moveParams = JsonUtility.FromJson<MoveParams>(trigger.Params);
                         MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
+                        if (moveParams.reset)
+                        {
+                            moveParams.OnComplete = new TweenCallback(() => pMove.UnPerform(graphicObject.gameObject));
+                        }
                         pMove.Init(moveParams);
                         addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, PromptType.PairedClick, tinkerText.gameObject);
                         if (!addSuccess)

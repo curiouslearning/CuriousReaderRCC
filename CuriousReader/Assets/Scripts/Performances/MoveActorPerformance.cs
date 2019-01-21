@@ -6,10 +6,12 @@
     using UnityEngine.UI;
     using TMPro;
     using DG.Tweening;
+    using CuriousReader.BookBuilder;
 
     public class MoveParams : TweenActorParams
     {
-
+        [ExposeField]
+        public bool reset;
     }
 
     /// <summary>

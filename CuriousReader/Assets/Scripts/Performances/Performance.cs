@@ -23,8 +23,16 @@ namespace CuriousReader.Performance
         protected List<GameObject> InvokerList;
         public virtual void AddInvoker(GameObject i_rcInvoker)
         {
-            if ((InvokerList != null) && !InvokerList.Contains(i_rcInvoker))
+            if (InvokerList != null)
             {
+                if (!InvokerList.Contains(i_rcInvoker))
+                {
+                    InvokerList.Add(i_rcInvoker);
+                }
+            }
+            else
+            {
+                InvokerList = new List<GameObject>();
                 InvokerList.Add(i_rcInvoker);
             }
         }
