@@ -10,8 +10,6 @@
 
     public class MoveParams : TweenActorParams
     {
-        [ExposeField]
-        public bool reset;
     }
 
     /// <summary>

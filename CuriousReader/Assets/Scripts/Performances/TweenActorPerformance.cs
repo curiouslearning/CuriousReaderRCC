@@ -20,6 +20,8 @@ namespace CuriousReader.Performance
         public float speed;
         [ExposeField]
         public TweenCallback OnComplete;
+        [ExposeField]
+        public bool Reset;
 
     }
     /// <summary>

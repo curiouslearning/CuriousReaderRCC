@@ -643,9 +643,9 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     {
                         MoveParams moveParams = JsonUtility.FromJson<MoveParams>(trigger.Params);
                         MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
-                        if (moveParams.reset)
+                        if (moveParams.Reset)
                         {
-                            moveParams.OnComplete = new TweenCallback(() => pMove.UnPerform(graphicObject.gameObject));
+                            moveParams.OnComplete = new TweenCallback(() => pMove.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
                         }
                         pMove.Init(moveParams);
                         addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, PromptType.PairedClick, tinkerText.gameObject);
@@ -656,23 +656,37 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     }
                     break;
                 case TriggerType.Scale:
-                    ScaleParams scaleParams = JsonUtility.FromJson<ScaleParams>(trigger.Params);
-                    ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
-                    pScale.Init(scaleParams);
-                    addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, PromptType.PairedClick, tinkerText.gameObject);
-                    if (!addSuccess)
+                    if (graphicObject != null)
                     {
-                        Debug.LogWarning("Failed to add Scale Tween to " + graphicObject.name + "!");
+                        ScaleParams scaleParams = JsonUtility.FromJson<ScaleParams>(trigger.Params);
+                        ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
+                        if (scaleParams.Reset)
+                        {
+                            scaleParams.OnComplete = new TweenCallback(() => pScale.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
+                        }
+                        pScale.Init(scaleParams);
+                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, PromptType.PairedClick, tinkerText.gameObject);
+                        if (!addSuccess)
+                        {
+                            Debug.LogWarning("Failed to add Scale Tween to " + graphicObject.name + "!");
+                        }
                     }
                     break;
                 case TriggerType.Rotate:
-                    RotateParams rotateParams = JsonUtility.FromJson<RotateParams>(trigger.Params);
-                    RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
-                    pRotate.Init(rotateParams);
-                    addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate, PromptType.PairedClick, tinkerText.gameObject);
-                    if (!addSuccess)
+                    if (graphicObject != null)
                     {
-                        Debug.LogWarning("Failed to add Rotate Tween to " + graphicObject.name + "!");
+                        RotateParams rotateParams = JsonUtility.FromJson<RotateParams>(trigger.Params);
+                        RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
+                        if (rotateParams.Reset)
+                        {
+                            rotateParams.OnComplete = new TweenCallback(() => pRotate.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
+                        }
+                        pRotate.Init(rotateParams);
+                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate, PromptType.PairedClick, tinkerText.gameObject);
+                        if (!addSuccess)
+                        {
+                            Debug.LogWarning("Failed to add Rotate Tween to " + graphicObject.name + "!");
+                        }
                     }
                     break;
                 default: //Legacy triggers, to be removed pending Book Editor changes
