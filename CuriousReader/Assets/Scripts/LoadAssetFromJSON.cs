@@ -567,6 +567,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
             switch (trigger.type)
             {
                 case TriggerType.Navigation:
+                    NavigationParams navParams = JsonUtility.FromJson<NavigationParams>(trigger.Params);
                     if (trigger.DeactivateNextButton)
                     {
                         // Deactivate the right button in the scene.  
@@ -574,17 +575,20 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         setPageTurnRightArrowActive(false);
                     }
 
-                    if (tinkerGraphic != null)
-                    {
-                        int nPageNumber = trigger.NavigationPage;
-
-                        if (ValidatePageNumber(nPageNumber))
+                    if (tinkerGraphic != null && navParams != null)
+                    { 
+                        if (ValidatePageNumber(navParams.pageNumber))
                         {
-                            tinkerGraphic.m_nNavigationPage = nPageNumber;
+                            NavigationPerformance rcPerformance = PerformanceSystem.GetNavigationPerformance(navParams);
+                            addSuccess = PerformanceSystem.AddPerformance(tinkerGraphic.gameObject, rcPerformance, PromptType.Click, tinkerGraphic.gameObject);
+                            if(!addSuccess)
+                            {
+                                Debug.LogError("could not add NavigationPerformance to " + tinkerGraphic.name + "!");
+                            }
                         }
                         else
                         {
-                            Debug.Log("Error: trigger " + i + " pointed to invalid page number " + nPageNumber);
+                            Debug.Log("Error: trigger " + i + " pointed to invalid page number " + navParams.pageNumber);
                         }
                     }
                     break;

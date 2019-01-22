@@ -97,6 +97,13 @@ namespace CuriousReader.Performance
             return rcPerformance;
         }
 
+        public static NavigationPerformance GetNavigationPerformance (NavigationParams i_rcParams)
+        {
+            NavigationPerformance instance = ScriptableObject.CreateInstance<NavigationPerformance>();
+            instance.Init(i_rcParams);
+            return instance;
+        }
+
         /// <summary>
         /// Returns an Instance of the desired TweenActorPerformance, initialized with optional parameters 
         /// </summary>

@@ -31,7 +31,6 @@ public class TriggerClass
     public int timestamp;
     public int sceneObjectId;
 	public int animId;
-    public int typeOfLinking;
     public bool DeactivateNextButton;
     public int NavigationPage;
     public string Params;

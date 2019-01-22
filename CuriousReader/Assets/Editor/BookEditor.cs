@@ -894,18 +894,9 @@ public class BookEditor : EditorWindow
 
             if ( i_rcTrigger.type == TriggerType.Navigation )
             {
-                i_rcTrigger.DeactivateNextButton = EditorGUILayout.ToggleLeft("Deactivate Next", i_rcTrigger.DeactivateNextButton);
-                i_rcTrigger.NavigationPage = EditorGUILayout.IntField("Page Number", i_rcTrigger.NavigationPage, EditorStyles.numberField);
-                string[] gameObjectsDropdownNames;
-
-                FormatGameObjectIDsAndLabels(m_rcStoryBook.pages[i_pageOrdinal].gameObjects, out gameObjectsDropdownNames);
-                EditorGUI.BeginDisabledGroup(gameObjectsDropdownNames.Length == 0);
-                if (gameObjectsDropdownNames.Length == 0) {
-                    i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, 
-                        new string[]{ "No GameObjects have been entered for this page" });
-                } else {
-                    i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId, gameObjectsDropdownNames);
-                }
+                i_rcTrigger.Params = OnBookGUI<NavigationParams>(i_rcTrigger);
+                EditorGUI.BeginDisabledGroup(true);
+                i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
                 EditorGUI.EndDisabledGroup();
             }
             else if (i_rcTrigger.type == TriggerType.Animation)

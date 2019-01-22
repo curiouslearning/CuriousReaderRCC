@@ -52,25 +52,7 @@ public class GTinkerGraphic : MonoBehaviour
         //DataCollection.AddInTouchData (("Graphic_"+dataTinkerGraphic.label),  time.ToString());
         
 		FirebaseHelper.LogInAppTouch(("Graphic_"+dataTinkerGraphic.label) ,  time.ToString());
-
-        if (m_nNavigationPage != -1)
-        {
-            LoadAssetFromJSON rcPageLoader = BookSystem.GetPageLoader();
-
-            if ( rcPageLoader != null )
-            {
-                rcPageLoader.RecordPageHistory();
-                rcPageLoader.LoadPage(m_nNavigationPage, this.gameObject);
-            }
-        }
-
-        PerformanceComponent rcPerformance = GetComponent<PerformanceComponent>();
-
-        if (rcPerformance != null)
-        {
-            rcPerformance.Prompt(gameObject, PromptType.Click);
-        }
-
+        PerformanceSystem.SendPrompt(this.gameObject, this.gameObject, PromptType.Click);
         sceneManager.OnMouseDown (this);
     }
 

@@ -237,6 +237,7 @@ public class GTinkerText : MonoBehaviour {
       		{   
 			//PlaySound();
 		}
+        PerformanceSystem.SendPrompt(null, this.gameObject, PromptType.PairedClick);
 
 		//clipPlay();
 		//iconanimPlay();
