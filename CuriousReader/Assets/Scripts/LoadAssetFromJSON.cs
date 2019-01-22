@@ -568,7 +568,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
             {
                 case TriggerType.Navigation:
                     NavigationParams navParams = JsonUtility.FromJson<NavigationParams>(trigger.Params);
-                    if (trigger.DeactivateNextButton)
+                    if (navParams.deactivateNextButton)
                     {
                         // Deactivate the right button in the scene.  
                         // NOTE: If any single trigger on the page sets this it will deactivate it.

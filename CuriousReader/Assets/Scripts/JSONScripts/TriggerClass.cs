@@ -28,11 +28,9 @@ public class TriggerClass
     public TriggerType type;
     public float timing;
     public int textId;
+    public int animId;
     public int timestamp;
     public int sceneObjectId;
-	public int animId;
-    public bool DeactivateNextButton;
-    public int NavigationPage;
     public string Params;
     [System.NonSerialized] public PropertyField[] EditorFields;
     [System.NonSerialized] public PerformanceParams PerformanceParams;
