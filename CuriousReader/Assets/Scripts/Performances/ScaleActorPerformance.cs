@@ -7,7 +7,6 @@
 
     public class ScaleParams : TweenActorParams
     {
-
     }
     /// <summary>
     /// A performance for modifying the size of an actor

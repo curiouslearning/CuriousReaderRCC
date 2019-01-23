@@ -11,7 +11,7 @@ namespace CuriousReader.Performance
     public class TweenActorParams : PerformanceParams
     {
         [ExposeField]
-        public Vector3 EndValues;
+        public PromptType PromptType;
         [ExposeField]
         protected Vector3 StartValues;
         [ExposeField]
@@ -22,6 +22,8 @@ namespace CuriousReader.Performance
         public TweenCallback OnComplete;
         [ExposeField]
         public bool Reset;
+        [ExposeField]
+        public Vector3 EndValues;
 
     }
     /// <summary>
@@ -31,7 +33,7 @@ namespace CuriousReader.Performance
     {
         public Vector3 EndValues;
         protected Vector3 StartValues;
-        public float duration;
+        public float duration = 1f;
         public float speed;
         public TweenCallback OnComplete;
         public virtual TweenActorPerformance Init(Vector3 i_values, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback))

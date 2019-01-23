@@ -47,7 +47,7 @@ namespace CuriousReader.Performance
         /// <param name="rcActor">The Performing Actor.</param>
         /// <param name="rcPerformance">The desired Performance.</param>
         /// <param name="promptType">The type of input that prompts this performance</param>
-        public static bool AddPerformance(GameObject rcActor, Performance rcPerformance, PromptType promptType, GameObject rcInvoker = null)
+        public static bool AddPerformance(GameObject rcActor, Performance rcPerformance, PromptType promptType = PromptType.PairedClick, GameObject rcInvoker = null)
         {
             PerformanceComponent rcComponent = InitializeComponent(rcActor);
             if (rcPerformance != null)

@@ -8,7 +8,6 @@
 
     public class RotateParams : TweenActorParams
     {
-
     }
     /// <summary>
     /// A performance to rotate or flip an actor

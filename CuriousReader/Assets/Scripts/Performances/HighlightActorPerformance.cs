@@ -11,7 +11,7 @@ namespace CuriousReader.Performance
     public class HighlightParams : TweenActorParams
     {
         [ExposeField]
-        public float ScaleMultiplier;
+        public float ScaleMultiplier = 1.5f;
     }
 
     /// <summary>

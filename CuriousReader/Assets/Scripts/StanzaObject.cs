@@ -42,7 +42,7 @@ public class StanzaObject : MonoBehaviour {
             if (!TweenSystem.IsTweening(rcWord.gameObject))
             { 
                 HighlightTextPerformance autoHighlight = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
-                autoHighlight.Init(Color.yellow, rcWord.playTime/2, i_callback: new TweenCallback(AutoPlayInternal));
+                autoHighlight.Init(Color.yellow, i_duration: rcWord.playTime/2, i_callback: new TweenCallback(AutoPlayInternal));
                 PerformanceSystem.AddPerformance(rcWord.gameObject, autoHighlight, PromptType.AutoPlay);
                 PerformanceSystem.SendPrompt(this.gameObject, rcWord.gameObject, PromptType.AutoPlay);
                 currentWord++;

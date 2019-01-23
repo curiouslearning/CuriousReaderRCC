@@ -370,48 +370,40 @@
                     "type": 8,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
                     "textId": 4,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -532,35 +524,29 @@
                     "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"03_big_bird_flapping\",\"StartPrompt\":1}"
                 },
                 {
@@ -568,11 +554,9 @@
                     "type": 7,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":1}"
                 }
             ]
@@ -814,11 +798,9 @@
                     "type": 7,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"03_big_bird_flapping\",\"StartPrompt\":1}"
                 },
                 {
@@ -826,23 +808,19 @@
                     "type": 9,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0},\"duration\":3.0,\"speed\":0.0,\"reset\":true}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0},\"duration\":3.0,\"speed\":0.0,\"Reset\":true}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"03_big_bird_flapping\",\"StartPrompt\":1}"
                 },
                 {
@@ -850,23 +828,19 @@
                     "type": 9,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0},\"duration\":2.5,\"speed\":0.0,\"reset\":false}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0},\"duration\":2.5,\"speed\":0.0,\"Reset\":false}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
                     "timing": 0.0,
                     "textId": 5,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":1}"
                 },
                 {
@@ -874,11 +848,9 @@
                     "type": 7,
                     "timing": 0.0,
                     "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird_music\",\"StartPrompt\":1}"
                 }
             ]
@@ -938,7 +910,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "05_orange_portion_sun"
+                    ]
                 },
                 {
                     "id": 3,
@@ -986,7 +960,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "05_star_vibrates"
+                    ]
                 },
                 {
                     "id": 3,
@@ -1006,7 +982,10 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "7_between_day_bg_night_bg",
+                        "7_between_night_bg_day_bg"
+                    ]
                 }
             ],
             "texts": [
@@ -1049,51 +1028,43 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 2,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
                     "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"05_orange_portion_sun\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 3,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
                     "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"05_star_vibrates\",\"StartPrompt\":1}"
                 }
             ]
         },
@@ -1245,7 +1216,10 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "7_between_day_bg_night_bg",
+                        "7_between_night_bg_day_bg"
+                    ]
                 }
             ],
             "texts": [
@@ -1305,11 +1279,9 @@
                     "type": 7,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"06_sunlight\",\"StartPrompt\":1}"
                 },
                 {
@@ -1317,11 +1289,9 @@
                     "type": 7,
                     "timing": 0.0,
                     "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"06_star_twinkles\",\"StartPrompt\":1}"
                 },
                 {
@@ -1329,36 +1299,30 @@
                     "type": 8,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
                     "textId": 5,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -1705,35 +1669,29 @@
                     "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": "{\"InvokerList\":[],\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":0.0}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 8,
                     "Params": "{\"InvokerList\":[],\"pageNumber\":8,\"deactivateNextButton\":true}"
                 },
                 {
@@ -1741,11 +1699,9 @@
                     "type": 6,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 14,
                     "Params": "{\"InvokerList\":[],\"pageNumber\":14,\"deactivateNextButton\":true}"
                 }
             ]
@@ -1847,27 +1803,23 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 4,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -1928,7 +1880,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "9_giraffe_stand_up"
+                    ]
                 },
                 {
                     "id": 1,
@@ -2019,15 +1973,13 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"9_giraffe_stand_up\",\"StartPrompt\":1}"
                 }
             ]
         },
@@ -2161,75 +2113,63 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": -1,
                     "timestamp": 2,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": -1,
                     "timestamp": 3,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -2294,7 +2234,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "10_monkeys_playing_passing_the_sticks"
+                    ]
                 },
                 {
                     "id": 1,
@@ -2417,51 +2359,43 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"10_monkeys_playing_passing_the_sticks\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"10_monkeys_playing_passing_the_sticks\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -2664,51 +2598,43 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 14,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"pageNumber\":14,\"deactivateNextButton\":true}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 21,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"pageNumber\":21,\"deactivateNextButton\":true}"
                 }
             ]
         },
@@ -2769,7 +2695,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "13_water_wave"
+                    ]
                 },
                 {
                     "id": 1,
@@ -2859,27 +2787,23 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"13_water_wave\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"13_water_wave\",\"StartPrompt\":2}"
                 }
             ]
         },
@@ -2943,7 +2867,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "14_big_boat_moves_fast"
+                    ]
                 },
                 {
                     "id": 1,
@@ -2997,7 +2923,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "14_small_boat_moves_slowly"
+                    ]
                 },
                 {
                     "id": 2,
@@ -3047,7 +2975,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "13_water_wave"
+                    ]
                 },
                 {
                     "id": 3,
@@ -3117,51 +3047,63 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_big_boat_moves_fast\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_small_boat_moves_slowly\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 2,
                     "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":2.0,\"speed\":0.0,\"Reset\":true,\"EndValues\":{\"x\":-120.0,\"y\":20.0,\"z\":92.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":2.0,\"speed\":0.0,\"Reset\":true,\"EndValues\":{\"x\":-150.0,\"y\":-100.0,\"z\":91.0}}"
                 }
             ]
         },
@@ -3224,7 +3166,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "14_big_boat_moves_fast"
+                    ]
                 },
                 {
                     "id": 1,
@@ -3278,7 +3222,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "14_small_boat_moves_slowly"
+                    ]
                 },
                 {
                     "id": 2,
@@ -3328,7 +3274,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "13_water_wave"
+                    ]
                 },
                 {
                     "id": 3,
@@ -3391,51 +3339,63 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_big_boat_moves_fast\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_small_boat_moves_slowly\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":2.0,\"speed\":0.0,\"Reset\":true,\"EndValues\":{\"x\":-120.0,\"y\":42.0,\"z\":92.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":0.0,\"Reset\":true,\"EndValues\":{\"x\":-120.0,\"y\":-100.0,\"z\":91.0}}"
                 }
             ]
         },
@@ -3496,7 +3456,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "16_the_happy_fish_smiles"
+                    ]
                 },
                 {
                     "id": 1,
@@ -3546,7 +3508,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "16_sad_face_on_the_little_fish"
+                    ]
                 },
                 {
                     "id": 2,
@@ -3629,51 +3593,43 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"16_the_happy_fish_smiles\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"16_sad_face_on_the_little_fish\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -3763,7 +3719,10 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "17_big_octopus_move_flap_legs",
+                        "17_highlight_the_big_octopus"
+                    ]
                 },
                 {
                     "id": 1,
@@ -3842,7 +3801,10 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "17_small_octopus_move_flap_legs",
+                        "17_highlight_the_small_octopus"
+                    ]
                 },
                 {
                     "id": 2,
@@ -3892,7 +3854,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "13_water_wave"
+                    ]
                 },
                 {
                     "id": 3,
@@ -3955,51 +3919,43 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"17_big_octopus_move_flap_legs\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"17_small_octopus_move_flap_legs\",\"StartPrompt\":1}"
                 }
             ]
         },
@@ -4062,7 +4018,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "14_big_boat_moves_fast"
+                    ]
                 },
                 {
                     "id": 1,
@@ -4116,7 +4074,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "14_small_boat_moves_slowly"
+                    ]
                 },
                 {
                     "id": 2,
@@ -4166,7 +4126,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "13_water_wave"
+                    ]
                 },
                 {
                     "id": 3,
@@ -4218,7 +4180,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "17_big_octopus_move_flap_legs"
+                    ]
                 },
                 {
                     "id": 4,
@@ -4270,7 +4234,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "17_small_octopus_move_flap_legs"
+                    ]
                 },
                 {
                     "id": 5,
@@ -4320,7 +4286,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "16_the_happy_fish_smiles"
+                    ]
                 },
                 {
                     "id": 6,
@@ -4370,7 +4338,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "16_sad_face_on_the_little_fish"
+                    ]
                 },
                 {
                     "id": 7,
@@ -4440,27 +4410,83 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
-                    "textId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
+                    "textId": 4,
                     "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"13_water_waves\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_big_boat_moves_fast\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
                     "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_small_boat_moves_slowly\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"13_water_wave\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"17_big_octopus_move_flap_legs\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"17_small_octopus_move_flap_legs\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"16_the_happy_fish_smiles\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"16_sad_face_on_the_little_fish\",\"StartPrompt\":0}"
                 }
             ]
         },
@@ -4567,51 +4593,43 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
                     "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 0,
-                    "timing": 0.0,
-                    "textId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 6,
-                    "timing": 0.0,
-                    "textId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
                     "animId": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 8,
-                    "Params": ""
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
                     "timing": 0.0,
                     "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"pageNumber\":8,\"deactivateNextButton\":true}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 6,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 21,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"pageNumber\":21,\"deactivateNextButton\":true}"
                 }
             ]
         },
@@ -4788,27 +4806,23 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 5,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -4869,7 +4883,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "20_Akili_takes_food_and_eat"
+                    ]
                 },
                 {
                     "id": 1,
@@ -4945,27 +4961,33 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"20_Akili_takes_food_and_eat\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"20_Akili_takes_food_and_eat\",\"StartPrompt\":0}"
                 }
             ]
         },
@@ -5030,7 +5052,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "21_Akili_smiles_and_jumps"
+                    ]
                 },
                 {
                     "id": 1,
@@ -5113,15 +5137,13 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 0,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0,
-                    "Params": ""
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"21_Akili_smiles_and_jumps\",\"StartPrompt\":1}"
                 }
             ]
         },
@@ -5152,7 +5174,10 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "7_between_day_bg_night_bg",
+                        "7_between_night_bg_day_bg"
+                    ]
                 },
                 {
                     "id": 1,

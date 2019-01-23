@@ -296,14 +296,29 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		LoadStanzaAudio();
 		LoadTriggers();
 		LoadAudios();
+        LoadHighlights();
+    }
 
-	}
+    void LoadHighlights()
+    {
+        foreach (GameObject rcText in tinkerTextObjects)
+        {
+            HighlightTextPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
+            GTinkerText rcTinkerText = rcText.GetComponent<GTinkerText>();
+            if (rcTinkerText != null)
+            {
+                float playLen = rcTinkerText.playTime;
+                pHighlight.Init(Color.yellow, i_duration: playLen/2);
+                PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.Click, rcText);
+            }
+        }
+    }
 
-	/// <summary>
-	/// this function creates a sceneManager gameObject, adds the scene specific script to it,fill up all the variales of the sceneManager script
-	/// and finally add that script to the gameManager's sceneManager variable
-	/// </summary>
-	public void LoadSceneSpecificScript()
+    /// <summary>
+    /// this function creates a sceneManager gameObject, adds the scene specific script to it,fill up all the variales of the sceneManager script
+    /// and finally add that script to the gameManager's sceneManager variable
+    /// </summary>
+    public void LoadSceneSpecificScript()
 	{
 		if (!ValidatePageNumber(pageNumber)) {
 			Debug.LogError("Unable to validate page index while attempting to load scene manager script.");
@@ -602,20 +617,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         {
                             GameObject rcInvoker; //what object is allowed to prompt this performance?
                             PromptType ePrompt = animParams.StartPrompt;    //what kind of prompt does this performance listen for?
-                            if (ePrompt.Equals(PromptType.OnPageLoad))
-                            {
-                                rcInvoker = null;
-                            }
-                            else if (ePrompt.Equals(PromptType.Click))
-                            {
-                                ePrompt = PromptType.Click;
-                                rcInvoker = graphicObject;
-                            }
-                            else
-                            {
-                                rcInvoker = tinkerText.gameObject;
-                            }
-
+                            rcInvoker = GetInvoker(ePrompt, graphicObject, tinkerText.gameObject);
                             SpriteAnimationPerformance pSpriteAnim = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, animParams);
                             addSuccess = PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, ePrompt, rcInvoker);
                             if (!addSuccess)
@@ -632,10 +634,11 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 case TriggerType.Highlight:
                     if (graphicObject != null)
                     {
-                        HighlightParams highlightParams = trigger.PerformanceParams as HighlightParams;
+                        HighlightParams highlightParams = JsonUtility.FromJson<HighlightParams>(trigger.Params);
+                        GameObject rcInvoker = GetInvoker(highlightParams.PromptType, graphicObject, tinkerText.gameObject);
                         HighlightActorPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
                         pHighlight.Init(highlightParams);
-                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pHighlight, PromptType.PairedClick, tinkerText.gameObject);
+                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pHighlight, highlightParams.PromptType, rcInvoker);
                         if(!addSuccess)
                         {
                             Debug.LogWarning("Failed to add Highlight to " + graphicObject.name + "!");
@@ -646,13 +649,14 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     if(graphicObject!= null)
                     {
                         MoveParams moveParams = JsonUtility.FromJson<MoveParams>(trigger.Params);
+                        GameObject rcInvoker = GetInvoker(moveParams.PromptType, graphicObject, tinkerText.gameObject);
                         MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
                         if (moveParams.Reset)
                         {
                             moveParams.OnComplete = new TweenCallback(() => pMove.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
                         }
                         pMove.Init(moveParams);
-                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, PromptType.PairedClick, tinkerText.gameObject);
+                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, moveParams.PromptType, rcInvoker);
                         if (!addSuccess)
                         {
                             Debug.LogWarning("Failed to add Move Tween to " + graphicObject.name + "!");
@@ -663,13 +667,14 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     if (graphicObject != null)
                     {
                         ScaleParams scaleParams = JsonUtility.FromJson<ScaleParams>(trigger.Params);
+                        GameObject rcInvoker = GetInvoker(scaleParams.PromptType, graphicObject, tinkerText.gameObject);
                         ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
                         if (scaleParams.Reset)
                         {
                             scaleParams.OnComplete = new TweenCallback(() => pScale.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
                         }
                         pScale.Init(scaleParams);
-                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, PromptType.PairedClick, tinkerText.gameObject);
+                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, scaleParams.PromptType, rcInvoker);
                         if (!addSuccess)
                         {
                             Debug.LogWarning("Failed to add Scale Tween to " + graphicObject.name + "!");
@@ -680,13 +685,14 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     if (graphicObject != null)
                     {
                         RotateParams rotateParams = JsonUtility.FromJson<RotateParams>(trigger.Params);
+                        GameObject rcInvoker = GetInvoker(rotateParams.PromptType, graphicObject, tinkerText.gameObject);
                         RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
                         if (rotateParams.Reset)
                         {
                             rotateParams.OnComplete = new TweenCallback(() => pRotate.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
                         }
                         pRotate.Init(rotateParams);
-                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate, PromptType.PairedClick, tinkerText.gameObject);
+                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate,rotateParams.PromptType, rcInvoker);
                         if (!addSuccess)
                         {
                             Debug.LogWarning("Failed to add Rotate Tween to " + graphicObject.name + "!");
@@ -699,6 +705,19 @@ public class LoadAssetFromJSON : MonoBehaviour {
         }
 	}
 
+
+    GameObject GetInvoker (PromptType type, GameObject i_rcActor, GameObject i_rcPairedActor)
+    {
+        switch (type)
+        {
+            case PromptType.Click:
+                return i_rcActor;
+            case PromptType.PairedClick:
+                return i_rcPairedActor;
+            default:
+                return null;
+        }
+    }
 
     /// <summary>
     /// Loads all the stanzas on the page and set the initial starting position depending on the number of words 
@@ -867,13 +886,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
         //		wordCount++;
 
         //add the animator and script to the word.
-        HighlightTextPerformance performance = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
-        performance.Init(Color.yellow, 2.5f);
-        bool addSuccess = PerformanceSystem.AddPerformance(uiTextObject, performance, PromptType.Click, uiTextObject);
-        if(!addSuccess)
-        {
-            Debug.LogWarning("Could not add text highlight to " + uiTextObject.name);
-        }
         uiTextObject.AddComponent<Animator>().runtimeAnimatorController = Resources.Load("TextAnimations/textzoomcontroller") as RuntimeAnimatorController;
 		GTinkerText tinkerText= uiTextObject.AddComponent<GTinkerText>();
 		tinkerText.stanza = uiTextObject.GetComponentInParent<StanzaObject>();
