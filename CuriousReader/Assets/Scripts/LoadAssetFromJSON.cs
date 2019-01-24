@@ -625,7 +625,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                             }
                             else
                             {
-                                Debug.Log("Successfully added " + pSpriteAnim.AnimationName + "to " + graphicObject.name);
+                                Debug.Log("Successfully added " + pSpriteAnim.AnimationName + " to " + graphicObject.name);
                             }
                         }
                     }
