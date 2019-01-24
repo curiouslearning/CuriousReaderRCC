@@ -15,9 +15,9 @@
     public class RotateActorPerformance : TweenActorPerformance
     {
 
-        public override TweenActorPerformance Init(Vector3 i_values, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback))
+        public override TweenActorPerformance Init(Vector3 i_values, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
         {
-            RotateActorPerformance instance = base.Init(i_values, i_duration, i_speed, i_callback) as RotateActorPerformance;
+            RotateActorPerformance instance = base.Init(i_values, i_duration, i_speed, i_callback, i_yoyo) as RotateActorPerformance;
             return instance;
         }
 
@@ -26,7 +26,7 @@
             if (i_rcActor != null)
             {
                 StartValues = i_rcActor.transform.rotation.eulerAngles;
-                TweenSystem.Rotate(i_rcActor, EndValues, duration, speed, OnComplete);
+                TweenSystem.Rotate(i_rcActor, EndValues, duration, speed, OnComplete, YoYo);
                 return true;
             }
             return false;

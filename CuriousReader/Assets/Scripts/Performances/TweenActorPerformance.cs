@@ -23,6 +23,8 @@ namespace CuriousReader.Performance
         [ExposeField]
         public bool Reset;
         [ExposeField]
+        public bool YoYo;
+        [ExposeField]
         public Vector3 EndValues;
 
     }
@@ -36,7 +38,8 @@ namespace CuriousReader.Performance
         public float duration = 1f;
         public float speed;
         public TweenCallback OnComplete;
-        public virtual TweenActorPerformance Init(Vector3 i_values, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback))
+        public bool YoYo;
+        public virtual TweenActorPerformance Init(Vector3 i_values, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
         {
             TweenActorPerformance instance = this;
             DOTween.Init();
@@ -44,13 +47,14 @@ namespace CuriousReader.Performance
             duration = i_duration;
             speed = i_speed;
             OnComplete = i_callback;
+            YoYo = i_yoyo;
             return instance;
         }
         public TweenActorPerformance Init(TweenActorParams i_rcParams)
         {
             if (i_rcParams != null)
             {
-                return Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.OnComplete);
+                return Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.OnComplete, i_rcParams.YoYo);
             }
             Debug.LogWarningFormat("Performance of Type {0} received Null param object,using default Values", this.GetType());
             return Init(Vector3.zero);
