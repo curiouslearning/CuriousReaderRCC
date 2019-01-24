@@ -50,6 +50,7 @@ namespace CuriousReader.Performance
         {
             if (i_rcActor != null)
             {
+                Debug.Log("Performing with duration: " + duration);
                 startColor = GetActorColor(i_rcActor);
                 startScale = i_rcActor.transform.localScale;
                 //ChangeText(i_rcActor, color);
