@@ -227,6 +227,49 @@ public class LoadAssetFromJSON : MonoBehaviour {
         }
     }
 
+#if UNITY_EDITOR
+
+	string 	m_guiPageIndex = "0";
+	bool	m_pageNavigationEnabledFromGUI = false;
+
+	/// <summary>
+	/// OnGUI is called for rendering and handling GUI events.
+	/// This function can be called multiple times per frame (one call per event).
+	/// </summary>
+	void OnGUI()
+	{	
+		GUI.color = new Color(0.4f, 0.4f, 0.4f, 1f);
+		GUIStyle pageNavigationToggleStyle = new GUIStyle(GUI.skin.toggle);
+		pageNavigationToggleStyle.fontSize = 24;
+		
+		m_pageNavigationEnabledFromGUI = GUI.Toggle(new Rect(20, 22, 140, 60), m_pageNavigationEnabledFromGUI, "PageNav", pageNavigationToggleStyle);
+		if (!m_pageNavigationEnabledFromGUI)
+			return;
+
+		GUI.color = Color.white;
+		GUIStyle pageNavigationGUIStyle = new GUIStyle(GUI.skin.textField);
+		pageNavigationGUIStyle.fontSize = 28;
+		pageNavigationGUIStyle.fontStyle = FontStyle.Bold;
+		pageNavigationGUIStyle.alignment = TextAnchor.MiddleCenter;
+
+		m_guiPageIndex = GUI.TextField(new Rect(150, 20, 60, 40), m_guiPageIndex, pageNavigationGUIStyle);
+		if (string.IsNullOrEmpty(m_guiPageIndex))
+			return;
+
+		int parsedPageIndex = Int32.Parse(m_guiPageIndex);
+		parsedPageIndex = Mathf.Clamp(parsedPageIndex, 0, storyBookJson.pages.Length);
+
+		if (pageNumber != parsedPageIndex) 
+		{
+			if (ValidatePageNumber(parsedPageIndex)) 
+			{
+				LoadPage(parsedPageIndex);
+			}
+		}
+	}
+
+#endif
+
     /// <summary>
     /// Loads the next page on "next" arrow/button click.
     /// </summary>
