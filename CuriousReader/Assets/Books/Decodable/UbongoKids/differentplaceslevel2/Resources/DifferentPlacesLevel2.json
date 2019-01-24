@@ -200,44 +200,48 @@
                     "Animations": []
                 },
                 {
-                    "id": 1,
+                    "id": 3,
                     "tag": "",
-                    "posX": -120.0,
-                    "posY": -11.0,
-                    "posZ": 91.0,
-                    "scaleX": 275.0,
-                    "scaleY": 275.0,
+                    "posX": -125.0,
+                    "posY": -40.0,
+                    "posZ": 0.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "2_small_fluffy_cloud-1",
+                    "imageName": "2_clouds_move_up_and_down-1",
                     "inText": false,
-                    "label": "bigcloud",
+                    "label": "Cloud0",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "2_clouds_move_up_and_down"
+                    ]
                 },
                 {
-                    "id": 2,
+                    "id": 4,
                     "tag": "",
-                    "posX": 156.60000610351563,
-                    "posY": -29.100000381469728,
-                    "posZ": 91.0,
-                    "scaleX": 125.0,
-                    "scaleY": 125.0,
+                    "posX": 150.0,
+                    "posY": -10.0,
+                    "posZ": 0.0,
+                    "scaleX": 450.0,
+                    "scaleY": 450.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "2_small_fluffy_cloud-1",
+                    "imageName": "2_clouds_move_up_and_down-1",
                     "inText": false,
-                    "label": "smallcloud",
+                    "label": "Cloud1",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "2_clouds_move_up_and_down"
+                    ]
                 }
             ],
             "texts": [
@@ -303,7 +307,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
@@ -313,7 +317,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
@@ -323,7 +327,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },

@@ -74,9 +74,6 @@ namespace Elendow.SpritedowAnimator
             // Why an animator without animation?
             if (animations == null || animations.Count == 0)
             {
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
-                Debug.LogError("Sprite animator without animations.", gameObject);
-#endif
                 enabled = false;
                 return;
             }

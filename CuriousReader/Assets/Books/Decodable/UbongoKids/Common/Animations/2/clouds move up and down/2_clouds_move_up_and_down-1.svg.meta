@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: eb6f77259b26fa24bbb3d373d6eac65f
+guid: 585f7d0819738b449a9343becee94adf
 ScriptedImporter:
   fileIDToRecycleName:
-    100002: gameObject/2_clouds_move_up_and_down-1
-    400002: gameObject/2_clouds_move_up_and_down-1/Transform
-    21200002: gameObject/2_clouds_move_up_and_down-1/SpriteRenderer
+    100000: gameObject/2_clouds_move_up_and_down-1
+    400000: gameObject/2_clouds_move_up_and_down-1/Transform
+    21200000: gameObject/2_clouds_move_up_and_down-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -16,7 +16,7 @@ ScriptedImporter:
   texturedSpriteMeshType: 0
   svgPixelsPerUnit: 100
   gradientResolution: 128
-  alignment: 0
+  alignment: 10
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
   preserveViewport: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 5f5ca8c8566d948418c20a9e885cf295
+      spriteID: 71ab5ea8a151f674599f9838876f7e02
     PhysicsOutlines: []
