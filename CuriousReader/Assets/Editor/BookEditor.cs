@@ -1729,25 +1729,35 @@ public class BookEditor : EditorWindow
 
 #if UNITY_EDITOR_OSX
         string strFile = i_strPath + "/" + i_strFile + ".asset";
-        AssetDatabase.CreateAsset(asset, i_strFile + ".asset");
+
+        if ( !File.Exists(strFile) )
+        {
+            AssetDatabase.CreateAsset(asset, i_strFile + ".asset");
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            AssetImporter importer = AssetImporter.GetAtPath(i_strFile + ".asset");
+            importer.SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+        }
+        else
+        {
+            Debug.Log(strFile + " exists.  Skipping animation.");
+        }
 #endif
 
 #if UNITY_EDITOR_WIN
         string strFile = i_strPath + "\\" + i_strFile + ".asset";
-        AssetDatabase.CreateAsset(asset, strFile);
-#endif
 
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
-
-
-#if UNITY_EDITOR_OSX
-        AssetImporter importer = AssetImporter.GetAtPath(i_strFile + ".asset");
-        importer.SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
-#endif
-
-#if UNITY_EDITOR_WIN
-        AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+        if (!File.Exists(strFile))
+        {
+            AssetDatabase.CreateAsset(asset, strFile);
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+        }
+        else
+        {
+            Debug.Log(strFile + " exists.  Skipping animation.");
+        }
 #endif
     }
 

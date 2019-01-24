@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: 16_big_boat_moves_fast
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 21300000, guid: 7933783360ca1bd4eb9f4ba797834824, type: 3}
+  - {fileID: 21300000, guid: 8c41da713ae381749979405979913459, type: 3}
+  - {fileID: 21300000, guid: c4a99e5f80c54bd46ac2a338457e3418, type: 3}
+  - {fileID: 21300000, guid: 6b886f6923a07654c9754d0ef046d980, type: 3}
+  framesDuration: 07000000070000000700000007000000
