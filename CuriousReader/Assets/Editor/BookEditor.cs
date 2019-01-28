@@ -1822,3 +1822,24 @@ public class OpenBookEditor
         }
     }
 }
+
+[CanEditMultipleObjects, CustomEditor(typeof(Transform))]
+public class TransformEditor2D : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        Transform transform = (Transform)target;
+        
+        Vector3 position = EditorGUILayout.Vector3Field("Local Pos", transform.localPosition);
+        Vector3 rotation = EditorGUILayout.Vector3Field("Local Rot", transform.localRotation.eulerAngles);
+        Vector3 scale = EditorGUILayout.Vector2Field("Scale", transform.localScale);
+
+        if (GUI.changed)
+        {
+            Undo.RecordObject(transform, "Transform Changed");
+            transform.localPosition = position;
+            transform.localEulerAngles = rotation;
+            transform.localScale = scale;
+        }
+    }
+}
