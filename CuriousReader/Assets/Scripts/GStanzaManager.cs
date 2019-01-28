@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using CuriousReader.Performance;
 
 public class GStanzaManager : MonoBehaviour {
 
@@ -43,7 +44,6 @@ public class GStanzaManager : MonoBehaviour {
 		while (wordIndex < timeStamps.Length)
 		{
 			stanzas[stanzaIndex].tinkerTexts[relativeWordIndex].SetupWordTiming(timeStamps[wordIndex]);
-
 			wordIndex++;
 			relativeWordIndex++;
 
