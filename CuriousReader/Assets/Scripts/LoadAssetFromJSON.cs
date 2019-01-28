@@ -227,6 +227,76 @@ public class LoadAssetFromJSON : MonoBehaviour {
         }
     }
 
+#if UNITY_EDITOR
+
+	string 	m_guiPageIndex = "0";
+	string	m_bookJsonPath = "Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel2.json";
+	bool	m_pageNavigationEnabledFromGUI = false;
+
+	void OnGUI()
+	{	
+		GUIStyle savePageButtonStyle = new GUIStyle(GUI.skin.button);
+		savePageButtonStyle.fontSize = 24;
+
+
+		if (GUI.Button(new Rect(220, 20, 180, 39), "Save Changes", savePageButtonStyle))
+		{
+			GTinkerGraphic[] sceneObjects = FindObjectsOfType<GTinkerGraphic>();
+
+			foreach (GTinkerGraphic graphicObject in sceneObjects) 
+			{
+				graphicObject.dataTinkerGraphic.posX = graphicObject.transform.position.x;
+				graphicObject.dataTinkerGraphic.posY = graphicObject.transform.position.y;
+				graphicObject.dataTinkerGraphic.posZ = graphicObject.transform.position.z;
+
+				graphicObject.dataTinkerGraphic.rotX = graphicObject.transform.localRotation.eulerAngles.x;
+				graphicObject.dataTinkerGraphic.rotY = graphicObject.transform.localRotation.eulerAngles.y;
+				graphicObject.dataTinkerGraphic.rotZ = graphicObject.transform.localRotation.eulerAngles.z;
+
+				graphicObject.dataTinkerGraphic.scaleX = graphicObject.transform.localScale.x;
+				graphicObject.dataTinkerGraphic.scaleY = graphicObject.transform.localScale.y;
+
+				SpriteRenderer objectSpriteRenderer = graphicObject.GetComponent<SpriteRenderer>();
+				if (objectSpriteRenderer != null)
+					graphicObject.dataTinkerGraphic.orderInLayer = objectSpriteRenderer.sortingOrder;
+			}
+			
+			File.WriteAllText(m_bookJsonPath, JsonUtility.ToJson(storyBookJson, true));
+			UnityEditor.AssetDatabase.Refresh(UnityEditor.ImportAssetOptions.ForceSynchronousImport);
+		}
+
+		GUI.color = new Color(0.4f, 0.4f, 0.4f, 1f);
+		GUIStyle pageNavigationToggleStyle = new GUIStyle(GUI.skin.toggle);
+		pageNavigationToggleStyle.fontSize = 24;
+
+ 		m_pageNavigationEnabledFromGUI = GUI.Toggle(new Rect(20, 22, 140, 60), m_pageNavigationEnabledFromGUI, "PageNav", pageNavigationToggleStyle);
+		if (!m_pageNavigationEnabledFromGUI)
+			return;
+
+ 		GUI.color = Color.white;
+		GUIStyle pageNavigationGUIStyle = new GUIStyle(GUI.skin.textField);
+		pageNavigationGUIStyle.fontSize = 28;
+		pageNavigationGUIStyle.fontStyle = FontStyle.Bold;
+		pageNavigationGUIStyle.alignment = TextAnchor.MiddleCenter;
+
+ 		m_guiPageIndex = GUI.TextField(new Rect(150, 20, 60, 40), m_guiPageIndex, pageNavigationGUIStyle);
+		if (string.IsNullOrEmpty(m_guiPageIndex))
+			return;
+
+ 		int parsedPageIndex = Int32.Parse(m_guiPageIndex);
+		parsedPageIndex = Mathf.Clamp(parsedPageIndex, 0, storyBookJson.pages.Length);
+
+ 		if (pageNumber != parsedPageIndex) 
+		{
+			if (ValidatePageNumber(parsedPageIndex)) 
+			{
+				LoadPage(parsedPageIndex);
+			}
+		}
+	}
+
+#endif
+
     /// <summary>
     /// Loads the next page on "next" arrow/button click.
     /// </summary>
