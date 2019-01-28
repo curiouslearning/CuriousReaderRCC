@@ -18,9 +18,9 @@
     public class MoveActorPerformance : TweenActorPerformance
     {
 
-        public override TweenActorPerformance Init(Vector3 i_endPos, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback))
+        public override TweenActorPerformance Init(Vector3 i_endPos, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
         {
-            MoveActorPerformance instance = base.Init(i_endPos, i_duration, i_speed, i_callback) as MoveActorPerformance;
+            MoveActorPerformance instance = base.Init(i_endPos, i_duration, i_speed, i_callback, i_yoyo) as MoveActorPerformance;
             return instance;
         }
 
@@ -30,7 +30,7 @@
             if (i_rcActor != null)
             {
                 StartValues = i_rcActor.transform.position;
-                TweenSystem.Move(i_rcActor, EndValues, duration, speed, OnComplete);
+                TweenSystem.Move(i_rcActor, EndValues, duration, speed, OnComplete, YoYo);
                 return true;
             }
             return false;

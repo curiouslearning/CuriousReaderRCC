@@ -96,6 +96,7 @@ public class BookEditor : EditorWindow
                     m_strImagePath = m_strCommonPath + "/Images";
 #endif
                     m_strAnimPath = m_strAnimPath.Replace(strAssetPath, "").TrimStart('/');
+                    m_strImagePath = m_strImagePath.Replace(strAssetPath, "").TrimStart('/');
 
                     // Allocate each of the audio tracks for each of the pages
                     // NOTE: We might need to do this for sub-audio?  Maybe?
@@ -362,9 +363,20 @@ public class BookEditor : EditorWindow
 
         if (GUILayout.Button("Add Images To AssetBundle", GUILayout.Height(24)))
         {
+#if UNITY_EDITOR_WIN
+            Debug.Log("m_strAssetPath: " + m_strAssetPath);
+            Debug.Log("m_strImagePath: " + m_strImagePath);
             Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
             AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+            Debug.Log(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
             AddImagesInPath(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+#endif
+#if UNITY_EDITOR_OSX            
+            Debug.Log(m_strAnimPath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets/"));
+            AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets"));
+            Debug.Log(m_strImagePath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets/"));
+            AddImagesInPath(m_strImagePath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets/"));
+#endif
         }
 
         if (GUILayout.Button("Create Animations", GUILayout.Height(24)))
@@ -390,7 +402,7 @@ public class BookEditor : EditorWindow
 
         GUILayout.Space(4);
 
-        #endregion
+#endregion
     
     }
 
@@ -432,7 +444,7 @@ public class BookEditor : EditorWindow
     private void EditPage(PageClass i_rcPage, int i_nOrdinal)
     {
 
-        #region Page Data
+#region Page Data
 
         EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 
@@ -454,9 +466,9 @@ public class BookEditor : EditorWindow
 
         EditorGUILayout.EndVertical();
         
-        #endregion
+#endregion
 
-        #region Page Text
+#region Page Text
         
         EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 
@@ -504,9 +516,9 @@ public class BookEditor : EditorWindow
 
         EditorGUILayout.EndVertical();
         
-        #endregion
+#endregion
 
-        #region Page Audio
+#region Page Audio
         
         EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 
@@ -591,9 +603,9 @@ public class BookEditor : EditorWindow
 
         EditorGUILayout.EndVertical();
         
-        #endregion
+#endregion
 
-        #region Audio Timestamps
+#region Audio Timestamps
         
         EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 
@@ -644,9 +656,9 @@ public class BookEditor : EditorWindow
 
         EditorGUILayout.EndVertical();
         
-        #endregion
+#endregion
 
-        #region Page Objects
+#region Page Objects
         
         EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 
@@ -694,9 +706,9 @@ public class BookEditor : EditorWindow
 
         EditorGUILayout.EndVertical();
         
-        #endregion
+#endregion
 
-        #region Page Triggers
+#region Page Triggers
         
         EditorGUILayout.BeginVertical(EditorStyles.helpBox);
 
@@ -742,7 +754,7 @@ public class BookEditor : EditorWindow
 
         EditorGUILayout.EndVertical();
         
-        #endregion
+#endregion
 
     }
 
@@ -1656,7 +1668,8 @@ public class BookEditor : EditorWindow
         {
             foreach (string strFile in Directory.GetFiles(i_strPath, strType))
             {
-                AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant("differentplaces", "");
+                AssetImporter a = AssetImporter.GetAtPath(strFile);
+                a.SetAssetBundleNameAndVariant("differentplaces", "");
             }
         }
     }
@@ -1729,25 +1742,35 @@ public class BookEditor : EditorWindow
 
 #if UNITY_EDITOR_OSX
         string strFile = i_strPath + "/" + i_strFile + ".asset";
-        AssetDatabase.CreateAsset(asset, i_strFile + ".asset");
+
+        if ( !File.Exists(strFile) )
+        {
+            AssetDatabase.CreateAsset(asset, i_strFile + ".asset");
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            AssetImporter importer = AssetImporter.GetAtPath(i_strFile + ".asset");
+            importer.SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+        }
+        else
+        {
+            Debug.Log(strFile + " exists.  Skipping animation.");
+        }
 #endif
 
 #if UNITY_EDITOR_WIN
         string strFile = i_strPath + "\\" + i_strFile + ".asset";
-        AssetDatabase.CreateAsset(asset, strFile);
-#endif
 
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
-
-
-#if UNITY_EDITOR_OSX
-        AssetImporter importer = AssetImporter.GetAtPath(i_strFile + ".asset");
-        importer.SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
-#endif
-
-#if UNITY_EDITOR_WIN
-        AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+        if (!File.Exists(strFile))
+        {
+            AssetDatabase.CreateAsset(asset, strFile);
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+            AssetImporter.GetAtPath(strFile).SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+        }
+        else
+        {
+            Debug.Log(strFile + " exists.  Skipping animation.");
+        }
 #endif
     }
 

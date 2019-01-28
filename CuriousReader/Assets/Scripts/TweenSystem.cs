@@ -45,7 +45,7 @@ namespace CuriousReader.Performance
         /// <param name="i_endValues">The Target Position</param>
         /// <param name="i_duration">The Duration of the tween.</param>
         /// <param name="i_speed">[OPTIONAL] the speed of the tween (overrides duration)</param>
-        public static void Move(GameObject i_rcActor, Vector3 i_endValues, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback))
+        public static void Move(GameObject i_rcActor, Vector3 i_endValues, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback), bool i_yoyo = false)
         {
             if (!ValidateArgs(i_rcActor, i_endValues))
             {
@@ -67,6 +67,10 @@ namespace CuriousReader.Performance
                 {
                     tween.OnComplete(i_callBack);
                 }
+                if(i_yoyo)
+                {
+                    tween.SetLoops(2, LoopType.Yoyo);
+                }
                 tween.SetId(i_rcActor);
                 tween.Play();
             }
@@ -80,7 +84,7 @@ namespace CuriousReader.Performance
         /// <param name="i_endValues">the scale to tween to.</param>
         /// <param name="i_duration">the duration of the tween.</param>
         /// <param name="i_speed">[OPTIONAL] the speed of the tween (overrides duration).</param>
-        public static void Scale(GameObject i_rcActor, Vector3 i_endValues, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback))
+        public static void Scale(GameObject i_rcActor, Vector3 i_endValues, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback), bool i_yoyo = false)
         {
             if (!ValidateArgs(i_rcActor, i_endValues))
             {
@@ -99,6 +103,10 @@ namespace CuriousReader.Performance
             if (i_callBack != null)
             {
                 tween.OnComplete(i_callBack);
+            }
+            if (i_yoyo)
+            {
+                tween.SetLoops(2, LoopType.Yoyo);
             }
             tween.SetId(i_rcActor);
             tween.Play();
@@ -132,12 +140,13 @@ namespace CuriousReader.Performance
             {
                 tween.OnComplete(i_callBack);
             }
+
             tween.SetId(i_rcActor);
             tween.Play();
 
         }
 
-        public static void HighlightText(GameObject i_rcActor, Color i_color, float i_scaleMultiplier = 1.5f, float i_delay = 0, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback))
+        public static void HighlightText(GameObject i_rcActor, Color i_color, float i_scaleMultiplier = 1.5f, float i_delay = 0, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback), bool i_yoyo = false)
         {
             if (!ValidateArgs(i_rcActor, i_scaleMultiplier))
             {
@@ -185,7 +194,7 @@ namespace CuriousReader.Performance
         /// <param name="i_endValues">the set of Euler angles to tween to.</param>
         /// <param name="i_duration">the duration of the tween.</param>
         /// <param name="i_speed">[OPTIONAL] the speed of the tween (overrides duration).</param>
-        public static void Rotate(GameObject i_rcActor, Vector3 i_endValues, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback))
+        public static void Rotate(GameObject i_rcActor, Vector3 i_endValues, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback), bool i_yoyo = false)
         {
             if (!ValidateArgs(i_rcActor, i_endValues))
             {
@@ -204,6 +213,10 @@ namespace CuriousReader.Performance
             if (i_callBack != null)
             {
                 tween.OnComplete(i_callBack);
+            }
+            if (i_yoyo)
+            {
+                tween.SetLoops(2, LoopType.Yoyo);
             }
             tween.SetId(i_rcActor);
             tween.Play();

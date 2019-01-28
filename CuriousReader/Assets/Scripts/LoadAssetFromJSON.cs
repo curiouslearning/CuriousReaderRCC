@@ -339,21 +339,17 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		LoadStanzaAudio();
 		LoadTriggers();
 		LoadAudios();
-        LoadHighlights();
+        LoadTextHighlights();
     }
 
-    void LoadHighlights()
+    void LoadTextHighlights()
     {
         foreach (GameObject rcText in tinkerTextObjects)
         {
             HighlightTextPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
-            GTinkerText rcTinkerText = rcText.GetComponent<GTinkerText>();
-            if (rcTinkerText != null)
-            {
-                float playLen = rcTinkerText.playTime;
-                pHighlight.Init(Color.yellow, i_duration: playLen/2);
-                PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.Click, rcText);
-            }
+            pHighlight.Init(Color.yellow);
+            PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.Click, rcText);
+
         }
     }
 
@@ -470,8 +466,11 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			// Unity's AudioSource.Play() method.
 			// TODO: fix it in GTinkerText class
 			AudioSource textAudioSource = tinkerTextObjects[i].AddComponent<AudioSource>();
-			if (!string.IsNullOrEmpty(timestampAudio))
-				textAudioSource.clip = LoadAudioAsset(timeStamps[i].audio);
+            if (!string.IsNullOrEmpty(timestampAudio))
+            {
+                textAudioSource.clip = LoadAudioAsset(timeStamps[i].audio);
+            }
+
 		}
 	}
 
@@ -669,7 +668,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                             }
                             else
                             {
-                                Debug.Log("Successfully added " + pSpriteAnim.AnimationName + "to " + graphicObject.name);
+                                Debug.Log("Successfully added " + pSpriteAnim.AnimationName + " to " + graphicObject.name);
                             }
                         }
                     }
@@ -990,10 +989,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     }
 #endif
 
-        }
-        else
-        {
-            go = new GameObject(gameObjectData.label);
         }
 
         if ( gameObjectData.Animations != null )
