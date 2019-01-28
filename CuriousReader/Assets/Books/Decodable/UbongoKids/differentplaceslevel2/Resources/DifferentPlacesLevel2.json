@@ -54,7 +54,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "1_stars-1",
+                    "imageName": "1_many_stars-1",
                     "inText": false,
                     "label": "Stars",
                     "destroyOnCollision": "",
@@ -68,13 +68,13 @@
                     "posX": -156.0,
                     "posY": -10.0,
                     "posZ": 0.0,
-                    "scaleX": 190.0,
-                    "scaleY": 190.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "1_cloud-1",
+                    "imageName": "2_clouds_move_up_and_down-1",
                     "inText": false,
                     "label": "Cloud0",
                     "destroyOnCollision": "",
@@ -88,13 +88,13 @@
                     "posX": 120.0,
                     "posY": 0.0,
                     "posZ": 95.0,
-                    "scaleX": 170.0,
-                    "scaleY": 170.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "1_cloud-1",
+                    "imageName": "2_clouds_move_up_and_down-1",
                     "inText": false,
                     "label": "Cloud1",
                     "destroyOnCollision": "",
@@ -217,9 +217,7 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "2_clouds_move_up_and_down"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 4,
@@ -239,9 +237,7 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "2_clouds_move_up_and_down"
-                    ]
+                    "Animations": []
                 }
             ],
             "texts": [
@@ -401,7 +397,7 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "04_a_small_singing_bird"
+                        "03_a_small_bird_flapping"
                     ]
                 }
             ],
@@ -451,7 +447,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
@@ -461,7 +457,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
@@ -481,7 +477,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":1}"
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"03_a_small_bird_flapping\",\"StartPrompt\":1}"
                 }
             ]
         },
@@ -497,8 +493,8 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 900.0,
-                    "posY": 0.0,
+                    "posX": 540.0,
+                    "posY": 45.0,
                     "posZ": 105.0,
                     "scaleX": 100.0,
                     "scaleY": 100.0,
@@ -735,7 +731,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0},\"duration\":3.0,\"speed\":0.0,\"Reset\":true}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -755,7 +751,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0},\"duration\":2.5,\"speed\":0.0,\"Reset\":false}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":2.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -776,6 +772,26 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird_music\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":75.0,\"y\":120.0,\"z\":0.0}}"
                 }
             ]
         },
@@ -841,7 +857,7 @@
                 {
                     "id": 3,
                     "tag": "night",
-                    "posX": 46.0,
+                    "posX": 136.0,
                     "posY": 2.0,
                     "posZ": 91.0,
                     "scaleX": 50.0,
@@ -1144,6 +1160,28 @@
                         "7_between_day_bg_night_bg",
                         "7_between_night_bg_day_bg"
                     ]
+                },
+                {
+                    "id": 4,
+                    "tag": "night",
+                    "posX": 120.0,
+                    "posY": 0.0,
+                    "posZ": 92.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "06_twinkles_line-1",
+                    "inText": false,
+                    "label": "Lines",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "06_twinkles_line"
+                    ]
                 }
             ],
             "texts": [
@@ -1247,6 +1285,16 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"06_twinkles_line\",\"StartPrompt\":1}"
                 }
             ]
         },

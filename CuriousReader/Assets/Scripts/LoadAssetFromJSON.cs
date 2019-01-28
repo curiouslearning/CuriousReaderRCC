@@ -948,10 +948,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 #endif
 
         }
-        else
-        {
-            go = new GameObject(gameObjectData.label);
-        }
 
         if ( gameObjectData.Animations != null )
         {

@@ -15,4 +15,15 @@ MonoBehaviour:
   frames:
   - {fileID: 21300000, guid: 7d47ecb235a5bc14fb5ec8a765d2a3d6, type: 3}
   - {fileID: 21300000, guid: 2069ba375c60e81479fa2fb964d4248d, type: 3}
-  framesDuration: 0f0000000f000000
+  - {fileID: 21300000, guid: 7d47ecb235a5bc14fb5ec8a765d2a3d6, type: 3}
+  - {fileID: 21300000, guid: 2069ba375c60e81479fa2fb964d4248d, type: 3}
+  - {fileID: 21300000, guid: 7d47ecb235a5bc14fb5ec8a765d2a3d6, type: 3}
+  - {fileID: 21300000, guid: 2069ba375c60e81479fa2fb964d4248d, type: 3}
+  - {fileID: 21300000, guid: 7d47ecb235a5bc14fb5ec8a765d2a3d6, type: 3}
+  - {fileID: 21300000, guid: 2069ba375c60e81479fa2fb964d4248d, type: 3}
+  - {fileID: 21300000, guid: 7d47ecb235a5bc14fb5ec8a765d2a3d6, type: 3}
+  - {fileID: 21300000, guid: 2069ba375c60e81479fa2fb964d4248d, type: 3}
+  - {fileID: 21300000, guid: 7d47ecb235a5bc14fb5ec8a765d2a3d6, type: 3}
+  - {fileID: 21300000, guid: 2069ba375c60e81479fa2fb964d4248d, type: 3}
+  - {fileID: 21300000, guid: 7d47ecb235a5bc14fb5ec8a765d2a3d6, type: 3}
+  framesDuration: 05000000050000000500000005000000050000000500000005000000050000000500000005000000050000000500000005000000

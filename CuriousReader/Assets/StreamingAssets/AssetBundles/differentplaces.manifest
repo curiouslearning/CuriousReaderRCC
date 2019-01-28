@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4152446429
+CRC: 75633019
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 196274b4a87c1b3a49f55617b16c99e3
+    Hash: add0bd9351f0f7f8494cec3c3de06a75
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4583ce2b0311bd8e6486ec49141039c5
@@ -165,6 +165,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/Common/Images/5/5_orange_portion_sun-1.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-3.svg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/4/music_note/04_a_small_singing_bird_music-2.svg
+- Assets/Books/Decodable/UbongoKids/Common/Images/1/1_many_stars-1.svg
 - Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Audio/sound_i.ogg
 - Assets/Books/Decodable/UbongoKids/Common/Animations/7/blinking eye big (night)/7_blinking_eye_big.asset
 - Assets/Books/Decodable/UbongoKids/Common/Animations/3/big_bird_flapping/03_big_bird_flapping-2.svg
