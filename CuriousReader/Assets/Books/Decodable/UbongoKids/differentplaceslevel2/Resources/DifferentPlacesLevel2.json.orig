@@ -68,8 +68,13 @@
                     "posX": -156.0,
                     "posY": -10.0,
                     "posZ": 0.0,
+<<<<<<< HEAD
                     "scaleX": 800.0,
                     "scaleY": 800.0,
+=======
+                    "scaleX": 190.0,
+                    "scaleY": 190.0,
+>>>>>>> origin/eric_SMDP_layouts
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -88,8 +93,13 @@
                     "posX": 120.0,
                     "posY": 0.0,
                     "posZ": 95.0,
+<<<<<<< HEAD
                     "scaleX": 800.0,
                     "scaleY": 800.0,
+=======
+                    "scaleX": 170.0,
+                    "scaleY": 170.0,
+>>>>>>> origin/eric_SMDP_layouts
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -222,11 +232,19 @@
                 {
                     "id": 4,
                     "tag": "",
+<<<<<<< HEAD
                     "posX": 150.0,
                     "posY": -10.0,
                     "posZ": 0.0,
                     "scaleX": 450.0,
                     "scaleY": 450.0,
+=======
+                    "posX": 156.60000610351563,
+                    "posY": -29.100000381469728,
+                    "posZ": 91.0,
+                    "scaleX": 125.0,
+                    "scaleY": 125.0,
+>>>>>>> origin/eric_SMDP_layouts
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,

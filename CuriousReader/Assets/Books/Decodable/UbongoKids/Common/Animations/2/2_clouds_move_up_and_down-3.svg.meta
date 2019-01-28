@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: b8f0b0c87b58da64d99415956fa9cb81
+guid: 9cdd080c4937a1644846847343c26f5a
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/10_short_and_tall_tree-1
-    400000: gameObject/10_short_and_tall_tree-1/Transform
-    21200000: gameObject/10_short_and_tall_tree-1/SpriteRenderer
+    100000: gameObject/2_clouds_move_up_and_down-3
+    400000: gameObject/2_clouds_move_up_and_down-3/Transform
+    21200000: gameObject/2_clouds_move_up_and_down-3/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: differentplaces
+  assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: f04da47071e98b345b5e306705631a46
+      spriteID: 8c2ca73b2178f41428c76d1df24bbafa
     PhysicsOutlines: []
