@@ -47,5 +47,17 @@ public static class BookSystem
         }
     }
 
+    public static void Darken(GameObject i_rcObject, float i_fTime, float i_fValue)
+    {
+        if (i_rcObject != null)
+        {
+            SpriteRenderer rcRenderer = i_rcObject.GetComponent<SpriteRenderer>();
+
+            if (rcRenderer != null)
+            {
+                rcRenderer.material.DOColor(new Color(i_fValue,i_fValue,i_fValue, 1.0f), i_fTime);
+            }
+        }
+    }
 
 }
