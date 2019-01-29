@@ -13,8 +13,9 @@ public class DayAndNightManager: GSManager
     private bool m_bIsDay = true;
 
     GameObject m_rcSky;
-    List<GameObject> m_racDayGroup = new List<GameObject>();
-    List<GameObject> m_racNightGroup = new List<GameObject>();
+    List<GameObject> m_racDayGroup = new List<GameObject>();        // Items not visible during the night
+    List<GameObject> m_racNightGroup = new List<GameObject>();      // Items not visible during the day
+    List<GameObject> m_racTransitionGroup = new List<GameObject>(); // Items that need to darken and lighten
 
     public override void Start()
     {
@@ -25,11 +26,11 @@ public class DayAndNightManager: GSManager
         {
             if (rcGameObject.activeInHierarchy)
             {
-                if (rcGameObject.tag.Contains("day"))
+                if (rcGameObject.name.Contains("day"))
                 {
                     m_racDayGroup.Add(rcGameObject);
                 }
-                else if ( rcGameObject.tag.Contains("night"))
+                else if ( rcGameObject.name.Contains("night"))
                 {
                     m_racNightGroup.Add(rcGameObject);
 
@@ -40,6 +41,11 @@ public class DayAndNightManager: GSManager
                     {
                         rcSpriteRenderer.material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     }
+                }
+
+                if ( rcGameObject.name.Contains("transition"))
+                {
+                    m_racTransitionGroup.Add(rcGameObject);
                 }
             }
         }
@@ -80,7 +86,6 @@ public class DayAndNightManager: GSManager
 
             if (rcAnimator != null)
             {
-                
                 if ( IsWordInArray( m_rastrDayWords, go.name ) )
                 {
                     // If it's day already and they click day don't do anything
@@ -97,6 +102,10 @@ public class DayAndNightManager: GSManager
                         foreach (GameObject rcObject in m_racNightGroup)
                         {
                             BookSystem.FadeOut(rcObject, 4.0f);
+                        }
+                        foreach (GameObject rcObject in m_racTransitionGroup)
+                        {
+                            BookSystem.Darken(rcObject, 4.0f, 1.0f);
                         }
 
                     }
@@ -118,8 +127,15 @@ public class DayAndNightManager: GSManager
                         {
                             BookSystem.FadeIn(rcObject, 4.0f);
                         }
+                        foreach (GameObject rcObject in m_racTransitionGroup)
+                        {
+                            BookSystem.Darken(rcObject, 4.0f, 0.3f);
+                        }
+
+
                     }
                 }
+
             }
         }
 

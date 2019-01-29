@@ -40,16 +40,16 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: 04_a_small_singing_bird_04Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5003475, y: 0.4999864}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 95
+        height: 100
       spriteID: d0a8938e7d380704f990545405c398b3
     PhysicsOutlines: []
