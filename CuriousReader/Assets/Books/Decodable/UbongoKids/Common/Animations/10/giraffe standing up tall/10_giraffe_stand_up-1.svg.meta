@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9895a0dbd564f8843b65ae7b512487e1
+guid: 431d6458dc7e742e185b3ae8cec0c3f4
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/10_giraffe_stand_up-1
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 7b6d4dd99b7fa204987fd3c11aa9e48b
+      spriteID: 177ba45b5969c4fa1b2181315cf34e3d
     PhysicsOutlines: []
