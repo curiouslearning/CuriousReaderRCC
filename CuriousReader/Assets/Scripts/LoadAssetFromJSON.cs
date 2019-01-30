@@ -376,7 +376,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
             HighlightTextPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
             pHighlight.Init(Color.yellow);
-            PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.Click, rcText); 
+            PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.Click, rcText);
+            PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.PairedClick, rcText);
             GTinkerText rcTinkerText = rcText.GetComponent<GTinkerText>();
             if (rcTinkerText != null)
             {
