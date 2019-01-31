@@ -92,10 +92,11 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			Debug.LogError("ShelfManager's selected book is not set. ");
 			return;
 		}
-		string selectedBookJsonFileName = ShelfManager.selectedBook.ToLower() + ".json"; 
+		string selectedBookJsonFileName = ShelfManager.selectedBook.ToLower() + ".json";
 
-		TextAsset selectedBookJson = ShelfManager.bundleLoaded.LoadAsset(selectedBookJsonFileName) as TextAsset;
-		if (selectedBookJson == null) {
+        TextAsset selectedBookJson = ShelfManager.bundleLoaded.LoadAsset(selectedBookJsonFileName) as TextAsset;
+
+        if (selectedBookJson == null) {
 			Debug.LogError("Unable to load selected book Json file and load the story data.");
 			return;
 		}
@@ -104,7 +105,31 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 		string selectedBookJsonContent = selectedBookJson.text;
 
-		try {
+#if UNITY_EDITOR
+
+        string[] rastrFileList = Directory.GetFiles(Application.dataPath, selectedBookJsonFileName, SearchOption.AllDirectories);
+
+        if (rastrFileList != null)
+        {
+            if (rastrFileList.Length > 0)
+            {
+                for (int i = 0; i < rastrFileList.Length; i++)
+                {
+                    if (rastrFileList[i].ToLower().Contains(selectedBookJsonFileName.ToLower()))
+                    {
+                        selectedBookJsonContent = File.ReadAllText(rastrFileList[i]);
+                    }
+                }
+            }
+        }
+
+
+#endif
+
+
+
+        try
+        {
 			// Try-catch block is necessary here in case JsonUtility throws an exception if it's unable to parse
 			setPageTurnLeftArrowActive(false);
 			setPageTurnRightArrowActive(true);

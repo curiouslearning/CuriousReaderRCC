@@ -16,4 +16,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ca013a6a429b00d4d8f339f1917cdceb, type: 3}
   - {fileID: 21300000, guid: 695eb7a61d390824fa7d23fb5bddecee, type: 3}
   - {fileID: 21300000, guid: 02630fa2c46ffa64c8493e966bfac6b4, type: 3}
-  framesDuration: 0a0000000a0000000a000000
+  - {fileID: 21300000, guid: ca013a6a429b00d4d8f339f1917cdceb, type: 3}
+  - {fileID: 21300000, guid: 695eb7a61d390824fa7d23fb5bddecee, type: 3}
+  - {fileID: 21300000, guid: 02630fa2c46ffa64c8493e966bfac6b4, type: 3}
+  - {fileID: 21300000, guid: ca013a6a429b00d4d8f339f1917cdceb, type: 3}
+  - {fileID: 21300000, guid: 695eb7a61d390824fa7d23fb5bddecee, type: 3}
+  - {fileID: 21300000, guid: 02630fa2c46ffa64c8493e966bfac6b4, type: 3}
+  - {fileID: 21300000, guid: ca013a6a429b00d4d8f339f1917cdceb, type: 3}
+  framesDuration: 07000000070000000700000007000000070000000700000007000000070000000700000007000000
