@@ -1380,13 +1380,13 @@
                     "posX": -134.0,
                     "posY": -10.0,
                     "posZ": 95.0,
-                    "scaleX": -50.0,
+                    "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "5_orange_portion_sun-1",
+                    "imageName": "05_orange_portion_sun-1",
                     "inText": false,
                     "label": "day_sun",
                     "destroyOnCollision": "",
@@ -1394,28 +1394,6 @@
                     "anim": [],
                     "Animations": [
                         "05_orange_portion_sun"
-                    ]
-                },
-                {
-                    "id": 5,
-                    "tag": "",
-                    "posX": -134.0,
-                    "posY": -10.0,
-                    "posZ": 92.0,
-                    "scaleX": -50.0,
-                    "scaleY": -50.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 180.0,
-                    "orderInLayer": 0,
-                    "imageName": "5_orange_sun-1",
-                    "inText": false,
-                    "label": "day_innersun",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "1_between_day_to_night"
                     ]
                 },
                 {
@@ -1574,6 +1552,26 @@
                     "timestamp": 0,
                     "sceneObjectId": 3,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"05_orange_portion_sun\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
