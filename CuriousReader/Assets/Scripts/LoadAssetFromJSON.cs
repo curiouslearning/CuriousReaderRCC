@@ -681,8 +681,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 tinkerText.pairedGraphics = new List<GTinkerGraphic>();
             }
 
-            tinkerText.pairedGraphics.Add(tinkerGraphic);
-            tinkerGraphic.pairedText1 = tinkerText;
             bool addSuccess = false; //to make sure adding the performance goes through
             switch (trigger.type)
             {
@@ -733,6 +731,14 @@ public class LoadAssetFromJSON : MonoBehaviour {
                             {
                                 Debug.Log("Successfully added " + pSpriteAnim.AnimationName + " to " + graphicObject.name);
                             }
+
+                            if ( ePrompt == PromptType.PairedClick )
+                            {
+                                PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, PromptType.Click, graphicObject);
+
+                                tinkerText.pairedGraphics.Add(tinkerGraphic);
+                                tinkerGraphic.pairedText1 = tinkerText;
+                            }
                         }
                     }
                     break;
@@ -748,6 +754,13 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         {
                             Debug.LogWarning("Failed to add Highlight to " + graphicObject.name + "!");
                         }
+
+                        if (highlightParams.PromptType == PromptType.PairedClick)
+                        {
+                            tinkerText.pairedGraphics.Add(tinkerGraphic);
+                            tinkerGraphic.pairedText1 = tinkerText;
+                        }
+
                     }
                     break;
                 case TriggerType.Move:
@@ -766,6 +779,13 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         {
                             Debug.LogWarning("Failed to add Move Tween to " + graphicObject.name + "!");
                         }
+
+                        if (moveParams.PromptType == PromptType.PairedClick)
+                        {
+                            tinkerText.pairedGraphics.Add(tinkerGraphic);
+                            tinkerGraphic.pairedText1 = tinkerText;
+                        }
+
                     }
                     break;
                 case TriggerType.Scale:
@@ -784,6 +804,13 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         {
                             Debug.LogWarning("Failed to add Scale Tween to " + graphicObject.name + "!");
                         }
+
+                        if (scaleParams.PromptType == PromptType.PairedClick)
+                        {
+                            tinkerText.pairedGraphics.Add(tinkerGraphic);
+                            tinkerGraphic.pairedText1 = tinkerText;
+                        }
+
                     }
                     break;
                 case TriggerType.Rotate:
@@ -801,6 +828,12 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         if (!addSuccess)
                         {
                             Debug.LogWarning("Failed to add Rotate Tween to " + graphicObject.name + "!");
+                        }
+
+                        if (rotateParams.PromptType == PromptType.PairedClick)
+                        {
+                            tinkerText.pairedGraphics.Add(tinkerGraphic);
+                            tinkerGraphic.pairedText1 = tinkerText;
                         }
                     }
                     break;
