@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ed0f527958411a74f86727fdff614e56
+guid: d71e80452c62c5a47a73f4c7337f6368
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/24_Akili_smiles_and_jumps_1
-    400000: gameObject/24_Akili_smiles_and_jumps_1/Transform
-    21200000: gameObject/24_Akili_smiles_and_jumps_1/SpriteRenderer
+    100000: gameObject/24_akili_smiles_and_jumps_static-1
+    400000: gameObject/24_akili_smiles_and_jumps_static-1/Transform
+    21200000: gameObject/24_akili_smiles_and_jumps_static-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 954e0f5461d79da49b1583ffe5a16c5d
+      spriteID: f1551f94046e0a5478c379e712000569
     PhysicsOutlines: []

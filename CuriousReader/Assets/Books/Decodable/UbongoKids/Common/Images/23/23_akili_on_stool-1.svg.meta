@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bf064701ef6d5004b9eba8b3078718da
+guid: bc4c36b62d840a74eb40a12b9d41121b
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/23_akili_on_stool-1
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: ebdb306814aa61b4abc2c170964e2707
+      spriteID: ecebda5ddc2f5d549ae7c9571ebb32a6
     PhysicsOutlines: []
