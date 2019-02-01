@@ -757,6 +757,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
                         if (highlightParams.PromptType == PromptType.PairedClick)
                         {
+                            PerformanceSystem.AddPerformance(graphicObject, pHighlight, PromptType.Click, graphicObject);
+
                             tinkerText.pairedGraphics.Add(tinkerGraphic);
                             tinkerGraphic.pairedText1 = tinkerText;
                         }
