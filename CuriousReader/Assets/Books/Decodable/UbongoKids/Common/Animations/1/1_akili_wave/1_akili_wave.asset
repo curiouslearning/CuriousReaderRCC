@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: 1_akili_wave
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 21300000, guid: 5ec161908f24def4283830acd6f3f91b, type: 3}
+  - {fileID: 21300000, guid: 27f32e2ce2b52d94b97daf79143f0e4c, type: 3}
+  - {fileID: 21300000, guid: ccc3238f9476cd54a9f6d445cb4a2a64, type: 3}
+  - {fileID: 21300000, guid: 2bd8d107282bb5949a9caef5805d8f0e, type: 3}
+  - {fileID: 21300000, guid: 0b111ab20f132f942a2dcbd0bc64d845, type: 3}
+  - {fileID: 21300000, guid: f871082987d21f84c933a5012caf33c6, type: 3}
+  - {fileID: 21300000, guid: 102ffa9bc2a82ad43b82519aec30fb46, type: 3}
+  - {fileID: 21300000, guid: 8017499775598e142b1a85da754ba64a, type: 3}
+  - {fileID: 21300000, guid: 62b41a1260f18b044ac944230f2d628b, type: 3}
+  framesDuration: 1e0000000500000005000000050000000500000005000000050000000f00000005000000

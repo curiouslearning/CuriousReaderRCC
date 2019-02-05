@@ -101,6 +101,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 5,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "Akili Waves",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -188,6 +210,26 @@
                     "timestamp": 0,
                     "sceneObjectId": 3,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -1516,6 +1558,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 7,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 5,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "Akili Wave",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -1633,6 +1697,26 @@
                     "timestamp": 0,
                     "sceneObjectId": 5,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -2027,6 +2111,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 12,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 5,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "Akili Wave",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -2173,6 +2279,26 @@
                     "timestamp": 0,
                     "sceneObjectId": 6,
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 12,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 12,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -3395,6 +3521,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 16,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 5,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "Akili Waves",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -3511,6 +3659,26 @@
                     "timestamp": 0,
                     "sceneObjectId": 8,
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 16,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 16,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -3757,6 +3925,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 5,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "Akili Waves",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -3823,6 +4013,26 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"15_water_wave\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -5360,6 +5570,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 8,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 5,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "Akili Waves",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -5486,6 +5718,26 @@
                     "timestamp": 0,
                     "sceneObjectId": 6,
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"16_sad_face_on_the_little_fish\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -6840,6 +7092,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 18,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 5,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "Akili Waves",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -6918,7 +7192,28 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 18,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 18,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
+                }
+            ]
         }
     ]
 }
