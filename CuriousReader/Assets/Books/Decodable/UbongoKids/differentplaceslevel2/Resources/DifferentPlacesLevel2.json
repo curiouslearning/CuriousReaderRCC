@@ -6642,7 +6642,7 @@
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 100.0,
-                    "scaleX": 710.0,
+                    "scaleX": 900.0,
                     "scaleY": 710.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
@@ -6662,16 +6662,16 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -41.0,
-                    "posY": -102.0,
-                    "posZ": 0.0,
-                    "scaleX": 84.0,
-                    "scaleY": 84.0,
+                    "posX": 0.0,
+                    "posY": -160.3000030517578,
+                    "posZ": 30.0,
+                    "scaleX": 1000.0,
+                    "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -3,
-                    "imageName": "13_water_wave-1",
+                    "orderInLayer": -5,
+                    "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
                     "destroyOnCollision": "",
@@ -6682,8 +6682,8 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 315.0,
-                    "posY": -103.0,
+                    "posX": 342.70001220703127,
+                    "posY": -125.69999694824219,
                     "posZ": -5.0,
                     "scaleX": 20.0,
                     "scaleY": 20.0,
@@ -6729,19 +6729,21 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "17_big_octopus_move_flap_legs"
+                    ]
                 },
                 {
                     "id": 3,
                     "tag": "",
                     "posX": 139.0,
-                    "posY": -108.0,
+                    "posY": -123.5,
                     "posZ": -5.0,
-                    "scaleX": 20.0,
-                    "scaleY": 20.0,
+                    "scaleX": 15.0,
+                    "scaleY": 15.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 26.600000381469728,
+                    "rotZ": 0.0,
                     "orderInLayer": -1,
                     "imageName": "17_small_octopus_move_flap_legs-1",
                     "inText": false,
@@ -6781,16 +6783,18 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "17_small_octopus_move_flap_legs"
+                    ]
                 },
                 {
                     "id": 4,
                     "tag": "",
                     "posX": 272.0,
-                    "posY": -12.0,
+                    "posY": -22.899999618530275,
                     "posZ": 0.0,
-                    "scaleX": 50.0,
-                    "scaleY": 50.0,
+                    "scaleX": 55.0,
+                    "scaleY": 55.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -6801,13 +6805,15 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "14_big_boat_moves_fast"
+                    ]
                 },
                 {
                     "id": 5,
                     "tag": "",
                     "posX": 67.0,
-                    "posY": -31.0,
+                    "posY": -82.30000305175781,
                     "posZ": 0.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
@@ -6821,13 +6827,15 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "14_small_boat_moves_slowly"
+                    ]
                 },
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": 115.0,
-                    "posY": -56.0,
+                    "posX": 230.89999389648438,
+                    "posY": -126.30000305175781,
                     "posZ": -5.0,
                     "scaleX": 15.0,
                     "scaleY": 15.0,
@@ -6840,44 +6848,16 @@
                     "label": "sad_fish",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
-                        {
-                            "id": 0,
-                            "animName": "16_sad_face_on_the_little_fish",
-                            "startX": 115,
-                            "startY": -56,
-                            "startZ": -5,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": true,
-                            "onStart": false,
-                            "secPerFrame": [
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
-                        }
-                    ],
-                    "Animations": []
+                    "anim": [],
+                    "Animations": [
+                        "16_sad_face_on_the_little_fish"
+                    ]
                 },
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": 183.0,
-                    "posY": -72.0,
+                    "posX": 16.299999237060548,
+                    "posY": -126.5,
                     "posZ": -5.0,
                     "scaleX": 15.0,
                     "scaleY": 15.0,
@@ -6890,46 +6870,18 @@
                     "label": "happy_fish",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
-                        {
-                            "id": 0,
-                            "animName": "16_the_happy_fish_smiles",
-                            "startX": 183,
-                            "startY": -72,
-                            "startZ": -5,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": true,
-                            "onStart": false,
-                            "secPerFrame": [
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
-                        }
-                    ],
-                    "Animations": []
+                    "anim": [],
+                    "Animations": [
+                        "16_the_happy_fish_smiles"
+                    ]
                 },
                 {
                     "id": 8,
                     "tag": "",
-                    "posX": -271.0,
+                    "posX": -377.3999938964844,
                     "posY": -35.0,
                     "posZ": 0.0,
-                    "scaleX": 40.0,
+                    "scaleX": -40.0,
                     "scaleY": 40.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
@@ -6944,36 +6896,16 @@
                     "Animations": []
                 },
                 {
-                    "id": 9,
-                    "tag": "",
-                    "posX": 151.0,
-                    "posY": 9.0,
-                    "posZ": 0.0,
-                    "scaleX": 80.0,
-                    "scaleY": 80.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "22_ground_and_bushes-1",
-                    "inText": false,
-                    "label": "ground_and_bushes",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
                     "id": 10,
                     "tag": "",
-                    "posX": -179.0,
-                    "posY": 32.0,
+                    "posX": -411.6000061035156,
+                    "posY": 27.0,
                     "posZ": 0.0,
-                    "scaleX": 200.0,
-                    "scaleY": 200.0,
+                    "scaleX": 240.0,
+                    "scaleY": 240.0,
                     "rotX": 352.29998779296877,
                     "rotY": 177.0,
-                    "rotZ": 3.0,
+                    "rotZ": 332.5,
                     "orderInLayer": 1,
                     "imageName": "10_small_monkeys-1",
                     "inText": false,
@@ -7126,8 +7058,8 @@
                 {
                     "id": 18,
                     "tag": "",
-                    "posX": -432.0,
-                    "posY": -282.0,
+                    "posX": -431.25,
+                    "posY": -304.0,
                     "posZ": -2.0,
                     "scaleX": 300.0,
                     "scaleY": 300.0,
@@ -7143,6 +7075,112 @@
                     "anim": [],
                     "Animations": [
                         "1_akili_wave"
+                    ]
+                },
+                {
+                    "id": 19,
+                    "tag": "",
+                    "posX": -245.0,
+                    "posY": -180.1999969482422,
+                    "posZ": 0.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 348.1300048828125,
+                    "orderInLayer": -3,
+                    "imageName": "22_ground-1",
+                    "inText": false,
+                    "label": "Ground",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 20,
+                    "tag": "",
+                    "posX": -247.0,
+                    "posY": -155.60000610351563,
+                    "posZ": 0.0,
+                    "scaleX": 298.3900146484375,
+                    "scaleY": 230.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 352.6000061035156,
+                    "orderInLayer": -3,
+                    "imageName": "22_big_bush-1",
+                    "inText": false,
+                    "label": "Bush",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 20,
+                    "tag": "",
+                    "posX": -35.0,
+                    "posY": 48.65999984741211,
+                    "posZ": 0.0,
+                    "scaleX": 20.0,
+                    "scaleY": 20.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "03_big_bird_flapping-1",
+                    "inText": false,
+                    "label": "BigBird",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "03_big_bird_flapping"
+                    ]
+                },
+                {
+                    "id": 21,
+                    "tag": "",
+                    "posX": 129.0,
+                    "posY": 27.040000915527345,
+                    "posZ": 0.0,
+                    "scaleX": 30.0,
+                    "scaleY": 30.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "03_a_small_bird_flapping-1",
+                    "inText": false,
+                    "label": "SmallBird",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "03_a_small_bird_flapping"
+                    ]
+                },
+                {
+                    "id": 22,
+                    "tag": "",
+                    "posX": -239.39999389648438,
+                    "posY": -32.5,
+                    "posZ": -5.0,
+                    "scaleX": -500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "13_giraffe_eat_leaves-1",
+                    "inText": false,
+                    "label": "giraffe",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "13_giraffe_eat_leaves"
                     ]
                 }
             ],
@@ -7240,8 +7278,98 @@
                     "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 18,
+                    "sceneObjectId": 17,
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"17_big_octopus_move_flap_legs\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"17_small_octopus_move_flap_legs\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 20,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"03_big_bird_flapping\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 21,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"03_a_small_bird_flapping\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_big_boat_moves_fast\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_small_boat_moves_slowly\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"16_sad_face_on_the_little_fish\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"16_the_happy_fish_smiles\",\"StartPrompt\":0}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 22,
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"13_giraffe_eat_leaves\",\"StartPrompt\":0}"
                 }
             ]
         }
