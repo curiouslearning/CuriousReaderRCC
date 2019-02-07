@@ -85,6 +85,8 @@ public class ShelfManager : MonoBehaviour, IPointerClickHandler
 
             }
         }
+
+        Screen.SetResolution(Screen.height * 16 / 9, Screen.height, true);
     }
 
     public void SetImage(Sprite sp) //method to set our first image
