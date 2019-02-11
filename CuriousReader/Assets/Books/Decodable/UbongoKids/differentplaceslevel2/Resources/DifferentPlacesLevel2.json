@@ -131,62 +131,62 @@
                     "text": "Sky! I love the sky, day and night."
                 }
             ],
-            "audioFile": "audio_stanza_page_0.wav",
+            "audioFile": "audio_smdp_2_stanza_page_0_6.mp3",
             "timestamps": [
                 {
-                    "start": 900,
+                    "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
-                    "end": 1200,
+                    "audio": "audio_smdp_word_sky.mp3",
+                    "end": 1008,
                     "starWord": "No"
                 },
                 {
-                    "start": 2000,
+                    "start": 1009,
                     "wordIdx": 1,
-                    "audio": "",
-                    "end": 2350,
+                    "audio": "audio_smdp_word_i.mp3",
+                    "end": 1429,
                     "starWord": "No"
                 },
                 {
-                    "start": 2350,
+                    "start": 1430,
                     "wordIdx": 2,
-                    "audio": "",
-                    "end": 2575,
+                    "audio": "audio_smdp_word_love.mp3",
+                    "end": 1692,
                     "starWord": "No"
                 },
                 {
-                    "start": 2850,
+                    "start": 1693,
                     "wordIdx": 3,
-                    "audio": "",
-                    "end": 3000,
+                    "audio": "audio_smdp_word_the_1.mp3",
+                    "end": 1974,
                     "starWord": "No"
                 },
                 {
-                    "start": 3000,
+                    "start": 1975,
                     "wordIdx": 4,
-                    "audio": "",
-                    "end": 3200,
+                    "audio": "audio_smdp_word_sky.mp3",
+                    "end": 2412,
                     "starWord": "No"
                 },
                 {
-                    "start": 3332,
+                    "start": 2413,
                     "wordIdx": 5,
-                    "audio": "",
-                    "end": 3998,
+                    "audio": "audio_smdp_word_day.mp3",
+                    "end": 3197,
                     "starWord": "No"
                 },
                 {
-                    "start": 3999,
+                    "start": 3198,
                     "wordIdx": 6,
-                    "audio": "",
-                    "end": 4665,
+                    "audio": "audio_smdp_word_and.mp3",
+                    "end": 3342,
                     "starWord": "No"
                 },
                 {
-                    "start": 4665,
+                    "start": 3343,
                     "wordIdx": 7,
-                    "audio": "",
-                    "end": 5331,
+                    "audio": "audio_smdp_word_night.mp3",
+                    "end": 3781,
                     "starWord": "No"
                 }
             ],
@@ -309,40 +309,40 @@
                     "text": "Look! Big cloud. Small cloud."
                 }
             ],
-            "audioFile": "audio_stanza_page_1.wav",
+            "audioFile": "audio_smdp_2_stanza_page_1.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_look.mp3",
                     "end": 929,
                     "starWord": "No"
                 },
                 {
                     "start": 929,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_big.mp3",
                     "end": 1858,
                     "starWord": "No"
                 },
                 {
                     "start": 1859,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_cloud.mp3",
                     "end": 2788,
                     "starWord": "No"
                 },
                 {
                     "start": 2788,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_small.mp3",
                     "end": 3717,
                     "starWord": "No"
                 },
                 {
                     "start": 3718,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_cloud.mp3",
                     "end": 4647,
                     "starWord": "No"
                 }
@@ -490,34 +490,34 @@
                     "text": "Big bird. Small bird."
                 }
             ],
-            "audioFile": "audio_stanza_page_2.wav",
+            "audioFile": "audio_smdp_2_stanza_page_2.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
-                    "end": 681,
+                    "audio": "audio_smdp_word_big.mp3",
+                    "end": 607,
                     "starWord": "No"
                 },
                 {
-                    "start": 681,
+                    "start": 607,
                     "wordIdx": 1,
-                    "audio": "",
-                    "end": 1362,
+                    "audio": "audio_smdp_word_bird.mp3",
+                    "end": 1214,
                     "starWord": "No"
                 },
                 {
-                    "start": 1363,
+                    "start": 1214,
                     "wordIdx": 2,
-                    "audio": "",
-                    "end": 2044,
+                    "audio": "audio_smdp_word_small.mp3",
+                    "end": 1821,
                     "starWord": "No"
                 },
                 {
-                    "start": 2045,
+                    "start": 1821,
                     "wordIdx": 3,
-                    "audio": "",
-                    "end": 2726,
+                    "audio": "audio_smdp_word_bird.mp3",
+                    "end": 2428,
                     "starWord": "No"
                 }
             ],
@@ -770,47 +770,47 @@
                     "text": "A flying bird. A singing bird."
                 }
             ],
-            "audioFile": "audio_stanza_page_3.wav",
+            "audioFile": "audio_smdp_2_stanza_page_3.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_a_1.mp3",
                     "end": 654,
                     "starWord": "No"
                 },
                 {
                     "start": 654,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_flying.mp3",
                     "end": 1308,
                     "starWord": "No"
                 },
                 {
                     "start": 1308,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_bird.mp3",
                     "end": 1962,
                     "starWord": "No"
                 },
                 {
                     "start": 1963,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_a_1.mp3",
                     "end": 2617,
                     "starWord": "No"
                 },
                 {
                     "start": 2617,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_singing.mp3",
                     "end": 3271,
                     "starWord": "No"
                 },
                 {
                     "start": 3271,
                     "wordIdx": 5,
-                    "audio": "",
+                    "audio": "audio_smdp_word_bird.mp3",
                     "end": 3925,
                     "starWord": "No"
                 }
@@ -1037,33 +1037,33 @@
                     "text": "Big sun. Small star."
                 }
             ],
-            "audioFile": "audio_stanza_page_4.wav",
+            "audioFile": "audio_smdp_2_stanza_page_4.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_big.mp3",
                     "end": 838,
                     "starWord": "No"
                 },
                 {
                     "start": 838,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_sun.mp3",
                     "end": 1676,
                     "starWord": "No"
                 },
                 {
                     "start": 1676,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_small.mp3",
                     "end": 2514,
                     "starWord": "No"
                 },
                 {
                     "start": 2514,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_star.mp3",
                     "end": 3352,
                     "starWord": "No"
                 }
@@ -1293,47 +1293,47 @@
                     "text": "A shining sun. A sparkling star."
                 }
             ],
-            "audioFile": "audio_stanza_page_5.wav",
+            "audioFile": "audio_smdp_2_stanza_page_5.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_a_1.mp3",
                     "end": 692,
                     "starWord": "No"
                 },
                 {
                     "start": 692,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_shining.mp3",
                     "end": 1384,
                     "starWord": "No"
                 },
                 {
                     "start": 1384,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_sun.mp3",
                     "end": 2076,
                     "starWord": "No"
                 },
                 {
                     "start": 2076,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_a_1.mp3",
                     "end": 2768,
                     "starWord": "No"
                 },
                 {
                     "start": 2768,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_sparkling.mp3",
                     "end": 3460,
                     "starWord": "No"
                 },
                 {
                     "start": 3460,
                     "wordIdx": 5,
-                    "audio": "",
+                    "audio": "audio_smdp_word_star.mp3",
                     "end": 4152,
                     "starWord": "No"
                 }
@@ -1588,61 +1588,61 @@
                     "text": "Sky! I love the sky, day and night."
                 }
             ],
-            "audioFile": "audio_stanza_page_6.wav",
+            "audioFile": "audio_smdp_2_stanza_page_0_6.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_sky.mp3",
                     "end": 628,
                     "starWord": "No"
                 },
                 {
                     "start": 628,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_i.mp3",
                     "end": 1256,
                     "starWord": "No"
                 },
                 {
                     "start": 1256,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_love.mp3",
                     "end": 1884,
                     "starWord": "No"
                 },
                 {
                     "start": 1885,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_the_1.mp3",
                     "end": 2513,
                     "starWord": "No"
                 },
                 {
                     "start": 2513,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_sky.mp3",
                     "end": 3141,
                     "starWord": "No"
                 },
                 {
                     "start": 3141,
                     "wordIdx": 5,
-                    "audio": "",
+                    "audio": "audio_smdp_word_day.mp3",
                     "end": 3769,
                     "starWord": "No"
                 },
                 {
                     "start": 3770,
                     "wordIdx": 6,
-                    "audio": "",
+                    "audio": "audio_smdp_word_and.mp3",
                     "end": 4398,
                     "starWord": "No"
                 },
                 {
                     "start": 4398,
                     "wordIdx": 7,
-                    "audio": "",
+                    "audio": "audio_smdp_word_night.mp3",
                     "end": 5026,
                     "starWord": "No"
                 }
@@ -1796,26 +1796,26 @@
                     "text": "Where to go?"
                 }
             ],
-            "audioFile": "audio_stanza_page_7.wav",
+            "audioFile": "audio_smdp_2_stanza_page_7_13_20.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_where.mp3",
                     "end": 1152,
                     "starWord": "No"
                 },
                 {
                     "start": 1152,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_to_1.mp3",
                     "end": 2304,
                     "starWord": "No"
                 },
                 {
                     "start": 2304,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_go.mp3",
                     "end": 3456,
                     "starWord": "No"
                 }
@@ -2141,40 +2141,40 @@
                     "text": "Forest! I love the forest."
                 }
             ],
-            "audioFile": "audio_stanza_page_8.wav",
+            "audioFile": "audio_smdp_2_stanza_page_8_12.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_forest.mp3",
                     "end": 750,
                     "starWord": "No"
                 },
                 {
                     "start": 750,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_i.mp3",
                     "end": 1500,
                     "starWord": "No"
                 },
                 {
                     "start": 1500,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_love.mp3",
                     "end": 2250,
                     "starWord": "No"
                 },
                 {
                     "start": 2250,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_the_1.mp3",
                     "end": 3000,
                     "starWord": "No"
                 },
                 {
                     "start": 3000,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_forest.mp3",
                     "end": 3750,
                     "starWord": "No"
                 }
@@ -2439,33 +2439,33 @@
                     "text": "Look! A tall giraffe."
                 }
             ],
-            "audioFile": "audio_stanza_page_9.wav",
+            "audioFile": "audio_smdp_2_stanza_page_9.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_look.mp3",
                     "end": 704,
                     "starWord": "No"
                 },
                 {
                     "start": 704,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_a_1.mp3",
                     "end": 1408,
                     "starWord": "No"
                 },
                 {
                     "start": 1408,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_tall.mp3",
                     "end": 2112,
                     "starWord": "No"
                 },
                 {
                     "start": 2112,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_giraffe.mp3",
                     "end": 2816,
                     "starWord": "No"
                 }
@@ -2619,33 +2619,33 @@
                     "text": "Big monkeys. Small monkeys."
                 }
             ],
-            "audioFile": "audio_stanza_page_10.wav",
+            "audioFile": "audio_smdp_2_stanza_page_10.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_big.mp3",
                     "end": 724,
                     "starWord": "No"
                 },
                 {
                     "start": 724,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_monkeys.mp3",
                     "end": 1448,
                     "starWord": "No"
                 },
                 {
                     "start": 1449,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_small.mp3",
                     "end": 2173,
                     "starWord": "No"
                 },
                 {
                     "start": 2173,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_monkeys.mp3",
                     "end": 2897,
                     "starWord": "No"
                 }
@@ -3025,33 +3025,33 @@
                     "text": "Short sticks. Long sticks."
                 }
             ],
-            "audioFile": "audio_stanza_page_11.wav",
+            "audioFile": "audio_smdp_2_stanza_page_11.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_short.mp3",
                     "end": 798,
                     "starWord": "No"
                 },
                 {
                     "start": 798,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_sticks.mp3",
                     "end": 1596,
                     "starWord": "No"
                 },
                 {
                     "start": 1597,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_long.mp3",
                     "end": 2395,
                     "starWord": "No"
                 },
                 {
                     "start": 2396,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_sticks.mp3",
                     "end": 3194,
                     "starWord": "No"
                 }
@@ -3561,40 +3561,40 @@
                     "text": "Forest! I love the forest."
                 }
             ],
-            "audioFile": "audio_stanza_page_12.wav",
+            "audioFile": "audio_smdp_2_stanza_page_8_12.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_forest.mp3",
                     "end": 668,
                     "starWord": "No"
                 },
                 {
                     "start": 668,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_i.mp3",
                     "end": 1336,
                     "starWord": "No"
                 },
                 {
                     "start": 1336,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_love.mp3",
                     "end": 2004,
                     "starWord": "No"
                 },
                 {
                     "start": 2004,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_the_1.mp3",
                     "end": 2672,
                     "starWord": "No"
                 },
                 {
                     "start": 2672,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_forest.mp3",
                     "end": 3340,
                     "starWord": "No"
                 }
@@ -3768,26 +3768,26 @@
                     "text": "Where to go?"
                 }
             ],
-            "audioFile": "audio_stanza_page_13.wav",
+            "audioFile": "audio_smdp_2_stanza_page_7_13_20.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_where.mp3",
                     "end": 750,
                     "starWord": "No"
                 },
                 {
                     "start": 750,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_to_1.mp3",
                     "end": 1500,
                     "starWord": "No"
                 },
                 {
                     "start": 1500,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_go.mp3",
                     "end": 2250,
                     "starWord": "No"
                 }
@@ -3965,40 +3965,40 @@
                     "text": "Ocean! I love the ocean."
                 }
             ],
-            "audioFile": "audio_stanza_page_14.wav",
+            "audioFile": "audio_smdp_2_stanza_page_14_19.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_ocean.mp3",
                     "end": 711,
                     "starWord": "No"
                 },
                 {
                     "start": 711,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_i.mp3",
                     "end": 1422,
                     "starWord": "No"
                 },
                 {
                     "start": 1423,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_love.mp3",
                     "end": 2134,
                     "starWord": "No"
                 },
                 {
                     "start": 2135,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_the_1.mp3",
                     "end": 2846,
                     "starWord": "No"
                 },
                 {
                     "start": 2847,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_ocean.mp3",
                     "end": 3558,
                     "starWord": "No"
                 }
@@ -4242,43 +4242,43 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Look! Big boat. Little boat."
+                    "text": "Look! Big boat. Small boat."
                 }
             ],
-            "audioFile": "audio_stanza_page_15.wav",
+            "audioFile": "audio_smdp_2_stanza_page_15.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_look.mp3",
                     "end": 808,
                     "starWord": "No"
                 },
                 {
                     "start": 808,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_big.mp3",
                     "end": 1616,
                     "starWord": "No"
                 },
                 {
                     "start": 1617,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_boat.mp3",
                     "end": 2425,
                     "starWord": "No"
                 },
                 {
                     "start": 2425,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_small.mp3",
                     "end": 3233,
                     "starWord": "No"
                 },
                 {
                     "start": 3234,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_boat.mp3",
                     "end": 4042,
                     "starWord": "No"
                 }
@@ -4524,33 +4524,33 @@
                     "text": "Fast boat. Slow boat."
                 }
             ],
-            "audioFile": "audio_stanza_page_16.wav",
+            "audioFile": "audio_smdp_2_stanza_page_16.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_fast.mp3",
                     "end": 808,
                     "starWord": "No"
                 },
                 {
                     "start": 808,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_boat.mp3",
                     "end": 1616,
                     "starWord": "No"
                 },
                 {
                     "start": 1617,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_slow.mp3",
                     "end": 2425,
                     "starWord": "No"
                 },
                 {
                     "start": 2425,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_boat.mp3",
                     "end": 3233,
                     "starWord": "No"
                 }
@@ -4778,33 +4778,33 @@
                     "text": "Happy fish. Sad fish."
                 }
             ],
-            "audioFile": "audio_stanza_page_17.wav",
+            "audioFile": "audio_smdp_2_stanza_page_17.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_happy.mp3",
                     "end": 814,
                     "starWord": "No"
                 },
                 {
                     "start": 814,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_fish.mp3",
                     "end": 1628,
                     "starWord": "No"
                 },
                 {
                     "start": 1629,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_sad.mp3",
                     "end": 2443,
                     "starWord": "No"
                 },
                 {
                     "start": 2443,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_fish.mp3",
                     "end": 3257,
                     "starWord": "No"
                 }
@@ -5104,33 +5104,33 @@
                     "text": "Big octopus. Small octopus."
                 }
             ],
-            "audioFile": "audio_stanza_page_18.wav",
+            "audioFile": "audio_smdp_2_stanza_page_18.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_big.mp3",
                     "end": 793,
                     "starWord": "No"
                 },
                 {
                     "start": 793,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_octopus.mp3",
                     "end": 1586,
                     "starWord": "No"
                 },
                 {
                     "start": 1586,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_small.mp3",
                     "end": 2379,
                     "starWord": "No"
                 },
                 {
                     "start": 2379,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_octopus.mp3",
                     "end": 3172,
                     "starWord": "No"
                 }
@@ -5610,40 +5610,40 @@
                     "text": "Ocean! I love the ocean."
                 }
             ],
-            "audioFile": "audio_stanza_page_19.wav",
+            "audioFile": "audio_smdp_2_stanza_page_14_19.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_ocean.mp3",
                     "end": 666,
                     "starWord": "No"
                 },
                 {
                     "start": 666,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_i.mp3",
                     "end": 1332,
                     "starWord": "No"
                 },
                 {
                     "start": 1332,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_love.mp3",
                     "end": 1998,
                     "starWord": "No"
                 },
                 {
                     "start": 1999,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_the_1.mp3",
                     "end": 2665,
                     "starWord": "No"
                 },
                 {
                     "start": 2665,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_ocean.mp3",
                     "end": 3331,
                     "starWord": "No"
                 }
@@ -5827,26 +5827,26 @@
                     "text": "Where to go?"
                 }
             ],
-            "audioFile": "audio_stanza_page_20.wav",
+            "audioFile": "audio_smdp_2_stanza_page_7_13_20.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_where.mp3",
                     "end": 683,
                     "starWord": "No"
                 },
                 {
                     "start": 683,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_to_1.mp3",
                     "end": 1366,
                     "starWord": "No"
                 },
                 {
                     "start": 1367,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_go.mp3",
                     "end": 2050,
                     "starWord": "No"
                 }
@@ -6232,47 +6232,47 @@
                     "text": "My home! I love my home."
                 }
             ],
-            "audioFile": "audio_stanza_page_21.wav",
+            "audioFile": "audio_smdp_2_stanza_page_21.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_my.mp3",
                     "end": 684,
                     "starWord": "No"
                 },
                 {
                     "start": 684,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_home.mp3",
                     "end": 1368,
                     "starWord": "No"
                 },
                 {
                     "start": 1369,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_i.mp3",
                     "end": 2053,
                     "starWord": "No"
                 },
                 {
                     "start": 2054,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_love.mp3",
                     "end": 2738,
                     "starWord": "No"
                 },
                 {
                     "start": 2739,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_my.mp3",
                     "end": 3423,
                     "starWord": "No"
                 },
                 {
                     "start": 3424,
                     "wordIdx": 5,
-                    "audio": "",
+                    "audio": "audio_smdp_word_home.mp3",
                     "end": 4108,
                     "starWord": "No"
                 }
@@ -6418,26 +6418,26 @@
                     "text": "I eat food."
                 }
             ],
-            "audioFile": "audio_stanza_page_22.wav",
+            "audioFile": "audio_smdp_2_stanza_page_22.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_i.mp3",
                     "end": 786,
                     "starWord": "No"
                 },
                 {
                     "start": 786,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_eat.mp3",
                     "end": 1572,
                     "starWord": "No"
                 },
                 {
                     "start": 1572,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_food.mp3",
                     "end": 2358,
                     "starWord": "No"
                 }
@@ -6583,33 +6583,33 @@
                     "text": "Yum! I am happy."
                 }
             ],
-            "audioFile": "audio_stanza_page_23.wav",
+            "audioFile": "audio_smdp_2_stanza_page_23.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_yum.mp3",
                     "end": 834,
                     "starWord": "No"
                 },
                 {
                     "start": 834,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_i.mp3",
                     "end": 1668,
                     "starWord": "No"
                 },
                 {
                     "start": 1668,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_am.mp3",
                     "end": 2502,
                     "starWord": "No"
                 },
                 {
                     "start": 2502,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_happy.mp3",
                     "end": 3336,
                     "starWord": "No"
                 }
@@ -7201,71 +7201,71 @@
                 },
                 {
                     "id": 1,
-                    "text": "I love different places, day and night."
+                    "text": "I love different places, night and day."
                 }
             ],
-            "audioFile": "audio_stanza_page_24.wav",
+            "audioFile": "audio_smdp_2_stanza_page_24.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "audio_smdp_word_different.mp3",
                     "end": 678,
                     "starWord": "No"
                 },
                 {
                     "start": 678,
                     "wordIdx": 1,
-                    "audio": "",
+                    "audio": "audio_smdp_word_places.mp3",
                     "end": 1356,
                     "starWord": "No"
                 },
                 {
                     "start": 1357,
                     "wordIdx": 2,
-                    "audio": "",
+                    "audio": "audio_smdp_word_i.mp3",
                     "end": 2035,
                     "starWord": "No"
                 },
                 {
                     "start": 2036,
                     "wordIdx": 3,
-                    "audio": "",
+                    "audio": "audio_smdp_word_love.mp3",
                     "end": 2714,
                     "starWord": "No"
                 },
                 {
                     "start": 2715,
                     "wordIdx": 4,
-                    "audio": "",
+                    "audio": "audio_smdp_word_different.mp3",
                     "end": 3393,
                     "starWord": "No"
                 },
                 {
                     "start": 3393,
                     "wordIdx": 5,
-                    "audio": "",
+                    "audio": "audio_smdp_word_places.mp3",
                     "end": 4071,
                     "starWord": "No"
                 },
                 {
                     "start": 4072,
                     "wordIdx": 6,
-                    "audio": "",
+                    "audio": "audio_smdp_word_night.mp3",
                     "end": 4750,
                     "starWord": "No"
                 },
                 {
                     "start": 4751,
                     "wordIdx": 7,
-                    "audio": "",
+                    "audio": "audio_smdp_word_and.mp3",
                     "end": 5429,
                     "starWord": "No"
                 },
                 {
                     "start": 5430,
                     "wordIdx": 8,
-                    "audio": "",
+                    "audio": "audio_smdp_word_day.mp3",
                     "end": 6108,
                     "starWord": "No"
                 }

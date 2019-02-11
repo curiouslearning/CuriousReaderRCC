@@ -200,8 +200,9 @@ public class GTinkerText : MonoBehaviour {
 
 		FirebaseHelper.LogInAppTouch (("Text_" + gameObject.GetComponent<TextMeshProUGUI> ().text), time.ToString ());
 
-		if (!stanza.stanzaManager.sceneManager.disableSounds) {
-			//PlaySound();
+		if (!stanza.stanzaManager.sceneManager.disableSounds)
+        {
+			PlaySound();
 		}
         PerformanceSystem.SendPrompt(this.gameObject, this.gameObject, PromptType.Click);
         //clipPlay ();
@@ -234,9 +235,10 @@ public class GTinkerText : MonoBehaviour {
 	public void OnPairedMouseDown()
 	{
 		if (!stanza.stanzaManager.sceneManager.disableSounds)
-      		{   
-			//PlaySound();
+        {   
+			  PlaySound();
 		}
+
         PerformanceSystem.SendPrompt(null, this.gameObject, PromptType.PairedClick);
 
 		//clipPlay();
