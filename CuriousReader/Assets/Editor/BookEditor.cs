@@ -835,33 +835,6 @@ public class BookEditor : EditorWindow
 
         if (i_rcTimestamp.Show)
         {
-            if (i_rcTimestamp.SubClip == null)
-            {
-                i_rcTimestamp.SubClip = MakeSubclip(i_rcClip, i_rcTimestamp.AudioData, i_rcTimestamp.start / 1000.0f, i_rcTimestamp.end / 1000.0f);
-
-                string strPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "Audio/Stanza/TimeStamp" + i_nOrdinal + ".ogg");
-                string strAssetPath = Application.dataPath.Replace("/Assets", "");
-                strPath = strPath.Replace(strAssetPath, "").TrimStart('/');
-
-                Debug.Log(strPath);
-
-                //                AssetDatabase.CreateAsset(i_rcTimestamp.SubClip, strPath);
-            }
-
-            if (i_rcTimestamp.SubClip != null)
-            {
-                Rect rcRect = EditorGUILayout.GetControlRect(false, 100.0f);
-                rcRect.xMin = 40.0f;
-
-                ClearRect(rcRect, Color.black);
-                RenderAudioClip(i_rcTimestamp.SubClip, rcRect, 1.0f);
-
-                if (GUILayout.Button("Play"))
-                {
-                    AudioUtility.PlayClip(i_rcTimestamp.SubClip);
-                }
-            }
-
             i_rcTimestamp.start = EditorGUILayout.IntField("Start", i_rcTimestamp.start, EditorStyles.numberField);
             i_rcTimestamp.end = EditorGUILayout.IntField("End", i_rcTimestamp.end, EditorStyles.numberField);
             i_rcTimestamp.starWord = EditorGUILayout.TextField("Star Word", i_rcTimestamp.starWord, EditorStyles.numberField);
