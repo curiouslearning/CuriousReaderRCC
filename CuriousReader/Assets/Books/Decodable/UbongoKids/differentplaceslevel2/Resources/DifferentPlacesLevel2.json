@@ -4122,7 +4122,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "14_small_boat_moves_slowly-1",
+                    "imageName": "16_small_boat-1",
                     "inText": false,
                     "label": "smallboat",
                     "destroyOnCollision": "",
@@ -4292,7 +4292,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
@@ -4302,7 +4302,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
                     "stanzaID": 0,
@@ -4401,7 +4401,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "14_small_boat_moves_slowly-1",
+                    "imageName": "16_small_boat-1",
                     "inText": false,
                     "label": "smallboat",
                     "destroyOnCollision": "",
@@ -4578,23 +4578,23 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 1,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_big_boat_moves_fast\",\"StartPrompt\":0}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 3,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"14_small_boat_moves_slowly\",\"StartPrompt\":0}"
                 },
                 {
                     "stanzaID": 0,
