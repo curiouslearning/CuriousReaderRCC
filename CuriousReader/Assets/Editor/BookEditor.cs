@@ -888,7 +888,11 @@ public class BookEditor : EditorWindow
 
     private void EditTriggers(TriggerClass i_rcTrigger, int i_nOrdinal, int i_pageOrdinal)
     {
-        i_rcTrigger.Show = EditorGUILayout.Foldout(i_rcTrigger.Show, "Trigger " + i_nOrdinal);
+        string[] formattedTextIDDropdownValues;
+        FormatTextDropdownListForTextID(m_rcStoryBook.pages[i_pageOrdinal].texts, out formattedTextIDDropdownValues);
+        string triggerSummary = string.Format("{0} - {1} Trigger on Text: {2} and Object: {3}", 
+            i_nOrdinal, i_rcTrigger.type, formattedTextIDDropdownValues[i_rcTrigger.textId], m_rcStoryBook.pages[i_pageOrdinal].gameObjects[i_rcTrigger.sceneObjectId].label); 
+        i_rcTrigger.Show = EditorGUILayout.Foldout(i_rcTrigger.Show, triggerSummary);
 
         // Add Highlight Trigger 
         // Choose a gameobject, choose a word
