@@ -276,7 +276,7 @@
                     "orderInLayer": 0,
                     "imageName": "2_clouds_move_up_and_down-1",
                     "inText": false,
-                    "label": "Cloud0",
+                    "label": "Left Big Cloud",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -296,7 +296,7 @@
                     "orderInLayer": 0,
                     "imageName": "2_clouds_move_up_and_down-1",
                     "inText": false,
-                    "label": "Cloud1",
+                    "label": "Right Small Cloud",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -370,43 +370,23 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 9,
                     "timing": 0.0,
                     "textId": 2,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":30.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-125.0,\"y\":-20.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 9,
                     "timing": 0.0,
                     "textId": 4,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":30.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":150.0,\"y\":10.0,\"z\":0.0}}"
                 }
             ]
         },
