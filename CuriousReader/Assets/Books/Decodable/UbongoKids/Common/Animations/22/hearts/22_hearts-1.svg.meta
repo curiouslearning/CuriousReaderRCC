@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fe35847c5cc3b1a4d95131056c469773
+guid: 6b3d9227452102c4ab5ab602fcfcbb05
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/22_hearts-1
@@ -16,7 +16,7 @@ ScriptedImporter:
   texturedSpriteMeshType: 0
   svgPixelsPerUnit: 100
   gradientResolution: 128
-  alignment: 0
+  alignment: 7
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
   preserveViewport: 0
@@ -40,16 +40,16 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: 22_hearts-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.50031775, y: 0.49881145}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: 840848eeafa2f3c458f0ad893bc3ae7f
+        width: 56
+        height: 79
+      spriteID: a68592219c8ab0f418834ac179c91b54
     PhysicsOutlines: []

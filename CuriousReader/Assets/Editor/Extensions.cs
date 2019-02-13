@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 public static class Extensions
@@ -16,4 +17,55 @@ public static class Extensions
 
         return dest;
     }
+
+    public static void Invoke(this MonoBehaviour i_rcMonoBehavior, Action i_fnDelegate, float i_fTime)
+    {
+        if (i_fnDelegate != null)
+        {
+            MemberInfo rcMemberInfo = i_fnDelegate.Method;
+
+            if (rcMemberInfo != null)
+            {
+                if (!string.IsNullOrEmpty(rcMemberInfo.Name))
+                {
+                    i_rcMonoBehavior.Invoke(rcMemberInfo.Name, i_fTime);
+                }
+            }
+        }
+    }
+
+    public static void InvokeRepeating(this MonoBehaviour i_rcMonoBehavior, Action i_fnDelegate, float i_fTime, float i_fRepeatRate)
+    {
+        if (i_fnDelegate != null)
+        {
+            MemberInfo rcMemberInfo = i_fnDelegate.Method;
+
+            if (rcMemberInfo != null)
+            {
+                if (!string.IsNullOrEmpty(rcMemberInfo.Name))
+                {
+                    i_rcMonoBehavior.InvokeRepeating(rcMemberInfo.Name, i_fTime, i_fRepeatRate);
+                }
+            }
+        }
+    }
+
+    public static void CancelInvoke(this MonoBehaviour i_rcMonoBehavior, Action i_fnDelegate)
+    {
+        if (i_fnDelegate != null)
+        {
+            MemberInfo rcMemberInfo = i_fnDelegate.Method;
+
+            if (rcMemberInfo != null)
+            {
+                if (!string.IsNullOrEmpty(rcMemberInfo.Name))
+                {
+                    i_rcMonoBehavior.CancelInvoke(rcMemberInfo.Name);
+                }
+            }
+        }
+    }
+
+
+
 }

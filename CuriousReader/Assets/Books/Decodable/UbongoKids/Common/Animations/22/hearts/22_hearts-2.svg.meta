@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1796ae403c2a4b440ab29d15bca40c0a
+guid: 4d6c67db5bb82ad4580b76823d7b7b36
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/22_hearts-4
-    400000: gameObject/22_hearts-4/Transform
-    21200000: gameObject/22_hearts-4/SpriteRenderer
+    100000: gameObject/22_hearts-2
+    400000: gameObject/22_hearts-2/Transform
+    21200000: gameObject/22_hearts-2/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -16,7 +16,7 @@ ScriptedImporter:
   texturedSpriteMeshType: 0
   svgPixelsPerUnit: 100
   gradientResolution: 128
-  alignment: 0
+  alignment: 7
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
   preserveViewport: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 4bccd7f325e0a7546a8e365480991a21
+      spriteID: 96f30518ac0ae4b49926771c23765114
     PhysicsOutlines: []
