@@ -585,6 +585,15 @@ public class BookEditor : EditorWindow
                     ClearRect(m_rcAudioRects[i_nOrdinal], Color.black);
                     RenderAudioClip(m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], 1.0f);
 
+                    if (AudioUtility.IsClipPlaying(m_rcPageAudio[i_nOrdinal]))
+                    {
+                        EditorUtility.SetDirty(this);
+                        this.Repaint();
+
+                        int nSamplePosition = AudioUtility.GetClipSamplePosition(m_rcPageAudio[i_nOrdinal]);
+                        DrawCurrentAudioPosition(m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], nSamplePosition);
+                    }
+
                     Rect rcRect2 = EditorGUILayout.GetControlRect();
                     rcRect2.xMin = 20.0f;
 
@@ -845,6 +854,33 @@ public class BookEditor : EditorWindow
             {
                 DrawTimestamp(i_rcClip, i_rcRect, i_rcTimestamp.start, i_rcTimestamp.end);
             }
+        }
+
+        if ( i_rcTimestamp.IsPlaying )
+        {
+            if (AudioUtility.IsClipPlaying(i_rcClip))
+            {
+                int nSamplePosition = AudioUtility.GetClipSamplePosition(i_rcClip);
+
+                if (((float)nSamplePosition / (float)i_rcClip.samples) > ((i_rcTimestamp.end/1000.0f) / i_rcClip.length))
+                {
+                    AudioUtility.StopAllClips();
+                    i_rcTimestamp.IsPlaying = false;
+                }
+            }
+            else
+            {
+                i_rcTimestamp.IsPlaying = false;
+            }
+        }
+
+        if ( GUILayout.Button("Play"))
+        {
+            int nSampleStart = (int)((i_rcClip.samples / i_rcClip.length)*(i_rcTimestamp.start/1000f));
+
+            AudioUtility.PlayClip(i_rcClip);
+            AudioUtility.SetClipSamplePosition(i_rcClip, nSampleStart);
+            i_rcTimestamp.IsPlaying = true;
         }
 
         EditorGUI.indentLevel--;
@@ -1458,6 +1494,36 @@ public class BookEditor : EditorWindow
             GUI.EndClip();
         }
     }
+
+    private void DrawCurrentAudioPosition(AudioClip rcAudioClip, Rect i_rcRect, int i_nSamplePosition)
+    {
+        Material material = new Material(Shader.Find("Hidden/Internal-Colored"));
+        // If we are currently in the Repaint event, begin to draw a clip of the size of 
+        // previously reserved rectangle, and push the current matrix for drawing.
+        GUI.BeginClip(i_rcRect);
+        GL.PushMatrix();
+
+        // set material for rendering.
+        material.SetPass(0);
+
+        float fStart = i_rcRect.width * ((float)i_nSamplePosition / (float)rcAudioClip.samples);
+        float fEnd = fStart + 5f;
+
+        GL.Begin(GL.QUADS);
+
+        GL.Color(new Color(1.0f, 0.0f, 0.0f, 1.0f));
+
+        GL.Vertex3(fStart, 0, 0);
+        GL.Vertex3(fEnd, 0, 0);
+        GL.Vertex3(fEnd, i_rcRect.height, 0);
+        GL.Vertex3(fStart, i_rcRect.height, 0);
+
+        GL.End();
+
+        GL.PopMatrix();
+        GUI.EndClip();
+    }
+
 
     private void ClearRect(Rect i_rcRect, Color i_rcColor)
     {
