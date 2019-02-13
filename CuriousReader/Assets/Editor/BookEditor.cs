@@ -906,49 +906,39 @@ public class BookEditor : EditorWindow
         {
             i_rcTrigger.type = (TriggerType)EditorGUILayout.EnumPopup(i_rcTrigger.type, EditorStyles.popup);
 
-            if ( eLastTriggerType != i_rcTrigger.type)
+            if (eLastTriggerType != i_rcTrigger.type)
             {
                 i_rcTrigger.Params = "";
                 i_rcTrigger.EditorFields = null;
                 i_rcTrigger.PerformanceParams = null;
             }
-
-            if ( i_rcTrigger.type == TriggerType.Navigation )
+            switch (i_rcTrigger.type)
             {
-                i_rcTrigger.Params = OnBookGUI<NavigationParams>(i_rcTrigger);
-                EditorGUI.BeginDisabledGroup(true);
-                i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
-                EditorGUI.EndDisabledGroup();
-            }
-            else if (i_rcTrigger.type == TriggerType.Animation)
-            {
-                i_rcTrigger.Params = OnBookGUI<SpriteAnimationParams>(i_rcTrigger); 
-                EditorGUI.BeginDisabledGroup(true);
-                i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
-                EditorGUI.EndDisabledGroup();
+                case TriggerType.Navigation:
+                    i_rcTrigger.Params = OnBookGUI<NavigationParams>(i_rcTrigger);
+                    break;
+                case TriggerType.Animation:
+                    i_rcTrigger.Params = OnBookGUI<SpriteAnimationParams>(i_rcTrigger);
+                    break;
+                case TriggerType.Move:
+                    i_rcTrigger.Params = OnBookGUI<MoveParams>(i_rcTrigger);
+                    break;
+                case TriggerType.Highlight:
+                    i_rcTrigger.Params = OnBookGUI<HighlightParams>(i_rcTrigger);
+                    break;
+                case TriggerType.Rotate:
+                    i_rcTrigger.Params = OnBookGUI<RotateParams>(i_rcTrigger);
+                    break;
+                case TriggerType.Scale:
+                    i_rcTrigger.Params = OnBookGUI<ScaleParams>(i_rcTrigger);
+                    break;
+                default:
+                    break;
             }
 
-            else if (i_rcTrigger.type == TriggerType.Move)
-            {
-                i_rcTrigger.Params = OnBookGUI<MoveParams>(i_rcTrigger);
-
-                EditorGUI.BeginDisabledGroup(true);
-                i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
-                EditorGUI.EndDisabledGroup();
-            }
-            else if (i_rcTrigger.type == TriggerType.Highlight)
-            {
-                i_rcTrigger.Params = OnBookGUI<HighlightParams>(i_rcTrigger);
-
-                EditorGUI.BeginDisabledGroup(true);
-                i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
-                EditorGUI.EndDisabledGroup();
-            }
-            else
-            {
-                i_rcTrigger.animId = EditorGUILayout.IntField("Anim ID", i_rcTrigger.animId, EditorStyles.numberField);
-
-            }
+            EditorGUI.BeginDisabledGroup(true);
+            i_rcTrigger.Params = EditorGUILayout.TextField(i_rcTrigger.Params);
+            EditorGUI.EndDisabledGroup();
             AddObjectWordLinking(i_rcTrigger, i_nOrdinal, i_pageOrdinal);
         }
 
