@@ -21,18 +21,18 @@ namespace CuriousReader.Performance
     {
         public float ScaleMultiplier;
 
-        public HighlightActorPerformance Init(float i_scaleMultiplier = 1.5f, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback))
+        public HighlightActorPerformance Init(float i_scaleMultiplier = 1.5f, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback))
         {
-            HighlightActorPerformance instance = Init(Vector3.zero, i_duration, i_speed, i_callback) as HighlightActorPerformance;
+            base.Init(Vector3.zero, i_duration, i_speed, i_AllowInterrupt, i_callback);
             ScaleMultiplier = i_scaleMultiplier;
-            return instance;
+            return this;
         }
 
         public HighlightActorPerformance Init (HighlightParams i_rcParams)
         {
             if(i_rcParams != null)
             {
-                return Init(i_rcParams.ScaleMultiplier, i_rcParams.duration, i_rcParams.speed, i_rcParams.OnComplete);
+                return Init(i_rcParams.ScaleMultiplier, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete);
             }
             Debug.LogWarningFormat("Performance of Type {0} received Null param object,using default Values", this.GetType());
             return Init();
@@ -48,9 +48,18 @@ namespace CuriousReader.Performance
             if (i_rcActor != null)
             {
                 TweenSystem.Highlight(i_rcActor, ScaleMultiplier, duration, speed, OnComplete);
+                Performing = true;
                 return true;
             }
             return false;
+        }
+
+        public override void Cancel(GameObject i_rcActor)
+        {
+            if (i_rcActor != null)
+            {
+               int restart = i_rcActor.transform.DORestart();
+            }
         }
 
         public override void UnPerform(GameObject i_rcActor)

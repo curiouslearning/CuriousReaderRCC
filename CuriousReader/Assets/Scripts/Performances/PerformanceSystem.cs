@@ -72,6 +72,31 @@ namespace CuriousReader.Performance
                 rcComponent.Prompt(rcInvoker, promptType);
             }
         }
+
+        public static bool IsPerforming (GameObject i_rcActor)
+        {
+            PerformanceComponent rcComponent = i_rcActor.GetComponent<PerformanceComponent>();
+            if(rcComponent == null)
+            {
+                return false;
+            }
+            if (TweenSystem.IsTweening(i_rcActor))
+            {
+                return true;
+            }
+            SpriteAnimationPerformance[] rcAnimations = rcComponent.GetPerformancesOfType<SpriteAnimationPerformance>();
+            if(rcAnimations != null)
+            {
+                foreach(SpriteAnimationPerformance rcPerformance in rcAnimations)
+                {
+                    if(rcPerformance.IsPerforming())
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
         #endregion
         #region Performance Getters
         /// <summary>
@@ -114,12 +139,12 @@ namespace CuriousReader.Performance
         /// <param name="speed">Speed of the tween (overrides duration).</param>
         /// <param name="OnComplete">optional method to call on completion of tween.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
-        public static T GetTweenPerformance<T>(bool doInit = false, Vector3 endValues = default(Vector3), float duration = 1f, float speed = default(float), TweenCallback OnComplete = default(TweenCallback)) where T : TweenActorPerformance
+        public static T GetTweenPerformance<T>(bool doInit = false, Vector3 endValues = default(Vector3), float duration = 1f, float speed = default(float), bool allowInterrupt = true, TweenCallback OnComplete = default(TweenCallback)) where T : TweenActorPerformance
         {
             T rcPerformance = ScriptableObject.CreateInstance<T>();
             if (rcPerformance != null && doInit)
             {
-                rcPerformance.Init(endValues, duration, speed, OnComplete);
+                rcPerformance.Init(endValues, duration, speed, allowInterrupt, OnComplete);
             }
             return rcPerformance;
         }

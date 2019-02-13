@@ -8,9 +8,11 @@ using CuriousReader.BookBuilder;
 namespace CuriousReader.Performance
 {
     public class PerformanceParams
-{
+    {
         [ExposeField]
         public List<GameObject> InvokerList = new List<GameObject>();
+        [ExposeField]
+        public bool AllowInterrupt = true;
 
     }
 
@@ -21,6 +23,26 @@ namespace CuriousReader.Performance
     public abstract class Performance : ScriptableObject
     {
         protected List<GameObject> InvokerList;
+        protected bool Performing;
+        protected bool AllowInterrupt;
+
+        public virtual Performance Init(List<GameObject> i_InvokerList = null, bool i_AllowInterrupt = true)
+        {
+            if(InvokerList == null && i_InvokerList != null)
+            {
+                InvokerList = i_InvokerList;
+            }
+            else
+            {
+                foreach(GameObject invoker in i_InvokerList)
+                {
+                    InvokerList.Add(invoker);
+                }
+            }
+            AllowInterrupt = i_AllowInterrupt;
+            return this;
+        }
+
         public virtual void AddInvoker(GameObject i_rcInvoker)
         {
             if (InvokerList != null)
@@ -55,11 +77,25 @@ namespace CuriousReader.Performance
             if (InvokerList != null && InvokerList.Count > 0)
             {
                 if (!InvokerList.Contains(i_rcInvoker))
+                {
                     return false;
+                }
+            }
+            if (PerformanceSystem.IsPerforming(i_rcActor))
+            {
+                if (AllowInterrupt)
+                {
+                    return true;
+                }
+                return false;
             }
             return true;
         }
 
+        public virtual bool IsPerforming()
+        {
+            return Performing;
+        }
         /// <summary>
         /// Perform -- The Execute of the "Command".  Here is where all the work is handled for the 
         /// performance.  
@@ -69,6 +105,7 @@ namespace CuriousReader.Performance
         public virtual bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)
         {
             Debug.Log("Performance.Perform entered.");
+            Performing = true;
             return true;
         }
 
@@ -78,8 +115,14 @@ namespace CuriousReader.Performance
         /// <param name="i_rcActor"></param>
         public virtual void Cancel(GameObject i_rcActor)
         {
+            Performing = false; 
             Debug.Log("Performance was just cancelled.");
         }
 
+        public virtual void UnPerform (GameObject i_rcActor)
+        {
+            Performing = false;
+            Debug.Log("undoing performance!");
+        }
     }
 }

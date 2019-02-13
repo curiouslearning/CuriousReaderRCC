@@ -14,10 +14,19 @@
     /// </summary>
     public class RotateActorPerformance : TweenActorPerformance
     {
-        public RotateActorPerformance Init(int i_degrees, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
+        public RotateActorPerformance Init(Vector3 i_EndValues, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
         {
-            RotateActorPerformance instance = base.Init(Vector3.zero, i_duration, i_speed, i_callback, i_yoyo) as RotateActorPerformance;
-            return instance;
+            base.Init(i_EndValues, i_duration, i_speed, i_AllowInterrupt, i_callback, i_yoyo);
+            return this;
+        }
+
+        public RotateActorPerformance Init (RotateParams i_rcParams)
+        {
+            if(i_rcParams != null)
+            {
+                return Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo);
+            }
+            return Init(Vector3.zero);
         }
 
         public override bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)
@@ -31,11 +40,10 @@
             return false;
         }
 
-
         public override void UnPerform(GameObject i_rcActor)
         {
             Cancel(i_rcActor);
-            TweenSystem.Rotate(i_rcActor, StartValues, i_duration: 0f);
+            TweenSystem.Rotate(i_rcActor, StartValues, RotateMode.Fast, 0f);
         }
     }
 }

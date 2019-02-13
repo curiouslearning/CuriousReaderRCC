@@ -13,18 +13,18 @@
     /// </summary>
     public class ScaleActorPerformance : TweenActorPerformance
     {
-        public override TweenActorPerformance Init(Vector3 i_endPos, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
+        public override TweenActorPerformance Init(Vector3 i_endPos, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
         {
-            ScaleActorPerformance instance = base.Init(i_endPos, duration, speed, i_callback, i_yoyo) as ScaleActorPerformance;
-            return instance;
+            base.Init(i_endPos, duration, speed, i_AllowInterrupt, i_callback, i_yoyo);
+            return this;
         }
 
         public ScaleActorPerformance Init (ScaleParams i_rcParams)
         {
             if (i_rcParams != null)
             {
-                ScaleActorPerformance instance = Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.OnComplete, i_rcParams.YoYo) as ScaleActorPerformance;
-                return instance;
+                Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo);
+                return this;
             }
             return Init(Vector3.zero) as ScaleActorPerformance;
         }

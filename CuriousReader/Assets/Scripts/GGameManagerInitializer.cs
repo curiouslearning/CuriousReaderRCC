@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class GGameManagerInitializer : MonoBehaviour {
 
@@ -21,5 +22,9 @@ public class GGameManagerInitializer : MonoBehaviour {
 
        //Destroy(this.gameObject);
     }
-   
+    private void Start()
+    {
+        DOTween.Init();
+    }
+
 }

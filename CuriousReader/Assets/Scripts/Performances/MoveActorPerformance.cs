@@ -18,12 +18,19 @@
     public class MoveActorPerformance : TweenActorPerformance
     {
 
-        public override TweenActorPerformance Init(Vector3 i_endPos, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
+        public  MoveActorPerformance Init(Vector3 i_endPos, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
         {
-            MoveActorPerformance instance = base.Init(i_endPos, i_duration, i_speed, i_callback, i_yoyo) as MoveActorPerformance;
-            return instance;
+            base.Init(i_endPos, i_duration, i_speed, i_AllowInterrupt, i_callback, i_yoyo);
+            return this;
         }
 
+        public MoveActorPerformance (MoveParams i_rcParams)
+        {
+            if(i_rcParams != null)
+            {
+                Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo);
+            }
+        }
 
         public override bool Perform(GameObject i_rcActor, GameObject i_rcInvoker = null)
         {

@@ -92,7 +92,11 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			Debug.LogError("ShelfManager's selected book is not set. ");
 			return;
 		}
-		string selectedBookJsonFileName = ShelfManager.selectedBook.ToLower() + ".json";
+#if UNITY_EDITOR_OSX
+        string selectedBookJsonFileName = ShelfManager.selectedBook + ".json";
+#else
+        string selectedBookJsonFileName = ShelfManager.selectedBook.ToLower() + ".json";
+#endif
 
         TextAsset selectedBookJson = ShelfManager.bundleLoaded.LoadAsset(selectedBookJsonFileName) as TextAsset;
 
@@ -734,8 +738,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
                             if ( ePrompt == PromptType.PairedClick )
                             {
-                                PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, PromptType.Click, graphicObject);
-
                                 tinkerText.pairedGraphics.Add(tinkerGraphic);
                                 tinkerGraphic.pairedText1 = tinkerText;
                             }
@@ -757,8 +759,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
                         if (highlightParams.PromptType == PromptType.PairedClick)
                         {
-                            PerformanceSystem.AddPerformance(graphicObject, pHighlight, PromptType.Click, graphicObject);
-
                             tinkerText.pairedGraphics.Add(tinkerGraphic);
                             tinkerGraphic.pairedText1 = tinkerText;
                         }
@@ -839,7 +839,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         }
                     }
                     break;
-                default: //Legacy triggers, to be removed pending Book Editor changes
+                default:
                    break;
             }
         }

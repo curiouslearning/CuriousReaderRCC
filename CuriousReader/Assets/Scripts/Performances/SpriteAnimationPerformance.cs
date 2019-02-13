@@ -66,10 +66,24 @@ namespace CuriousReader.Performance
                 {
                     if (rcAnimator.IsPlaying)
                     {
-                        rcAnimator.Restart();
                         rcAnimator.Stop();
                     }
                 }
+            }
+        }
+
+        public override void UnPerform(GameObject i_rcActor)
+        {
+            base.UnPerform(i_rcActor);
+            SpriteAnimator rcAnim = i_rcActor.GetComponent<SpriteAnimator>();
+            if (rcAnim != null)
+            {
+                if (!rcAnim.IsPlaying)
+                {
+                    rcAnim.Play();
+                }
+                rcAnim.Restart();
+                rcAnim.Stop();
             }
         }
 

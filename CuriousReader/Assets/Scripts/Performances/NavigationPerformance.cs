@@ -16,16 +16,12 @@ public class NavigationPerformance : Performance{
     int startPage;
     bool deactivateNextButton;
 
-    public NavigationPerformance Init (int i_nPageNumber, bool i_bDeactivateNextButton = false, List<GameObject> i_rcInvokers = null)
+    public NavigationPerformance Init (int i_nPageNumber, bool i_bDeactivateNextButton = false, List<GameObject> i_rcInvokers = null, bool i_AllowInterrupt = true)
     {
-        NavigationPerformance instance = this;
+        base.Init(i_rcInvokers, i_AllowInterrupt);
         pageNumber = i_nPageNumber;
         deactivateNextButton = i_bDeactivateNextButton;
-        foreach (GameObject rcInvoker in i_rcInvokers)
-        {
-            instance.AddInvoker(rcInvoker);
-        }
-        return instance;
+        return this;
     }
 
     public NavigationPerformance Init (int i_nPageNumber, bool i_bDeactivateNextButton = false, GameObject i_rcInvoker = null)

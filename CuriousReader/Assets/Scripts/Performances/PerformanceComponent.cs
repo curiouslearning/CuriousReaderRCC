@@ -7,6 +7,7 @@ using UnityEngine;
 namespace CuriousReader.Performance
 {
     public enum PromptType { Click, PairedClick, OnPageLoad, Collision, AutoPlay };
+    public delegate bool Callback(GameObject i_rcActor);
 
     public class PerformanceComponent : MonoBehaviour
     {
@@ -44,9 +45,11 @@ namespace CuriousReader.Performance
                             bool success = false;
                             if (rcPerformance.CanPerform(this.gameObject, i_rcInvokingActor))
                             {
+                                Callback OnComplete = (i_rcActor) => rcPerformance.Perform(i_rcActor);
+                                success = CancelAndUnperformAll(OnComplete);
 //                                Debug.LogFormat("{0} can perform Performance of type {1} invoked by {2}", this.gameObject.name, rcPerformance.GetType(), i_rcInvokingActor.name);
                                 // Need to add a callback for completion here.  
-                                success = rcPerformance.Perform(this.gameObject);
+                                //success = rcPerformance.Perform(this.gameObject);
                                 if (!success)
                                 {
                                     Debug.LogWarningFormat("({0}) failed to perform Performance of type ({1})!", this.gameObject.name, rcPerformance.GetType());
@@ -58,11 +61,56 @@ namespace CuriousReader.Performance
             }
         }
 
-        public void CancelAll()
+        public T GetPerformance <T>() where T: Performance
+        {
+            foreach (KeyValuePair<PromptType, List<Performance>> rcPair in Performances)
+            {
+                if (rcPair.Value != null)
+                {
+                    foreach (Performance rcPerformance in rcPair.Value)
+                    {
+                        if(rcPerformance.GetType() == typeof(T))
+                        {
+                            return rcPerformance as T;
+                        }
+                    }
+                }
+            }
+            return null;
+        }
+
+        public T[] GetPerformancesOfType <T>() where T: Performance
+        {
+            List<T> rcPerformances = new List<T>();
+            foreach (KeyValuePair<PromptType, List<Performance>> rcPair in Performances)
+            {
+                if(rcPair.Value != null)
+                {
+                    foreach(Performance rcPerformance in rcPair.Value)
+                    {
+                        if (rcPerformance.GetType() == typeof(T))
+                            rcPerformances.Add(rcPerformance as T);
+                    }
+                }
+            }
+            return rcPerformances.ToArray();
+        }
+
+        public bool HasPerformanceOfType <T>() where T: Performance
+        {
+            T test = GetPerformance<T>();
+            if (test != null)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public bool CancelAll(Callback OnComplete = default(Callback))
         {
             if (Performances == null)
             {
-                return;
+                return false;
             }
             foreach (KeyValuePair<PromptType, List<Performance>> rcPair in Performances)
             {
@@ -74,10 +122,40 @@ namespace CuriousReader.Performance
                     }
                 }
             }
-
+            if (OnComplete != null)
+            {
+                return OnComplete(this.gameObject);
+            }
+            return true;
         }
 
-        public void CancelAndRemoveAll()
+        public bool CancelAndUnperformAll(Callback OnComplete = default(Callback))
+        {
+            if(Performances != null)
+            {
+                foreach(KeyValuePair<PromptType, List<Performance>> rcPair in Performances)
+                {
+                    if(rcPair.Value != null)
+                    {
+                        foreach(Performance p in rcPair.Value)
+                        {
+                            if (p.IsPerforming())
+                            {
+                                p.Cancel(this.gameObject);
+                                p.UnPerform(this.gameObject);
+                            }
+                        }
+                    }
+                }
+            }
+            if(OnComplete != null)
+            {
+                return OnComplete(this.gameObject);
+            }
+            return true;
+        }
+
+        public bool CancelAndRemoveAll(Callback OnComplete = default(Callback))
         {
             if (Performances != null)
             {
@@ -91,9 +169,14 @@ namespace CuriousReader.Performance
                     rcPair.Value.Clear();
                 }
             }
+            if (OnComplete != null)
+            {
+                return OnComplete(this.gameObject);
+            }
+            return true;
         }
 
-        public void CancelByPromptType(PromptType i_ePromptType)
+        public bool CancelByPromptType(PromptType i_ePromptType, Callback OnComplete = default(Callback))
         {
             if (Performances.ContainsKey(i_ePromptType))
             {
@@ -104,13 +187,18 @@ namespace CuriousReader.Performance
 
                 }
             }
+            if (OnComplete != null)
+            {
+                return OnComplete(this.gameObject);
+            }
+            return true;
         }
 
-        public void CancelAndRemoveByType(PromptType i_ePromptType)
+        public bool CancelAndRemoveByType(PromptType i_ePromptType, Callback OnComplete = default(Callback))
         {
             if (!Performances.ContainsKey(i_ePromptType))
             {
-                return;
+                return false;
             }
             List<Performance> pList = Performances[i_ePromptType];
             for (int i = 0; i < pList.Count; i++)
@@ -120,7 +208,12 @@ namespace CuriousReader.Performance
                     pList[i].Cancel(this.gameObject);
                 }
             }
-            pList.Clear();
+            pList.Clear(); 
+            if (OnComplete != null)
+            {
+                return OnComplete(this.gameObject);
+            }
+            return true;
         }
     }
 }

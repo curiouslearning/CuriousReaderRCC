@@ -39,44 +39,26 @@ namespace CuriousReader.Performance
         public float speed;
         public TweenCallback OnComplete;
         public bool YoYo;
-        public virtual TweenActorPerformance Init(Vector3 i_values, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
+        public virtual TweenActorPerformance Init(Vector3 i_values, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
         {
-            TweenActorPerformance instance = this;
-            DOTween.Init();
             EndValues = i_values;
             duration = i_duration;
             speed = i_speed;
+            AllowInterrupt = i_AllowInterrupt;
             OnComplete = i_callback;
             YoYo = i_yoyo;
-            return instance;
+            return this;
         }
         public TweenActorPerformance Init(TweenActorParams i_rcParams)
         {
             if (i_rcParams != null)
             {
-                return Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.OnComplete, i_rcParams.YoYo);
+                return Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo);
             }
             Debug.LogWarningFormat("Performance of Type {0} received Null param object,using default Values", this.GetType());
             return Init(Vector3.zero);
         }
 
-        /// <summary>
-        /// Check to see if this Performance can currently be performed
-        /// </summary>
-        /// <returns><c>true</c>, if we can perform right now, <c>false</c> otherwise.</returns>
-        /// <param name="i_rcActor">The actor to perform the Performance</param>
-        public override bool CanPerform(GameObject i_rcActor, GameObject i_rcInvoker = null)
-        {
-            if (!base.CanPerform(i_rcActor, i_rcInvoker))
-            {
-                return false;
-            }
-            if (i_rcActor != null && !TweenSystem.IsTweening(i_rcActor))
-            {
-                return true;
-            }
-            return false;
-        }
 
         /// <summary>
         /// Excecute this performance with the specified actor
@@ -98,17 +80,10 @@ namespace CuriousReader.Performance
         {
             if (i_rcActor != null)
             {
+                DOTween.Restart(i_rcActor);
                 int kill = DOTween.Kill(i_rcActor);
-//                Debug.LogFormat("Killed {1} tween(s) on {0}", i_rcActor.name, kill);
+                //                Debug.LogFormat("Killed {1} tween(s) on {0}", i_rcActor.name, kill);
             }
         }
-
-        /// <summary>
-        /// return the actor to its original state before the execution of this performance
-        /// </summary>
-        /// <param name="i_rcActor">the actor to reset.</param>
-        public abstract void UnPerform(GameObject i_rcActor);
-
-
     }
 }
