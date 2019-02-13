@@ -134,59 +134,59 @@
             "audioFile": "audio_smdp_2_stanza_page_0_6.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 240,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_sky.mp3",
-                    "end": 1008,
+                    "end": 490,
                     "starWord": "No"
                 },
                 {
-                    "start": 1009,
+                    "start": 1220,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 1429,
+                    "end": 1370,
                     "starWord": "No"
                 },
                 {
-                    "start": 1430,
+                    "start": 1480,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_love.mp3",
-                    "end": 1692,
+                    "end": 1510,
                     "starWord": "No"
                 },
                 {
-                    "start": 1693,
+                    "start": 1710,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_the_1.mp3",
-                    "end": 1974,
+                    "end": 1840,
                     "starWord": "No"
                 },
                 {
-                    "start": 1975,
+                    "start": 1840,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_sky.mp3",
-                    "end": 2412,
+                    "end": 2490,
                     "starWord": "No"
                 },
                 {
-                    "start": 2413,
+                    "start": 3170,
                     "wordIdx": 5,
                     "audio": "audio_smdp_word_day.mp3",
-                    "end": 3197,
+                    "end": 3190,
                     "starWord": "No"
                 },
                 {
-                    "start": 3198,
+                    "start": 3190,
                     "wordIdx": 6,
                     "audio": "audio_smdp_word_and.mp3",
-                    "end": 3342,
+                    "end": 3300,
                     "starWord": "No"
                 },
                 {
-                    "start": 3343,
+                    "start": 3650,
                     "wordIdx": 7,
                     "audio": "audio_smdp_word_night.mp3",
-                    "end": 3781,
+                    "end": 3820,
                     "starWord": "No"
                 }
             ],
@@ -312,38 +312,38 @@
             "audioFile": "audio_smdp_2_stanza_page_1.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 292,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_look.mp3",
-                    "end": 929,
+                    "end": 575,
                     "starWord": "No"
                 },
                 {
-                    "start": 929,
+                    "start": 1337,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_big.mp3",
-                    "end": 1858,
+                    "end": 1516,
                     "starWord": "No"
                 },
                 {
-                    "start": 1859,
+                    "start": 1684,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_cloud.mp3",
-                    "end": 2788,
+                    "end": 2040,
                     "starWord": "No"
                 },
                 {
-                    "start": 2788,
+                    "start": 2360,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_small.mp3",
-                    "end": 3717,
+                    "end": 2855,
                     "starWord": "No"
                 },
                 {
-                    "start": 3718,
+                    "start": 2960,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_cloud.mp3",
-                    "end": 4647,
+                    "end": 3274,
                     "starWord": "No"
                 }
             ],
@@ -493,31 +493,31 @@
             "audioFile": "audio_smdp_2_stanza_page_2.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 226,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_big.mp3",
-                    "end": 607,
+                    "end": 434,
                     "starWord": "No"
                 },
                 {
-                    "start": 607,
+                    "start": 578,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_bird.mp3",
-                    "end": 1214,
+                    "end": 911,
                     "starWord": "No"
                 },
                 {
-                    "start": 1214,
+                    "start": 1266,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_small.mp3",
                     "end": 1821,
                     "starWord": "No"
                 },
                 {
-                    "start": 1821,
+                    "start": 1823,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_bird.mp3",
-                    "end": 2428,
+                    "end": 2241,
                     "starWord": "No"
                 }
             ],
@@ -773,45 +773,45 @@
             "audioFile": "audio_smdp_2_stanza_page_3.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 300,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_a_1.mp3",
-                    "end": 654,
+                    "end": 420,
                     "starWord": "No"
                 },
                 {
-                    "start": 654,
+                    "start": 535,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_flying.mp3",
-                    "end": 1308,
+                    "end": 1067,
                     "starWord": "No"
                 },
                 {
-                    "start": 1308,
+                    "start": 1071,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_bird.mp3",
-                    "end": 1962,
+                    "end": 1345,
                     "starWord": "No"
                 },
                 {
-                    "start": 1963,
+                    "start": 1593,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_a_1.mp3",
-                    "end": 2617,
+                    "end": 1684,
                     "starWord": "No"
                 },
                 {
-                    "start": 2617,
+                    "start": 1690,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_singing.mp3",
-                    "end": 3271,
+                    "end": 2306,
                     "starWord": "No"
                 },
                 {
-                    "start": 3271,
+                    "start": 2312,
                     "wordIdx": 5,
                     "audio": "audio_smdp_word_bird.mp3",
-                    "end": 3925,
+                    "end": 2631,
                     "starWord": "No"
                 }
             ],
@@ -1040,31 +1040,31 @@
             "audioFile": "audio_smdp_2_stanza_page_4.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 259,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_big.mp3",
-                    "end": 838,
+                    "end": 526,
                     "starWord": "No"
                 },
                 {
-                    "start": 838,
+                    "start": 550,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_sun.mp3",
-                    "end": 1676,
+                    "end": 1060,
                     "starWord": "No"
                 },
                 {
-                    "start": 1676,
+                    "start": 1125,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_small.mp3",
-                    "end": 2514,
+                    "end": 1588,
                     "starWord": "No"
                 },
                 {
-                    "start": 2514,
+                    "start": 1627,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_star.mp3",
-                    "end": 3352,
+                    "end": 2281,
                     "starWord": "No"
                 }
             ],
@@ -1296,45 +1296,45 @@
             "audioFile": "audio_smdp_2_stanza_page_5.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 276,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_a_1.mp3",
-                    "end": 692,
+                    "end": 390,
                     "starWord": "No"
                 },
                 {
-                    "start": 692,
+                    "start": 458,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_shining.mp3",
-                    "end": 1384,
+                    "end": 937,
                     "starWord": "No"
                 },
                 {
-                    "start": 1384,
+                    "start": 996,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_sun.mp3",
-                    "end": 2076,
+                    "end": 1428,
                     "starWord": "No"
                 },
                 {
-                    "start": 2076,
+                    "start": 1682,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_a_1.mp3",
-                    "end": 2768,
+                    "end": 1809,
                     "starWord": "No"
                 },
                 {
-                    "start": 2768,
+                    "start": 1820,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_sparkling.mp3",
-                    "end": 3460,
+                    "end": 2458,
                     "starWord": "No"
                 },
                 {
-                    "start": 3460,
+                    "start": 2465,
                     "wordIdx": 5,
                     "audio": "audio_smdp_word_star.mp3",
-                    "end": 4152,
+                    "end": 3068,
                     "starWord": "No"
                 }
             ],
@@ -1591,59 +1591,59 @@
             "audioFile": "audio_smdp_2_stanza_page_0_6.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 213,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_sky.mp3",
-                    "end": 628,
+                    "end": 1060,
                     "starWord": "No"
                 },
                 {
-                    "start": 628,
+                    "start": 1227,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 1256,
+                    "end": 1391,
                     "starWord": "No"
                 },
                 {
-                    "start": 1256,
+                    "start": 1427,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_love.mp3",
-                    "end": 1884,
+                    "end": 1720,
                     "starWord": "No"
                 },
                 {
-                    "start": 1885,
+                    "start": 1723,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_the_1.mp3",
-                    "end": 2513,
+                    "end": 1832,
                     "starWord": "No"
                 },
                 {
-                    "start": 2513,
+                    "start": 1834,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_sky.mp3",
-                    "end": 3141,
+                    "end": 2509,
                     "starWord": "No"
                 },
                 {
-                    "start": 3141,
+                    "start": 2901,
                     "wordIdx": 5,
                     "audio": "audio_smdp_word_day.mp3",
-                    "end": 3769,
+                    "end": 3153,
                     "starWord": "No"
                 },
                 {
-                    "start": 3770,
+                    "start": 3156,
                     "wordIdx": 6,
                     "audio": "audio_smdp_word_and.mp3",
-                    "end": 4398,
+                    "end": 3367,
                     "starWord": "No"
                 },
                 {
-                    "start": 4398,
+                    "start": 3373,
                     "wordIdx": 7,
                     "audio": "audio_smdp_word_night.mp3",
-                    "end": 5026,
+                    "end": 3809,
                     "starWord": "No"
                 }
             ],
@@ -1799,24 +1799,24 @@
             "audioFile": "audio_smdp_2_stanza_page_7_13_20.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 232,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_where.mp3",
-                    "end": 1152,
+                    "end": 677,
                     "starWord": "No"
                 },
                 {
-                    "start": 1152,
+                    "start": 678,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_to_1.mp3",
-                    "end": 2304,
+                    "end": 826,
                     "starWord": "No"
                 },
                 {
-                    "start": 2304,
+                    "start": 834,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_go.mp3",
-                    "end": 3456,
+                    "end": 1475,
                     "starWord": "No"
                 }
             ],
@@ -2144,38 +2144,38 @@
             "audioFile": "audio_smdp_2_stanza_page_8_12.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 219,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_forest.mp3",
                     "end": 750,
                     "starWord": "No"
                 },
                 {
-                    "start": 750,
+                    "start": 1183,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 1500,
+                    "end": 1272,
                     "starWord": "No"
                 },
                 {
-                    "start": 1500,
+                    "start": 1325,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_love.mp3",
-                    "end": 2250,
+                    "end": 1592,
                     "starWord": "No"
                 },
                 {
-                    "start": 2250,
+                    "start": 1659,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_the_1.mp3",
-                    "end": 3000,
+                    "end": 1748,
                     "starWord": "No"
                 },
                 {
-                    "start": 3000,
+                    "start": 1769,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_forest.mp3",
-                    "end": 3750,
+                    "end": 2357,
                     "starWord": "No"
                 }
             ],
@@ -2442,31 +2442,31 @@
             "audioFile": "audio_smdp_2_stanza_page_9.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 179,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_look.mp3",
-                    "end": 704,
+                    "end": 658,
                     "starWord": "No"
                 },
                 {
-                    "start": 704,
+                    "start": 924,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_a_1.mp3",
-                    "end": 1408,
+                    "end": 1077,
                     "starWord": "No"
                 },
                 {
-                    "start": 1408,
+                    "start": 1083,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_tall.mp3",
-                    "end": 2112,
+                    "end": 1410,
                     "starWord": "No"
                 },
                 {
-                    "start": 2112,
+                    "start": 1411,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_giraffe.mp3",
-                    "end": 2816,
+                    "end": 2008,
                     "starWord": "No"
                 }
             ],
@@ -2625,28 +2625,28 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_big.mp3",
-                    "end": 724,
+                    "end": 182,
                     "starWord": "No"
                 },
                 {
-                    "start": 724,
+                    "start": 183,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_monkeys.mp3",
-                    "end": 1448,
+                    "end": 919,
                     "starWord": "No"
                 },
                 {
-                    "start": 1449,
+                    "start": 1087,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_small.mp3",
-                    "end": 2173,
+                    "end": 1603,
                     "starWord": "No"
                 },
                 {
-                    "start": 2173,
+                    "start": 1604,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_monkeys.mp3",
-                    "end": 2897,
+                    "end": 2267,
                     "starWord": "No"
                 }
             ],
@@ -3028,31 +3028,31 @@
             "audioFile": "audio_smdp_2_stanza_page_11.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 161,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_short.mp3",
-                    "end": 798,
+                    "end": 533,
                     "starWord": "No"
                 },
                 {
-                    "start": 798,
+                    "start": 535,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_sticks.mp3",
-                    "end": 1596,
+                    "end": 1105,
                     "starWord": "No"
                 },
                 {
-                    "start": 1597,
+                    "start": 1350,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_long.mp3",
-                    "end": 2395,
+                    "end": 1727,
                     "starWord": "No"
                 },
                 {
-                    "start": 2396,
+                    "start": 1730,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_sticks.mp3",
-                    "end": 3194,
+                    "end": 2397,
                     "starWord": "No"
                 }
             ],
@@ -3564,38 +3564,38 @@
             "audioFile": "audio_smdp_2_stanza_page_8_12.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 218,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_forest.mp3",
-                    "end": 668,
+                    "end": 834,
                     "starWord": "No"
                 },
                 {
-                    "start": 668,
+                    "start": 1179,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 1336,
+                    "end": 1343,
                     "starWord": "No"
                 },
                 {
-                    "start": 1336,
+                    "start": 1349,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_love.mp3",
-                    "end": 2004,
+                    "end": 1625,
                     "starWord": "No"
                 },
                 {
-                    "start": 2004,
+                    "start": 1643,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_the_1.mp3",
-                    "end": 2672,
+                    "end": 1757,
                     "starWord": "No"
                 },
                 {
-                    "start": 2672,
+                    "start": 1758,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_forest.mp3",
-                    "end": 3340,
+                    "end": 2329,
                     "starWord": "No"
                 }
             ],
@@ -3771,24 +3771,24 @@
             "audioFile": "audio_smdp_2_stanza_page_7_13_20.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 243,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_where.mp3",
-                    "end": 750,
+                    "end": 641,
                     "starWord": "No"
                 },
                 {
-                    "start": 750,
+                    "start": 644,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_to_1.mp3",
-                    "end": 1500,
+                    "end": 818,
                     "starWord": "No"
                 },
                 {
-                    "start": 1500,
+                    "start": 823,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_go.mp3",
-                    "end": 2250,
+                    "end": 1495,
                     "starWord": "No"
                 }
             ],
@@ -3971,32 +3971,32 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_ocean.mp3",
-                    "end": 711,
+                    "end": 756,
                     "starWord": "No"
                 },
                 {
-                    "start": 711,
+                    "start": 991,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 1422,
+                    "end": 1135,
                     "starWord": "No"
                 },
                 {
-                    "start": 1423,
+                    "start": 1136,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_love.mp3",
-                    "end": 2134,
+                    "end": 1441,
                     "starWord": "No"
                 },
                 {
-                    "start": 2135,
+                    "start": 1497,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_the_1.mp3",
-                    "end": 2846,
+                    "end": 1587,
                     "starWord": "No"
                 },
                 {
-                    "start": 2847,
+                    "start": 1588,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_ocean.mp3",
                     "end": 3558,
@@ -4255,31 +4255,31 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 808,
+                    "start": 1038,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_big.mp3",
-                    "end": 1616,
+                    "end": 1366,
                     "starWord": "No"
                 },
                 {
-                    "start": 1617,
+                    "start": 1385,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_boat.mp3",
-                    "end": 2425,
+                    "end": 1868,
                     "starWord": "No"
                 },
                 {
-                    "start": 2425,
+                    "start": 1974,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_small.mp3",
-                    "end": 3233,
+                    "end": 2502,
                     "starWord": "No"
                 },
                 {
-                    "start": 3234,
+                    "start": 2510,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_boat.mp3",
-                    "end": 4042,
+                    "end": 3121,
                     "starWord": "No"
                 }
             ],
@@ -4527,31 +4527,31 @@
             "audioFile": "audio_smdp_2_stanza_page_16.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 156,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_fast.mp3",
-                    "end": 808,
+                    "end": 681,
                     "starWord": "No"
                 },
                 {
-                    "start": 808,
+                    "start": 682,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_boat.mp3",
-                    "end": 1616,
+                    "end": 1162,
                     "starWord": "No"
                 },
                 {
-                    "start": 1617,
+                    "start": 1168,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_slow.mp3",
-                    "end": 2425,
+                    "end": 1721,
                     "starWord": "No"
                 },
                 {
-                    "start": 2425,
+                    "start": 1725,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_boat.mp3",
-                    "end": 3233,
+                    "end": 2321,
                     "starWord": "No"
                 }
             ],
@@ -4781,31 +4781,31 @@
             "audioFile": "audio_smdp_2_stanza_page_17.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 98,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_happy.mp3",
-                    "end": 814,
+                    "end": 562,
                     "starWord": "No"
                 },
                 {
-                    "start": 814,
+                    "start": 565,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_fish.mp3",
-                    "end": 1628,
+                    "end": 1110,
                     "starWord": "No"
                 },
                 {
-                    "start": 1629,
+                    "start": 1184,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_sad.mp3",
-                    "end": 2443,
+                    "end": 1706,
                     "starWord": "No"
                 },
                 {
-                    "start": 2443,
+                    "start": 1710,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_fish.mp3",
-                    "end": 3257,
+                    "end": 2214,
                     "starWord": "No"
                 }
             ],
@@ -5107,28 +5107,28 @@
             "audioFile": "audio_smdp_2_stanza_page_18.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 56,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_big.mp3",
-                    "end": 793,
+                    "end": 427,
                     "starWord": "No"
                 },
                 {
-                    "start": 793,
+                    "start": 432,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_octopus.mp3",
-                    "end": 1586,
+                    "end": 1248,
                     "starWord": "No"
                 },
                 {
-                    "start": 1586,
+                    "start": 1328,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_small.mp3",
-                    "end": 2379,
+                    "end": 1920,
                     "starWord": "No"
                 },
                 {
-                    "start": 2379,
+                    "start": 1924,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_octopus.mp3",
                     "end": 3172,
@@ -5613,38 +5613,38 @@
             "audioFile": "audio_smdp_2_stanza_page_14_19.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 166,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_ocean.mp3",
-                    "end": 666,
+                    "end": 855,
                     "starWord": "No"
                 },
                 {
-                    "start": 666,
+                    "start": 931,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 1332,
+                    "end": 1139,
                     "starWord": "No"
                 },
                 {
-                    "start": 1332,
+                    "start": 1141,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_love.mp3",
-                    "end": 1998,
+                    "end": 1475,
                     "starWord": "No"
                 },
                 {
-                    "start": 1999,
+                    "start": 1478,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_the_1.mp3",
-                    "end": 2665,
+                    "end": 1637,
                     "starWord": "No"
                 },
                 {
-                    "start": 2665,
+                    "start": 1638,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_ocean.mp3",
-                    "end": 3331,
+                    "end": 2239,
                     "starWord": "No"
                 }
             ],
@@ -5830,21 +5830,21 @@
             "audioFile": "audio_smdp_2_stanza_page_7_13_20.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 245,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_where.mp3",
-                    "end": 683,
+                    "end": 641,
                     "starWord": "No"
                 },
                 {
-                    "start": 683,
+                    "start": 642,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_to_1.mp3",
-                    "end": 1366,
+                    "end": 863,
                     "starWord": "No"
                 },
                 {
-                    "start": 1367,
+                    "start": 865,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_go.mp3",
                     "end": 2050,
@@ -6235,45 +6235,45 @@
             "audioFile": "audio_smdp_2_stanza_page_21.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 86,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_my.mp3",
-                    "end": 684,
+                    "end": 484,
                     "starWord": "No"
                 },
                 {
-                    "start": 684,
+                    "start": 486,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_home.mp3",
-                    "end": 1368,
+                    "end": 1112,
                     "starWord": "No"
                 },
                 {
-                    "start": 1369,
+                    "start": 1115,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 2053,
+                    "end": 1299,
                     "starWord": "No"
                 },
                 {
-                    "start": 2054,
+                    "start": 1301,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_love.mp3",
-                    "end": 2738,
+                    "end": 1640,
                     "starWord": "No"
                 },
                 {
-                    "start": 2739,
+                    "start": 1642,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_my.mp3",
-                    "end": 3423,
+                    "end": 1912,
                     "starWord": "No"
                 },
                 {
-                    "start": 3424,
+                    "start": 1912,
                     "wordIdx": 5,
                     "audio": "audio_smdp_word_home.mp3",
-                    "end": 4108,
+                    "end": 2529,
                     "starWord": "No"
                 }
             ],
@@ -6421,24 +6421,24 @@
             "audioFile": "audio_smdp_2_stanza_page_22.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 133,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 786,
+                    "end": 460,
                     "starWord": "No"
                 },
                 {
-                    "start": 786,
+                    "start": 462,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_eat.mp3",
-                    "end": 1572,
+                    "end": 735,
                     "starWord": "No"
                 },
                 {
-                    "start": 1572,
+                    "start": 736,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_food.mp3",
-                    "end": 2358,
+                    "end": 1484,
                     "starWord": "No"
                 }
             ],
@@ -6586,31 +6586,31 @@
             "audioFile": "audio_smdp_2_stanza_page_23.mp3",
             "timestamps": [
                 {
-                    "start": 0,
+                    "start": 151,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_yum.mp3",
-                    "end": 834,
+                    "end": 825,
                     "starWord": "No"
                 },
                 {
-                    "start": 834,
+                    "start": 1040,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 1668,
+                    "end": 1238,
                     "starWord": "No"
                 },
                 {
-                    "start": 1668,
+                    "start": 1239,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_am.mp3",
-                    "end": 2502,
+                    "end": 1489,
                     "starWord": "No"
                 },
                 {
-                    "start": 2502,
+                    "start": 1490,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_happy.mp3",
-                    "end": 3336,
+                    "end": 2299,
                     "starWord": "No"
                 }
             ],
@@ -7210,63 +7210,63 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_different.mp3",
-                    "end": 678,
+                    "end": 590,
                     "starWord": "No"
                 },
                 {
-                    "start": 678,
+                    "start": 592,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_places.mp3",
-                    "end": 1356,
+                    "end": 1250,
                     "starWord": "No"
                 },
                 {
-                    "start": 1357,
+                    "start": 1451,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_i.mp3",
-                    "end": 2035,
+                    "end": 1683,
                     "starWord": "No"
                 },
                 {
-                    "start": 2036,
+                    "start": 1685,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_love.mp3",
-                    "end": 2714,
+                    "end": 1996,
                     "starWord": "No"
                 },
                 {
-                    "start": 2715,
+                    "start": 2023,
                     "wordIdx": 4,
                     "audio": "audio_smdp_word_different.mp3",
-                    "end": 3393,
+                    "end": 2463,
                     "starWord": "No"
                 },
                 {
-                    "start": 3393,
+                    "start": 2465,
                     "wordIdx": 5,
                     "audio": "audio_smdp_word_places.mp3",
-                    "end": 4071,
+                    "end": 3023,
                     "starWord": "No"
                 },
                 {
-                    "start": 4072,
+                    "start": 3157,
                     "wordIdx": 6,
                     "audio": "audio_smdp_word_night.mp3",
-                    "end": 4750,
+                    "end": 3652,
                     "starWord": "No"
                 },
                 {
-                    "start": 4751,
+                    "start": 3659,
                     "wordIdx": 7,
                     "audio": "audio_smdp_word_and.mp3",
-                    "end": 5429,
+                    "end": 3921,
                     "starWord": "No"
                 },
                 {
-                    "start": 5430,
+                    "start": 3925,
                     "wordIdx": 8,
                     "audio": "audio_smdp_word_day.mp3",
-                    "end": 6108,
+                    "end": 4536,
                     "starWord": "No"
                 }
             ],
