@@ -13,17 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fps: 30
   frames:
+  - {fileID: 21300000, guid: 833ac5123661ad34da627d4fd1db5164, type: 3}
   - {fileID: 21300000, guid: 24ab9b67981af754097be577d586f5e7, type: 3}
   - {fileID: 21300000, guid: ff8c5dca234ade24e889a188ef0fd009, type: 3}
   - {fileID: 21300000, guid: c29c10bcec12d2a4197bcb278483422b, type: 3}
   - {fileID: 21300000, guid: eb579103eb2975c4eb81e458b48f682f, type: 3}
   - {fileID: 21300000, guid: 72d8f9355c70c524c86a1ffb6579f14f, type: 3}
   - {fileID: 21300000, guid: a67087bbb184b754ab85792b8615e639, type: 3}
-  - {fileID: 21300000, guid: 24ab9b67981af754097be577d586f5e7, type: 3}
-  - {fileID: 21300000, guid: ff8c5dca234ade24e889a188ef0fd009, type: 3}
-  - {fileID: 21300000, guid: c29c10bcec12d2a4197bcb278483422b, type: 3}
-  - {fileID: 21300000, guid: eb579103eb2975c4eb81e458b48f682f, type: 3}
-  - {fileID: 21300000, guid: 72d8f9355c70c524c86a1ffb6579f14f, type: 3}
-  - {fileID: 21300000, guid: a67087bbb184b754ab85792b8615e639, type: 3}
-  - {fileID: 21300000, guid: 24ab9b67981af754097be577d586f5e7, type: 3}
-  framesDuration: 09000000090000000900000009000000090000000900000009000000090000000900000009000000090000000900000009000000
+  - {fileID: 21300000, guid: 833ac5123661ad34da627d4fd1db5164, type: 3}
+  framesDuration: 0900000009000000090000000900000009000000090000000500000001000000

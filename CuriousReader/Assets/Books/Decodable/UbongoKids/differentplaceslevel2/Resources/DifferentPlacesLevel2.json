@@ -530,7 +530,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"03_big_bird_flapping\",\"StartPrompt\":1}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
@@ -625,11 +625,11 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 0.0,
-                    "posY": -20.0,
+                    "posX": -42.599998474121097,
+                    "posY": -31.600000381469728,
                     "posZ": 0.0,
-                    "scaleX": 100.0,
-                    "scaleY": 100.0,
+                    "scaleX": 160.0,
+                    "scaleY": 160.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -699,28 +699,6 @@
                     ],
                     "Animations": [
                         "04_a_small_singing_bird"
-                    ]
-                },
-                {
-                    "id": 2,
-                    "tag": "",
-                    "posX": 60.0,
-                    "posY": 18.0,
-                    "posZ": 0.0,
-                    "scaleX": 30.0,
-                    "scaleY": 30.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "04_a_small_singing_bird_music-1",
-                    "inText": false,
-                    "label": "music",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "04_a_small_singing_bird_music"
                     ]
                 },
                 {
@@ -814,7 +792,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0}}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"PromptType\":1,\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -824,7 +802,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"03_big_bird_flapping\",\"StartPrompt\":1}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
@@ -834,7 +812,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":2.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0}}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"PromptType\":1,\"duration\":2.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -844,17 +822,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":1}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 4,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird_music\",\"StartPrompt\":1}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
@@ -864,17 +832,17 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":1}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":1}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 9,
+                    "type": 7,
                     "timing": 0.0,
                     "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":75.0,\"y\":90.0,\"z\":0.0}}"
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":0}"
                 }
             ]
         },

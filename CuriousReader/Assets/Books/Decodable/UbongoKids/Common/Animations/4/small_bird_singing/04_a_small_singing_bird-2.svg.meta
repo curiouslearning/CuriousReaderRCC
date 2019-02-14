@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3db7d5c8fa747774db6f44613c732834
+guid: 24ab9b67981af754097be577d586f5e7
 ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/04_a_small_singing_bird-2
@@ -16,7 +16,7 @@ ScriptedImporter:
   texturedSpriteMeshType: 0
   svgPixelsPerUnit: 100
   gradientResolution: 128
-  alignment: 0
+  alignment: 6
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
   preserveViewport: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: fc87b84f13f751749825ddfbb123a6c0
+      spriteID: e28ba96ebae402e4089612b11791d493
     PhysicsOutlines: []
