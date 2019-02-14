@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a67087bbb184b754ab85792b8615e639
+guid: eb579103eb2975c4eb81e458b48f682f
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/04_a_small_singing_bird_06
-    400000: gameObject/04_a_small_singing_bird_06/Transform
-    21200000: gameObject/04_a_small_singing_bird_06/SpriteRenderer
+    100000: gameObject/04_a_small_singing_bird-5
+    400000: gameObject/04_a_small_singing_bird-5/Transform
+    21200000: gameObject/04_a_small_singing_bird-5/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -40,16 +40,16 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: 04_a_small_singing_bird_04Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5003475, y: 0.4999864}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: b14ce2b8ee45ebd40a78b5674df833da
+        width: 95
+        height: 100
+      spriteID: d0a8938e7d380704f990545405c398b3
     PhysicsOutlines: []
