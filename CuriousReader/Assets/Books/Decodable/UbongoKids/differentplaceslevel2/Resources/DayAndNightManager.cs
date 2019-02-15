@@ -76,17 +76,24 @@ public class DayAndNightManager: GSManager
         return false;
     }
 
-    public override void OnMouseDown(GameObject go)
-	{
+    public override void OnStarWordActivated(GameObject i_rcWord)
+    {
+        Transition(i_rcWord);
+
+        base.OnStarWordActivated(i_rcWord);
+    }
+
+    public void Transition(GameObject go)
+    {
         if (m_rcSky == null) return;
 
-        if ( go != null )
+        if (go != null)
         {
             SpriteAnimator rcAnimator = m_rcSky.GetComponent<SpriteAnimator>();
 
             if (rcAnimator != null)
             {
-                if ( IsWordInArray( m_rastrDayWords, go.name ) )
+                if (IsWordInArray(m_rastrDayWords, go.name))
                 {
                     // If it's day already and they click day don't do anything
                     // If it's night, then change the sky to day.
@@ -110,7 +117,7 @@ public class DayAndNightManager: GSManager
 
                     }
                 }
-                else if (IsWordInArray(m_rastrNightWords,go.name))
+                else if (IsWordInArray(m_rastrNightWords, go.name))
                 {
                     // If it's night already and they click night doesn't do anything
                     // If it's day, then change the sky to night.
@@ -138,7 +145,11 @@ public class DayAndNightManager: GSManager
 
             }
         }
+    }
 
-		base.OnMouseDown (go);
+    public override void OnMouseDown(GameObject go)
+	{
+        Transition(go);
+        base.OnMouseDown (go);
 	}
 }

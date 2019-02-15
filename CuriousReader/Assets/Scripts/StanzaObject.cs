@@ -56,6 +56,11 @@ public class StanzaObject : MonoBehaviour {
                             rcGraphic.OnPairedMouseDown(rcWord);
                         }
                     }
+
+                    if ( stanzaManager.sceneManager != null )
+                    {
+                        stanzaManager.sceneManager.OnStarWordActivated(rcWord.gameObject);
+                    }
                 }
 
                 currentWord++;

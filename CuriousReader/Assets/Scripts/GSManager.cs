@@ -99,6 +99,16 @@ public class GSManager :  MonoBehaviour {
 		return true; // if stanza manager is null
 	}
 		
+    /// <summary>
+    /// OnStarWordActivated -- Virtual method for what to do when a star word is activated by the
+    /// page.  By default it does nothing.  However, some special pages might want to hook into 
+    /// this to have fancy behaviors.
+    /// </summary>
+    /// <param name="i_rcWord"></param>
+    public virtual void OnStarWordActivated(GameObject i_rcWord)
+    {
+    }
+
 	/// <summary>
 	/// If input is allowed(during stanza play / after stanza play) check if Tinkertext or Tinkergraphic 
 	/// If tinkertext , call stanzamanager onmousedown(tinkrtext).
