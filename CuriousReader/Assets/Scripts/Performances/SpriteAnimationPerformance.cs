@@ -11,8 +11,6 @@ namespace CuriousReader.Performance
     {
         [ExposeField]
         public string AnimationName;
-        [ExposeField]
-        public PromptType StartPrompt;
     }
     public class SpriteAnimationPerformance : Performance
     {

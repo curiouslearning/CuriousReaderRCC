@@ -10,6 +10,8 @@ namespace CuriousReader.Performance
     public class PerformanceParams
     {
         [ExposeField]
+        public PromptType PromptType;
+        [ExposeField]
         public List<GameObject> InvokerList = new List<GameObject>();
         [ExposeField]
         public bool AllowInterrupt = true;

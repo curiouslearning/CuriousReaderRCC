@@ -11,8 +11,6 @@ namespace CuriousReader.Performance
     public class TweenActorParams : PerformanceParams
     {
         [ExposeField]
-        public PromptType PromptType;
-        [ExposeField]
         protected Vector3 StartValues;
         [ExposeField]
         public float duration;

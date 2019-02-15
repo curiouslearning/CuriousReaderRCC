@@ -723,7 +723,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         if ((rcAnimator != null) && (animParams != null))
                         {
                             GameObject rcInvoker; //what object is allowed to prompt this performance?
-                            PromptType ePrompt = animParams.StartPrompt;    //what kind of prompt does this performance listen for?
+                            PromptType ePrompt = animParams.PromptType;    //what kind of prompt does this performance listen for?
                             rcInvoker = GetInvoker(ePrompt, graphicObject, tinkerText.gameObject);
                             SpriteAnimationPerformance pSpriteAnim = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, animParams);
                             addSuccess = PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, ePrompt, rcInvoker);

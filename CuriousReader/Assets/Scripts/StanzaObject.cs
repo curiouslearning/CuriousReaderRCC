@@ -30,6 +30,7 @@ public class StanzaObject : MonoBehaviour {
         m_bIsWordPlaying = true;
         AutoPlayInternal();
     }
+
     private void AutoPlayInternal ()
     {
         if(!m_bIsWordPlaying)
@@ -45,6 +46,18 @@ public class StanzaObject : MonoBehaviour {
                 autoHighlight.Init(Color.yellow, i_duration: rcWord.playTime/2, i_callback: new TweenCallback(AutoPlayInternal));
                 PerformanceSystem.AddPerformance(rcWord.gameObject, autoHighlight, PromptType.AutoPlay);
                 PerformanceSystem.SendPrompt(this.gameObject, rcWord.gameObject, PromptType.AutoPlay);
+
+                if (rcWord.star)
+                {
+                    if ( rcWord.pairedGraphics != null )
+                    {
+                        foreach ( GTinkerGraphic rcGraphic in rcWord.pairedGraphics )
+                        {
+                            rcGraphic.OnPairedMouseDown(rcWord);
+                        }
+                    }
+                }
+
                 currentWord++;
             }
         }

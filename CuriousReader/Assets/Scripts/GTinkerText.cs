@@ -83,8 +83,6 @@ public class GTinkerText : MonoBehaviour {
 		}
 	}
 
-
-
     /// <summary>
     /// this function bring the zoomed out text animation to its original state
     /// </summary>
@@ -163,7 +161,6 @@ public class GTinkerText : MonoBehaviour {
 		}
 	}
 
-
     public void iconanimResume()
     {
         if (anim != null)
@@ -185,7 +182,6 @@ public class GTinkerText : MonoBehaviour {
         
     }
 
-
 	// Mouse Down Event
     /// <summary>
     /// this function performs the text_animation(zoomin + zoomout) for the each tinkertext on mousedown event
@@ -204,18 +200,12 @@ public class GTinkerText : MonoBehaviour {
         {
 			PlaySound();
 		}
+
         PerformanceSystem.SendPrompt(this.gameObject, this.gameObject, PromptType.Click);
-        //clipPlay ();
-        //iconanimPlay();
 
-			if (!suppressAnim) {
-				//graphicPlay ();
-			}
         CheckPairedGraphic();
-
-        // Is there a TinkerGraphic paired with this TinkerText?
-        
 	}
+
     public void CheckPairedGraphic()
     {
         for (int i = 0; i < pairedGraphics.Count; i++)
@@ -240,9 +230,6 @@ public class GTinkerText : MonoBehaviour {
 		}
 
         PerformanceSystem.SendPrompt(null, this.gameObject, PromptType.PairedClick);
-
-		//clipPlay();
-		//iconanimPlay();
 	}
 
 	// Mouse Currently Down Event

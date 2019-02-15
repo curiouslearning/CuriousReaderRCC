@@ -894,14 +894,6 @@ public class BookEditor : EditorWindow
             i_nOrdinal, i_rcTrigger.type, formattedTextIDDropdownValues[i_rcTrigger.textId], m_rcStoryBook.pages[i_pageOrdinal].gameObjects[i_rcTrigger.sceneObjectId].label); 
         i_rcTrigger.Show = EditorGUILayout.Foldout(i_rcTrigger.Show, triggerSummary);
 
-        // Add Highlight Trigger 
-        // Choose a gameobject, choose a word
-        // If the button is pressed, create it and add it to the list
-
-        // Add Animation Trigger
-        // Choose a gameobject, choose an animation, choose a word
-        // If the button is pressed, create it and add it to the list
-
         EditorGUI.indentLevel++;
 
         TriggerType eLastTriggerType = i_rcTrigger.type;
