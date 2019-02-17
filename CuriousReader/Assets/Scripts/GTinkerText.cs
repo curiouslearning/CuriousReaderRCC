@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using CuriousReader.Performance;
 //20.3,-18.8 (yellow), 0,-17.4 (white),blue (22.9,-0.4)
-public class GTinkerText : MonoBehaviour {
+public class GTinkerText : MonoBehaviour
+{
     //private static bool check=false;
     public List<GTinkerGraphic>pairedGraphics=new List<GTinkerGraphic>();
 	//public GTinkerGraphic pairedGraphics;
 	public int pairedAnim;
 	public StanzaObject stanza;
-    private float startTime;//timings corresponding the timings of stanza auto narrate audio 
+    public float startTime;//timings corresponding the timings of stanza auto narrate audio 
     private float endTime;//timings corresponding the timings of stanza auto narrate audio 
     public float playTime;//timings corresponding the timings of stanza auto narrate audio 
     private Animator wordanimator;
@@ -20,6 +21,7 @@ public class GTinkerText : MonoBehaviour {
     public GameObject anim;
     public GameObject anim2;
 	public bool star=false;
+    public GSManager sceneManager;
 
     void Start()
     {
@@ -217,7 +219,6 @@ public class GTinkerText : MonoBehaviour {
         }
     }
 
-
 	// Paired Mouse Down Event
     /// <summary>
     /// this function is called when the tinkertext is linked to particular tinkergraphic and we need to perform the the zooming animation for that text 
@@ -232,56 +233,6 @@ public class GTinkerText : MonoBehaviour {
         PerformanceSystem.SendPrompt(null, this.gameObject, PromptType.PairedClick);
 	}
 
-	// Mouse Currently Down Event
-	public void OnMouseCurrentlyDown()
-	{
-		if (!stanza.stanzaManager.sceneManager.disableSounds)
-		{   
-			//PlaySound();
-		}
-
-		//clipPlay();
-		//iconanimPlay();
-
-		// Is there a TinkerGraphic paired with this TinkerText?
-		/*if (pairedGraphic)
-		{
-			// Then send the event along!
-		//	pairedGraphic.OnPairedMouseCurrentlyDown(this);
-		}*/
-	}
-
-	// Paired Mouse Currently Down Event
-	public void OnPairedMouseCurrentlyDown()
-	{
-		if (!stanza.stanzaManager.sceneManager.disableSounds)
-		{    
-			//PlaySound();
-		} 
-
-		//clipPlay();
-		//iconanimPlay();
-	}
-
-	// Mouse Up Event
-    /// <summary>
-    /// this function is called when there is mouse up event
-    /// on this event the text gos from zoomed out to the normal state
-    /// </summary>
-	public void MyOnMouseUp()
-	{
-		// Is there a TinkerGraphic paired with this TinkerText?
-		/*if (pairedGraphic)
-		{
-			// Then send the event along!
-			//pairedGraphic.OnPairedMouseUp(this);
-		}*/
-
-        /*clipResume();
-		iconanimResume();
-		graphicResume();*/
-	}
-		
 	// Plays any sound that is attached
     /// <summary>
     /// this function plays the sound for each tinkrtext
@@ -325,5 +276,46 @@ public class GTinkerText : MonoBehaviour {
 			}
 		}*/
 	}
+
+    /// <summary>
+    /// AutoPlay -- AutoPlay is invoked when a word is highlighting itself by AutoNarration
+    /// This method is called via invocation timer in StanzaObject.
+    /// </summary>
+    public void AutoPlay()
+    {
+        if (!TweenSystem.IsTweening(gameObject))
+        {
+            HighlightTextPerformance autoHighlight = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
+            autoHighlight.Init(Color.yellow, i_duration: playTime / 2);
+            PerformanceSystem.AddPerformance(gameObject, autoHighlight, PromptType.AutoPlay);
+            PerformanceSystem.SendPrompt(gameObject, gameObject, PromptType.AutoPlay);
+
+            if (star)
+            {
+                // Make paired gameobjects do their thing as though we clicked the word actively.
+                if (pairedGraphics != null)
+                {
+                    foreach (GTinkerGraphic rcGraphic in pairedGraphics)
+                    {
+                        rcGraphic.OnPairedMouseDown(this);
+                    }
+                }
+
+                // Notify the scene that a starword was hit in case the scene manager 
+                // is custom and cares about this.
+                if (stanza != null)
+                {
+                    if (stanza.stanzaManager != null)
+                    {
+                        if (stanza.stanzaManager.sceneManager != null)
+                        {
+                            stanza.stanzaManager.sceneManager.OnStarWordActivated(gameObject);
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 
 }

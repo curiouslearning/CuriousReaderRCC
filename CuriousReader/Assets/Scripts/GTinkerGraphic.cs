@@ -91,22 +91,10 @@ public class GTinkerGraphic : MonoBehaviour
 		sceneManager.OnMouseCurrentlyDown(this);
 	}
 
-	// Paired TinkerText Mouse Down Event
-	public void OnPairedMouseCurrentlyDown(GTinkerText tinkerText)
-	{
-		sceneManager.OnPairedMouseCurrentlyDown(tinkerText);
-	}
-
 	// Mouse Up Event
 	public void MyOnMouseUp()
 	{
 		sceneManager.OnMouseUp(this);
-	}
-
-	// Paired TinkerText Mouse Up Event
-	public void OnPairedMouseUp(GTinkerText tinkerText)
-	{
-		sceneManager.OnPairedMouseUp(tinkerText);
 	}
 
 	public void MoveObject()

@@ -195,23 +195,6 @@ public class GSManager :  MonoBehaviour {
 					tinkerGraphic.OnMouseCurrentlyDown();
 				}
 			}
-			// TinkerText object
-			else if (!dragActive && go.GetComponent<GTinkerText>() != null)
-			{
-				GTinkerText tinkerText = go.GetComponent<GTinkerText>();
-
-				if (tinkerText != null)
-				{
-					if (stanzaManager != null)
-					{
-						// Only allow further drag events if we aren't autoplaying
-						if (!stanzaManager.IsAutoPlaying())
-						{
-							stanzaManager.OnMouseCurrentlyDown(tinkerText);
-						}
-					}
-				}
-			}
 		}
 	}
 
@@ -230,16 +213,6 @@ public class GSManager :  MonoBehaviour {
     }
 
 	/// <summary>
-	/// Here we have a superclass intercept for catching global TinkerText paired mouse currently down events.
-	/// </summary>
-	/// <param name="tinkerText">Tinker text.</param>
-	public virtual void OnPairedMouseCurrentlyDown(GTinkerText tinkerText)
-	{
-		// override me
-	}
-
-
-	/// <summary>
 	/// Here we have a superclass intercept for catching global GameObject mouse up events.
 	/// If object not draggable and tinker text is not null , call stanza manager onMouseUp(tinkertext). 
 	/// If tinkergraphic , call tinkrgraphic.MyOnMouseUp.
@@ -248,21 +221,7 @@ public class GSManager :  MonoBehaviour {
 	/// <param name="go">Game Object selected.</param>
 	public virtual void OnMouseUp(GameObject go)
 	{
-		// Got a TinkerText object? (Also, make sure dragActive is false)
-		if (!dragActive && go.GetComponent<GTinkerText>() != null)
-		{
-			GTinkerText tinkerText = go.GetComponent<GTinkerText>();
-
-			if (tinkerText != null)
-			{
-				if (stanzaManager != null)
-				{
-					stanzaManager.OnMouseUp(tinkerText);
-				}
-			}
-		}
-		// TinkerGraphic object
-		else if (go.GetComponent<GTinkerGraphic>() != null)
+		if (go.GetComponent<GTinkerGraphic>() != null)
 		{
 			GTinkerGraphic tinkerGraphic = go.GetComponent<GTinkerGraphic>();
 
@@ -273,7 +232,6 @@ public class GSManager :  MonoBehaviour {
 		}
 	}
 
-
 	/// <summary>
 	/// Here we have a superclass intercept for catching global TinkerGraphic mouse up events.
 	/// </summary>
@@ -282,22 +240,6 @@ public class GSManager :  MonoBehaviour {
 	{
 		// override me
 	}
-
-
-	/// <summary>
-	/// Here we have a superclass intercept for catching global TinkerText paired mouse up events.
-	/// </summary>
-	/// <param name="tinkerText">Tinker text.</param>
-	public virtual void OnPairedMouseUp(GTinkerText tinkerText)
-	{
-//		Renderer[] list;
-//		list = tinkerText.pairedGraphic.gameObject.GetComponentsInChildren<Renderer>();
-//		foreach(Renderer item in list){   //color all the components
-//			item.material.color = tinkerText.pairedGraphic.resetColor;
-//		}
-	}
-		
-
 
 	/// <summary>
 	/// Override if a scene manager subclass needs a hint manager.

@@ -727,13 +727,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
                             rcInvoker = GetInvoker(ePrompt, graphicObject, tinkerText.gameObject);
                             SpriteAnimationPerformance pSpriteAnim = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, animParams);
                             addSuccess = PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, ePrompt, rcInvoker);
+
                             if (!addSuccess)
                             {
                                 Debug.LogWarning("Failed to add Animation: " + pSpriteAnim.AnimationName + " to " + graphicObject.name + "!");
-                            }
-                            else
-                            {
-                                Debug.Log("Successfully added " + pSpriteAnim.AnimationName + " to " + graphicObject.name);
                             }
 
                             if ( ePrompt == PromptType.PairedClick )

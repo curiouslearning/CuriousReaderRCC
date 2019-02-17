@@ -54,14 +54,6 @@ public class BookEditor : EditorWindow
 
     int     m_activePageID = 0;
 
-    VectorUtils.TessellationOptions tessOptions = new VectorUtils.TessellationOptions()
-    {
-        StepDistance = 100.0f,
-        MaxCordDeviation = 0.5f,
-        MaxTanAngleDeviation = 0.1f,
-        SamplingStepSize = 0.01f
-    };
-
     private void OnGUI()
     {
         m_boldFoldoutStyle = EditorStyles.foldout;
@@ -596,8 +588,6 @@ public class BookEditor : EditorWindow
 
                     Rect rcRect2 = EditorGUILayout.GetControlRect();
                     rcRect2.xMin = 20.0f;
-
-                    AudioClip rcAudioClip = (AudioClip)EditorGUI.ObjectField(rcRect2, m_rcPageAudio[i_nOrdinal], m_rcPageAudio[i_nOrdinal].GetType());
 
                     GUILayout.BeginHorizontal();
                     GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
@@ -1604,41 +1594,6 @@ public class BookEditor : EditorWindow
         }
     }
 
-    private AudioClip MakeSubclip(AudioClip i_rcClip, float[] i_rcData, float i_fStart, float i_fStop)
-    {
-        m_rcTempAudioClip = i_rcClip;
-
-        int nFrequency = i_rcClip.frequency;
-        float fTimeLength = i_fStop - i_fStart;
-        int nSamplesLength = (int)(nFrequency * fTimeLength);
-
-        AudioClip rcNewClip = AudioClip.Create(i_rcClip.name + "-sub", nSamplesLength, 1, nFrequency, false);
-        i_rcData = new float[nSamplesLength];
-        bool Result = i_rcClip.GetData(i_rcData, (int)(nFrequency * i_fStart));
-        bool Result2 = rcNewClip.SetData(i_rcData, 0);
-
-        return rcNewClip;
-    }
-
-    void OnAudioRead(float[] data)
-    {
-        m_rcTempAudioClip.GetData(data, (int)(m_rcTempAudioClip.frequency * 0.3f));
-
-        /*        int position = 0;
-                int count = 0;
-                while (count < data.Length)
-                {
-                    data[count] = Mathf.Sign(Mathf.Sin(2 * Mathf.PI * 440.0f * position / 48000));
-                    position++;
-                    count++;
-                } */
-    }
-
-    void OnAudioSetPosition(int newPosition)
-    {
-        int position = newPosition;
-    }
-
     public List<string> GetImagesInPath(string i_strPath, string i_strPattern="")
     {
         List<string> rcFiles = new List<string>();
@@ -1721,7 +1676,6 @@ public class BookEditor : EditorWindow
             foreach (string strGameObjectDirectories in GameObjects)
             {
                 Debug.Log("GameObject Directory: " + strGameObjectDirectories);
-                string strGameObject = strGameObjectDirectories.Replace(strPage + "\\", "");
 
                 foreach (string strType in allowedExtensions)
                 {

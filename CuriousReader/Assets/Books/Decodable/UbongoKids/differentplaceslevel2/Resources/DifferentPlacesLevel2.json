@@ -2412,8 +2412,8 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -46.5,
-                    "posY": -70.5,
+                    "posX": -112.9000015258789,
+                    "posY": -186.6999969482422,
                     "posZ": 0.0,
                     "scaleX": 583.0,
                     "scaleY": 583.0,
@@ -2599,7 +2599,6 @@
                     "sceneObjectId": 0,
                     "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up_small\"}"
                 }
-
             ]
         },
         {
@@ -6966,8 +6965,8 @@
                     "posX": -43.0,
                     "posY": -93.0,
                     "posZ": 0.0,
-                    "scaleX": 74.0,
-                    "scaleY": 74.0,
+                    "scaleX": 79.9610595703125,
+                    "scaleY": 79.9610595703125,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
