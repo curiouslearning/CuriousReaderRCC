@@ -118,19 +118,17 @@ public class ShelfManager : MonoBehaviour, IPointerClickHandler
             request.Dispose();
             isServerJson = false;
 
-			Debug.Log ("no internet");
             //load shelf data with local json
             LoadShelfData();
             LoadInitialCenterBook();
             yield break;
         }
-		//Debug.Log (request.text + "oooooo");
 		responseJson = request.text;
 
         // if internet-> ok
 		if (responseJson != "")
 
-		{   Debug.Log ("internet");
+		{   
 			isServerJson = true;
 		}
         
@@ -387,7 +385,6 @@ public class ShelfManager : MonoBehaviour, IPointerClickHandler
     private void LoadShelfData()
     {
         TextAsset file = Resources.Load(localManifestFileName) as TextAsset;
-		Debug.Log (file);
         if (file != null)
         {
             // Read the json from the file into a string
@@ -409,8 +406,6 @@ public class ShelfManager : MonoBehaviour, IPointerClickHandler
 
                     string path = Application.dataPath + "/Resources/Manifests/manifest.json";
                     System.IO.File.WriteAllText(path, dataAsJson);
-
-                    //Debug.Log("Write complete  " + dataAsJson);
                 }
             }
 

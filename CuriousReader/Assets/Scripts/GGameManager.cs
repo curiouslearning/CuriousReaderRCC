@@ -124,8 +124,6 @@ public class GGameManager : MonoBehaviour
 	// Called each time a new scene is loaded
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
 	{
-		Debug.Log("LEVEL WAS LOADED: " + SceneManager.GetActiveScene().name);
-		//AndroidBroadcastIntentHandler.BroadcastJSONData("scene", SceneManager.GetActiveScene().name);
 		LoadSceneManager();
 	}
 

@@ -56,7 +56,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		// font = Resources.Load<Font>("Font/OpenDyslexic-Regular");
 
 		canvasTransform = this.transform;  //if this script is attached to canvas; otherwise update this line to store canvas transform.
-		if (ShelfManager.bundleLoaded == null) {
+		if (ShelfManager.bundleLoaded == null)
+        {
 			Debug.Log("Book asset bundle is not loaded, attempting to load it...");
 			try {
             	ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplaces"));  //ShelfManager.selectedBook.ToLower())
@@ -64,8 +65,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			} catch (Exception e) {
 				Debug.LogError("Failed to load \"differentplaces\" asset bundle! Message: " + e.Message);
 			}
-		} else {
-			Debug.Log("Book asset bundle is loaded, loading the story data...");
+		} else
+        {
 			LoadStoryData();
 		}
 
@@ -457,18 +458,13 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		sceneManager.myCanvas = canvasTransform.GetComponent<Canvas>();
 
 		GameObject leftArrowObject = GameObject.FindWithTag("left_arrow");
-		if (leftArrowObject == null)
-			Debug.LogError("Unable to find left arrow object on scene " + pageNumber);
-		else 
-			sceneManager.Lbutton = leftArrowObject;
+        if (leftArrowObject != null) sceneManager.Lbutton = leftArrowObject;
 
 		GameObject rightArrowObject = GameObject.FindWithTag("right_arrow");
-		if (rightArrowObject == null)
-			Debug.LogError("Unable to find right arrow object on scene " + pageNumber);
-		else 
-			sceneManager.Rbutton = rightArrowObject;
+		if (rightArrowObject != null) sceneManager.Rbutton = rightArrowObject;
 
-		if (stanzaManager == null) {
+		if (stanzaManager == null)
+        {
 			Debug.LogError("Unable to get Stanza Manager component from " + canvasTransform.name);
 			return;
 		}
@@ -873,8 +869,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			stanzaManager.stanzas = new List<StanzaObject>();
 		else
 			stanzaManager.stanzas.Clear();
-		// stanzaObjects = new List<GameObject>(); NOTE: we have already used clear, should we not avoid GC allocation?
-		//Debug.Log(storyBookJson.pages[pageNumber].texts);
 
 		if (!ValidatePageNumber(pageNumber)) {
 			Debug.LogError("Unable to validate page index while loading stanza data");
@@ -956,15 +950,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	{   
 		startingX = -(length / 2);
 		parent.transform.localPosition = new Vector3(startingX, startingY, 0);
-
-		//GameObject [] go=GameObject.FindGameObjectsWithTag("stanzaobject");
-		//Debug.Log (go);
-		//foreach (GameObject stanza in go)
-		//if (storyBookJson.id != 1)
-		//stanza.GetComponent<RectTransform> ().localPosition = new Vector3 (startingX, startingY, 0);
-		//else 
-		//{ stanza.GetComponent<RectTransform> ().localPosition = new Vector3 (startingX, startingY, 0);
-		//}
 	}
 
 	/// <summary>
@@ -985,15 +970,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
         TextMeshProUGUI rcTextMeshPro = uiTextObject.AddComponent<TextMeshProUGUI>();
         rcTextMeshPro.text = textToPrint;
         rcTextMeshPro.color = textColor;
-        // Have to figure out how to get the font
         rcTextMeshPro.fontSize = storyBookJson.textFontSize; //* 10.0f;
         rcTextMeshPro.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-
-//		text.text = textToPrint; // TODO: figure out if this works or not, if not then why and if it's needed
-//		text.fontSize = storyBookJson.textFontSize;
-//		text.color = textColor;
-//		text.font = font;
-//		text.transform.localScale = new Vector3(1,1,1);
 
 		//used for fitting the text box to the size of text.
 		ContentSizeFitter csf = uiTextObject.AddComponent<ContentSizeFitter>();
@@ -1005,7 +983,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		vlg.childControlWidth = true;
 
 		RectTransform trans = uiTextObject.GetComponent<RectTransform>();
-        //        rcTextMeshPro.alignment = TextAlignmentOptions.TopLeft;
         rcTextMeshPro.alignment = TextAlignmentOptions.TopLeft; // .alignment = TextAnchor.UpperLeft;
         trans.anchoredPosition = new Vector3(x, y, 0);
         uiTextObject.GetComponent<RectTransform>().pivot = new Vector2(0.5f, 0.5f);
@@ -1017,10 +994,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
         width = width + rcTextMeshPro.rectTransform.rect.width + minWordSpace; // trans.rect.width + rcTextMeshPro.characterSpacing; //minWordSpace;
 
         stanzaLength = width;
-        //audio to each word
-        //		TimeStampClass[] timeStamps = storyBookJson.pages[pageNumber].timestamps;
-        //		UItextGO.AddComponent<AudioSource> ().clip = LoadAudioAsset (timeStamps [wordCount].audio);
-        //		wordCount++;
 
         //add the animator and script to the word.
         uiTextObject.AddComponent<Animator>().runtimeAnimatorController = Resources.Load("TextAnimations/textzoomcontroller") as RuntimeAnimatorController;
@@ -1037,8 +1010,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	public void CreateGameObject(GameObjectClass gameObjectData)
 	{
         GameObject rcPrefab = ShelfManager.bundleLoaded.LoadAsset<GameObject>(gameObjectData.imageName);
-
-//        UnityEngine.Object [] rcObjects = ShelfManager.bundleLoaded.LoadAllAssets();
 
 		GameObject go;
 		
