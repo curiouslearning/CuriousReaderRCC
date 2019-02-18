@@ -147,7 +147,7 @@ public class GGameManager : MonoBehaviour
 	public void AutoNarrate()
 	{
 		DateTime time = DateTime.Now;
-        if (ShelfManager.autoNarrate)
+        if (ShelfManager.AutoNarrate)
             stanzaManager.RequestAutoPlay(stanzaManager.stanzas[0], stanzaManager.stanzas[0].tinkerTexts[0]);
 
     }

@@ -194,7 +194,7 @@ namespace CuriousReader.Performance
         /// <param name="i_endValues">the set of Euler angles to tween to.</param>
         /// <param name="i_duration">the duration of the tween.</param>
         /// <param name="i_speed">[OPTIONAL] the speed of the tween (overrides duration).</param>
-        public static void Rotate(GameObject i_rcActor, Vector3 i_endValues, RotateMode i_rotateMode = RotateMode.LocalAxisAdd, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback), bool i_yoyo = false)
+        public static void Rotate(GameObject i_rcActor, Vector3 i_endValues, float i_duration = 1f, float i_speed = default(float), TweenCallback i_callBack = default(TweenCallback), bool i_yoyo = false)
         {
             if (!ValidateArgs(i_rcActor, i_endValues))
             {
@@ -204,11 +204,11 @@ namespace CuriousReader.Performance
             Tween tween;
             if (!i_speed.Equals(default(float)))
             {
-                tween = i_rcActor.transform.DOLocalRotate(i_endValues, i_speed, i_rotateMode).SetSpeedBased(true);
+                tween = i_rcActor.transform.DORotate(i_endValues, i_speed).SetSpeedBased(true);
             }
             else
             {
-                tween = i_rcActor.transform.DOLocalRotate(i_endValues, i_duration, i_rotateMode);
+                tween = i_rcActor.transform.DORotate(i_endValues, i_duration);
             }
             if (i_callBack != null)
             {
@@ -221,8 +221,6 @@ namespace CuriousReader.Performance
             tween.SetId(i_rcActor);
             tween.Play();
         }
-
-
 
         /// <summary>
         /// Change the face color of this object's text to the given Color

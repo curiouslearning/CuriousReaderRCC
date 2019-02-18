@@ -64,7 +64,7 @@ public class GSManager :  MonoBehaviour {
 				stanzaManager.LoadStanzaJSON();
 			}
 		}
-        if(ShelfManager.autoNarrate == true)
+        if(ShelfManager.AutoNarrate == true)
 			PlayStanzaAudio(); 
 		    
 	}

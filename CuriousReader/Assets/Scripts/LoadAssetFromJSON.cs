@@ -56,11 +56,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		// font = Resources.Load<Font>("Font/OpenDyslexic-Regular");
 
 		canvasTransform = this.transform;  //if this script is attached to canvas; otherwise update this line to store canvas transform.
-		if (ShelfManager.bundleLoaded == null)
-        {
+		if (ShelfManager.LoadedAssetBundle == null) {
 			Debug.Log("Book asset bundle is not loaded, attempting to load it...");
 			try {
-            	ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplaces"));  //ShelfManager.selectedBook.ToLower())
+            	ShelfManager.LoadedAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplaces"));  //ShelfManager.selectedBook.ToLower())
 				LoadStoryData();
 			} catch (Exception e) {
 				Debug.LogError("Failed to load \"differentplaces\" asset bundle! Message: " + e.Message);
@@ -89,17 +88,17 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 	public void LoadStoryData()
 	{
-		if (string.IsNullOrEmpty(ShelfManager.selectedBook)) {
+		if (string.IsNullOrEmpty(ShelfManager.SelectedBookFileName)) {
 			Debug.LogError("ShelfManager's selected book is not set. ");
 			return;
 		}
 #if UNITY_EDITOR_OSX
-        string selectedBookJsonFileName = ShelfManager.selectedBook + ".json";
+        string selectedBookJsonFileName = ShelfManager.SelectedBookFileName + ".json";
 #else
-        string selectedBookJsonFileName = ShelfManager.selectedBook.ToLower() + ".json";
+        string selectedBookJsonFileName = ShelfManager.SelectedBookFileName.ToLower() + ".json";
 #endif
 
-        TextAsset selectedBookJson = ShelfManager.bundleLoaded.LoadAsset(selectedBookJsonFileName) as TextAsset;
+        TextAsset selectedBookJson = ShelfManager.LoadedAssetBundle.LoadAsset(selectedBookJsonFileName) as TextAsset;
 
         if (selectedBookJson == null) {
 			Debug.LogError("Unable to load selected book Json file and load the story data.");
@@ -546,7 +545,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	{
 		if (!string.IsNullOrEmpty(assetName))
 		{
-			return ShelfManager.bundleLoaded.LoadAsset<AudioClip>(assetName);
+			return ShelfManager.LoadedAssetBundle.LoadAsset<AudioClip>(assetName);
 		}
 		return null;	
 	}
@@ -1009,7 +1008,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// <param name="gameObjectData">Game object data.</param>
 	public void CreateGameObject(GameObjectClass gameObjectData)
 	{
-        GameObject rcPrefab = ShelfManager.bundleLoaded.LoadAsset<GameObject>(gameObjectData.imageName);
+        GameObject rcPrefab = ShelfManager.LoadedAssetBundle.LoadAsset<GameObject>(gameObjectData.imageName);
 
 		GameObject go;
 		
@@ -1037,7 +1036,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 			Material rcMaterial = rcRenderer.material;
 
-			Material rcShader = ShelfManager.bundleLoaded.LoadAsset<Material>(rcMaterial.name.Replace(" (Instance)", ""));
+			Material rcShader = ShelfManager.LoadedAssetBundle.LoadAsset<Material>(rcMaterial.name.Replace(" (Instance)", ""));
 
 			if (rcShader != null)
 			{
@@ -1068,7 +1067,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
                 foreach (string strAnimationName in gameObjectData.Animations)
                 {
-                    SpriteAnimation rcAnimation = ShelfManager.bundleLoaded.LoadAsset<SpriteAnimation>(strAnimationName);    
+                    SpriteAnimation rcAnimation = ShelfManager.LoadedAssetBundle.LoadAsset<SpriteAnimation>(strAnimationName);    
                     rcAnimations.Add(rcAnimation);
                 }
 
@@ -1111,7 +1110,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 	public void LoadAssetFromBundle(string name)
 	{
-		var prefab = ShelfManager.bundleLoaded.LoadAsset<GameObject>(name);
+		var prefab = ShelfManager.LoadedAssetBundle.LoadAsset<GameObject>(name);
 		Instantiate(prefab);
 	}
 
@@ -1122,7 +1121,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// <param name="sr">Sprite Renderer.</param>
 	public  static void LoadAssetImage(GTinkerGraphic i_rcObject, string i_strName)
 	{
-        var sprite = ShelfManager.bundleLoaded.LoadAsset<Sprite>(i_strName);
+        var sprite = ShelfManager.LoadedAssetBundle.LoadAsset<Sprite>(i_strName);
 
         
         //		Sprite rcSprite = ShelfManager.bundleLoaded.LoadAsset<Sprite>(i_strName);
@@ -1152,7 +1151,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		tinkerGraphic.sprite = new Sprite[length];
 		for (int i = startindex; i <= endindex; i++)
 		{
-			var sprite = ShelfManager.bundleLoaded.LoadAsset<Sprite>(startName + "-" + (i + 1));
+			var sprite = ShelfManager.LoadedAssetBundle.LoadAsset<Sprite>(startName + "-" + (i + 1));
 			tinkerGraphic.sprite[j] = sprite;
 			j++;
 		}     
@@ -1160,10 +1159,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 	public void LoadScene()
 	{
-		if (!ShelfManager.bundleLoaded)
+		if (!ShelfManager.LoadedAssetBundle)
 		{
-			ShelfManager.bundleLoaded = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/books"));
-			if (ShelfManager.bundleLoaded == null)
+			ShelfManager.LoadedAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/books"));
+			if (ShelfManager.LoadedAssetBundle == null)
 			{
 				Debug.LogError("Failed to load AssetBundle!");
 				return;
@@ -1171,7 +1170,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		}
 		else
 		{
-			string[] scenes = ShelfManager.bundleLoaded.GetAllScenePaths();
+			string[] scenes = ShelfManager.LoadedAssetBundle.GetAllScenePaths();
 			//SceneManager.LoadScene(scenes[0]);
 			StartCoroutine(LoadYourAsyncScene(scenes));
 		}
