@@ -56,8 +56,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		// font = Resources.Load<Font>("Font/OpenDyslexic-Regular");
 
 		canvasTransform = this.transform;  //if this script is attached to canvas; otherwise update this line to store canvas transform.
-		if (ShelfManager.LoadedAssetBundle == null) {
-			Debug.Log("Book asset bundle is not loaded, attempting to load it...");
+
+    if (ShelfManager.LoadedAssetBundle == null) {
+
+      Debug.Log("Book asset bundle is not loaded, attempting to load it...");
 			try {
             	ShelfManager.LoadedAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplaces"));  //ShelfManager.selectedBook.ToLower())
 				LoadStoryData();
@@ -1008,7 +1010,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	/// <param name="gameObjectData">Game object data.</param>
 	public void CreateGameObject(GameObjectClass gameObjectData)
 	{
-        GameObject rcPrefab = ShelfManager.LoadedAssetBundle.LoadAsset<GameObject>(gameObjectData.imageName);
+    GameObject rcPrefab = ShelfManager.LoadedAssetBundle.LoadAsset<GameObject>(gameObjectData.imageName);
 
 		GameObject go;
 		

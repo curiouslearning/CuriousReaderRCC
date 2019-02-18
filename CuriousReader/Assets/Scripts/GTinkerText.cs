@@ -5,31 +5,23 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using CuriousReader.Performance;
-//20.3,-18.8 (yellow), 0,-17.4 (white),blue (22.9,-0.4)
+
 public class GTinkerText : MonoBehaviour
 {
-    //private static bool check=false;
     public List<GTinkerGraphic>pairedGraphics=new List<GTinkerGraphic>();
-	//public GTinkerGraphic pairedGraphics;
 	public int pairedAnim;
 	public StanzaObject stanza;
     public float startTime;//timings corresponding the timings of stanza auto narrate audio 
     private float endTime;//timings corresponding the timings of stanza auto narrate audio 
     public float playTime;//timings corresponding the timings of stanza auto narrate audio 
-    private Animator wordanimator;
-    private Animator graphicanimator;
-    public GameObject anim;
-    public GameObject anim2;
 	public bool star=false;
     public GSManager sceneManager;
 
     void Start()
     {
 		AddCollider ();
-        wordanimator = GetComponent<Animator>();
-        if (anim2 != null)
-            graphicanimator = anim2.GetComponent<Animator>();
     }
+
     /// <summary>
     /// it set up the timing for each tinkertext
     /// each timing corresponds to the timing of occurance of a particular text in the complete stanza audio
@@ -45,6 +37,7 @@ public class GTinkerText : MonoBehaviour
 		if (timeStamp.starWord == "Yes")
 			star = true;
     }
+
     /// <summary>
     /// return the starting time for each word
     /// </summary>
@@ -84,105 +77,6 @@ public class GTinkerText : MonoBehaviour
 			col.size = newSize;
 		}
 	}
-
-    /// <summary>
-    /// this function bring the zoomed out text animation to its original state
-    /// </summary>
-    public void clipResume()
-    {
-        wordanimator.Play("textzoomin");
-		wordanimator.ResetTrigger("tapme");    
-	}
-    /// <summary>
-    /// this function sets the tap me trigger so that the text can go from normal to zoomed out state 
-    /// </summary>
-    public void clipPlay()
-	{   
-			AudioSource source = gameObject.GetComponent<AudioSource> ();
-			//this.GetComponent<RectTransform>().pivot = ;
-			playTime = 0.21f;
-			wordanimator.speed = 1 / (playTime);
-
-			//source.Play();
-			wordanimator.SetTrigger ("tapme");
-
-
-    }
-
-    /// <summary>
-    /// Change the face color of this object's text to the given Colo
-    /// </summary>
-    /// <param name="i_color">the desired color.</param>
-    public void setFaceColor (Color i_color)
-    {
-        TextMeshProUGUI rcText = GetComponent<TextMeshProUGUI>();
-        if(rcText != null)
-        {
-            rcText.color = i_color;
-            rcText.havePropertiesChanged = true;
-            rcText.Rebuild(CanvasUpdate.Prelayout);
-            rcText.ForceMeshUpdate();
-        }
-    }
-
-    /// <summary>
-    /// Toggles the text highlighting between the desired colors.
-    /// </summary>
-    /// <param name="i_highlight">If set to <c>true</c> i highlight.</param>
-    public void toggleHighlight(bool i_highlight)
-    {
-        if(i_highlight)
-        {
-            setFaceColor(Color.yellow);
-        }
-        else
-        {
-            setFaceColor(Color.black);
-        }
-    }
-
-    /// <summary>
-    /// Highlights the text.
-    /// </summary>
-    public void highlightText ()
-    {
-    }
-
-    /// <summary>
-    /// return text to original color
-    /// </summary>
-    public void unhighlightText()
-    {
-    }
-    public void iconanimPlay()
-
-	{
-		if (anim != null)
-		{
-			anim.SetActive(true);
-		}
-	}
-
-    public void iconanimResume()
-    {
-        if (anim != null)
-        {
-            anim.SetActive(false);
-		}
-	}
-    
-
-    public void graphicPlay()
-    {
-        if (anim2 != null)
-            anim2.SetActive(true);
-	}
-
-    void graphicResume()
-	{if (anim2 != null)
-		anim2.SetActive(false);
-        
-    }
 
 	// Mouse Down Event
     /// <summary>
