@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
 public class ShelfManager : MonoBehaviour
 {
     #region Public Members

@@ -19,7 +19,7 @@ public class TestManager : MonoBehaviour {
 	void Start () {
         AddPerformance(ScriptableObject.CreateInstance<HighlightActorPerformance>().Init(scaleMultiplier, duration, speed), rcActor);
         RotateActorPerformance rotate = ScriptableObject.CreateInstance<RotateActorPerformance>().Init(endRotation, duration, speed) as RotateActorPerformance;
-        ScaleActorPerformance scale = ScriptableObject.CreateInstance<ScaleActorPerformance>().Init(endScale, duration, speed, () => AddPerformance(rotate, rcActor)) as ScaleActorPerformance;
+        ScaleActorPerformance scale = ScriptableObject.CreateInstance<ScaleActorPerformance>().Init(endScale, duration, speed, i_callback: () => AddPerformance(rotate, rcActor)) as ScaleActorPerformance;
         AddPerformance(scale, rcActor);
     }
 
