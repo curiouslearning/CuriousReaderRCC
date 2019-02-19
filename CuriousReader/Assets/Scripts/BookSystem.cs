@@ -31,6 +31,14 @@ public static class BookSystem
             {
                 rcRenderer.material.DOColor(new Color(1.0f, 1.0f, 1.0f, 1.0f), i_fTime);
             }
+
+            PolygonCollider2D rcCollider = i_rcObject.GetComponent<PolygonCollider2D>();
+
+            if (rcCollider != null)
+            {
+                rcCollider.enabled = true;
+            }
+
         }
     }
 
@@ -44,6 +52,15 @@ public static class BookSystem
             {
                 rcRenderer.material.DOColor(new Color(1.0f, 1.0f, 1.0f, 0.0f), i_fTime);
             }
+
+            // Start this object unclickable.
+            PolygonCollider2D rcCollider = i_rcObject.GetComponent<PolygonCollider2D>();
+
+            if (rcCollider != null)
+            {
+                rcCollider.enabled = false;
+            }
+
         }
     }
 

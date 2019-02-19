@@ -99,10 +99,10 @@ public class BookEditor : EditorWindow
                 m_rcImageNames = GetImagesInPath(m_strCommonPath,"-1");
                 m_rastrAnimationNames = GetAnimationNames();
 
-                foreach (string strAnimName in m_rastrAnimationNames)
-                {
-                    Debug.Log(strAnimName);
-                }
+//                foreach (string strAnimName in m_rastrAnimationNames)
+//                {
+//                    Debug.Log(strAnimName);
+//                }
 
             }
             return;

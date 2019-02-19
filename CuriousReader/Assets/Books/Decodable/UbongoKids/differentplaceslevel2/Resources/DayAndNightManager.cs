@@ -41,6 +41,14 @@ public class DayAndNightManager: GSManager
                     {
                         rcSpriteRenderer.material.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
                     }
+
+                    // Start this object unclickable.
+                    PolygonCollider2D rcCollider = rcGameObject.GetComponent<PolygonCollider2D>();
+
+                    if (rcCollider != null)
+                    {
+                        rcCollider.enabled = false;
+                    }
                 }
 
                 if ( rcGameObject.name.Contains("transition"))
