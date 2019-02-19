@@ -18,10 +18,14 @@ namespace CuriousReader.Performance
 
         public override bool CanPerform(GameObject i_rcActor, GameObject i_rcInvoker = null)
         {
-            if (!base.CanPerform(i_rcActor, i_rcInvoker))
+            if (InvokerList != null && InvokerList.Count > 0)
             {
-                return false;
+                if (!InvokerList.Contains(i_rcInvoker))
+                {
+                    return false;
+                }
             }
+
             SpriteAnimator rcAnimator = i_rcActor.GetComponent<SpriteAnimator>();
 
             if (rcAnimator != null)
@@ -29,6 +33,13 @@ namespace CuriousReader.Performance
                 if (!rcAnimator.IsPlaying)
                 {
                     return true;
+                }
+                else
+                {
+                    if ( AllowInterrupt )
+                    {
+                        return true;
+                    }
                 }
             }
 
@@ -46,6 +57,7 @@ namespace CuriousReader.Performance
                     rcAnimator.enabled = true;
                     rcAnimator.SetActiveRenderer(true);
                     rcAnimator.Play(AnimationName, true);
+                    Performing = true;
                     return true;
                 }
                 Debug.LogError("SpriteAnimator is null!");
@@ -72,7 +84,6 @@ namespace CuriousReader.Performance
 
         public override void UnPerform(GameObject i_rcActor)
         {
-            base.UnPerform(i_rcActor);
             SpriteAnimator rcAnim = i_rcActor.GetComponent<SpriteAnimator>();
             if (rcAnim != null)
             {
@@ -83,6 +94,7 @@ namespace CuriousReader.Performance
                 rcAnim.Restart();
                 rcAnim.Stop();
             }
+            base.UnPerform(i_rcActor);
         }
 
     }

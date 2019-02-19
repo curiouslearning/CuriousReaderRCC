@@ -15,7 +15,6 @@ namespace CuriousReader.Performance
         public List<GameObject> InvokerList = new List<GameObject>();
         [ExposeField]
         public bool AllowInterrupt = true;
-
     }
 
 
@@ -26,7 +25,8 @@ namespace CuriousReader.Performance
     {
         protected List<GameObject> InvokerList;
         protected bool Performing;
-        protected bool AllowInterrupt;
+        public bool AllowInterrupt;
+        public bool AllowConcurrent = false;
 
         public virtual Performance Init(List<GameObject> i_InvokerList = null, bool i_AllowInterrupt = true)
         {
@@ -83,6 +83,7 @@ namespace CuriousReader.Performance
                     return false;
                 }
             }
+
             if (PerformanceSystem.IsPerforming(i_rcActor))
             {
                 if (AllowInterrupt)

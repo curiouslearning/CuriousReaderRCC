@@ -219,7 +219,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -229,7 +229,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -268,8 +268,8 @@
                     "posX": -125.0,
                     "posY": -40.0,
                     "posZ": 0.0,
-                    "scaleX": 900.0,
-                    "scaleY": 900.0,
+                    "scaleX": 943.0847778320313,
+                    "scaleY": 943.0847778320313,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -376,7 +376,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":30.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-125.0,\"y\":-20.0,\"z\":0.0}}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":-125.0,\"y\":-40.0,\"z\":0.0},\"duration\":1.0,\"speed\":30.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-125.0,\"y\":-20.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -386,7 +386,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":30.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":150.0,\"y\":10.0,\"z\":0.0}}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":150.0,\"y\":-10.0,\"z\":0.0},\"duration\":1.0,\"speed\":30.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":150.0,\"y\":10.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -396,7 +396,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-125.0,\"y\":-20.0,\"z\":0.0}}"
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":-125.0,\"y\":-40.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-125.0,\"y\":-20.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -406,7 +406,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":150.0,\"y\":10.0,\"z\":0.0}}"
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":150.0,\"y\":-10.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":150.0,\"y\":10.0,\"z\":0.0}}"
                 }
             ]
         },
@@ -598,7 +598,7 @@
                     "tag": "",
                     "posX": 540.0,
                     "posY": 45.0,
-                    "posZ": 105.0,
+                    "posZ": 0.0,
                     "scaleX": 100.0,
                     "scaleY": 100.0,
                     "rotX": 0.0,
@@ -762,7 +762,7 @@
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_flying.mp3",
                     "end": 1067,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1071,
@@ -812,7 +812,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"PromptType\":1,\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0}}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":540.0,\"y\":45.0,\"z\":0.0},\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -832,17 +832,17 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":2.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0}}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":540.0,\"y\":45.0,\"z\":0.0},\"duration\":2.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 7,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 5,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
@@ -1019,7 +1019,7 @@
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_sun.mp3",
                     "end": 1060,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1125,
@@ -1323,7 +1323,7 @@
                     "wordIdx": 5,
                     "audio": "audio_smdp_word_star.mp3",
                     "end": 3068,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -1341,11 +1341,21 @@
                     "stanzaID": 0,
                     "type": 7,
                     "timing": 0.0,
-                    "textId": 4,
+                    "textId": 5,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_star_twinkles\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "timing": 0.0,
+                    "textId": 5,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_star_twinkles\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -1355,16 +1365,6 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 5,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -1385,7 +1385,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_twinkles_line\"}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_twinkles_line\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -1704,7 +1704,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 7,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -1915,7 +1915,7 @@
                     "tag": "",
                     "posX": -61.0,
                     "posY": -73.0,
-                    "posZ": 5.0,
+                    "posZ": 95.0,
                     "scaleX": 340.0,
                     "scaleY": 340.0,
                     "rotX": 0.0,
@@ -1935,7 +1935,7 @@
                     "tag": "",
                     "posX": 9.0,
                     "posY": -148.0,
-                    "posZ": 3.0,
+                    "posZ": 93.0,
                     "scaleX": 203.0,
                     "scaleY": 203.0,
                     "rotX": 0.0,
@@ -1955,7 +1955,7 @@
                     "tag": "",
                     "posX": -305.0,
                     "posY": -213.0,
-                    "posZ": 0.0,
+                    "posZ": 90.0,
                     "scaleX": 94.30000305175781,
                     "scaleY": 94.30000305175781,
                     "rotX": 0.0,
@@ -1975,7 +1975,7 @@
                     "tag": "",
                     "posX": -369.79998779296877,
                     "posY": -43.099998474121097,
-                    "posZ": 10.0,
+                    "posZ": 100.0,
                     "scaleX": 392.0,
                     "scaleY": 392.0,
                     "rotX": 0.0,
@@ -1995,7 +1995,7 @@
                     "tag": "",
                     "posX": -30.0,
                     "posY": -127.0,
-                    "posZ": 4.0,
+                    "posZ": 94.0,
                     "scaleX": 203.0,
                     "scaleY": 203.0,
                     "rotX": 0.0,
@@ -2015,7 +2015,7 @@
                     "tag": "",
                     "posX": -301.0,
                     "posY": -94.0,
-                    "posZ": 11.0,
+                    "posZ": 101.0,
                     "scaleX": 278.0,
                     "scaleY": 370.0,
                     "rotX": 0.0,
@@ -2035,7 +2035,7 @@
                     "tag": "",
                     "posX": 321.0,
                     "posY": -58.0,
-                    "posZ": 11.0,
+                    "posZ": 101.0,
                     "scaleX": 392.0,
                     "scaleY": 392.0,
                     "rotX": 0.0,
@@ -2055,7 +2055,7 @@
                     "tag": "",
                     "posX": 239.0,
                     "posY": -145.0,
-                    "posZ": 10.0,
+                    "posZ": 100.0,
                     "scaleX": 230.0,
                     "scaleY": 230.0,
                     "rotX": 0.0,
@@ -2075,7 +2075,7 @@
                     "tag": "",
                     "posX": 185.0,
                     "posY": -208.0,
-                    "posZ": 0.0,
+                    "posZ": 90.0,
                     "scaleX": 183.0,
                     "scaleY": 183.0,
                     "rotX": 0.0,
@@ -2095,7 +2095,7 @@
                     "tag": "",
                     "posX": 145.0,
                     "posY": -83.0,
-                    "posZ": 6.0,
+                    "posZ": 96.0,
                     "scaleX": 362.0,
                     "scaleY": 482.0,
                     "rotX": 0.0,
@@ -2386,7 +2386,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 12,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -2751,7 +2751,7 @@
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_monkeys.mp3",
                     "end": 919,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1087,
@@ -3277,7 +3277,7 @@
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_sticks.mp3",
                     "end": 1105,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1350,
@@ -3299,67 +3299,17 @@
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
-                    "textId": 0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 9,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 9,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 9,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
                     "textId": 2,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3372,28 +3322,8 @@
                     "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 8,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 8,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
@@ -3403,37 +3333,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 8,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 9,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
@@ -3443,7 +3343,17 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
@@ -3453,6 +3363,36 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
                 },
                 {
@@ -3472,7 +3412,7 @@
                     "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 9,
+                    "sceneObjectId": 2,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3483,6 +3423,96 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3502,78 +3532,8 @@
                     "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 2,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 8,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 8,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 8,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
                     "sceneObjectId": 9,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -4056,7 +4016,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 16,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -4490,7 +4450,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -4580,7 +4540,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "16_small_boat-1",
+                    "imageName": "14_small_boat_moves_slowly-1",
                     "inText": false,
                     "label": "smallboat",
                     "destroyOnCollision": "",
@@ -4724,7 +4684,7 @@
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_boat.mp3",
                     "end": 1868,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1974,
@@ -5009,7 +4969,7 @@
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_fast.mp3",
                     "end": 681,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 682,
@@ -5290,7 +5250,7 @@
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_fish.mp3",
                     "end": 1110,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1184,
@@ -5636,7 +5596,7 @@
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_octopus.mp3",
                     "end": 1248,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1328,
@@ -6305,7 +6265,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"1_akili_wave\",\"StartPrompt\":1}"
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -7033,6 +6993,16 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
+                },
+                {
+                    "stanzaID": 0,
                     "type": 7,
                     "timing": 0.0,
                     "textId": 1,
@@ -7069,27 +7039,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"23_Akili_takes_food_and_eat\",\"StartPrompt\":0}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 }
             ]
         },
@@ -7225,6 +7175,16 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
                     "type": 7,
                     "timing": 0.0,
                     "textId": 3,
@@ -7242,16 +7202,6 @@
                     "timestamp": 0,
                     "sceneObjectId": 3,
                     "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"24_Akili_smiles_and_jumps\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 }
             ]
         },

@@ -742,6 +742,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     if (graphicObject != null)
                     {
                         HighlightParams highlightParams = JsonUtility.FromJson<HighlightParams>(trigger.Params);
+                        highlightParams.StartValues = graphicObject.transform.localScale;
+
                         GameObject rcInvoker = GetInvoker(highlightParams.PromptType, graphicObject, tinkerText.gameObject);
                         HighlightActorPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
                         pHighlight.Init(highlightParams);
@@ -763,6 +765,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     if(graphicObject!= null)
                     {
                         MoveParams moveParams = JsonUtility.FromJson<MoveParams>(trigger.Params);
+                        moveParams.StartValues = graphicObject.transform.position;
+
                         GameObject rcInvoker = GetInvoker(moveParams.PromptType, graphicObject, tinkerText.gameObject);
                         MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
                         if (moveParams.Reset)
@@ -788,6 +792,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     if (graphicObject != null)
                     {
                         ScaleParams scaleParams = JsonUtility.FromJson<ScaleParams>(trigger.Params);
+                        scaleParams.StartValues = graphicObject.transform.localScale;
+
                         GameObject rcInvoker = GetInvoker(scaleParams.PromptType, graphicObject, tinkerText.gameObject);
                         ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
                         if (scaleParams.Reset)
@@ -813,6 +819,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     if (graphicObject != null)
                     {
                         RotateParams rotateParams = JsonUtility.FromJson<RotateParams>(trigger.Params);
+                        rotateParams.StartValues = graphicObject.transform.rotation.eulerAngles;
+
                         GameObject rcInvoker = GetInvoker(rotateParams.PromptType, graphicObject, tinkerText.gameObject);
                         RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
                         if (rotateParams.Reset)

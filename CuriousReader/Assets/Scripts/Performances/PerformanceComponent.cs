@@ -139,7 +139,7 @@ namespace CuriousReader.Performance
                     {
                         foreach(Performance p in rcPair.Value)
                         {
-                            if (p.IsPerforming())
+                            if (p.IsPerforming() && (!p.GetType().Equals(typeof(SpriteAnimationPerformance))))
                             {
                                 p.Cancel(this.gameObject);
                                 p.UnPerform(this.gameObject);

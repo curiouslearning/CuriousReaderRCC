@@ -10,8 +10,7 @@ namespace CuriousReader.Performance
 {
     public class TweenActorParams : PerformanceParams
     {
-        [ExposeField]
-        protected Vector3 StartValues;
+        public Vector3 StartValues;
         [ExposeField]
         public float duration;
         [ExposeField]
@@ -37,9 +36,10 @@ namespace CuriousReader.Performance
         public float speed;
         public TweenCallback OnComplete;
         public bool YoYo;
-        public virtual TweenActorPerformance Init(Vector3 i_values, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
+        public virtual TweenActorPerformance Init(Vector3 i_vStartPosition, Vector3 i_vEndPosition, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
         {
-            EndValues = i_values;
+            StartValues = i_vStartPosition;
+            EndValues = i_vEndPosition;
             duration = i_duration;
             speed = i_speed;
             AllowInterrupt = i_AllowInterrupt;
@@ -47,14 +47,15 @@ namespace CuriousReader.Performance
             YoYo = i_yoyo;
             return this;
         }
+
         public TweenActorPerformance Init(TweenActorParams i_rcParams)
         {
             if (i_rcParams != null)
             {
-                return Init(i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo);
+                return Init(i_rcParams.StartValues, i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo);
             }
             Debug.LogWarningFormat("Performance of Type {0} received Null param object,using default Values", this.GetType());
-            return Init(Vector3.zero);
+            return Init(Vector3.zero,Vector3.zero);
         }
 
 

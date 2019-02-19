@@ -107,7 +107,6 @@ namespace CuriousReader.Performance
         /// <param name="trigger">the TriggerClass containing the id number of the desired animation</param>
         public static SpriteAnimationPerformance GetSpriteAnimationPerformance(SpriteAnimator rcAnimator, SpriteAnimationParams i_rcParams)
         {
-
             SpriteAnimationPerformance rcPerformance = SpriteAnimationPerformance.CreateInstance<SpriteAnimationPerformance>();
 
             if ((rcPerformance) != null && (rcAnimator != null))
@@ -117,6 +116,7 @@ namespace CuriousReader.Performance
                 {
                     rcPerformance.AddInvoker(invoker);
                 }
+                rcPerformance.AllowInterrupt = i_rcParams.AllowInterrupt;
             }
             else { Debug.LogWarning("Performance and/or animator is null!"); }
             return rcPerformance;
@@ -139,12 +139,12 @@ namespace CuriousReader.Performance
         /// <param name="speed">Speed of the tween (overrides duration).</param>
         /// <param name="OnComplete">optional method to call on completion of tween.</param>
         /// <typeparam name="T">The 1st type parameter.</typeparam>
-        public static T GetTweenPerformance<T>(bool doInit = false, Vector3 endValues = default(Vector3), float duration = 1f, float speed = default(float), bool allowInterrupt = true, TweenCallback OnComplete = default(TweenCallback)) where T : TweenActorPerformance
+        public static T GetTweenPerformance<T>(bool doInit = false,Vector3 startValues = default(Vector3), Vector3 endValues = default(Vector3), float duration = 1f, float speed = default(float), bool allowInterrupt = true, TweenCallback OnComplete = default(TweenCallback)) where T : TweenActorPerformance
         {
             T rcPerformance = ScriptableObject.CreateInstance<T>();
             if (rcPerformance != null && doInit)
             {
-                rcPerformance.Init(endValues, duration, speed, allowInterrupt, OnComplete);
+                rcPerformance.Init(startValues, endValues, duration, speed, allowInterrupt, OnComplete);
             }
             return rcPerformance;
         }

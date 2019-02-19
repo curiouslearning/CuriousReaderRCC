@@ -28,7 +28,7 @@ namespace CuriousReader.Performance
 
         public HighlightTextPerformance Init(Color i_color, float i_scaleMultiplier = 1.5f, float i_delay = 0f, float i_duration = 1, float i_speed = 0, bool i_AllowInterrupt = true, TweenCallback i_callback = null)
         {
-            base.Init(Vector3.zero, i_duration, i_speed, i_AllowInterrupt, i_callback);
+            base.Init(Vector3.zero, Vector3.zero, i_duration, i_speed, i_AllowInterrupt, i_callback);
             scaleMultiplier = i_scaleMultiplier;
             delay = i_delay;
             color = i_color;
