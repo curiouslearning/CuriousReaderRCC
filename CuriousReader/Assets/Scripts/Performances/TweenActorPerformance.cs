@@ -79,7 +79,7 @@ namespace CuriousReader.Performance
         {
             if (i_rcActor != null)
             {
-                i_rcActor.transform.DORestart();
+                DOTween.Restart(i_rcActor);
                 int kill = DOTween.Kill(i_rcActor);
                 //                Debug.LogFormat("Killed {1} tween(s) on {0}", i_rcActor.name, kill);
             }

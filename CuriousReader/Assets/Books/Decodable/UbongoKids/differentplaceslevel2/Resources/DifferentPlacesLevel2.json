@@ -3419,7 +3419,7 @@
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
-                    "textId": 3,
+                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -3507,7 +3507,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 10,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 0,
                     "animId": 0,
@@ -3527,7 +3527,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 10,
+                    "type": 8,
                     "timing": 0.0,
                     "textId": 1,
                     "animId": 0,
