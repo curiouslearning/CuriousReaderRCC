@@ -81,7 +81,6 @@ namespace CuriousReader.Performance
             {
                 DOTween.Restart(i_rcActor);
                 int kill = DOTween.Kill(i_rcActor);
-                //                Debug.LogFormat("Killed {1} tween(s) on {0}", i_rcActor.name, kill);
             }
         }
     }

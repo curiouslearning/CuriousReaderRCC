@@ -3683,7 +3683,7 @@
                     "tag": "",
                     "posX": 238.0,
                     "posY": -31.0,
-                    "posZ": 91.0,
+                    "posZ": 90.0,
                     "scaleX": 91.0,
                     "scaleY": 91.0,
                     "rotX": 0.0,
@@ -4137,6 +4137,26 @@
                     "timestamp": 0,
                     "sceneObjectId": 8,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-10.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-10.0}}"
                 }
             ]
         },

@@ -35,6 +35,7 @@
             {
                 i_rcActor.transform.rotation = Quaternion.Euler(StartValues);
                 TweenSystem.Rotate(i_rcActor, EndValues, RotateMode.LocalAxisAdd, duration, speed, OnComplete, YoYo);
+                Performing = true;
                 return true;
             }
             return false;
