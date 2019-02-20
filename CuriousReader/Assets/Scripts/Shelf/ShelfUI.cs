@@ -3,12 +3,14 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Collections.Generic;
 
+[System.Serializable]
 public class ShelfUI : MonoBehaviour {
 
 	#region Public Members
 	
-	public event UnityAction<string>	OnBookFileNameChanged	= delegate{};
-	public event UnityAction 			OnSceneLoadButtonClick 	= delegate{};
+	public event UnityAction<string>	OnBookFileNameChanged	    = delegate{};
+	public event UnityAction 			OnSceneLoadButtonClick 	    = delegate{};
+    public event UnityAction            OnAutoNarrateButtonClick    = delegate{};
 	
 	#endregion
 
@@ -16,11 +18,29 @@ public class ShelfUI : MonoBehaviour {
 	
 	[Header("Book UI components")]
     [SerializeField]
-    private Button  m_bookSelectionSceneLoadButton;
+    private Button          m_bookSelectionSceneLoadButton;
     [SerializeField]
-    private Image   m_bookSelectionBackgroundImage;
+    private Image           m_bookSelectionBackgroundImage;
     [SerializeField]
-    private Image   m_bookSelectionImage;
+    private Image           m_bookSelectionImage;
+    [SerializeField]
+    private GameObject      m_bookLoadingOverlayWithLoadingSpinner;
+    [SerializeField]
+    private AudioSource     m_bookLoadAudioSource;
+
+    [SerializeField]
+    private Image           m_bookAutoNarrateImage;
+    [Space]
+    [SerializeField]
+    private Sprite          m_bookAutoNarrateSpriteOn;
+    [SerializeField]
+    private Sprite          m_bookAutoNarrateSpriteOff;
+    [Space]
+    [SerializeField]
+    private Button          m_bookAutoNarrateButton;
+    [SerializeField]
+    private AudioSource     m_bookAutoNarrateClickAudioSource;
+
     [SerializeField]
     private List<ShelfBookLevelButton>  m_bookLevelButtons;
 
@@ -49,7 +69,28 @@ public class ShelfUI : MonoBehaviour {
 		OnBookFileNameChanged(m_bookLevelButtons[m_currentlyActiveBookLevel].BookFileName);
 
         m_bookSelectionSceneLoadButton.onClick.AddListener(() => { OnSceneLoadButtonClick(); });
+        m_bookAutoNarrateButton.onClick.AddListener(() => { OnAutoNarrateButtonClick(); });
 	}
+
+    public void EnableBookLoadingSpinnerAndOverlay()
+    {
+        m_bookLoadingOverlayWithLoadingSpinner.SetActive(true);
+    }
+
+    public void PlayBookLoadAudio()
+    {
+        m_bookLoadAudioSource.Play();
+    }
+
+    public void ToggleAutoNarrateButtonImage(bool autoNarrate)
+    {
+        m_bookAutoNarrateImage.sprite = autoNarrate ? m_bookAutoNarrateSpriteOn : m_bookAutoNarrateSpriteOff;
+    }
+
+    public void PlayAutoNarrateToggleAudio()
+    {
+        m_bookAutoNarrateClickAudioSource.Play();
+    }
 	
 	#endregion
 

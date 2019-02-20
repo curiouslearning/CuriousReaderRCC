@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
@@ -20,6 +21,8 @@ public class ShelfManager : MonoBehaviour
     private ShelfUI m_shelfUI; 
 
     private DateTimeTimer m_shelfSceneTimer; // Used for getting the elapsed time in seconds for firebase analytics
+
+    private bool    m_startedLoadingABook;
     
     #endregion
 
@@ -27,6 +30,7 @@ public class ShelfManager : MonoBehaviour
     
     void Start()
 	{
+        m_startedLoadingABook = false;
         if (m_shelfUI == null)
         {
             Debug.LogError("Please make sure the ShelfUI is assigned on: " + name);
@@ -34,7 +38,9 @@ public class ShelfManager : MonoBehaviour
         }
         m_shelfUI.OnSceneLoadButtonClick    += onBookSceneLoadClick;
         m_shelfUI.OnBookFileNameChanged     += onBookFileNameChanged;
+        m_shelfUI.OnAutoNarrateButtonClick  += onBookAutoNarrateButtonClick;
         m_shelfUI.Initialize();
+        m_shelfUI.ToggleAutoNarrateButtonImage(AutoNarrate);
         
         m_shelfSceneTimer = new DateTimeTimer().Start();
     }
@@ -45,13 +51,40 @@ public class ShelfManager : MonoBehaviour
 
     void onBookSceneLoadClick()
     {
+        if (m_startedLoadingABook) return;
+
+        m_startedLoadingABook = true;
+
+        m_shelfUI.PlayBookLoadAudio();
+        m_shelfUI.EnableBookLoadingSpinnerAndOverlay();
+
         sendElapsedTimeToFirebaseAnalytics();
-        loadBookSceneAsync();
+
+        StartCoroutine(loadBookSceneAsync());
+    }
+
+    void onBookAutoNarrateButtonClick()
+    {
+        m_shelfUI.PlayAutoNarrateToggleAudio();
+        AutoNarrate = !AutoNarrate;
+        m_shelfUI.ToggleAutoNarrateButtonImage(AutoNarrate);
     }
     
-    void loadBookSceneAsync()
+    IEnumerator loadBookSceneAsync()
     {
-        SceneManager.LoadSceneAsync("Books/Decodable/CatTale/Common/Scenes/Scene01");
+        yield return new WaitForSeconds(0.5f);
+
+        AsyncOperation asyncOp = SceneManager.LoadSceneAsync("Books/Decodable/CatTale/Common/Scenes/Scene01");
+        
+        asyncOp.allowSceneActivation = false;
+
+        while (!(asyncOp.progress >= 0.9f))
+        {
+            yield return null;
+        }
+
+        yield return new WaitForSeconds(3f);
+        asyncOp.allowSceneActivation = true;
     }
 
     void onBookFileNameChanged(string newBookFileName)

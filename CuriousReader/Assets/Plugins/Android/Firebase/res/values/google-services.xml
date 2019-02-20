@@ -6,6 +6,6 @@
   <string name="project_id" translatable="false">tinkrplayer</string>
   <string name="google_api_key" translatable="false">AIzaSyAMz7-W24JWI0bPjGDp7Zs4KY6j8yu3d7Q</string>
   <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAMz7-W24JWI0bPjGDp7Zs4KY6j8yu3d7Q</string>
-  <string name="google_app_id" translatable="false">1:208015290992:android:d8c43b68e9fd8807</string>
+  <string name="google_app_id" translatable="false">1:208015290992:android:2826839104304905</string>
   <string name="default_web_client_id" translatable="false">208015290992-8mcqsh10b15bhmgaomocmm13oi0fcui0.apps.googleusercontent.com</string>
 </resources>
