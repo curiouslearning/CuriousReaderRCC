@@ -8,58 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:208015290992:android:299fce8d034481d3",
-        "android_client_info": {
-          "package_name": "com.google.firebase.unity.analytics.testapp"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "208015290992-ohb27t0m1t00p4rdu1v84jl0pl6f83q5.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.google.firebase.unity.analytics.testapp",
-            "certificate_hash": "eb2fa4f7b863673e5d83d4a322e58bd8cee99b37"
-          }
-        },
-        {
-          "client_id": "208015290992-3jubeno8gpqrjb1pogdf9f6b206ikck9.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.google.firebase.unity.analytics.testapp",
-            "certificate_hash": "c86e8ce904a65308c20b6f7a00740f93eebbc24f"
-          }
-        },
-        {
-          "client_id": "208015290992-8mcqsh10b15bhmgaomocmm13oi0fcui0.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyC0DtaH4tnn0HLjOi3VWU1WJlWH3Ucp8Zw"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "208015290992-8mcqsh10b15bhmgaomocmm13oi0fcui0.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:208015290992:android:d8c43b68e9fd8807",
         "android_client_info": {
           "package_name": "com.tinkr.shelf"
@@ -73,7 +21,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC0DtaH4tnn0HLjOi3VWU1WJlWH3Ucp8Zw"
+          "current_key": "AIzaSyAMz7-W24JWI0bPjGDp7Zs4KY6j8yu3d7Q"
         }
       ],
       "services": {
@@ -91,20 +39,12 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:208015290992:android:5fdac433d9fc3b54",
+        "mobilesdk_app_id": "1:208015290992:android:2826839104304905",
         "android_client_info": {
-          "package_name": "com.tinkrbook.firebasetry"
+          "package_name": "org.curiouslearning.akilireader"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "208015290992-ca2ul7fsp2i1jm8k5mi3hqvsiqpon9fs.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.tinkrbook.firebasetry",
-            "certificate_hash": "9edf346b451297348da5d5b887a7110ce377bab2"
-          }
-        },
         {
           "client_id": "208015290992-8mcqsh10b15bhmgaomocmm13oi0fcui0.apps.googleusercontent.com",
           "client_type": 3
@@ -112,7 +52,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC0DtaH4tnn0HLjOi3VWU1WJlWH3Ucp8Zw"
+          "current_key": "AIzaSyAMz7-W24JWI0bPjGDp7Zs4KY6j8yu3d7Q"
         }
       ],
       "services": {
@@ -120,13 +60,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "208015290992-8mcqsh10b15bhmgaomocmm13oi0fcui0.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2
