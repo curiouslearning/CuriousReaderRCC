@@ -157,6 +157,19 @@ public class DayAndNightManager: GSManager
 
     public override void OnMouseDown(GameObject go)
 	{
+        // If we pressed on Shining lines in the scene... just ignore it.
+        if (go.name.Equals("night_lines"))
+        {
+            return;
+        }
+
+        // If we pressed on the Corona in the scene... just ignore it.
+        if (go.name.Equals("day_sun_corona"))
+        {
+            return;
+        }
+
+
         Transition(go);
         base.OnMouseDown (go);
 	}

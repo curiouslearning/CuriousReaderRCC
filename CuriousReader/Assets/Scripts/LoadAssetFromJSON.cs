@@ -325,7 +325,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			}
 		}
 	}
-
 #endif
 
     /// <summary>
