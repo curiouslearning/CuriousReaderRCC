@@ -5223,28 +5223,28 @@
                     "wordIdx": 0,
                     "audio": "audio_smdp_word_happy.mp3",
                     "end": 562,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 565,
                     "wordIdx": 1,
                     "audio": "audio_smdp_word_fish.mp3",
                     "end": 1110,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1184,
                     "wordIdx": 2,
                     "audio": "audio_smdp_word_sad.mp3",
                     "end": 1706,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1710,
                     "wordIdx": 3,
                     "audio": "audio_smdp_word_fish.mp3",
                     "end": 2214,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 }
             ],
             "triggers": [
