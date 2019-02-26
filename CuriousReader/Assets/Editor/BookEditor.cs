@@ -243,6 +243,7 @@ public class BookEditor : EditorWindow
                     rcNewArray[i] = new TimeStampClass();
                     rcNewArray[i].start = i * Convert.ToInt32(m_rcPageAudio[m_activePageID].length * 1000) / rcWords.Count;
                     rcNewArray[i].end = rcNewArray[i].start + Convert.ToInt32(m_rcPageAudio[m_activePageID].length * 1000) / rcWords.Count;
+                    rcNewArray[i].audio = "";
                     rcNewArray[i].starWord = "No";
                     rcNewArray[i].wordIdx = i;
                 }
