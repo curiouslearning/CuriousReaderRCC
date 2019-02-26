@@ -53,6 +53,7 @@ public class GTinkerGraphic : MonoBehaviour
         
 		FirebaseHelper.LogInAppTouch(("Graphic_"+dataTinkerGraphic.label) ,  time.ToString());
         PerformanceSystem.SendPrompt(this.gameObject, this.gameObject, PromptType.Click);
+
         if (pairedText1 != null)
         {
             PerformanceSystem.SendPrompt(this.gameObject, pairedText1.gameObject, PromptType.PairedClick);
@@ -61,6 +62,7 @@ public class GTinkerGraphic : MonoBehaviour
         {
             PerformanceSystem.SendPrompt(this.gameObject, pairedText2.gameObject, PromptType.PairedClick);
         }
+
         sceneManager.OnMouseDown (this);
     }
 

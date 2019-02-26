@@ -520,10 +520,16 @@ public class BookEditor : EditorWindow
 
         SetBoldFoldoutStyleToNormal();
 
-        if (m_foldoutPageAudio) {
+        if (m_foldoutPageAudio)
+        {
             EditorGUI.indentLevel++;
 
-            i_rcPage.audioFile = EditorGUILayout.TextField("Audio File", i_rcPage.audioFile, EditorStyles.textField);
+            string strSearchPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "");
+            strSearchPath = Directory.GetParent(Directory.GetParent(strSearchPath).FullName).FullName;
+
+            i_rcPage.audioFile = ObjectFieldToString<AudioClip>(ref i_rcPage.audioFile,"Audio File",ref i_rcPage.AudioClip, "", strSearchPath);
+
+            EditorGUI.EndDisabledGroup();
 
             EditorGUILayout.BeginHorizontal();
 
@@ -561,39 +567,32 @@ public class BookEditor : EditorWindow
                 }
             }
 
-            if (!string.IsNullOrEmpty(i_rcPage.audioFile)) 
+            m_rcPageAudio[i_nOrdinal] = i_rcPage.AudioClip;
+
+            if (m_rcPageAudio[i_nOrdinal] != null)
             {
-                string strPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "Audio/Stanza/" + i_rcPage.audioFile);
-                string strAssetPath = Application.dataPath.Replace("/Assets", "");
-                strPath = strPath.Replace(strAssetPath, "").TrimStart('/');
+                m_rcAudioRects[i_nOrdinal] = EditorGUILayout.GetControlRect(false, 100.0f);
+                m_rcAudioRects[i_nOrdinal].xMin = 20.0f;
 
-                m_rcPageAudio[i_nOrdinal] = AssetDatabase.LoadAssetAtPath<AudioClip>(strPath);
+                ClearRect(m_rcAudioRects[i_nOrdinal], Color.black);
+                RenderAudioClip(m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], 1.0f);
 
-                if (m_rcPageAudio[i_nOrdinal] != null)
+                if (AudioUtility.IsClipPlaying(m_rcPageAudio[i_nOrdinal]))
                 {
-                    m_rcAudioRects[i_nOrdinal] = EditorGUILayout.GetControlRect(false, 100.0f);
-                    m_rcAudioRects[i_nOrdinal].xMin = 20.0f;
+                    EditorUtility.SetDirty(this);
+                    this.Repaint();
 
-                    ClearRect(m_rcAudioRects[i_nOrdinal], Color.black);
-                    RenderAudioClip(m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], 1.0f);
-
-                    if (AudioUtility.IsClipPlaying(m_rcPageAudio[i_nOrdinal]))
-                    {
-                        EditorUtility.SetDirty(this);
-                        this.Repaint();
-
-                        int nSamplePosition = AudioUtility.GetClipSamplePosition(m_rcPageAudio[i_nOrdinal]);
-                        DrawCurrentAudioPosition(m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], nSamplePosition);
-                    }
-
-                    Rect rcRect2 = EditorGUILayout.GetControlRect();
-                    rcRect2.xMin = 20.0f;
-
-                    GUILayout.BeginHorizontal();
-                    GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
-
-                    GUILayout.EndHorizontal();
+                    int nSamplePosition = AudioUtility.GetClipSamplePosition(m_rcPageAudio[i_nOrdinal]);
+                    DrawCurrentAudioPosition(m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], nSamplePosition);
                 }
+
+                Rect rcRect2 = EditorGUILayout.GetControlRect();
+                rcRect2.xMin = 20.0f;
+
+                GUILayout.BeginHorizontal();
+                GUILayout.Space((EditorGUI.indentLevel + 1) * 10);
+
+                GUILayout.EndHorizontal();
             }
 
 
@@ -837,7 +836,13 @@ public class BookEditor : EditorWindow
             i_rcTimestamp.start = EditorGUILayout.IntField("Start", i_rcTimestamp.start, EditorStyles.numberField);
             i_rcTimestamp.end = EditorGUILayout.IntField("End", i_rcTimestamp.end, EditorStyles.numberField);
             i_rcTimestamp.starWord = EditorGUILayout.TextField("Star Word", i_rcTimestamp.starWord, EditorStyles.numberField);
-            i_rcTimestamp.audio = EditorGUILayout.TextField("Audio", i_rcTimestamp.audio, EditorStyles.textField);
+//          i_rcTimestamp.audio = EditorGUILayout.TextField("Audio", i_rcTimestamp.audio, EditorStyles.textField);
+
+            string strSearchPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "");
+            strSearchPath = Directory.GetParent(Directory.GetParent(strSearchPath).FullName).FullName;
+
+            i_rcTimestamp.audio = ObjectFieldToString<AudioClip>(ref i_rcTimestamp.audio, "Audio File", ref i_rcTimestamp.AudioClip, "", strSearchPath);
+
             i_rcTimestamp.wordIdx = EditorGUILayout.IntField("Word Index", i_rcTimestamp.wordIdx, EditorStyles.numberField);
 
             if (i_rcClip != null)
@@ -1500,6 +1505,85 @@ public class BookEditor : EditorWindow
         GUI.EndClip();
     }
 
+    public string ObjectFieldToString<T>(ref string i_strCurrentValue, string i_strLabel, ref T i_rcContainer, string i_strExtension = "", string i_strSearchPath = "") where T : UnityEngine.Object
+    {
+        // If the container is null (because it doesn't serialize) then we need to populate it if we can
+        if (i_rcContainer == null)
+        {
+            // If the string file name is not empty, then... then we need to propagate the audioclip.
+            if (!string.IsNullOrEmpty(i_strCurrentValue))
+            {
+                string strPath = Application.dataPath;
+
+                if (!string.IsNullOrEmpty(i_strSearchPath))
+                {
+                    strPath = FindAssetPathRecursive(i_strCurrentValue, i_strSearchPath);
+                }
+                else
+                {
+                    strPath = FindAssetPathRecursive(i_strCurrentValue, strPath);
+                }
+
+                if (!string.IsNullOrEmpty(strPath))
+                {
+                    i_rcContainer = AssetDatabase.LoadAssetAtPath<T>(strPath);
+                }
+            }
+        }
+        else
+        {
+            string strObjectName = i_rcContainer.name;
+
+            // The clip has been already loaded.
+            // If the clip name doesn't match, set it.
+
+            string strStrippedName = System.IO.Path.GetFileNameWithoutExtension(i_strCurrentValue);
+
+            if (!strStrippedName.Equals(strObjectName))
+            {
+                i_strCurrentValue = strObjectName;
+            }
+        }
+
+        i_rcContainer = (T)EditorGUILayout.ObjectField(i_rcContainer, typeof(T), false);
+
+        return i_strCurrentValue;
+    }
+
+    public string FindAssetPathRecursive(string i_strAssetName, string i_strStartingPath = "")
+    {
+        foreach (string strFile in Directory.GetFiles(i_strStartingPath))
+        {
+            if (strFile.ToLower().Contains(".meta")) continue;
+
+            string strStrippedAssetName = System.IO.Path.GetFileNameWithoutExtension(i_strAssetName);
+            string strStrippedFile = System.IO.Path.GetFileNameWithoutExtension(strFile);
+
+            Debug.Log("Searching " + strFile + "...");
+            if (strStrippedAssetName.Equals(strStrippedFile))
+            {
+                string strAssetPath = Application.dataPath.Replace("/Assets", "");
+                string strFileName = strFile.Replace("\\", "/");
+                strFileName = strFileName.Replace(strAssetPath, "").TrimStart('/');
+                Debug.Log("Bingo! " + strFileName);
+                return strFileName;
+            }
+        }
+
+        foreach (string strDirectory in Directory.GetDirectories(i_strStartingPath))
+        {
+            Debug.Log("Searching Directory" + strDirectory + "...");
+
+            string strSearch = FindAssetPathRecursive(i_strAssetName, strDirectory);
+
+            if (!string.IsNullOrEmpty(strSearch))
+            {
+                return strSearch;
+            }
+        }
+
+        return "";
+    }
 
     private void ClearRect(Rect i_rcRect, Color i_rcColor)
     {
@@ -1821,4 +1905,7 @@ public class TransformEditor2D : Editor
             transform.localScale = scale;
         }
     }
+
+    
+
 }

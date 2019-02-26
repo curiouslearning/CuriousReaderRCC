@@ -8,6 +8,7 @@ public class PageClass
     public int pageNumber;
 	public string script;
     public AudioClass audio;
+    [System.NonSerialized] public AudioClip AudioClip;
     public GameObjectClass[] gameObjects;
     public TextClass[] texts;
     public string audioFile;
