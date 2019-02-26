@@ -7,6 +7,9 @@ using CuriousReader.BookBuilder;
 
 namespace CuriousReader.Performance
 {
+    /// <summary>
+    /// A class for serializing performance state
+    /// </summary>
     public class PerformanceParams
     {
         [ExposeField]
@@ -19,7 +22,7 @@ namespace CuriousReader.Performance
 
 
     /// <summary>
-    /// Performance - Command pattern "Command" object that performs the "work"
+    /// Performance: The basic unit of action an object (Actor) can execute (Perform). Movement, resizing, animation, and sound effects are all examples of performances
     /// </summary>
     public abstract class Performance : ScriptableObject
     {
@@ -28,6 +31,12 @@ namespace CuriousReader.Performance
         public bool AllowInterrupt;
         public bool AllowConcurrent = false;
 
+        /// <summary>
+        /// Initialize this performance with the desired parameters
+        /// </summary>
+        /// <returns>The initialized performance.</returns>
+        /// <param name="i_InvokerList">the list of actors allowed to invoke this performance.</param>
+        /// <param name="i_AllowInterrupt">If set to <c>true</c> allow this performance to interrupt other performances on its actor.</param>
         public virtual Performance Init(List<GameObject> i_InvokerList = null, bool i_AllowInterrupt = true)
         {
             if(InvokerList == null && i_InvokerList != null)
@@ -45,6 +54,10 @@ namespace CuriousReader.Performance
             return this;
         }
 
+        /// <summary>
+        /// Adds the given actor to this performance's list of allowed invokers.
+        /// </summary>
+        /// <param name="i_rcInvoker">I rc invoker.</param>
         public virtual void AddInvoker(GameObject i_rcInvoker)
         {
             if (InvokerList != null)
@@ -61,6 +74,10 @@ namespace CuriousReader.Performance
             }
         }
 
+        /// <summary>
+        /// Removes the given actor from this performance's list of allowed invokers.
+        /// </summary>
+        /// <param name="i_rcInvoker">I rc invoker.</param>
         public virtual void RemoveInvoker(GameObject i_rcInvoker)
         {
             if ((i_rcInvoker != null) && InvokerList.Contains(i_rcInvoker))
@@ -122,6 +139,10 @@ namespace CuriousReader.Performance
             Debug.Log("Performance was just cancelled.");
         }
 
+        /// <summary>
+        /// Rewind and reset this performance on <paramref name="i_rcActor"/>
+        /// </summary>
+        /// <param name="i_rcActor">I rc actor.</param>
         public virtual void UnPerform (GameObject i_rcActor)
         {
             Performing = false;

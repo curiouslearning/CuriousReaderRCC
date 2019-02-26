@@ -6,13 +6,27 @@ using UnityEngine;
 
 namespace CuriousReader.Performance
 {
+    /// <summary>
+    /// enum delineating the types of inputs or events that can prompt a Performance
+    /// </summary>
     public enum PromptType { Click, PairedClick, OnPageLoad, Collision, AutoPlay };
+
     public delegate bool Callback(GameObject i_rcActor);
 
+    /// <summary>
+    /// A Component for adding and prompting Performances on an Actor
+    /// </summary>
     public class PerformanceComponent : MonoBehaviour
     {
         Dictionary<PromptType, List<Performance>> Performances = new Dictionary<PromptType, List<Performance>>();
 
+        /// <summary>
+        /// Adds <paramref name="i_rcPerformance"/> to this Actor's list of performances prompted by <paramref name="i_ePromptType"/>.
+        /// Optionally, add <paramref name="i_rcInvoker"/> to <paramref name="i_rcPerformance"/> list of allowed Invokers
+        /// </summary>
+        /// <param name="i_rcPerformance">The Performance to add</param>
+        /// <param name="i_ePromptType">The type of event that prompts <paramref name="i_rcPerformance"/></param>
+        /// <param name="i_rcInvoker">Optional invoking Actor</param>
         public void AddPerformance(Performance i_rcPerformance, PromptType i_ePromptType, GameObject i_rcInvoker = null)
         {
             if (i_rcPerformance != null)
@@ -31,7 +45,11 @@ namespace CuriousReader.Performance
                 }
             }
         }
-
+        /// <summary>
+        /// Attempt to perform all Performances on this Actor that have <paramref name="i_ePromptType"/> as their prompt, optionally passing the invoking actor
+        /// </summary> 
+        /// <param name="i_rcInvokingActor">I rc invoking actor.</param>
+        /// <param name="i_ePromptType">I  e prompt type.</param>
         public void Prompt(GameObject i_rcInvokingActor, PromptType i_ePromptType)
         {
             if (Performances != null)

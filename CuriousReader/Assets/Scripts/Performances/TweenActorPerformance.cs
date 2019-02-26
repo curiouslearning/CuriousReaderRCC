@@ -48,6 +48,11 @@ namespace CuriousReader.Performance
             return this;
         }
 
+        /// <summary>
+        /// Initialize this performance using a PerformanceParams object
+        /// </summary>
+        /// <returns>The initialized performance.</returns>
+        /// <param name="i_rcParams">the PerformanceParams object.</param>
         public TweenActorPerformance Init(TweenActorParams i_rcParams)
         {
             if (i_rcParams != null)

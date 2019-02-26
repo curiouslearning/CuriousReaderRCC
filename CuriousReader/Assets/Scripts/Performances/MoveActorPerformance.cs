@@ -14,7 +14,7 @@
 
     /// <summary>
     /// MoveActorPerformance -- One of the truest extensions of a TweenActorPerformance, the move actor performance is 
-    /// used to move from StartingValue vector (interpretted as a position on the screen) to EndValue over a specific duration
+    /// used to move from StartingValue vector (interpreted as a position on the screen) to EndValue over a specific duration
     /// or using a specific speed.
     /// </summary>
     public class MoveActorPerformance : TweenActorPerformance

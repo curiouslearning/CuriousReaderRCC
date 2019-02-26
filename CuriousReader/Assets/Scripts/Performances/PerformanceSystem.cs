@@ -9,6 +9,9 @@ using System;
 
 namespace CuriousReader.Performance
 {
+    /// <summary>
+    /// A system for adding, removing and manipulating Performances on Actors
+    /// </summary>
     public static class PerformanceSystem
     {
         #region General Interface
@@ -73,6 +76,11 @@ namespace CuriousReader.Performance
             }
         }
 
+        /// <summary>
+        /// Checks to see if there are Performances in progress on <paramref name="i_rcActor"/>
+        /// </summary>
+        /// <returns><c>true</c>, if there are active Performances, <c>false</c> otherwise.</returns>
+        /// <param name="i_rcActor">the Actor to check.</param>
         public static bool IsPerforming (GameObject i_rcActor)
         {
             PerformanceComponent rcComponent = i_rcActor.GetComponent<PerformanceComponent>();

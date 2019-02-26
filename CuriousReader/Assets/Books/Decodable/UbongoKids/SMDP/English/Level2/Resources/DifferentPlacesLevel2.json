@@ -2192,21 +2192,163 @@
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
+                    "textId": 4,
+                    "animId": -1,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
                     "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
                     "textId": 4,
-                    "animId": -1,
+                    "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 1,
+                    "sceneObjectId": 2,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 11,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 11,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 11,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 9,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -109.19999694824219,
+                    "posY": -189.89999389648438,
+                    "posZ": 93.0,
+                    "scaleX": 583.0,
+                    "scaleY": 583.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "10_giraffe_stand_up-1",
+                    "inText": false,
+                    "label": "giraffe",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "9_giraffe_stand_up",
+                            "startX": 0,
+                            "startY": -30,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": false,
+                            "secPerFrame": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "Animations": [
+                        "10_giraffe_stand_up",
+                        "10_giraffe_stand_up_small"
+                    ]
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -2627,7 +2769,11 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up_small\"}"
+=======
                     "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up_small\"}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -2647,7 +2793,11 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up_small\"}"
+=======
                     "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up_small\"}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 }
             ]
         },
@@ -2967,7 +3117,11 @@
                     "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -2987,7 +3141,11 @@
                     "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -3013,11 +3171,15 @@
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
-                    "textId": 1,
+                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -3027,7 +3189,11 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -3057,7 +3223,51 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 }
             ]
         },
@@ -3372,83 +3582,142 @@
                     "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 2,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+=======
                     "sceneObjectId": 1,
                     "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-360.0}}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
                     "type": 10,
                     "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 9,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+=======
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "timing": 0.0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "textId": 2,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-360.0}}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "textId": 2,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
                     "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 10,
                     "timing": 0.0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "textId": 3,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+=======
                     "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.25}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
                     "type": 10,
                     "timing": 0.0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "textId": 3,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+=======
                     "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
                     "type": 10,
                     "timing": 0.0,
-                    "textId": 1,
+                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 1,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+=======
                     "sceneObjectId": 9,
                     "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
                     "type": 10,
                     "timing": 0.0,
-                    "textId": 1,
+                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 8,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+=======
                     "sceneObjectId": 9,
                     "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-360.0}}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 10,
                     "timing": 0.0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+=======
                     "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
@@ -3464,16 +3733,22 @@
                     "timestamp": 0,
                     "sceneObjectId": 8,
                     "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-360.0}}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
                     "type": 10,
                     "timing": 0.0,
-                    "textId": 3,
+                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 9,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+=======
                     "sceneObjectId": 8,
                     "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 }
             ]
         },
@@ -3886,15 +4161,37 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_extend_neck_look_back\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+=======
                     "Params": "{\"InvokerList\":[],\"AnimationName\":\"13_giraffe_eat_leaves\",\"StartPrompt\":0}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                     "timing": 0.0,
                     "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 3,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-20.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-20.0}}"
+=======
                     "sceneObjectId": 15,
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
@@ -3907,6 +4204,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 15,
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -3916,7 +4214,11 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -3926,7 +4228,11 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -3935,13 +4241,45 @@
                     "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 9,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "sceneObjectId": 8,
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 15,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 15,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 15,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
@@ -3967,6 +4305,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 16,
                     "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -3975,8 +4314,13 @@
                     "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 8,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "sceneObjectId": 15,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -3985,8 +4329,13 @@
                     "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 8,
+                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "sceneObjectId": 15,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -3995,8 +4344,13 @@
                     "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "sceneObjectId": 8,
+                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "sceneObjectId": 9,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -4006,17 +4360,29 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":4,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
                     "timing": 0.0,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "textId": 4,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 15,
+                    "Params": "{\"PromptType\":4,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 },
                 {
                     "stanzaID": 0,
@@ -4026,6 +4392,9 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
+<<<<<<< HEAD:CuriousReader/Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel4.json
+                    "Params": "{\"PromptType\":4,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+=======
                     "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -4047,6 +4416,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 4,
                     "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-10.0}}"
+>>>>>>> development:CuriousReader/Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
                 }
             ]
         },
