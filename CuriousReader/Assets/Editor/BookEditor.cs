@@ -70,11 +70,11 @@ public class BookEditor : EditorWindow
                     m_strBookRoot = m_strBookPath;
                     m_strCommonPath = m_strBookPath.Replace(System.IO.Path.GetFileName(m_strBookRoot), "");
 #if UNITY_EDITOR_OSX
-                    m_strCommonPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strCommonPath).FullName).FullName).FullName + "/Common";
+                    m_strCommonPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strCommonPath).FullName).FullName).FullName).FullName + "/Common";
 #endif
 
 #if UNITY_EDITOR_WIN
-                    m_strCommonPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strCommonPath).FullName).FullName).FullName + "\\Common";
+                    m_strCommonPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strCommonPath).FullName).FullName).FullName).FullName + "\\Common";
 #endif
                     string strAssetPath = Application.dataPath.Replace("/Assets", "");
                     m_strAssetPath = strAssetPath;
