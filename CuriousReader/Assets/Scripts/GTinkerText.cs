@@ -108,7 +108,7 @@ public class GTinkerText : MonoBehaviour
         {
             if (pairedGraphics[i] != null)
             {
-                pairedGraphics[i].OnPairedMouseDown(this);
+                pairedGraphics[i].OnPairedMouseDown(gameObject);
             }
         }
     }
@@ -117,14 +117,14 @@ public class GTinkerText : MonoBehaviour
     /// <summary>
     /// this function is called when the tinkertext is linked to particular tinkergraphic and we need to perform the the zooming animation for that text 
     /// </summary>
-	public void OnPairedMouseDown()
+	public void OnPairedMouseDown(GameObject i_rcInvoker = null)
 	{
 		if (!stanza.stanzaManager.sceneManager.disableSounds)
         {   
 			  PlaySound();
 		}
 
-        PerformanceSystem.SendPrompt(null, this.gameObject, PromptType.PairedClick);
+        PerformanceSystem.SendPrompt(i_rcInvoker, this.gameObject, PromptType.PairedClick);
 	}
 
 	// Plays any sound that is attached
@@ -191,7 +191,7 @@ public class GTinkerText : MonoBehaviour
                 {
                     foreach (GTinkerGraphic rcGraphic in pairedGraphics)
                     {
-                        rcGraphic.OnPairedMouseDown(this);
+                        rcGraphic.OnPairedMouseDown(gameObject);
                     }
                 }
 

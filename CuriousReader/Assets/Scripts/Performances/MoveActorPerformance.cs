@@ -27,7 +27,7 @@
         {
             if (i_rcParams != null)
             {
-                Init(i_rcParams.StartValues, i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo);
+                Init(i_rcParams.StartValues, i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo, i_rcParams.InvokerList);
             }
         }
 
@@ -42,9 +42,9 @@
         /// <param name="i_callback">Completion Callback</param>
         /// <param name="i_yoyo">Does this movement yo-yo back to the start position?</param>
         /// <returns></returns>
-        public new MoveActorPerformance Init(Vector3 i_vStartPosition, Vector3 i_vEndPosition, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
+        public new MoveActorPerformance Init(Vector3 i_vStartPosition, Vector3 i_vEndPosition, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false, List<GameObject> i_rcInvokers = null)
         {
-            base.Init(i_vStartPosition, i_vEndPosition, i_duration, i_speed, i_AllowInterrupt, i_callback, i_yoyo);
+            base.Init(i_vStartPosition, i_vEndPosition, i_duration, i_speed, i_AllowInterrupt, i_callback, i_yoyo, i_rcInvokers);
             return this;
         }
 

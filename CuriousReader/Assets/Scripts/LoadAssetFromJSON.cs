@@ -113,23 +113,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 #if UNITY_EDITOR
 
-        string[] rastrFileList = Directory.GetFiles(Application.dataPath, selectedBookJsonFileName, SearchOption.AllDirectories);
-
-        if (rastrFileList != null)
-        {
-            if (rastrFileList.Length > 0)
-            {
-                for (int i = 0; i < rastrFileList.Length; i++)
-                {
-                    if (rastrFileList[i].ToLower().Contains(selectedBookJsonFileName.ToLower()))
-                    {
-                        selectedBookJsonContent = File.ReadAllText(rastrFileList[i]);
-                    }
-                }
-            }
-        }
-
-
+        selectedBookJsonContent = File.ReadAllText(LoadJsonIntoEditor(selectedBookJsonFileName));
 #endif
 
 
@@ -152,7 +136,30 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 	}
 
-	void setPageTurnLeftArrowActive(bool i_active) {
+    string LoadJsonIntoEditor (string selectedBookJsonFileName)
+    {
+        string selectedJsonFile = "";
+    #if UNITY_EDITOR
+        string[] rastrFileList = Directory.GetFiles(Application.dataPath, selectedBookJsonFileName, SearchOption.AllDirectories);
+
+        if (rastrFileList != null)
+        {
+            if (rastrFileList.Length > 0)
+            {
+                for (int i = 0; i < rastrFileList.Length; i++)
+                {
+                    if (rastrFileList[i].ToLower().Contains(selectedBookJsonFileName.ToLower()))
+                    {
+                        selectedJsonFile = rastrFileList[i];
+                    }
+                }
+            }
+        }
+    #endif
+        return selectedJsonFile;
+    }
+
+    void setPageTurnLeftArrowActive(bool i_active) {
 		if (PageTurnArrowLeft != null)
 			PageTurnArrowLeft.SetActive(i_active);
 	}
@@ -261,7 +268,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 #if UNITY_EDITOR
 
 	string 	m_guiPageIndex = "0";
-	string	m_bookJsonPath = "Assets/Books/Decodable/UbongoKids/differentplaceslevel2/Resources/DifferentPlacesLevel2.json";
 	bool	m_pageNavigationEnabledFromGUI = false;
 
 	void OnGUI()
@@ -291,7 +297,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 				if (objectSpriteRenderer != null)
 					graphicObject.dataTinkerGraphic.orderInLayer = objectSpriteRenderer.sortingOrder;
 			}
-			
+            string m_bookJsonPath = LoadJsonIntoEditor(ShelfManager.SelectedBookFileName + ".json");
+            Debug.Log("Saving to: " + m_bookJsonPath);
 			File.WriteAllText(m_bookJsonPath, JsonUtility.ToJson(storyBookJson, true));
 			UnityEditor.AssetDatabase.Refresh(UnityEditor.ImportAssetOptions.ForceSynchronousImport);
 		}
@@ -405,19 +412,17 @@ public class LoadAssetFromJSON : MonoBehaviour {
         {
 
             HighlightTextPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightTextPerformance>();
-            pHighlight.Init(Color.yellow);
             PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.Click, rcText);
-            PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.PairedClick, rcText);
+            pHighlight.Init(Color.yellow);
             GTinkerText rcTinkerText = rcText.GetComponent<GTinkerText>();
             if (rcTinkerText != null)
             {
-                List<GTinkerGraphic> rcGraphics = rcTinkerText.pairedGraphics;
-                foreach (GTinkerGraphic rcGraphic in rcGraphics)
+                foreach (GTinkerGraphic pairedGraphic in rcTinkerText.pairedGraphics)
                 {
-                    PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.Click, rcGraphic.gameObject);
+                    pHighlight.AddInvoker(pairedGraphic.gameObject);
                 }
             }
-
+            PerformanceSystem.AddPerformance(rcText, pHighlight, PromptType.PairedClick); //invoker can be null here
         }
     }
 
@@ -629,19 +634,32 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		{
 			TriggerClass trigger = triggers[i];
 
-            if (!ValidateTinkerTextObject(trigger.textId))
+            List<GameObject> invokers = new List<GameObject>();
+            foreach (PerformanceInvoker invoker in trigger.invokers)
             {
-                Debug.LogErrorFormat("Unable to validate trigger ({0}) on page ({1}) with textID ({2})",
-                    i, pageNumber, trigger.textId);
-                continue;
-            }
+                if ((invoker!= null) && invoker.invokerType.Equals(TriggerInvokerType.Text))
+                {
+                    if ((invoker.invokerID >= tinkerTextObjects.Count) || (tinkerTextObjects[invoker.invokerID] == null))
+                    {
+                        Debug.LogWarningFormat("Unable to find text object ({0}) on page ({1}) from trigger ({2})", invoker, pageNumber, i);
+                    }
+                    else
+                    {
+                        invokers.Add(tinkerTextObjects[invoker.invokerID]);
+                    }
+                }
+                else if (invoker != null)
+                {
+                    if((invoker.invokerID >= tinkerGraphicObjects.Count) || (tinkerGraphicObjects[invoker.invokerID] == null))
+                    {
 
-            GameObject textObject = tinkerTextObjects[trigger.textId];
-            if (textObject == null)
-            {
-                Debug.LogErrorFormat("Unable to find text object ({0}) on page ({1}) from trigger ({2})",
-                    trigger.textId, pageNumber, i);
-                continue;
+                        Debug.LogWarningFormat("Unable to find text object ({0}) on page ({1}) from trigger ({2})", invoker, pageNumber, i);
+                    }
+                    else
+                    {
+                        invokers.Add(tinkerGraphicObjects[invoker.invokerID]);
+                    }
+                }
             }
 
             if (!ValidateTinkerGraphicObject(trigger.sceneObjectId))
@@ -659,26 +677,12 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 continue;
             }
 
-            GTinkerText tinkerText = textObject.GetComponent<GTinkerText>();
-            if (tinkerText == null)
-            {
-                Debug.LogError("Unable to get GTinkerText component from tinker text object");
-                continue;
-            }
-
-            tinkerText.pairedAnim = trigger.animId;
 
             GTinkerGraphic tinkerGraphic = graphicObject.GetComponent<GTinkerGraphic>();
             if (tinkerGraphic == null)
             {
                 Debug.LogError("Unable to get GTinkerGraphic component from graphic object");
                 continue;
-            }
-
-            if (tinkerText.pairedGraphics == null)
-            {
-                Debug.LogWarning("Tinkertext paired graphics object is null allocating a new list");
-                tinkerText.pairedGraphics = new List<GTinkerGraphic>();
             }
 
             bool addSuccess = false; //to make sure adding the performance goes through
@@ -710,29 +714,22 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         }
                     }
                     break;
-
                 case TriggerType.Animation:
                     if (graphicObject != null)
                     {
-                        SpriteAnimationParams animParams = JsonUtility.FromJson<SpriteAnimationParams>(trigger.Params);
                         SpriteAnimator rcAnimator = graphicObject.GetComponent<SpriteAnimator>();
-                        if ((rcAnimator != null) && (animParams != null))
+                        foreach (PromptType ePrompt in trigger.prompts)
                         {
-                            GameObject rcInvoker; //what object is allowed to prompt this performance?
-                            PromptType ePrompt = animParams.PromptType;    //what kind of prompt does this performance listen for?
-                            rcInvoker = GetInvoker(ePrompt, graphicObject, tinkerText.gameObject);
-                            SpriteAnimationPerformance pSpriteAnim = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, animParams);
-                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, ePrompt, rcInvoker);
-
-                            if (!addSuccess)
+                            SpriteAnimationParams animParams = JsonUtility.FromJson<SpriteAnimationParams>(trigger.Params);
+                            if ((rcAnimator != null) && (animParams != null))
                             {
-                                Debug.LogWarning("Failed to add Animation: " + pSpriteAnim.AnimationName + " to " + graphicObject.name + "!");
-                            }
-
-                            if ( ePrompt == PromptType.PairedClick )
-                            {
-                                tinkerText.pairedGraphics.Add(tinkerGraphic);
-                                tinkerGraphic.pairedText1 = tinkerText;
+                                UpdateInvokers(animParams, ePrompt, trigger.invokers, invokers, tinkerGraphic);
+                                SpriteAnimationPerformance pSpriteAnim = PerformanceSystem.GetSpriteAnimationPerformance(rcAnimator, animParams);
+                                addSuccess = PerformanceSystem.AddPerformance(graphicObject, pSpriteAnim, ePrompt);
+                                if (!addSuccess)
+                                {
+                                    Debug.LogWarningFormat("Failed to add Animation {0} to {1} with prompt type {2}", pSpriteAnim.AnimationName, graphicObject.name, ePrompt);
+                                }
                             }
                         }
                     }
@@ -740,22 +737,18 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 case TriggerType.Highlight:
                     if (graphicObject != null)
                     {
-                        HighlightParams highlightParams = JsonUtility.FromJson<HighlightParams>(trigger.Params);
-                        highlightParams.StartValues = graphicObject.transform.localScale;
-
-                        GameObject rcInvoker = GetInvoker(highlightParams.PromptType, graphicObject, tinkerText.gameObject);
-                        HighlightActorPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
-                        pHighlight.Init(highlightParams);
-                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pHighlight, highlightParams.PromptType, rcInvoker);
-                        if(!addSuccess)
+                        foreach(PromptType ePrompt in trigger.prompts)
                         {
-                            Debug.LogWarning("Failed to add Highlight to " + graphicObject.name + "!");
-                        }
-
-                        if (highlightParams.PromptType == PromptType.PairedClick)
-                        {
-                            tinkerText.pairedGraphics.Add(tinkerGraphic);
-                            tinkerGraphic.pairedText1 = tinkerText;
+                            HighlightParams highlightParams = JsonUtility.FromJson<HighlightParams>(trigger.Params);
+                            highlightParams.StartValues = graphicObject.transform.localScale;
+                            UpdateInvokers(highlightParams, ePrompt, trigger.invokers, invokers, tinkerGraphic);
+                            HighlightActorPerformance pHighlight = PerformanceSystem.GetTweenPerformance<HighlightActorPerformance>();
+                            pHighlight.Init(highlightParams);
+                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, pHighlight, ePrompt);
+                            if (!addSuccess)
+                            {
+                                Debug.LogWarningFormat("Failed to add Highlight to ({0}) with prompt type ({1})", graphicObject.name, ePrompt);
+                            }
                         }
 
                     }
@@ -763,80 +756,57 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 case TriggerType.Move:
                     if(graphicObject!= null)
                     {
-                        MoveParams moveParams = JsonUtility.FromJson<MoveParams>(trigger.Params);
-                        moveParams.StartValues = graphicObject.transform.position;
 
-                        GameObject rcInvoker = GetInvoker(moveParams.PromptType, graphicObject, tinkerText.gameObject);
-                        MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
-                        if (moveParams.Reset)
+                        foreach (PromptType ePrompt in trigger.prompts)
                         {
-                            moveParams.OnComplete = new TweenCallback(() => pMove.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
+                            MoveParams moveParams = JsonUtility.FromJson<MoveParams>(trigger.Params);
+                            moveParams.StartValues = graphicObject.transform.position;
+                            UpdateInvokers(moveParams, ePrompt, trigger.invokers, invokers, tinkerGraphic);
+                            MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
+                            pMove.Init(moveParams);
+                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, ePrompt);
+                            if (!addSuccess)
+                            {
+                                Debug.LogWarningFormat("Failed to add Move Performance to ({0}) with prompt type ({1})", graphicObject.name, ePrompt);
+                            }
                         }
-                        pMove.Init(moveParams);
-                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, moveParams.PromptType, rcInvoker);
-                        if (!addSuccess)
-                        {
-                            Debug.LogWarning("Failed to add Move Tween to " + graphicObject.name + "!");
-                        }
-
-                        if (moveParams.PromptType == PromptType.PairedClick)
-                        {
-                            tinkerText.pairedGraphics.Add(tinkerGraphic);
-                            tinkerGraphic.pairedText1 = tinkerText;
-                        }
-
                     }
                     break;
                 case TriggerType.Scale:
                     if (graphicObject != null)
                     {
-                        ScaleParams scaleParams = JsonUtility.FromJson<ScaleParams>(trigger.Params);
-                        scaleParams.StartValues = graphicObject.transform.localScale;
 
-                        GameObject rcInvoker = GetInvoker(scaleParams.PromptType, graphicObject, tinkerText.gameObject);
-                        ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
-                        if (scaleParams.Reset)
+                        foreach (PromptType ePrompt in trigger.prompts)
                         {
-                            scaleParams.OnComplete = new TweenCallback(() => pScale.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
+                            ScaleParams scaleParams = JsonUtility.FromJson<ScaleParams>(trigger.Params);
+                            scaleParams.StartValues = graphicObject.transform.position;
+                            UpdateInvokers(scaleParams, ePrompt, trigger.invokers, invokers, tinkerGraphic);
+                            ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
+                            pScale.Init(scaleParams);
+                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, ePrompt);
+                            if (!addSuccess)
+                            {
+                                Debug.LogWarningFormat("Failed to add Scale Performance to ({0}) with prompt type ({1})", graphicObject.name, ePrompt);
+                            }
                         }
-                        pScale.Init(scaleParams);
-                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, scaleParams.PromptType, rcInvoker);
-                        if (!addSuccess)
-                        {
-                            Debug.LogWarning("Failed to add Scale Tween to " + graphicObject.name + "!");
-                        }
-
-                        if (scaleParams.PromptType == PromptType.PairedClick)
-                        {
-                            tinkerText.pairedGraphics.Add(tinkerGraphic);
-                            tinkerGraphic.pairedText1 = tinkerText;
-                        }
-
                     }
                     break;
                 case TriggerType.Rotate:
                     if (graphicObject != null)
                     {
-                        RotateParams rotateParams = JsonUtility.FromJson<RotateParams>(trigger.Params);
-                        rotateParams.StartValues = graphicObject.transform.rotation.eulerAngles;
 
-                        GameObject rcInvoker = GetInvoker(rotateParams.PromptType, graphicObject, tinkerText.gameObject);
-                        RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
-                        if (rotateParams.Reset)
+                        foreach (PromptType ePrompt in trigger.prompts)
                         {
-                            rotateParams.OnComplete = new TweenCallback(() => pRotate.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
-                        }
-                        pRotate.Init(rotateParams);
-                        addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate,rotateParams.PromptType, rcInvoker);
-                        if (!addSuccess)
-                        {
-                            Debug.LogWarning("Failed to add Rotate Tween to " + graphicObject.name + "!");
-                        }
-
-                        if (rotateParams.PromptType == PromptType.PairedClick)
-                        {
-                            tinkerText.pairedGraphics.Add(tinkerGraphic);
-                            tinkerGraphic.pairedText1 = tinkerText;
+                            RotateParams rotateParams = JsonUtility.FromJson<RotateParams>(trigger.Params);
+                            rotateParams.StartValues = graphicObject.transform.localRotation.eulerAngles;
+                            UpdateInvokers(rotateParams, ePrompt, trigger.invokers, invokers, tinkerGraphic);
+                            RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
+                            pRotate.Init(rotateParams);
+                            addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate, ePrompt);
+                            if (!addSuccess)
+                            {
+                                Debug.LogWarningFormat("Failed to add Rotate Performance to ({0}) with prompt type ({1})", graphicObject.name, ePrompt);
+                            }
                         }
                     }
                     break;
@@ -846,6 +816,59 @@ public class LoadAssetFromJSON : MonoBehaviour {
         }
 	}
 
+    void UpdateInvokers(PerformanceParams i_rcParams, PromptType i_ePrompt, PerformanceInvoker[] i_InvokerData, List<GameObject> i_InvokingObjects, GTinkerGraphic i_rcTinkerGraphic)
+    {
+        if (i_ePrompt == PromptType.Click)
+        {
+            i_rcParams.InvokerList.Add(i_rcTinkerGraphic.gameObject);
+        }
+        else if (i_ePrompt == PromptType.PairedClick)
+        {
+            foreach(GameObject invoker in i_InvokingObjects)
+            {
+                i_rcParams.InvokerList.Add(invoker);
+            }
+            foreach (PerformanceInvoker invoker in i_InvokerData)
+            {
+                if (invoker.invokerType == TriggerInvokerType.Text)
+                {
+                    if (ValidateTinkerTextObject(invoker.invokerID))
+                    {
+                        GameObject invokerObject = tinkerTextObjects[invoker.invokerID];
+                        GTinkerText invokerGraphic = invokerObject.GetComponent<GTinkerText>();
+                        if (invokerGraphic != null)
+                        {
+                            invokerGraphic.pairedGraphics.Add(i_rcTinkerGraphic);
+                            i_rcTinkerGraphic.AddPairedObject(invokerObject);
+                        }
+                    }
+                }
+                else
+                {
+                    if (invoker.invokerType == TriggerInvokerType.Actor)
+                    {
+                        if (ValidateTinkerGraphicObject(invoker.invokerID))
+                        {
+                            GameObject invokerObject = tinkerGraphicObjects[invoker.invokerID]; 
+                            GTinkerGraphic invokerGraphic = invokerObject.GetComponent<GTinkerGraphic>();
+                            if (invokerGraphic != null)
+                            {
+                                invokerGraphic.AddPairedObject(i_rcTinkerGraphic.gameObject);
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        else
+        {
+            foreach (GameObject invoker in i_InvokingObjects)
+            {
+                i_rcParams.InvokerList.Add(invoker);
+            }
+        }
+    }
 
     GameObject GetInvoker (PromptType type, GameObject i_rcActor, GameObject i_rcPairedActor)
     {
@@ -854,6 +877,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
             case PromptType.Click:
                 return i_rcActor;
             case PromptType.PairedClick:
+                return i_rcPairedActor;
+            case PromptType.AutoPlay:
                 return i_rcPairedActor;
             default:
                 return null;

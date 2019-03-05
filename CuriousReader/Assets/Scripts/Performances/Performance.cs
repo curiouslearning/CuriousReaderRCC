@@ -13,8 +13,6 @@ namespace CuriousReader.Performance
     public class PerformanceParams
     {
         [ExposeField]
-        public PromptType PromptType;
-        [ExposeField]
         public List<GameObject> InvokerList = new List<GameObject>();
         [ExposeField]
         public bool AllowInterrupt = true;
@@ -39,15 +37,15 @@ namespace CuriousReader.Performance
         /// <param name="i_AllowInterrupt">If set to <c>true</c> allow this performance to interrupt other performances on its actor.</param>
         public virtual Performance Init(List<GameObject> i_InvokerList = null, bool i_AllowInterrupt = true)
         {
-            if(InvokerList == null && i_InvokerList != null)
-            {
-                InvokerList = i_InvokerList;
-            }
-            else
-            {
-                foreach(GameObject invoker in i_InvokerList)
+
+            if(i_InvokerList!= null)
+            { 
+                foreach (GameObject invoker in i_InvokerList)
                 {
-                    InvokerList.Add(invoker);
+                    if(invoker != null)
+                    {
+                        AddInvoker(invoker);
+                    }
                 }
             }
             AllowInterrupt = i_AllowInterrupt;

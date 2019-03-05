@@ -11,9 +11,10 @@ public class GTinkerGraphic : MonoBehaviour
 {
 	public GameObjectClass dataTinkerGraphic;
 
-	public GTinkerText pairedText1;
-	public GTinkerText pairedText2;
-	public GSManager sceneManager;
+    // public GTinkerText pairedText1;
+    // public GTinkerText pairedText2;
+    public List<GameObject> PairedObjects = new List<GameObject>();
+    public GSManager sceneManager;
 	public Canvas myCanvas;
 	public Sprite[] sprite;
 
@@ -21,6 +22,17 @@ public class GTinkerGraphic : MonoBehaviour
 	public Color resetColor = new Color(1.0f, 1.0f, 1.0f, 1.0f);
 	public Color highlightColor = GGameManager.yellow;
     public int m_nNavigationPage = -1;
+   
+     /// <summary>
+    /// Adds a paired object
+    /// </summary>
+    /// <param name="i_newPairedObject"></param>
+    public void AddPairedObject(GameObject i_newPairedObject)
+    {
+        if (PairedObjects == null)
+            PairedObjects = new List<GameObject>();
+        PairedObjects.Add(i_newPairedObject);
+    }
 
     /// <summary>
     /// set the draggable property for that tinkergraphic
@@ -50,23 +62,40 @@ public class GTinkerGraphic : MonoBehaviour
 		System.DateTime time=  System.DateTime.Now;
         //sending data directly to firebase using "72 hours rule"! (removed local data storage)
         //DataCollection.AddInTouchData (("Graphic_"+dataTinkerGraphic.label),  time.ToString());
-        
+        bool textPrompted = false;
 		FirebaseHelper.LogInAppTouch(("Graphic_"+dataTinkerGraphic.label) ,  time.ToString());
         PerformanceSystem.SendPrompt(this.gameObject, this.gameObject, PromptType.Click);
-
-        if (pairedText1 != null)
+        foreach (GameObject eachPairedObject in PairedObjects)
         {
-            PerformanceSystem.SendPrompt(this.gameObject, pairedText1.gameObject, PromptType.PairedClick);
-        }
-        if (pairedText2 != null)
-        {
-            PerformanceSystem.SendPrompt(this.gameObject, pairedText2.gameObject, PromptType.PairedClick);
-        }
+            GTinkerText pairedText = eachPairedObject.GetComponent<GTinkerText>();
+            if(pairedText != null)
+            {
+                if(!textPrompted) //only play one piece of text
+                {
+                    pairedText.OnPairedMouseDown(this.gameObject);
+                    textPrompted = true;
+                }
 
-        sceneManager.OnMouseDown (this);
+            }
+            else
+            {
+                PerformanceSystem.SendPrompt(this.gameObject, eachPairedObject, PromptType.PairedClick);
+            }
+        }
+    }
+    /// <summary>
+    /// this function is called when the tinkergraphic is paired to some tinkertext 
+    /// and we want have some paired graphical animation for that text
+    // Paired TinkerText Mouse Down Event
+    /// <param name="pairedObject"></param>
+    /// </summary>
+    public void OnPairedMouseDown(GameObject pairedObject)
+    {
+        // sceneManager.OnPairedMouseDown(pairedObject);
+        PerformanceSystem.SendPrompt(pairedObject, this.gameObject, PromptType.PairedClick);
     }
 
-        /// <summary>
+    /// <summary>
     /// this function is called when the tinkergraphic is paired to some tinkertext 
     /// and we want have some paired graphical animation for that text
     /// </summary>

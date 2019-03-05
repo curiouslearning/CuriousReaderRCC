@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CuriousReader.Performance;
@@ -20,14 +20,32 @@ public enum TriggerType
     Scale = 11
 }
 
+public enum TriggerInvokerType
+{
+    Text = 0,
+    Actor = 1
+}
+
+[System.Serializable]
+public class PerformanceInvoker
+{
+    public TriggerInvokerType invokerType;
+    public int invokerID;
+    [System.NonSerialized]
+    public bool showVars;
+}
+
 [System.Serializable]
 public class TriggerClass
 {
     [System.NonSerialized] public bool Show;
     public int stanzaID;
     public TriggerType type;
+    public PromptType[] prompts;
+    [System.NonSerialized] public bool showPrompts;
+    public PerformanceInvoker[] invokers;
+    [System.NonSerialized] public bool showInvokers;
     public float timing;
-    public int textId;
     public int animId;
     public int timestamp;
     public int sceneObjectId;

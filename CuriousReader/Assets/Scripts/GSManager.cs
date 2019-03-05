@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using CuriousReader.Performance;
 
 /// <summary>
 /// Script responsible for controling the scenes.
@@ -157,11 +158,23 @@ public class GSManager :  MonoBehaviour {
     /// <param name="tinkerGraphic">Tinker graphic.</param>
 	public virtual void OnMouseDown(GTinkerGraphic tinkerGraphic)
 	{
-		if (tinkerGraphic.pairedText1 != null)
-		{
-			stanzaManager.OnPairedMouseDown(tinkerGraphic.pairedText1);
-		}
-	}
+        if (tinkerGraphic != null)
+        {
+            bool textPrompted = false;
+            foreach (GameObject pairedObject in tinkerGraphic.PairedObjects)
+            {
+                GTinkerText rcTinkerText = pairedObject.GetComponent<GTinkerText>();
+                if (rcTinkerText != null)
+                {
+                    if (!textPrompted)
+                    {
+                        stanzaManager.OnPairedMouseDown(pairedObject);
+                        textPrompted = true;
+                    }
+                }
+            }
+        }
+    }
 
 	/// <summary>
 	/// Here we have a superclass intercept for catching global TinkerText paired mouse down events.

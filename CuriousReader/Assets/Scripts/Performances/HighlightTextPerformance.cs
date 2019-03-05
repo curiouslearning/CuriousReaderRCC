@@ -44,9 +44,9 @@ namespace CuriousReader.Performance
         /// <param name="i_speed">OPTIONAL: speed (overrides duration).</param>
         /// <param name="i_AllowInterrupt">If set to <c>true</c> allows this performance to interrupt other performances.</param>
         /// <param name="i_callback">Method to call on completion.</param>
-        public HighlightTextPerformance Init(Color i_color, float i_scaleMultiplier = 1.5f, float i_delay = 0f, float i_duration = 1, float i_speed = 0, bool i_AllowInterrupt = true, TweenCallback i_callback = null)
+        public HighlightTextPerformance Init(Color i_color, float i_scaleMultiplier = 1.5f, float i_delay = 0f, float i_duration = 1, float i_speed = 0, bool i_AllowInterrupt = true, TweenCallback i_callback = null, List<GameObject> i_rcInvokers = null)
         {
-            base.Init(Vector3.zero, Vector3.zero, i_duration, i_speed, i_AllowInterrupt, i_callback);
+            base.Init(Vector3.zero, Vector3.zero, i_duration, i_speed, i_AllowInterrupt, i_callback, i_rcInvokers: i_rcInvokers);
             scaleMultiplier = i_scaleMultiplier;
             delay = i_delay;
             color = i_color;
@@ -63,7 +63,7 @@ namespace CuriousReader.Performance
         {
             if (i_rcParams != null)
             {
-                return Init(i_rcParams.color, i_rcParams.scaleMultiplier, i_rcParams.delay, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete);
+                return Init(i_rcParams.color, i_rcParams.scaleMultiplier, i_rcParams.delay, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.InvokerList);
             }
             Debug.LogWarning("Null param object passed, using default values");
             return Init(Color.yellow);

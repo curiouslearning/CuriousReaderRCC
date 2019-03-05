@@ -25,9 +25,9 @@
         /// <param name="i_AllowInterrupt">If set to <c>true</c> allow this performance to interrupt other performances.</param>
         /// <param name="i_callback">The method(s) to call OnComplete.</param>
         /// <param name="i_yoyo">If set to <c>true</c>.interpolate between <paramref name="i_vStartValues"/> and <paramref name="i_vEndValues"/> one full cycle (forwards and backwards)</param>
-        public RotateActorPerformance Init(Vector3 i_vStartValues, Vector3 i_vEndValues, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
+        public RotateActorPerformance Init(Vector3 i_vStartValues, Vector3 i_vEndValues, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false, List<GameObject> i_rcInvokers = null)
         {
-            base.Init(i_vStartValues, i_vEndValues, i_duration, i_speed, i_AllowInterrupt, i_callback, i_yoyo);
+            base.Init(i_vStartValues, i_vEndValues, i_duration, i_speed, i_AllowInterrupt, i_callback, i_yoyo, i_rcInvokers);
             return this;
         }
 
@@ -40,7 +40,7 @@
         {
             if(i_rcParams != null)
             {
-                return Init(i_rcParams.StartValues, i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo);
+                return Init(i_rcParams.StartValues, i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo, i_rcParams.InvokerList);
             }
             return Init(Vector3.zero, Vector3.zero);
         }
@@ -55,7 +55,7 @@
         {
             if (i_rcActor != null)
             {
-                i_rcActor.transform.rotation = Quaternion.Euler(StartValues);
+                i_rcActor.transform.localRotation = Quaternion.Euler(StartValues);
                 TweenSystem.Rotate(i_rcActor, EndValues, RotateMode.LocalAxisAdd, duration, speed, OnComplete, YoYo);
                 Performing = true;
                 return true;

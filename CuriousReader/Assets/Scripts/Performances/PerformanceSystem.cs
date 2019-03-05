@@ -50,12 +50,12 @@ namespace CuriousReader.Performance
         /// <param name="rcActor">The Performing Actor.</param>
         /// <param name="rcPerformance">The desired Performance.</param>
         /// <param name="promptType">The type of input that prompts this performance</param>
-        public static bool AddPerformance(GameObject rcActor, Performance rcPerformance, PromptType promptType = PromptType.PairedClick, GameObject rcInvoker = null)
+        public static bool AddPerformance(GameObject rcActor, Performance rcPerformance, PromptType promptType = PromptType.PairedClick, GameObject rcInvoker = null, List<GameObject> rcInvokers = null)
         {
             PerformanceComponent rcComponent = InitializeComponent(rcActor);
             if (rcPerformance != null)
             {
-                rcComponent.AddPerformance(rcPerformance, promptType, rcInvoker);
+                rcComponent.AddPerformance(rcPerformance, promptType, rcInvoker, rcInvokers);
                 return true;
             }
             return false;
@@ -120,11 +120,7 @@ namespace CuriousReader.Performance
             if ((rcPerformance) != null && (rcAnimator != null))
             {
                 rcPerformance.AnimationName = i_rcParams.AnimationName;
-                foreach (GameObject invoker in i_rcParams.InvokerList)
-                {
-                    rcPerformance.AddInvoker(invoker);
-                }
-                rcPerformance.AllowInterrupt = i_rcParams.AllowInterrupt;
+                rcPerformance.Init(i_rcParams.InvokerList, i_rcParams.AllowInterrupt);
             }
             else { Debug.LogWarning("Performance and/or animator is null!"); }
             return rcPerformance;

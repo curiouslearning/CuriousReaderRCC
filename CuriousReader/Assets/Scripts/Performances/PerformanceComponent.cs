@@ -27,13 +27,20 @@ namespace CuriousReader.Performance
         /// <param name="i_rcPerformance">The Performance to add</param>
         /// <param name="i_ePromptType">The type of event that prompts <paramref name="i_rcPerformance"/></param>
         /// <param name="i_rcInvoker">Optional invoking Actor</param>
-        public void AddPerformance(Performance i_rcPerformance, PromptType i_ePromptType, GameObject i_rcInvoker = null)
+        public void AddPerformance(Performance i_rcPerformance, PromptType i_ePromptType, GameObject i_rcInvoker = null, List<GameObject> i_rcInvokers = null)
         {
             if (i_rcPerformance != null)
             {
                 if (i_rcInvoker != null)
                 {
                     i_rcPerformance.AddInvoker(i_rcInvoker);
+                }
+                if(i_rcInvokers != null)
+                { 
+                    foreach(GameObject g in i_rcInvokers)
+                    {
+                        i_rcPerformance.AddInvoker(g);
+                    }
                 }
                 if (!Performances.ContainsKey(i_ePromptType))
                 {
@@ -64,8 +71,8 @@ namespace CuriousReader.Performance
                             if (rcPerformance.CanPerform(this.gameObject, i_rcInvokingActor))
                             {
                                 Callback OnComplete = (i_rcActor) => rcPerformance.Perform(i_rcActor);
-                                success = CancelAndUnperformAll(OnComplete);
-//                                Debug.LogFormat("{0} can perform Performance of type {1} invoked by {2}", this.gameObject.name, rcPerformance.GetType(), i_rcInvokingActor.name);
+                                success = CancelAndUnperformAll<SpriteAnimationPerformance>(OnComplete);
+                                //Debug.LogFormat("{0} can perform Performance of type {1} invoked by {2}", this.gameObject.name, rcPerformance.GetType(), i_rcInvokingActor.name);
                                 // Need to add a callback for completion here.  
                                 //success = rcPerformance.Perform(this.gameObject);
                                 if (!success)
@@ -147,7 +154,7 @@ namespace CuriousReader.Performance
             return true;
         }
 
-        public bool CancelAndUnperformAll(Callback OnComplete = default(Callback))
+        public bool CancelAndUnperformAll<T>(Callback OnComplete = default(Callback)) where T: Performance
         {
             if(Performances != null)
             {
@@ -157,7 +164,7 @@ namespace CuriousReader.Performance
                     {
                         foreach(Performance p in rcPair.Value)
                         {
-                            if (p.IsPerforming() && (!p.GetType().Equals(typeof(SpriteAnimationPerformance))))
+                            if (p.IsPerforming() && (!p.GetType().Equals(typeof(T))))
                             {
                                 p.Cancel(this.gameObject);
                                 p.UnPerform(this.gameObject);

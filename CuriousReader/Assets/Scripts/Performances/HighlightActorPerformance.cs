@@ -31,9 +31,9 @@ namespace CuriousReader.Performance
         /// <param name="i_speed">OPTIONAL: speed (overrides duration).</param>
         /// <param name="i_AllowInterrupt">If set to <c>true</c> allows this performance to interrupt other performances.</param>
         /// <param name="i_callback">Method to call on completion.</param>
-        public HighlightActorPerformance Init(float i_scaleMultiplier = 1.5f, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback))
+        public HighlightActorPerformance Init(float i_scaleMultiplier = 1.5f, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), List<GameObject> i_rcInvokers = null)
         {
-            base.Init(Vector3.zero, Vector3.zero, i_duration, i_speed, i_AllowInterrupt, i_callback);
+            base.Init(Vector3.zero, Vector3.zero, i_duration, i_speed, i_AllowInterrupt, i_callback, i_rcInvokers: i_rcInvokers);
             ScaleMultiplier = i_scaleMultiplier;
             return this;
         }
@@ -47,7 +47,7 @@ namespace CuriousReader.Performance
         {
             if(i_rcParams != null)
             {
-                return Init( i_rcParams.ScaleMultiplier, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete);
+                return Init( i_rcParams.ScaleMultiplier, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcInvokers: i_rcParams.InvokerList);
             }
             Debug.LogWarningFormat("Performance of Type {0} received Null param object,using default Values", this.GetType());
             return Init();
@@ -100,3 +100,4 @@ namespace CuriousReader.Performance
         }
     }
 }
+

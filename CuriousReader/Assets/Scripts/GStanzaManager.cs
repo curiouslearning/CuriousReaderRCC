@@ -118,12 +118,19 @@ public class GStanzaManager : MonoBehaviour
 		}
 	}
 
-	public void OnPairedMouseDown(GTinkerText tinkerText)
+	public void OnPairedMouseDown(GameObject pairedObject)
 	{
-		if (tinkerText.stanza != null && stanzas.Contains(tinkerText.stanza))
-		{
-			tinkerText.stanza.OnPairedMouseDown(tinkerText);
-		}
+		// if (pairedObject.stanza != null && stanzas.Contains(pairedObject.stanza))
+		// {
+		// 	pairedObject.stanza.OnPairedMouseDown(pairedObject);
+		// }
+		GTinkerText textComponent = pairedObject.GetComponent<GTinkerText>();
+		GTinkerGraphic graphicComponent = pairedObject.GetComponent<GTinkerGraphic>();
+		if (textComponent != null)
+			textComponent.stanza.OnPairedMouseDown(textComponent);
+		else if (graphicComponent != null)
+			graphicComponent.OnPairedMouseDown(graphicComponent);
+
 	}
 
 	public void ResetInputStates(GGameManager.MouseEvents mouseEvent)

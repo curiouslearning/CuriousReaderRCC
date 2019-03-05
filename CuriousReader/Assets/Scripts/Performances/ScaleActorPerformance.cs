@@ -2,6 +2,7 @@
 {
     using UnityEngine;
     using System.Collections;
+    using System.Collections.Generic;
     using UnityEngine.UI;
     using DG.Tweening;
 
@@ -24,9 +25,9 @@
         /// <param name="i_AllowInterrupt">If set to <c>true</c> allow this performance interrupt to interrupt other performances.</param>
         /// <param name="i_callback">I callback.</param>
         /// <param name="i_yoyo">If set to <c>true</c> interpolate between <paramref name="i_vStartScale"/> and <paramref name="i_vEndScale"/> one full cycle (forwards and backwards).</param>
-        public override TweenActorPerformance Init(Vector3 i_vStartScale, Vector3 i_vEndScale, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false)
+        public ScaleActorPerformance Init(Vector3 i_vStartScale, Vector3 i_vEndScale, float i_duration = 1f, float i_speed = default(float), bool i_AllowInterrupt = true, TweenCallback i_callback = default(TweenCallback), bool i_yoyo = false, List<GameObject> i_rcInvokers = null)
         {
-            base.Init(i_vStartScale, i_vEndScale, duration, speed, i_AllowInterrupt, i_callback, i_yoyo);
+            base.Init(i_vStartScale, i_vEndScale, duration, speed, i_AllowInterrupt, i_callback, i_yoyo, i_rcInvokers);
             return this;
         }
 
@@ -39,7 +40,7 @@
         {
             if (i_rcParams != null)
             {
-                Init(i_rcParams.StartValues, i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo);
+                Init(i_rcParams.StartValues, i_rcParams.EndValues, i_rcParams.duration, i_rcParams.speed, i_rcParams.AllowInterrupt, i_rcParams.OnComplete, i_rcParams.YoYo, i_rcParams.InvokerList);
                 return this;
             }
             return Init(Vector3.zero, Vector3.zero) as ScaleActorPerformance;

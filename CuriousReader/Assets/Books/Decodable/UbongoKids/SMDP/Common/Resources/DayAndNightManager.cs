@@ -7,8 +7,8 @@ using Elendow.SpritedowAnimator;
 
 public class DayAndNightManager: GSManager
 {
-    public string[] m_rastrDayWords = { "Text_day", "Text_sun", "Text_shining","Text_Big","Text_sun.","Text_day." };
-    public string[] m_rastrNightWords = { "Text_night.","Text_night", "Text_star.", "Text_star","Text_small","Text_Small","Text_sparkling", "Text_moon" };
+    public string[] m_rastrDayWords = { "Text_day", "Text_sun", "Text_shining","Text_Big", "Text_big", "Text_sun.","Text_day.", "Text_shines" };
+    public string[] m_rastrNightWords = { "Text_night.","Text_night", "Text_star.", "Text_star","Text_small","Text_Small","Text_sparkling","Text_sparkles.", "Text_moon" };
 
     private bool m_bIsDay = true;
 
