@@ -30,7 +30,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -10,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "Sky",
@@ -45,15 +45,15 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -208.0,
-                    "posY": -101.0,
+                    "posX": -10.5,
+                    "posY": -14.0,
                     "posZ": 91.0,
                     "scaleX": 500.0,
                     "scaleY": 500.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -8,
                     "imageName": "1_many_stars-1",
                     "inText": false,
                     "label": "night_stars",
@@ -67,13 +67,13 @@
                     "tag": "",
                     "posX": -125.0,
                     "posY": -24.0,
-                    "posZ": 0.0,
+                    "posZ": 20.0,
                     "scaleX": 914.923095703125,
                     "scaleY": 914.923095703125,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -5,
                     "imageName": "2_clouds_move_up_and_down-1",
                     "inText": false,
                     "label": "day_cloud0",
@@ -87,13 +87,13 @@
                     "tag": "",
                     "posX": 150.0,
                     "posY": -10.0,
-                    "posZ": 0.0,
+                    "posZ": 20.0,
                     "scaleX": 450.0,
                     "scaleY": 450.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -6,
                     "imageName": "2_clouds_move_up_and_down-1",
                     "inText": false,
                     "label": "day_cloud1",
@@ -101,92 +101,88 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
-                },
-                {
-                    "id": 4,
-                    "tag": "",
-                    "posX": -432.0,
-                    "posY": -282.0,
-                    "posZ": -2.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 5,
-                    "imageName": "1_Akili_wave-1",
-                    "inText": false,
-                    "label": "Akili Waves",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "1_akili_wave"
-                    ]
                 }
             ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Sky! I love the sky, day and night."
+                    "text": "Oh, the sky! Clouds in the day."
+                },
+                {
+                    "id": 1,
+                    "text": "Stars at night."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_0_6.mp3",
+            "audioFile": "audio_english_smdp_6_stanza_page_0",
             "timestamps": [
                 {
-                    "start": 10,
+                    "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_sky.mp3",
-                    "end": 1005,
+                    "audio": "audio_english_smdp_word_oh",
+                    "end": 490,
                     "starWord": "No"
                 },
                 {
-                    "start": 1012,
+                    "start": 490,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_i.mp3",
-                    "end": 1448,
+                    "audio": "audio_english_smdp_word_the_1",
+                    "end": 616,
                     "starWord": "No"
                 },
                 {
-                    "start": 1449,
+                    "start": 618,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_love.mp3",
-                    "end": 1696,
+                    "audio": "audio_english_smdp_word_sky",
+                    "end": 1542,
                     "starWord": "No"
                 },
                 {
-                    "start": 1697,
+                    "start": 1541,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_the_1.mp3",
-                    "end": 1795,
-                    "starWord": "No"
+                    "audio": "audio_english_smdp_word_clouds",
+                    "end": 1961,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 1796,
+                    "start": 1959,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_sky.mp3",
-                    "end": 2435,
+                    "audio": "audio_english_smdp_word_in",
+                    "end": 2081,
                     "starWord": "No"
                 },
                 {
-                    "start": 2436,
+                    "start": 2083,
                     "wordIdx": 5,
-                    "audio": "audio_smdp_word_day.mp3",
-                    "end": 3100,
+                    "audio": "audio_english_smdp_word_the_1",
+                    "end": 2224,
                     "starWord": "No"
                 },
                 {
-                    "start": 3101,
+                    "start": 2222,
                     "wordIdx": 6,
-                    "audio": "audio_smdp_word_and.mp3",
-                    "end": 3391,
+                    "audio": "audio_english_smdp_word_day",
+                    "end": 2775,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 2774,
+                    "wordIdx": 7,
+                    "audio": "audio_english_smdp_word_stars",
+                    "end": 3328,
                     "starWord": "No"
                 },
                 {
-                    "start": 3392,
-                    "wordIdx": 7,
-                    "audio": "audio_smdp_word_night.mp3",
-                    "end": 3820,
+                    "start": 3350,
+                    "wordIdx": 8,
+                    "audio": "audio_english_smdp_word_at",
+                    "end": 3581,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3582,
+                    "wordIdx": 9,
+                    "audio": "audio_english_smdp_word_night",
+                    "end": 4177,
                     "starWord": "Yes"
                 }
             ],
@@ -194,42 +190,92 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 4,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 4,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-125.0,\"y\":-10.0,\"z\":0.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":150.0,\"y\":4.0,\"z\":0.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -253,7 +299,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -5,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "backdrop",
@@ -266,15 +312,15 @@
                     "id": 3,
                     "tag": "",
                     "posX": -125.0,
-                    "posY": -40.0,
+                    "posY": -15.0,
                     "posZ": 90.0,
-                    "scaleX": 943.0847778320313,
-                    "scaleY": 943.0847778320313,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "2_clouds_move_up_and_down-1",
+                    "imageName": "2_big_thunderstorm_cloud-1",
                     "inText": false,
                     "label": "Left Big Cloud",
                     "destroyOnCollision": "",
@@ -293,7 +339,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -1,
                     "imageName": "2_clouds_move_up_and_down-1",
                     "inText": false,
                     "label": "Right Small Cloud",
@@ -306,107 +352,171 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Look! Big cloud. Small cloud."
+                    "text": "A big storm cloud"
+                },
+                {
+                    "id": 1,
+                    "text": "and a small fluffy cloud."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_1.mp3",
+            "audioFile": "audio_english_smdp_6_stanza_page_1",
             "timestamps": [
                 {
-                    "start": 292,
+                    "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_look.mp3",
-                    "end": 575,
+                    "audio": "audio_english_smdp_word_a_2",
+                    "end": 314,
                     "starWord": "No"
                 },
                 {
-                    "start": 1337,
+                    "start": 315,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_big.mp3",
-                    "end": 1516,
-                    "starWord": "No"
+                    "audio": "audio_english_smdp_word_big",
+                    "end": 543,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 1684,
+                    "start": 542,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_cloud.mp3",
-                    "end": 2040,
-                    "starWord": "Yes"
-                },
-                {
-                    "start": 2360,
-                    "wordIdx": 3,
-                    "audio": "audio_smdp_word_small.mp3",
-                    "end": 2855,
+                    "audio": "audio_english_smdp_word_storm",
+                    "end": 1149,
                     "starWord": "No"
                 },
                 {
-                    "start": 2960,
+                    "start": 1147,
+                    "wordIdx": 3,
+                    "audio": "audio_english_smdp_word_cloud",
+                    "end": 1636,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1635,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_cloud.mp3",
-                    "end": 3274,
+                    "audio": "audio_english_smdp_word_and",
+                    "end": 1772,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1773,
+                    "wordIdx": 5,
+                    "audio": "audio_english_smdp_word_a_2",
+                    "end": 1898,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1903,
+                    "wordIdx": 6,
+                    "audio": "audio_english_smdp_word_small",
+                    "end": 2341,
                     "starWord": "Yes"
+                },
+                {
+                    "start": 2344,
+                    "wordIdx": 7,
+                    "audio": "audio_english_smdp_word_fluffy",
+                    "end": 2827,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2829,
+                    "wordIdx": 8,
+                    "audio": "audio_english_smdp_word_cloud",
+                    "end": 3630,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 3,
-                    "animId": -1,
+                    "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 1,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "timing": 0.0,
-                    "textId": 2,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":-125.0,\"y\":-40.0,\"z\":0.0},\"duration\":1.0,\"speed\":30.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-125.0,\"y\":-20.0,\"z\":0.0}}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "timing": 0.0,
-                    "textId": 4,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":150.0,\"y\":-10.0,\"z\":0.0},\"duration\":1.0,\"speed\":30.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":150.0,\"y\":10.0,\"z\":0.0}}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "timing": 0.0,
-                    "textId": 2,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":-125.0,\"y\":-40.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-125.0,\"y\":-20.0,\"z\":0.0}}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":150.0,\"y\":-10.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":150.0,\"y\":10.0,\"z\":0.0}}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
         },
@@ -430,7 +540,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -10,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "background",
@@ -450,7 +560,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -5,
                     "imageName": "03_big_bird_flapping-1",
                     "inText": true,
                     "label": "bigbird",
@@ -472,7 +582,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -6,
                     "imageName": "03_a_small_bird_flapping-1",
                     "inText": true,
                     "label": "smallbird",
@@ -487,100 +597,157 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Big bird. Small bird."
+                    "text": "A big flying bird and a small flying bird."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_2.mp3",
+            "audioFile": "audio_english_smdp_6_stanza_page_2",
             "timestamps": [
                 {
-                    "start": 226,
+                    "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_big.mp3",
-                    "end": 434,
+                    "audio": "audio_english_smdp_word_a_2",
+                    "end": 307,
                     "starWord": "No"
                 },
                 {
-                    "start": 578,
+                    "start": 307,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_bird.mp3",
-                    "end": 911,
+                    "audio": "audio_english_smdp_word_big",
+                    "end": 551,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1266,
+                    "start": 586,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_small.mp3",
-                    "end": 1821,
+                    "audio": "audio_english_smdp_word_flying",
+                    "end": 1085,
                     "starWord": "No"
                 },
                 {
-                    "start": 1823,
+                    "start": 1087,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_bird.mp3",
-                    "end": 2241,
+                    "audio": "audio_english_smdp_word_bird",
+                    "end": 1379,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1576,
+                    "wordIdx": 4,
+                    "audio": "audio_english_smdp_word_and",
+                    "end": 1765,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1764,
+                    "wordIdx": 5,
+                    "audio": "audio_english_smdp_word_a_2",
+                    "end": 1832,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1836,
+                    "wordIdx": 6,
+                    "audio": "audio_english_smdp_word_small",
+                    "end": 2340,
                     "starWord": "Yes"
+                },
+                {
+                    "start": 2340,
+                    "wordIdx": 7,
+                    "audio": "audio_english_smdp_word_flying",
+                    "end": 2774,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2778,
+                    "wordIdx": 8,
+                    "audio": "audio_english_smdp_word_bird",
+                    "end": 3369,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_a_small_bird_flapping\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        0,
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1
+                        }
+                    ],
+                    "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        0,
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_a_small_bird_flapping\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 2,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_a_small_bird_flapping\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
         },
@@ -745,124 +912,202 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A flying bird. A singing bird."
+                    "text": "The big bird is flying."
+                },
+                {
+                    "id": 1,
+                    "text": "The small bird is singing."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_3.mp3",
+            "audioFile": "audio_english_smdp_6_stanza_page_3",
             "timestamps": [
                 {
-                    "start": 300,
+                    "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_a_1.mp3",
-                    "end": 420,
+                    "audio": "audio_english_smdp_word_the_1",
+                    "end": 233,
                     "starWord": "No"
                 },
                 {
-                    "start": 535,
+                    "start": 239,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_flying.mp3",
-                    "end": 1067,
-                    "starWord": "Yes"
+                    "audio": "audio_english_smdp_word_big",
+                    "end": 545,
+                    "starWord": "No"
                 },
                 {
-                    "start": 1071,
+                    "start": 587,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_bird.mp3",
-                    "end": 1345,
+                    "audio": "audio_english_smdp_word_bird",
+                    "end": 831,
                     "starWord": "No"
                 },
                 {
-                    "start": 1593,
+                    "start": 845,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_a_1.mp3",
-                    "end": 1684,
+                    "audio": "audio_english_smdp_word_is",
+                    "end": 989,
                     "starWord": "No"
                 },
                 {
-                    "start": 1690,
+                    "start": 1086,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_singing.mp3",
-                    "end": 2306,
+                    "audio": "audio_english_smdp_word_flying",
+                    "end": 1770,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 2312,
+                    "start": 1863,
                     "wordIdx": 5,
-                    "audio": "audio_smdp_word_bird.mp3",
-                    "end": 2631,
+                    "audio": "audio_english_smdp_word_the_2",
+                    "end": 1924,
                     "starWord": "No"
+                },
+                {
+                    "start": 1947,
+                    "wordIdx": 6,
+                    "audio": "audio_english_smdp_word_small",
+                    "end": 2430,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2453,
+                    "wordIdx": 7,
+                    "audio": "audio_english_smdp_word_bird",
+                    "end": 2626,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2627,
+                    "wordIdx": 8,
+                    "audio": "audio_english_smdp_word_is",
+                    "end": 2770,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2771,
+                    "wordIdx": 9,
+                    "audio": "audio_english_smdp_word_singing",
+                    "end": 3630,
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":540.0,\"y\":45.0,\"z\":0.0},\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0}}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 2,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":540.0,\"y\":45.0,\"z\":0.0},\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":540.0,\"y\":45.0,\"z\":0.0},\"duration\":2.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0}}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":540.0,\"y\":45.0,\"z\":0.0},\"duration\":2.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 5,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 9
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 9
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
                 }
             ]
         },
@@ -1002,37 +1247,58 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Big sun. Small star."
+                    "text": "The big sun and a small star."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_4.mp3",
+            "audioFile": "audio_english_smdp_6_stanza_page_4",
             "timestamps": [
                 {
-                    "start": 259,
+                    "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_big.mp3",
-                    "end": 526,
+                    "audio": "audio_english_smdp_word_the_1",
+                    "end": 258,
                     "starWord": "No"
                 },
                 {
-                    "start": 550,
+                    "start": 264,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_sun.mp3",
-                    "end": 1060,
+                    "audio": "audio_english_smdp_word_big",
+                    "end": 496,
+                    "starWord": "No"
+                },
+                {
+                    "start": 523,
+                    "wordIdx": 2,
+                    "audio": "audio_english_smdp_word_sun",
+                    "end": 1112,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1125,
-                    "wordIdx": 2,
-                    "audio": "audio_smdp_word_small.mp3",
-                    "end": 1588,
+                    "start": 1183,
+                    "wordIdx": 3,
+                    "audio": "audio_english_smdp_word_and",
+                    "end": 1401,
                     "starWord": "No"
                 },
                 {
-                    "start": 1627,
-                    "wordIdx": 3,
-                    "audio": "audio_smdp_word_star.mp3",
-                    "end": 2281,
+                    "start": 1409,
+                    "wordIdx": 4,
+                    "audio": "audio_english_smdp_word_a_2",
+                    "end": 1490,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1500,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 1906,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1911,
+                    "wordIdx": 6,
+                    "audio": "audio_english_smdp_word_star",
+                    "end": 2789,
                     "starWord": "Yes"
                 }
             ],
@@ -1040,62 +1306,76 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_orange_portion_sun\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_orange_portion_sun\"}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_star_vibrates\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 3,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_star_vibrates\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 1,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_orange_portion_sun\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_star_vibrates\"}"
                 }
             ]
         },
@@ -1278,51 +1558,76 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A shining sun. A sparkling star."
+                    "text": "The big sun shines"
+                },
+                {
+                    "id": 1,
+                    "text": "and a small star sparkles."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_5.mp3",
+            "audioFile": "audio_english_smdp_6_stanza_page_5",
             "timestamps": [
                 {
-                    "start": 276,
+                    "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_a_1.mp3",
-                    "end": 390,
+                    "audio": "audio_english_smdp_word_the_2",
+                    "end": 272,
                     "starWord": "No"
                 },
                 {
-                    "start": 458,
+                    "start": 271,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_shining.mp3",
-                    "end": 937,
+                    "audio": "audio_english_smdp_word_big",
+                    "end": 512,
                     "starWord": "No"
                 },
                 {
-                    "start": 996,
+                    "start": 515,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_sun.mp3",
-                    "end": 1428,
+                    "audio": "audio_english_smdp_word_sun",
+                    "end": 1022,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1682,
+                    "start": 1024,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_a_1.mp3",
-                    "end": 1809,
+                    "audio": "audio_english_smdp_word_shines",
+                    "end": 1774,
                     "starWord": "No"
                 },
                 {
-                    "start": 1820,
+                    "start": 1776,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_sparkling.mp3",
-                    "end": 2458,
+                    "audio": "audio_english_smdp_word_and",
+                    "end": 2025,
                     "starWord": "No"
                 },
                 {
-                    "start": 2465,
+                    "start": 2028,
                     "wordIdx": 5,
-                    "audio": "audio_smdp_word_star.mp3",
-                    "end": 3068,
+                    "audio": "audio_english_smdp_word_a_2",
+                    "end": 2102,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2144,
+                    "wordIdx": 6,
+                    "audio": "audio_english_smdp_word_small",
+                    "end": 2526,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2527,
+                    "wordIdx": 7,
+                    "audio": "audio_english_smdp_word_star",
+                    "end": 2908,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2914,
+                    "wordIdx": 8,
+                    "audio": "audio_english_smdp_word_sparkles",
+                    "end": 4126,
                     "starWord": "Yes"
                 }
             ],
@@ -1330,82 +1635,128 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_sunlight\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_sunlight\"}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 5,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_star_twinkles\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 5,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_star_twinkles\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_star_twinkles\"}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2
+                        }
+                    ],
+                    "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 0
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_twinkles_line\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 2,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_sunlight\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 10,
-                    "timing": 0.0,
-                    "textId": 2,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"PromptType\":0,\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":35.0}}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_twinkles_line\"}"
                 }
             ]
         },
@@ -1566,92 +1917,88 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
-                },
-                {
-                    "id": 7,
-                    "tag": "",
-                    "posX": -432.0,
-                    "posY": -282.0,
-                    "posZ": -2.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 5,
-                    "imageName": "1_Akili_wave-1",
-                    "inText": false,
-                    "label": "Akili Wave",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "1_akili_wave"
-                    ]
                 }
             ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Sky! I love the sky, day and night."
+                    "text": "Oh, the sky! Clouds in the day."
+                },
+                {
+                    "id": 1,
+                    "text": "Stars at night."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_0_6.mp3",
+            "audioFile": "audio_english_smdp_6_stanza_page_6",
             "timestamps": [
                 {
-                    "start": 213,
+                    "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_sky.mp3",
-                    "end": 1060,
+                    "audio": "audio_english_smdp_word_oh",
+                    "end": 383,
                     "starWord": "No"
                 },
                 {
-                    "start": 1227,
+                    "start": 444,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_i.mp3",
-                    "end": 1391,
+                    "audio": "audio_english_smdp_word_the_2",
+                    "end": 614,
                     "starWord": "No"
                 },
                 {
-                    "start": 1427,
+                    "start": 620,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_love.mp3",
-                    "end": 1720,
+                    "audio": "audio_english_smdp_word_sky",
+                    "end": 1254,
                     "starWord": "No"
                 },
                 {
-                    "start": 1723,
+                    "start": 1573,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_the_1.mp3",
-                    "end": 1832,
-                    "starWord": "No"
+                    "audio": "audio_english_smdp_word_clouds",
+                    "end": 1876,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 1834,
+                    "start": 1948,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_sky.mp3",
-                    "end": 2509,
+                    "audio": "audio_english_smdp_word_in",
+                    "end": 2043,
                     "starWord": "No"
                 },
                 {
-                    "start": 2901,
+                    "start": 2065,
                     "wordIdx": 5,
-                    "audio": "audio_smdp_word_day.mp3",
-                    "end": 3153,
+                    "audio": "audio_english_smdp_word_the_2",
+                    "end": 2165,
                     "starWord": "No"
                 },
                 {
-                    "start": 3156,
+                    "start": 2199,
                     "wordIdx": 6,
-                    "audio": "audio_smdp_word_and.mp3",
-                    "end": 3367,
+                    "audio": "audio_english_smdp_word_day",
+                    "end": 2695,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 2926,
+                    "wordIdx": 7,
+                    "audio": "audio_english_smdp_word_stars",
+                    "end": 3296,
                     "starWord": "No"
                 },
                 {
-                    "start": 3373,
-                    "wordIdx": 7,
-                    "audio": "audio_smdp_word_night.mp3",
-                    "end": 3809,
+                    "start": 3302,
+                    "wordIdx": 8,
+                    "audio": "audio_english_smdp_word_at",
+                    "end": 3498,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3543,
+                    "wordIdx": 9,
+                    "audio": "audio_english_smdp_word_night",
+                    "end": 4180,
                     "starWord": "Yes"
                 }
             ],
@@ -1659,72 +2006,113 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"03_big_bird_flapping\",\"StartPrompt\":0}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"04_a_small_singing_bird\",\"StartPrompt\":0}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "timing": 0.0,
-                    "textId": 0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "Params": "{\"InvokerList\":[],\"AnimationName\":\"05_orange_portion_sun\",\"StartPrompt\":0}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 6,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":0,\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 7,
-                    "Params": "{\"PromptType\":1,\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
+                    "sceneObjectId": 3,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_orange_portion_sun\"}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 9,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7
+                        }
+                    ],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 7,
-                    "Params": "{\"InvokerList\":[],\"PromptType\":1,\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
+                    "sceneObjectId": 4,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -1804,26 +2192,26 @@
                     "text": "Where to go?"
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_7_13_20.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_7_13_20.mp3",
             "timestamps": [
                 {
                     "start": 232,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_where.mp3",
+                    "audio": "audio_english_smdp_word_where.mp3",
                     "end": 677,
                     "starWord": "Yes"
                 },
                 {
                     "start": 678,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_to_1.mp3",
+                    "audio": "audio_english_smdp_word_to_1.mp3",
                     "end": 826,
                     "starWord": "No"
                 },
                 {
                     "start": 834,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_go.mp3",
+                    "audio": "audio_english_smdp_word_go.mp3",
                     "end": 1475,
                     "starWord": "No"
                 }
@@ -1832,8 +2220,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -1842,8 +2231,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -1852,8 +2242,9 @@
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -1862,8 +2253,9 @@
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -2149,40 +2541,40 @@
                     "text": "Forest! I love the forest."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_8_12.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_8_12.mp3",
             "timestamps": [
                 {
                     "start": 219,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_forest.mp3",
+                    "audio": "audio_english_smdp_word_forest.mp3",
                     "end": 750,
                     "starWord": "No"
                 },
                 {
                     "start": 1183,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_i.mp3",
+                    "audio": "audio_english_smdp_word_i.mp3",
                     "end": 1272,
                     "starWord": "No"
                 },
                 {
                     "start": 1325,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_love.mp3",
+                    "audio": "audio_english_smdp_word_love.mp3",
                     "end": 1592,
                     "starWord": "No"
                 },
                 {
                     "start": 1659,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_the_1.mp3",
+                    "audio": "audio_english_smdp_word_the_1.mp3",
                     "end": 1748,
                     "starWord": "No"
                 },
                 {
                     "start": 1769,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_forest.mp3",
+                    "audio": "audio_english_smdp_word_forest.mp3",
                     "end": 2357,
                     "starWord": "Yes"
                 }
@@ -2191,8 +2583,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2201,8 +2594,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2211,8 +2605,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2221,8 +2616,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -2231,8 +2627,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 10,
@@ -2241,8 +2638,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 10,
@@ -2251,8 +2649,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 10,
@@ -2261,8 +2660,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 10,
@@ -2271,8 +2671,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -2281,8 +2682,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -2291,8 +2693,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 11,
@@ -2301,8 +2704,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -2311,8 +2715,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -2321,8 +2726,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 11,
@@ -2331,8 +2737,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
@@ -2341,8 +2748,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
@@ -2351,8 +2759,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -2361,8 +2770,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -2371,8 +2781,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 11,
@@ -2381,8 +2792,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -2391,8 +2803,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -2401,8 +2814,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 11,
@@ -2411,8 +2825,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
@@ -2421,8 +2836,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
@@ -2431,8 +2847,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 12,
@@ -2441,8 +2858,9 @@
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 12,
@@ -2587,33 +3005,33 @@
                     "text": "Look! A tall giraffe."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_9.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_9.mp3",
             "timestamps": [
                 {
                     "start": 179,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_look.mp3",
+                    "audio": "audio_english_smdp_word_look.mp3",
                     "end": 658,
                     "starWord": "No"
                 },
                 {
                     "start": 924,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_a_1.mp3",
+                    "audio": "audio_english_smdp_word_a_1.mp3",
                     "end": 1077,
                     "starWord": "No"
                 },
                 {
                     "start": 1083,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_tall.mp3",
+                    "audio": "audio_english_smdp_word_tall.mp3",
                     "end": 1410,
                     "starWord": "No"
                 },
                 {
                     "start": 1411,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_giraffe.mp3",
+                    "audio": "audio_english_smdp_word_giraffe.mp3",
                     "end": 2008,
                     "starWord": "Yes"
                 }
@@ -2622,8 +3040,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2632,8 +3051,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2642,8 +3062,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2787,33 +3208,33 @@
                     "text": "Big monkeys. Small monkeys."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_10.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_10.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_big.mp3",
+                    "audio": "audio_english_smdp_word_big.mp3",
                     "end": 182,
                     "starWord": "No"
                 },
                 {
                     "start": 183,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_monkeys.mp3",
+                    "audio": "audio_english_smdp_word_monkeys.mp3",
                     "end": 919,
                     "starWord": "Yes"
                 },
                 {
                     "start": 1087,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_small.mp3",
+                    "audio": "audio_english_smdp_word_small.mp3",
                     "end": 1603,
                     "starWord": "No"
                 },
                 {
                     "start": 1604,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_monkeys.mp3",
+                    "audio": "audio_english_smdp_word_monkeys.mp3",
                     "end": 2267,
                     "starWord": "Yes"
                 }
@@ -2822,8 +3243,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2832,8 +3254,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": -1,
                     "timestamp": 2,
                     "sceneObjectId": 1,
@@ -2842,8 +3265,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
@@ -2852,8 +3276,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 1,
@@ -2862,8 +3287,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
@@ -2872,8 +3298,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": -1,
                     "timestamp": 3,
                     "sceneObjectId": 1,
@@ -2882,8 +3309,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
@@ -2892,8 +3320,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
@@ -2902,8 +3331,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
@@ -2912,8 +3342,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
@@ -2922,8 +3353,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
@@ -2932,8 +3364,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
@@ -2942,8 +3375,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -2952,8 +3386,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": -1,
                     "timestamp": 2,
                     "sceneObjectId": 1,
@@ -2962,8 +3397,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
@@ -2972,8 +3408,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 1,
@@ -2982,8 +3419,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
@@ -2992,8 +3430,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": -1,
                     "timestamp": 3,
                     "sceneObjectId": 1,
@@ -3002,8 +3441,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
@@ -3012,8 +3452,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
@@ -3022,8 +3463,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
@@ -3032,8 +3474,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
@@ -3042,8 +3485,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
@@ -3052,8 +3496,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
@@ -3313,33 +3758,33 @@
                     "text": "Short sticks. Long sticks."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_11.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_11.mp3",
             "timestamps": [
                 {
                     "start": 161,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_short.mp3",
+                    "audio": "audio_english_smdp_word_short.mp3",
                     "end": 533,
                     "starWord": "No"
                 },
                 {
                     "start": 535,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_sticks.mp3",
+                    "audio": "audio_english_smdp_word_sticks.mp3",
                     "end": 1105,
                     "starWord": "Yes"
                 },
                 {
                     "start": 1350,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_long.mp3",
+                    "audio": "audio_english_smdp_word_long.mp3",
                     "end": 1727,
                     "starWord": "No"
                 },
                 {
                     "start": 1730,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_sticks.mp3",
+                    "audio": "audio_english_smdp_word_sticks.mp3",
                     "end": 2397,
                     "starWord": "Yes"
                 }
@@ -3348,8 +3793,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3358,8 +3804,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3368,8 +3815,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -3378,8 +3826,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -3388,8 +3837,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -3398,8 +3848,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
@@ -3408,8 +3859,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -3418,8 +3870,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -3428,8 +3881,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
@@ -3438,8 +3892,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
@@ -3448,8 +3903,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
@@ -3458,8 +3914,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
@@ -3468,8 +3925,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
@@ -3839,40 +4297,40 @@
                     "text": "Forest! I love the forest."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_8_12.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_8_12.mp3",
             "timestamps": [
                 {
                     "start": 218,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_forest.mp3",
+                    "audio": "audio_english_smdp_word_forest.mp3",
                     "end": 834,
                     "starWord": "No"
                 },
                 {
                     "start": 1179,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_i.mp3",
+                    "audio": "audio_english_smdp_word_i.mp3",
                     "end": 1343,
                     "starWord": "No"
                 },
                 {
                     "start": 1349,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_love.mp3",
+                    "audio": "audio_english_smdp_word_love.mp3",
                     "end": 1625,
                     "starWord": "No"
                 },
                 {
                     "start": 1643,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_the_1.mp3",
+                    "audio": "audio_english_smdp_word_the_1.mp3",
                     "end": 1757,
                     "starWord": "No"
                 },
                 {
                     "start": 1758,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_forest.mp3",
+                    "audio": "audio_english_smdp_word_forest.mp3",
                     "end": 2329,
                     "starWord": "Yes"
                 }
@@ -3881,8 +4339,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -3891,8 +4350,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 15,
@@ -3901,8 +4361,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 15,
@@ -3911,8 +4372,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
@@ -3921,8 +4383,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
@@ -3931,8 +4394,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
@@ -3941,8 +4405,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
@@ -3951,8 +4416,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 16,
@@ -3961,8 +4427,9 @@
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 16,
@@ -3971,8 +4438,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 15,
@@ -3981,8 +4449,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 15,
@@ -3991,8 +4460,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
@@ -4001,8 +4471,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
@@ -4011,8 +4482,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
@@ -4021,8 +4493,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
@@ -4031,8 +4504,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -4041,8 +4515,9 @@
                 {
                     "stanzaID": 0,
                     "type": 10,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
@@ -4126,26 +4601,26 @@
                     "text": "Where to go?"
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_7_13_20.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_7_13_20.mp3",
             "timestamps": [
                 {
                     "start": 243,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_where.mp3",
+                    "audio": "audio_english_smdp_word_where.mp3",
                     "end": 641,
                     "starWord": "Yes"
                 },
                 {
                     "start": 644,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_to_1.mp3",
+                    "audio": "audio_english_smdp_word_to_1.mp3",
                     "end": 818,
                     "starWord": "No"
                 },
                 {
                     "start": 823,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_go.mp3",
+                    "audio": "audio_english_smdp_word_go.mp3",
                     "end": 1495,
                     "starWord": "No"
                 }
@@ -4154,8 +4629,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -4164,8 +4640,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -4174,8 +4651,9 @@
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -4184,8 +4662,9 @@
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -4323,40 +4802,40 @@
                     "text": "Ocean! I love the ocean."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_14_19.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_14_19.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_ocean.mp3",
+                    "audio": "audio_english_smdp_word_ocean.mp3",
                     "end": 756,
                     "starWord": "No"
                 },
                 {
                     "start": 991,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_i.mp3",
+                    "audio": "audio_english_smdp_word_i.mp3",
                     "end": 1135,
                     "starWord": "No"
                 },
                 {
                     "start": 1136,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_love.mp3",
+                    "audio": "audio_english_smdp_word_love.mp3",
                     "end": 1441,
                     "starWord": "No"
                 },
                 {
                     "start": 1497,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_the_1.mp3",
+                    "audio": "audio_english_smdp_word_the_1.mp3",
                     "end": 1587,
                     "starWord": "No"
                 },
                 {
                     "start": 1588,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_ocean.mp3",
+                    "audio": "audio_english_smdp_word_ocean.mp3",
                     "end": 3558,
                     "starWord": "Yes"
                 }
@@ -4365,8 +4844,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -4375,8 +4855,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -4385,8 +4866,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -4395,8 +4877,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -4405,8 +4888,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -4415,8 +4899,9 @@
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -4623,40 +5108,40 @@
                     "text": "Look! Big boat. Small boat."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_15.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_15.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_look.mp3",
+                    "audio": "audio_english_smdp_word_look.mp3",
                     "end": 808,
                     "starWord": "No"
                 },
                 {
                     "start": 1038,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_big.mp3",
+                    "audio": "audio_english_smdp_word_big.mp3",
                     "end": 1366,
                     "starWord": "No"
                 },
                 {
                     "start": 1385,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_boat.mp3",
+                    "audio": "audio_english_smdp_word_boat.mp3",
                     "end": 1868,
                     "starWord": "Yes"
                 },
                 {
                     "start": 1974,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_small.mp3",
+                    "audio": "audio_english_smdp_word_small.mp3",
                     "end": 2502,
                     "starWord": "No"
                 },
                 {
                     "start": 2510,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_boat.mp3",
+                    "audio": "audio_english_smdp_word_boat.mp3",
                     "end": 3121,
                     "starWord": "Yes"
                 }
@@ -4665,8 +5150,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -4675,8 +5161,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -4685,8 +5172,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -4695,8 +5183,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -4705,8 +5194,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -4715,8 +5205,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -4922,33 +5413,33 @@
                     "text": "Fast boat. Slow boat."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_16.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_16.mp3",
             "timestamps": [
                 {
                     "start": 156,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_fast.mp3",
+                    "audio": "audio_english_smdp_word_fast.mp3",
                     "end": 681,
                     "starWord": "Yes"
                 },
                 {
                     "start": 682,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_boat.mp3",
+                    "audio": "audio_english_smdp_word_boat.mp3",
                     "end": 1162,
                     "starWord": "No"
                 },
                 {
                     "start": 1168,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_slow.mp3",
+                    "audio": "audio_english_smdp_word_slow.mp3",
                     "end": 1721,
                     "starWord": "Yes"
                 },
                 {
                     "start": 1725,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_boat.mp3",
+                    "audio": "audio_english_smdp_word_boat.mp3",
                     "end": 2321,
                     "starWord": "No"
                 }
@@ -4957,8 +5448,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -4967,8 +5459,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -4977,8 +5470,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -4987,8 +5481,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -4997,8 +5492,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -5007,8 +5503,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -5017,8 +5514,9 @@
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -5027,8 +5525,9 @@
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -5037,8 +5536,9 @@
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -5047,8 +5547,9 @@
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -5216,33 +5717,33 @@
                     "text": "Happy fish. Sad fish."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_17.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_17.mp3",
             "timestamps": [
                 {
                     "start": 98,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_happy.mp3",
+                    "audio": "audio_english_smdp_word_happy.mp3",
                     "end": 562,
                     "starWord": "Yes"
                 },
                 {
                     "start": 565,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_fish.mp3",
+                    "audio": "audio_english_smdp_word_fish.mp3",
                     "end": 1110,
                     "starWord": "No"
                 },
                 {
                     "start": 1184,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_sad.mp3",
+                    "audio": "audio_english_smdp_word_sad.mp3",
                     "end": 1706,
                     "starWord": "Yes"
                 },
                 {
                     "start": 1710,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_fish.mp3",
+                    "audio": "audio_english_smdp_word_fish.mp3",
                     "end": 2214,
                     "starWord": "No"
                 }
@@ -5251,8 +5752,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -5261,8 +5763,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -5271,8 +5774,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -5281,8 +5785,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -5291,8 +5796,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -5301,8 +5807,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -5562,33 +6069,33 @@
                     "text": "Big octopus. Small octopus."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_18.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_18.mp3",
             "timestamps": [
                 {
                     "start": 56,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_big.mp3",
+                    "audio": "audio_english_smdp_word_big.mp3",
                     "end": 427,
                     "starWord": "No"
                 },
                 {
                     "start": 432,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_octopus.mp3",
+                    "audio": "audio_english_smdp_word_octopus.mp3",
                     "end": 1248,
                     "starWord": "Yes"
                 },
                 {
                     "start": 1328,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_small.mp3",
+                    "audio": "audio_english_smdp_word_small.mp3",
                     "end": 1920,
                     "starWord": "No"
                 },
                 {
                     "start": 1924,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_octopus.mp3",
+                    "audio": "audio_english_smdp_word_octopus.mp3",
                     "end": 3172,
                     "starWord": "Yes"
                 }
@@ -5597,8 +6104,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -5607,8 +6115,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -5617,8 +6126,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -5627,8 +6137,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -5637,8 +6148,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -5647,8 +6159,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -6088,40 +6601,40 @@
                     "text": "Ocean! I love the ocean."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_14_19.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_14_19.mp3",
             "timestamps": [
                 {
                     "start": 166,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_ocean.mp3",
+                    "audio": "audio_english_smdp_word_ocean.mp3",
                     "end": 855,
                     "starWord": "No"
                 },
                 {
                     "start": 931,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_i.mp3",
+                    "audio": "audio_english_smdp_word_i.mp3",
                     "end": 1139,
                     "starWord": "No"
                 },
                 {
                     "start": 1141,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_love.mp3",
+                    "audio": "audio_english_smdp_word_love.mp3",
                     "end": 1475,
                     "starWord": "No"
                 },
                 {
                     "start": 1478,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_the_1.mp3",
+                    "audio": "audio_english_smdp_word_the_1.mp3",
                     "end": 1637,
                     "starWord": "No"
                 },
                 {
                     "start": 1638,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_ocean.mp3",
+                    "audio": "audio_english_smdp_word_ocean.mp3",
                     "end": 2239,
                     "starWord": "Yes"
                 }
@@ -6130,8 +6643,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -6140,8 +6654,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -6150,8 +6665,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -6160,8 +6676,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -6170,8 +6687,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -6180,8 +6698,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -6190,8 +6709,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -6200,8 +6720,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -6210,8 +6731,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
@@ -6220,8 +6742,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
@@ -6230,8 +6753,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
@@ -6240,8 +6764,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
@@ -6250,8 +6775,9 @@
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
@@ -6335,26 +6861,26 @@
                     "text": "Where to go?"
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_7_13_20.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_7_13_20.mp3",
             "timestamps": [
                 {
                     "start": 245,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_where.mp3",
+                    "audio": "audio_english_smdp_word_where.mp3",
                     "end": 641,
                     "starWord": "Yes"
                 },
                 {
                     "start": 642,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_to_1.mp3",
+                    "audio": "audio_english_smdp_word_to_1.mp3",
                     "end": 863,
                     "starWord": "No"
                 },
                 {
                     "start": 865,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_go.mp3",
+                    "audio": "audio_english_smdp_word_go.mp3",
                     "end": 2050,
                     "starWord": "No"
                 }
@@ -6363,8 +6889,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -6373,8 +6900,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -6383,8 +6911,9 @@
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -6393,8 +6922,9 @@
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -6740,47 +7270,47 @@
                     "text": "My home! I love my home."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_21.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_21.mp3",
             "timestamps": [
                 {
                     "start": 86,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_my.mp3",
+                    "audio": "audio_english_smdp_word_my.mp3",
                     "end": 484,
                     "starWord": "No"
                 },
                 {
                     "start": 486,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_home.mp3",
+                    "audio": "audio_english_smdp_word_home.mp3",
                     "end": 1112,
                     "starWord": "No"
                 },
                 {
                     "start": 1115,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_i.mp3",
+                    "audio": "audio_english_smdp_word_i.mp3",
                     "end": 1299,
                     "starWord": "No"
                 },
                 {
                     "start": 1301,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_love.mp3",
+                    "audio": "audio_english_smdp_word_love.mp3",
                     "end": 1640,
                     "starWord": "No"
                 },
                 {
                     "start": 1642,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_my.mp3",
+                    "audio": "audio_english_smdp_word_my.mp3",
                     "end": 1912,
                     "starWord": "No"
                 },
                 {
                     "start": 1912,
                     "wordIdx": 5,
-                    "audio": "audio_smdp_word_home.mp3",
+                    "audio": "audio_english_smdp_word_home.mp3",
                     "end": 2529,
                     "starWord": "Yes"
                 }
@@ -6789,8 +7319,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -6799,8 +7330,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 5,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -6809,8 +7341,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 5,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -6819,8 +7352,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -6829,8 +7363,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -6839,8 +7374,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
@@ -6946,26 +7482,26 @@
                     "text": "I eat food."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_22.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_22.mp3",
             "timestamps": [
                 {
                     "start": 133,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_i.mp3",
+                    "audio": "audio_english_smdp_word_i.mp3",
                     "end": 460,
                     "starWord": "No"
                 },
                 {
                     "start": 462,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_eat.mp3",
+                    "audio": "audio_english_smdp_word_eat.mp3",
                     "end": 735,
                     "starWord": "Yes"
                 },
                 {
                     "start": 736,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_food.mp3",
+                    "audio": "audio_english_smdp_word_food.mp3",
                     "end": 1484,
                     "starWord": "No"
                 }
@@ -6974,8 +7510,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -6984,8 +7521,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -6994,8 +7532,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -7004,8 +7543,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
@@ -7014,8 +7554,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -7121,33 +7662,33 @@
                     "text": "Yum! I am happy."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_23.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_23.mp3",
             "timestamps": [
                 {
                     "start": 151,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_yum.mp3",
+                    "audio": "audio_english_smdp_word_yum.mp3",
                     "end": 825,
                     "starWord": "No"
                 },
                 {
                     "start": 1040,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_i.mp3",
+                    "audio": "audio_english_smdp_word_i.mp3",
                     "end": 1238,
                     "starWord": "No"
                 },
                 {
                     "start": 1239,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_am.mp3",
+                    "audio": "audio_english_smdp_word_am.mp3",
                     "end": 1489,
                     "starWord": "No"
                 },
                 {
                     "start": 1490,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_happy.mp3",
+                    "audio": "audio_english_smdp_word_happy.mp3",
                     "end": 2299,
                     "starWord": "Yes"
                 }
@@ -7156,8 +7697,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -7166,8 +7708,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -7176,8 +7719,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -7752,68 +8296,68 @@
                     "text": "I love different places, night and day."
                 }
             ],
-            "audioFile": "audio_smdp_2_stanza_page_24.mp3",
+            "audioFile": "audio_english_smdp_2_stanza_page_24.mp3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_smdp_word_different.mp3",
+                    "audio": "audio_english_smdp_word_different.mp3",
                     "end": 590,
                     "starWord": "No"
                 },
                 {
                     "start": 592,
                     "wordIdx": 1,
-                    "audio": "audio_smdp_word_places.mp3",
+                    "audio": "audio_english_smdp_word_places.mp3",
                     "end": 1250,
                     "starWord": "No"
                 },
                 {
                     "start": 1451,
                     "wordIdx": 2,
-                    "audio": "audio_smdp_word_i.mp3",
+                    "audio": "audio_english_smdp_word_i.mp3",
                     "end": 1683,
                     "starWord": "No"
                 },
                 {
                     "start": 1685,
                     "wordIdx": 3,
-                    "audio": "audio_smdp_word_love.mp3",
+                    "audio": "audio_english_smdp_word_love.mp3",
                     "end": 1996,
                     "starWord": "No"
                 },
                 {
                     "start": 2023,
                     "wordIdx": 4,
-                    "audio": "audio_smdp_word_different.mp3",
+                    "audio": "audio_english_smdp_word_different.mp3",
                     "end": 2463,
                     "starWord": "No"
                 },
                 {
                     "start": 2465,
                     "wordIdx": 5,
-                    "audio": "audio_smdp_word_places.mp3",
+                    "audio": "audio_english_smdp_word_places.mp3",
                     "end": 3023,
                     "starWord": "No"
                 },
                 {
                     "start": 3157,
                     "wordIdx": 6,
-                    "audio": "audio_smdp_word_night.mp3",
+                    "audio": "audio_english_smdp_word_night.mp3",
                     "end": 3652,
                     "starWord": "Yes"
                 },
                 {
                     "start": 3659,
                     "wordIdx": 7,
-                    "audio": "audio_smdp_word_and.mp3",
+                    "audio": "audio_english_smdp_word_and.mp3",
                     "end": 3921,
                     "starWord": "No"
                 },
                 {
                     "start": 3925,
                     "wordIdx": 8,
-                    "audio": "audio_smdp_word_day.mp3",
+                    "audio": "audio_english_smdp_word_day.mp3",
                     "end": 4536,
                     "starWord": "No"
                 }
@@ -7822,8 +8366,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 18,
@@ -7832,8 +8377,9 @@
                 {
                     "stanzaID": 0,
                     "type": 9,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 17,
@@ -7842,8 +8388,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
@@ -7852,8 +8399,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
@@ -7862,8 +8410,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 20,
@@ -7872,8 +8421,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 21,
@@ -7882,8 +8432,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
@@ -7892,8 +8443,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
@@ -7902,8 +8454,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
@@ -7912,8 +8465,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 7,
@@ -7922,8 +8476,9 @@
                 {
                     "stanzaID": 0,
                     "type": 7,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 22,

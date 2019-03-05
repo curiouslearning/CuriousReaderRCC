@@ -7,8 +7,15 @@ using Elendow.SpritedowAnimator;
 
 public class DayAndNightManager: GSManager
 {
-    public string[] m_rastrDayWords = { "Text_day", "Text_sun", "Text_shining","Text_Big", "Text_big", "Text_sun.","Text_day.", "Text_shines" };
-    public string[] m_rastrNightWords = { "Text_night.","Text_night", "Text_star.", "Text_star","Text_small","Text_Small","Text_sparkling","Text_sparkles.", "Text_moon" };
+    // Day words in the page text
+    private readonly string[] m_rastrDayWords = 
+        { "day", "sun", "shining", "Big", "Clouds", "clouds", "big", "Big", 
+            "sun.", "day.", "sun.", "shines", "day." };
+    // Night words in the page text
+    private readonly string[] m_rastrNightWords = 
+        { "night.", "night", "star.", "star", "Stars", "stars", "small", 
+            "Small", "sparkling", "sparkles.", "moon" };
+    private readonly string m_wordObjectNamePrefix = "Text_";
 
     private bool m_bIsDay = true;
 
@@ -73,8 +80,8 @@ public class DayAndNightManager: GSManager
         if ( i_rastrArray != null )
         {
             foreach ( string strWord in i_rastrArray )
-            {
-                if (i_strWord.Equals(strWord))
+            {   
+                if (i_strWord.Equals(getTextObjectNameWithPrefix(strWord)))
                 {
                     return true;
                 }
@@ -89,6 +96,16 @@ public class DayAndNightManager: GSManager
         Transition(i_rcWord);
 
         base.OnStarWordActivated(i_rcWord);
+    }
+
+    /// <summary>
+    /// Returns text object name with prefix word object name prefix. Example: "Text_sun"
+    /// </summary>
+    /// <param name="name">Page text keyword</param>
+    /// <returns>Word object name with prefix</returns>
+    private string getTextObjectNameWithPrefix(string name)
+    {
+        return string.Format("{0}{1}", m_wordObjectNamePrefix, name);
     }
 
     public void Transition(GameObject go)

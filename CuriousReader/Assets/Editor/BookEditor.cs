@@ -900,7 +900,7 @@ public class BookEditor : EditorWindow
             }
         }
         string triggerSummary = string.Format("{0} - {1} Trigger on Text: {2} and Object: {3}", 
-            i_nOrdinal, i_rcTrigger.type, invokerID, sceneObjectID); 
+        i_nOrdinal, i_rcTrigger.type, invokerID, m_rcStoryBook.pages[i_pageOrdinal].gameObjects[i_rcTrigger.sceneObjectId].label); 
         i_rcTrigger.Show = EditorGUILayout.Foldout(i_rcTrigger.Show, triggerSummary);
 
         EditorGUI.indentLevel++;
