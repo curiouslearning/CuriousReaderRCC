@@ -21,7 +21,7 @@ DEFAULT_INPUT_FILENAME = 'app/google-services.json'
 # Output filename if it isn't set.
 DEFAULT_OUTPUT_FILENAME = 'res/values/googleservices.xml'
 # Input filename for .plist files, if it isn't set.
-DEFAULT_PLIST_INPUT_FILENAME = 'GoogleServices-Info.plist'
+DEFAULT_PLIST_INPUT_FILENAME = 'GoogleService-Info.plist'
 # Output filename for .json files, if it isn't set.
 DEFAULT_JSON_OUTPUT_FILENAME = 'google-services-desktop.json'
 
