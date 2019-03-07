@@ -553,7 +553,11 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		{
 			return ShelfManager.LoadedAssetBundle.LoadAsset<AudioClip>(assetName);
 		}
-		return null;	
+        else
+        {
+            Debug.LogWarning("Could not find AudioClip " + assetName + " in AssetBundle!");
+        }
+        return null;	
 	}
 
 	/// <summary>

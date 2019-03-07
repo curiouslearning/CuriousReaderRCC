@@ -39,3 +39,7 @@ sysinfo.txt
 *.unitypackage
 
 CuriousReader/Assets/StreamingAssets/AssetBundles/
+
+CuriousReader/ProjectSettings/GvhProjectSettings\.xml
+
+CuriousReader/ProjectSettings/ProjectSettings\.asset

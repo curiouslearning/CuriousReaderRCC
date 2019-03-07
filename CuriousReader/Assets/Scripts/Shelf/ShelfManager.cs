@@ -74,7 +74,7 @@ public class ShelfManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
 
-        AsyncOperation asyncOp = SceneManager.LoadSceneAsync("Books/Decodable/CatTale/Common/Scenes/Scene01");
+        AsyncOperation asyncOp = SceneManager.LoadSceneAsync("Books/Decodable/UbongoKids/SMDP/Common/Scenes/Scene01");
         
         asyncOp.allowSceneActivation = false;
 

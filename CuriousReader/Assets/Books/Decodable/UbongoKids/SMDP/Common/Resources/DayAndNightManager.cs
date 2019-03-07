@@ -7,14 +7,8 @@ using Elendow.SpritedowAnimator;
 
 public class DayAndNightManager: GSManager
 {
-    // Day words in the page text
-    private readonly string[] m_rastrDayWords = 
-        { "day", "sun", "shining", "Big", "Clouds", "clouds", "big", "Big", 
-            "sun.", "day.", "sun.", "shines", "day." };
-    // Night words in the page text
-    private readonly string[] m_rastrNightWords = 
-        { "night.", "night", "star.", "star", "Stars", "stars", "small", 
-            "Small", "sparkling", "sparkles.", "moon" };
+    public readonly string[] m_rastrDayWords = { "sun", "day", "cloud", "clouds", "shines", "shining", "big", "mchana", "jua", "kubwa", "linalowaka", "linawaka", "mawingu" };
+    public readonly string[] m_rastrNightWords = {"star", "stars", "night", "sparkling", "sparkles", "small", "moon", "usiku", "ndogo", "nyota", "inayong'aa", "inang'aa" };
     private readonly string m_wordObjectNamePrefix = "Text_";
 
     private bool m_bIsDay = true;
@@ -81,7 +75,7 @@ public class DayAndNightManager: GSManager
         {
             foreach ( string strWord in i_rastrArray )
             {   
-                if (i_strWord.Equals(getTextObjectNameWithPrefix(strWord)))
+                if (i_strWord.Equals(strWord))
                 {
                     return true;
                 }
@@ -114,11 +108,12 @@ public class DayAndNightManager: GSManager
 
         if (go != null)
         {
+            string parsedName = go.name.Replace(m_wordObjectNamePrefix, "").ToLower().Trim('.',',','!','?',':',';').Trim(); //sanitize inputs to detect words in different parts of sentences
             SpriteAnimator rcAnimator = m_rcSky.GetComponent<SpriteAnimator>();
 
             if (rcAnimator != null)
             {
-                if (IsWordInArray(m_rastrDayWords, go.name))
+                if (IsWordInArray(m_rastrDayWords, parsedName))
                 {
                     // If it's day already and they click day don't do anything
                     // If it's night, then change the sky to day.
@@ -142,7 +137,7 @@ public class DayAndNightManager: GSManager
 
                     }
                 }
-                else if (IsWordInArray(m_rastrNightWords, go.name))
+                else if (IsWordInArray(m_rastrNightWords, parsedName))
                 {
                     // If it's night already and they click night doesn't do anything
                     // If it's day, then change the sky to night.

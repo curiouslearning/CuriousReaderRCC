@@ -3,12 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - left_arrow
-  - right_arrow
-  - stanza
-  - night
-  - day
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -18,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - Background Image
+  - 
   - 
   - 
   - 
