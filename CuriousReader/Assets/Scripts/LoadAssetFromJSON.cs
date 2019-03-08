@@ -38,10 +38,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	private int noOfPages, i, j, count;
 	float width = 0.0f, fontSize, startingXText, startingYText;
 	public static float startingX, startingY;
-	//private int wordCount = 0;
-	float height = 138.94f;  //height of text:32.94
+    //private int wordCount = 0;
+    float height = 30.0f;  // 138.94f;  //height of text:32.94
 	private readonly float minWordSpace =  30.0f;
-	private readonly float minLineSpace = 30.0f;
+	private readonly float minLineSpace = 10.0f;
 
 	//variables for logging data
 	public DateTime inTime;
@@ -135,7 +135,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		//dataCollector.AddNewBook (storyBookJson.id.ToString());
 
 	}
-
+     
     string LoadJsonIntoEditor (string selectedBookJsonFileName)
     {
         string selectedJsonFile = "";
@@ -269,68 +269,92 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 	string 	m_guiPageIndex = "0";
 	bool	m_pageNavigationEnabledFromGUI = false;
+    bool m_bShowEditMenu = false;
+    bool m_bEditTextLocation = false;
 
-	void OnGUI()
-	{	
-		GUIStyle savePageButtonStyle = new GUIStyle(GUI.skin.button);
-		savePageButtonStyle.fontSize = 24;
+    void OnGUI()
+    {
+        GUIStyle savePageButtonStyle = new GUIStyle(GUI.skin.button);
+        savePageButtonStyle.fontSize = 24;
+        m_bShowEditMenu = GUI.Toggle(new Rect(0.0f, 0.0f, 40.0f, 40.0f), m_bShowEditMenu, "");
 
+        if (m_bShowEditMenu)
+        {
+            m_bEditTextLocation = GUI.Toggle(new Rect(100.0f, 0.0f, 200.0f, 40.0f), m_bEditTextLocation, "Edit Text?", savePageButtonStyle);
 
-		if (GUI.Button(new Rect(220, 20, 180, 39), "Save Changes", savePageButtonStyle))
-		{
-			GTinkerGraphic[] sceneObjects = FindObjectsOfType<GTinkerGraphic>();
+            if (GUI.Button(new Rect(320.0f, 0.0f, 180.0f, 40.0f), "Save Changes", savePageButtonStyle))
+            {
+                GTinkerGraphic[] sceneObjects = FindObjectsOfType<GTinkerGraphic>();
 
-			foreach (GTinkerGraphic graphicObject in sceneObjects) 
-			{
-				graphicObject.dataTinkerGraphic.posX = graphicObject.transform.position.x;
-				graphicObject.dataTinkerGraphic.posY = graphicObject.transform.position.y;
-				graphicObject.dataTinkerGraphic.posZ = graphicObject.transform.position.z;
+                foreach (GTinkerGraphic graphicObject in sceneObjects)
+                {
+                    graphicObject.dataTinkerGraphic.posX = graphicObject.transform.position.x;
+                    graphicObject.dataTinkerGraphic.posY = graphicObject.transform.position.y;
+                    graphicObject.dataTinkerGraphic.posZ = graphicObject.transform.position.z;
 
-				graphicObject.dataTinkerGraphic.rotX = graphicObject.transform.localRotation.eulerAngles.x;
-				graphicObject.dataTinkerGraphic.rotY = graphicObject.transform.localRotation.eulerAngles.y;
-				graphicObject.dataTinkerGraphic.rotZ = graphicObject.transform.localRotation.eulerAngles.z;
+                    graphicObject.dataTinkerGraphic.rotX = graphicObject.transform.localRotation.eulerAngles.x;
+                    graphicObject.dataTinkerGraphic.rotY = graphicObject.transform.localRotation.eulerAngles.y;
+                    graphicObject.dataTinkerGraphic.rotZ = graphicObject.transform.localRotation.eulerAngles.z;
 
-				graphicObject.dataTinkerGraphic.scaleX = graphicObject.transform.localScale.x;
-				graphicObject.dataTinkerGraphic.scaleY = graphicObject.transform.localScale.y;
+                    graphicObject.dataTinkerGraphic.scaleX = graphicObject.transform.localScale.x;
+                    graphicObject.dataTinkerGraphic.scaleY = graphicObject.transform.localScale.y;
 
-				SpriteRenderer objectSpriteRenderer = graphicObject.GetComponent<SpriteRenderer>();
-				if (objectSpriteRenderer != null)
-					graphicObject.dataTinkerGraphic.orderInLayer = objectSpriteRenderer.sortingOrder;
-			}
-            string m_bookJsonPath = LoadJsonIntoEditor(ShelfManager.SelectedBookFileName + ".json");
-            Debug.Log("Saving to: " + m_bookJsonPath);
-			File.WriteAllText(m_bookJsonPath, JsonUtility.ToJson(storyBookJson, true));
-			UnityEditor.AssetDatabase.Refresh(UnityEditor.ImportAssetOptions.ForceSynchronousImport);
-		}
+                    SpriteRenderer objectSpriteRenderer = graphicObject.GetComponent<SpriteRenderer>();
+                    if (objectSpriteRenderer != null)
+                        graphicObject.dataTinkerGraphic.orderInLayer = objectSpriteRenderer.sortingOrder;
+                }
 
-		GUI.color = new Color(0.4f, 0.4f, 0.4f, 1f);
-		GUIStyle pageNavigationToggleStyle = new GUIStyle(GUI.skin.toggle);
-		pageNavigationToggleStyle.fontSize = 24;
+                if (m_bEditTextLocation)
+                {
+                    StanzaObject[] rcStanzaObjects = FindObjectsOfType<StanzaObject>();
 
- 		m_pageNavigationEnabledFromGUI = GUI.Toggle(new Rect(20, 22, 140, 60), m_pageNavigationEnabledFromGUI, "PageNav", pageNavigationToggleStyle);
-		if (!m_pageNavigationEnabledFromGUI)
-			return;
+                    foreach (StanzaObject rcStanzaObject in rcStanzaObjects)
+                    {
+                        if ( rcStanzaObject.stanzaValue != null )
+                        {
+                            rcStanzaObject.stanzaValue.customPosition = true;
+                            rcStanzaObject.stanzaValue.y = rcStanzaObject.transform.localPosition.y;
+                            rcStanzaObject.stanzaValue.x = rcStanzaObject.transform.localPosition.x;
+                        }
+                    }
+                }
 
- 		GUI.color = Color.white;
-		GUIStyle pageNavigationGUIStyle = new GUIStyle(GUI.skin.textField);
-		pageNavigationGUIStyle.fontSize = 28;
-		pageNavigationGUIStyle.fontStyle = FontStyle.Bold;
-		pageNavigationGUIStyle.alignment = TextAnchor.MiddleCenter;
+                string m_bookJsonPath = LoadJsonIntoEditor(ShelfManager.SelectedBookFileName + ".json");
+                Debug.Log("Saving to: " + m_bookJsonPath);
+                File.WriteAllText(m_bookJsonPath, JsonUtility.ToJson(storyBookJson, true));
 
- 		m_guiPageIndex = GUI.TextField(new Rect(150, 20, 60, 40), m_guiPageIndex, pageNavigationGUIStyle);
-		if (string.IsNullOrEmpty(m_guiPageIndex))
-			return;
+                UnityEditor.AssetDatabase.Refresh(UnityEditor.ImportAssetOptions.ForceSynchronousImport);
+            }
 
- 		int parsedPageIndex = Int32.Parse(m_guiPageIndex);
-		parsedPageIndex = Mathf.Clamp(parsedPageIndex, 0, storyBookJson.pages.Length);
+            GUI.color = new Color(0.4f, 0.4f, 0.4f, 1f);
+            GUIStyle pageNavigationToggleStyle = new GUIStyle(GUI.skin.toggle);
+            pageNavigationToggleStyle.fontSize = 24;
 
- 		if (pageNumber != parsedPageIndex) 
-		{
-			if (ValidatePageNumber(parsedPageIndex)) 
-			{
-				LoadPage(parsedPageIndex);
-			}
-		}
+            m_pageNavigationEnabledFromGUI = GUI.Toggle(new Rect(20, 22, 140, 60), m_pageNavigationEnabledFromGUI, "PageNav", pageNavigationToggleStyle);
+            if (!m_pageNavigationEnabledFromGUI)
+                return;
+
+            GUI.color = Color.white;
+            GUIStyle pageNavigationGUIStyle = new GUIStyle(GUI.skin.textField);
+            pageNavigationGUIStyle.fontSize = 28;
+            pageNavigationGUIStyle.fontStyle = FontStyle.Bold;
+            pageNavigationGUIStyle.alignment = TextAnchor.MiddleCenter;
+
+            m_guiPageIndex = GUI.TextField(new Rect(150, 20, 60, 40), m_guiPageIndex, pageNavigationGUIStyle);
+            if (string.IsNullOrEmpty(m_guiPageIndex))
+                return;
+
+            int parsedPageIndex = Int32.Parse(m_guiPageIndex);
+            parsedPageIndex = Mathf.Clamp(parsedPageIndex, 0, storyBookJson.pages.Length);
+
+            if (pageNumber != parsedPageIndex)
+            {
+                if (ValidatePageNumber(parsedPageIndex))
+                {
+                    LoadPage(parsedPageIndex);
+                }
+            }
+        }
 	}
 #endif
 
@@ -916,7 +940,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 		foreach (TextClass text in texts)
 		{
-			StanzaObject stanzaObject = CreateStanza(startingX, startingY);
+            StanzaObject stanzaObject = CreateStanza(startingX, startingY);
 			if (stanzaObject == null) {
 				Debug.LogError("Unable to create stanza object");
 				break;
@@ -926,13 +950,12 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			stanzaManager.stanzas.Add(stanzaObject);
 			stanzaObject.stanzaValue = text;
 			TokenizeStanza(stanzaObject);
-			if (texts.Length > 1) { // if more than one line
+
+            if (texts.Length > 1)
+            { // if more than one line
 				startingY = startingY - height - minLineSpace;
-				if (storyBookJson.id == 1) {
-					startingY = -198.0f;
-				}
-			} 
-		}
+            }
+        }
 	}
 
 	/// <summary>
@@ -956,8 +979,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			DestroyImmediate(stanzaGameObject);
 			return null;
 		}
-		//go.tag ="stanzaobject";
-		return stanzaObject;
+
+        return stanzaObject;
 	}
 
 	/// <summary>
@@ -967,7 +990,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 	{  
 		string[] words;
 
-		//for (i = 0; i < stanzaManager.stanzas.Count; i++) {
 		words = i_stanzaObject.stanzaValue.text.Split(' ');
 
 		for (j = 0; j < words.Length; j++) {
@@ -980,13 +1002,26 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		width = 0;
 		float lineLength = stanzaLength - 30;
 		alignText(lineLength, i_stanzaObject);
-		//}
 	}
 
 	public void alignText(float length, StanzaObject parent)
-	{   
-		startingX = -(length / 2);
-		parent.transform.localPosition = new Vector3(startingX, startingY, 0);
+	{
+        if (parent != null)
+        {
+            if (parent.stanzaValue != null)
+            {
+                if (!parent.stanzaValue.customPosition)
+                {
+                    startingX = -(length / 2);
+                    parent.transform.localPosition = new Vector3(startingX, startingY, 0);
+                }
+                else
+                {
+                    startingX = parent.stanzaValue.x;
+                    parent.transform.localPosition = new Vector3(parent.stanzaValue.x, parent.stanzaValue.y, 0);
+                }
+            }
+        }
 	}
 
 	/// <summary>

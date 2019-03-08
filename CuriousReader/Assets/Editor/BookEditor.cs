@@ -996,7 +996,7 @@ public class BookEditor : EditorWindow
             EditorGUI.indentLevel--;
         }
     }
-
+     
 
     private void AddObjectWordLinking (TriggerClass i_rcTrigger, int i_nOrdinal, int i_pageOrdinal)
     {
@@ -1189,6 +1189,13 @@ public class BookEditor : EditorWindow
         {
             i_rcText.id = EditorGUILayout.IntField("ID", i_rcText.id, EditorStyles.numberField);
             i_rcText.text = EditorGUILayout.TextField("Text", i_rcText.text, EditorStyles.textField);
+            i_rcText.customPosition = EditorGUILayout.Toggle("Custom Position", i_rcText.customPosition);
+            
+            if ( i_rcText.customPosition )
+            {
+                i_rcText.x = EditorGUILayout.FloatField("x", i_rcText.x, EditorStyles.numberField);
+                i_rcText.y = EditorGUILayout.FloatField("y", i_rcText.y, EditorStyles.numberField);
+            }
         }
 
         EditorGUI.indentLevel--;

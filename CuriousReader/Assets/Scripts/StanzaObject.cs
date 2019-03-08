@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using Elendow.SpritedowAnimator;
 using CuriousReader.Performance;
-
+ 
 public class StanzaObject : MonoBehaviour
 {
 	[HideInInspector]
@@ -15,6 +15,8 @@ public class StanzaObject : MonoBehaviour
 
 	private GTinkerText mouseDownTinkerText;
 	private GTinkerText mouseCurrentlyDownTinkerText;
+
+    public float width;
 
     public void AutoPlay ()
     {
