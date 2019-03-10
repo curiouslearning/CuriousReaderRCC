@@ -501,7 +501,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A Big bird. A Small bird.",
+                    "text": "A big bird. A small bird.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1099,9 +1099,9 @@
                 {
                     "id": 0,
                     "text": "The big sun. A small star.",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -251.30999755859376,
+                    "y": 182.0
                 }
             ],
             "audioFile": "audio_english_smdp_4_stanza_page_4",
@@ -4378,24 +4378,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh the ocean!",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "text": "Oh the ocean! There are different",
+                    "customPosition": true,
+                    "x": -267.3999938964844,
+                    "y": 182.0
                 },
                 {
                     "id": 1,
-                    "text": "There are different things",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
-                },
-                {
-                    "id": 2,
-                    "text": "in the ocean.",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "text": "things in the ocean.",
+                    "customPosition": true,
+                    "x": -168.89999389648438,
+                    "y": 139.0
                 }
             ],
             "audioFile": "audio_english_smdp_4_stanza_page_14_19",
@@ -4985,7 +4978,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A fast boat. A slow boat",
+                    "text": "A fast boat. A slow boat.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -6309,21 +6302,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh the ocean!",
+                    "text": "Oh the ocean! There are different",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "There are different things",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
-                },
-                {
-                    "id": 2,
-                    "text": "in the ocean.",
+                    "text": "things in the ocean.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
