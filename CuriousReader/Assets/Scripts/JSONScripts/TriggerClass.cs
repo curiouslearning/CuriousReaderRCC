@@ -31,6 +31,7 @@ public class PerformanceInvoker
 {
     public TriggerInvokerType invokerType;
     public int invokerID;
+    public bool symmetricallyPaired = false;
     [System.NonSerialized]
     public bool showVars;
 }
@@ -49,6 +50,7 @@ public class TriggerClass
     public int animId;
     public int timestamp;
     public int sceneObjectId;
+    public int symmetricPairingId;
     public string Params;
     [System.NonSerialized] public PropertyField[] EditorFields;
     [System.NonSerialized] public PerformanceParams PerformanceParams;

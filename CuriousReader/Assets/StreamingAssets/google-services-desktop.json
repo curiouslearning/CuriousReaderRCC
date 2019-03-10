@@ -39,9 +39,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:208015290992:android:2826839104304905",
+        "mobilesdk_app_id": "1:208015290992:android:f42bbb6e90dd5464",
         "android_client_info": {
-          "package_name": "org.curiouslearning.akilireader"
+          "package_name": "org.curiouslearning.readwithakili"
         }
       },
       "oauth_client": [

@@ -67,15 +67,10 @@ public class GTinkerGraphic : MonoBehaviour
         PerformanceSystem.SendPrompt(this.gameObject, this.gameObject, PromptType.Click);
         foreach (GameObject eachPairedObject in PairedObjects)
         {
-            GTinkerText pairedText = eachPairedObject.GetComponent<GTinkerText>();
-            if(pairedText != null)
+            GTinkerText rcText = eachPairedObject.GetComponent<GTinkerText>();
+            if(rcText != null)
             {
-                if(!textPrompted) //only play one piece of text
-                {
-                    pairedText.OnPairedMouseDown(this.gameObject);
-                    textPrompted = true;
-                }
-
+                rcText.OnPairedMouseDown(this.gameObject);
             }
             else
             {

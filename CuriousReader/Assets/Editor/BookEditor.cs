@@ -1069,6 +1069,8 @@ public class BookEditor : EditorWindow
                     i_rcTrigger.invokers[i].invokerType = (TriggerInvokerType)EditorGUILayout.EnumPopup("Invoker Type", i_rcTrigger.invokers[i].invokerType);
                     if (i_rcTrigger.invokers[i].invokerType == TriggerInvokerType.Text)
                     {
+                        i_rcTrigger.invokers[i].symmetricallyPaired = EditorGUILayout.Toggle(new GUIContent("Symmetrically Paired "), i_rcTrigger.invokers[i].symmetricallyPaired);
+                        i_rcTrigger = UpdatePairing(i_rcTrigger, i_rcTrigger.invokers[i]);
                         i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
                         string[] formattedTextIDDropdownValues;
                         FormatTextDropdownListForTextID(m_rcStoryBook.pages[i_pageOrdinal].texts, out formattedTextIDDropdownValues);
@@ -1086,7 +1088,7 @@ public class BookEditor : EditorWindow
                         EditorGUI.EndDisabledGroup();
 
                     }
-                    else if (i_rcTrigger.invokers[i].invokerType == TriggerInvokerType.Actor)
+                    else if (i_rcTrigger.invokers[i].invokerType == TriggerInvokerType.Actor) //do not expose PerformanceInvoker.symmetricallyPaired on SceneObjects
                     {
                         EditorGUI.BeginDisabledGroup(gameObjectsDropdownNames.Length == 0);
                         if (gameObjectsDropdownNames.Length == 0)
@@ -1105,6 +1107,40 @@ public class BookEditor : EditorWindow
                 }
             }
         }
+    }
+
+    /// <summary>
+    /// Updates which text Invoker is symetrically paired across all a SceneObject's triggers
+    /// </summary>
+    /// <returns>The updated InvokerList.</returns>
+    /// <param name="i_rcTrigger">the trigger's invoker list.</param>
+    /// <param name="i_rcLastChanged"> the last changed invoker.</param>
+    TriggerClass UpdatePairing(TriggerClass i_rcTrigger, PerformanceInvoker i_rcLastChanged)
+    {
+        if(i_rcLastChanged.symmetricallyPaired) //don't run unless we need to change the pairing
+        {
+            PageClass rcCurrentPage = m_rcStoryBook.pages[m_activePageID];
+            foreach (TriggerClass rcTrigger in rcCurrentPage.triggers)
+            {
+                if (rcTrigger.sceneObjectId.Equals(i_rcTrigger.sceneObjectId))
+                {
+                    for (int i = 0; i < rcTrigger.invokers.Length; i++)
+                    {
+                        if (rcTrigger.invokers[i] == i_rcLastChanged)
+                        {
+                            // set the new pairing to the index of i_rcLastChanged
+                            rcTrigger.symmetricPairingId = i;
+                        }
+                        else
+                        {
+                            rcTrigger.invokers[i].symmetricallyPaired = false;
+                        }
+                    }
+                }
+            }
+        }
+
+        return i_rcTrigger;
     }
 
     /// <summary>

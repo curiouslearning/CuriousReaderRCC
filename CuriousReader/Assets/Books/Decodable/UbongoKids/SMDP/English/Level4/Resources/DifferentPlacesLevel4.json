@@ -649,9 +649,9 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 540.0,
+                    "posX": -900.0,
                     "posY": 45.0,
-                    "posZ": 105.0,
+                    "posZ": 0.0,
                     "scaleX": 100.0,
                     "scaleY": 100.0,
                     "rotX": 0.0,
@@ -701,8 +701,8 @@
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 0.0,
-                    "scaleX": 100.0,
-                    "scaleY": 100.0,
+                    "scaleX": 160.0,
+                    "scaleY": 160.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -771,30 +771,7 @@
                         }
                     ],
                     "Animations": [
-                        "04_a_small_singing_bird",
-                        "03_a_small_bird_flapping"
-                    ]
-                },
-                {
-                    "id": 2,
-                    "tag": "",
-                    "posX": 60.0,
-                    "posY": 60.0,
-                    "posZ": 0.0,
-                    "scaleX": 30.0,
-                    "scaleY": 30.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "04_a_small_singing_bird_music-1",
-                    "inText": false,
-                    "label": "music",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "04_a_small_singing_bird_music"
+                        "04_a_small_singing_bird"
                     ]
                 },
                 {
@@ -966,43 +943,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 4
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird_music\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 4
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":75.0,\"y\":120.0,\"z\":0.0}}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
+                    "type": 8,
                     "prompts": [
                         1,
                         0
@@ -1017,7 +958,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_a_small_bird_flapping\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -1570,7 +1511,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 10,
                     "prompts": [
                         1
                     ],
@@ -1588,7 +1529,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":-20.0,\"y\":0.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -1614,7 +1555,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 10,
                     "prompts": [
                         1
                     ],
@@ -1632,7 +1573,7 @@
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":-20.0,\"y\":0.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -1718,8 +1659,8 @@
                     "posX": 194.60000610351563,
                     "posY": -86.19999694824219,
                     "posZ": 91.0,
-                    "scaleX": 50.0,
-                    "scaleY": 50.0,
+                    "scaleX": 105.41500091552735,
+                    "scaleY": 105.41500091552735,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -1740,13 +1681,13 @@
                     "posX": -152.0,
                     "posY": -23.0,
                     "posZ": 95.0,
-                    "scaleX": -50.0,
-                    "scaleY": 50.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "5_orange_portion_sun-1",
+                    "imageName": "5_sun-1",
                     "inText": false,
                     "label": "day_sun",
                     "destroyOnCollision": "",
@@ -1975,6 +1916,19 @@
                     "timestamp": 1,
                     "sceneObjectId": 2,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_orange_portion_sun\"}"
                 }
             ]
         },
@@ -2010,8 +1964,8 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 264.0,
-                    "posY": 52.0,
+                    "posX": 218.3000030517578,
+                    "posY": 43.099998474121097,
                     "posZ": 0.0,
                     "scaleX": 216.0,
                     "scaleY": 216.0,
@@ -2030,7 +1984,7 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 224.0,
+                    "posX": 202.5,
                     "posY": -124.0,
                     "posZ": 0.0,
                     "scaleX": 216.0,
@@ -2557,6 +2511,29 @@
                     "timestamp": 0,
                     "sceneObjectId": 11,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 9
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 10,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -2572,9 +2549,9 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -109.19999694824219,
-                    "posY": -189.89999389648438,
-                    "posZ": 93.0,
+                    "posX": -112.9000015258789,
+                    "posY": -186.6999969482422,
+                    "posZ": 0.0,
                     "scaleX": 583.0,
                     "scaleY": 583.0,
                     "rotX": 0.0,
@@ -2673,58 +2650,18 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 168.0,
-                    "posY": -75.0,
+                    "posX": -434.0,
+                    "posY": 5.0,
                     "posZ": 95.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
+                    "scaleX": 712.0,
+                    "scaleY": 712.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "9_tree_dark-1",
+                    "imageName": "10_short_and_tall_tree-1",
                     "inText": false,
-                    "label": "short_tree",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 3,
-                    "tag": "",
-                    "posX": -140.0,
-                    "posY": -42.0,
-                    "posZ": 93.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "9_tall_tree_dark-1",
-                    "inText": false,
-                    "label": "tall_tree",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 4,
-                    "tag": "",
-                    "posX": 0.0,
-                    "posY": -184.0,
-                    "posZ": 95.0,
-                    "scaleX": 664.0999755859375,
-                    "scaleY": 664.0999755859375,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "10_ground-1",
-                    "inText": false,
-                    "label": "ground",
+                    "label": "short_tall_tree",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -2852,29 +2789,6 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up_small\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 6
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 7
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -3706,23 +3620,23 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -93.9000015258789,
-                    "posY": 60.79999923706055,
+                    "posX": -10.0,
+                    "posY": -184.0,
                     "posZ": 91.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
+                    "scaleX": 403.92498779296877,
+                    "scaleY": 403.92498779296877,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "10_giraffe_extend_neck_look_back-1",
+                    "imageName": "13_giraffe_eat_leaves-1",
                     "inText": false,
                     "label": "giraffe",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "10_giraffe_extend_neck_look_back"
+                        "13_giraffe_eat_leaves"
                     ]
                 },
                 {
@@ -4089,7 +4003,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_extend_neck_look_back\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"13_giraffe_eat_leaves\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -4220,8 +4134,8 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 264.0,
-                    "posY": 52.0,
+                    "posX": 204.0,
+                    "posY": 40.0,
                     "posZ": 0.0,
                     "scaleX": 216.0,
                     "scaleY": 216.0,
@@ -4240,7 +4154,7 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 224.0,
+                    "posX": 208.0,
                     "posY": -124.0,
                     "posZ": 0.0,
                     "scaleX": 216.0,
@@ -4371,16 +4285,16 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -18.0,
-                    "posY": -117.0,
+                    "posX": 5.0,
+                    "posY": -148.0,
                     "posZ": 100.0,
-                    "scaleX": 76.81999969482422,
-                    "scaleY": 76.81999969482422,
+                    "scaleX": 679.2542114257813,
+                    "scaleY": 679.2542114257813,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "13_water_wave-1",
+                    "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
                     "destroyOnCollision": "",
@@ -4417,7 +4331,7 @@
                         }
                     ],
                     "Animations": [
-                        "13_water_wave"
+                        "15_water_wave"
                     ]
                 },
                 {
@@ -4578,7 +4492,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"13_water_wave\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"15_water_wave\"}"
                 }
             ]
         },
@@ -4705,16 +4619,16 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -48.0,
-                    "posY": -100.0,
+                    "posX": 7.0,
+                    "posY": -116.0,
                     "posZ": 100.0,
-                    "scaleX": 150.0,
-                    "scaleY": 100.0,
+                    "scaleX": 821.5858764648438,
+                    "scaleY": 547.723876953125,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "13_water_wave-1",
+                    "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
                     "destroyOnCollision": "",
@@ -4751,7 +4665,7 @@
                         }
                     ],
                     "Animations": [
-                        "13_water_wave"
+                        "15_water_wave"
                     ]
                 },
                 {
@@ -4868,7 +4782,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 9,
+                    "type": 7,
                     "prompts": [
                         1,
                         0
@@ -4877,30 +4791,22 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 5
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":true,\"EndValues\":{\"x\":-122.0,\"y\":15.0,\"z\":92.0}}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_big_boat_moves_fast\"}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 9,
+                    "type": 7,
                     "prompts": [
                         1,
                         0
                     ],
                     "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2
-                        },
                         {
                             "invokerType": 0,
                             "invokerID": 5
@@ -4910,7 +4816,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":true,\"EndValues\":{\"x\":176.0,\"y\":-85.0,\"z\":91.0}}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_small_boat_moves_slowly\"}"
                 }
             ]
         },
@@ -4926,7 +4832,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 96.0,
+                    "posX": -120.0,
                     "posY": 42.0,
                     "posZ": 92.0,
                     "scaleX": 100.0,
@@ -4980,7 +4886,7 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 96.0,
+                    "posX": -120.0,
                     "posY": -100.0,
                     "posZ": 91.0,
                     "scaleX": 85.0,
@@ -5036,53 +4942,23 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -48.0,
-                    "posY": -64.0,
+                    "posX": 7.0,
+                    "posY": -97.0,
                     "posZ": 100.0,
-                    "scaleX": 150.0,
-                    "scaleY": 150.0,
+                    "scaleX": 718.8837280273438,
+                    "scaleY": 718.8837280273438,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "13_water_wave-1",
+                    "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
-                        {
-                            "id": 0,
-                            "animName": "13_water_wave",
-                            "startX": -48,
-                            "startY": -64,
-                            "startZ": 100,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": false,
-                            "onStart": true,
-                            "secPerFrame": [
-                                1.0,
-                                1.0,
-                                1.0,
-                                1.0
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1000,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
-                        }
-                    ],
+                    "anim": [],
                     "Animations": [
-                        "13_water_wave"
+                        "15_water_wave"
                     ]
                 },
                 {
@@ -5211,10 +5087,6 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 5
                         }
                     ],
                     "timing": 0.0,
@@ -5230,10 +5102,6 @@
                         1
                     ],
                     "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2
-                        },
                         {
                             "invokerType": 0,
                             "invokerID": 5
@@ -5403,16 +5271,16 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -48.0,
-                    "posY": -64.0,
+                    "posX": 4.0,
+                    "posY": -74.0,
                     "posZ": 100.0,
-                    "scaleX": 150.0,
-                    "scaleY": 150.0,
+                    "scaleX": 709.7208251953125,
+                    "scaleY": 709.7208251953125,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "13_water_wave-1",
+                    "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
                     "destroyOnCollision": "",
@@ -5512,6 +5380,50 @@
             "triggers": [
                 {
                     "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": -1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": -1,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
                     "type": 7,
                     "prompts": [
                         1,
@@ -5545,52 +5457,8 @@
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_sad_face_on_the_little_fish\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 3
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 7
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": -1,
-                    "timestamp": 0,
                     "sceneObjectId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 3
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 7
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_sad_face_on_the_little_fish\"}"
                 }
             ]
         },
@@ -5609,8 +5477,8 @@
                     "posX": -97.0,
                     "posY": -35.0,
                     "posZ": 91.0,
-                    "scaleX": 62.0,
-                    "scaleY": 62.0,
+                    "scaleX": 44.560020446777347,
+                    "scaleY": 44.560020446777347,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -5691,8 +5559,8 @@
                     "posX": 181.0,
                     "posY": -78.0,
                     "posZ": 91.0,
-                    "scaleX": 40.0,
-                    "scaleY": 40.0,
+                    "scaleX": 28.74839973449707,
+                    "scaleY": 28.74839973449707,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -5770,16 +5638,16 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -48.0,
-                    "posY": -64.0,
+                    "posX": 13.0,
+                    "posY": -73.0,
                     "posZ": 100.0,
-                    "scaleX": 150.0,
-                    "scaleY": 150.0,
+                    "scaleX": 748.5288696289063,
+                    "scaleY": 748.5288696289063,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "13_water_wave-1",
+                    "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
                     "destroyOnCollision": "",
@@ -5815,9 +5683,7 @@
                             ]
                         }
                     ],
-                    "Animations": [
-                        "13_water_wave"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 3,
@@ -5953,11 +5819,11 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 2
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 1
                         }
                     ],
                     "timing": 0.0,
@@ -5975,11 +5841,11 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 8
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 8
+                            "invokerID": 7
                         }
                     ],
                     "timing": 0.0,
@@ -6049,7 +5915,7 @@
                     "id": 0,
                     "tag": "",
                     "posX": 102.0,
-                    "posY": -44.0,
+                    "posY": 9.0,
                     "posZ": 100.0,
                     "scaleX": 65.0,
                     "scaleY": 65.0,
@@ -6103,7 +5969,7 @@
                     "id": 1,
                     "tag": "",
                     "posX": -153.0,
-                    "posY": -54.0,
+                    "posY": -1.0,
                     "posZ": 91.0,
                     "scaleX": 45.0,
                     "scaleY": 45.0,
@@ -6161,13 +6027,13 @@
                     "posX": 0.0,
                     "posY": -98.0,
                     "posZ": 105.0,
-                    "scaleX": 200.0,
-                    "scaleY": 100.0,
+                    "scaleX": 1200.10009765625,
+                    "scaleY": 600.050048828125,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "13_water_wave-1",
+                    "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "waves",
                     "destroyOnCollision": "",
@@ -6204,14 +6070,14 @@
                         }
                     ],
                     "Animations": [
-                        "13_water_wave"
+                        "15_water_wave"
                     ]
                 },
                 {
                     "id": 3,
                     "tag": "",
                     "posX": -200.0,
-                    "posY": -138.0,
+                    "posY": -85.0,
                     "posZ": 91.0,
                     "scaleX": 22.5,
                     "scaleY": 22.5,
@@ -6265,7 +6131,7 @@
                     "id": 4,
                     "tag": "",
                     "posX": 222.0,
-                    "posY": -140.0,
+                    "posY": -87.0,
                     "posZ": 91.0,
                     "scaleX": 22.5,
                     "scaleY": 22.5,
@@ -6319,7 +6185,7 @@
                     "id": 5,
                     "tag": "",
                     "posX": -43.0,
-                    "posY": -148.0,
+                    "posY": -95.0,
                     "posZ": 91.0,
                     "scaleX": 22.5,
                     "scaleY": 22.5,
@@ -6371,7 +6237,7 @@
                     "id": 6,
                     "tag": "",
                     "posX": 80.0,
-                    "posY": -147.0,
+                    "posY": -94.0,
                     "posZ": 91.0,
                     "scaleX": 22.5,
                     "scaleY": 22.5,
@@ -6557,7 +6423,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"13_water_waves\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"15_water_wave\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -6697,8 +6563,8 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 264.0,
-                    "posY": 52.0,
+                    "posX": 203.0,
+                    "posY": 38.0,
                     "posZ": 0.0,
                     "scaleX": 216.0,
                     "scaleY": 216.0,
@@ -6717,7 +6583,7 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 224.0,
+                    "posX": 223.0,
                     "posY": -124.0,
                     "posZ": 0.0,
                     "scaleX": 216.0,
@@ -6834,22 +6700,24 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -135.39999389648438,
-                    "posY": -188.39999389648438,
+                    "posX": -66.0,
+                    "posY": -136.0,
                     "posZ": -1.0,
-                    "scaleX": 200.0,
-                    "scaleY": 200.0,
+                    "scaleX": 121.5459976196289,
+                    "scaleY": 121.5459976196289,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "22_akili-1",
+                    "imageName": "22_hearts-1",
                     "inText": false,
                     "label": "Akili",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "22_hearts"
+                    ]
                 },
                 {
                     "id": 2,
@@ -7290,8 +7158,7 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -7304,6 +7171,25 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"22_hearts\"}"
                 }
             ]
         },
@@ -7321,7 +7207,7 @@
                     "tag": "",
                     "posX": -3.0,
                     "posY": 0.0,
-                    "posZ": 10.0,
+                    "posZ": 100.0,
                     "scaleX": 718.0,
                     "scaleY": 734.0,
                     "rotX": 0.0,
@@ -7355,24 +7241,44 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "20_Akili_takes_food_and_eat"
+                        "23_Akili_takes_food_and_eat"
                     ]
                 },
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -35.5,
-                    "posY": -106.19999694824219,
+                    "posX": -28.0,
+                    "posY": -97.0,
                     "posZ": 91.0,
                     "scaleX": 65.0,
                     "scaleY": 65.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -1,
                     "imageName": "23_food-1",
                     "inText": true,
                     "label": "Food",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 51.0,
+                    "posY": -153.0,
+                    "posZ": 93.0,
+                    "scaleX": 127.53216552734375,
+                    "scaleY": 127.53216552734375,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "23_stool-1",
+                    "inText": false,
+                    "label": "stool",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -7466,30 +7372,17 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 4
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 3
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1
                         }
                     ],
                     "timing": 0.0,
@@ -7515,7 +7408,25 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"20_Akili_takes_food_and_eat\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"23_Akili_takes_food_and_eat\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
         },
@@ -8003,7 +7914,7 @@
                     "scaleX": 40.0,
                     "scaleY": 40.0,
                     "rotX": 0.0,
-                    "rotY": 0.0,
+                    "rotY": 180.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
                     "imageName": "9_short_and_tall_tree-1",
@@ -8037,9 +7948,9 @@
                 {
                     "id": 10,
                     "tag": "",
-                    "posX": -105.0,
-                    "posY": 25.0,
-                    "posZ": 0.0,
+                    "posX": -223.0,
+                    "posY": 47.0,
+                    "posZ": 93.0,
                     "scaleX": 200.0,
                     "scaleY": 200.0,
                     "rotX": 352.29998779296877,

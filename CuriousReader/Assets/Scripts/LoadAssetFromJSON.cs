@@ -867,7 +867,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
                         if (invokerGraphic != null)
                         {
                             invokerGraphic.pairedGraphics.Add(i_rcTinkerGraphic);
-                            i_rcTinkerGraphic.AddPairedObject(invokerObject);
+                            if (invoker.symmetricallyPaired)
+                            { //only ever add the selected TextInvoker to the pairedObjects
+                                i_rcTinkerGraphic.AddPairedObject(invokerObject);
+                            }
                         }
                     }
                 }
