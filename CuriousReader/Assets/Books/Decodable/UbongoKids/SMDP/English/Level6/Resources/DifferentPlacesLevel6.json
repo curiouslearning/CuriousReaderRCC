@@ -106,11 +106,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, the sky! Clouds in the day."
+                    "text": "Oh, the sky! Clouds in the day.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "Stars at night."
+                    "text": "Stars at night.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_0",
@@ -196,13 +202,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -214,13 +222,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -232,13 +242,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-125.0,\"y\":-10.0,\"z\":0.0}}"
                 },
                 {
@@ -250,13 +262,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":150.0,\"y\":4.0,\"z\":0.0}}"
                 },
                 {
@@ -268,13 +282,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
@@ -352,11 +368,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A big storm cloud"
+                    "text": "A big storm cloud",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "and a small fluffy cloud."
+                    "text": "and a small fluffy cloud.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_1",
@@ -435,25 +457,30 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 8
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -465,21 +492,25 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 8
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
@@ -491,13 +522,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -509,13 +542,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
@@ -597,7 +632,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A big flying bird and a small flying bird."
+                    "text": "A big flying bird and a small flying bird.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_2",
@@ -676,17 +714,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 8
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_a_small_bird_flapping\"}"
                 },
                 {
@@ -698,17 +739,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
                 },
                 {
@@ -721,13 +765,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -740,13 +786,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
@@ -912,11 +960,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "The big bird is flying."
+                    "text": "The big bird is flying.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "The small bird is singing."
+                    "text": "The small bird is singing.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_3",
@@ -1002,17 +1056,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
                 },
                 {
@@ -1024,13 +1081,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":540.0,\"y\":45.0,\"z\":0.0},\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-900.0,\"y\":0.0,\"z\":0.0}}"
                 },
                 {
@@ -1042,13 +1101,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":540.0,\"y\":45.0,\"z\":0.0},\"duration\":2.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":388.0,\"y\":48.0,\"z\":0.0}}"
                 },
                 {
@@ -1060,13 +1121,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
@@ -1078,17 +1141,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 9
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
                 },
                 {
@@ -1100,13 +1166,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 9
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
                 }
             ]
@@ -1247,7 +1315,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "The big sun and a small star."
+                    "text": "The big sun and a small star.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_4",
@@ -1312,13 +1383,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -1330,13 +1403,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
@@ -1349,13 +1424,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_orange_portion_sun\"}"
                 },
                 {
@@ -1368,13 +1445,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_star_vibrates\"}"
                 }
             ]
@@ -1558,11 +1637,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "The big sun shines"
+                    "text": "The big sun shines",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "and a small star sparkles."
+                    "text": "and a small star sparkles.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_5",
@@ -1642,13 +1727,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":35.0}}"
                 },
                 {
@@ -1660,13 +1747,15 @@
                     "invokers": [
                         {
                             "invokerType": 1,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":35.0}}"
                 },
                 {
@@ -1679,13 +1768,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_sunlight\"}"
                 },
                 {
@@ -1698,13 +1789,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 8
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_star_twinkles\"}"
                 },
                 {
@@ -1716,17 +1809,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -1738,17 +1834,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -1760,17 +1859,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -1782,17 +1884,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 8
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 1,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"06_twinkles_line\"}"
                 }
             ]
@@ -1959,11 +2064,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, the sky! Clouds in the day."
+                    "text": "Oh, the sky! Clouds in the day.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "Stars at night."
+                    "text": "Stars at night.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_6",
@@ -2049,13 +2160,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
                 },
                 {
@@ -2067,13 +2180,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"04_a_small_singing_bird\"}"
                 },
                 {
@@ -2086,13 +2201,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -2105,13 +2222,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -2124,13 +2243,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_orange_portion_sun\"}"
                 },
                 {
@@ -2142,13 +2263,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
@@ -2248,7 +2371,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "I wonder where should I go next?"
+                    "text": "I wonder where should I go next?",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_7_13_20",
@@ -2313,13 +2439,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
@@ -2331,13 +2459,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
@@ -2349,6 +2479,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":8,\"deactivateNextButton\":true}"
                 },
                 {
@@ -2360,6 +2491,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":14,\"deactivateNextButton\":true}"
                 },
                 {
@@ -2371,17 +2503,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
@@ -2393,17 +2528,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
@@ -2683,15 +2821,24 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, the forest! The fantastic forest!"
+                    "text": "Oh, the forest! The fantastic forest!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "I wonder how many different things"
+                    "text": "I wonder how many different things",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 2,
-                    "text": "there are in the forest."
+                    "text": "there are in the forest.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_8",
@@ -2826,13 +2973,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 12,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
@@ -2844,13 +2993,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 12,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 },
                 {
@@ -2863,17 +3014,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 16
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -2886,17 +3040,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 16
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -2909,17 +3066,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 16
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 11,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
@@ -3058,11 +3218,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A tall giraffe is eating leaves"
+                    "text": "A tall giraffe is eating leaves",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "from a short tree."
+                    "text": "from a short tree.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_9",
@@ -3149,13 +3315,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
@@ -3168,13 +3336,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up_small\"}"
                 },
                 {
@@ -3186,13 +3356,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up\"}"
                 }
             ]
@@ -3330,7 +3502,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Big and small monkeys…"
+                    "text": "Big and small monkeys…",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_10",
@@ -3375,17 +3550,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3398,17 +3576,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3421,17 +3602,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
@@ -3444,17 +3628,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
@@ -3708,7 +3895,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "...playing with long sticks and short sticks"
+                    "text": "...playing with long sticks and short sticks",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_11",
@@ -3774,21 +3964,25 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3801,21 +3995,25 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3828,21 +4026,25 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3855,21 +4057,25 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3881,13 +4087,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
                 },
                 {
@@ -3899,13 +4107,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
                 },
                 {
@@ -3917,13 +4127,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
                 },
                 {
@@ -3935,13 +4147,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
                 }
             ]
@@ -4283,15 +4497,24 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, the forest! The fantastic forest!"
+                    "text": "Oh, the forest! The fantastic forest!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "There are so many different things"
+                    "text": "There are so many different things",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 2,
-                    "text": "in the forest."
+                    "text": "in the forest.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_12",
@@ -4413,21 +4636,25 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 14
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 9,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -4440,21 +4667,25 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 14
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 15,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -4467,21 +4698,25 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 14
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -4493,13 +4728,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-10.0}}"
                 },
                 {
@@ -4511,13 +4748,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":0.5,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-10.0}}"
                 },
                 {
@@ -4529,13 +4768,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"13_giraffe_eat_leaves\"}"
                 }
             ]
@@ -4635,7 +4876,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "I wonder where should I go next?"
+                    "text": "I wonder where should I go next?",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_7_13_20",
@@ -4700,13 +4944,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -4718,13 +4964,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -4738,6 +4986,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":14,\"deactivateNextButton\":true}"
                 },
                 {
@@ -4751,6 +5000,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":21,\"deactivateNextButton\":true}"
                 },
                 {
@@ -4762,17 +5012,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
@@ -4784,17 +5037,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
@@ -4926,15 +5182,24 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, the ocean! So clear and blue."
+                    "text": "Oh, the ocean! So clear and blue.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "I wonder how many different things"
+                    "text": "I wonder how many different things",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 2,
-                    "text": "there are in the ocean."
+                    "text": "there are in the ocean.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_14",
@@ -5077,17 +5342,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 17
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"15_water_wave\"}"
                 },
                 {
@@ -5099,13 +5367,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
@@ -5117,13 +5387,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
@@ -5324,7 +5596,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A big boat and a small boat."
+                    "text": "A big boat and a small boat.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_15",
@@ -5390,13 +5665,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_big_boat_moves_fast\"}"
                 },
                 {
@@ -5409,13 +5686,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_small_boat_moves_slowly\"}"
                 },
                 {
@@ -5427,13 +5706,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -5445,13 +5726,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
@@ -5651,7 +5934,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A fast boat and a slow boat."
+                    "text": "A fast boat and a slow boat.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_16",
@@ -5717,17 +6003,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_big_boat_moves_fast\"}"
                 },
                 {
@@ -5740,17 +6029,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_small_boat_moves_slowly\"}"
                 },
                 {
@@ -5763,13 +6055,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-120.0,\"y\":42.0,\"z\":92.0}}"
                 },
                 {
@@ -5782,13 +6076,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-120.0,\"y\":-100.0,\"z\":91.0}}"
                 }
             ]
@@ -5952,11 +6248,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A happy fish dancing"
+                    "text": "A happy fish dancing",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "and a sad fish swimming."
+                    "text": "and a sad fish swimming.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_17",
@@ -5985,7 +6287,7 @@
                 {
                     "start": 1038,
                     "wordIdx": 3,
-                    "audio": "audio_english_smdp_word_and",
+                    "audio": "audio_english_smdp_word_dancing",
                     "end": 1763,
                     "starWord": "No"
                 },
@@ -6036,13 +6338,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_the_happy_fish_smiles\"}"
                 },
                 {
@@ -6055,13 +6359,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_sad_face_on_the_little_fish\"}"
                 },
                 {
@@ -6073,17 +6379,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
                 },
                 {
@@ -6095,17 +6404,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
                 },
                 {
@@ -6117,32 +6429,36 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_the_happy_fish_dances\"}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 7,
+                    "type": 9,
                     "prompts": [
                         1
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 8
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_the_sad_fish_swimming\"}"
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.5,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":475.0,\"y\":-116.19999694824219,\"z\":0.0}}"
                 }
             ]
         },
@@ -6395,11 +6711,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A big octopus with long legs"
+                    "text": "A big octopus with long legs",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "and a small octopus with short legs."
+                    "text": "and a small octopus with short legs.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_18",
@@ -6507,17 +6829,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_big_octopus_move_flap_legs\"}"
                 },
                 {
@@ -6530,17 +6855,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 12
+                            "invokerID": 12,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 11
+                            "invokerID": 11,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_small_octopus_move_flap_legs\"}"
                 },
                 {
@@ -6552,17 +6880,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -6574,17 +6905,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 8
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 9
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
@@ -6996,15 +7330,24 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, the ocean! So clear and blue."
+                    "text": "Oh, the ocean! So clear and blue.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "There are so many different things"
+                    "text": "There are so many different things",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 2,
-                    "text": "in the ocean."
+                    "text": "in the ocean.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_19",
@@ -7133,17 +7476,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 15
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"15_water_wave\"}"
                 },
                 {
@@ -7155,13 +7501,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_big_boat_moves_fast\"}"
                 },
                 {
@@ -7173,13 +7521,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_small_boat_moves_slowly\"}"
                 },
                 {
@@ -7191,13 +7541,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_big_octopus_move_flap_legs\"}"
                 },
                 {
@@ -7209,13 +7561,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_small_octopus_move_flap_legs\"}"
                 },
                 {
@@ -7227,13 +7581,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_the_happy_fish_smiles\"}"
                 },
                 {
@@ -7245,13 +7601,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_sad_face_on_the_little_fish\"}"
                 }
             ]
@@ -7351,7 +7709,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "I wonder where should I go next?"
+                    "text": "I wonder where should I go next?",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_7_13_20",
@@ -7416,13 +7777,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -7434,13 +7797,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -7454,6 +7819,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":8,\"deactivateNextButton\":true}"
                 },
                 {
@@ -7467,6 +7833,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":21,\"deactivateNextButton\":true}"
                 },
                 {
@@ -7478,17 +7845,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
@@ -7500,17 +7870,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
@@ -7850,11 +8223,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "My home, I love my home!"
+                    "text": "My home, I love my home!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "There are so many things I love at home."
+                    "text": "There are so many things I love at home.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_21",
@@ -7976,21 +8355,25 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 14
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -8003,17 +8386,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 12
+                            "invokerID": 12,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"22_hearts\"}"
                 },
                 {
@@ -8025,17 +8411,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 11
+                            "invokerID": 11,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 }
             ]
@@ -8135,15 +8524,24 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "A plate full of food."
+                    "text": "A plate full of food.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "I sit on the stool!"
+                    "text": "I sit on the stool!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 2,
-                    "text": "I am ready to eat."
+                    "text": "I am ready to eat.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_22",
@@ -8265,17 +8663,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 1
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 },
                 {
@@ -8288,13 +8689,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 14
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"23_Akili_takes_food_and_eat\"}"
                 },
                 {
@@ -8306,17 +8709,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 10
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
                 },
                 {
@@ -8329,17 +8735,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 9
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 6
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 }
             ]
@@ -8439,11 +8848,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Yum! Now I am feeling happy"
+                    "text": "Yum! Now I am feeling happy",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "and playful!"
+                    "text": "and playful!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_23",
@@ -8516,17 +8931,20 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 7
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"24_Akili_smiles_and_jumps\"}"
                 },
                 {
@@ -8538,13 +8956,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 },
                 {
@@ -8557,13 +8977,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 }
             ]
@@ -9128,15 +9550,24 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "I want to see many different places"
+                    "text": "I want to see many different places",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "and see all kinds of different things"
+                    "text": "and see all kinds of different things",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 2,
-                    "text": "both night and day!"
+                    "text": "both night and day!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_24",
@@ -9278,13 +9709,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 17,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
                 {
@@ -9296,13 +9729,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 17,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 },
                 {
@@ -9314,13 +9749,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_big_octopus_move_flap_legs\"}"
                 },
                 {
@@ -9332,13 +9769,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_small_octopus_move_flap_legs\"}"
                 },
                 {
@@ -9350,13 +9789,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 20,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
                 },
                 {
@@ -9368,13 +9809,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 21,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_a_small_bird_flapping\"}"
                 },
                 {
@@ -9386,13 +9829,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_big_boat_moves_fast\"}"
                 },
                 {
@@ -9404,13 +9849,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_small_boat_moves_slowly\"}"
                 },
                 {
@@ -9422,13 +9869,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_sad_face_on_the_little_fish\"}"
                 },
                 {
@@ -9440,13 +9889,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_the_happy_fish_smiles\"}"
                 },
                 {
@@ -9458,13 +9909,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 22,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"13_giraffe_eat_leaves\"}"
                 },
                 {
@@ -9476,13 +9929,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 14,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":73.0,\"y\":74.0,\"z\":20.0}}"
                 },
                 {
@@ -9494,13 +9949,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 15,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":178.0,\"y\":103.0,\"z\":97.0}}"
                 },
                 {
@@ -9512,13 +9969,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 16,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":270.0,\"y\":81.0,\"z\":97.0}}"
                 }
             ]
