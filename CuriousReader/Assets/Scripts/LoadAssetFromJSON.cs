@@ -299,10 +299,11 @@ public class LoadAssetFromJSON : MonoBehaviour {
                     graphicObject.dataTinkerGraphic.scaleX = graphicObject.transform.localScale.x;
                     graphicObject.dataTinkerGraphic.scaleY = graphicObject.transform.localScale.y;
 
-                    SpriteRenderer objectSpriteRenderer = graphicObject.GetComponent<SpriteRenderer>();
-                    if (objectSpriteRenderer != null)
-                        graphicObject.dataTinkerGraphic.orderInLayer = objectSpriteRenderer.sortingOrder;
-                }
+				SpriteRenderer objectSpriteRenderer = graphicObject.GetComponent<SpriteRenderer>();
+				if (objectSpriteRenderer != null)
+					graphicObject.dataTinkerGraphic.orderInLayer = objectSpriteRenderer.sortingOrder;
+			}
+		}
 
                 if (m_bEditTextLocation)
                 {
@@ -355,7 +356,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
                 }
             }
         }
-	}
 #endif
 
     /// <summary>
