@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2552441901
+CRC: 4069499953
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f13c9844e2fa9c4cde5ccdc84e0fb0f2
+    Hash: 3ca0d304155b2344acb3b663e53820e8
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1a5bf2e0598d5c8d2dd3aedb253e6e11
@@ -328,6 +328,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_fimbo.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/17/highlight the small
   octopus/17_highlight_the_small_octopus-2.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_14.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_2.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/sad fish swimming below
   the big fish across/16_the_sad_fish_swimming.asset
@@ -369,6 +370,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_16.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/10/giraffe standing up
   tall/10_giraffe_stand_up-3.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_15.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_katika.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/19/small octopus move flap
   legs/17_small_octopus_move_flap_legs.asset
@@ -592,6 +594,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_16.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/22/22_big_bush-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/blinking eye big (night)/7_blinking_eye_big-1.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_9.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_meli.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/1/1_night_bg-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/13/water_wave/13_water_wave.asset
@@ -645,6 +648,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/between night to day/7_between_night_bg_day_bg.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/1/1_cloud-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_playful.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Resources/SWA_DifferentPlacesLevel4.json
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/10/10_giraffe_stand_up-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_17.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/19/17_octopus_longer_legs-1.svg
@@ -752,6 +756,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/19/small octopus move flap
   legs/17_small_octopus_move_flap_legs-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_ndogo.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_19.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_anacheza.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/sad face on the little
   fish/16_sad_face_on_the_little_fish-1.svg
