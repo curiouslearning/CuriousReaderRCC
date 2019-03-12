@@ -524,7 +524,7 @@ PrefabInstance:
     - target: {fileID: 114525241163403964, guid: 8c264eae229a22249b08b9e29c8e8208,
         type: 3}
       propertyPath: BookFileName
-      value: DifferentPlacesLevel2
+      value: SWA_DifferentPlacesLevel2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c264eae229a22249b08b9e29c8e8208, type: 3}

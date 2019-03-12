@@ -8068,16 +8068,16 @@
                 {
                     "id": 0,
                     "text": "Different places!",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -143.20999145507813,
+                    "y": 182.0
                 },
                 {
                     "id": 1,
                     "text": "I love different places, night and day.",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -357.45501708984377,
+                    "y": 139.0
                 }
             ],
             "audioFile": "audio_english_smdp_2_stanza_page_24.mp3",

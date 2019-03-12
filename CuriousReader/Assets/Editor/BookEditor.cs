@@ -1126,14 +1126,17 @@ public class BookEditor : EditorWindow
                 {
                     for (int i = 0; i < rcTrigger.invokers.Length; i++)
                     {
-                        if (rcTrigger.invokers[i] == i_rcLastChanged)
+                        if (rcTrigger.invokers[i] != null)
                         {
-                            // set the new pairing to the index of i_rcLastChanged
-                            rcTrigger.symmetricPairingId = i;
-                        }
-                        else
-                        {
-                            rcTrigger.invokers[i].symmetricallyPaired = false;
+                            if (rcTrigger.invokers[i] == i_rcLastChanged)
+                            {
+                                // set the new pairing to the index of i_rcLastChanged
+                                rcTrigger.symmetricPairingId = i;
+                            }
+                            else
+                            {
+                                rcTrigger.invokers[i].symmetricallyPaired = false;
+                            }
                         }
                     }
                 }
