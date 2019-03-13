@@ -3472,7 +3472,7 @@
                 {
                     "start": 2239,
                     "wordIdx": 7,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 2342,
                     "starWord": "No"
                 },
@@ -5802,7 +5802,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 355,
                     "starWord": "No"
                 },
@@ -6140,7 +6140,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 308,
                     "starWord": "No"
                 },
@@ -6461,7 +6461,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 276,
                     "starWord": "No"
                 },
@@ -6929,7 +6929,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 296,
                     "starWord": "No"
                 },
@@ -8749,7 +8749,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 216,
                     "starWord": "No"
                 },
