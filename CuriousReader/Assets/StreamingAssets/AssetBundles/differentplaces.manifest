@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 4069499953
+CRC: 2848250041
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3ca0d304155b2344acb3b663e53820e8
+    Hash: d84c66984a8f81ba73a70f113a0989cb
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1a5bf2e0598d5c8d2dd3aedb253e6e11
@@ -339,6 +339,7 @@ Assets:
   the big fish across/16_the_sad_fish_swimming-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/23/23_Akili_takes_food_and_eat-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/bobbing_together/18_bobbing_together-2.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_24.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-5.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/4/big_bird_peek/04_a_big_bird_peek-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/9/9_giraffe_stand_up/9_giraffe_stand_up-4.svg
@@ -349,6 +350,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/water wave/16_water_wave.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/10/10_giraffe_extend_neck_look_back/10_giraffe_extend_neck_look_back-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_7_13_20.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_23.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/17/small octopus move flap
   legs/17_small_octopus_move_flap_legs-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level4/Audio/stanza/audio_english_smdp_4_stanza_page_22.mp3
@@ -611,6 +613,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level4/Audio/stanza/audio_english_smdp_4_stanza_page_2.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_mrefu.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_nyumbani.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_21.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/24/24_stool-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/between night to day/7_between_night_bg_day_bg_01.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_18.mp3
@@ -714,6 +717,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/10/10_forest_floor_bg-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/sad fish swimming below
   the big fish across/16_the_sad_fish_swimming-4.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_22.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_hapa.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_sit.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_3.mp3
