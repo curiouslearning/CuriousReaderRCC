@@ -4121,7 +4121,7 @@
                     "wordIdx": 0,
                     "audio": "audio_english_smdp_word_playing",
                     "end": 538,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 537,
@@ -4178,7 +4178,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -4209,7 +4209,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -4240,7 +4240,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -4271,7 +4271,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -4772,7 +4772,7 @@
                     "wordIdx": 5,
                     "audio": "audio_english_smdp_word_forest",
                     "end": 2936,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 2966,
@@ -4850,7 +4850,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -4880,13 +4880,13 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5,
+                            "invokerID": 2,
                             "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -4898,7 +4898,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 15,
-                    "symmetricPairingId": 0,
+                    "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -4912,7 +4912,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 14,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -4938,13 +4938,7 @@
                     "prompts": [
                         0
                     ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        }
-                    ],
+                    "invokers": [],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
@@ -4958,13 +4952,7 @@
                     "prompts": [
                         0
                     ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        }
-                    ],
+                    "invokers": [],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
@@ -4978,13 +4966,7 @@
                     "prompts": [
                         0
                     ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        }
-                    ],
+                    "invokers": [],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
@@ -5116,7 +5098,7 @@
                     "wordIdx": 2,
                     "audio": "audio_english_smdp_word_where",
                     "end": 1501,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1518,
@@ -5158,7 +5140,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -5178,7 +5160,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -5352,11 +5334,11 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -328.0,
+                    "posX": -347.0,
                     "posY": 156.0,
                     "posZ": 91.0,
-                    "scaleX": 44.5,
-                    "scaleY": 44.5,
+                    "scaleX": 38.0,
+                    "scaleY": 38.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -5436,7 +5418,7 @@
                     "wordIdx": 2,
                     "audio": "audio_english_smdp_word_ocean",
                     "end": 1331,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1341,
@@ -5556,7 +5538,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -5836,7 +5818,7 @@
                     "wordIdx": 2,
                     "audio": "audio_english_smdp_word_boat",
                     "end": 1124,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1209,
@@ -5864,7 +5846,7 @@
                     "wordIdx": 6,
                     "audio": "audio_english_smdp_word_boat",
                     "end": 2663,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -5879,7 +5861,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -5900,7 +5882,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 6,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -6167,7 +6149,7 @@
                     "wordIdx": 1,
                     "audio": "audio_english_smdp_word_fast",
                     "end": 734,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 753,
@@ -6195,7 +6177,7 @@
                     "wordIdx": 5,
                     "audio": "audio_english_smdp_word_slow",
                     "end": 2083,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 2089,
@@ -6217,7 +6199,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -6243,7 +6225,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -6488,7 +6470,7 @@
                     "wordIdx": 1,
                     "audio": "audio_english_smdp_word_happy",
                     "end": 755,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 765,
@@ -6523,7 +6505,7 @@
                     "wordIdx": 6,
                     "audio": "audio_english_smdp_word_sad",
                     "end": 2591,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 2607,
@@ -6963,7 +6945,7 @@
                     "wordIdx": 2,
                     "audio": "audio_english_smdp_word_octopus",
                     "end": 1167,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1172,
@@ -7012,7 +6994,7 @@
                     "wordIdx": 9,
                     "audio": "audio_english_smdp_word_octopus",
                     "end": 3458,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 3458,
@@ -7048,7 +7030,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -7074,7 +7056,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 12,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -7589,7 +7571,7 @@
                     "wordIdx": 2,
                     "audio": "audio_english_smdp_word_ocean",
                     "end": 1331,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1369,
@@ -7680,7 +7662,7 @@
                     "wordIdx": 15,
                     "audio": "audio_english_smdp_word_ocean",
                     "end": 5629,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -7695,7 +7677,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -7720,7 +7702,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -7740,7 +7722,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -7760,7 +7742,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -7780,7 +7762,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -7800,7 +7782,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -7820,7 +7802,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -7954,7 +7936,7 @@
                     "wordIdx": 2,
                     "audio": "audio_english_smdp_word_where",
                     "end": 1501,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1518,
@@ -7996,7 +7978,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -8016,7 +7998,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -8468,7 +8450,7 @@
                     "wordIdx": 1,
                     "audio": "audio_english_smdp_word_home",
                     "end": 918,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 918,
@@ -8559,7 +8541,7 @@
                     "wordIdx": 14,
                     "audio": "audio_english_smdp_word_home",
                     "end": 5095,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -8574,7 +8556,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -8605,7 +8587,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 3,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -8643,7 +8625,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 }
             ]
         },
@@ -8797,7 +8779,7 @@
                     "wordIdx": 4,
                     "audio": "audio_english_smdp_word_food",
                     "end": 1438,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1609,
@@ -8832,7 +8814,7 @@
                     "wordIdx": 9,
                     "audio": "audio_english_smdp_word_stool",
                     "end": 3204,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 3204,
@@ -8867,7 +8849,7 @@
                     "wordIdx": 14,
                     "audio": "audio_english_smdp_word_eat",
                     "end": 4806,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -8882,7 +8864,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 4,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -8908,7 +8890,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 14,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -8954,7 +8936,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 9,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -9086,7 +9068,7 @@
                     "wordIdx": 0,
                     "audio": "audio_english_smdp_word_yum",
                     "end": 754,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1065,
@@ -9121,7 +9103,7 @@
                     "wordIdx": 5,
                     "audio": "audio_english_smdp_word_happy",
                     "end": 2326,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 2359,
@@ -9150,7 +9132,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
@@ -9196,7 +9178,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -9228,7 +9210,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -7,
+                    "orderInLayer": -10,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "Sky",
@@ -9251,7 +9233,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -5,
+                    "orderInLayer": -8,
                     "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
@@ -9487,7 +9469,7 @@
                     "rotX": 352.29998779296877,
                     "rotY": 177.0,
                     "rotZ": 332.5,
-                    "orderInLayer": 1,
+                    "orderInLayer": -1,
                     "imageName": "10_small_monkeys-1",
                     "inText": false,
                     "label": "small_monkeys",
@@ -9587,7 +9569,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "2_small_fluffy_cloud-1",
                     "inText": false,
                     "label": "day_cloud",
@@ -9607,7 +9589,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "2_small_fluffy_cloud-1",
                     "inText": false,
                     "label": "day_cloud1",
@@ -9627,7 +9609,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "2_small_fluffy_cloud-1",
                     "inText": false,
                     "label": "day_cloud2",
@@ -9709,7 +9691,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "03_big_bird_flapping-1",
                     "inText": false,
                     "label": "BigBird",
@@ -9731,7 +9713,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "03_a_small_bird_flapping-1",
                     "inText": false,
                     "label": "SmallBird",
@@ -9900,7 +9882,7 @@
                     "wordIdx": 15,
                     "audio": "audio_english_smdp_word_night",
                     "end": 4752,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 4752,
