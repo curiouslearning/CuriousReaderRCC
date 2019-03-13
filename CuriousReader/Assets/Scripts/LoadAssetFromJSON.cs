@@ -791,7 +791,14 @@ public class LoadAssetFromJSON : MonoBehaviour {
                             MoveParams moveParams = JsonUtility.FromJson<MoveParams>(trigger.Params);
                             moveParams.StartValues = graphicObject.transform.position;
                             UpdateInvokers(moveParams, ePrompt, trigger.invokers, invokers, tinkerGraphic);
+
                             MoveActorPerformance pMove = PerformanceSystem.GetTweenPerformance<MoveActorPerformance>();
+
+                            if (moveParams.Reset)
+                            {
+                                moveParams.OnComplete = new TweenCallback(() => pMove.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
+                            }
+
                             pMove.Init(moveParams);
                             addSuccess = PerformanceSystem.AddPerformance(graphicObject, pMove, ePrompt);
                             if (!addSuccess)
@@ -811,6 +818,12 @@ public class LoadAssetFromJSON : MonoBehaviour {
                             scaleParams.StartValues = graphicObject.transform.position;
                             UpdateInvokers(scaleParams, ePrompt, trigger.invokers, invokers, tinkerGraphic);
                             ScaleActorPerformance pScale = PerformanceSystem.GetTweenPerformance<ScaleActorPerformance>();
+
+                            if (scaleParams.Reset)
+                            {
+                                scaleParams.OnComplete = new TweenCallback(() => pScale.UnPerform(graphicObject.gameObject));
+                            }
+
                             pScale.Init(scaleParams);
                             addSuccess = PerformanceSystem.AddPerformance(graphicObject, pScale, ePrompt);
                             if (!addSuccess)
@@ -830,6 +843,12 @@ public class LoadAssetFromJSON : MonoBehaviour {
                             rotateParams.StartValues = graphicObject.transform.localRotation.eulerAngles;
                             UpdateInvokers(rotateParams, ePrompt, trigger.invokers, invokers, tinkerGraphic);
                             RotateActorPerformance pRotate = PerformanceSystem.GetTweenPerformance<RotateActorPerformance>();
+
+                            if (rotateParams.Reset)
+                            {
+                                rotateParams.OnComplete = new TweenCallback(() => pRotate.UnPerform(graphicObject.gameObject)); //stopgap until we decide how to assign callbacks in Editor
+                            }
+
                             pRotate.Init(rotateParams);
                             addSuccess = PerformanceSystem.AddPerformance(graphicObject, pRotate, ePrompt);
                             if (!addSuccess)

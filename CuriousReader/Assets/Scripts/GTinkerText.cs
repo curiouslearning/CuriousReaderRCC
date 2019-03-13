@@ -70,10 +70,9 @@ public class GTinkerText : MonoBehaviour
 		col.size = new Vector2(trans.sizeDelta.x, trans.sizeDelta.y);
 		col.offset = new Vector2( (trans.rect.x +trans.sizeDelta.x/2), (trans.rect.y +trans.sizeDelta.y/2) ) ;
 		// Check against a collider width that is too small (tough to tap on "I" or "1")
-		if (col.size.x <= 0.055f)
+		if (col.size.x < Screen.width/35) //check against single letter box colliders being too small
 		{
-			// increase size x4
-			Vector2 newSize = new Vector2(col.size.x * 4.0f, col.size.y);
+			Vector2 newSize = new Vector2(Screen.width/35, col.size.y);
 			col.size = newSize;
 		}
 	}
