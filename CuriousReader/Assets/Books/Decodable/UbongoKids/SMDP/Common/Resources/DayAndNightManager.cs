@@ -176,7 +176,7 @@ public class DayAndNightManager: GSManager
         }
 
         // If we pressed on the Corona in the scene... just ignore it.
-        if (go.name.Equals("day_sun_corona"))
+        if (go.name.Equals("day_sun_corona") && !m_bIsDay)
         {
             return;
         }
