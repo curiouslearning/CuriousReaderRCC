@@ -4982,7 +4982,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "Meli inaenda pole pole.",
+                    "text": "Meli inaenda pole pole.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -5035,16 +5035,9 @@
                 {
                     "start": 2955,
                     "wordIdx": 6,
-                    "audio": "audio_swahili_smdp_word_pole",
-                    "end": 3222,
-                    "starWord": "Yes"
-                },
-                {
-                    "start": 3225,
-                    "wordIdx": 7,
-                    "audio": "audio_swahili_smdp_word_pole",
+                    "audio": "audio_swahili_smdp_word_pole_pole",
                     "end": 3682,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -5109,32 +5102,8 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 6,
-                            "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 7,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-120.0,\"y\":-100.0,\"z\":91.0}}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -5149,6 +5118,27 @@
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-120.0,\"y\":42.0,\"z\":92.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-120.0,\"y\":-100.0,\"z\":91.0}}"
                 }
             ]
         },
