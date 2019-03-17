@@ -2234,7 +2234,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "I wonder... where should I go next?",
+                    "text": "I wonder... Where should I go next?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -3432,7 +3432,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 5,
                     "symmetricPairingId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.800000011920929}"
                 }
             ]
         },
@@ -3618,19 +3618,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 3,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
+                    "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3644,19 +3644,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 3,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 4,
-                    "symmetricPairingId": 0,
+                    "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3670,19 +3670,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 3,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
-                    "symmetricPairingId": 0,
+                    "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
@@ -3696,19 +3696,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 3,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
+                    "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
@@ -3962,7 +3962,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "...playing with long sticks and short sticks",
+                    "text": "...playing with long sticks",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "and short sticks.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -4025,14 +4032,13 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
@@ -4056,14 +4062,13 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
@@ -4087,14 +4092,13 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
@@ -4118,14 +4122,13 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
@@ -4149,13 +4152,14 @@
                     "stanzaID": 0,
                     "type": 10,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -4169,13 +4173,14 @@
                     "stanzaID": 0,
                     "type": 10,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -4189,13 +4194,14 @@
                     "stanzaID": 0,
                     "type": 10,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -4209,13 +4215,14 @@
                     "stanzaID": 0,
                     "type": 10,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -4898,34 +4905,12 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
-                },
-                {
-                    "id": 3,
-                    "tag": "",
-                    "posX": -432.0,
-                    "posY": -282.0,
-                    "posZ": -2.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -1,
-                    "imageName": "1_Akili_wave-1",
-                    "inText": false,
-                    "label": "Akili Wave",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "1_akili_wave"
-                    ]
                 }
             ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "I wonder where should I go next?",
+                    "text": "I wonder... Where should I go next?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -5002,7 +4987,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
                     "stanzaID": 0,
@@ -5022,7 +5007,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
                     "stanzaID": 0,
@@ -5051,56 +5036,6 @@
                     "sceneObjectId": 2,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":21,\"deactivateNextButton\":true}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 4,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 4,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -5377,7 +5312,7 @@
                     "wordIdx": 17,
                     "audio": "audio_english_smdp_word_ocean",
                     "end": 6384,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -6324,7 +6259,7 @@
                     "wordIdx": 1,
                     "audio": "audio_english_smdp_word_happy",
                     "end": 755,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 765,
@@ -6338,7 +6273,7 @@
                     "wordIdx": 3,
                     "audio": "audio_english_smdp_word_dancing",
                     "end": 1763,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1769,
@@ -6359,7 +6294,7 @@
                     "wordIdx": 6,
                     "audio": "audio_english_smdp_word_sad",
                     "end": 2591,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 2607,
@@ -6373,7 +6308,7 @@
                     "wordIdx": 8,
                     "audio": "audio_english_smdp_word_swimming",
                     "end": 3682,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -6381,14 +6316,13 @@
                     "stanzaID": 0,
                     "type": 7,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -6402,14 +6336,13 @@
                     "stanzaID": 0,
                     "type": 7,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 6,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
@@ -6435,11 +6368,6 @@
                             "invokerType": 0,
                             "invokerID": 2,
                             "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 7,
-                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -6458,11 +6386,6 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
                             "invokerID": 7,
                             "symmetricallyPaired": false
                         }
@@ -6478,13 +6401,14 @@
                     "stanzaID": 0,
                     "type": 7,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 3,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -6498,13 +6422,14 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 8,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -6884,19 +6809,24 @@
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 4,
                             "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
+                    "symmetricPairingId": 2,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_big_octopus_move_flap_legs\"}"
                 },
                 {
@@ -6910,19 +6840,24 @@
                         {
                             "invokerType": 0,
                             "invokerID": 12,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 11,
                             "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 9,
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
+                    "symmetricPairingId": 2,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_small_octopus_move_flap_legs\"}"
                 },
                 {
@@ -6935,11 +6870,6 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -6960,11 +6890,6 @@
                         {
                             "invokerType": 0,
                             "invokerID": 8,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 9,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -7736,34 +7661,12 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
-                },
-                {
-                    "id": 3,
-                    "tag": "",
-                    "posX": -432.0,
-                    "posY": -282.0,
-                    "posZ": -2.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -1,
-                    "imageName": "1_Akili_wave-1",
-                    "inText": false,
-                    "label": "",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "1_akili_wave"
-                    ]
                 }
             ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "I wonder where should I go next?",
+                    "text": "I wonder... Where should I go next?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -7889,56 +7792,6 @@
                     "sceneObjectId": 2,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":21,\"deactivateNextButton\":true}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 4,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 4,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -8318,7 +8171,7 @@
                     "wordIdx": 3,
                     "audio": "audio_english_smdp_word_love",
                     "end": 1569,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1568,
@@ -8381,7 +8234,7 @@
                     "wordIdx": 12,
                     "audio": "audio_english_smdp_word_love",
                     "end": 4183,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 4183,
@@ -8497,7 +8350,7 @@
                     "tag": "",
                     "posX": -3.0,
                     "posY": 0.0,
-                    "posZ": 10.0,
+                    "posZ": 50.0,
                     "scaleX": 718.0,
                     "scaleY": 734.0,
                     "rotX": 0.0,
@@ -8585,14 +8438,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "I sit on the stool!",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
-                },
-                {
-                    "id": 2,
-                    "text": "I am ready to eat.",
+                    "text": "I sit on the stool! I am ready to eat.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -8922,7 +8768,7 @@
                     "wordIdx": 0,
                     "audio": "audio_english_smdp_word_yum",
                     "end": 754,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1065,
@@ -9020,27 +8866,6 @@
                     "sceneObjectId": 3,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 }
             ]
         },
@@ -9064,7 +8889,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -10,
+                    "orderInLayer": -11,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "Sky",
@@ -9403,7 +9228,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -3,
+                    "orderInLayer": -10,
                     "imageName": "1_many_stars-1",
                     "inText": false,
                     "label": "night_stars",
@@ -9538,7 +9363,7 @@
                     "id": 20,
                     "tag": "",
                     "posX": -35.0,
-                    "posY": 48.65999984741211,
+                    "posY": 23.6200008392334,
                     "posZ": -5.0,
                     "scaleX": 20.0,
                     "scaleY": 20.0,
@@ -9560,7 +9385,7 @@
                     "id": 21,
                     "tag": "",
                     "posX": 129.0,
-                    "posY": 27.040000915527345,
+                    "posY": 10.0,
                     "posZ": -5.0,
                     "scaleX": 30.0,
                     "scaleY": 30.0,
@@ -9605,23 +9430,23 @@
                 {
                     "id": 0,
                     "text": "I want to see many different places",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -343.885009765625,
+                    "y": 186.60000610351563
                 },
                 {
                     "id": 1,
                     "text": "and see all kinds of different things",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -343.3450012207031,
+                    "y": 131.60000610351563
                 },
                 {
                     "id": 2,
                     "text": "both night and day!",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -182.3800048828125,
+                    "y": 77.5
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_24",
