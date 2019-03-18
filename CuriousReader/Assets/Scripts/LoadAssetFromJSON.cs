@@ -41,7 +41,7 @@ public class LoadAssetFromJSON : MonoBehaviour {
     //private int wordCount = 0;
     float height = 30.0f;  // 138.94f;  //height of text:32.94
 	private readonly float minWordSpace =  30.0f;
-	private readonly float minLineSpace = 10.0f;
+	private readonly float minLineSpace = 25.0f;
 
 	//variables for logging data
 	public DateTime inTime;
