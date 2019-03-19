@@ -4760,95 +4760,37 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Niende wapi?",
+                    "text": "Akili aende wapi?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_smdp_2_sw_stanza_page_7_13_20",
+            "audioFile": "audio_smdp_sw_4_stanza_page_7_13_20",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_swahili_smdp_word_niende",
-                    "end": 515,
-                    "starWord": "Yes"
+                    "audio": "",
+                    "end": 809,
+                    "starWord": "No"
                 },
                 {
-                    "start": 579,
+                    "start": 809,
                     "wordIdx": 1,
-                    "audio": "audio_swahili_smdp_word_wapi",
-                    "end": 1410,
+                    "audio": "",
+                    "end": 1618,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1619,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2428,
                     "starWord": "No"
                 }
             ],
-            "triggers": [
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 1,
-                    "sceneObjectId": 2,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 6,
-                    "prompts": [],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"pageNumber\":8,\"deactivateNextButton\":true}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 6,
-                    "prompts": [],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"pageNumber\":21,\"deactivateNextButton\":true}"
-                }
-            ]
+            "triggers": []
         },
         {
             "pageNumber": 21,
@@ -5185,85 +5127,65 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Nyumbani! Napapenda nyumbani!",
+                    "text": "Nyumbani! Napapenda nyumbani. Kuna vitu vingi nyumbani.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_smdp_2_sw_stanza_page_21",
+            "audioFile": "audio_swahili_smdp_4_stanza_page_21",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_swahili_smdp_word_nyumbani",
-                    "end": 940,
+                    "audio": "",
+                    "end": 600,
                     "starWord": "No"
                 },
                 {
-                    "start": 940,
+                    "start": 600,
                     "wordIdx": 1,
-                    "audio": "audio_swahili_smdp_word_napapenda",
-                    "end": 1880,
+                    "audio": "",
+                    "end": 1200,
                     "starWord": "No"
                 },
                 {
-                    "start": 1880,
+                    "start": 1201,
                     "wordIdx": 2,
-                    "audio": "audio_swahili_smdp_word_nyumbani",
-                    "end": 2820,
-                    "starWord": "Yes"
+                    "audio": "",
+                    "end": 1801,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1802,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2402,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2403,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3003,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3004,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 3604,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3605,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 4205,
+                    "starWord": "No"
                 }
             ],
-            "triggers": [
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 1,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"22_hearts\"}"
-                }
-            ]
+            "triggers": []
         },
         {
             "pageNumber": 22,
@@ -5360,72 +5282,72 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Ninakula chakula.",
+                    "text": "Kuna sahani ya chakula. Niko tayari kwa kula.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_smdp_2_sw_stanza_page_22",
+            "audioFile": "audio_swahili_smdp_4_stanza_page_22",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_swahili_smdp_word_ninakula",
-                    "end": 800,
-                    "starWord": "Yes"
+                    "audio": "",
+                    "end": 414,
+                    "starWord": "No"
                 },
                 {
-                    "start": 835,
+                    "start": 414,
                     "wordIdx": 1,
-                    "audio": "audio_swahili_smdp_word_chakula",
-                    "end": 1802,
+                    "audio": "",
+                    "end": 828,
+                    "starWord": "No"
+                },
+                {
+                    "start": 829,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1243,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1244,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 1658,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1659,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 2073,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2073,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 2487,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2488,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 2902,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2903,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 3317,
                     "starWord": "No"
                 }
             ],
-            "triggers": [
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 1,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"23_Akili_takes_food_and_eat\"}"
-                }
-            ]
+            "triggers": []
         },
         {
             "pageNumber": 23,
@@ -5522,79 +5444,44 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Tamu! Nina furaha!",
+                    "text": "Tamu! Sasa nina furaha!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_smdp_2_sw_stanza_page_23",
+            "audioFile": "audio_swahili_smdp_4_stanza_page_23",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_swahili_smdp_word_tamu",
-                    "end": 801,
+                    "audio": "",
+                    "end": 705,
                     "starWord": "No"
                 },
                 {
-                    "start": 886,
+                    "start": 705,
                     "wordIdx": 1,
-                    "audio": "audio_swahili_smdp_word_nina",
-                    "end": 1178,
+                    "audio": "",
+                    "end": 1410,
                     "starWord": "No"
                 },
                 {
-                    "start": 1220,
+                    "start": 1410,
                     "wordIdx": 2,
-                    "audio": "audio_swahili_smdp_word_furaha",
-                    "end": 2376,
-                    "starWord": "Yes"
+                    "audio": "",
+                    "end": 2115,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2115,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2820,
+                    "starWord": "No"
                 }
             ],
-            "triggers": [
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 1,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"24_Akili_smiles_and_jumps\"}"
-                }
-            ]
+            "triggers": []
         },
         {
             "pageNumber": 24,
@@ -6156,246 +6043,93 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Sehemu tofauti.",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
-                },
-                {
-                    "id": 1,
-                    "text": "Napenda sehemu tofauti. Usiku na mchana!",
+                    "text": "Ninataka kutembea sehemu tofauti. Nione vitu vingi tofauti! Usiku na mchana!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_smdp_2_sw_stanza_page_24",
+            "audioFile": "audio_swahili_smdp_4_stanza_page_24",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_swahili_smdp_word_sehemu",
-                    "end": 702,
+                    "audio": "",
+                    "end": 550,
                     "starWord": "No"
                 },
                 {
-                    "start": 699,
+                    "start": 550,
                     "wordIdx": 1,
-                    "audio": "audio_swahili_smdp_word_tofauti",
-                    "end": 1468,
+                    "audio": "",
+                    "end": 1100,
                     "starWord": "No"
                 },
                 {
-                    "start": 1468,
+                    "start": 1101,
                     "wordIdx": 2,
-                    "audio": "audio_swahili_smdp_word_napenda",
-                    "end": 2244,
+                    "audio": "",
+                    "end": 1651,
                     "starWord": "No"
                 },
                 {
-                    "start": 2311,
+                    "start": 1652,
                     "wordIdx": 3,
-                    "audio": "audio_swahili_smdp_word_sehemu",
-                    "end": 2638,
+                    "audio": "",
+                    "end": 2202,
                     "starWord": "No"
                 },
                 {
-                    "start": 2635,
+                    "start": 2203,
                     "wordIdx": 4,
-                    "audio": "audio_swahili_smdp_word_tofauti",
-                    "end": 3301,
+                    "audio": "",
+                    "end": 2753,
                     "starWord": "No"
                 },
                 {
-                    "start": 3300,
+                    "start": 2754,
                     "wordIdx": 5,
-                    "audio": "audio_swahili_smdp_word_usiku",
-                    "end": 3946,
+                    "audio": "",
+                    "end": 3304,
                     "starWord": "No"
                 },
                 {
-                    "start": 3978,
+                    "start": 3305,
                     "wordIdx": 6,
-                    "audio": "audio_swahili_smdp_word_na",
-                    "end": 4219,
+                    "audio": "",
+                    "end": 3855,
                     "starWord": "No"
                 },
                 {
-                    "start": 4136,
+                    "start": 3856,
                     "wordIdx": 7,
-                    "audio": "audio_swahili_smdp_word_mchana",
-                    "end": 4936,
+                    "audio": "",
+                    "end": 4406,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4407,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 4957,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4958,
+                    "wordIdx": 9,
+                    "audio": "",
+                    "end": 5508,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5509,
+                    "wordIdx": 10,
+                    "audio": "",
+                    "end": 6059,
                     "starWord": "No"
                 }
             ],
-            "triggers": [
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 17,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 17,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_big_octopus_move_flap_legs\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_small_octopus_move_flap_legs\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 20,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 21,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_a_small_bird_flapping\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 4,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_big_boat_moves_fast\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 5,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_small_boat_moves_slowly\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 6,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_sad_face_on_the_little_fish\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 7,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_the_happy_fish_smiles\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 22,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"13_giraffe_eat_leaves\"}"
-                }
-            ]
+            "triggers": []
         }
     ]
 }
