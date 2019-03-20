@@ -278,7 +278,7 @@
                     "tag": "",
                     "posX": -125.0,
                     "posY": -40.0,
-                    "posZ": 0.0,
+                    "posZ": 90.0,
                     "scaleX": 900.0,
                     "scaleY": 900.0,
                     "rotX": 0.0,
@@ -298,7 +298,7 @@
                     "tag": "",
                     "posX": 150.0,
                     "posY": -10.0,
-                    "posZ": 0.0,
+                    "posZ": 90.0,
                     "scaleX": 450.0,
                     "scaleY": 450.0,
                     "rotX": 0.0,
@@ -337,14 +337,14 @@
                     "wordIdx": 1,
                     "audio": "audio_english_smdp_word_big",
                     "end": 676,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 688,
                     "wordIdx": 2,
                     "audio": "audio_english_smdp_word_cloud",
                     "end": 1247,
-                    "starWord": "no"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1241,
@@ -358,14 +358,14 @@
                     "wordIdx": 4,
                     "audio": "audio_english_smdp_word_small",
                     "end": 1997,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 2040,
                     "wordIdx": 5,
                     "audio": "audio_english_smdp_word_cloud",
                     "end": 2533,
-                    "starWord": "no"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -373,8 +373,7 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -394,8 +393,7 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -409,13 +407,14 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -435,7 +434,8 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -550,14 +550,14 @@
                     "wordIdx": 1,
                     "audio": "audio_english_smdp_word_big",
                     "end": 725,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 750,
                     "wordIdx": 2,
                     "audio": "audio_english_smdp_word_bird",
                     "end": 1213,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1214,
@@ -571,14 +571,14 @@
                     "wordIdx": 4,
                     "audio": "audio_english_smdp_word_small",
                     "end": 1900,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1875,
                     "wordIdx": 5,
                     "audio": "audio_english_smdp_word_bird",
                     "end": 2428,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -678,7 +678,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 900.0,
+                    "posX": 540.0,
                     "posY": 45.0,
                     "posZ": 0.0,
                     "scaleX": 100.0,
@@ -727,8 +727,8 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 0.0,
-                    "posY": 0.0,
+                    "posX": -42.599998474121097,
+                    "posY": -31.600000381469728,
                     "posZ": 0.0,
                     "scaleX": 160.0,
                     "scaleY": 160.0,
@@ -800,7 +800,8 @@
                         }
                     ],
                     "Animations": [
-                        "04_a_small_singing_bird"
+                        "04_a_small_singing_bird",
+                        "03_a_small_bird_flapping"
                     ]
                 },
                 {
@@ -1228,7 +1229,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
                     "stanzaID": 0,
@@ -1338,16 +1339,16 @@
                     "tag": "",
                     "posX": -120.0,
                     "posY": 0.0,
-                    "posZ": 94.0,
+                    "posZ": 20.0,
                     "scaleX": 40.0,
                     "scaleY": 40.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -2,
                     "imageName": "06_sunlight-1",
                     "inText": false,
-                    "label": "day_sun",
+                    "label": "day_sun_corona",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [
@@ -1389,20 +1390,22 @@
                     "tag": "",
                     "posX": -120.0,
                     "posY": 0.0,
-                    "posZ": 93.0,
+                    "posZ": 21.0,
                     "scaleX": 35.0,
                     "scaleY": 35.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -1,
                     "imageName": "5_orange_sun-1",
                     "inText": false,
                     "label": "day_innersun",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "05_orange_portion_sun"
+                    ]
                 },
                 {
                     "id": 3,
@@ -1415,7 +1418,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -10,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "Sky",
@@ -1530,7 +1533,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 3,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -1551,7 +1554,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 7,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -1609,7 +1612,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
                     "stanzaID": 0,
@@ -1646,7 +1649,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 7,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 1,
@@ -1663,53 +1666,6 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 1,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
                     "type": 7,
                     "prompts": [
                         1,
@@ -1719,7 +1675,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 6,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -2242,7 +2198,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
+                    "orderInLayer": -5,
                     "imageName": "1_day_bg-1",
                     "inText": false,
                     "label": "day_background",
@@ -2276,7 +2232,7 @@
                     "tag": "",
                     "posX": -61.0,
                     "posY": -73.0,
-                    "posZ": 92.0,
+                    "posZ": 95.0,
                     "scaleX": 340.0,
                     "scaleY": 340.0,
                     "rotX": 0.0,
@@ -2296,7 +2252,7 @@
                     "tag": "",
                     "posX": 9.0,
                     "posY": -148.0,
-                    "posZ": 91.0,
+                    "posZ": 93.0,
                     "scaleX": 203.0,
                     "scaleY": 203.0,
                     "rotX": 0.0,
@@ -2316,7 +2272,7 @@
                     "tag": "",
                     "posX": -305.0,
                     "posY": -213.0,
-                    "posZ": 0.0,
+                    "posZ": 90.0,
                     "scaleX": 94.30000305175781,
                     "scaleY": 94.30000305175781,
                     "rotX": 0.0,
@@ -2336,13 +2292,13 @@
                     "tag": "",
                     "posX": -369.79998779296877,
                     "posY": -43.099998474121097,
-                    "posZ": 94.0,
+                    "posZ": 100.0,
                     "scaleX": 392.0,
                     "scaleY": 392.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -1,
                     "imageName": "9_tall_tree_dark-1",
                     "inText": false,
                     "label": "tall_dark_tree_left",
@@ -2354,9 +2310,9 @@
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": -30.0,
-                    "posY": -127.0,
-                    "posZ": 91.0,
+                    "posX": -199.0,
+                    "posY": -138.0,
+                    "posZ": 94.0,
                     "scaleX": 203.0,
                     "scaleY": 203.0,
                     "rotX": 0.0,
@@ -2365,7 +2321,7 @@
                     "orderInLayer": 0,
                     "imageName": "9_tree_dark-1",
                     "inText": false,
-                    "label": "short_dark_tree_left",
+                    "label": "dark_tree_left",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -2376,13 +2332,13 @@
                     "tag": "",
                     "posX": -301.0,
                     "posY": -94.0,
-                    "posZ": 93.0,
+                    "posZ": 101.0,
                     "scaleX": 278.0,
                     "scaleY": 370.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -2,
                     "imageName": "9_tree_light-1",
                     "inText": false,
                     "label": "light_tree_left",
@@ -2396,13 +2352,13 @@
                     "tag": "",
                     "posX": 321.0,
                     "posY": -58.0,
-                    "posZ": 91.0,
+                    "posZ": 101.0,
                     "scaleX": 392.0,
                     "scaleY": 392.0,
                     "rotX": 0.0,
                     "rotY": 180.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "9_tall_tree_dark-1",
                     "inText": false,
                     "label": "tall_dark_tree_right",
@@ -2416,13 +2372,13 @@
                     "tag": "",
                     "posX": 239.0,
                     "posY": -145.0,
-                    "posZ": 92.0,
+                    "posZ": 100.0,
                     "scaleX": 230.0,
                     "scaleY": 230.0,
                     "rotX": 0.0,
                     "rotY": 180.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -2,
                     "imageName": "9_tree_dark-1",
                     "inText": false,
                     "label": "short_dark_right",
@@ -2436,7 +2392,7 @@
                     "tag": "",
                     "posX": 185.0,
                     "posY": -208.0,
-                    "posZ": 0.0,
+                    "posZ": 90.0,
                     "scaleX": 183.0,
                     "scaleY": 183.0,
                     "rotX": 0.0,
@@ -2456,13 +2412,13 @@
                     "tag": "",
                     "posX": 145.0,
                     "posY": -83.0,
-                    "posZ": 93.0,
+                    "posZ": 96.0,
                     "scaleX": 362.0,
                     "scaleY": 482.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "9_tree_light-1",
                     "inText": false,
                     "label": "light_tree_right",
@@ -2470,6 +2426,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 12,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 5,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "Akili Wave",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -2981,7 +2959,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "eating from a short tree",
+                    "text": "eating from a short tree.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -2992,7 +2970,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 300,
                     "starWord": "No"
                 },
@@ -3027,7 +3005,7 @@
                 {
                     "start": 2050,
                     "wordIdx": 5,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 2075,
                     "starWord": "No"
                 },
@@ -3043,7 +3021,7 @@
                     "wordIdx": 7,
                     "audio": "audio_english_smdp_word_tree",
                     "end": 3160,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -3065,7 +3043,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
                     "stanzaID": 0,
@@ -3118,11 +3096,6 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
                             "invokerID": 7,
                             "symmetricallyPaired": true
                         }
@@ -3131,8 +3104,8 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
-                    "symmetricPairingId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
                 }
             ]
         },
@@ -3397,7 +3370,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
                     "stanzaID": 0,
@@ -3423,7 +3396,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 5,
                     "symmetricPairingId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
         },
@@ -4663,15 +4636,15 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 5.0,
-                    "posY": -148.0,
+                    "posX": -18.0,
+                    "posY": -139.05999755859376,
                     "posZ": 100.0,
-                    "scaleX": 679.2542114257813,
-                    "scaleY": 679.2542114257813,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
@@ -4723,7 +4696,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -10,
                     "imageName": "2_small_fluffy_cloud-1",
                     "inText": false,
                     "label": "background",
@@ -4735,15 +4708,15 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -328.0,
+                    "posX": -347.0,
                     "posY": 156.0,
                     "posZ": 91.0,
-                    "scaleX": 44.5,
-                    "scaleY": 44.5,
+                    "scaleX": 38.0,
+                    "scaleY": 38.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -3,
                     "imageName": "05_orange_portion_sun-1",
                     "inText": false,
                     "label": "sun",
@@ -4751,6 +4724,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 5,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "Akili Waves",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -4847,7 +4842,8 @@
                     "stanzaID": 0,
                     "type": 7,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -4883,7 +4879,7 @@
                     "id": 0,
                     "tag": "",
                     "posX": -122.0,
-                    "posY": -12.0,
+                    "posY": 14.068242073059082,
                     "posZ": 92.0,
                     "scaleX": 100.0,
                     "scaleY": 100.0,
@@ -4993,16 +4989,16 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 7.0,
-                    "posY": -116.0,
+                    "posX": -18.0,
+                    "posY": -140.0,
                     "posZ": 100.0,
-                    "scaleX": 821.5858764648438,
-                    "scaleY": 547.723876953125,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "15_water_wave-1",
+                    "imageName": "16_water_wave-1",
                     "inText": false,
                     "label": "water",
                     "destroyOnCollision": "",
@@ -5039,7 +5035,7 @@
                         }
                     ],
                     "Animations": [
-                        "15_water_wave"
+                        "16_water_wave"
                     ]
                 },
                 {
@@ -5077,7 +5073,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 300,
                     "starWord": "No"
                 },
@@ -5098,7 +5094,7 @@
                 {
                     "start": 1100,
                     "wordIdx": 3,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 1300,
                     "starWord": "No"
                 },
@@ -5156,7 +5152,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
                     "stanzaID": 0,
@@ -5214,7 +5210,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 111.0,
+                    "posX": 96.0,
                     "posY": 42.0,
                     "posZ": 92.0,
                     "scaleX": 100.0,
@@ -5268,7 +5264,7 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 190.0,
+                    "posX": 96.0,
                     "posY": -100.0,
                     "posZ": 91.0,
                     "scaleX": 85.0,
@@ -5324,23 +5320,53 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 7.0,
-                    "posY": -97.0,
+                    "posX": -18.0,
+                    "posY": -140.0,
                     "posZ": 100.0,
-                    "scaleX": 718.8837280273438,
-                    "scaleY": 718.8837280273438,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "15_water_wave-1",
+                    "imageName": "16_water_wave-1",
                     "inText": false,
                     "label": "water",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [],
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "13_water_wave",
+                            "startX": -48,
+                            "startY": -64,
+                            "startZ": 100,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": true,
+                            "secPerFrame": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1000,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ],
                     "Animations": [
-                        "15_water_wave"
+                        "16_water_wave"
                     ]
                 },
                 {
@@ -5378,7 +5404,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 225,
                     "starWord": "No"
                 },
@@ -5399,7 +5425,7 @@
                 {
                     "start": 1230,
                     "wordIdx": 3,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 1372,
                     "starWord": "No"
                 },
@@ -5528,20 +5554,50 @@
                     "id": 0,
                     "tag": "",
                     "posX": -120.0,
-                    "posY": -50.0,
+                    "posY": -113.69999694824219,
                     "posZ": 0.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -6,
                     "imageName": "16_the_happy_fish_smiles-1",
                     "inText": false,
                     "label": "happyfish",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [],
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "16_the_happy_fish_smiles",
+                            "startX": -120,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": true,
+                            "secPerFrame": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ],
                     "Animations": [
                         "16_the_happy_fish_smiles",
                         "16_the_happy_fish_dances"
@@ -5551,36 +5607,67 @@
                     "id": 1,
                     "tag": "",
                     "posX": 120.0,
-                    "posY": -50.0,
+                    "posY": -116.19999694824219,
                     "posZ": 0.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -6,
                     "imageName": "16_sad_face_on_the_little_fish-1",
                     "inText": false,
                     "label": "sadfish",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [],
+                    "anim": [
+                        {
+                            "id": 0,
+                            "animName": "16_sad_face_on_the_little_fish",
+                            "startX": 120,
+                            "startY": 0,
+                            "startZ": 0,
+                            "startIndex": 0,
+                            "endIndex": 3,
+                            "onTouch": false,
+                            "onStart": true,
+                            "secPerFrame": [
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612,
+                                0.10000000149011612
+                            ],
+                            "sequences": [
+                                {
+                                    "startFrame": 0,
+                                    "endFrame": 3,
+                                    "noOfLoops": 1,
+                                    "movable": {
+                                        "finalx": 0.0,
+                                        "finaly": 0.0,
+                                        "speed": 0.0
+                                    }
+                                }
+                            ]
+                        }
+                    ],
                     "Animations": [
-                        "16_sad_face_on_the_little_fish"
+                        "16_sad_face_on_the_little_fish",
+                        "16_the_sad_fish_swimming"
                     ]
                 },
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 4.0,
-                    "posY": -74.0,
+                    "posX": -18.0,
+                    "posY": -82.5,
                     "posZ": 100.0,
-                    "scaleX": 709.7208251953125,
-                    "scaleY": 709.7208251953125,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -8,
                     "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
@@ -5600,7 +5687,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -10,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "sky",
@@ -5624,7 +5711,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 218,
                     "starWord": "No"
                 },
@@ -5652,7 +5739,7 @@
                 {
                     "start": 1792,
                     "wordIdx": 4,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 1870,
                     "starWord": "No"
                 },
@@ -5796,10 +5883,10 @@
                     "id": 0,
                     "tag": "",
                     "posX": -97.0,
-                    "posY": -35.0,
+                    "posY": -78.4000015258789,
                     "posZ": 91.0,
-                    "scaleX": 44.560020446777347,
-                    "scaleY": 44.560020446777347,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -5877,11 +5964,11 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 181.0,
-                    "posY": -78.0,
+                    "posX": 165.8000030517578,
+                    "posY": -84.5,
                     "posZ": 91.0,
-                    "scaleX": 28.74839973449707,
-                    "scaleY": 28.74839973449707,
+                    "scaleX": 30.0,
+                    "scaleY": 30.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -5959,11 +6046,11 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 13.0,
-                    "posY": -73.0,
+                    "posX": -18.0,
+                    "posY": -82.5,
                     "posZ": 100.0,
-                    "scaleX": 748.5288696289063,
-                    "scaleY": 748.5288696289063,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -6004,7 +6091,9 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "15_water_wave"
+                    ]
                 },
                 {
                     "id": 3,
@@ -6048,7 +6137,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 240,
                     "starWord": "No"
                 },
@@ -6090,7 +6179,7 @@
                 {
                     "start": 2429,
                     "wordIdx": 6,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 2507,
                     "starWord": "No"
                 },
@@ -6133,46 +6222,6 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 8,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
-                },
-                {
-                    "stanzaID": 0,
                     "type": 7,
                     "prompts": [
                         1,
@@ -6183,13 +6232,18 @@
                             "invokerType": 0,
                             "invokerID": 5,
                             "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
+                    "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_big_octopus_move_flap_legs\"}"
                 },
                 {
@@ -6204,6 +6258,51 @@
                             "invokerType": 0,
                             "invokerID": 11,
                             "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_small_octopus_move_flap_legs\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -6211,7 +6310,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_small_octopus_move_flap_legs\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
         },
@@ -6227,8 +6326,8 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 102.0,
-                    "posY": 9.0,
+                    "posX": 126.5999984741211,
+                    "posY": -7.400000095367432,
                     "posZ": 100.0,
                     "scaleX": 65.0,
                     "scaleY": 65.0,
@@ -6282,7 +6381,7 @@
                     "id": 1,
                     "tag": "",
                     "posX": -153.0,
-                    "posY": -1.0,
+                    "posY": -16.399999618530275,
                     "posZ": 91.0,
                     "scaleX": 45.0,
                     "scaleY": 45.0,
@@ -6338,10 +6437,10 @@
                     "id": 2,
                     "tag": "",
                     "posX": 0.0,
-                    "posY": -98.0,
+                    "posY": -116.9000015258789,
                     "posZ": 105.0,
-                    "scaleX": 1200.10009765625,
-                    "scaleY": 600.050048828125,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -6390,7 +6489,7 @@
                     "id": 3,
                     "tag": "",
                     "posX": -200.0,
-                    "posY": -85.0,
+                    "posY": -138.0,
                     "posZ": 91.0,
                     "scaleX": 22.5,
                     "scaleY": 22.5,
@@ -6444,7 +6543,7 @@
                     "id": 4,
                     "tag": "",
                     "posX": 222.0,
-                    "posY": -87.0,
+                    "posY": -140.0,
                     "posZ": 91.0,
                     "scaleX": 22.5,
                     "scaleY": 22.5,
@@ -6498,7 +6597,7 @@
                     "id": 5,
                     "tag": "",
                     "posX": -43.0,
-                    "posY": -95.0,
+                    "posY": -148.0,
                     "posZ": 91.0,
                     "scaleX": 22.5,
                     "scaleY": 22.5,
@@ -6550,7 +6649,7 @@
                     "id": 6,
                     "tag": "",
                     "posX": 80.0,
-                    "posY": -94.0,
+                    "posY": -147.0,
                     "posZ": 91.0,
                     "scaleX": 22.5,
                     "scaleY": 22.5,
@@ -6713,7 +6812,8 @@
                     "stanzaID": 0,
                     "type": 7,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -7033,11 +7133,11 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -66.0,
-                    "posY": -136.0,
+                    "posX": -42.70000076293945,
+                    "posY": -163.5,
                     "posZ": -1.0,
-                    "scaleX": 121.5459976196289,
-                    "scaleY": 121.5459976196289,
+                    "scaleX": 220.0,
+                    "scaleY": 220.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -7057,7 +7157,7 @@
                     "tag": "",
                     "posX": 39.400001525878909,
                     "posY": -25.799999237060548,
-                    "posZ": 5.0,
+                    "posZ": -0.6100000143051148,
                     "scaleX": 200.0,
                     "scaleY": 200.0,
                     "rotX": 0.0,
@@ -7383,7 +7483,7 @@
                     "wordIdx": 1,
                     "audio": "audio_english_smdp_word_home",
                     "end": 969,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 970,
@@ -7397,7 +7497,7 @@
                     "wordIdx": 3,
                     "audio": "audio_english_smdp_word_love",
                     "end": 1668,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1669,
@@ -7481,6 +7581,11 @@
                             "invokerType": 0,
                             "invokerID": 12,
                             "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -7509,7 +7614,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 },
                 {
                     "stanzaID": 0,
@@ -7547,7 +7652,7 @@
                     "tag": "",
                     "posX": -3.0,
                     "posY": 0.0,
-                    "posZ": 100.0,
+                    "posZ": 50.0,
                     "scaleX": 718.0,
                     "scaleY": 734.0,
                     "rotX": 0.0,
@@ -7565,16 +7670,16 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -52.0,
-                    "posY": -180.0,
-                    "posZ": 93.0,
-                    "scaleX": 242.24307250976563,
-                    "scaleY": 242.24307250976563,
+                    "posX": -84.83000183105469,
+                    "posY": -200.44000244140626,
+                    "posZ": 10.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 2.007154941558838,
-                    "orderInLayer": -1,
-                    "imageName": "23_akili_on_stool-1",
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "23_Akili_takes_food_and_eat-1",
                     "inText": false,
                     "label": "Akili on stool",
                     "destroyOnCollision": "",
@@ -7587,15 +7692,15 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -28.0,
-                    "posY": -97.0,
-                    "posZ": 91.0,
-                    "scaleX": 65.0,
-                    "scaleY": 65.0,
+                    "posX": -43.0,
+                    "posY": -93.0,
+                    "posZ": 0.0,
+                    "scaleX": 79.9610595703125,
+                    "scaleY": 79.9610595703125,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -1,
+                    "orderInLayer": -2,
                     "imageName": "23_food-1",
                     "inText": true,
                     "label": "Food",
@@ -7607,18 +7712,18 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 51.0,
-                    "posY": -153.0,
-                    "posZ": 95.0,
-                    "scaleX": 127.53216552734375,
-                    "scaleY": 127.53216552734375,
+                    "posX": 15.0,
+                    "posY": -151.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -5,
+                    "orderInLayer": -6,
                     "imageName": "23_stool-1",
                     "inText": false,
-                    "label": "stool",
+                    "label": "Stool",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -7646,7 +7751,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 214,
                     "starWord": "No"
                 },
@@ -7669,7 +7774,7 @@
                     "wordIdx": 3,
                     "audio": "audio_english_smdp_word_food",
                     "end": 1442,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1443,
@@ -7773,7 +7878,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
                 }
             ]
         },
@@ -7956,7 +8061,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 }
             ]
         },
@@ -7975,12 +8080,12 @@
                     "posX": 0.0,
                     "posY": 0.0,
                     "posZ": 100.0,
-                    "scaleX": 710.0,
+                    "scaleX": 900.0,
                     "scaleY": 710.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -7,
+                    "orderInLayer": -11,
                     "imageName": "7_between_day_bg_night_bg-1",
                     "inText": false,
                     "label": "Sky",
@@ -7995,16 +8100,16 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -41.0,
-                    "posY": -106.0,
-                    "posZ": 0.0,
-                    "scaleX": 84.0,
-                    "scaleY": 84.0,
+                    "posX": 0.0,
+                    "posY": -160.3000030517578,
+                    "posZ": 30.0,
+                    "scaleX": 1000.0,
+                    "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -3,
-                    "imageName": "13_water_wave-1",
+                    "orderInLayer": -8,
+                    "imageName": "15_water_wave-1",
                     "inText": false,
                     "label": "water",
                     "destroyOnCollision": "",
@@ -8015,8 +8120,8 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 261.0,
-                    "posY": -103.0,
+                    "posX": 285.0,
+                    "posY": -128.0,
                     "posZ": -5.0,
                     "scaleX": 20.0,
                     "scaleY": 20.0,
@@ -8062,19 +8167,21 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "17_big_octopus_move_flap_legs"
+                    ]
                 },
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 139.0,
-                    "posY": -108.0,
+                    "posX": 66.19999694824219,
+                    "posY": -123.5,
                     "posZ": -5.0,
-                    "scaleX": 20.0,
-                    "scaleY": 20.0,
+                    "scaleX": 15.0,
+                    "scaleY": 15.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 26.600000381469728,
+                    "rotZ": 0.0,
                     "orderInLayer": -1,
                     "imageName": "17_small_octopus_move_flap_legs-1",
                     "inText": false,
@@ -8114,16 +8221,18 @@
                             ]
                         }
                     ],
-                    "Animations": []
+                    "Animations": [
+                        "17_small_octopus_move_flap_legs"
+                    ]
                 },
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": 262.0,
-                    "posY": -12.0,
-                    "posZ": 0.0,
-                    "scaleX": 50.0,
-                    "scaleY": 50.0,
+                    "posX": 222.8000030517578,
+                    "posY": -22.899999618530275,
+                    "posZ": -5.0,
+                    "scaleX": 55.0,
+                    "scaleY": 55.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -8134,14 +8243,16 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "14_big_boat_moves_fast"
+                    ]
                 },
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": 67.0,
-                    "posY": -31.0,
-                    "posZ": 0.0,
+                    "posX": 21.200000762939454,
+                    "posY": -70.0,
+                    "posZ": -5.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
@@ -8154,13 +8265,15 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "14_small_boat_moves_slowly"
+                    ]
                 },
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": 115.0,
-                    "posY": -56.0,
+                    "posX": 168.0,
+                    "posY": -120.0,
                     "posZ": -5.0,
                     "scaleX": 15.0,
                     "scaleY": 15.0,
@@ -8173,44 +8286,16 @@
                     "label": "sad_fish",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
-                        {
-                            "id": 0,
-                            "animName": "16_sad_face_on_the_little_fish",
-                            "startX": 115,
-                            "startY": -56,
-                            "startZ": -5,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": true,
-                            "onStart": false,
-                            "secPerFrame": [
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
-                        }
-                    ],
-                    "Animations": []
+                    "anim": [],
+                    "Animations": [
+                        "16_sad_face_on_the_little_fish"
+                    ]
                 },
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": 183.0,
-                    "posY": -72.0,
+                    "posX": -34.29999923706055,
+                    "posY": -119.0,
                     "posZ": -5.0,
                     "scaleX": 15.0,
                     "scaleY": 15.0,
@@ -8223,51 +8308,23 @@
                     "label": "happy_fish",
                     "destroyOnCollision": "",
                     "draggable": false,
-                    "anim": [
-                        {
-                            "id": 0,
-                            "animName": "16_the_happy_fish_smiles",
-                            "startX": 183,
-                            "startY": -72,
-                            "startZ": -5,
-                            "startIndex": 0,
-                            "endIndex": 3,
-                            "onTouch": true,
-                            "onStart": false,
-                            "secPerFrame": [
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612,
-                                0.10000000149011612
-                            ],
-                            "sequences": [
-                                {
-                                    "startFrame": 0,
-                                    "endFrame": 3,
-                                    "noOfLoops": 1,
-                                    "movable": {
-                                        "finalx": 0.0,
-                                        "finaly": 0.0,
-                                        "speed": 0.0
-                                    }
-                                }
-                            ]
-                        }
-                    ],
-                    "Animations": []
+                    "anim": [],
+                    "Animations": [
+                        "16_the_happy_fish_smiles"
+                    ]
                 },
                 {
                     "id": 8,
                     "tag": "",
-                    "posX": -197.0,
-                    "posY": -42.0,
+                    "posX": -377.3999938964844,
+                    "posY": -35.0,
                     "posZ": 0.0,
-                    "scaleX": 40.0,
+                    "scaleX": -40.0,
                     "scaleY": 40.0,
                     "rotX": 0.0,
-                    "rotY": 180.0,
+                    "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
+                    "orderInLayer": -1,
                     "imageName": "9_short_and_tall_tree-1",
                     "inText": false,
                     "label": "trees",
@@ -8277,37 +8334,17 @@
                     "Animations": []
                 },
                 {
-                    "id": 9,
-                    "tag": "",
-                    "posX": -174.0,
-                    "posY": -186.0,
-                    "posZ": 0.0,
-                    "scaleX": 528.4859008789063,
-                    "scaleY": 1601.684814453125,
-                    "rotX": -0.0000011474230632302352,
-                    "rotY": 180.0,
-                    "rotZ": 7.388139724731445,
-                    "orderInLayer": -2,
-                    "imageName": "10_ground-1",
-                    "inText": false,
-                    "label": "ground",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
                     "id": 10,
                     "tag": "",
-                    "posX": -223.0,
-                    "posY": 47.0,
-                    "posZ": 93.0,
-                    "scaleX": 200.0,
-                    "scaleY": 200.0,
+                    "posX": -411.6000061035156,
+                    "posY": 27.0,
+                    "posZ": 0.0,
+                    "scaleX": 240.0,
+                    "scaleY": 240.0,
                     "rotX": 352.29998779296877,
                     "rotY": 177.0,
-                    "rotZ": 3.0,
-                    "orderInLayer": 1,
+                    "rotZ": 332.5,
+                    "orderInLayer": -1,
                     "imageName": "10_small_monkeys-1",
                     "inText": false,
                     "label": "small_monkeys",
@@ -8387,7 +8424,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -3,
+                    "orderInLayer": -10,
                     "imageName": "1_many_stars-1",
                     "inText": false,
                     "label": "night_stars",
@@ -8401,13 +8438,13 @@
                     "tag": "",
                     "posX": 73.0,
                     "posY": 64.0,
-                    "posZ": 97.0,
+                    "posZ": 20.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "2_small_fluffy_cloud-1",
                     "inText": false,
                     "label": "day_cloud",
@@ -8427,7 +8464,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "2_small_fluffy_cloud-1",
                     "inText": false,
                     "label": "day_cloud1",
@@ -8447,7 +8484,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -4,
                     "imageName": "2_small_fluffy_cloud-1",
                     "inText": false,
                     "label": "day_cloud2",
@@ -8459,18 +8496,18 @@
                 {
                     "id": 18,
                     "tag": "",
-                    "posX": -387.8999938964844,
-                    "posY": -253.1999969482422,
-                    "posZ": 0.0,
-                    "scaleX": 200.0,
-                    "scaleY": 200.0,
+                    "posX": -431.25,
+                    "posY": -304.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": 5,
                     "imageName": "1_Akili_wave-1",
                     "inText": false,
-                    "label": "Akili_Waves",
+                    "label": "Akili Waves",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -8481,18 +8518,18 @@
                 {
                     "id": 19,
                     "tag": "",
-                    "posX": -105.0,
-                    "posY": -171.0,
+                    "posX": -245.0,
+                    "posY": -180.1999969482422,
                     "posZ": 0.0,
-                    "scaleX": 100.0,
-                    "scaleY": 100.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "22_small_bush-1",
+                    "rotZ": 348.1300048828125,
+                    "orderInLayer": -3,
+                    "imageName": "22_ground-1",
                     "inText": false,
-                    "label": "small_bush",
+                    "label": "Ground",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -8501,18 +8538,18 @@
                 {
                     "id": 20,
                     "tag": "",
-                    "posX": -275.0,
-                    "posY": -140.0,
+                    "posX": -247.0,
+                    "posY": -155.60000610351563,
                     "posZ": 0.0,
-                    "scaleX": 168.6199951171875,
-                    "scaleY": 168.6199951171875,
+                    "scaleX": 298.3900146484375,
+                    "scaleY": 230.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "9_big_bush-1",
+                    "rotZ": 352.6000061035156,
+                    "orderInLayer": -3,
+                    "imageName": "22_big_bush-1",
                     "inText": false,
-                    "label": "big_bush",
+                    "label": "Bush",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -8521,43 +8558,67 @@
                 {
                     "id": 21,
                     "tag": "",
-                    "posX": -174.0,
-                    "posY": -148.0,
-                    "posZ": 0.0,
-                    "scaleX": 100.0,
-                    "scaleY": 100.0,
+                    "posX": -35.0,
+                    "posY": 23.6200008392334,
+                    "posZ": -5.0,
+                    "scaleX": 20.0,
+                    "scaleY": 20.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "9_big_bush-1",
+                    "orderInLayer": -4,
+                    "imageName": "03_big_bird_flapping-1",
                     "inText": false,
-                    "label": "big_bush",
+                    "label": "BigBird",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "03_big_bird_flapping"
+                    ]
                 },
                 {
                     "id": 22,
                     "tag": "",
-                    "posX": -197.0,
-                    "posY": -192.0,
-                    "posZ": 0.0,
-                    "scaleX": 400.0,
-                    "scaleY": 400.0,
+                    "posX": 129.0,
+                    "posY": 10.0,
+                    "posZ": -5.0,
+                    "scaleX": 30.0,
+                    "scaleY": 30.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -1,
-                    "imageName": "10_giraffe_stand_up_small-1",
+                    "orderInLayer": -4,
+                    "imageName": "03_a_small_bird_flapping-1",
+                    "inText": false,
+                    "label": "SmallBird",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "03_a_small_bird_flapping"
+                    ]
+                },
+                {
+                    "id": 23,
+                    "tag": "",
+                    "posX": -193.39999389648438,
+                    "posY": -134.6199951171875,
+                    "posZ": -5.0,
+                    "scaleX": -500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "13_giraffe_eat_leaves-1",
                     "inText": false,
                     "label": "giraffe",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "10_giraffe_stand_up_small"
+                        "13_giraffe_eat_leaves"
                     ]
                 }
             ],
@@ -8688,7 +8749,7 @@
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 18,
+                    "sceneObjectId": 17,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
@@ -8708,9 +8769,9 @@
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 18,
+                    "sceneObjectId": 17,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-329.3999938964844,\"y\":-201.3000030517578,\"z\":0.0}}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -8756,20 +8817,6 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 9,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 4,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":3.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-900.0,\"y\":-12.0,\"z\":0.0}}"
-                },
-                {
-                    "stanzaID": 0,
                     "type": 7,
                     "prompts": [
                         0
@@ -8781,20 +8828,6 @@
                     "sceneObjectId": 5,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_small_boat_moves_slowly\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "prompts": [
-                        0
-                    ],
-                    "invokers": [],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 5,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-50.0,\"y\":-31.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -8836,7 +8869,35 @@
                     "timestamp": 0,
                     "sceneObjectId": 22,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up_small\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"13_giraffe_eat_leaves\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 20,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_big_bird_flapping\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 21,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"03_a_small_bird_flapping\"}"
                 }
             ]
         }
