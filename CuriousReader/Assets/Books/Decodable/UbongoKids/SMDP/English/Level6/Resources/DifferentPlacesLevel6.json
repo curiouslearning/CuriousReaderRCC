@@ -2158,6 +2158,20 @@
                     "sceneObjectId": 4,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_orange_portion_sun\"}"
                 }
             ]
         },
@@ -2235,9 +2249,9 @@
                 {
                     "id": 0,
                     "text": "I wonder... Where should I go next?",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -338.1000061035156,
+                    "y": 213.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_7_13_20",
@@ -4911,9 +4925,9 @@
                 {
                     "id": 0,
                     "text": "I wonder... Where should I go next?",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -338.1000061035156,
+                    "y": 213.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_7_13_20",
@@ -7667,9 +7681,9 @@
                 {
                     "id": 0,
                     "text": "I wonder... Where should I go next?",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -338.1000061035156,
+                    "y": 213.0
                 }
             ],
             "audioFile": "audio_english_smdp_6_stanza_page_7_13_20",
