@@ -1438,14 +1438,50 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Akili aende wapi?",
+                    "text": "Niende wapi baada ya hapa?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_smdp_sw_4_stanza_page_7_13_20",
-            "timestamps": [],
+            "audioFile": "audio_swahili_smdp_4_stanza_page_7_13_20",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 485,
+                    "starWord": "No"
+                },
+                {
+                    "start": 485,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 970,
+                    "starWord": "No"
+                },
+                {
+                    "start": 971,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1456,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1457,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 1942,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1943,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 2428,
+                    "starWord": "No"
+                }
+            ],
             "triggers": []
         },
         {
@@ -2874,7 +2910,7 @@
             "pageNumber": 13,
             "script": "GSManager",
             "audio": {
-                "audioName": "",
+                "audioName": "audio_swahili_smdp_4_stanza_page_7_13_20",
                 "isAnim": false,
                 "objectId": 0
             },
@@ -2943,14 +2979,50 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Akili aende wapi?",
+                    "text": "Niende wapi baada ya hapa?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_smdp_sw_4_stanza_page_7_13_20",
-            "timestamps": [],
+            "audioFile": "audio_swahili_smdp_4_stanza_page_7_13_20",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 485,
+                    "starWord": "No"
+                },
+                {
+                    "start": 485,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 970,
+                    "starWord": "No"
+                },
+                {
+                    "start": 971,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1456,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1457,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 1942,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1943,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 2428,
+                    "starWord": "No"
+                }
+            ],
             "triggers": []
         },
         {
@@ -4691,7 +4763,7 @@
             "pageNumber": 20,
             "script": "GSManager",
             "audio": {
-                "audioName": "",
+                "audioName": "audio_swahili_smdp_4_stanza_page_7_13_20",
                 "isAnim": false,
                 "objectId": 0
             },
@@ -4760,31 +4832,45 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Akili aende wapi?",
+                    "text": "Niende wapi baada ya hapa?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_smdp_sw_4_stanza_page_7_13_20",
+            "audioFile": "audio_swahili_smdp_4_stanza_page_7_13_20",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 809,
+                    "end": 485,
                     "starWord": "No"
                 },
                 {
-                    "start": 809,
+                    "start": 485,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1618,
+                    "end": 970,
                     "starWord": "No"
                 },
                 {
-                    "start": 1619,
+                    "start": 971,
                     "wordIdx": 2,
+                    "audio": "",
+                    "end": 1456,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1457,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 1942,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1943,
+                    "wordIdx": 4,
                     "audio": "",
                     "end": 2428,
                     "starWord": "No"
