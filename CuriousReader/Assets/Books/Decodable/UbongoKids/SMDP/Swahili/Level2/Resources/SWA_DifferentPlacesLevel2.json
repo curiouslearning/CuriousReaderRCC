@@ -187,18 +187,7 @@
                         1,
                         0
                     ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        }
-                    ],
+                    "invokers": [],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
@@ -213,18 +202,7 @@
                         1,
                         0
                     ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        }
-                    ],
+                    "invokers": [],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
@@ -438,7 +416,8 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -458,7 +437,8 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -566,28 +546,28 @@
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_ndege",
                     "end": 441,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 441,
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_mkubwa",
                     "end": 1344,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1345,
                     "wordIdx": 2,
                     "audio": "audio_swahili_smdp_word_ndege",
                     "end": 1893,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1891,
                     "wordIdx": 3,
                     "audio": "audio_swahili_smdp_word_mdogo",
                     "end": 2690,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -1194,26 +1174,6 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": true
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": -1,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_star_vibrates\"}"
-                },
-                {
-                    "stanzaID": 0,
                     "type": 8,
                     "prompts": [
                         1
@@ -1251,6 +1211,27 @@
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_star_vibrates\"}"
                 }
             ]
         },
@@ -2014,14 +1995,14 @@
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_niende",
                     "end": 563,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 564,
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_wapi",
                     "end": 1410,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -2034,7 +2015,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 1,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -2054,7 +2035,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 1,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -2225,8 +2206,8 @@
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": -30.0,
-                    "posY": -127.0,
+                    "posX": -199.0,
+                    "posY": -139.0,
                     "posZ": 94.0,
                     "scaleX": 203.0,
                     "scaleY": 203.0,
@@ -2381,7 +2362,7 @@
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_msitu",
                     "end": 1199,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1199,
@@ -2395,7 +2376,7 @@
                     "wordIdx": 2,
                     "audio": "audio_swahili_smdp_word_msitu",
                     "end": 2559,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -2817,7 +2798,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -219.0,
+                    "posX": -186.8000030517578,
                     "posY": -110.0,
                     "posZ": 91.0,
                     "scaleX": 164.33999633789063,
@@ -2837,7 +2818,7 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 89.0,
+                    "posX": 102.0999984741211,
                     "posY": -134.0,
                     "posZ": 91.0,
                     "scaleX": 124.70999908447266,
@@ -2897,7 +2878,7 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": -61.0,
+                    "posX": -42.79999923706055,
                     "posY": -112.0,
                     "posZ": 91.0,
                     "scaleX": 164.52999877929688,
@@ -2917,7 +2898,7 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": 225.0,
+                    "posX": 234.39999389648438,
                     "posY": -135.0,
                     "posZ": 91.0,
                     "scaleX": 124.70999908447266,
@@ -2951,28 +2932,28 @@
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_nyani",
                     "end": 389,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 404,
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_wakubwa",
                     "end": 1214,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1215,
                     "wordIdx": 2,
                     "audio": "audio_swahili_smdp_word_nyani",
                     "end": 1578,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1608,
                     "wordIdx": 3,
                     "audio": "audio_swahili_smdp_word_wadogo",
                     "end": 2428,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -3094,7 +3075,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -219.0,
+                    "posX": -186.8000030517578,
                     "posY": -110.0,
                     "posZ": 92.0,
                     "scaleX": 164.33999633789063,
@@ -3150,14 +3131,14 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -269.0,
+                    "posX": -234.8000030517578,
                     "posY": -42.29999923706055,
                     "posZ": 91.0,
                     "scaleX": 200.0,
                     "scaleY": 150.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
+                    "rotZ": 0.00001001791224553017,
                     "orderInLayer": 0,
                     "imageName": "12_long_stick-1",
                     "inText": false,
@@ -3170,14 +3151,14 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 63.0,
+                    "posX": 74.5999984741211,
                     "posY": -73.0,
                     "posZ": 89.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
+                    "rotZ": 0.00001001791224553017,
                     "orderInLayer": 0,
                     "imageName": "12_short_stick-1",
                     "inText": false,
@@ -3230,7 +3211,7 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": -61.0,
+                    "posX": -42.79999923706055,
                     "posY": -112.0,
                     "posZ": 92.0,
                     "scaleX": 164.33999633789063,
@@ -3250,7 +3231,7 @@
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": 89.0,
+                    "posX": 102.0999984741211,
                     "posY": -134.0,
                     "posZ": 92.0,
                     "scaleX": 124.70999908447266,
@@ -3270,7 +3251,7 @@
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": 225.0,
+                    "posX": 234.39999389648438,
                     "posY": -135.0,
                     "posZ": 91.0,
                     "scaleX": 124.70999908447266,
@@ -3290,14 +3271,14 @@
                 {
                     "id": 8,
                     "tag": "",
-                    "posX": -3.0,
+                    "posX": 11.199999809265137,
                     "posY": -42.29999923706055,
                     "posZ": 91.0,
                     "scaleX": 200.0,
                     "scaleY": 150.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
+                    "rotZ": 0.00001001791224553017,
                     "orderInLayer": 0,
                     "imageName": "11_long_stick-1",
                     "inText": false,
@@ -3310,14 +3291,14 @@
                 {
                     "id": 9,
                     "tag": "",
-                    "posX": 259.0,
+                    "posX": 265.92999267578127,
                     "posY": -73.0,
                     "posZ": 0.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
+                    "rotZ": 0.00001001791224553017,
                     "orderInLayer": 0,
                     "imageName": "11_short_stick-1",
                     "inText": false,
@@ -3344,28 +3325,28 @@
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_fimbo",
                     "end": 475,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 499,
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_fupi",
                     "end": 1318,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1317,
                     "wordIdx": 2,
                     "audio": "audio_swahili_smdp_word_fimbo",
                     "end": 1860,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1743,
                     "wordIdx": 3,
                     "audio": "audio_swahili_smdp_word_ndefu",
                     "end": 2637,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -3691,26 +3672,6 @@
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": -412.0,
-                    "posY": -85.0,
-                    "posZ": 91.0,
-                    "scaleX": 291.0,
-                    "scaleY": 291.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "9_tree_dark-1",
-                    "inText": false,
-                    "label": "short_dark_tree_left",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 8,
-                    "tag": "",
                     "posX": 200.0,
                     "posY": -91.30000305175781,
                     "posZ": 91.0,
@@ -3729,7 +3690,7 @@
                     "Animations": []
                 },
                 {
-                    "id": 9,
+                    "id": 8,
                     "tag": "",
                     "posX": -226.0,
                     "posY": -75.0,
@@ -3749,7 +3710,7 @@
                     "Animations": []
                 },
                 {
-                    "id": 10,
+                    "id": 9,
                     "tag": "",
                     "posX": 413.0,
                     "posY": -93.0,
@@ -3769,7 +3730,7 @@
                     "Animations": []
                 },
                 {
-                    "id": 11,
+                    "id": 10,
                     "tag": "",
                     "posX": -314.0,
                     "posY": -175.0,
@@ -3789,7 +3750,7 @@
                     "Animations": []
                 },
                 {
-                    "id": 12,
+                    "id": 11,
                     "tag": "",
                     "posX": 297.0,
                     "posY": -172.0,
@@ -3809,7 +3770,7 @@
                     "Animations": []
                 },
                 {
-                    "id": 13,
+                    "id": 12,
                     "tag": "",
                     "posX": -240.1999969482422,
                     "posY": -180.0,
@@ -3829,7 +3790,7 @@
                     "Animations": []
                 },
                 {
-                    "id": 14,
+                    "id": 13,
                     "tag": "",
                     "posX": 162.0,
                     "posY": -173.0,
@@ -3849,7 +3810,7 @@
                     "Animations": []
                 },
                 {
-                    "id": 15,
+                    "id": 14,
                     "tag": "",
                     "posX": -39.0,
                     "posY": -41.0,
@@ -3869,7 +3830,7 @@
                     "Animations": []
                 },
                 {
-                    "id": 16,
+                    "id": 15,
                     "tag": "",
                     "posX": -432.0,
                     "posY": -282.0,
@@ -3907,7 +3868,7 @@
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_msitu",
                     "end": 1207,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1206,
@@ -3921,7 +3882,7 @@
                     "wordIdx": 2,
                     "audio": "audio_swahili_smdp_word_msitu",
                     "end": 2588,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -3961,7 +3922,7 @@
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 15,
+                    "sceneObjectId": 14,
                     "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
@@ -3987,7 +3948,7 @@
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 9,
+                    "sceneObjectId": 7,
                     "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
@@ -4033,7 +3994,7 @@
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 16,
+                    "sceneObjectId": 15,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
                 },
@@ -4053,7 +4014,7 @@
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 16,
+                    "sceneObjectId": 15,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.0,\"y\":-199.0,\"z\":-2.0}}"
                 },
@@ -4173,14 +4134,14 @@
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_niende",
                     "end": 519,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 561,
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_wapi",
                     "end": 1410,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -4193,7 +4154,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 1,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -4213,7 +4174,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 1,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -4692,28 +4653,28 @@
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_meli",
                     "end": 1274,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1275,
                     "wordIdx": 2,
                     "audio": "audio_swahili_smdp_word_kubwa",
                     "end": 1911,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1912,
                     "wordIdx": 3,
                     "audio": "audio_swahili_smdp_word_meli",
                     "end": 2344,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 2348,
                     "wordIdx": 4,
                     "audio": "audio_swahili_smdp_word_ndogo",
                     "end": 3186,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -4797,7 +4758,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 }
             ]
         },
@@ -5003,7 +4964,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "Meli inaenda pole pole.",
+                    "text": "Meli inaenda pole pole.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -5056,16 +5017,9 @@
                 {
                     "start": 2955,
                     "wordIdx": 6,
-                    "audio": "audio_swahili_smdp_word_pole",
-                    "end": 3222,
-                    "starWord": "Yes"
-                },
-                {
-                    "start": 3225,
-                    "wordIdx": 7,
-                    "audio": "audio_swahili_smdp_word_pole",
+                    "audio": "audio_swahili_smdp_word_pole_pole",
                     "end": 3682,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -5130,32 +5084,8 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 6,
-                            "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 7,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-120.0,\"y\":-100.0,\"z\":91.0}}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 9,
-                    "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -5170,6 +5100,27 @@
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":2.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-120.0,\"y\":42.0,\"z\":92.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":0.0,\"Reset\":true,\"YoYo\":false,\"EndValues\":{\"x\":-120.0,\"y\":-100.0,\"z\":91.0}}"
                 }
             ]
         },
@@ -6542,14 +6493,14 @@
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_niende",
                     "end": 515,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 579,
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_wapi",
                     "end": 1410,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -6562,7 +6513,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 1,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -6582,7 +6533,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 1,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -7178,7 +7129,8 @@
                     "stanzaID": 0,
                     "type": 7,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -7980,7 +7932,7 @@
                     "wordIdx": 5,
                     "audio": "audio_swahili_smdp_word_usiku",
                     "end": 3946,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 3978,
