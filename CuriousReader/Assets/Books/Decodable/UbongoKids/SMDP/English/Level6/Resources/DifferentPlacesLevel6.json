@@ -1583,14 +1583,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "The big sun shines",
+                    "text": "The big sun shines and",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "and a small star sparkles.",
+                    "text": "a small star sparkles.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -3307,7 +3307,7 @@
                     "wordIdx": 2,
                     "audio": "audio_english_smdp_word_giraffe",
                     "end": 1078,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1089,
@@ -3321,7 +3321,7 @@
                     "wordIdx": 4,
                     "audio": "audio_english_smdp_word_eating",
                     "end": 1661,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 1677,
@@ -3356,7 +3356,7 @@
                     "wordIdx": 9,
                     "audio": "audio_english_smdp_word_tree",
                     "end": 3473,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -3432,11 +3432,6 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 8,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
                             "invokerID": 9,
                             "symmetricallyPaired": true
                         }
@@ -3445,8 +3440,8 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 5,
-                    "symmetricPairingId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.800000011920929}"
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
                 }
             ]
         },
@@ -6827,11 +6822,6 @@
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 4,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
                             "invokerID": 2,
                             "symmetricallyPaired": true
                         }
@@ -6840,7 +6830,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "symmetricPairingId": 2,
+                    "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_big_octopus_move_flap_legs\"}"
                 },
                 {
@@ -6858,11 +6848,6 @@
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 11,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
                             "invokerID": 9,
                             "symmetricallyPaired": true
                         }
@@ -6871,7 +6856,7 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "symmetricPairingId": 2,
+                    "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"17_small_octopus_move_flap_legs\"}"
                 },
                 {
@@ -9374,7 +9359,7 @@
                     "Animations": []
                 },
                 {
-                    "id": 20,
+                    "id": 21,
                     "tag": "",
                     "posX": -35.0,
                     "posY": 23.6200008392334,
@@ -9396,7 +9381,7 @@
                     ]
                 },
                 {
-                    "id": 21,
+                    "id": 22,
                     "tag": "",
                     "posX": 129.0,
                     "posY": 10.0,
@@ -9418,7 +9403,7 @@
                     ]
                 },
                 {
-                    "id": 22,
+                    "id": 23,
                     "tag": "",
                     "posX": -193.39999389648438,
                     "posY": -134.6199951171875,
