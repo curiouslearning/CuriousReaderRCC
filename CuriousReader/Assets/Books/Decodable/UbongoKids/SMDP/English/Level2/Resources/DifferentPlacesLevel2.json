@@ -851,7 +851,7 @@
                 {
                     "start": 300,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1.mp3",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 420,
                     "starWord": "No"
                 },
@@ -872,7 +872,7 @@
                 {
                     "start": 1593,
                     "wordIdx": 3,
-                    "audio": "audio_english_smdp_word_a_1.mp3",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 1684,
                     "starWord": "No"
                 },
@@ -1214,7 +1214,8 @@
                     "stanzaID": 0,
                     "type": 7,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
@@ -1462,7 +1463,7 @@
                 {
                     "start": 276,
                     "wordIdx": 0,
-                    "audio": "audio_english_smdp_word_a_1.mp3",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 390,
                     "starWord": "No"
                 },
@@ -1483,7 +1484,7 @@
                 {
                     "start": 1682,
                     "wordIdx": 3,
-                    "audio": "audio_english_smdp_word_a_1.mp3",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 1809,
                     "starWord": "No"
                 },
@@ -2816,7 +2817,7 @@
                 {
                     "start": 924,
                     "wordIdx": 1,
-                    "audio": "audio_english_smdp_word_a_1.mp3",
+                    "audio": "audio_english_smdp_word_a_2",
                     "end": 1077,
                     "starWord": "No"
                 },
