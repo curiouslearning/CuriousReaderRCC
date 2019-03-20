@@ -67,7 +67,7 @@
                     "tag": "",
                     "posX": -156.0,
                     "posY": -17.469999313354493,
-                    "posZ": 0.0,
+                    "posZ": 95.0,
                     "scaleX": 800.0,
                     "scaleY": 800.0,
                     "rotX": 0.0,
@@ -620,7 +620,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
                 },
                 {
                     "stanzaID": 0,
@@ -2556,7 +2556,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 9,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -2582,7 +2582,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 9,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -2608,7 +2608,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 9,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -7062,7 +7062,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
-                    "prompts": [],
+                    "prompts": [
+                        1
+                    ],
                     "invokers": [
                         {
                             "invokerType": 0,
@@ -7080,7 +7082,9 @@
                 {
                     "stanzaID": 0,
                     "type": 8,
-                    "prompts": [],
+                    "prompts": [
+                        1
+                    ],
                     "invokers": [
                         {
                             "invokerType": 0,
