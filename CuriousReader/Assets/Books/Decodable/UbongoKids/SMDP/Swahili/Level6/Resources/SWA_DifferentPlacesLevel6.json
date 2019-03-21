@@ -128,89 +128,82 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, anga! Kuna vitu tofauti angani, wakati wa usiku na mchana.",
+                    "text": "Oh, anga! Mawingu wakati wa mchana. Nyota wakati wa usiku.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_0",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_0_6",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 536,
+                    "end": 519,
                     "starWord": "No"
                 },
                 {
-                    "start": 536,
+                    "start": 519,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1072,
+                    "end": 1038,
                     "starWord": "No"
                 },
                 {
-                    "start": 1073,
+                    "start": 1039,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1609,
+                    "end": 1558,
                     "starWord": "No"
                 },
                 {
-                    "start": 1610,
+                    "start": 1559,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2146,
+                    "end": 2078,
                     "starWord": "No"
                 },
                 {
-                    "start": 2146,
+                    "start": 2079,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2682,
+                    "end": 2598,
                     "starWord": "No"
                 },
                 {
-                    "start": 2683,
+                    "start": 2599,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3219,
+                    "end": 3118,
                     "starWord": "No"
                 },
                 {
-                    "start": 3220,
+                    "start": 3118,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3756,
+                    "end": 3637,
                     "starWord": "No"
                 },
                 {
-                    "start": 3757,
+                    "start": 3638,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 4293,
+                    "end": 4157,
                     "starWord": "No"
                 },
                 {
-                    "start": 4293,
+                    "start": 4158,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 4829,
+                    "end": 4677,
                     "starWord": "No"
                 },
                 {
-                    "start": 4830,
+                    "start": 4678,
                     "wordIdx": 9,
                     "audio": "",
-                    "end": 5366,
-                    "starWord": "No"
-                },
-                {
-                    "start": 5367,
-                    "wordIdx": 10,
-                    "audio": "",
-                    "end": 5903,
+                    "end": 5197,
                     "starWord": "No"
                 }
             ],
@@ -289,54 +282,75 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna wingu kubwa. Kuna wingu dogo.",
+                    "text": "Wingu kubwa la mvua na wingu dogo la kupendeza.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_1",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_1",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 553,
+                    "end": 409,
                     "starWord": "No"
                 },
                 {
-                    "start": 553,
+                    "start": 409,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1106,
+                    "end": 818,
                     "starWord": "No"
                 },
                 {
-                    "start": 1106,
+                    "start": 818,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1659,
+                    "end": 1227,
                     "starWord": "No"
                 },
                 {
-                    "start": 1659,
+                    "start": 1227,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2212,
+                    "end": 1636,
                     "starWord": "No"
                 },
                 {
-                    "start": 2212,
+                    "start": 1636,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2765,
+                    "end": 2045,
                     "starWord": "No"
                 },
                 {
-                    "start": 2765,
+                    "start": 2046,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3318,
+                    "end": 2455,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2455,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 2864,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2864,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 3273,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3273,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 3682,
                     "starWord": "No"
                 }
             ],
@@ -419,54 +433,61 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna ndege mkubwa. Kuna ndege mdogo.",
+                    "text": "Ndege mkubwa anayepaa na ndege mdogo anayepaa.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_2",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_2",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 509,
+                    "end": 563,
                     "starWord": "No"
                 },
                 {
-                    "start": 509,
+                    "start": 563,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1018,
+                    "end": 1126,
                     "starWord": "No"
                 },
                 {
-                    "start": 1018,
+                    "start": 1126,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1527,
+                    "end": 1689,
                     "starWord": "No"
                 },
                 {
-                    "start": 1528,
+                    "start": 1690,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2037,
+                    "end": 2253,
                     "starWord": "No"
                 },
                 {
-                    "start": 2037,
+                    "start": 2253,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2546,
+                    "end": 2816,
                     "starWord": "No"
                 },
                 {
-                    "start": 2546,
+                    "start": 2817,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3055,
+                    "end": 3380,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3380,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 3943,
                     "starWord": "No"
                 }
             ],
@@ -633,54 +654,54 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna ndege anayepaa. Kuna ndege anayeimba.",
+                    "text": "Ndege mkubwa anayepaa. Ndege mdogo anayeimba.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_3",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 531,
+                    "end": 657,
                     "starWord": "No"
                 },
                 {
-                    "start": 531,
+                    "start": 657,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1062,
+                    "end": 1314,
                     "starWord": "No"
                 },
                 {
-                    "start": 1062,
+                    "start": 1314,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1593,
+                    "end": 1971,
                     "starWord": "No"
                 },
                 {
-                    "start": 1593,
+                    "start": 1972,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2124,
+                    "end": 2629,
                     "starWord": "No"
                 },
                 {
-                    "start": 2124,
+                    "start": 2629,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2655,
+                    "end": 3286,
                     "starWord": "No"
                 },
                 {
-                    "start": 2655,
+                    "start": 3286,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3186,
+                    "end": 3943,
                     "starWord": "No"
                 }
             ],
@@ -822,54 +843,47 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna jua kubwa. Kuna nyota ndogo.",
+                    "text": "Jua kubwa na nyota ndogo.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_4",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_4",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 426,
+                    "end": 538,
                     "starWord": "No"
                 },
                 {
-                    "start": 426,
+                    "start": 538,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 852,
+                    "end": 1076,
                     "starWord": "No"
                 },
                 {
-                    "start": 853,
+                    "start": 1076,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1279,
+                    "end": 1614,
                     "starWord": "No"
                 },
                 {
-                    "start": 1280,
+                    "start": 1614,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1706,
+                    "end": 2152,
                     "starWord": "No"
                 },
                 {
-                    "start": 1706,
+                    "start": 2152,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2132,
-                    "starWord": "No"
-                },
-                {
-                    "start": 2133,
-                    "wordIdx": 5,
-                    "audio": "",
-                    "end": 2559,
+                    "end": 2690,
                     "starWord": "No"
                 }
             ],
@@ -1054,54 +1068,47 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna jua linawaka. Kuna nyota inang’aa.",
+                    "text": "Jua linawaka na nyota inang’aa.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_5",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_5",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 531,
+                    "end": 611,
                     "starWord": "No"
                 },
                 {
-                    "start": 531,
+                    "start": 611,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1062,
+                    "end": 1222,
                     "starWord": "No"
                 },
                 {
-                    "start": 1062,
+                    "start": 1222,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1593,
+                    "end": 1833,
                     "starWord": "No"
                 },
                 {
-                    "start": 1593,
+                    "start": 1833,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2124,
+                    "end": 2444,
                     "starWord": "No"
                 },
                 {
-                    "start": 2124,
+                    "start": 2444,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2655,
-                    "starWord": "No"
-                },
-                {
-                    "start": 2655,
-                    "wordIdx": 5,
-                    "audio": "",
-                    "end": 3186,
+                    "end": 3055,
                     "starWord": "No"
                 }
             ],
@@ -1291,75 +1298,82 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, anga! Kuna vitu tofauti angani, mchana na usiku.",
+                    "text": "Oh, anga! Mawingu wakati wa mchana. Nyota wakati wa usiku.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_6",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_0_6",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 566,
+                    "end": 519,
                     "starWord": "No"
                 },
                 {
-                    "start": 566,
+                    "start": 519,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1132,
+                    "end": 1038,
                     "starWord": "No"
                 },
                 {
-                    "start": 1132,
+                    "start": 1039,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1698,
+                    "end": 1558,
                     "starWord": "No"
                 },
                 {
-                    "start": 1698,
+                    "start": 1559,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2264,
+                    "end": 2078,
                     "starWord": "No"
                 },
                 {
-                    "start": 2264,
+                    "start": 2079,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2830,
+                    "end": 2598,
                     "starWord": "No"
                 },
                 {
-                    "start": 2830,
+                    "start": 2599,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3396,
+                    "end": 3118,
                     "starWord": "No"
                 },
                 {
-                    "start": 3396,
+                    "start": 3118,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3962,
+                    "end": 3637,
                     "starWord": "No"
                 },
                 {
-                    "start": 3962,
+                    "start": 3638,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 4528,
+                    "end": 4157,
                     "starWord": "No"
                 },
                 {
-                    "start": 4528,
+                    "start": 4158,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 5094,
+                    "end": 4677,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4678,
+                    "wordIdx": 9,
+                    "audio": "",
+                    "end": 5197,
                     "starWord": "No"
                 }
             ],
@@ -1444,7 +1458,7 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_7_13_20",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_7_13_20",
             "timestamps": [
                 {
                     "start": 0,
@@ -1759,54 +1773,75 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, msitu! Kuna vitu tofauti msituni.",
+                    "text": "Oh, msitu! Msitu mzuri! Kuna vitu vingi tofauti msituni.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_8",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_8_12",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 613,
+                    "end": 748,
                     "starWord": "No"
                 },
                 {
-                    "start": 613,
+                    "start": 748,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1226,
+                    "end": 1496,
                     "starWord": "No"
                 },
                 {
-                    "start": 1227,
+                    "start": 1497,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1840,
+                    "end": 2245,
                     "starWord": "No"
                 },
                 {
-                    "start": 1841,
+                    "start": 2246,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2454,
+                    "end": 2994,
                     "starWord": "No"
                 },
                 {
-                    "start": 2455,
+                    "start": 2995,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3068,
+                    "end": 3743,
                     "starWord": "No"
                 },
                 {
-                    "start": 3069,
+                    "start": 3744,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3682,
+                    "end": 4492,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4493,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 5241,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5242,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 5990,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5991,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 6739,
                     "starWord": "No"
                 }
             ],
@@ -1946,61 +1981,68 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna twiga mrefu. Anakula katika mti mfupi!",
+                    "text": "Kuna twiga mrefu anakula majani ya mti mfupi!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_9",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_9",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 526,
+                    "end": 450,
                     "starWord": "No"
                 },
                 {
-                    "start": 526,
+                    "start": 450,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1052,
+                    "end": 900,
                     "starWord": "No"
                 },
                 {
-                    "start": 1052,
+                    "start": 901,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1578,
+                    "end": 1351,
                     "starWord": "No"
                 },
                 {
-                    "start": 1578,
+                    "start": 1351,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2104,
+                    "end": 1801,
                     "starWord": "No"
                 },
                 {
-                    "start": 2104,
+                    "start": 1802,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2630,
+                    "end": 2252,
                     "starWord": "No"
                 },
                 {
-                    "start": 2630,
+                    "start": 2253,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3156,
+                    "end": 2703,
                     "starWord": "No"
                 },
                 {
-                    "start": 3156,
+                    "start": 2703,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3682,
+                    "end": 3153,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3154,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 3604,
                     "starWord": "No"
                 }
             ],
@@ -2139,54 +2181,40 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna nyani wakubwa. Kuna nyani wadogo.",
+                    "text": "Nyani wakubwa na wadogo...",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_10",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_10",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 531,
+                    "end": 672,
                     "starWord": "No"
                 },
                 {
-                    "start": 531,
+                    "start": 672,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1062,
+                    "end": 1344,
                     "starWord": "No"
                 },
                 {
-                    "start": 1062,
+                    "start": 1345,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1593,
+                    "end": 2017,
                     "starWord": "No"
                 },
                 {
-                    "start": 1593,
+                    "start": 2018,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2124,
-                    "starWord": "No"
-                },
-                {
-                    "start": 2124,
-                    "wordIdx": 4,
-                    "audio": "",
-                    "end": 2655,
-                    "starWord": "No"
-                },
-                {
-                    "start": 2655,
-                    "wordIdx": 5,
-                    "audio": "",
-                    "end": 3186,
+                    "end": 2690,
                     "starWord": "No"
                 }
             ],
@@ -2441,54 +2469,54 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Wanacheza na fimbo ndefu na fupi.",
+                    "text": "… wanaocheza na fimbo ndefu na fupi.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_11",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_11",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 505,
+                    "end": 544,
                     "starWord": "No"
                 },
                 {
-                    "start": 505,
+                    "start": 544,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1010,
+                    "end": 1088,
                     "starWord": "No"
                 },
                 {
-                    "start": 1010,
+                    "start": 1088,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1515,
+                    "end": 1632,
                     "starWord": "No"
                 },
                 {
-                    "start": 1515,
+                    "start": 1632,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2020,
+                    "end": 2176,
                     "starWord": "No"
                 },
                 {
-                    "start": 2020,
+                    "start": 2176,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2525,
+                    "end": 2720,
                     "starWord": "No"
                 },
                 {
-                    "start": 2525,
+                    "start": 2720,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3030,
+                    "end": 3264,
                     "starWord": "No"
                 }
             ],
@@ -2853,54 +2881,75 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, msitu! Kuna vitu tofauti msituni.",
+                    "text": "Oh, msitu! Msitu mzuri! Kuna vitu vingi tofauti msituni.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_12",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_8_12",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 613,
+                    "end": 748,
                     "starWord": "No"
                 },
                 {
-                    "start": 613,
+                    "start": 748,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1226,
+                    "end": 1496,
                     "starWord": "No"
                 },
                 {
-                    "start": 1227,
+                    "start": 1497,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1840,
+                    "end": 2245,
                     "starWord": "No"
                 },
                 {
-                    "start": 1841,
+                    "start": 2246,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2454,
+                    "end": 2994,
                     "starWord": "No"
                 },
                 {
-                    "start": 2455,
+                    "start": 2995,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3068,
+                    "end": 3743,
                     "starWord": "No"
                 },
                 {
-                    "start": 3069,
+                    "start": 3744,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3682,
+                    "end": 4492,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4493,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 5241,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5242,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 5990,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5991,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 6739,
                     "starWord": "No"
                 }
             ],
@@ -2910,7 +2959,7 @@
             "pageNumber": 13,
             "script": "GSManager",
             "audio": {
-                "audioName": "audio_swahili_smdp_4_stanza_page_7_13_20",
+                "audioName": "",
                 "isAnim": false,
                 "objectId": 0
             },
@@ -2985,7 +3034,7 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_7_13_20",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_7_13_20",
             "timestamps": [
                 {
                     "start": 0,
@@ -3152,54 +3201,96 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, bahari! Kuna vitu tofauti baharini.",
+                    "text": "Oh, bahari! Ina maji safi ya bluu. Kuna vitu vingi tofauti baharini.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_14",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_14",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 627,
+                    "end": 557,
                     "starWord": "No"
                 },
                 {
-                    "start": 627,
+                    "start": 557,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1254,
+                    "end": 1114,
                     "starWord": "No"
                 },
                 {
-                    "start": 1254,
+                    "start": 1114,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1881,
+                    "end": 1671,
                     "starWord": "No"
                 },
                 {
-                    "start": 1881,
+                    "start": 1671,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2508,
+                    "end": 2228,
                     "starWord": "No"
                 },
                 {
-                    "start": 2508,
+                    "start": 2229,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3135,
+                    "end": 2786,
                     "starWord": "No"
                 },
                 {
-                    "start": 3135,
+                    "start": 2786,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3762,
+                    "end": 3343,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3343,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 3900,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3900,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 4457,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4458,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 5015,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5015,
+                    "wordIdx": 9,
+                    "audio": "",
+                    "end": 5572,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5572,
+                    "wordIdx": 10,
+                    "audio": "",
+                    "end": 6129,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6129,
+                    "wordIdx": 11,
+                    "audio": "",
+                    "end": 6686,
                     "starWord": "No"
                 }
             ],
@@ -3401,54 +3492,54 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna meli kubwa. Kuna meli ndogo.",
+                    "text": "Kuna meli kubwa na meli ndogo.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_15",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_15",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 474,
+                    "end": 487,
                     "starWord": "No"
                 },
                 {
-                    "start": 474,
+                    "start": 487,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 948,
+                    "end": 974,
                     "starWord": "No"
                 },
                 {
-                    "start": 949,
+                    "start": 975,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1423,
+                    "end": 1462,
                     "starWord": "No"
                 },
                 {
-                    "start": 1423,
+                    "start": 1463,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1897,
+                    "end": 1950,
                     "starWord": "No"
                 },
                 {
-                    "start": 1898,
+                    "start": 1950,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2372,
+                    "end": 2437,
                     "starWord": "No"
                 },
                 {
-                    "start": 2372,
+                    "start": 2438,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 2846,
+                    "end": 2925,
                     "starWord": "No"
                 }
             ],
@@ -3649,66 +3740,73 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna meli inayoenda kasi. Kuna meli inayoenda pole pole.",
+                    "text": "Kuna meli inayoenda kwa kasi na meli inayoenda pole pole.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_16",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_16",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 538,
+                    "end": 478,
                     "starWord": "No"
                 },
                 {
-                    "start": 538,
+                    "start": 478,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1076,
+                    "end": 956,
                     "starWord": "No"
                 },
                 {
-                    "start": 1077,
+                    "start": 957,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1615,
+                    "end": 1435,
                     "starWord": "No"
                 },
                 {
-                    "start": 1616,
+                    "start": 1436,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2154,
+                    "end": 1914,
                     "starWord": "No"
                 },
                 {
-                    "start": 2155,
+                    "start": 1915,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2693,
+                    "end": 2393,
                     "starWord": "No"
                 },
                 {
-                    "start": 2693,
+                    "start": 2394,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3231,
+                    "end": 2872,
                     "starWord": "No"
                 },
                 {
-                    "start": 3232,
+                    "start": 2873,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3770,
+                    "end": 3351,
                     "starWord": "No"
                 },
                 {
-                    "start": 3771,
+                    "start": 3352,
                     "wordIdx": 7,
+                    "audio": "",
+                    "end": 3830,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3831,
+                    "wordIdx": 8,
                     "audio": "",
                     "end": 4309,
                     "starWord": "No"
@@ -3873,75 +3971,82 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna samaki mwenye furaha anacheza. Kuna samaki mwenye huzuni.",
+                    "text": "Kuna samaki mwenye furaha anacheza na samaki mwenye huzuni anaogelea.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_17",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_17",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 507,
+                    "end": 530,
                     "starWord": "No"
                 },
                 {
-                    "start": 507,
+                    "start": 530,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1014,
+                    "end": 1060,
                     "starWord": "No"
                 },
                 {
-                    "start": 1015,
+                    "start": 1060,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1522,
+                    "end": 1590,
                     "starWord": "No"
                 },
                 {
-                    "start": 1523,
+                    "start": 1590,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2030,
+                    "end": 2120,
                     "starWord": "No"
                 },
                 {
-                    "start": 2031,
+                    "start": 2121,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2538,
+                    "end": 2651,
                     "starWord": "No"
                 },
                 {
-                    "start": 2539,
+                    "start": 2651,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3046,
+                    "end": 3181,
                     "starWord": "No"
                 },
                 {
-                    "start": 3047,
+                    "start": 3181,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3554,
+                    "end": 3711,
                     "starWord": "No"
                 },
                 {
-                    "start": 3555,
+                    "start": 3712,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 4062,
+                    "end": 4242,
                     "starWord": "No"
                 },
                 {
-                    "start": 4063,
+                    "start": 4242,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 4570,
+                    "end": 4772,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4772,
+                    "wordIdx": 9,
+                    "audio": "",
+                    "end": 5302,
                     "starWord": "No"
                 }
             ],
@@ -4196,82 +4301,89 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Pweza mkubwa ana miguu mirefu. Pweza mdogo ana miguu mifupi.",
+                    "text": "Pweza mkubwa ana miguu mirefu na pweza mdogo ana miguu mifupi.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_18",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_18",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 480,
+                    "end": 444,
                     "starWord": "No"
                 },
                 {
-                    "start": 480,
+                    "start": 444,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 960,
+                    "end": 888,
                     "starWord": "No"
                 },
                 {
-                    "start": 961,
+                    "start": 888,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1441,
+                    "end": 1332,
                     "starWord": "No"
                 },
                 {
-                    "start": 1442,
+                    "start": 1332,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1922,
+                    "end": 1776,
                     "starWord": "No"
                 },
                 {
-                    "start": 1922,
+                    "start": 1776,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2402,
+                    "end": 2220,
                     "starWord": "No"
                 },
                 {
-                    "start": 2403,
+                    "start": 2220,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 2883,
+                    "end": 2664,
                     "starWord": "No"
                 },
                 {
-                    "start": 2884,
+                    "start": 2664,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3364,
+                    "end": 3108,
                     "starWord": "No"
                 },
                 {
-                    "start": 3364,
+                    "start": 3108,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 3844,
+                    "end": 3552,
                     "starWord": "No"
                 },
                 {
-                    "start": 3845,
+                    "start": 3552,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 4325,
+                    "end": 3996,
                     "starWord": "No"
                 },
                 {
-                    "start": 4326,
+                    "start": 3996,
                     "wordIdx": 9,
                     "audio": "",
-                    "end": 4806,
+                    "end": 4440,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4440,
+                    "wordIdx": 10,
+                    "audio": "",
+                    "end": 4884,
                     "starWord": "No"
                 }
             ],
@@ -4706,54 +4818,96 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, bahari! Kuna vitu tofauti baharini.",
+                    "text": "Oh, bahari! Ina maji safi ya bluu. Kuna vitu vingi tofauti baharini.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_14_19",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_14_19",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 627,
+                    "end": 557,
                     "starWord": "No"
                 },
                 {
-                    "start": 627,
+                    "start": 557,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1254,
+                    "end": 1114,
                     "starWord": "No"
                 },
                 {
-                    "start": 1254,
+                    "start": 1114,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1881,
+                    "end": 1671,
                     "starWord": "No"
                 },
                 {
-                    "start": 1881,
+                    "start": 1671,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2508,
+                    "end": 2228,
                     "starWord": "No"
                 },
                 {
-                    "start": 2508,
+                    "start": 2229,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3135,
+                    "end": 2786,
                     "starWord": "No"
                 },
                 {
-                    "start": 3135,
+                    "start": 2786,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3762,
+                    "end": 3343,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3343,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 3900,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3900,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 4457,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4458,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 5015,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5015,
+                    "wordIdx": 9,
+                    "audio": "",
+                    "end": 5572,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5572,
+                    "wordIdx": 10,
+                    "audio": "",
+                    "end": 6129,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6129,
+                    "wordIdx": 11,
+                    "audio": "",
+                    "end": 6686,
                     "starWord": "No"
                 }
             ],
@@ -4763,7 +4917,7 @@
             "pageNumber": 20,
             "script": "GSManager",
             "audio": {
-                "audioName": "audio_swahili_smdp_4_stanza_page_7_13_20",
+                "audioName": "",
                 "isAnim": false,
                 "objectId": 0
             },
@@ -4838,7 +4992,7 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_7_13_20",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_7_13_20",
             "timestamps": [
                 {
                     "start": 0,
@@ -5213,61 +5367,68 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Nyumbani! Napapenda nyumbani. Kuna vitu vingi nyumbani.",
+                    "text": "Nyumbani, napapenda nyumbani. Kuna vitu vingi ninavyovipenda nyumbani.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_21",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_21",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 600,
+                    "end": 662,
                     "starWord": "No"
                 },
                 {
-                    "start": 600,
+                    "start": 662,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1200,
+                    "end": 1324,
                     "starWord": "No"
                 },
                 {
-                    "start": 1201,
+                    "start": 1325,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1801,
+                    "end": 1987,
                     "starWord": "No"
                 },
                 {
-                    "start": 1802,
+                    "start": 1988,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2402,
+                    "end": 2650,
                     "starWord": "No"
                 },
                 {
-                    "start": 2403,
+                    "start": 2651,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3003,
+                    "end": 3313,
                     "starWord": "No"
                 },
                 {
-                    "start": 3004,
+                    "start": 3314,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3604,
+                    "end": 3976,
                     "starWord": "No"
                 },
                 {
-                    "start": 3605,
+                    "start": 3977,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 4205,
+                    "end": 4639,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4640,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 5302,
                     "starWord": "No"
                 }
             ],
@@ -5368,68 +5529,89 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna sahani ya chakula. Niko tayari kwa kula.",
+                    "text": "Kuna sahani iliyojaa chakula. Ninakaa kwenye kigoda! Niko tayari kwa kula.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_22",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_22",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 414,
+                    "end": 586,
                     "starWord": "No"
                 },
                 {
-                    "start": 414,
+                    "start": 586,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 828,
+                    "end": 1172,
                     "starWord": "No"
                 },
                 {
-                    "start": 829,
+                    "start": 1173,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1243,
+                    "end": 1759,
                     "starWord": "No"
                 },
                 {
-                    "start": 1244,
+                    "start": 1759,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1658,
+                    "end": 2345,
                     "starWord": "No"
                 },
                 {
-                    "start": 1659,
+                    "start": 2346,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2073,
+                    "end": 2932,
                     "starWord": "No"
                 },
                 {
-                    "start": 2073,
+                    "start": 2932,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 2487,
+                    "end": 3518,
                     "starWord": "No"
                 },
                 {
-                    "start": 2488,
+                    "start": 3519,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 2902,
+                    "end": 4105,
                     "starWord": "No"
                 },
                 {
-                    "start": 2903,
+                    "start": 4105,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 3317,
+                    "end": 4691,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4692,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 5278,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5278,
+                    "wordIdx": 9,
+                    "audio": "",
+                    "end": 5864,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5865,
+                    "wordIdx": 10,
+                    "audio": "",
+                    "end": 6451,
                     "starWord": "No"
                 }
             ],
@@ -5530,40 +5712,47 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Tamu! Sasa nina furaha!",
+                    "text": "Tamu! Sasa ninafurahi na kucheza!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_23",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_23",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 705,
+                    "end": 663,
                     "starWord": "No"
                 },
                 {
-                    "start": 705,
+                    "start": 663,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1410,
+                    "end": 1326,
                     "starWord": "No"
                 },
                 {
-                    "start": 1410,
+                    "start": 1327,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 2115,
+                    "end": 1990,
                     "starWord": "No"
                 },
                 {
-                    "start": 2115,
+                    "start": 1990,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2820,
+                    "end": 2653,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2654,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3317,
                     "starWord": "No"
                 }
             ],
@@ -6129,89 +6318,117 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Ninataka kutembea sehemu tofauti. Nione vitu vingi tofauti! Usiku na mchana!",
+                    "text": "Ninataka kutembea sehemu tofauti, nione vitu vingi tofauti, wakati wa usiku na wakati wa mchana.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_24",
+            "audioFile": "audio_swahili_smdp_6_stanza_page_24",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 550,
+                    "end": 520,
                     "starWord": "No"
                 },
                 {
-                    "start": 550,
+                    "start": 520,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1100,
+                    "end": 1040,
                     "starWord": "No"
                 },
                 {
-                    "start": 1101,
+                    "start": 1041,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1651,
+                    "end": 1561,
                     "starWord": "No"
                 },
                 {
-                    "start": 1652,
+                    "start": 1562,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2202,
+                    "end": 2082,
                     "starWord": "No"
                 },
                 {
-                    "start": 2203,
+                    "start": 2082,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2753,
+                    "end": 2602,
                     "starWord": "No"
                 },
                 {
-                    "start": 2754,
+                    "start": 2603,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3304,
+                    "end": 3123,
                     "starWord": "No"
                 },
                 {
-                    "start": 3305,
+                    "start": 3124,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3855,
+                    "end": 3644,
                     "starWord": "No"
                 },
                 {
-                    "start": 3856,
+                    "start": 3645,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 4406,
+                    "end": 4165,
                     "starWord": "No"
                 },
                 {
-                    "start": 4407,
+                    "start": 4165,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 4957,
+                    "end": 4685,
                     "starWord": "No"
                 },
                 {
-                    "start": 4958,
+                    "start": 4686,
                     "wordIdx": 9,
                     "audio": "",
-                    "end": 5508,
+                    "end": 5206,
                     "starWord": "No"
                 },
                 {
-                    "start": 5509,
+                    "start": 5207,
                     "wordIdx": 10,
                     "audio": "",
-                    "end": 6059,
+                    "end": 5727,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5728,
+                    "wordIdx": 11,
+                    "audio": "",
+                    "end": 6248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6248,
+                    "wordIdx": 12,
+                    "audio": "",
+                    "end": 6768,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6769,
+                    "wordIdx": 13,
+                    "audio": "",
+                    "end": 7289,
+                    "starWord": "No"
+                },
+                {
+                    "start": 7290,
+                    "wordIdx": 14,
+                    "audio": "",
+                    "end": 7810,
                     "starWord": "No"
                 }
             ],
