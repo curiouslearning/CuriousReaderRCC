@@ -2268,8 +2268,8 @@
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": -30.0,
-                    "posY": -127.0,
+                    "posX": -199.0,
+                    "posY": -138.0,
                     "posZ": 94.0,
                     "scaleX": 203.0,
                     "scaleY": 203.0,
@@ -2384,28 +2384,6 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
-                },
-                {
-                    "id": 12,
-                    "tag": "",
-                    "posX": -432.0,
-                    "posY": -282.0,
-                    "posZ": -2.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 5,
-                    "imageName": "1_Akili_wave-1",
-                    "inText": false,
-                    "label": "Akili Wave",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "1_akili_wave"
-                    ]
                 }
             ],
             "texts": [
@@ -2462,7 +2440,164 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 10,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 11,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 9,
@@ -2477,7 +2612,7 @@
                     "id": 0,
                     "tag": "",
                     "posX": -112.9000015258789,
-                    "posY": -186.6999969482422,
+                    "posY": -197.0,
                     "posZ": 0.0,
                     "scaleX": 583.0,
                     "scaleY": 583.0,
@@ -2577,18 +2712,138 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": -434.0,
-                    "posY": 5.0,
-                    "posZ": 95.0,
-                    "scaleX": 712.0,
-                    "scaleY": 712.0,
+                    "posX": -273.79998779296877,
+                    "posY": -103.4000015258789,
+                    "posZ": 91.0,
+                    "scaleX": 254.34812927246095,
+                    "scaleY": 254.34812927246095,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "10_short_and_tall_tree-1",
+                    "imageName": "9_tree_dark-1",
                     "inText": false,
-                    "label": "short_tall_tree",
+                    "label": "short_dark_tree_left",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": -234.39999389648438,
+                    "posY": -66.5,
+                    "posZ": 92.0,
+                    "scaleX": 301.0,
+                    "scaleY": 426.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "9_tree_light-1",
+                    "inText": false,
+                    "label": "light_tree_left",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": -287.3999938964844,
+                    "posY": -14.199999809265137,
+                    "posZ": 95.0,
+                    "scaleX": 357.010009765625,
+                    "scaleY": 357.010009765625,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "9_tall_tree_dark-1",
+                    "inText": false,
+                    "label": "tall_dark_tree_left",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 122.69999694824219,
+                    "posY": -96.19999694824219,
+                    "posZ": 91.0,
+                    "scaleX": 254.0,
+                    "scaleY": 254.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "9_tree_dark-1",
+                    "inText": false,
+                    "label": "short_dark_tree_right",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 7,
+                    "tag": "",
+                    "posX": 302.8999938964844,
+                    "posY": -7.099999904632568,
+                    "posZ": 95.0,
+                    "scaleX": 357.0,
+                    "scaleY": 357.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "9_tall_tree_dark-1",
+                    "inText": false,
+                    "label": "tall_dark_tree_right",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 8,
+                    "tag": "",
+                    "posX": 264.1000061035156,
+                    "posY": -66.5,
+                    "posZ": 92.0,
+                    "scaleX": 301.6166076660156,
+                    "scaleY": 426.033447265625,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "9_tree_light-1",
+                    "inText": false,
+                    "label": "light_tree_right",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 8,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -191.0,
+                    "posZ": 97.0,
+                    "scaleX": 661.0,
+                    "scaleY": 856.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "10_ground-1",
+                    "inText": false,
+                    "label": "ground",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -2656,7 +2911,91 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up_small\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"10_giraffe_stand_up\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 10,
@@ -2670,7 +3009,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -219.0,
+                    "posX": -186.8000030517578,
                     "posY": -110.0,
                     "posZ": 91.0,
                     "scaleX": 164.33999633789063,
@@ -2690,7 +3029,7 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 89.0,
+                    "posX": 102.0999984741211,
                     "posY": -134.0,
                     "posZ": 91.0,
                     "scaleX": 124.70999908447266,
@@ -2750,7 +3089,7 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": -61.0,
+                    "posX": -42.79999923706055,
                     "posY": -112.0,
                     "posZ": 91.0,
                     "scaleX": 164.52999877929688,
@@ -2770,7 +3109,7 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": 225.0,
+                    "posX": 234.39999389648438,
                     "posY": -135.0,
                     "posZ": 91.0,
                     "scaleX": 124.70999908447266,
@@ -2842,7 +3181,112 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":0.75}"
+                }
+            ]
         },
         {
             "pageNumber": 11,
@@ -2856,7 +3300,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -219.0,
+                    "posX": -186.8000030517578,
                     "posY": -110.0,
                     "posZ": 92.0,
                     "scaleX": 164.33999633789063,
@@ -2912,14 +3356,14 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -269.0,
+                    "posX": -234.8000030517578,
                     "posY": -42.29999923706055,
                     "posZ": 91.0,
                     "scaleX": 200.0,
                     "scaleY": 150.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
+                    "rotZ": 0.00001001791224553017,
                     "orderInLayer": 0,
                     "imageName": "12_long_stick-1",
                     "inText": false,
@@ -2932,14 +3376,14 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 63.0,
+                    "posX": 74.5999984741211,
                     "posY": -73.0,
                     "posZ": 89.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
+                    "rotZ": 0.00001001791224553017,
                     "orderInLayer": 0,
                     "imageName": "12_short_stick-1",
                     "inText": false,
@@ -2992,7 +3436,7 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": -61.0,
+                    "posX": -42.79999923706055,
                     "posY": -112.0,
                     "posZ": 92.0,
                     "scaleX": 164.33999633789063,
@@ -3012,7 +3456,7 @@
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": 89.0,
+                    "posX": 102.0999984741211,
                     "posY": -134.0,
                     "posZ": 92.0,
                     "scaleX": 124.70999908447266,
@@ -3032,7 +3476,7 @@
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": 225.0,
+                    "posX": 234.39999389648438,
                     "posY": -135.0,
                     "posZ": 91.0,
                     "scaleX": 124.70999908447266,
@@ -3052,14 +3496,14 @@
                 {
                     "id": 8,
                     "tag": "",
-                    "posX": -3.0,
+                    "posX": 11.199999809265137,
                     "posY": -42.29999923706055,
                     "posZ": 91.0,
                     "scaleX": 200.0,
                     "scaleY": 150.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
+                    "rotZ": 0.00001001791224553017,
                     "orderInLayer": 0,
                     "imageName": "11_long_stick-1",
                     "inText": false,
@@ -3072,14 +3516,14 @@
                 {
                     "id": 9,
                     "tag": "",
-                    "posX": 259.0,
+                    "posX": 265.92999267578127,
                     "posY": -73.0,
                     "posZ": 0.0,
                     "scaleX": 50.0,
                     "scaleY": 50.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 0.0,
+                    "rotZ": 0.00001001791224553017,
                     "orderInLayer": 0,
                     "imageName": "11_short_stick-1",
                     "inText": false,
@@ -3144,7 +3588,192 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":360.0}}"
+                }
+            ]
         },
         {
             "pageNumber": 12,
@@ -3556,7 +4185,128 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 15,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-10.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":-10.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"13_giraffe_eat_leaves\"}"
+                }
+            ]
         },
         {
             "pageNumber": 13,
@@ -3675,7 +4425,76 @@
                     "starWord": "No"
                 }
             ],
-            "triggers": []
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 6,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":14,\"deactivateNextButton\":false}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 6,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"pageNumber\":21,\"deactivateNextButton\":false}"
+                }
+            ]
         },
         {
             "pageNumber": 14,
