@@ -23,6 +23,7 @@ public class BookEditor : EditorWindow
     string m_strAssetBundleName = "differentplaces";
 
     public string m_strBookPath;
+    public string m_loadedBookNameWithoutExtension;
     string m_strAssetPath;
     string m_strCommonPath;
     string m_strBookRoot;
@@ -54,18 +55,23 @@ public class BookEditor : EditorWindow
 
     int     m_activePageID = 0;
 
+    // Used when we need to replace current book data with a new one, settings this true when attempting to load the
+    // new book will actually load the new data from the path provided
+    public bool m_needToLoadBookContent;
+
     private void OnGUI()
     {
+
         m_boldFoldoutStyle = EditorStyles.foldout;
 
-        if (m_rcStoryBook == null)
+        if (m_rcStoryBook == null || m_needToLoadBookContent)
         {
             if (!string.IsNullOrEmpty(m_strBookPath))
             {
                 string strBook = File.ReadAllText(m_strBookPath);
                 m_rcStoryBook = JsonUtility.FromJson<StoryBookJson>(strBook);
 
-                if (m_rcStoryBook != null)
+                if (m_rcStoryBook != null || m_needToLoadBookContent)
                 {
                     m_strBookRoot = m_strBookPath;
                     m_strCommonPath = m_strBookPath.Replace(System.IO.Path.GetFileName(m_strBookRoot), "");
@@ -94,6 +100,11 @@ public class BookEditor : EditorWindow
                     // NOTE: We might need to do this for sub-audio?  Maybe?
                     m_rcAudioRects = new Rect[m_rcStoryBook.pages.Length];
                     m_rcPageAudio = new AudioClip[m_rcStoryBook.pages.Length];
+
+                    m_needToLoadBookContent = false;
+                    m_loadedBookNameWithoutExtension = System.IO.Path.GetFileNameWithoutExtension(m_strBookPath);
+
+                    this.ShowNotification(new GUIContent("Loading: " + m_loadedBookNameWithoutExtension + "!"));
                 }
 
                 m_rcImageNames = GetImagesInPath(m_strCommonPath,"-1");
@@ -105,6 +116,7 @@ public class BookEditor : EditorWindow
 //                }
 
             }
+            m_needToLoadBookContent = false;
             return;
         }
 
@@ -117,7 +129,7 @@ public class BookEditor : EditorWindow
         bookEditorLabelStyle.alignment = TextAnchor.UpperCenter;
         bookEditorLabelStyle.fontStyle = FontStyle.Bold;
 
-        GUILayout.Label("Book Editor", bookEditorLabelStyle);
+        GUILayout.Label("Book Editor (" + m_loadedBookNameWithoutExtension + ")", bookEditorLabelStyle);
 
         GUILayout.Space(4);
         
@@ -2057,24 +2069,44 @@ public class BookEditor : EditorWindow
         }
         return strParams;
     }
+
 }
 
-public class OpenBookEditor
+public static class OpenBookEditor
 {
+
     [MenuItem("Curious Reader/Book Editor")]
-    static void ShowWindow()
+    public static void ShowWindow()
     {
 
-     string path = EditorUtility.OpenFilePanel("Find Book File", "", "json");
+        string path = EditorUtility.OpenFilePanel("Find Book File", "", "json");
 
         if (path.Length != 0)
         {
             Debug.Log(path);
 
-            BookEditor rcEditor = (BookEditor)EditorWindow.GetWindow(typeof(BookEditor));
-            rcEditor.m_strBookPath = path;
-            rcEditor.Show();
+            LoadBookAtPathInEditor(path);
         }
+    }
+
+    [MenuItem("Assets/Open JSON File In Book Editor %#e")]
+    public static void OpenJSONFileWithBookEditor()
+    {
+        if (Selection.activeObject == null) return;
+        string filePath = AssetDatabase.GetAssetPath(Selection.activeObject.GetInstanceID());
+        if (string.IsNullOrEmpty(filePath) || System.IO.Path.GetExtension(filePath).ToLower() != ".json")
+            return;
+
+        LoadBookAtPathInEditor(filePath);
+    }
+
+    private static void LoadBookAtPathInEditor(string path) 
+    {
+        BookEditor rcEditor = (BookEditor)EditorWindow.GetWindow(typeof(BookEditor));
+        rcEditor.m_strBookPath = path;
+        rcEditor.m_needToLoadBookContent = true;
+        rcEditor.Show();
+        rcEditor.Repaint();
     }
 }
 
@@ -2097,7 +2129,5 @@ public class TransformEditor2D : Editor
             transform.localScale = scale;
         }
     }
-
-    
 
 }
