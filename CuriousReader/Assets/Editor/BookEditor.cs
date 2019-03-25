@@ -1244,7 +1244,8 @@ public class BookEditor : EditorWindow
     {
         if (!string.IsNullOrEmpty(i_rcGameObject.imageName))
         {
-            i_rcGameObject.Show = EditorGUILayout.Foldout(i_rcGameObject.Show, "GameObject " + i_nOrdinal + " - " + i_rcGameObject.imageName);
+            i_rcGameObject.Show = EditorGUILayout.Foldout(i_rcGameObject.Show, i_nOrdinal + " - " + 
+                (string.IsNullOrEmpty(i_rcGameObject.label) ? i_rcGameObject.imageName : i_rcGameObject.label));
         }
         else
         {
@@ -1257,7 +1258,9 @@ public class BookEditor : EditorWindow
         {
             GUILayout.BeginHorizontal();
             GUILayout.BeginVertical();
+            EditorGUI.BeginDisabledGroup(true);
             i_rcGameObject.id = EditorGUILayout.IntField("ID", i_rcGameObject.id, EditorStyles.numberField);
+            EditorGUI.EndDisabledGroup();
 
             if ( m_rcImageNames != null )
             {
@@ -1277,20 +1280,26 @@ public class BookEditor : EditorWindow
 
             i_rcGameObject.imageName = EditorGUILayout.TextField("Image Name", i_rcGameObject.imageName, EditorStyles.textField);
 
+            EditorGUILayout.Space();
+            EditorGUILayout.BeginHorizontal();
             i_rcGameObject.label = EditorGUILayout.TextField("Label", i_rcGameObject.label, EditorStyles.textField);
             i_rcGameObject.tag = EditorGUILayout.TextField("Tag", i_rcGameObject.tag, EditorStyles.textField);
             i_rcGameObject.destroyOnCollision = EditorGUILayout.TextField("Destroy On Collision", i_rcGameObject.destroyOnCollision, EditorStyles.textField);
+            EditorGUILayout.EndHorizontal();
+
             EditorGUILayout.Space();
             EditorGUILayout.BeginHorizontal();
             i_rcGameObject.posX = EditorGUILayout.FloatField("Pos X", i_rcGameObject.posX, EditorStyles.numberField);
             i_rcGameObject.posY = EditorGUILayout.FloatField("Pos Y", i_rcGameObject.posY, EditorStyles.numberField);
             i_rcGameObject.posZ = EditorGUILayout.FloatField("Pos Z", i_rcGameObject.posZ, EditorStyles.numberField);
             EditorGUILayout.EndHorizontal();
+
             EditorGUILayout.BeginHorizontal();
             i_rcGameObject.rotX = EditorGUILayout.FloatField("Rot X", i_rcGameObject.rotX, EditorStyles.numberField);
             i_rcGameObject.rotY = EditorGUILayout.FloatField("Rot Y", i_rcGameObject.rotY, EditorStyles.numberField);
             i_rcGameObject.rotZ = EditorGUILayout.FloatField("Rot Z", i_rcGameObject.rotZ, EditorStyles.numberField);
             EditorGUILayout.EndHorizontal();
+            
             EditorGUILayout.BeginHorizontal();
             i_rcGameObject.scaleX = EditorGUILayout.FloatField("Scale X", i_rcGameObject.scaleX, EditorStyles.numberField);
             i_rcGameObject.scaleY = EditorGUILayout.FloatField("Scale Y", i_rcGameObject.scaleY, EditorStyles.numberField);
@@ -1299,9 +1308,12 @@ public class BookEditor : EditorWindow
             EditorGUI.EndDisabledGroup();
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.Space();
+
+            EditorGUILayout.BeginHorizontal();
             i_rcGameObject.orderInLayer = EditorGUILayout.IntField("Order In Layer", i_rcGameObject.orderInLayer, EditorStyles.numberField);
             i_rcGameObject.inText = EditorGUILayout.ToggleLeft("In Text", i_rcGameObject.inText, EditorStyles.textField);
             i_rcGameObject.draggable = EditorGUILayout.ToggleLeft("Draggable?", i_rcGameObject.draggable, EditorStyles.textField);
+            EditorGUILayout.EndHorizontal();
 
 //            i_rcGameObject.SpriteAnimation = (Elendow.SpritedowAnimator.SpriteAnimation)EditorGUILayout.ObjectField(i_rcGameObject.SpriteAnimation, typeof(Elendow.SpritedowAnimator.SpriteAnimation), false);
 
