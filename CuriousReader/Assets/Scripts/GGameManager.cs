@@ -93,11 +93,7 @@ public class GGameManager : MonoBehaviour
 			// Anytime there is a mouse up event, update applicable lists in scene manager
 			sceneManager.ResetInputStates(MouseEvents.MouseUp);
 		} 
-
-		// quit game on exit
-		else if (Input.GetKeyDown(KeyCode.Escape)){
-			System.Diagnostics.Process.GetCurrentProcess().Kill();
-			}
+		
 	}
 		
 	// this is called after Awake() OR after the script is recompiled (Recompile > Disable > Enable)
