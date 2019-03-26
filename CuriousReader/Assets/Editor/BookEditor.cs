@@ -2085,28 +2085,63 @@ public static class OpenBookEditor
         {
             Debug.Log(path);
 
-            LoadBookAtPathInEditor(path);
+            LoadBookAtPathInEditor(path, false);
         }
     }
 
-    [MenuItem("Assets/Open JSON File In Book Editor %#e")]
-    public static void OpenJSONFileWithBookEditor()
+    /// <summary>
+    /// Opens the selected JSON file in the current editor. Shortcut: Ctrl + Shift + E
+    /// </summary>
+    [MenuItem("Assets/Open In Book Editor %#e")]
+    public static void OpenJSONFileInFirstBookEditor()
     {
         if (Selection.activeObject == null) return;
         string filePath = AssetDatabase.GetAssetPath(Selection.activeObject.GetInstanceID());
         if (string.IsNullOrEmpty(filePath) || System.IO.Path.GetExtension(filePath).ToLower() != ".json")
             return;
 
-        LoadBookAtPathInEditor(filePath);
+        LoadBookAtPathInEditor(filePath, false);
     }
 
-    private static void LoadBookAtPathInEditor(string path) 
+    /// <summary>
+    /// Opens the selected JSON file in a new editor. Shortcut: Alt + Shift + E
+    /// </summary>
+    [MenuItem("Assets/Open In New Book Editor &#e")]
+    public static void OpenJSONFileInNewBookEditor() 
     {
-        BookEditor rcEditor = (BookEditor)EditorWindow.GetWindow(typeof(BookEditor));
-        rcEditor.m_strBookPath = path;
+        if (Selection.activeObject == null) 
+        {
+            Debug.Log("No selected object found in the assets.");
+            return;
+        }
+        string filePath = AssetDatabase.GetAssetPath(Selection.activeObject.GetInstanceID());
+        if (string.IsNullOrEmpty(filePath) || System.IO.Path.GetExtension(filePath).ToLower() != ".json")
+            return;
+
+        LoadBookAtPathInEditor(filePath, true);
+    }
+
+    /// <summary>
+    /// Loads the JSON book data file at path in new or existing editor depending on the second parameter
+    /// </summary>
+    /// <param name="i_path">Path of the book file</param>
+    /// <param name="i_openInNewEditor">If true, loading the file at path in a new BookEditor instance</param>
+    private static void LoadBookAtPathInEditor(string i_path, bool i_openInNewEditor) 
+    {
+        BookEditor rcEditor;
+        
+        if (i_openInNewEditor)
+        {
+            rcEditor = EditorWindow.CreateInstance<BookEditor>();
+        }
+        else
+        {
+            rcEditor = (BookEditor)EditorWindow.GetWindow(typeof(BookEditor));
+        }
+        
+        rcEditor.m_strBookPath = i_path;
         rcEditor.m_needToLoadBookContent = true;
         rcEditor.Show();
-        rcEditor.Repaint();
     }
 }
 
