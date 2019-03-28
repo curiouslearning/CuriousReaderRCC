@@ -1,7 +1,5 @@
 fileFormatVersion: 2
-guid: 5a972f2f245138d47a4f6970aa005620
-timeCreated: 1532678854
-licenseType: Free
+guid: 965c69b5c7be9614a83373bc37ac299a
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6
@@ -20,5 +18,5 @@ AudioImporter:
   ambisonic: 0
   3D: 1
   userData: 
-  assetBundleName: catstory
+  assetBundleName: 
   assetBundleVariant: 
