@@ -637,15 +637,49 @@ public class BookEditor : EditorWindow
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.BeginVertical();
 
-                EditTimestamps(i_rcPage.timestamps[j], m_rcPageAudio[i_nOrdinal], m_rcAudioRects[i_nOrdinal], i_rcPage.texts, j);
+                TimeStampClass rcTimestamp = i_rcPage.timestamps[j];
+                AudioClip rcClip = m_rcPageAudio[i_nOrdinal];
+
+                EditTimestamps(rcTimestamp, rcClip, m_rcAudioRects[i_nOrdinal], i_rcPage.texts, j);
 
                 EditorGUILayout.EndVertical();
                 EditorGUILayout.BeginVertical();
+
+                if (rcTimestamp.IsPlaying)
+                {
+                    if (AudioUtility.IsClipPlaying(rcClip))
+                    {
+                        int nSamplePosition = AudioUtility.GetClipSamplePosition(rcClip);
+
+                        if (((float)nSamplePosition / (float)rcClip.samples) > ((rcTimestamp.end/1000.0f) / rcClip.length))
+                        {
+                            AudioUtility.StopAllClips();
+                            rcTimestamp.IsPlaying = false;
+                        }
+                    }
+                    else
+                    {
+                        rcTimestamp.IsPlaying = false;
+                    }
+                }
+
+                GUILayout.BeginHorizontal();
+
+                if ( GUILayout.Button("Play"))
+                {
+                    int nSampleStart = (int)((rcClip.samples / rcClip.length)*(rcTimestamp.start/1000f));
+
+                    AudioUtility.PlayClip(rcClip);
+                    AudioUtility.SetClipSamplePosition(rcClip, nSampleStart);
+                    rcTimestamp.IsPlaying = true;
+                }
 
                 if (GUILayout.Button("Remove"))
                 {
                     nDelete = j;
                 }
+
+                GUILayout.EndHorizontal();
 
                 EditorGUILayout.EndVertical();
                 EditorGUILayout.EndHorizontal();
@@ -825,7 +859,7 @@ public class BookEditor : EditorWindow
 
                 if (rastrWords.Length > i_nOrdinal)
                 {
-                    i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal + " - " + rastrWords[i_nOrdinal]);
+                    i_rcTimestamp.Show = EditorGUILayout.Foldout(i_rcTimestamp.Show, "Timestamp " + i_nOrdinal + " - " + rastrWords[i_nOrdinal] + (i_rcTimestamp.starWord.ToLower() == "yes" ? " [ ★ Word ]" : ""));
                 }
                 else
                 {
@@ -846,9 +880,16 @@ public class BookEditor : EditorWindow
 
         if (i_rcTimestamp.Show)
         {
+            EditorGUI.BeginDisabledGroup(true);
+            i_rcTimestamp.wordIdx = EditorGUILayout.IntField("Word Index", i_rcTimestamp.wordIdx, EditorStyles.numberField);
+            EditorGUI.EndDisabledGroup();
+
+            GUILayout.BeginHorizontal();
             i_rcTimestamp.start = EditorGUILayout.IntField("Start", i_rcTimestamp.start, EditorStyles.numberField);
             i_rcTimestamp.end = EditorGUILayout.IntField("End", i_rcTimestamp.end, EditorStyles.numberField);
-            i_rcTimestamp.starWord = EditorGUILayout.TextField("Star Word", i_rcTimestamp.starWord, EditorStyles.numberField);
+            bool starWord = i_rcTimestamp.starWord.ToLower() == "yes" ? true : false;
+            i_rcTimestamp.starWord = EditorGUILayout.Toggle("Star Word", starWord) ? "Yes" : "No";
+            GUILayout.EndHorizontal();
 //          i_rcTimestamp.audio = EditorGUILayout.TextField("Audio", i_rcTimestamp.audio, EditorStyles.textField);
 
             string strSearchPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "");
@@ -856,39 +897,11 @@ public class BookEditor : EditorWindow
 
             i_rcTimestamp.audio = ObjectFieldToString<AudioClip>(ref i_rcTimestamp.audio, "Audio File", ref i_rcTimestamp.AudioClip, "", strSearchPath);
 
-            i_rcTimestamp.wordIdx = EditorGUILayout.IntField("Word Index", i_rcTimestamp.wordIdx, EditorStyles.numberField);
-
             if (i_rcClip != null)
             {
                 DrawTimestamp(i_rcClip, i_rcRect, i_rcTimestamp.start, i_rcTimestamp.end);
             }
-        }
 
-        if ( i_rcTimestamp.IsPlaying )
-        {
-            if (AudioUtility.IsClipPlaying(i_rcClip))
-            {
-                int nSamplePosition = AudioUtility.GetClipSamplePosition(i_rcClip);
-
-                if (((float)nSamplePosition / (float)i_rcClip.samples) > ((i_rcTimestamp.end/1000.0f) / i_rcClip.length))
-                {
-                    AudioUtility.StopAllClips();
-                    i_rcTimestamp.IsPlaying = false;
-                }
-            }
-            else
-            {
-                i_rcTimestamp.IsPlaying = false;
-            }
-        }
-
-        if ( GUILayout.Button("Play"))
-        {
-            int nSampleStart = (int)((i_rcClip.samples / i_rcClip.length)*(i_rcTimestamp.start/1000f));
-
-            AudioUtility.PlayClip(i_rcClip);
-            AudioUtility.SetClipSamplePosition(i_rcClip, nSampleStart);
-            i_rcTimestamp.IsPlaying = true;
         }
 
         EditorGUI.indentLevel--;
@@ -1761,7 +1774,7 @@ public class BookEditor : EditorWindow
             }
         }
 
-        i_rcContainer = (T)EditorGUILayout.ObjectField(i_rcContainer, typeof(T), false);
+        i_rcContainer = (T)EditorGUILayout.ObjectField(i_strLabel, i_rcContainer, typeof(T), false);
 
         return i_strCurrentValue;
     }
