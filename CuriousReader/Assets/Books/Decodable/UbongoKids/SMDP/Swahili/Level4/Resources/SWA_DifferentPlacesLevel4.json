@@ -813,7 +813,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna ndege anayepaa. Kuna ndege anayeimba.",
+                    "text": "Kuna ndege anayepaa.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Kuna ndege anayeimba.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1439,7 +1446,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna jua linawaka. Kuna nyota inang’aa.",
+                    "text": "Kuna jua linawaka. Kuna nyota inang'aa.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1804,7 +1811,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Ah, anga! Kuna vitu tofauti angani, mchana na usiku.",
+                    "text": "Ah, anga! Kuna vitu tofauti angani,",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "mchana na usiku.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -2860,7 +2874,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna twiga mrefu. Anakula katika mti mfupi!",
+                    "text": "Kuna twiga mrefu.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Anakula katika mti mfupi!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -3137,7 +3158,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna nyani wakubwa. Kuna nyani wadogo.",
+                    "text": "Kuna nyani wakubwa.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Kuna nyani wadogo.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -4451,7 +4479,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
                     "stanzaID": 0,
@@ -4471,7 +4499,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
                     "stanzaID": 0,
@@ -5215,7 +5243,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna meli inayoenda kasi. Kuna meli inayoenda pole pole.",
+                    "text": "Kuna meli inayoenda kasi.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Kuna meli inayoenda pole pole.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -5324,6 +5359,11 @@
                             "invokerType": 0,
                             "invokerID": 7,
                             "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -5365,6 +5405,11 @@
                         {
                             "invokerType": 0,
                             "invokerID": 7,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -5535,7 +5580,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna samaki mwenye furaha anacheza. Kuna samaki mwenye huzuni.",
+                    "text": "Kuna samaki mwenye furaha anacheza.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Kuna samaki mwenye huzuni.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -5961,7 +6013,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Pweza mkubwa ana miguu mirefu. Pweza mdogo ana miguu mifupi.",
+                    "text": "Pweza mkubwa ana miguu mirefu.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Pweza mdogo ana miguu mifupi.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -6842,7 +6901,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
                     "stanzaID": 0,
@@ -6862,7 +6921,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 2,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
                     "stanzaID": 0,
@@ -7229,7 +7288,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Nyumbani! Napapenda nyumbani. Kuna vitu vingi nyumbani.",
+                    "text": "Nyumbani! Napapenda nyumbani.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Kuna vitu vingi nyumbani.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -7437,7 +7503,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna sahani ya chakula. Niko tayari kwa kula.",
+                    "text": "Kuna sahani ya chakula.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Niko tayari kwa kula.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -8268,7 +8341,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Ninataka kutembea sehemu tofauti. Nione vitu vingi tofauti! Usiku na mchana!",
+                    "text": "Ninataka kutembea sehemu tofauti.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Nione vitu vingi tofauti! Usiku na mchana!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
