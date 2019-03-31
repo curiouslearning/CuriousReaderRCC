@@ -46,7 +46,7 @@
                     "id": 1,
                     "tag": "",
                     "posX": -10.5,
-                    "posY": -14.0,
+                    "posY": -34.0,
                     "posZ": 91.0,
                     "scaleX": 500.0,
                     "scaleY": 500.0,
@@ -128,7 +128,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, anga! Mawingu wakati wa mchana. Nyota wakati wa usiku.",
+                    "text": "Ah, anga! Mawingu wakati wa mchana.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Nyota wakati wa usiku.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -139,70 +146,70 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
-                    "end": 519,
+                    "audio": "audio_swahili_smdp_word_ah",
+                    "end": 1010,
                     "starWord": "No"
                 },
                 {
-                    "start": 519,
+                    "start": 1010,
                     "wordIdx": 1,
-                    "audio": "",
-                    "end": 1038,
+                    "audio": "audio_swahili_smdp_word_anga",
+                    "end": 1786,
                     "starWord": "No"
                 },
                 {
-                    "start": 1039,
+                    "start": 1786,
                     "wordIdx": 2,
-                    "audio": "",
-                    "end": 1558,
+                    "audio": "audio_swahili_smdp_word_mawingu",
+                    "end": 2267,
                     "starWord": "No"
                 },
                 {
-                    "start": 1559,
+                    "start": 2267,
                     "wordIdx": 3,
-                    "audio": "",
-                    "end": 2078,
+                    "audio": "audio_swahili_smdp_word_wakati",
+                    "end": 2634,
                     "starWord": "No"
                 },
                 {
-                    "start": 2079,
+                    "start": 2634,
                     "wordIdx": 4,
-                    "audio": "",
-                    "end": 2598,
+                    "audio": "audio_swahili_smdp_word_wa",
+                    "end": 2803,
                     "starWord": "No"
                 },
                 {
-                    "start": 2599,
+                    "start": 2803,
                     "wordIdx": 5,
-                    "audio": "",
-                    "end": 3118,
+                    "audio": "audio_swahili_smdp_word_mchana",
+                    "end": 3560,
                     "starWord": "No"
                 },
                 {
-                    "start": 3118,
+                    "start": 3560,
                     "wordIdx": 6,
-                    "audio": "",
-                    "end": 3637,
+                    "audio": "audio_swahili_smdp_word_nyota",
+                    "end": 3993,
                     "starWord": "No"
                 },
                 {
-                    "start": 3638,
+                    "start": 3994,
                     "wordIdx": 7,
-                    "audio": "",
-                    "end": 4157,
+                    "audio": "audio_swahili_smdp_word_wakati",
+                    "end": 4379,
                     "starWord": "No"
                 },
                 {
-                    "start": 4158,
+                    "start": 4379,
                     "wordIdx": 8,
-                    "audio": "",
-                    "end": 4677,
+                    "audio": "audio_swahili_smdp_word_wa",
+                    "end": 4505,
                     "starWord": "No"
                 },
                 {
-                    "start": 4678,
+                    "start": 4505,
                     "wordIdx": 9,
-                    "audio": "",
+                    "audio": "audio_swahili_smdp_word_usiku",
                     "end": 5197,
                     "starWord": "No"
                 }
@@ -346,7 +353,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Wingu kubwa la mvua na wingu dogo la kupendeza.",
+                    "text": "Wingu kubwa la mvua na wingu",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "dogo la kupendeza.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -357,63 +371,63 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
-                    "end": 409,
+                    "audio": "audio_swahili_smdp_word_wingu",
+                    "end": 472,
                     "starWord": "No"
                 },
                 {
-                    "start": 409,
+                    "start": 472,
                     "wordIdx": 1,
-                    "audio": "",
-                    "end": 818,
+                    "audio": "audio_swahili_smdp_word_kubwa",
+                    "end": 883,
                     "starWord": "No"
                 },
                 {
-                    "start": 818,
+                    "start": 883,
                     "wordIdx": 2,
-                    "audio": "",
-                    "end": 1227,
+                    "audio": "audio_swahili_smdp_word_la",
+                    "end": 1046,
                     "starWord": "No"
                 },
                 {
-                    "start": 1227,
+                    "start": 1046,
                     "wordIdx": 3,
-                    "audio": "",
-                    "end": 1636,
+                    "audio": "audio_swahili_smdp_word_mvua",
+                    "end": 1699,
                     "starWord": "No"
                 },
                 {
-                    "start": 1636,
+                    "start": 1699,
                     "wordIdx": 4,
-                    "audio": "",
-                    "end": 2045,
+                    "audio": "audio_swahili_smdp_word_na",
+                    "end": 1907,
                     "starWord": "No"
                 },
                 {
-                    "start": 2046,
+                    "start": 1907,
                     "wordIdx": 5,
-                    "audio": "",
-                    "end": 2455,
+                    "audio": "audio_swahili_smdp_word_wingu",
+                    "end": 2257,
                     "starWord": "No"
                 },
                 {
-                    "start": 2455,
+                    "start": 2257,
                     "wordIdx": 6,
-                    "audio": "",
-                    "end": 2864,
+                    "audio": "audio_swahili_smdp_word_dogo",
+                    "end": 2581,
                     "starWord": "No"
                 },
                 {
-                    "start": 2864,
+                    "start": 2582,
                     "wordIdx": 7,
-                    "audio": "",
-                    "end": 3273,
+                    "audio": "audio_swahili_smdp_word_la",
+                    "end": 2755,
                     "starWord": "No"
                 },
                 {
-                    "start": 3273,
+                    "start": 2755,
                     "wordIdx": 8,
-                    "audio": "",
+                    "audio": "audio_swahili_smdp_word_kupendeza",
                     "end": 3682,
                     "starWord": "No"
                 }
@@ -592,11 +606,11 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 563,
+                    "end": 588,
                     "starWord": "No"
                 },
                 {
-                    "start": 563,
+                    "start": 588,
                     "wordIdx": 1,
                     "audio": "",
                     "end": 1126,
@@ -606,32 +620,32 @@
                     "start": 1126,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1689,
+                    "end": 1977,
                     "starWord": "No"
                 },
                 {
-                    "start": 1690,
+                    "start": 1977,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2253,
+                    "end": 2106,
                     "starWord": "No"
                 },
                 {
-                    "start": 2253,
+                    "start": 2106,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2816,
+                    "end": 2473,
                     "starWord": "No"
                 },
                 {
-                    "start": 2817,
+                    "start": 2474,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3380,
+                    "end": 2934,
                     "starWord": "No"
                 },
                 {
-                    "start": 3380,
+                    "start": 2934,
                     "wordIdx": 6,
                     "audio": "",
                     "end": 3943,
@@ -906,39 +920,39 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 657,
+                    "end": 564,
                     "starWord": "No"
                 },
                 {
-                    "start": 657,
+                    "start": 563,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1314,
+                    "end": 1002,
                     "starWord": "No"
                 },
                 {
-                    "start": 1314,
+                    "start": 1002,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1971,
+                    "end": 1974,
                     "starWord": "No"
                 },
                 {
-                    "start": 1972,
+                    "start": 1974,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2629,
+                    "end": 2362,
                     "starWord": "No"
                 },
                 {
-                    "start": 2629,
+                    "start": 2362,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3286,
+                    "end": 2772,
                     "starWord": "No"
                 },
                 {
-                    "start": 3286,
+                    "start": 2771,
                     "wordIdx": 5,
                     "audio": "",
                     "end": 3943,
@@ -1222,32 +1236,32 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 538,
+                    "end": 627,
                     "starWord": "No"
                 },
                 {
-                    "start": 538,
+                    "start": 627,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1076,
+                    "end": 1303,
                     "starWord": "No"
                 },
                 {
-                    "start": 1076,
+                    "start": 1303,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1614,
+                    "end": 1472,
                     "starWord": "No"
                 },
                 {
-                    "start": 1614,
+                    "start": 1472,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2152,
+                    "end": 1828,
                     "starWord": "No"
                 },
                 {
-                    "start": 2152,
+                    "start": 1828,
                     "wordIdx": 4,
                     "audio": "",
                     "end": 2690,
@@ -1518,7 +1532,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Jua linawaka na nyota inang’aa.",
+                    "text": "Jua linawaka na nyota inang'aa.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1530,32 +1544,32 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 611,
+                    "end": 487,
                     "starWord": "No"
                 },
                 {
-                    "start": 611,
+                    "start": 487,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1222,
+                    "end": 1533,
                     "starWord": "No"
                 },
                 {
-                    "start": 1222,
+                    "start": 1533,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1833,
+                    "end": 1713,
                     "starWord": "No"
                 },
                 {
-                    "start": 1833,
+                    "start": 1713,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2444,
+                    "end": 2096,
                     "starWord": "No"
                 },
                 {
-                    "start": 2444,
+                    "start": 2096,
                     "wordIdx": 4,
                     "audio": "",
                     "end": 3055,
@@ -1854,7 +1868,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, anga! Mawingu wakati wa mchana. Nyota wakati wa usiku.",
+                    "text": "Ah, anga! Mawingu wakati wa mchana. Nyota wakati wa usiku.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1866,67 +1880,67 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 519,
+                    "end": 1010,
                     "starWord": "No"
                 },
                 {
-                    "start": 519,
+                    "start": 1010,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1038,
+                    "end": 1786,
                     "starWord": "No"
                 },
                 {
-                    "start": 1039,
+                    "start": 1786,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1558,
+                    "end": 2267,
                     "starWord": "No"
                 },
                 {
-                    "start": 1559,
+                    "start": 2267,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2078,
+                    "end": 2634,
                     "starWord": "No"
                 },
                 {
-                    "start": 2079,
+                    "start": 2634,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2598,
+                    "end": 2803,
                     "starWord": "No"
                 },
                 {
-                    "start": 2599,
+                    "start": 2803,
                     "wordIdx": 5,
-                    "audio": "",
-                    "end": 3118,
-                    "starWord": "No"
-                },
-                {
-                    "start": 3118,
-                    "wordIdx": 6,
                     "audio": "",
                     "end": 3637,
                     "starWord": "No"
                 },
                 {
-                    "start": 3638,
+                    "start": 3637,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 3993,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3993,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 4157,
+                    "end": 4379,
                     "starWord": "No"
                 },
                 {
-                    "start": 4158,
+                    "start": 4379,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 4677,
+                    "end": 4505,
                     "starWord": "No"
                 },
                 {
-                    "start": 4678,
+                    "start": 4505,
                     "wordIdx": 9,
                     "audio": "",
                     "end": 5197,
@@ -2138,32 +2152,32 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 485,
+                    "end": 646,
                     "starWord": "No"
                 },
                 {
-                    "start": 485,
+                    "start": 646,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 970,
+                    "end": 1023,
                     "starWord": "No"
                 },
                 {
-                    "start": 971,
+                    "start": 1023,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1456,
+                    "end": 1317,
                     "starWord": "No"
                 },
                 {
-                    "start": 1457,
+                    "start": 1317,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1942,
+                    "end": 1487,
                     "starWord": "No"
                 },
                 {
-                    "start": 1943,
+                    "start": 1487,
                     "wordIdx": 4,
                     "audio": "",
                     "end": 2428,
@@ -2516,7 +2530,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, msitu! Msitu mzuri! Kuna vitu vingi tofauti msituni.",
+                    "text": "Ah, msitu! Msitu mzuri! Kuna vitu vingi tofauti msituni.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -2535,53 +2549,53 @@
                     "start": 748,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1496,
+                    "end": 2002,
                     "starWord": "No"
                 },
                 {
-                    "start": 1497,
+                    "start": 2001,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 2245,
+                    "end": 2769,
                     "starWord": "No"
                 },
                 {
-                    "start": 2246,
+                    "start": 2768,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2994,
+                    "end": 3876,
                     "starWord": "No"
                 },
                 {
-                    "start": 2995,
+                    "start": 3878,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3743,
+                    "end": 4197,
                     "starWord": "No"
                 },
                 {
-                    "start": 3744,
+                    "start": 4196,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 4492,
+                    "end": 4538,
                     "starWord": "No"
                 },
                 {
-                    "start": 4493,
+                    "start": 4539,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 5241,
+                    "end": 5045,
                     "starWord": "No"
                 },
                 {
-                    "start": 5242,
+                    "start": 5045,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 5990,
+                    "end": 5697,
                     "starWord": "No"
                 },
                 {
-                    "start": 5991,
+                    "start": 5697,
                     "wordIdx": 8,
                     "audio": "",
                     "end": 6739,
@@ -3043,53 +3057,53 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 450,
+                    "end": 503,
                     "starWord": "No"
                 },
                 {
-                    "start": 450,
+                    "start": 504,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 900,
+                    "end": 860,
                     "starWord": "No"
                 },
                 {
-                    "start": 901,
+                    "start": 860,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1351,
+                    "end": 1518,
                     "starWord": "No"
                 },
                 {
-                    "start": 1351,
+                    "start": 1518,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1801,
+                    "end": 2162,
                     "starWord": "No"
                 },
                 {
-                    "start": 1802,
+                    "start": 2162,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2252,
+                    "end": 2656,
                     "starWord": "No"
                 },
                 {
-                    "start": 2253,
+                    "start": 2656,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 2703,
+                    "end": 2739,
                     "starWord": "No"
                 },
                 {
-                    "start": 2703,
+                    "start": 2740,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3153,
+                    "end": 2993,
                     "starWord": "No"
                 },
                 {
-                    "start": 3154,
+                    "start": 2993,
                     "wordIdx": 7,
                     "audio": "",
                     "end": 3604,
@@ -3327,11 +3341,11 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 672,
+                    "end": 497,
                     "starWord": "No"
                 },
                 {
-                    "start": 672,
+                    "start": 497,
                     "wordIdx": 1,
                     "audio": "",
                     "end": 1344,
@@ -3341,11 +3355,11 @@
                     "start": 1345,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 2017,
+                    "end": 1597,
                     "starWord": "No"
                 },
                 {
-                    "start": 2018,
+                    "start": 1597,
                     "wordIdx": 3,
                     "audio": "",
                     "end": 2690,
@@ -3720,39 +3734,39 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 544,
+                    "end": 1084,
                     "starWord": "No"
                 },
                 {
-                    "start": 544,
+                    "start": 1084,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1088,
+                    "end": 1196,
                     "starWord": "No"
                 },
                 {
-                    "start": 1088,
+                    "start": 1196,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1632,
+                    "end": 1536,
                     "starWord": "No"
                 },
                 {
-                    "start": 1632,
+                    "start": 1536,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2176,
+                    "end": 2237,
                     "starWord": "No"
                 },
                 {
-                    "start": 2176,
+                    "start": 2237,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2720,
+                    "end": 2454,
                     "starWord": "No"
                 },
                 {
-                    "start": 2720,
+                    "start": 2454,
                     "wordIdx": 5,
                     "audio": "",
                     "end": 3264,
@@ -4305,7 +4319,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, msitu! Msitu mzuri! Kuna vitu vingi tofauti msituni.",
+                    "text": "Ah, msitu! Msitu mzuri! Kuna vitu vingi tofauti msituni.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -4324,53 +4338,53 @@
                     "start": 748,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1496,
+                    "end": 2040,
                     "starWord": "No"
                 },
                 {
-                    "start": 1497,
+                    "start": 2040,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 2245,
+                    "end": 2739,
                     "starWord": "No"
                 },
                 {
-                    "start": 2246,
+                    "start": 2739,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2994,
+                    "end": 3820,
                     "starWord": "No"
                 },
                 {
-                    "start": 2995,
+                    "start": 3822,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3743,
+                    "end": 4187,
                     "starWord": "No"
                 },
                 {
-                    "start": 3744,
+                    "start": 4187,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 4492,
+                    "end": 4556,
                     "starWord": "No"
                 },
                 {
-                    "start": 4493,
+                    "start": 4557,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 5241,
+                    "end": 5053,
                     "starWord": "No"
                 },
                 {
-                    "start": 5242,
+                    "start": 5053,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 5990,
+                    "end": 5693,
                     "starWord": "No"
                 },
                 {
-                    "start": 5991,
+                    "start": 5695,
                     "wordIdx": 8,
                     "audio": "",
                     "end": 6739,
@@ -4600,32 +4614,32 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 485,
+                    "end": 646,
                     "starWord": "No"
                 },
                 {
-                    "start": 485,
+                    "start": 646,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 970,
+                    "end": 1023,
                     "starWord": "No"
                 },
                 {
-                    "start": 971,
+                    "start": 1023,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1456,
+                    "end": 1317,
                     "starWord": "No"
                 },
                 {
-                    "start": 1457,
+                    "start": 1317,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1942,
+                    "end": 1487,
                     "starWord": "No"
                 },
                 {
-                    "start": 1943,
+                    "start": 1487,
                     "wordIdx": 4,
                     "audio": "",
                     "end": 2428,
@@ -4830,7 +4844,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, bahari! Ina maji safi ya bluu. Kuna vitu vingi tofauti baharini.",
+                    "text": "Ah, bahari! Ina maji safi ya bluu. Kuna vitu vingi tofauti baharini.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -5167,32 +5181,32 @@
                     "start": 487,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 974,
+                    "end": 838,
                     "starWord": "No"
                 },
                 {
-                    "start": 975,
+                    "start": 838,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1462,
+                    "end": 1626,
                     "starWord": "No"
                 },
                 {
-                    "start": 1463,
+                    "start": 1626,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1950,
+                    "end": 1833,
                     "starWord": "No"
                 },
                 {
-                    "start": 1950,
+                    "start": 1833,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2437,
+                    "end": 2123,
                     "starWord": "No"
                 },
                 {
-                    "start": 2438,
+                    "start": 2123,
                     "wordIdx": 5,
                     "audio": "",
                     "end": 2925,
@@ -5491,60 +5505,60 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 478,
+                    "end": 414,
                     "starWord": "No"
                 },
                 {
-                    "start": 478,
+                    "start": 414,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 956,
+                    "end": 773,
                     "starWord": "No"
                 },
                 {
-                    "start": 957,
+                    "start": 773,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1435,
+                    "end": 1415,
                     "starWord": "No"
                 },
                 {
-                    "start": 1436,
+                    "start": 1415,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1914,
+                    "end": 1662,
                     "starWord": "No"
                 },
                 {
-                    "start": 1915,
+                    "start": 1661,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2393,
+                    "end": 2170,
                     "starWord": "No"
                 },
                 {
-                    "start": 2394,
+                    "start": 2171,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 2872,
+                    "end": 2389,
                     "starWord": "No"
                 },
                 {
-                    "start": 2873,
+                    "start": 2390,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3351,
+                    "end": 2821,
                     "starWord": "No"
                 },
                 {
-                    "start": 3352,
+                    "start": 2820,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 3830,
+                    "end": 3374,
                     "starWord": "No"
                 },
                 {
-                    "start": 3831,
+                    "start": 3374,
                     "wordIdx": 8,
                     "audio": "",
                     "end": 4309,
@@ -5818,67 +5832,67 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 530,
+                    "end": 406,
                     "starWord": "No"
                 },
                 {
-                    "start": 530,
+                    "start": 407,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1060,
+                    "end": 966,
                     "starWord": "No"
                 },
                 {
-                    "start": 1060,
+                    "start": 966,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1590,
+                    "end": 1243,
                     "starWord": "No"
                 },
                 {
-                    "start": 1590,
+                    "start": 1242,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2120,
+                    "end": 1740,
                     "starWord": "No"
                 },
                 {
-                    "start": 2121,
+                    "start": 1741,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2651,
+                    "end": 2730,
                     "starWord": "No"
                 },
                 {
-                    "start": 2651,
+                    "start": 2730,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3181,
+                    "end": 2927,
                     "starWord": "No"
                 },
                 {
-                    "start": 3181,
+                    "start": 2927,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3711,
+                    "end": 3411,
                     "starWord": "No"
                 },
                 {
-                    "start": 3712,
+                    "start": 3411,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 4242,
+                    "end": 3694,
                     "starWord": "No"
                 },
                 {
-                    "start": 4242,
+                    "start": 3707,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 4772,
+                    "end": 4160,
                     "starWord": "No"
                 },
                 {
-                    "start": 4772,
+                    "start": 4176,
                     "wordIdx": 9,
                     "audio": "",
                     "end": 5302,
@@ -6276,39 +6290,39 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 444,
+                    "end": 507,
                     "starWord": "No"
                 },
                 {
-                    "start": 444,
+                    "start": 507,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 888,
+                    "end": 1113,
                     "starWord": "No"
                 },
                 {
-                    "start": 888,
+                    "start": 1113,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1332,
+                    "end": 1413,
                     "starWord": "No"
                 },
                 {
-                    "start": 1332,
+                    "start": 1414,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1776,
+                    "end": 1723,
                     "starWord": "No"
                 },
                 {
-                    "start": 1776,
+                    "start": 1723,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2220,
+                    "end": 2500,
                     "starWord": "No"
                 },
                 {
-                    "start": 2220,
+                    "start": 2501,
                     "wordIdx": 5,
                     "audio": "",
                     "end": 2664,
@@ -6318,32 +6332,32 @@
                     "start": 2664,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3108,
+                    "end": 3014,
                     "starWord": "No"
                 },
                 {
-                    "start": 3108,
+                    "start": 3014,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 3552,
+                    "end": 3526,
                     "starWord": "No"
                 },
                 {
-                    "start": 3552,
+                    "start": 3525,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 3996,
+                    "end": 3803,
                     "starWord": "No"
                 },
                 {
-                    "start": 3996,
+                    "start": 3804,
                     "wordIdx": 9,
                     "audio": "",
-                    "end": 4440,
+                    "end": 4085,
                     "starWord": "No"
                 },
                 {
-                    "start": 4440,
+                    "start": 4084,
                     "wordIdx": 10,
                     "audio": "",
                     "end": 4884,
@@ -6852,7 +6866,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Oh, bahari! Ina maji safi ya bluu. Kuna vitu vingi tofauti baharini.",
+                    "text": "Ah, bahari! Ina maji safi ya bluu. Kuna vitu vingi tofauti baharini.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -6864,39 +6878,39 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 557,
+                    "end": 777,
                     "starWord": "No"
                 },
                 {
-                    "start": 557,
+                    "start": 777,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1114,
+                    "end": 2058,
                     "starWord": "No"
                 },
                 {
-                    "start": 1114,
+                    "start": 2059,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1671,
+                    "end": 2304,
                     "starWord": "No"
                 },
                 {
-                    "start": 1671,
+                    "start": 2303,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2228,
+                    "end": 2581,
                     "starWord": "No"
                 },
                 {
-                    "start": 2229,
+                    "start": 2580,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2786,
+                    "end": 3097,
                     "starWord": "No"
                 },
                 {
-                    "start": 2786,
+                    "start": 3098,
                     "wordIdx": 5,
                     "audio": "",
                     "end": 3343,
@@ -6906,39 +6920,39 @@
                     "start": 3343,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3900,
+                    "end": 4012,
                     "starWord": "No"
                 },
                 {
-                    "start": 3900,
+                    "start": 4012,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 4457,
+                    "end": 4405,
                     "starWord": "No"
                 },
                 {
-                    "start": 4458,
+                    "start": 4405,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 5015,
+                    "end": 4711,
                     "starWord": "No"
                 },
                 {
-                    "start": 5015,
+                    "start": 4711,
                     "wordIdx": 9,
                     "audio": "",
-                    "end": 5572,
+                    "end": 5125,
                     "starWord": "No"
                 },
                 {
-                    "start": 5572,
+                    "start": 5124,
                     "wordIdx": 10,
                     "audio": "",
-                    "end": 6129,
+                    "end": 5703,
                     "starWord": "No"
                 },
                 {
-                    "start": 6129,
+                    "start": 5702,
                     "wordIdx": 11,
                     "audio": "",
                     "end": 6686,
@@ -7143,32 +7157,32 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 485,
+                    "end": 646,
                     "starWord": "No"
                 },
                 {
-                    "start": 485,
+                    "start": 646,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 970,
+                    "end": 1023,
                     "starWord": "No"
                 },
                 {
-                    "start": 971,
+                    "start": 1023,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1456,
+                    "end": 1317,
                     "starWord": "No"
                 },
                 {
-                    "start": 1457,
+                    "start": 1317,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 1942,
+                    "end": 1487,
                     "starWord": "No"
                 },
                 {
-                    "start": 1943,
+                    "start": 1487,
                     "wordIdx": 4,
                     "audio": "",
                     "end": 2428,
@@ -7593,53 +7607,53 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 662,
+                    "end": 1047,
                     "starWord": "No"
                 },
                 {
-                    "start": 662,
+                    "start": 1047,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1324,
+                    "end": 1905,
                     "starWord": "No"
                 },
                 {
-                    "start": 1325,
+                    "start": 1906,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1987,
+                    "end": 2492,
                     "starWord": "No"
                 },
                 {
-                    "start": 1988,
+                    "start": 2492,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2650,
+                    "end": 2788,
                     "starWord": "No"
                 },
                 {
-                    "start": 2651,
+                    "start": 2789,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 3313,
+                    "end": 3064,
                     "starWord": "No"
                 },
                 {
-                    "start": 3314,
+                    "start": 3064,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3976,
+                    "end": 3464,
                     "starWord": "No"
                 },
                 {
-                    "start": 3977,
+                    "start": 3465,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 4639,
+                    "end": 4445,
                     "starWord": "No"
                 },
                 {
-                    "start": 4640,
+                    "start": 4445,
                     "wordIdx": 7,
                     "audio": "",
                     "end": 5302,
@@ -7808,74 +7822,74 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 586,
+                    "end": 478,
                     "starWord": "No"
                 },
                 {
-                    "start": 586,
+                    "start": 479,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1172,
+                    "end": 1054,
                     "starWord": "No"
                 },
                 {
-                    "start": 1173,
+                    "start": 1054,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1759,
+                    "end": 1557,
                     "starWord": "No"
                 },
                 {
-                    "start": 1759,
+                    "start": 1557,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2345,
+                    "end": 2742,
                     "starWord": "No"
                 },
                 {
-                    "start": 2346,
+                    "start": 2743,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2932,
+                    "end": 3412,
                     "starWord": "No"
                 },
                 {
-                    "start": 2932,
+                    "start": 3411,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3518,
+                    "end": 3653,
                     "starWord": "No"
                 },
                 {
-                    "start": 3519,
+                    "start": 3653,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 4105,
+                    "end": 4546,
                     "starWord": "No"
                 },
                 {
-                    "start": 4105,
+                    "start": 4546,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 4691,
+                    "end": 4899,
                     "starWord": "No"
                 },
                 {
-                    "start": 4692,
+                    "start": 4899,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 5278,
+                    "end": 5505,
                     "starWord": "No"
                 },
                 {
-                    "start": 5278,
+                    "start": 5504,
                     "wordIdx": 9,
                     "audio": "",
-                    "end": 5864,
+                    "end": 5706,
                     "starWord": "No"
                 },
                 {
-                    "start": 5865,
+                    "start": 5707,
                     "wordIdx": 10,
                     "audio": "",
                     "end": 6451,
@@ -8059,32 +8073,32 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 663,
+                    "end": 922,
                     "starWord": "No"
                 },
                 {
-                    "start": 663,
+                    "start": 922,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1326,
+                    "end": 1519,
                     "starWord": "No"
                 },
                 {
-                    "start": 1327,
+                    "start": 1519,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1990,
+                    "end": 2159,
                     "starWord": "No"
                 },
                 {
-                    "start": 1990,
+                    "start": 2159,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2653,
+                    "end": 2311,
                     "starWord": "No"
                 },
                 {
-                    "start": 2654,
+                    "start": 2311,
                     "wordIdx": 4,
                     "audio": "",
                     "end": 3317,
@@ -8692,102 +8706,102 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 520,
+                    "end": 899,
                     "starWord": "No"
                 },
                 {
-                    "start": 520,
+                    "start": 899,
                     "wordIdx": 1,
                     "audio": "",
-                    "end": 1040,
+                    "end": 1418,
                     "starWord": "No"
                 },
                 {
-                    "start": 1041,
+                    "start": 1418,
                     "wordIdx": 2,
                     "audio": "",
-                    "end": 1561,
+                    "end": 2028,
                     "starWord": "No"
                 },
                 {
-                    "start": 1562,
+                    "start": 2026,
                     "wordIdx": 3,
                     "audio": "",
-                    "end": 2082,
+                    "end": 2851,
                     "starWord": "No"
                 },
                 {
-                    "start": 2082,
+                    "start": 2850,
                     "wordIdx": 4,
                     "audio": "",
-                    "end": 2602,
+                    "end": 3252,
                     "starWord": "No"
                 },
                 {
-                    "start": 2603,
+                    "start": 3252,
                     "wordIdx": 5,
                     "audio": "",
-                    "end": 3123,
+                    "end": 3580,
                     "starWord": "No"
                 },
                 {
-                    "start": 3124,
+                    "start": 3579,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 3644,
+                    "end": 4054,
                     "starWord": "No"
                 },
                 {
-                    "start": 3645,
+                    "start": 4054,
                     "wordIdx": 7,
                     "audio": "",
-                    "end": 4165,
+                    "end": 4955,
                     "starWord": "No"
                 },
                 {
-                    "start": 4165,
+                    "start": 4954,
                     "wordIdx": 8,
                     "audio": "",
-                    "end": 4685,
+                    "end": 5395,
                     "starWord": "No"
                 },
                 {
-                    "start": 4686,
+                    "start": 5395,
                     "wordIdx": 9,
                     "audio": "",
-                    "end": 5206,
+                    "end": 5606,
                     "starWord": "No"
                 },
                 {
-                    "start": 5207,
+                    "start": 5607,
                     "wordIdx": 10,
                     "audio": "",
-                    "end": 5727,
+                    "end": 6416,
                     "starWord": "No"
                 },
                 {
-                    "start": 5728,
+                    "start": 6417,
                     "wordIdx": 11,
                     "audio": "",
-                    "end": 6248,
+                    "end": 6593,
                     "starWord": "No"
                 },
                 {
-                    "start": 6248,
+                    "start": 6593,
                     "wordIdx": 12,
                     "audio": "",
-                    "end": 6768,
+                    "end": 7088,
                     "starWord": "No"
                 },
                 {
-                    "start": 6769,
+                    "start": 7088,
                     "wordIdx": 13,
                     "audio": "",
-                    "end": 7289,
+                    "end": 7232,
                     "starWord": "No"
                 },
                 {
-                    "start": 7290,
+                    "start": 7232,
                     "wordIdx": 14,
                     "audio": "",
                     "end": 7810,
