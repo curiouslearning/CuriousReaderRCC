@@ -1966,6 +1966,46 @@
                     "sceneObjectId": 3,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"05_orange_portion_sun\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -2405,6 +2445,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 12,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -284.0,
+                    "posZ": 0.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -2617,6 +2679,46 @@
                     "sceneObjectId": 6,
                     "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 12,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 12,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -4340,6 +4442,46 @@
                     "sceneObjectId": 2,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"13_giraffe_eat_leaves\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 16,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 16,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -6596,6 +6738,28 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 8,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -6762,6 +6926,46 @@
                     "sceneObjectId": 6,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"16_sad_face_on_the_little_fish\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
         },
@@ -7622,6 +7826,26 @@
                     "sceneObjectId": 1,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"23_Akili_takes_food_and_eat\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 }
             ]
         },
@@ -7778,6 +8002,26 @@
                     "sceneObjectId": 3,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"24_Akili_smiles_and_jumps\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 }
             ]
         },
@@ -8336,6 +8580,28 @@
                     "Animations": [
                         "13_giraffe_eat_leaves"
                     ]
+                },
+                {
+                    "id": 23,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -282.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "1_Akili_wave-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "1_akili_wave"
+                    ]
                 }
             ],
             "texts": [
@@ -8602,6 +8868,56 @@
                     "sceneObjectId": 16,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":270.0,\"y\":81.0,\"z\":20.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 23,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"1_akili_wave\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 23,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":5.0,\"speed\":60.0,\"Reset\":false,\"YoYo\":true,\"EndValues\":{\"x\":-354.79998779296877,\"y\":-200.0,\"z\":-2.0}}"
                 }
             ]
         }
