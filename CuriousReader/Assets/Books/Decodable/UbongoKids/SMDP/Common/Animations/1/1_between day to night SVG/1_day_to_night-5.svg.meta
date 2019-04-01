@@ -4,6 +4,7 @@ ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/1_day_to_night-5
     400000: gameObject/1_day_to_night-5/Transform
+    2800000: texAtlas
     21200000: gameObject/1_day_to_night-5/SpriteRenderer
     21300000: sprite
     100100000: gameObject

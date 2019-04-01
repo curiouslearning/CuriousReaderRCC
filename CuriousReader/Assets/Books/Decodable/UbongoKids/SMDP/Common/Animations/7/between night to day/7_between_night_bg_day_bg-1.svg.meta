@@ -4,6 +4,7 @@ ScriptedImporter:
   fileIDToRecycleName:
     100000: gameObject/7_between_night_bg_day_bg-1
     400000: gameObject/7_between_night_bg_day_bg-1/Transform
+    2800000: texAtlas
     21200000: gameObject/7_between_night_bg_day_bg-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject

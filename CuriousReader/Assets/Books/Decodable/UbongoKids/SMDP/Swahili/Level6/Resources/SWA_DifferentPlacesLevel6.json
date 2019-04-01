@@ -12,7 +12,7 @@
     "pages": [
         {
             "pageNumber": 0,
-            "script": "DayAndNightManager",
+            "script": "DayNightManagerNightStart",
             "audio": {
                 "audioName": "",
                 "isAnim": false,
@@ -31,7 +31,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "7_between_day_bg_night_bg-1",
+                    "imageName": "7_between_night_bg_day_bg-1",
                     "inText": false,
                     "label": "Sky",
                     "destroyOnCollision": "",
@@ -1694,7 +1694,7 @@
         },
         {
             "pageNumber": 6,
-            "script": "DayAndNightManager",
+            "script": "DayNightManagerNightStart",
             "audio": {
                 "audioName": "",
                 "isAnim": false,
@@ -1713,7 +1713,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -10,
-                    "imageName": "7_between_day_bg_night_bg-1",
+                    "imageName": "7_between_night_bg_day_bg-1",
                     "inText": false,
                     "label": "Sky",
                     "destroyOnCollision": "",
@@ -8122,7 +8122,7 @@
         },
         {
             "pageNumber": 24,
-            "script": "DayAndNightManager",
+            "script": "DayNightManagerNightStart",
             "audio": {
                 "audioName": "",
                 "isAnim": false,
@@ -8141,7 +8141,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -7,
-                    "imageName": "7_between_day_bg_night_bg-1",
+                    "imageName": "7_between_night_bg_day_bg-1",
                     "inText": false,
                     "label": "Sky",
                     "destroyOnCollision": "",
