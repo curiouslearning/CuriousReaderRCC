@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using System.Collections.Generic;
+using System.Linq;
 
 [RequireComponent(typeof(Image))]
 [RequireComponent(typeof(Button))]
@@ -12,7 +14,7 @@ public class ShelfBookLevelButton : MonoBehaviour {
     public event UnityAction<ShelfBookLevelButton>    OnClick = delegate{};
 
     [Header("Data")]
-    public string   BookFileName;
+    public List<BookTitleTranslation>   BookFileNameTranslations;
     public Color    LevelColor;
     
     #endregion
@@ -53,18 +55,30 @@ public class ShelfBookLevelButton : MonoBehaviour {
     // 1.4
     // 0.8
 
-    #endregion
+    private Dictionary<ReaderLanguage, string> m_bookFileNameTranslationsDictionary;
 
-    #region MB Methods
-    
-    void Start()
-    {
-        m_button.onClick.AddListener(() => { OnClick(this); });
-    }
-    
     #endregion
 
     #region Public Methods
+
+    public void Initialize()
+    {
+        // To have easier and faster access to the list without needing to use a loop
+        m_bookFileNameTranslationsDictionary = BookFileNameTranslations
+            .ToDictionary(val => val.BookLanguage, val => val.BookAssetBundleFileName);
+        m_button.onClick.AddListener(() => { OnClick(this); });
+    }
+
+    public string GetBookTitleForLanguage(ReaderLanguage language)
+    {
+        if (m_bookFileNameTranslationsDictionary.ContainsKey(language)) 
+        {
+           return  m_bookFileNameTranslationsDictionary[language];
+        } else
+        {
+            return "";
+        }
+    }
     
     public void Activate()
     {

@@ -16,7 +16,7 @@ public class ShelfUI : MonoBehaviour {
 
 	#region Private Members
 	
-	[Header("Book UI components")]
+	[Header("Title Screen Components")]
     [SerializeField]
     private Button          m_bookSelectionSceneLoadButton;
     [SerializeField]
@@ -27,7 +27,10 @@ public class ShelfUI : MonoBehaviour {
     private GameObject      m_bookLoadingOverlayWithLoadingSpinner;
     [SerializeField]
     private AudioSource     m_bookLoadAudioSource;
+    [SerializeField]
+    private List<ShelfBookLevelButton>  m_bookLevelButtons;
 
+    [Header("Autonarrate Components")]
     [SerializeField]
     private Image           m_bookAutoNarrateImage;
     [Space]
@@ -41,10 +44,12 @@ public class ShelfUI : MonoBehaviour {
     [SerializeField]
     private AudioSource     m_bookAutoNarrateClickAudioSource;
 
+    [Header("Language Toggle Button")]
     [SerializeField]
-    private List<ShelfBookLevelButton>  m_bookLevelButtons;
+    private ShelfLanguageToggle m_readerLanguageToggle;
 
-    private int m_currentlyActiveBookLevel = 0;
+    private int     m_currentlyActiveBookLevel = 0;
+    private string  m_readerLanguagePrefsKeyword = "reader_language";
 	
 	#endregion
 
@@ -58,18 +63,30 @@ public class ShelfUI : MonoBehaviour {
             return;
         }
 
+        if (m_readerLanguageToggle == null)
+        {
+            Debug.LogError("Reader language toggle is not assigned on object: " + name);
+        }
+
+        ReaderLanguage chosenLanguage = getSelectedReaderLanguagePreference();
+
 		foreach (ShelfBookLevelButton levelButton in m_bookLevelButtons)
         {
+            levelButton.Initialize();
             levelButton.Deactivate();
             levelButton.OnClick += (sender) => { onLevelButtonClicked(sender, m_bookLevelButtons.IndexOf(levelButton)); };
         }
 
 		m_bookLevelButtons[m_currentlyActiveBookLevel].Activate();
         m_bookSelectionBackgroundImage.color = m_bookLevelButtons[m_currentlyActiveBookLevel].LevelColor;
-		OnBookFileNameChanged(m_bookLevelButtons[m_currentlyActiveBookLevel].BookFileName);
+		OnBookFileNameChanged(m_bookLevelButtons[m_currentlyActiveBookLevel].GetBookTitleForLanguage(chosenLanguage));
 
         m_bookSelectionSceneLoadButton.onClick.AddListener(() => { OnSceneLoadButtonClick(); });
         m_bookAutoNarrateButton.onClick.AddListener(() => { OnAutoNarrateButtonClick(); });
+
+        m_readerLanguageToggle.Initialize();
+        m_readerLanguageToggle.ToggleTo(chosenLanguage, false, false);
+        m_readerLanguageToggle.OnToggle += onReaderLanguageToggle;
 	}
 
     public void EnableBookLoadingSpinnerAndOverlay()
@@ -95,17 +112,38 @@ public class ShelfUI : MonoBehaviour {
 	#endregion
 
 	#region Private Methods
+
+    ReaderLanguage getSelectedReaderLanguagePreference()
+    {
+        return (ReaderLanguage)PlayerPrefs.GetInt(m_readerLanguagePrefsKeyword, 0);
+    }
+
+    void setSelectedReaderLanguagePreference(ReaderLanguage language)
+    {
+        PlayerPrefs.SetInt(m_readerLanguagePrefsKeyword, (int)language);
+    }
 	
 	void onLevelButtonClicked(ShelfBookLevelButton sender, int indexOfSender)
     {
         if (indexOfSender != m_currentlyActiveBookLevel)
         {
-			OnBookFileNameChanged(sender.BookFileName);
+			OnBookFileNameChanged(sender.GetBookTitleForLanguage(getSelectedReaderLanguagePreference()));
             m_bookSelectionBackgroundImage.color = sender.LevelColor;
             sender.Activate();
             m_bookLevelButtons[m_currentlyActiveBookLevel].Deactivate();
             m_currentlyActiveBookLevel = indexOfSender;
         }
+    }
+
+    void onReaderLanguageToggle(ReaderLanguage language)
+    {
+        Debug.Log("Reader language changed to: " + language.ToString());
+        setSelectedReaderLanguagePreference(language);
+        // Update the currently selected level button chosen file name when toggling
+        string selectedBookLevelFileName = m_bookLevelButtons[m_currentlyActiveBookLevel].GetBookTitleForLanguage(
+            getSelectedReaderLanguagePreference());
+        OnBookFileNameChanged(selectedBookLevelFileName);
+        m_readerLanguageToggle.ToggleTo(language, true, true);
     }
 	
 	#endregion
