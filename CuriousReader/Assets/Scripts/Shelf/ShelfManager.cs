@@ -72,6 +72,7 @@ public class ShelfManager : MonoBehaviour
     
     IEnumerator loadBookSceneAsync()
     {
+        Debug.Log($"Loading Book: {SelectedBookFileName}");
         yield return new WaitForSeconds(0.5f);
 
         AsyncOperation asyncOp = SceneManager.LoadSceneAsync("Books/Decodable/Global/BasicScene");
