@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1636923927
+CRC: 1952499957
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 58a8e66ea571016b60b17f8ad62a8809
+    Hash: d14d6a79a62f4f458bb6feb64ed72823
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1a5bf2e0598d5c8d2dd3aedb253e6e11
@@ -60,6 +60,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/14/big_boat_move_fast/14_big_boat_moves_fast-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_huzuni.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/3/small_bird_flapping/03_a_small_bird_flapping-2.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_18.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_wa.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/sad face on the little
   fish/16_sad_face_on_the_little_fish-2.svg
@@ -91,6 +92,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_kucheza.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/The happy fish dances/16_the_happy_fish_dances-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/big_boat_move_fast/16_big_boat_moves_fast-2.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_2.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/blinking eye small (night)/7_blinking_eye_small.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/1/1_between night to day
   SVG/1_between_night_to_day-2.svg
@@ -118,6 +120,7 @@ Assets:
   octopus/17_highlight_the_small_octopus.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_14_19.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_napapenda.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_11.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_22.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_full.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_furaha.mp3
@@ -142,6 +145,7 @@ Assets:
   SVG/1_night_bg_day-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/3/3_big_flying_bird-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/4/music_note/04_a_small_singing_bird_music-5.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_24.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_naipenda.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/15/water_wave/15_water_wave-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_17.mp3
@@ -172,9 +176,11 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_fast.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/sad fish swimming below
   the big fish across/16_the_sad_fish_swimming-5.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_17.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/23/23_food-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/21/Akili_smiles_and_jumps/21_Akili_smiles_and_jumps-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_and.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_2.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/22/22_akili-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/4/music_note/04_a_small_singing_bird_music-1.png
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_23.mp3
@@ -186,6 +192,7 @@ Assets:
   legs/17_big_octopus_move_flap_legs-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/17/big octopus move flap
   legs/17_big_octopus_move_flap_legs-1.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_5.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/small_boat_move_slowly/16_small_boat_moves_slowly-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_6.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/10/monkeys_playing_passing_the_sticks/10_monkeys_playing_passing_the_sticks-1.svg
@@ -209,10 +216,12 @@ Assets:
   SVG/1_day_to_night-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_forest.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/small_boat_move_slowly/16_small_boat_moves_slowly-4.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_0.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_0.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-5.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/Akili Wave/Akili_wave-10.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/13/water_wave/13_water_wave-6.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_22.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_are.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_stool.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_my.mp3
@@ -277,6 +286,7 @@ Assets:
   legs/17_big_octopus_move_flap_legs-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/25/25_Akili_smiles_and_jumps/25_Akili_smiles_and_jumps-6.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_bahari.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_7_13_20.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/19/highlight the big octopus/17_highlight_the_big_octopus.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/The happy fish smiles/16_the_happy_fish_smiles.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/between day to night/7_between_day_bg_night_bg-5.svg
@@ -295,6 +305,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/13/water_wave/13_water_wave-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/sad fish swimming below
   the big fish across/16_the_sad_fish_swimming-6.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_21.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/sad fish swimming below
   the big fish across/16_the_sad_fish_swimming-8.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/22/22_all_static_items-1.svg
@@ -323,6 +334,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/Akili Wave/Akili_wave-6.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/between day to night/7_between_day_bg_night_bg-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/The happy fish smiles/16_the_happy_fish_smiles-2.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_10.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Audio/Stanza/audio_english_smdp_2_stanza_page_3.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_shining.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_fimbo.mp3
@@ -332,6 +344,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_2.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/sad fish swimming below
   the big fish across/16_the_sad_fish_swimming.asset
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_23.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/between day to night/7_between_day_bg_night_bg-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/1/1_between night to day
   SVG/1_between_night_to_day.asset
@@ -341,6 +354,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/bobbing_together/18_bobbing_together-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_24.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-5.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_pole_pole.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/4/big_bird_peek/04_a_big_bird_peek-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/9/9_giraffe_stand_up/9_giraffe_stand_up-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/14/big_boat_move_fast/14_big_boat_moves_fast-5.svg
@@ -349,6 +363,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_i.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/water wave/16_water_wave.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/10/10_giraffe_extend_neck_look_back/10_giraffe_extend_neck_look_back-1.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_15.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_7_13_20.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_23.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/17/small octopus move flap
@@ -369,6 +384,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/water wave/16_water_wave-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_nyota.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/14/small_boat_move_slowly/14_small_boat_moves_slowly-6.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_16.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_16.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/10/giraffe standing up
   tall/10_giraffe_stand_up-3.svg
@@ -380,6 +396,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/25/25_all_static_items-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_they.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_tree.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_14_19.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/22/22_ground-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_bird.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/2/clouds move up and down/2_clouds_move_up_and_down-3.svg
@@ -418,6 +435,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/The happy fish smiles/16_the_happy_fish_smiles-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/10/giraffe standing up
   tall/10_giraffe_stand_up-4.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_1.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_10.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_sky.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/19/17_octopus_shorter_legs-1.svg
@@ -432,6 +450,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/7/7_clouds-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_ninakula.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_both.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_12.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Audio/Stanza/audio_english_smdp_2_stanza_page_4.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/20/20_Akili_takes_food_and_eat-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/6/star_twinkles/06_star_twinkles-2.svg
@@ -453,8 +472,10 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/4/music_note/04_a_small_singing_bird_music-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/1/1_akili_wave/1_Akili_wave-8.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/1/1_many_stars-1.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_11.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Resources/DifferentPlacesLevel2.json
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/blinking eye big (night)/7_blinking_eye_big.asset
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_18.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/3/big_bird_flapping/03_big_bird_flapping-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/1/1_between night to day
   SVG/1_night_bg_day-1.svg
@@ -499,10 +520,13 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/8/8_Akili_3_way_forest-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/5/star_vibrates/05_star_vibrates.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_oh.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_6.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/5/5_star-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/21/21_Akili_3_way_home-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/20/20_bobbing_together-2.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_1.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/20/Akili_takes_food_and_eat/20_Akili_takes_food_and_eat.asset
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_4.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_mchana.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_feel.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-4.svg
@@ -529,24 +553,29 @@ Assets:
   SVG/1_between_day_to_night.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/23/23_Akili_takes_food_and_eat-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_Mwisho.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_21.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/24/24_Akili_smiles_and_jumps.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/big_boat_move_fast/16_big_boat_moves_fast-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/Akili Wave/Akili_wave-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_stars.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_fupi.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/8/8_all_the_forest_trees-1.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_24.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/21/Akili_smiles_and_jumps/21_Akili_smiles_and_jumps-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_anga.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_ninataka.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_ndefu.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_short.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_8_12.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/2/2_big_thunderstorm_cloud-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/15/water_wave/15_water_wave-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/20/Akili_takes_food_and_eat/20_Akili_takes_food_and_eat-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/4/big_bird_flying/04_a_big_bird_flying-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/sad face on the little
   fish/16_sad_face_on_the_little_fish.asset
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_23.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_fluffy.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_0_6.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_12.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_11.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_storm.mp3
@@ -554,6 +583,8 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/1/1_between day to night
   SVG/1_between_day_to_night-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/between night to day/7_between_night_bg_day_bg-2.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Resources/SWA_DifferentPlacesLevel6.json
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_15.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_baharini.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_akili.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/22/22_tree_dark-1.svg
@@ -566,6 +597,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_the_1.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_ya.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_giraffe.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_7_13_20.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/6/sunlight/06_sunlight-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_linalowaka.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_5.mp3
@@ -594,6 +626,7 @@ Assets:
   SVG/1_between_day_to_night-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/11/11_small_monkey-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_16.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_10.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/22/22_big_bush-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/blinking eye big (night)/7_blinking_eye_big-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_9.mp3
@@ -623,6 +656,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-6.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_usiku.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_love.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Resources/SWA_DifferentPlacesLevel4.json
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-7.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/sad fish swimming below
   the big fish across/16_the_sad_fish_swimming-5.svg
@@ -651,7 +685,6 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/between night to day/7_between_night_bg_day_bg.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/1/1_cloud-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_playful.mp3
-- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Resources/SWA_DifferentPlacesLevel4.json
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/10/10_giraffe_stand_up-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level6/Audio/Stanza/audio_english_smdp_6_stanza_page_17.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/19/17_octopus_longer_legs-1.svg
@@ -659,6 +692,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/8/8_Akili_3_way_ocean-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/sad fish swimming below
   the big fish across/16_the_sad_fish_swimming-1.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_9.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/10/monkeys_playing_passing_the_sticks/10_monkeys_playing_passing_the_sticks-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/1/1_between day to night
   SVG/1_day_to_night-5.svg
@@ -672,16 +706,20 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_in.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/2/2_clouds_move_up_and_down-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Audio/Stanza/audio_english_smdp_2_stanza_page_21.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_3.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/13/water_wave/13_water_wave-2.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_9.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/1/1_akili_wave/1_Akili_wave-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/between night to day/7_between_night_bg_day_bg_04.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/24/24_Akili_smiles_and_jumps-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/19/small octopus move flap
   legs/17_small_octopus_move_flap_legs-2.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_22.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/22/22-bg-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_wakubwa.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/The happy fish smiles/16_the_happy_fish_smiles-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/small_boat_move_slowly/16_small_boat_moves_slowly-1.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_14_19.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/15/water_wave/15_water_wave.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_kasi.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_4.mp3
@@ -737,6 +775,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/2/clouds move up and down/2_clouds_move_up_and_down-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/7/07-eye_big_bird-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level2/Audio/Stanza/audio_english_smdp_2_stanza_page_10.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_3.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_sparkling.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/9/9_giraffe-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/17/highlight the small
@@ -750,10 +789,12 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/4/music_note/04_a_small_singing_bird_music.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_next.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/22/hearts/22_hearts.asset
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_17.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/17/big octopus move flap
   legs/17_big_octopus_move_flap_legs.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_is.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_nyani.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_4.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level4/Audio/stanza/audio_english_smdp_4_stanza_page_15.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_plate.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Level4/Audio/stanza/audio_english_smdp_4_stanza_page_1.mp3
@@ -773,7 +814,9 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_24.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/19/big octopus move flap
   legs/17_big_octopus_move_flap_legs-4.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_8.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_sad.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_5.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_fish.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/1/1_day_bg-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_la.mp3
@@ -821,6 +864,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/blinking eye small (night)/7_blinking_eye_small-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/2/2_clouds_move_up_and_down-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/22/hearts/22_hearts-4.svg
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_16.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/4/music_note/04_a_small_singing_bird_music-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/Akili Wave/Akili_wave-7.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/23/23_stool-1.svg
