@@ -24,6 +24,10 @@ public class ShelfUI : MonoBehaviour {
     [SerializeField]
     private Image           m_bookSelectionImage;
     [SerializeField]
+    private Sprite          m_bookSelectionSpriteEnglish;
+    [SerializeField]
+    private Sprite          m_bookSelectionSpriteSwahili;
+    [SerializeField]
     private GameObject      m_bookLoadingOverlayWithLoadingSpinner;
     [SerializeField]
     private AudioSource     m_bookLoadAudioSource;
@@ -83,6 +87,8 @@ public class ShelfUI : MonoBehaviour {
 
         m_bookSelectionSceneLoadButton.onClick.AddListener(() => { OnSceneLoadButtonClick(); });
         m_bookAutoNarrateButton.onClick.AddListener(() => { OnAutoNarrateButtonClick(); });
+        
+        setBookSelectionBackgroundImageBasedOnLanguage(chosenLanguage);
 
         m_readerLanguageToggle.Initialize();
         m_readerLanguageToggle.ToggleTo(chosenLanguage, false, false);
@@ -142,8 +148,22 @@ public class ShelfUI : MonoBehaviour {
         // Update the currently selected level button chosen file name when toggling
         string selectedBookLevelFileName = m_bookLevelButtons[m_currentlyActiveBookLevel].GetBookTitleForLanguage(
             getSelectedReaderLanguagePreference());
+        setBookSelectionBackgroundImageBasedOnLanguage(language);
         OnBookFileNameChanged(selectedBookLevelFileName);
         m_readerLanguageToggle.ToggleTo(language, true, true);
+    }
+
+    void setBookSelectionBackgroundImageBasedOnLanguage(ReaderLanguage language)
+    {
+        switch(language)
+        {
+            case ReaderLanguage.English:
+                m_bookSelectionImage.sprite = m_bookSelectionSpriteEnglish;
+                break;
+            case ReaderLanguage.Swahili:
+                m_bookSelectionImage.sprite = m_bookSelectionSpriteSwahili;
+                break;
+        }
     }
 	
 	#endregion
