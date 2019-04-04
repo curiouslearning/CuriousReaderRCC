@@ -67,7 +67,7 @@
                     "tag": "",
                     "posX": -125.0,
                     "posY": -24.0,
-                    "posZ": 0.0,
+                    "posZ": 90.0,
                     "scaleX": 914.923095703125,
                     "scaleY": 914.923095703125,
                     "rotX": 0.0,
@@ -359,14 +359,13 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -380,14 +379,13 @@
                     "stanzaID": 0,
                     "type": 8,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -401,13 +399,14 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -421,13 +420,14 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1
+                        1,
+                        0
                     ],
                     "invokers": [
                         {
                             "invokerType": 0,
                             "invokerID": 4,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -813,14 +813,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna ndege anayepaa.",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
-                },
-                {
-                    "id": 1,
-                    "text": "Kuna ndege anayeimba.",
+                    "text": "Kuna ndege anayepaa. Kuna ndege anayeimba.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1255,7 +1248,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 4,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -2083,9 +2076,9 @@
                 {
                     "id": 0,
                     "text": "Niende wapi baada ya hapa?",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -261.0,
+                    "y": 222.0
                 }
             ],
             "audioFile": "audio_swahili_smdp_4_stanza_page_7_13_20",
@@ -2535,19 +2528,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "symmetricPairingId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -2561,19 +2554,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 10,
-                    "symmetricPairingId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -2587,19 +2580,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "symmetricPairingId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -2613,19 +2606,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 11,
-                    "symmetricPairingId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -2639,19 +2632,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 3,
-                    "symmetricPairingId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -2665,19 +2658,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 6,
-                    "symmetricPairingId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
                 },
                 {
@@ -3115,7 +3108,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -4559,9 +4552,9 @@
                 {
                     "id": 0,
                     "text": "Niende wapi baada ya hapa?",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -261.0,
+                    "y": 222.0
                 }
             ],
             "audioFile": "audio_swahili_smdp_4_stanza_page_7_13_20",
@@ -5138,7 +5131,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 4,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -5392,7 +5385,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "Kuna meli inayoenda pole pole.",
+                    "text": "Kuna meli inayoenda pole pole.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -5495,24 +5488,19 @@
                         {
                             "invokerType": 0,
                             "invokerID": 5,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 7,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 8,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
+                    "symmetricPairingId": 1,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"14_small_boat_moves_slowly\"}"
                 },
                 {
@@ -5547,11 +5535,6 @@
                         {
                             "invokerType": 0,
                             "invokerID": 7,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 8,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -5813,7 +5796,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 3,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -5834,7 +5817,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 8,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -5854,7 +5837,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 1,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -5874,7 +5857,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 6,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -6323,7 +6306,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 9,
+                            "invokerID": 6,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -7043,9 +7026,9 @@
                 {
                     "id": 0,
                     "text": "Niende wapi baada ya hapa?",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -261.0,
+                    "y": 222.0
                 }
             ],
             "audioFile": "audio_swahili_smdp_4_stanza_page_7_13_20",
