@@ -813,7 +813,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Kuna ndege anayepaa. Kuna ndege anayeimba.",
+                    "text": "Kuna ndege anayepaa.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Kuna ndege anayeimba.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -2729,7 +2736,7 @@
                     "tag": "",
                     "posX": -112.9000015258789,
                     "posY": -197.0,
-                    "posZ": 0.0,
+                    "posZ": 90.0,
                     "scaleX": 583.0,
                     "scaleY": 583.0,
                     "rotX": 0.0,
