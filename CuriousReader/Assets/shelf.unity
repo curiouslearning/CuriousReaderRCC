@@ -257,7 +257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &98260686
 RectTransform:
   m_ObjectHideFlags: 0
@@ -375,11 +375,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -701,6 +701,10 @@ MonoBehaviour:
   m_bookSelectionSceneLoadButton: {fileID: 680243569}
   m_bookSelectionBackgroundImage: {fileID: 680243567}
   m_bookSelectionImage: {fileID: 874707520}
+  m_bookSelectionSpriteEnglish: {fileID: 21300000, guid: 98e87fa9d47f7bb4d851277597991a73,
+    type: 3}
+  m_bookSelectionSpriteSwahili: {fileID: 21300000, guid: 7646b09f8cbc7a94da839ca08cd85b1e,
+    type: 3}
   m_bookLoadingOverlayWithLoadingSpinner: {fileID: 508640756}
   m_bookLoadAudioSource: {fileID: 680243570}
   m_bookLevelButtons:
@@ -1283,7 +1287,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 70ee959efea335147b5ea2fb4e228f35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98e87fa9d47f7bb4d851277597991a73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2737,11 +2741,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1557415070}
     m_Modifications:
-    - target: {fileID: 8261242823507075042, guid: 984f952195621554bbcb1b5be072b8d3,
-        type: 3}
-      propertyPath: m_Name
-      value: Language Toggle Prefab
-      objectReference: {fileID: 0}
     - target: {fileID: 8261242823507075043, guid: 984f952195621554bbcb1b5be072b8d3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2846,6 +2845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261242823507075042, guid: 984f952195621554bbcb1b5be072b8d3,
+        type: 3}
+      propertyPath: m_Name
+      value: Language Toggle Prefab
       objectReference: {fileID: 0}
     - target: {fileID: 5396790336340325710, guid: 984f952195621554bbcb1b5be072b8d3,
         type: 3}
