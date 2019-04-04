@@ -1843,11 +1843,11 @@ RectTransform:
   m_Father: {fileID: 199277885}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -60}
-  m_SizeDelta: {x: 50, y: 50}
-  m_Pivot: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 10, y: -10}
+  m_SizeDelta: {x: 80, y: 50}
+  m_Pivot: {x: 0, y: 1}
 --- !u!1 &1606712796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,6 +2741,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1557415070}
     m_Modifications:
+    - target: {fileID: 8261242823507075042, guid: 984f952195621554bbcb1b5be072b8d3,
+        type: 3}
+      propertyPath: m_Name
+      value: Language Toggle Prefab
+      objectReference: {fileID: 0}
     - target: {fileID: 8261242823507075043, guid: 984f952195621554bbcb1b5be072b8d3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2845,11 +2850,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8261242823507075042, guid: 984f952195621554bbcb1b5be072b8d3,
-        type: 3}
-      propertyPath: m_Name
-      value: Language Toggle Prefab
       objectReference: {fileID: 0}
     - target: {fileID: 5396790336340325710, guid: 984f952195621554bbcb1b5be072b8d3,
         type: 3}
