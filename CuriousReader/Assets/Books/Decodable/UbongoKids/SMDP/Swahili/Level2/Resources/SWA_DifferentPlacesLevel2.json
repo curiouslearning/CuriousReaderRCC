@@ -141,7 +141,7 @@
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_anga",
                     "end": 777,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 777,
@@ -162,7 +162,7 @@
                     "wordIdx": 3,
                     "audio": "audio_swahili_smdp_word_usiku",
                     "end": 3163,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 3164,
@@ -176,7 +176,7 @@
                     "wordIdx": 5,
                     "audio": "audio_swahili_smdp_word_mchana",
                     "end": 4192,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -1779,7 +1779,7 @@
                     "wordIdx": 3,
                     "audio": "audio_swahili_smdp_word_usiku",
                     "end": 3173,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 3174,
@@ -1793,7 +1793,7 @@
                     "wordIdx": 5,
                     "audio": "audio_swahili_smdp_word_mchana",
                     "end": 4183,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -7932,7 +7932,7 @@
                     "wordIdx": 5,
                     "audio": "audio_swahili_smdp_word_usiku",
                     "end": 3946,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 3978,
@@ -7946,7 +7946,7 @@
                     "wordIdx": 7,
                     "audio": "audio_swahili_smdp_word_mchana",
                     "end": 4936,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
