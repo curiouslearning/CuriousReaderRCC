@@ -907,8 +907,6 @@ public class BookEditor : EditorWindow
 
     private void EditTriggers(TriggerClass i_rcTrigger, int i_nOrdinal, int i_pageOrdinal)
     {
-        string[] formattedTextIDDropdownValues;
-        FormatTextDropdownListForTextID(m_rcStoryBook.pages[i_pageOrdinal].texts, out formattedTextIDDropdownValues);
         GameObjectClass triggerObject = m_rcStoryBook.pages[i_pageOrdinal].gameObjects[i_rcTrigger.sceneObjectId];
         
         string sceneObjectID = string.IsNullOrEmpty(triggerObject.label) ? triggerObject.imageName : triggerObject.label;
@@ -1034,8 +1032,7 @@ public class BookEditor : EditorWindow
         string[] gameObjectsDropdownNames;
         FormatGameObjectIDsAndLabels(m_rcStoryBook.pages[i_pageOrdinal].gameObjects, out gameObjectsDropdownNames);
         
-       
-        i_rcTrigger.timestamp = EditorGUILayout.IntField("Timestamp", i_rcTrigger.timestamp, EditorStyles.numberField);
+        // i_rcTrigger.timestamp = EditorGUILayout.IntField("Timestamp", i_rcTrigger.timestamp, EditorStyles.numberField);
 
         EditorGUI.BeginDisabledGroup(gameObjectsDropdownNames.Length == 0);
         if (gameObjectsDropdownNames.Length == 0)
