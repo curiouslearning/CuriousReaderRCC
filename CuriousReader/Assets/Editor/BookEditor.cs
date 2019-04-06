@@ -1038,7 +1038,7 @@ public class BookEditor : EditorWindow
         if (gameObjectsDropdownNames.Length == 0)
         {
             i_rcTrigger.sceneObjectId = EditorGUILayout.Popup("Scene Object", i_rcTrigger.sceneObjectId,
-                new string[] { "No GameObjects have been entered for this page" });
+                new string[] { "No GameObjects have been added to this page" });
         }
         else
         {
@@ -1047,7 +1047,6 @@ public class BookEditor : EditorWindow
         EditorGUI.EndDisabledGroup();
 
         ////////////////////////////////////
-        i_rcTrigger.showInvokers = EditorGUILayout.Foldout(i_rcTrigger.showInvokers, "Invokers");
         int arraySize = 0;
         if (i_rcTrigger.invokers != null)
         {
@@ -1057,6 +1056,13 @@ public class BookEditor : EditorWindow
         {
             i_rcTrigger.invokers = new PerformanceInvoker[arraySize];
         }
+        EditorGUILayout.BeginHorizontal();
+        i_rcTrigger.showInvokers = EditorGUILayout.Foldout(i_rcTrigger.showInvokers, "Invokers(" + i_rcTrigger.invokers.Length + ")");
+        if (GUILayout.Button("Add"))
+        {
+            arraySize += 1;
+        }
+        EditorGUILayout.EndHorizontal();
         if (i_rcTrigger.showInvokers)
         {
             arraySize = EditorGUILayout.IntField(new GUIContent().text = "size", arraySize);
@@ -1090,7 +1096,8 @@ public class BookEditor : EditorWindow
                 {
                     i_rcTrigger.invokers[i] = new PerformanceInvoker();
                 }
-                i_rcTrigger.invokers[i].showVars = EditorGUILayout.Foldout(i_rcTrigger.invokers[i].showVars, i.ToString());
+                i_rcTrigger.invokers[i].showVars = EditorGUILayout.Foldout(i_rcTrigger.invokers[i].showVars, 
+                    $"{i} - {i_rcTrigger.invokers[i].invokerType.ToString()} invoker." + (i_rcTrigger.invokers[i].symmetricallyPaired ? " Symmetric" : ""));
                 if (i_rcTrigger.invokers[i].showVars)
                 {
                     EditorGUI.indentLevel++;
