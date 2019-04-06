@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -58,11 +58,17 @@ public class BookEditor : EditorWindow
     // Used when we need to replace current book data with a new one, settings this true when attempting to load the
     // new book will actually load the new data from the path provided
     public bool m_needToLoadBookContent;
+    public FileSystemWatcher m_bookFileLoadWatcher = null;
+    
+    bool m_savedRecentlyFromThisEditor = false;
 
     private void OnGUI()
     {
 
         m_boldFoldoutStyle = EditorStyles.foldout;
+
+        if (m_bookFileLoadWatcher == null && !string.IsNullOrEmpty(m_strBookPath))
+            addFileWatcherForReloadingAtPath(m_strBookPath);
 
         if (m_rcStoryBook == null || m_needToLoadBookContent)
         {
@@ -105,6 +111,7 @@ public class BookEditor : EditorWindow
                     m_loadedBookNameWithoutExtension = System.IO.Path.GetFileNameWithoutExtension(m_strBookPath);
 
                     this.ShowNotification(new GUIContent("Loading: " + m_loadedBookNameWithoutExtension + "!"));
+                    // addFileWatcherForReloadingAtPath(m_strBookPath);
                 }
 
                 m_rcImageNames = GetImagesInPath(m_strCommonPath,"-1");
@@ -401,6 +408,8 @@ public class BookEditor : EditorWindow
             AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
 
             this.ShowNotification(new GUIContent("Changes Saved!"));
+
+            m_savedRecentlyFromThisEditor = true;
         }
 
         GUILayout.EndHorizontal();
@@ -411,6 +420,38 @@ public class BookEditor : EditorWindow
     
     }
 
+    private void addFileWatcherForReloadingAtPath(string path) 
+    {
+        if (m_bookFileLoadWatcher == null)
+            m_bookFileLoadWatcher = new FileSystemWatcher();
+        
+        m_bookFileLoadWatcher.Path = System.IO.Path.GetDirectoryName(path);
+        m_bookFileLoadWatcher.Filter = System.IO.Path.GetFileName(path);
+
+        m_bookFileLoadWatcher.Changed += onLoadedBookFileChangedExternally;
+
+        m_bookFileLoadWatcher.EnableRaisingEvents = true;
+
+        Debug.LogFormat("Watching file at path: " + path);
+    }
+
+    private void onLoadedBookFileChangedExternally(object source, FileSystemEventArgs e)
+    {
+        switch (e.ChangeType)
+        {
+            case WatcherChangeTypes.Changed:
+                if (!m_savedRecentlyFromThisEditor)
+                {
+                    Debug.LogWarning($"File: {System.IO.Path.GetFileName(e.FullPath)} content changed. Reloading!!!");
+                    this.m_needToLoadBookContent = true;
+                } else 
+                {
+                    m_savedRecentlyFromThisEditor = false;
+                }
+                break;
+        }
+    }
+    
     private string[] GetAnimationNames()
     {
         List<string> racAnimNames = new List<string>();
