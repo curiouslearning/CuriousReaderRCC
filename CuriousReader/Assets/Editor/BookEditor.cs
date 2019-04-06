@@ -290,8 +290,6 @@ public class BookEditor : EditorWindow
             rcNewArray[currentPage.triggers.Length] = new TriggerClass();
             currentPage.triggers = rcNewArray;
 
-
-
             this.ShowNotification(new GUIContent("New Scene Trigger Added to Page " + m_activePageID));
         }
 
@@ -911,22 +909,12 @@ public class BookEditor : EditorWindow
     {
         string[] formattedTextIDDropdownValues;
         FormatTextDropdownListForTextID(m_rcStoryBook.pages[i_pageOrdinal].texts, out formattedTextIDDropdownValues);
-        string invokerID = "";
-        string sceneObjectID = m_rcStoryBook.pages[i_pageOrdinal].gameObjects[i_rcTrigger.sceneObjectId].label;
-        if ((i_rcTrigger.invokers != null) && (i_rcTrigger.invokers.Length > 0) && (i_rcTrigger.invokers[0] != null))
-        {
-            if (i_rcTrigger.invokers[0].invokerType == TriggerInvokerType.Text)
-            {
-                invokerID = formattedTextIDDropdownValues[i_rcTrigger.invokers[0].invokerID];
-            }
-            else
-            {
-                invokerID = m_rcStoryBook.pages[i_pageOrdinal].gameObjects[i_rcTrigger.invokers[0].invokerID].label;
-            }
-        }
-        string triggerSummary = string.Format("{0} - {1} Trigger on Text: {2} and Object: {3}", 
-            i_nOrdinal, i_rcTrigger.type, invokerID, sceneObjectID); 
-        i_rcTrigger.Show = EditorGUILayout.Foldout(i_rcTrigger.Show, triggerSummary);
+        GameObjectClass triggerObject = m_rcStoryBook.pages[i_pageOrdinal].gameObjects[i_rcTrigger.sceneObjectId];
+        
+        string sceneObjectID = string.IsNullOrEmpty(triggerObject.label) ? triggerObject.imageName : triggerObject.label;
+        
+        i_rcTrigger.Show = EditorGUILayout.Foldout(i_rcTrigger.Show, 
+            $"{i_nOrdinal} - {i_rcTrigger.type} on [{sceneObjectID}] with {i_rcTrigger.prompts.Length} prompts and {i_rcTrigger.invokers.Length} invokers.");
 
         EditorGUI.indentLevel++;
 
@@ -977,7 +965,6 @@ public class BookEditor : EditorWindow
 
     private void EditPrompts (TriggerClass i_rcTrigger)
     {
-        i_rcTrigger.showPrompts = EditorGUILayout.Foldout(i_rcTrigger.showPrompts, "Prompts");
         int arraySize;
         if (i_rcTrigger.prompts != null)
         {
@@ -988,6 +975,14 @@ public class BookEditor : EditorWindow
             i_rcTrigger.prompts = new PromptType[1]; //always want to have at least one prompt!
             arraySize = 1;
         }
+
+        EditorGUILayout.BeginHorizontal();
+        i_rcTrigger.showPrompts = EditorGUILayout.Foldout(i_rcTrigger.showPrompts, "Prompts(" + i_rcTrigger.prompts.Length + ")");
+        if (GUILayout.Button("Add")) 
+        {
+            arraySize += 1;
+        }
+        EditorGUILayout.EndHorizontal();
         if (i_rcTrigger.showPrompts)
         {
             EditorGUI.indentLevel++;
@@ -1013,10 +1008,21 @@ public class BookEditor : EditorWindow
             {
                 i_rcTrigger.prompts = new PromptType[arraySize];
             }
+            int removePromptID = -1;
             for (int i = 0; i < arraySize; i++)
             {
                 PromptType prompt = i_rcTrigger.prompts[i];
+                EditorGUILayout.BeginHorizontal();
                 i_rcTrigger.prompts[i] = (PromptType)EditorGUILayout.EnumPopup(prompt, EditorStyles.popup);
+                if (GUILayout.Button("Remove"))
+                {
+                    removePromptID = i;
+                }
+                EditorGUILayout.EndHorizontal();
+            }
+            if (removePromptID != -1)
+            {
+                i_rcTrigger.prompts = i_rcTrigger.prompts.RemoveAt(removePromptID);
             }
             EditorGUI.indentLevel--;
         }
