@@ -974,10 +974,12 @@ public class BookEditor : EditorWindow
             arraySize = 1;
         }
 
+        GUILayout.Space(8);
         EditorGUILayout.BeginHorizontal();
         i_rcTrigger.showPrompts = EditorGUILayout.Foldout(i_rcTrigger.showPrompts, "Prompts(" + i_rcTrigger.prompts.Length + ")");
         if (GUILayout.Button("Add")) 
-        {
+        {   
+            i_rcTrigger.showPrompts = true;
             arraySize += 1;
         }
         EditorGUILayout.EndHorizontal();
@@ -1034,6 +1036,7 @@ public class BookEditor : EditorWindow
         
         // i_rcTrigger.timestamp = EditorGUILayout.IntField("Timestamp", i_rcTrigger.timestamp, EditorStyles.numberField);
 
+        GUILayout.Space(8);
         EditorGUI.BeginDisabledGroup(gameObjectsDropdownNames.Length == 0);
         if (gameObjectsDropdownNames.Length == 0)
         {
@@ -1056,39 +1059,34 @@ public class BookEditor : EditorWindow
         {
             i_rcTrigger.invokers = new PerformanceInvoker[arraySize];
         }
+        GUILayout.Space(8);
         EditorGUILayout.BeginHorizontal();
         i_rcTrigger.showInvokers = EditorGUILayout.Foldout(i_rcTrigger.showInvokers, "Invokers(" + i_rcTrigger.invokers.Length + ")");
         if (GUILayout.Button("Add"))
         {
-            arraySize += 1;
+            i_rcTrigger.showInvokers = true;
+            PerformanceInvoker[] rcNewInvokers = new PerformanceInvoker[i_rcTrigger.invokers.Length + 1];
+            Array.Copy(i_rcTrigger.invokers, rcNewInvokers, i_rcTrigger.invokers.Length);
+            rcNewInvokers[i_rcTrigger.invokers.Length] = new PerformanceInvoker();
+            i_rcTrigger.invokers = rcNewInvokers;
+        }
+        if (GUILayout.Button("Add & Edit"))
+        {
+            i_rcTrigger.showInvokers = true;
+            // arraySize += 1;
+            PerformanceInvoker[] rcNewInvokers = new PerformanceInvoker[i_rcTrigger.invokers.Length + 1];
+            Array.Copy(i_rcTrigger.invokers, rcNewInvokers, i_rcTrigger.invokers.Length);
+            rcNewInvokers[i_rcTrigger.invokers.Length] = new PerformanceInvoker();
+            i_rcTrigger.invokers = rcNewInvokers;
+            i_rcTrigger.invokers[i_rcTrigger.invokers.Length - 1].showVars = true;
         }
         EditorGUILayout.EndHorizontal();
+
         if (i_rcTrigger.showInvokers)
         {
-            arraySize = EditorGUILayout.IntField(new GUIContent().text = "size", arraySize);
-            if (i_rcTrigger.invokers.Length > 0)
-            {
-                PerformanceInvoker[] temp = new PerformanceInvoker[arraySize];
-                for (int i = 0; i < i_rcTrigger.invokers.Length; i++)
-                {
-                    if (i >= arraySize)
-                    {
-                        break;
-                    }
-                    temp[i] = i_rcTrigger.invokers[i];
-                }
-                i_rcTrigger.invokers = new PerformanceInvoker[arraySize];
+            EditorGUI.indentLevel++;
 
-                for (int i = 0; i < temp.Length; i++)
-                {
-
-                    i_rcTrigger.invokers[i] = temp[i];
-                }
-            }
-            else
-            {
-                i_rcTrigger.invokers = new PerformanceInvoker[arraySize];
-            }
+            int invokerIndexToRemove = -1;
 
             for (int i = 0; i < i_rcTrigger.invokers.Length; i++)
             {
@@ -1096,8 +1094,11 @@ public class BookEditor : EditorWindow
                 {
                     i_rcTrigger.invokers[i] = new PerformanceInvoker();
                 }
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.BeginVertical();
                 i_rcTrigger.invokers[i].showVars = EditorGUILayout.Foldout(i_rcTrigger.invokers[i].showVars, 
                     $"{i} - {i_rcTrigger.invokers[i].invokerType.ToString()} invoker." + (i_rcTrigger.invokers[i].symmetricallyPaired ? " Symmetric" : ""));
+                
                 if (i_rcTrigger.invokers[i].showVars)
                 {
                     EditorGUI.indentLevel++;
@@ -1140,8 +1141,25 @@ public class BookEditor : EditorWindow
                     EditorGUI.indentLevel--;
 
                 }
+                GUILayout.Space(4);
+                EditorGUILayout.EndVertical();
+                EditorGUILayout.BeginVertical();
+                if (GUILayout.Button("Remove"))
+                {
+                    invokerIndexToRemove = i;
+                }
+                EditorGUILayout.EndVertical();
+                EditorGUILayout.EndHorizontal();
             }
+
+            if (invokerIndexToRemove != -1)
+            {
+                i_rcTrigger.invokers = i_rcTrigger.invokers.RemoveAt(invokerIndexToRemove);
+            }
+
+            EditorGUI.indentLevel--;
         }
+
     }
 
     /// <summary>
@@ -1230,11 +1248,7 @@ public class BookEditor : EditorWindow
             for (int j = 0; j < words.Length; j++) {
                 string[] formattedWords = new string[words.Length];
                 words.CopyTo(formattedWords, 0);
-                formattedWords[j] = String.Format("▶ {0} ◀", words[j]);
-                if (cleanedUpSentences.Length > 1)
-                    i_formattedDropDownValues[formattedIndex++] = String.Format("{0} / [{1}] {2}", cleanedUpSentences[i], formattedIndex, String.Join(" ", formattedWords));
-                else
-                    i_formattedDropDownValues[formattedIndex++] = String.Format("[{0}] {1}", formattedIndex, String.Join(" ", formattedWords));
+                i_formattedDropDownValues[formattedIndex++] = $"{formattedIndex} - {words[j]}";
             }
         }
     }
