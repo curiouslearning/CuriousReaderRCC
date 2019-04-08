@@ -1050,14 +1050,9 @@ public class BookEditor : EditorWindow
         EditorGUI.EndDisabledGroup();
 
         ////////////////////////////////////
-        int arraySize = 0;
-        if (i_rcTrigger.invokers != null)
+        if (i_rcTrigger.invokers == null)
         {
-             arraySize = i_rcTrigger.invokers.Length;
-        }
-        else
-        {
-            i_rcTrigger.invokers = new PerformanceInvoker[arraySize];
+            i_rcTrigger.invokers = new PerformanceInvoker[0];
         }
         GUILayout.Space(8);
         EditorGUILayout.BeginHorizontal();
@@ -1065,15 +1060,6 @@ public class BookEditor : EditorWindow
         if (GUILayout.Button("Add"))
         {
             i_rcTrigger.showInvokers = true;
-            PerformanceInvoker[] rcNewInvokers = new PerformanceInvoker[i_rcTrigger.invokers.Length + 1];
-            Array.Copy(i_rcTrigger.invokers, rcNewInvokers, i_rcTrigger.invokers.Length);
-            rcNewInvokers[i_rcTrigger.invokers.Length] = new PerformanceInvoker();
-            i_rcTrigger.invokers = rcNewInvokers;
-        }
-        if (GUILayout.Button("Add & Edit"))
-        {
-            i_rcTrigger.showInvokers = true;
-            // arraySize += 1;
             PerformanceInvoker[] rcNewInvokers = new PerformanceInvoker[i_rcTrigger.invokers.Length + 1];
             Array.Copy(i_rcTrigger.invokers, rcNewInvokers, i_rcTrigger.invokers.Length);
             rcNewInvokers[i_rcTrigger.invokers.Length] = new PerformanceInvoker();
@@ -1096,8 +1082,20 @@ public class BookEditor : EditorWindow
                 }
                 EditorGUILayout.BeginHorizontal();
                 EditorGUILayout.BeginVertical();
-                i_rcTrigger.invokers[i].showVars = EditorGUILayout.Foldout(i_rcTrigger.invokers[i].showVars, 
-                    $"{i} - {i_rcTrigger.invokers[i].invokerType.ToString()} invoker." + (i_rcTrigger.invokers[i].symmetricallyPaired ? " Symmetric" : ""));
+
+                string[] formattedTextIDDropdownValues;
+                FormatTextDropdownListForTextID(m_rcStoryBook.pages[i_pageOrdinal].texts, out formattedTextIDDropdownValues);
+
+                if (i_rcTrigger.invokers[i].invokerType == TriggerInvokerType.Text)
+                {
+                    i_rcTrigger.invokers[i].showVars = EditorGUILayout.Foldout(i_rcTrigger.invokers[i].showVars,
+                        $"{i} - Text invoker on [" + formattedTextIDDropdownValues[i_rcTrigger.invokers[i].invokerID] + (i_rcTrigger.invokers[i].symmetricallyPaired ? "]. Symmetric" : "]."));
+                } 
+                else if (i_rcTrigger.invokers[i].invokerType == TriggerInvokerType.Actor)
+                {
+                    i_rcTrigger.invokers[i].showVars = EditorGUILayout.Foldout(i_rcTrigger.invokers[i].showVars,
+                        $"{i} - Actor invoker on [" + gameObjectsDropdownNames[i_rcTrigger.invokers[i].invokerID] + (i_rcTrigger.invokers[i].symmetricallyPaired ? "]. Symmetric" : "]."));
+                }
                 
                 if (i_rcTrigger.invokers[i].showVars)
                 {
@@ -1108,8 +1106,6 @@ public class BookEditor : EditorWindow
                         i_rcTrigger.invokers[i].symmetricallyPaired = EditorGUILayout.Toggle(new GUIContent("Symmetrically Paired "), i_rcTrigger.invokers[i].symmetricallyPaired);
                         i_rcTrigger = UpdatePairing(i_rcTrigger, i_rcTrigger.invokers[i]);
                         i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
-                        string[] formattedTextIDDropdownValues;
-                        FormatTextDropdownListForTextID(m_rcStoryBook.pages[i_pageOrdinal].texts, out formattedTextIDDropdownValues);
                         bool textIDValuesEmpty = formattedTextIDDropdownValues.Length == 0 || formattedTextIDDropdownValues.Length == 1 && formattedTextIDDropdownValues[0] == null;
                         EditorGUI.BeginDisabledGroup(textIDValuesEmpty);
                         if (textIDValuesEmpty)
@@ -1256,8 +1252,7 @@ public class BookEditor : EditorWindow
     private void FormatGameObjectIDsAndLabels(GameObjectClass[] i_sceneObjects, out string[] i_gameObjectNames) {
         i_gameObjectNames = new string[i_sceneObjects.Length];
         for (int i = 0; i < i_sceneObjects.Length; i++) {
-            i_gameObjectNames[i] = string.Format("[{0}] {1}", i + 1, 
-                string.IsNullOrEmpty(i_sceneObjects[i].label) ? i_sceneObjects[i].imageName : i_sceneObjects[i].label);
+            i_gameObjectNames[i] = $"{i + 1} - " + (string.IsNullOrEmpty(i_sceneObjects[i].label) ? i_sceneObjects[i].imageName : i_sceneObjects[i].label);
         }
     }
 
