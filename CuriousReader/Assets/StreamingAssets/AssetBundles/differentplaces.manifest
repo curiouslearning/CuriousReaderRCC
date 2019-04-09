@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1718296125
+CRC: 1199635419
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5c83625ae91fa41ecb66a6f9964f9aaa
+    Hash: 76a2d279b550b0ffb49beb7a48784dbc
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1a5bf2e0598d5c8d2dd3aedb253e6e11
@@ -61,6 +61,7 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_huzuni.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/3/small_bird_flapping/03_a_small_bird_flapping-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_18.mp3
+- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_0_6.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Words/audio_swahili_smdp_word_wa.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/18/sad face on the little
   fish/16_sad_face_on_the_little_fish-2.svg
@@ -216,7 +217,6 @@ Assets:
   SVG/1_day_to_night-3.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_forest.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/small_boat_move_slowly/16_small_boat_moves_slowly-4.svg
-- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_0.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level2/Audio/Stanza/audio_smdp_2_sw_stanza_page_0.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/16/The happy fish dances/16_the_happy_fish_dances-5.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/Akili Wave/Akili_wave-10.svg
@@ -520,7 +520,6 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/8/8_Akili_3_way_forest-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/5/star_vibrates/05_star_vibrates.asset
 - Assets/Books/Decodable/UbongoKids/SMDP/English/Words/audio_english_smdp_word_oh.mp3
-- Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level4/Audio/Stanza/audio_swahili_smdp_4_stanza_page_6.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/5/5_star-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Images/21/21_Akili_3_way_home-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/20/20_bobbing_together-2.svg
