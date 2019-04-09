@@ -162,6 +162,13 @@ namespace CuriousReader.Performance
             Tween ColorTween;
             TextMeshProUGUI text = i_rcActor.GetComponent<TextMeshProUGUI>();
             Vector3 endValues = rect.localScale * 1.5f;
+
+            // Change the index of highlighted text to the last one 
+            // in parent's hierarchy to make it display above other words.
+            // Changing Z value is tricky, because the text could hide behind the background
+            // and that also doesn't work on the canvas itself for displaying canvas elements on top of each other
+            i_rcActor.transform.SetAsLastSibling();
+
             if (rect != null)
             {
                 if (!i_speed.Equals(default(float)))
