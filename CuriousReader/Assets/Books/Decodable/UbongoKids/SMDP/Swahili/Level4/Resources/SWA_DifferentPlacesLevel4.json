@@ -113,13 +113,13 @@
                 },
                 {
                     "id": 1,
-                    "text": "wakati wa usiku na mchana.",
+                    "text": "usiku na mchana.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_0",
+            "audioFile": "audio_swahili_smdp_4_stanza_page_0_6",
             "timestamps": [
                 {
                     "start": 0,
@@ -164,38 +164,24 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 3482,
+                    "start": 3530,
                     "wordIdx": 6,
-                    "audio": "audio_swahili_smdp_word_wakati",
-                    "end": 3895,
-                    "starWord": "No"
-                },
-                {
-                    "start": 3895,
-                    "wordIdx": 7,
-                    "audio": "audio_swahili_smdp_word_wa",
-                    "end": 4051,
-                    "starWord": "No"
-                },
-                {
-                    "start": 4050,
-                    "wordIdx": 8,
                     "audio": "audio_swahili_smdp_word_usiku",
-                    "end": 4754,
+                    "end": 4335,
                     "starWord": "No"
                 },
                 {
-                    "start": 4754,
-                    "wordIdx": 9,
+                    "start": 4335,
+                    "wordIdx": 7,
                     "audio": "audio_swahili_smdp_word_na",
-                    "end": 5085,
+                    "end": 4627,
                     "starWord": "No"
                 },
                 {
-                    "start": 5085,
-                    "wordIdx": 10,
+                    "start": 4627,
+                    "wordIdx": 8,
                     "audio": "audio_swahili_smdp_word_mchana",
-                    "end": 5903,
+                    "end": 5338,
                     "starWord": "Yes"
                 }
             ],
@@ -1818,13 +1804,13 @@
                 },
                 {
                     "id": 1,
-                    "text": "mchana na usiku.",
+                    "text": "usiku na mchana.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_smdp_4_stanza_page_6",
+            "audioFile": "audio_swahili_smdp_4_stanza_page_0_6",
             "timestamps": [
                 {
                     "start": 0,
@@ -1838,7 +1824,7 @@
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_anga",
                     "end": 1468,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 1469,
@@ -1871,23 +1857,23 @@
                 {
                     "start": 3422,
                     "wordIdx": 6,
-                    "audio": "audio_swahili_smdp_word_mchana",
-                    "end": 4174,
-                    "starWord": "Yes"
+                    "audio": "audio_swahili_smdp_word_usiku",
+                    "end": 4322,
+                    "starWord": "No"
                 },
                 {
-                    "start": 4173,
+                    "start": 4330,
                     "wordIdx": 7,
                     "audio": "audio_swahili_smdp_word_na",
-                    "end": 4401,
+                    "end": 4687,
                     "starWord": "No"
                 },
                 {
-                    "start": 4400,
+                    "start": 4690,
                     "wordIdx": 8,
-                    "audio": "audio_swahili_smdp_word_usiku",
-                    "end": 5094,
-                    "starWord": "No"
+                    "audio": "audio_swahili_smdp_word_mchana",
+                    "end": 5326,
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -1914,7 +1900,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6,
+                            "invokerID": 8,
                             "symmetricallyPaired": false
                         }
                     ],

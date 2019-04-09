@@ -128,14 +128,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Ah, anga! Mawingu wakati wa mchana.",
+                    "text": "Ah, anga! Nyota wakati wa usiku.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "Nyota wakati wa usiku.",
+                    "text": "Mawingu wakati wa mchana.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -147,11 +147,11 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_ah",
-                    "end": 1010,
+                    "end": 751,
                     "starWord": "No"
                 },
                 {
-                    "start": 1010,
+                    "start": 751,
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_anga",
                     "end": 1786,
@@ -160,58 +160,58 @@
                 {
                     "start": 1786,
                     "wordIdx": 2,
-                    "audio": "audio_swahili_smdp_word_mawingu",
-                    "end": 2267,
+                    "audio": "audio_swahili_smdp_word_nyota",
+                    "end": 2332,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 2267,
+                    "start": 2332,
                     "wordIdx": 3,
                     "audio": "audio_swahili_smdp_word_wakati",
-                    "end": 2634,
+                    "end": 2769,
                     "starWord": "No"
                 },
                 {
-                    "start": 2634,
+                    "start": 2770,
                     "wordIdx": 4,
                     "audio": "audio_swahili_smdp_word_wa",
-                    "end": 2803,
+                    "end": 2922,
                     "starWord": "No"
                 },
                 {
-                    "start": 2803,
+                    "start": 2922,
                     "wordIdx": 5,
-                    "audio": "audio_swahili_smdp_word_mchana",
+                    "audio": "audio_swahili_smdp_word_usiku",
                     "end": 3560,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 3560,
                     "wordIdx": 6,
-                    "audio": "audio_swahili_smdp_word_nyota",
-                    "end": 3993,
+                    "audio": "audio_swahili_smdp_word_mawingu",
+                    "end": 4236,
                     "starWord": "No"
                 },
                 {
-                    "start": 3994,
+                    "start": 4236,
                     "wordIdx": 7,
                     "audio": "audio_swahili_smdp_word_wakati",
-                    "end": 4379,
+                    "end": 4568,
                     "starWord": "No"
                 },
                 {
-                    "start": 4379,
+                    "start": 4568,
                     "wordIdx": 8,
                     "audio": "audio_swahili_smdp_word_wa",
-                    "end": 4505,
+                    "end": 4771,
                     "starWord": "No"
                 },
                 {
-                    "start": 4505,
+                    "start": 4771,
                     "wordIdx": 9,
-                    "audio": "audio_swahili_smdp_word_usiku",
-                    "end": 5197,
-                    "starWord": "No"
+                    "audio": "audio_swahili_smdp_word_mchana",
+                    "end": 5447,
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -225,7 +225,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 6,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -246,7 +246,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 6,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -267,7 +267,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6,
+                            "invokerID": 2,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -1944,14 +1944,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Ah, anga! Mawingu wakati wa mchana.",
+                    "text": "Ah, anga! Nyota wakati wa usiku.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "Nyota wakati wa usiku.",
+                    "text": "Mawingu wakati wa mchana.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1963,71 +1963,71 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "audio_swahili_smdp_word_ah",
-                    "end": 1010,
+                    "end": 791,
                     "starWord": "No"
                 },
                 {
-                    "start": 1010,
+                    "start": 806,
                     "wordIdx": 1,
                     "audio": "audio_swahili_smdp_word_anga",
-                    "end": 1786,
+                    "end": 1564,
                     "starWord": "No"
                 },
                 {
-                    "start": 1786,
+                    "start": 1791,
                     "wordIdx": 2,
-                    "audio": "audio_swahili_smdp_word_mawingu",
-                    "end": 2267,
+                    "audio": "audio_swahili_smdp_word_nyota",
+                    "end": 2400,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 2267,
+                    "start": 2400,
                     "wordIdx": 3,
                     "audio": "audio_swahili_smdp_word_wakati",
-                    "end": 2634,
+                    "end": 2789,
                     "starWord": "No"
                 },
                 {
-                    "start": 2634,
+                    "start": 2797,
                     "wordIdx": 4,
                     "audio": "audio_swahili_smdp_word_wa",
-                    "end": 2803,
+                    "end": 2955,
                     "starWord": "No"
                 },
                 {
-                    "start": 2803,
+                    "start": 2955,
                     "wordIdx": 5,
-                    "audio": "audio_swahili_smdp_word_mchana",
-                    "end": 3637,
-                    "starWord": "Yes"
-                },
-                {
-                    "start": 3637,
-                    "wordIdx": 6,
-                    "audio": "audio_swahili_smdp_word_nyota",
-                    "end": 3993,
+                    "audio": "audio_swahili_smdp_word_usiku",
+                    "end": 3603,
                     "starWord": "No"
                 },
                 {
-                    "start": 3993,
+                    "start": 3603,
+                    "wordIdx": 6,
+                    "audio": "audio_swahili_smdp_word_mawingu",
+                    "end": 4151,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4151,
                     "wordIdx": 7,
                     "audio": "audio_swahili_smdp_word_wakati",
-                    "end": 4379,
+                    "end": 4545,
                     "starWord": "No"
                 },
                 {
-                    "start": 4379,
+                    "start": 4545,
                     "wordIdx": 8,
                     "audio": "audio_swahili_smdp_word_wa",
-                    "end": 4505,
+                    "end": 4815,
                     "starWord": "No"
                 },
                 {
-                    "start": 4505,
+                    "start": 4821,
                     "wordIdx": 9,
-                    "audio": "audio_swahili_smdp_word_usiku",
-                    "end": 5197,
-                    "starWord": "No"
+                    "audio": "audio_swahili_smdp_word_mchana",
+                    "end": 5471,
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -2040,7 +2040,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5,
+                            "invokerID": 9,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -2060,7 +2060,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5,
+                            "invokerID": 9,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -2081,7 +2081,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 6,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -2102,7 +2102,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 6,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -2123,7 +2123,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6,
+                            "invokerID": 2,
                             "symmetricallyPaired": true
                         }
                     ],
