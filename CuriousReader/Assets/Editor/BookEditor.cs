@@ -954,7 +954,6 @@ public class BookEditor : EditorWindow
                     this.Repaint();
 
                     int nSamplePosition = AudioUtility.GetClipSamplePosition(i_rcClip);
-                    DrawCurrentAudioPosition(i_rcClip, rcRect2, nSamplePosition);
                     DrawCurrentAudioPosition(i_rcClip, i_rcRect, nSamplePosition); 
                 }
 
