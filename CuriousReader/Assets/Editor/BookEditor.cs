@@ -157,7 +157,13 @@ public class BookEditor : EditorWindow
         currentPageDropdownStyle.fontSize = 10;
         currentPageDropdownStyle.fixedHeight = 20;
         
+        int currentPageID = m_activePageID;
         m_activePageID = EditorGUILayout.Popup("Current Page", m_activePageID, pageTexts, currentPageDropdownStyle, GUILayout.ExpandWidth(false), GUILayout.Width(580));
+
+        if (currentPageID != m_activePageID)
+        {
+            m_assetsNotFound = new HashSet<string>();
+        }
 
         currentPageDropdownStyle.fontStyle = FontStyle.Normal;
         currentPageDropdownStyle.fontSize = 9;
@@ -344,7 +350,10 @@ public class BookEditor : EditorWindow
             string.Format("Previous Page({0})", Mathf.Clamp(m_activePageID - 1, 0, m_rcStoryBook.pages.Length - 2));
         if (GUILayout.Button(previousButtonLabel, GUILayout.Height(24))) {
             if (m_activePageID > 0)
+            {
                 m_activePageID--;
+                m_assetsNotFound = new HashSet<string>();
+            }
         }
         EditorGUI.EndDisabledGroup();
 
@@ -354,7 +363,10 @@ public class BookEditor : EditorWindow
             string.Format("Next Page({0})", Mathf.Clamp(m_activePageID + 1, 1, m_rcStoryBook.pages.Length - 1));
         if (GUILayout.Button(nextButtonLabel, GUILayout.Height(24))) {
             if (m_activePageID < m_rcStoryBook.pages.Length -1)
+            {
                 m_activePageID++;
+                m_assetsNotFound = new HashSet<string>();
+            }
         }
         EditorGUI.EndDisabledGroup();
 
@@ -1794,6 +1806,8 @@ public class BookEditor : EditorWindow
         GUI.EndClip();
     }
 
+    HashSet<string> m_assetsNotFound = new HashSet<string>();
+
     public string ObjectFieldToString<T>(ref string i_strCurrentValue, string i_strLabel, ref T i_rcContainer, string i_strExtension = "", string i_strSearchPath = "") where T : UnityEngine.Object
     {
         // If the container is null (because it doesn't serialize) then we need to populate it if we can
@@ -1802,15 +1816,29 @@ public class BookEditor : EditorWindow
             // If the string file name is not empty, then... then we need to propagate the audioclip.
             if (!string.IsNullOrEmpty(i_strCurrentValue))
             {
-                string strPath = Application.dataPath;
+                string strPath = null;
 
                 if (!string.IsNullOrEmpty(i_strSearchPath))
                 {
-                    strPath = FindAssetPathRecursive(i_strCurrentValue, i_strSearchPath);
+                    if (!m_assetsNotFound.Contains(i_strCurrentValue))
+                    {
+                        strPath = FindAssetPathRecursive(i_strCurrentValue, i_strSearchPath);
+                        if (string.IsNullOrEmpty(strPath))
+                        {
+                            m_assetsNotFound.Add(i_strCurrentValue);
+                        }
+                    }
                 }
                 else
                 {
-                    strPath = FindAssetPathRecursive(i_strCurrentValue, strPath);
+                    if (!m_assetsNotFound.Contains(i_strCurrentValue))
+                    {
+                        strPath = FindAssetPathRecursive(i_strCurrentValue, Application.dataPath);
+                        if (string.IsNullOrEmpty(strPath))
+                        {
+                            m_assetsNotFound.Add(i_strCurrentValue);
+                        }
+                    }
                 }
 
                 if (!string.IsNullOrEmpty(strPath))
