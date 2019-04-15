@@ -53,6 +53,8 @@ public class BookEditor : EditorWindow
     bool    m_foldoutGameObjects    = false;
     bool    m_foldoutTriggers       = false;
 
+    HashSet<string> m_assetsMissingForPage = new HashSet<string>();
+
     int     m_activePageID = 0;
 
     // Used when we need to replace current book data with a new one, settings this true when attempting to load the
@@ -110,6 +112,7 @@ public class BookEditor : EditorWindow
                     m_needToLoadBookContent = false;
                     m_loadedBookNameWithoutExtension = System.IO.Path.GetFileNameWithoutExtension(m_strBookPath);
 
+                    initializeNewSetOfMissingAssets(); 
                     this.ShowNotification(new GUIContent("Loading: " + m_loadedBookNameWithoutExtension + "!"));
                     // addFileWatcherForReloadingAtPath(m_strBookPath);
                 }
@@ -162,7 +165,7 @@ public class BookEditor : EditorWindow
 
         if (currentPageID != m_activePageID)
         {
-            m_assetsNotFound = new HashSet<string>();
+            initializeNewSetOfMissingAssets();
         }
 
         currentPageDropdownStyle.fontStyle = FontStyle.Normal;
@@ -352,7 +355,7 @@ public class BookEditor : EditorWindow
             if (m_activePageID > 0)
             {
                 m_activePageID--;
-                m_assetsNotFound = new HashSet<string>();
+                initializeNewSetOfMissingAssets();
             }
         }
         EditorGUI.EndDisabledGroup();
@@ -365,7 +368,7 @@ public class BookEditor : EditorWindow
             if (m_activePageID < m_rcStoryBook.pages.Length -1)
             {
                 m_activePageID++;
-                m_assetsNotFound = new HashSet<string>();
+                initializeNewSetOfMissingAssets();
             }
         }
         EditorGUI.EndDisabledGroup();
@@ -589,7 +592,7 @@ public class BookEditor : EditorWindow
             EditorGUI.indentLevel++;
 
             string strSearchPath = m_strBookPath.Replace("Resources/" + System.IO.Path.GetFileName(m_strBookPath), "");
-            strSearchPath = Directory.GetParent(Directory.GetParent(strSearchPath).FullName).FullName;
+            strSearchPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(strSearchPath).FullName).FullName).FullName;
 
             i_rcPage.audioFile = ObjectFieldToString<AudioClip>(ref i_rcPage.audioFile,"Audio File",ref i_rcPage.AudioClip, "", strSearchPath);
 
@@ -1806,7 +1809,10 @@ public class BookEditor : EditorWindow
         GUI.EndClip();
     }
 
-    HashSet<string> m_assetsNotFound = new HashSet<string>();
+    void initializeNewSetOfMissingAssets()
+    {
+        m_assetsMissingForPage = new HashSet<string>();
+    }
 
     public string ObjectFieldToString<T>(ref string i_strCurrentValue, string i_strLabel, ref T i_rcContainer, string i_strExtension = "", string i_strSearchPath = "") where T : UnityEngine.Object
     {
@@ -1820,23 +1826,27 @@ public class BookEditor : EditorWindow
 
                 if (!string.IsNullOrEmpty(i_strSearchPath))
                 {
-                    if (!m_assetsNotFound.Contains(i_strCurrentValue))
+                    if (!m_assetsMissingForPage.Contains(i_strCurrentValue))
                     {
                         strPath = FindAssetPathRecursive(i_strCurrentValue, i_strSearchPath);
                         if (string.IsNullOrEmpty(strPath))
                         {
-                            m_assetsNotFound.Add(i_strCurrentValue);
+                            Debug.LogWarning("Asset not found: " + i_strCurrentValue);
+                            this.ShowNotification(new GUIContent(m_loadedBookNameWithoutExtension + " not found!"));
+                            m_assetsMissingForPage.Add(i_strCurrentValue);
                         }
                     }
                 }
                 else
                 {
-                    if (!m_assetsNotFound.Contains(i_strCurrentValue))
+                    if (!m_assetsMissingForPage.Contains(i_strCurrentValue))
                     {
                         strPath = FindAssetPathRecursive(i_strCurrentValue, Application.dataPath);
                         if (string.IsNullOrEmpty(strPath))
                         {
-                            m_assetsNotFound.Add(i_strCurrentValue);
+                            Debug.LogWarning("Asset not found: " + i_strCurrentValue);
+                            this.ShowNotification(new GUIContent(m_loadedBookNameWithoutExtension + " not found!"));
+                            m_assetsMissingForPage.Add(i_strCurrentValue);
                         }
                     }
                 }
