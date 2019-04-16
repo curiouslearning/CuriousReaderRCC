@@ -1832,7 +1832,7 @@ public class BookEditor : EditorWindow
                         if (string.IsNullOrEmpty(strPath))
                         {
                             Debug.LogWarning("Asset not found: " + i_strCurrentValue);
-                            this.ShowNotification(new GUIContent(m_loadedBookNameWithoutExtension + " not found!"));
+                            this.ShowNotification(new GUIContent(i_strCurrentValue + " not found!"));
                             m_assetsMissingForPage.Add(i_strCurrentValue);
                         }
                     }
@@ -1845,7 +1845,7 @@ public class BookEditor : EditorWindow
                         if (string.IsNullOrEmpty(strPath))
                         {
                             Debug.LogWarning("Asset not found: " + i_strCurrentValue);
-                            this.ShowNotification(new GUIContent(m_loadedBookNameWithoutExtension + " not found!"));
+                            this.ShowNotification(new GUIContent(i_strCurrentValue + " not found!"));
                             m_assetsMissingForPage.Add(i_strCurrentValue);
                         }
                     }
