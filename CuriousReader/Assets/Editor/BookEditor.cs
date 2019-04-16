@@ -151,7 +151,6 @@ public class BookEditor : EditorWindow
                 pageTexts[i] = "Page " + i.ToString();
         }
 
-
         GUIStyle currentPageDropdownStyle = EditorStyles.popup;
         currentPageDropdownStyle.fontStyle = FontStyle.Bold;
         currentPageDropdownStyle.fontSize = 10;
@@ -938,7 +937,32 @@ public class BookEditor : EditorWindow
 
             if (i_rcClip != null)
             {
-                DrawTimestamp(i_rcClip, i_rcRect, i_rcTimestamp.start, i_rcTimestamp.end);
+
+                i_rcRect = EditorGUILayout.GetControlRect(false, 60.0f);
+                i_rcRect.xMin = 40.0f;
+
+                ClearRect(i_rcRect, Color.black);
+                RenderAudioClip(i_rcClip, i_rcRect, 1.0f);
+
+                Rect rcRect2 = EditorGUILayout.GetControlRect();
+                rcRect2.yMax = 60f;
+                rcRect2.xMin = 40.0f;
+
+                if (AudioUtility.IsClipPlaying(i_rcClip))
+                {
+                    EditorUtility.SetDirty(this);
+                    this.Repaint();
+
+                    int nSamplePosition = AudioUtility.GetClipSamplePosition(i_rcClip);
+                    DrawCurrentAudioPosition(i_rcClip, i_rcRect, nSamplePosition); 
+                }
+
+                if (i_rcClip != null)
+                {
+                    DrawTimestamp(i_rcClip, i_rcRect, i_rcTimestamp.start, i_rcTimestamp.end);
+                    DrawTimestamp(i_rcClip, rcRect2, i_rcTimestamp.start, i_rcTimestamp.end);
+                }
+
             }
 
         }
