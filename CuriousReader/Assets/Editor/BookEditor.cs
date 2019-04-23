@@ -10,6 +10,24 @@ using Unity.VectorGraphics;
 using Elendow.SpritedowAnimator;
 using CuriousReader.Performance;
 using CuriousReader.BookBuilder;
+using System.Text;
+
+/// <summary>
+/// Used for parsing the page metadata file
+/// </summary>
+struct PageDirective
+{
+    public int StartPage;
+    public int EndPage;
+    public int RepeatCount;
+
+    public PageDirective(int i_startPage, int i_endPage, int i_repeatCount)
+    {
+        StartPage = i_startPage;
+        EndPage = i_endPage;
+        RepeatCount = i_repeatCount;
+    }
+}
 
 public class BookEditor : EditorWindow
 {
@@ -238,6 +256,494 @@ public class BookEditor : EditorWindow
 
         #endregion
 
+        #region Story Automation With New Hierarchy
+        
+        GUILayout.BeginHorizontal();
+
+        if (GUILayout.Button("Create Metadata And Animations", GUILayout.Height(24))) 
+        {
+            DirectoryInfo commonDirectory = new DirectoryInfo(m_strCommonPath);
+
+            Dictionary<string, string> storyPathsLookup = CreateSubDirectoryPathsLookup(commonDirectory);
+
+
+            if (storyPathsLookup.Count == 0 || !storyPathsLookup.ContainsKey("Objects"))
+            {
+                Debug.LogError("Story path: " + commonDirectory.FullName + " doesn't contain Common directory.");
+                return;
+            }
+
+            DirectoryInfo storyObjectsDirectoryInfo = new DirectoryInfo(storyPathsLookup["Objects"]);
+
+            Dictionary<string, string> storyObjectPathsLookup = CreateSubDirectoryPathsLookup(storyObjectsDirectoryInfo);
+
+            if (storyObjectPathsLookup.Count == 0)
+            {
+                Debug.LogError("Story Objects Directory is Empty!");
+                return;
+            }
+
+            Dictionary<string, List<string>> sceneObjectNamesSet = new Dictionary<string, List<string>>();
+
+            string[] allowedFileFormats = new string[] { ".svg", ".png" };
+
+            foreach (KeyValuePair<string, string> sceneObjectPath in storyObjectPathsLookup) 
+            {
+                DirectoryInfo sceneObjectPathInfo = new DirectoryInfo(sceneObjectPath.Value);
+                FileInfo[] objectFiles = sceneObjectPathInfo.GetFiles();
+                foreach (FileInfo objectFileName in objectFiles) 
+                {
+                    if (Array.IndexOf(allowedFileFormats, objectFileName.Extension.ToLower()) < 0)
+                        continue;
+                    string[] objectFileNamePieces = System.IO.Path.GetFileNameWithoutExtension(objectFileName.FullName).Split('-');
+                    if (objectFileNamePieces.Length == 1 || objectFileNamePieces.Length == 2)
+                    {
+                        if (!sceneObjectNamesSet.ContainsKey(objectFileNamePieces[0]))
+                            sceneObjectNamesSet.Add(objectFileNamePieces[0], null);
+                    } else if (objectFileNamePieces.Length == 3) 
+                    {
+                        string objectAndAnimationName = string.Format(
+                            "{0}-{1}", objectFileNamePieces[0], objectFileNamePieces[1]);
+
+                        if (!sceneObjectNamesSet.ContainsKey(objectAndAnimationName))
+                            sceneObjectNamesSet.Add(objectAndAnimationName, new List<string>());
+                        sceneObjectNamesSet[objectAndAnimationName].Add(
+                            string.Format("{0}-{1}", objectFileNamePieces[2], objectFileName.Extension.ToLower()));
+                    } else
+                    {
+                        Debug.LogError("Unable to add file because of incorrect name " + objectFileName.FullName);
+                    }
+                }
+            }
+
+            if (sceneObjectNamesSet.Count == 0)
+            {
+                Debug.LogError("0 objects found in the story at path: " + storyPathsLookup["Objects"]);
+                return;
+            }
+
+            StringBuilder objectNameFileBuilder = new StringBuilder();
+
+            objectNameFileBuilder.Append(string.Format("# Scene Objects Count: {0}\n\n", sceneObjectNamesSet.Count));
+
+            string pageMetaDataPath = System.IO.Path.Combine(Directory.GetParent(m_strBookPath).FullName, "PageMetaData.txt");
+
+            bool confirmOverwrite = true;
+
+            if (File.Exists(pageMetaDataPath)) 
+            {
+                confirmOverwrite = EditorUtility.DisplayDialog(
+                    "Confirm Overwrite", "Are you sure you want to overwrite PageMetaData.txt?", "Yes", 
+                    "Don't Overwrite");
+            }
+
+            if (!confirmOverwrite)
+                return;
+
+            bool generateSyntaxHelp = EditorUtility.DisplayDialog(
+                    "Help Generation", "Generate help & example?",
+                    "Yes",
+                    "No");
+
+            if (generateSyntaxHelp)
+            {
+                objectNameFileBuilder.Append("# !!! Page index starts at 1 and the end page is inclusive !!!");
+                objectNameFileBuilder.Append("\n# !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!");
+                objectNameFileBuilder.Append("\n# Syntax Example:");
+                objectNameFileBuilder.Append("\n#   ObjectName-animation_name > 1:10 & 12x3 & 17 & 20:25x3");
+                objectNameFileBuilder.Append("\n# Description:");
+                objectNameFileBuilder.Append("\n#   >       => Separates object name from page instructions");
+                objectNameFileBuilder.Append("\n#   &       => Connects the instructions");
+                objectNameFileBuilder.Append("\n#   1:10    => Put object on pages 1 through 10 (inclusive)");
+                objectNameFileBuilder.Append("\n#   12x3    => Put object on page 12, 3 times");
+                objectNameFileBuilder.Append("\n#   17      => Put object on page 17");
+                objectNameFileBuilder.Append("\n#   20:25x3 => Put object on pages 20 through 25, 3 times on each\n\n");
+            }
+
+            foreach (KeyValuePair<string, List<string>> sceneObject in sceneObjectNamesSet) 
+            {
+                objectNameFileBuilder.Append(string.Format("{0} >\n", sceneObject.Key));
+                if (sceneObject.Key.Contains("-"))
+                {
+                    string[] objectNameAndAnimation = sceneObject.Key.Split('-');
+                    // Get local path, replace everything before Assets with Assets
+                    string objectDirectory = ReplaceRegexAndTrim(storyObjectPathsLookup[objectNameAndAnimation[0]], @"(.*?)Assets", "Assets");
+                    List<string> frameFullPaths = new List<string>();
+                    foreach (string frame in sceneObject.Value)
+                    {
+                        string[] frameSplit = frame.Split('-');
+                        string frameNumber = frameSplit[0];
+                        string frameExtension = frameSplit[1];
+                        string framePath = System.IO.Path.Combine(objectDirectory, 
+                                string.Format("{0}-{1}{2}", sceneObject.Key, frameNumber, frameExtension));
+                        frameFullPaths.Add(framePath);
+                    }
+                    CreateNewAnimation(sceneObject.Key, objectDirectory, frameFullPaths.ToArray());
+                }
+            }
+
+            File.WriteAllText(pageMetaDataPath, objectNameFileBuilder.ToString());
+
+            this.ShowNotification(new GUIContent("Page Meta Data & Animations Generated!"));
+
+            Debug.Log("Page Meta Data Saved. Path: " + pageMetaDataPath);
+
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+
+        }
+
+        // Uncommenting these lines displays a button that removes all objects on all pages when clicked
+        if (GUILayout.Button("Remove All Objects From Pages", GUILayout.Height(24)))
+        {
+            foreach (PageClass page in m_rcStoryBook.pages)
+            {
+                page.gameObjects = null;
+            }
+            this.ShowNotification(new GUIContent("Removed all GameObjects on all Pages!"));
+        }
+
+        if (GUILayout.Button("Import Objects on Pages", GUILayout.Height(24)))
+        {
+            bool confirmedToProceed = EditorUtility.DisplayDialog(
+                "Confirm Import", "This action adds GameObjects on defined pages in the metadata file regardless if they are already added. Proceed?", 
+                "Yes",
+                "No");
+            if (!confirmedToProceed) {
+                Debug.Log("Stopped Page Objects Import Operation!");
+                return;
+            }
+
+            DirectoryInfo commonDirectoryInfo = new DirectoryInfo(m_strCommonPath);
+
+            Dictionary<string, string> storyPathsLookup = CreateSubDirectoryPathsLookup(commonDirectoryInfo);
+
+            if (storyPathsLookup.Count == 0 || !storyPathsLookup.ContainsKey("Objects"))
+            {
+                Debug.LogError("Story path: " + commonDirectoryInfo.FullName + " doesn't contain Common directory.");
+                return;
+            }
+
+            DirectoryInfo storyObjectsDirectoryInfo = new DirectoryInfo(storyPathsLookup["Objects"]);
+
+            string pageMetaDataPath = System.IO.Path.Combine(Directory.GetParent(m_strBookPath).FullName, "PageMetaData.txt");
+
+            if (!File.Exists(pageMetaDataPath))
+            {
+                Debug.LogError("PageMetaData.txt file doesn't exist at path: " + pageMetaDataPath);
+                return;
+            }
+
+            FileInfo metaDataFileInfo = new FileInfo(pageMetaDataPath);
+
+            string[] metaDataLines = File.ReadAllLines(pageMetaDataPath);
+
+            if (metaDataLines.Length == 0)
+            {
+                Debug.LogError("PageMetaData.txt file is empty. Stopping...");
+                return;
+            }
+
+            Dictionary<string, List<PageDirective>> parsedValues = new Dictionary<string, List<PageDirective>>();
+
+            for (int lineIndex = 0; lineIndex < metaDataLines.Length; lineIndex++) 
+            {
+                int oneBasedLineIndex = lineIndex + 1;
+                string trimmedLine = metaDataLines[lineIndex].Trim();
+
+
+                // Checking if the line is a comment, then skip it
+                if (trimmedLine.StartsWith("#") || string.IsNullOrEmpty(trimmedLine))
+                    continue;
+
+                Debug.Log("---------- Line: " + oneBasedLineIndex + " | " + trimmedLine + " ----------");
+                
+                // Replace "    " with " "
+                trimmedLine = ReplaceRegexAndTrim(trimmedLine, @"\s+", " ");
+                // Replace ">> > >> >>" with ">"
+                trimmedLine = ReplaceRegexAndTrim(trimmedLine, @"([>\s]>[>\s]*)", ">");
+
+                string[] objectNameAndDirectives = trimmedLine.Split('>');
+
+                if (objectNameAndDirectives.Length != 2)
+                {
+                    Debug.LogError(
+                        string.Format("Meta data syntax error: split on '>' doesn't yield 2 values. Line: {0} | {1}", 
+                        oneBasedLineIndex, trimmedLine));
+                    continue;
+                }
+
+                string objectName = objectNameAndDirectives[0].Trim();
+                string directives = objectNameAndDirectives[1].Trim();
+
+                if (string.IsNullOrEmpty(objectName)) 
+                {
+                    Debug.LogError(string.Format("Object name is empty. Line: {0} | {1}",
+                        oneBasedLineIndex, trimmedLine));
+                    continue;
+                }
+
+                if (string.IsNullOrEmpty(directives))
+                {
+                    Debug.LogError(string.Format("Object directives is empty. Line: {0} | {1}", 
+                        oneBasedLineIndex, trimmedLine));
+                    continue;
+                }
+
+                // Replace "&&& & & &&" with "&"
+                directives = ReplaceRegexAndTrim(directives, @"([&\s]&[&\s]*)", "&");
+
+                string[] directiveTerms = directives.Split('&');
+
+                for (int termIndex = 0; termIndex < directiveTerms.Length; termIndex++)
+                {
+                    string trimmedTerm = ReplaceRegexAndTrim(directiveTerms[termIndex], @"\s+", " ").ToLower();
+
+                    if (string.IsNullOrEmpty(trimmedTerm))
+                    {
+                        Debug.LogError(string.Format("Term {0} is empty. Line: {1} | {2}",
+                            termIndex + 1, oneBasedLineIndex, trimmedLine));
+                        continue;
+                    }
+
+                    // Replace "xxXx x" with "x"
+                    trimmedTerm = ReplaceRegexAndTrim(trimmedTerm, @"([x\s]x[x\s]*)", "x");
+
+                    string pageInstruction = null;
+                    string termRepeatCount = null;
+
+                    // Multiplication directive is present
+                    if (trimmedTerm.Contains("x"))
+                    {
+                        string[] multiplicands = trimmedTerm.Split('x');
+                        if (multiplicands.Length != 2)
+                        {
+                            Debug.LogError(
+                                string.Format("Term {0} multiplication should have 2 sides. Line: {1} | {2}",
+                                    termIndex + 1, oneBasedLineIndex, trimmedLine));
+                            continue;
+                        }
+
+                        if (string.IsNullOrEmpty(multiplicands[0]))
+                        {
+                            Debug.LogError(
+                                string.Format("Term {0} page instructions is empty. Line: {1} | {2}",
+                                    termIndex + 1, oneBasedLineIndex, trimmedLine));
+                            continue;
+                        }
+
+                        if (string.IsNullOrEmpty(multiplicands[1]))
+                        {
+                            Debug.LogError(
+                                string.Format("Term {0} right side of multiplication is empty. Line: {1} | {2}",
+                                    termIndex + 1, oneBasedLineIndex, trimmedLine));
+                            continue;
+                        }
+
+                        pageInstruction = multiplicands[0].Trim();
+                        termRepeatCount = multiplicands[1].Trim();
+                    }
+                    else
+                    {
+                        pageInstruction = trimmedTerm;
+                    }
+                    
+                    // Replace ":::: :: :::" with ":"
+                    pageInstruction = ReplaceRegexAndTrim(pageInstruction, @"([:\s]:[:\s]*)", ":"); 
+
+                    string termPage = null;
+                    string termEndPage = null;
+
+                    if (pageInstruction.Contains(":"))
+                    {
+                        string[] pageRange = pageInstruction.Split(':');
+                        if (pageRange.Length != 2)
+                        {
+                            Debug.LogError(string.Format("Term {0} page range should have 2 pages. Line: {1} | {2}",
+                                    termIndex + 1, oneBasedLineIndex, trimmedLine));
+                            continue;
+                        }
+
+                        if (string.IsNullOrEmpty(pageRange[0]))
+                        {
+                            Debug.LogError(
+                                string.Format("Term {0} start page is empty. Line: {1} | {2}",
+                                    termIndex + 1, oneBasedLineIndex, trimmedLine));
+                            continue;
+                        }
+
+                        if (string.IsNullOrEmpty(pageRange[1]))
+                        {
+                            Debug.LogError(
+                                string.Format("Term {0} end page is empty. Line: {1} | {2}",
+                                    termIndex + 1, oneBasedLineIndex, trimmedLine));
+                            continue;
+                        }
+
+                        termPage = pageRange[0].Trim();
+                        termEndPage = pageRange[1].Trim();
+                    } 
+                    else
+                    {
+                        termPage = pageInstruction;
+                    }
+
+                    // We have so far, trying to parse
+                    Debug.Log("Page: " + termPage + " EndPage: " + termEndPage + " By: " + termRepeatCount);
+                    
+                    PageDirective directive = new PageDirective();
+
+                    int termPageNumber = -1;
+                    int termEndPageNumber = -1;
+                    int termRepeatCountNumber = -1;
+
+                    bool termPageParseSuccess;
+                    try {
+                        termPageNumber = Int32.Parse(termPage);
+                        termPageParseSuccess = true;
+                        directive.StartPage = termPageNumber;
+                    } catch (FormatException) {
+                        Debug.LogWarning(string.Format("Term {0} page number is not an integer. Line {1} | {2}", 
+                            termIndex + 1, oneBasedLineIndex, trimmedLine));
+                        termPageParseSuccess = false;
+                    }
+
+                    if (!termPageParseSuccess)
+                    {
+                        continue;
+                    }
+
+                    if (string.IsNullOrEmpty(termEndPage))
+                    {
+                        directive.EndPage = -1;
+                    }
+                    else
+                    {
+                        bool termEndPageParseSuccess;
+                        try {
+                            termEndPageNumber = Int32.Parse(termEndPage);
+                            termEndPageParseSuccess = true;
+                            directive.EndPage = termEndPageNumber;
+                        } catch (FormatException) {
+                            Debug.LogWarning(string.Format("Term {0} end page number is not an integer. Line {1} | {2}",
+                                termIndex + 1, oneBasedLineIndex, trimmedLine));
+                            termEndPageParseSuccess = false;
+                        }
+
+                        if (!termEndPageParseSuccess)
+                        {
+                            continue;
+                        }
+                    }
+
+
+                    if (string.IsNullOrEmpty(termRepeatCount))
+                    {
+                        directive.RepeatCount = -1;
+                    }
+                    else
+                    {
+                        bool termRepeatCounterParseSuccess;
+                        try {
+                            termRepeatCountNumber = Int32.Parse(termRepeatCount);
+                            termRepeatCounterParseSuccess = true;
+                            directive.RepeatCount = termRepeatCountNumber;
+                        } catch (FormatException) {
+                            Debug.LogWarning(string.Format("Term {0} end page number is not an integer. Line {1} | {2}",
+                                termIndex + 1, oneBasedLineIndex, trimmedLine));
+                            termRepeatCounterParseSuccess = false;
+                        }
+
+                        if (!termRepeatCounterParseSuccess)
+                        {
+                            continue;
+                        }
+                    }
+
+                    // Initialize parsed values page directives for this object
+                    if (!parsedValues.ContainsKey(objectName))
+                    {
+                        parsedValues.Add(objectName, new List<PageDirective>());
+                    }
+                    else if (parsedValues.ContainsKey(objectName) && parsedValues[objectName] == null) 
+                    {
+                        parsedValues[objectName] = new List<PageDirective>();
+                    }
+
+                    parsedValues[objectName].Add(directive);
+
+                }
+            }
+
+            if (parsedValues.Count == 0)
+            {
+                Debug.LogError("Couldn't find any page directives in PageMetaData.txt");
+                return;
+            }
+
+            // Start iterating on the directives generating objects on the given pages
+
+            Debug.Log(string.Format("{0} lines parsed successfully! Adding Objects...", parsedValues.Count));
+
+            foreach (KeyValuePair<string, List<PageDirective>> parsedLine in parsedValues)
+            {
+                string objectAndAnimationName = parsedLine.Key;
+                for (int directiveIndex = 0; directiveIndex < parsedLine.Value.Count; directiveIndex++) 
+                {
+                    int startPage         = parsedLine.Value[directiveIndex].StartPage;
+                    int endPage           = parsedLine.Value[directiveIndex].EndPage;
+                    int repeatCount       = parsedLine.Value[directiveIndex].RepeatCount;
+
+                    if (startPage < 1 || startPage > m_rcStoryBook.pages.Length)
+                    {
+                        Debug.LogError($"Start page should be between [1, {m_rcStoryBook.pages.Length}].");
+                        continue;
+                    }
+
+                    if (endPage < startPage || endPage > m_rcStoryBook.pages.Length)
+                        endPage = startPage;
+
+                    for (int oneBasedPageIndex = startPage; oneBasedPageIndex <= endPage; oneBasedPageIndex++)
+                    {
+                        int pageIndex = oneBasedPageIndex - 1;
+
+                        if (repeatCount < 1)
+                            repeatCount = 1;
+
+                        for (int repeat = 0; repeat < repeatCount; repeat++)
+                        {
+                            GameObjectClass newSceneObject = AddNewGameObjectOnPage(pageIndex);
+                            newSceneObject.imageName = objectAndAnimationName;
+                            
+                            // Add the object animation asset name if it exists where it should already be
+                            if (objectAndAnimationName.Contains("-"))
+                            {
+                                string objectName = objectAndAnimationName.Split('-')[0];
+                                string fullAnimationAssetPath = System.IO.Path.Combine(storyPathsLookup["Objects"], 
+                                    objectName);
+                                fullAnimationAssetPath = System.IO.Path.Combine(fullAnimationAssetPath, 
+                                    objectAndAnimationName + ".asset");
+                                if (File.Exists(fullAnimationAssetPath))
+                                {
+                                    newSceneObject.Animations = new string[1] { objectAndAnimationName };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // We are doing this here to have image names ready for scene object edit foldout dropdown
+            m_rcImageNames = new List<string>(parsedValues.Keys);
+            Debug.Log("Populating objects using the metadata file is finished...");
+            this.ShowNotification(new GUIContent("Finished Adding Objects on Pages."));
+
+            AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+        }
+
+        GUILayout.EndHorizontal();
+        
+        #endregion
+        
         #region First Buttons Row at the Bottom (Add Text, Timestamps, Add GameObject, Add Trigger)
 
         GUILayout.BeginHorizontal();
@@ -430,6 +936,56 @@ public class BookEditor : EditorWindow
 
 #endregion
     
+    }
+
+    /// <summary>
+    /// Adds a new game object on page
+    /// </summary>
+    /// <param name="i_pageIndex">Page index to add a new game object to</param>
+    /// <returns>Returns the newly added game object</returns>
+    private GameObjectClass AddNewGameObjectOnPage(int i_pageIndex)
+    {
+        PageClass storyPage = m_rcStoryBook.pages[i_pageIndex];
+        GameObjectClass[] rcNewArray = new GameObjectClass[storyPage.gameObjects.Length + 1];
+        Array.Copy(storyPage.gameObjects, rcNewArray, storyPage.gameObjects.Length);
+        GameObjectClass newObject = new GameObjectClass();
+        newObject.anim = new Anim[0];
+        newObject.Animations = new string[0];
+        newObject.AnimationsID = new int[0];
+        newObject.draggable = false;
+        newObject.id = storyPage.gameObjects.Length;
+        rcNewArray[storyPage.gameObjects.Length] = newObject;
+        storyPage.gameObjects = rcNewArray;
+        return newObject;
+    }
+
+    /// <summary>
+    /// Creates a path lookup dictionary for a given directory
+    /// </summary>
+    /// <param name="pathInfo">DirectoryInfo object for the target path</param>
+    /// <returns>Dictionary containing sub directory names as keys and full paths as values</returns>
+    private Dictionary<string, string> CreateSubDirectoryPathsLookup(DirectoryInfo pathInfo) 
+    {
+        Dictionary<string, string> directoryPathsLookup = new Dictionary<string, string>();
+
+        foreach (DirectoryInfo storySubDirectory in pathInfo.GetDirectories())
+        {
+            directoryPathsLookup.Add(storySubDirectory.Name, storySubDirectory.FullName);
+        }
+
+        return directoryPathsLookup;
+    }
+
+    /// <summary>
+    /// Uses regex replace to remove consecutive whitespaces from the input string and trim it
+    /// </summary>
+    /// <param name="i_input">Input string</param>
+    /// <param name="i_regex">Regex to search for</param>
+    /// <param name="i_replaceWith">String to replace the matches with</param>
+    /// <returns>Replaced and trimmed string</returns>
+    private string ReplaceRegexAndTrim(string i_input, string i_regex, string i_replaceWith) 
+    {
+        return Regex.Replace(i_input, i_regex, i_replaceWith, RegexOptions.IgnoreCase).Trim();
     }
 
     private void addFileWatcherForReloadingAtPath(string path) 

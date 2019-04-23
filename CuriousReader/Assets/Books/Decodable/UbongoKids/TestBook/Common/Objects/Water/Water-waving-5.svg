@@ -1,0 +1,24 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="600" viewBox="0 0 1024 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #38a4fc;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="SVGID" class="cls-1" width="1024" height="600"/>
+    </clipPath>
+  </defs>
+  <title>13_water_wave</title>
+  <g class="cls-2">
+    <path class="cls-3" d="M-417.09,404.68s30.6-21.77,68.29-21.77,75.37,33.87,134.79,33.87,69.57-36.29,121.75-35.08S-29.94,418,23.68,421.62s84.06-37.5,140.59-41.12S239.64,421.62,286,420.41s71-38.71,126.09-38.71S481.68,424,536.76,424s71-47.17,120.3-47.17S742.57,424,791.85,420.41,860,381.7,916.49,379.28s81.16,30.24,134.79,26.61,78.27-26.61,121.75-24.19,46.06,19.35,46.06,15.72V659c.32-11.67-1636.24-17.81-1636.24-17.81Z"/>
+  </g>
+</svg>

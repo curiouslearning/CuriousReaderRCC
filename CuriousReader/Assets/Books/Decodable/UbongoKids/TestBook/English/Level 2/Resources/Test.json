@@ -1,0 +1,2250 @@
+{
+    "id": 1,
+    "fontColor": "white",
+    "textStartPositionX": -111.0,
+    "textStartPositionY": 182.0,
+    "textFontSize": 30,
+    "storyImageFile": "",
+    "backgroundColor": "blue",
+    "arrowColor": "red",
+    "fontFamily": "helvetica",
+    "language": "english",
+    "pages": [
+        {
+            "pageNumber": 0,
+            "script": "DayAndNightManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Sky! I love the sky, day and night."
+                }
+            ],
+            "audioFile": "audio_stanza_page_0.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 666,
+                    "starWord": "No"
+                },
+                {
+                    "start": 666,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1333,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1999,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1999,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2665,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2666,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3332,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 3998,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3999,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 4665,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4665,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 5331,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": []
+        },
+        {
+            "pageNumber": 1,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Look! Big cloud. Small cloud."
+                }
+            ],
+            "audioFile": "audio_stanza_page_1.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 929,
+                    "starWord": "No"
+                },
+                {
+                    "start": 929,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1858,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1859,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2788,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2788,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 3717,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3718,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 4647,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 2,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Big bird. Small bird."
+                }
+            ],
+            "audioFile": "audio_stanza_page_2.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 681,
+                    "starWord": "No"
+                },
+                {
+                    "start": 681,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1362,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1363,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2044,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2045,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2726,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 3,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "A flying bird. A singing bird."
+                }
+            ],
+            "audioFile": "audio_stanza_page_3.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 654,
+                    "starWord": "No"
+                },
+                {
+                    "start": 654,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1308,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1308,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1962,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1963,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2617,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2617,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3271,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3271,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 3925,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 5,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 4,
+            "script": "DayAndNightManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Big sun. Small star."
+                }
+            ],
+            "audioFile": "audio_stanza_page_4.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 838,
+                    "starWord": "No"
+                },
+                {
+                    "start": 838,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1676,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1676,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2514,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2514,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 3352,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 5,
+            "script": "DayAndNightManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "A shining sun. A sparkling star."
+                }
+            ],
+            "audioFile": "audio_stanza_page_5.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 692,
+                    "starWord": "No"
+                },
+                {
+                    "start": 692,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1384,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1384,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2076,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2076,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2768,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2768,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3460,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3460,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 4152,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 5,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 6,
+            "script": "DayAndNightManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Sky! I love the sky, day and night."
+                }
+            ],
+            "audioFile": "audio_stanza_page_6.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 628,
+                    "starWord": "No"
+                },
+                {
+                    "start": 628,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1256,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1256,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1884,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1885,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2513,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2513,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3141,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3141,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 3769,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3770,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 4398,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4398,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 5026,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": []
+        },
+        {
+            "pageNumber": 7,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Where to go?"
+                }
+            ],
+            "audioFile": "audio_stanza_page_7.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 1152,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1152,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 2304,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2304,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 3456,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 6,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 0,
+                    "DeactivateNextButton": true,
+                    "NavigationPage": 8
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 6,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 0,
+                    "DeactivateNextButton": true,
+                    "NavigationPage": 14
+                }
+            ]
+        },
+        {
+            "pageNumber": 8,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Forest! I love the forest."
+                }
+            ],
+            "audioFile": "audio_stanza_page_8.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 750,
+                    "starWord": "No"
+                },
+                {
+                    "start": 750,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1500,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1500,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2250,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2250,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 3000,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3000,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3750,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 9,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Look! A tall giraffe."
+                }
+            ],
+            "audioFile": "audio_stanza_page_9.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 704,
+                    "starWord": "No"
+                },
+                {
+                    "start": 704,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1408,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1408,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2112,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2112,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2816,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 10,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Big monkeys. Small monkeys."
+                }
+            ],
+            "audioFile": "audio_stanza_page_10.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 724,
+                    "starWord": "No"
+                },
+                {
+                    "start": 724,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1448,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1449,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2173,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2173,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2897,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 2,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 1,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 1,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 1,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 3,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 11,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Short sticks. Long sticks."
+                }
+            ],
+            "audioFile": "audio_stanza_page_11.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 798,
+                    "starWord": "No"
+                },
+                {
+                    "start": 798,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1596,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1597,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2395,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2396,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 3194,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 12,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Forest! I love the forest."
+                }
+            ],
+            "audioFile": "audio_stanza_page_12.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 668,
+                    "starWord": "No"
+                },
+                {
+                    "start": 668,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1336,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1336,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2004,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2004,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2672,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2672,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3340,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": []
+        },
+        {
+            "pageNumber": 13,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Where to go?"
+                }
+            ],
+            "audioFile": "audio_stanza_page_13.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 750,
+                    "starWord": "No"
+                },
+                {
+                    "start": 750,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1500,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1500,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2250,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 6,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 0,
+                    "DeactivateNextButton": true,
+                    "NavigationPage": 14
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 6,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 0,
+                    "DeactivateNextButton": true,
+                    "NavigationPage": 21
+                }
+            ]
+        },
+        {
+            "pageNumber": 14,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Ocean! I love the ocean."
+                }
+            ],
+            "audioFile": "audio_stanza_page_14.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 711,
+                    "starWord": "No"
+                },
+                {
+                    "start": 711,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1422,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1423,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2134,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2135,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2846,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2847,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3558,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 15,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Look! Big boat. Little boat."
+                }
+            ],
+            "audioFile": "audio_stanza_page_15.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 808,
+                    "starWord": "No"
+                },
+                {
+                    "start": 808,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1616,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1617,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2425,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2425,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 3233,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3234,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 4042,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 16,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Fast boat. Slow boat."
+                }
+            ],
+            "audioFile": "audio_stanza_page_16.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 808,
+                    "starWord": "No"
+                },
+                {
+                    "start": 808,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1616,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1617,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2425,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2425,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 3233,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 17,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Happy fish. Sad fish."
+                }
+            ],
+            "audioFile": "audio_stanza_page_17.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 814,
+                    "starWord": "No"
+                },
+                {
+                    "start": 814,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1628,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1629,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2443,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2443,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 3257,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 18,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Big octopus. Small octopus."
+                }
+            ],
+            "audioFile": "audio_stanza_page_18.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 793,
+                    "starWord": "No"
+                },
+                {
+                    "start": 793,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1586,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1586,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2379,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2379,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 3172,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 19,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Ocean! I love the ocean."
+                }
+            ],
+            "audioFile": "audio_stanza_page_19.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 666,
+                    "starWord": "No"
+                },
+                {
+                    "start": 666,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1998,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1999,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2665,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2665,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3331,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 4,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 20,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Where to go?"
+                }
+            ],
+            "audioFile": "audio_stanza_page_20.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 683,
+                    "starWord": "No"
+                },
+                {
+                    "start": 683,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1366,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1367,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2050,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 6,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": 0,
+                    "typeOfLinking": 0,
+                    "DeactivateNextButton": true,
+                    "NavigationPage": 8
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 6,
+                    "timing": 0.0,
+                    "textId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": 0,
+                    "typeOfLinking": 0,
+                    "DeactivateNextButton": true,
+                    "NavigationPage": 21
+                }
+            ]
+        },
+        {
+            "pageNumber": 21,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "My home! I love my home."
+                }
+            ],
+            "audioFile": "audio_stanza_page_21.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 684,
+                    "starWord": "No"
+                },
+                {
+                    "start": 684,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1368,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1369,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2053,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2054,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2738,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2739,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3423,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3424,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 4108,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 5,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 22,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "I eat food."
+                }
+            ],
+            "audioFile": "audio_stanza_page_22.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 786,
+                    "starWord": "No"
+                },
+                {
+                    "start": 786,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1572,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1572,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2358,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 1,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 2,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "animId": -1,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 23,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Yum! I am happy."
+                }
+            ],
+            "audioFile": "audio_stanza_page_23.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 834,
+                    "starWord": "No"
+                },
+                {
+                    "start": 834,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1668,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1668,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2502,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2502,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 3336,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 0,
+                    "timing": 0.0,
+                    "textId": 3,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "animId": 0,
+                    "typeOfLinking": 3,
+                    "DeactivateNextButton": false,
+                    "NavigationPage": 0
+                }
+            ]
+        },
+        {
+            "pageNumber": 24,
+            "script": "DayAndNightManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Different places!"
+                },
+                {
+                    "id": 1,
+                    "text": "I love different places, day and night."
+                }
+            ],
+            "audioFile": "audio_stanza_page_24.wav",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 678,
+                    "starWord": "No"
+                },
+                {
+                    "start": 678,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 1356,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1357,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 2035,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2036,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 2714,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2715,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 3393,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3393,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 4071,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4072,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 4750,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4751,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 5429,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5430,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 6108,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": []
+        }
+    ]
+}
