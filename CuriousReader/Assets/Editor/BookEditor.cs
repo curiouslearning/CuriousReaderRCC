@@ -393,14 +393,14 @@ public class BookEditor : EditorWindow
         }
 
         // Uncommenting these lines displays a button that removes all objects on all pages when clicked
-        if (GUILayout.Button("Remove All Objects From Pages", GUILayout.Height(24)))
-        {
-            foreach (PageClass page in m_rcStoryBook.pages)
-            {
-                page.gameObjects = null;
-            }
-            this.ShowNotification(new GUIContent("Removed all GameObjects on all Pages!"));
-        }
+        // if (GUILayout.Button("Remove All Objects From Pages", GUILayout.Height(24)))
+        // {
+        //     foreach (PageClass page in m_rcStoryBook.pages)
+        //     {
+        //         page.gameObjects = new GameObjectClass[0];
+        //     }
+        //     this.ShowNotification(new GUIContent("Removed all GameObjects on all Pages!"));
+        // }
 
         if (GUILayout.Button("Import Objects on Pages", GUILayout.Height(24)))
         {
