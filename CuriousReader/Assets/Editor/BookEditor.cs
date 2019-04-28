@@ -718,6 +718,7 @@ public class BookEditor : EditorWindow
                             if (objectAndAnimationName.Contains("-"))
                             {
                                 string objectName = objectAndAnimationName.Split('-')[0];
+                                newSceneObject.imageName = objectAndAnimationName + "-1";
                                 string fullAnimationAssetPath = System.IO.Path.Combine(storyPathsLookup["Objects"], 
                                     objectName);
                                 fullAnimationAssetPath = System.IO.Path.Combine(fullAnimationAssetPath, 
@@ -733,7 +734,17 @@ public class BookEditor : EditorWindow
             }
 
             // We are doing this here to have image names ready for scene object edit foldout dropdown
-            m_rcImageNames = new List<string>(parsedValues.Keys);
+            m_rcImageNames = new List<string>();
+            foreach (string objectAndAnimationName in parsedValues.Keys) 
+            {
+                if (objectAndAnimationName.Contains("-"))
+                {
+                    m_rcImageNames.Add(objectAndAnimationName + "-1");
+                } else
+                {
+                    m_rcImageNames.Add(objectAndAnimationName);
+                }
+            }
             Debug.Log("Populating objects using the metadata file is finished...");
             this.ShowNotification(new GUIContent("Finished Adding Objects on Pages."));
 
@@ -1942,25 +1953,40 @@ public class BookEditor : EditorWindow
             i_rcGameObject.id = EditorGUILayout.IntField("ID", i_rcGameObject.id, EditorStyles.numberField);
             EditorGUI.EndDisabledGroup();
 
-            if ( m_rcImageNames != null )
-            {
-                if (m_rcImageNames.Contains(i_rcGameObject.imageName))
-                {
-                    i_rcGameObject.ImageIndex = m_rcImageNames.IndexOf(i_rcGameObject.imageName);
+            // if ( m_rcImageNames != null )
+            // {
+            //     if (m_rcImageNames.Contains(i_rcGameObject.imageName))
+            //     {
+            //         i_rcGameObject.ImageIndex = m_rcImageNames.IndexOf(i_rcGameObject.imageName);
 
-                    i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
-                    i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
-                }
-                else
-                {
-                    i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
-                    i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
-                }
-            }
+            //         i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
+            //         i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
+            //     }
+            //     else
+            //     {
+            //         i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
+            //         i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
+            //     }
+            // }
 
-            i_rcGameObject.imageName = EditorGUILayout.TextField("Image Name", i_rcGameObject.imageName, EditorStyles.textField);
+            // i_rcGameObject.imageName = EditorGUILayout.TextField("Image Name", i_rcGameObject.imageName, EditorStyles.textField);
+            i_rcGameObject.imageName = ObjectFieldToString<GameObject>(ref i_rcGameObject.imageName, "Image", ref i_rcGameObject.editorImageObject, "svg", m_strCommonPath);
+            // (T)EditorGUILayout.ObjectField(i_strLabel, i_rcContainer, typeof(T), false);
+            // EditorGUIUtility.ShowObjectPicker<GameObject>(i_rcGameObject.editorImageObject, false, "", 1);
+            // Texture2D imageTexture = AssetPreview.GetAssetPreview(i_rcGameObject.editorImageObject);
+            // if (imageTexture != null) 
+            // {
+            //     // GUILayoutUtility.GetLastRect
+            //     Rect previewRectangle = GUILayoutUtility.GetLastRect();
+            //     previewRectangle.y += 20;
+            //     previewRectangle.x += 40;
+            //     previewRectangle.width = 60;
+            //     previewRectangle.height = 60;
+            //     EditorGUI.DrawPreviewTexture(previewRectangle, imageTexture);
+            // }
 
             EditorGUILayout.Space();
+            // GUILayout.Space();
             EditorGUILayout.BeginHorizontal();
             i_rcGameObject.label = EditorGUILayout.TextField("Label", i_rcGameObject.label, EditorStyles.textField);
             i_rcGameObject.tag = EditorGUILayout.TextField("Tag", i_rcGameObject.tag, EditorStyles.textField);

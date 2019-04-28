@@ -18,11 +18,81 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -174.0,
+                    "posY": -55.0,
+                    "posZ": 0.0,
+                    "scaleX": 60.0,
+                    "scaleY": 60.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "Akili Smiles",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 131.0,
+                    "posY": -65.0,
+                    "posZ": 0.0,
+                    "scaleX": 40.0,
+                    "scaleY": 40.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "Big Octopus",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -2.0,
+                    "posY": 2.0,
+                    "posZ": 0.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "DayNightBg-night_to_day-1",
+                    "inText": false,
+                    "label": "Day Night",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-night_to_day"
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Sky! I love the sky, day and night."
+                    "text": "Sky! I love the sky, day and night.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_0.wav",
@@ -94,11 +164,101 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "DayNightBg-night_to_day-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-night_to_day"
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Look! Big cloud. Small cloud."
+                    "text": "Look! Big cloud. Small cloud.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_1.wav",
@@ -143,50 +303,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -198,11 +358,79 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Big bird. Small bird."
+                    "text": "Big bird. Small bird.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_2.wav",
@@ -240,50 +468,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -295,11 +523,79 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "A flying bird. A singing bird."
+                    "text": "A flying bird. A singing bird.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_3.wav",
@@ -351,62 +647,62 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": 1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 5,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -418,11 +714,121 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "DayNightBg-night_to_day-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-night_to_day"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Big sun. Small star."
+                    "text": "Big sun. Small star.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_4.wav",
@@ -460,50 +866,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -515,11 +921,99 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "DayNightBg-night_to_day-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-night_to_day"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "A shining sun. A sparkling star."
+                    "text": "A shining sun. A sparkling star.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_5.wav",
@@ -571,62 +1065,62 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 5,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -638,11 +1132,99 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "DayNightBg-night_to_day-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-night_to_day"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Sky! I love the sky, day and night."
+                    "text": "Sky! I love the sky, day and night.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_6.wav",
@@ -714,11 +1296,99 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "DayNightBg-night_to_day-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-night_to_day"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Where to go?"
+                    "text": "Where to go?",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_7.wav",
@@ -749,50 +1419,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 8
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "typeOfLinking": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 14
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -804,11 +1474,57 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Forest! I love the forest."
+                    "text": "Forest! I love the forest.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_8.wav",
@@ -853,26 +1569,26 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -884,11 +1600,57 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Look! A tall giraffe."
+                    "text": "Look! A tall giraffe.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_9.wav",
@@ -926,14 +1688,14 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -949,7 +1711,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Big monkeys. Small monkeys."
+                    "text": "Big monkeys. Small monkeys.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_10.wav",
@@ -987,74 +1752,74 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
                     "timestamp": 2,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": -1,
                     "timestamp": 1,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": -1,
                     "timestamp": 3,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1066,11 +1831,207 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-smiles_and_jumps-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-smiles_and_jumps"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 7,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "DayNightBg-day_to_night-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-day_to_night"
+                    ]
+                },
+                {
+                    "id": 8,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Short sticks. Long sticks."
+                    "text": "Short sticks. Long sticks.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_11.wav",
@@ -1108,50 +2069,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1163,11 +2124,75 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Forest! I love the forest."
+                    "text": "Forest! I love the forest.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_12.wav",
@@ -1218,11 +2243,75 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Where to go?"
+                    "text": "Where to go?",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_13.wav",
@@ -1253,50 +2342,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 14
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "typeOfLinking": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 21
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1308,11 +2397,75 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Ocean! I love the ocean."
+                    "text": "Ocean! I love the ocean.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_14.wav",
@@ -1357,26 +2510,26 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1388,11 +2541,35 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Look! Big boat. Little boat."
+                    "text": "Look! Big boat. Little boat.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_15.wav",
@@ -1437,50 +2614,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1492,11 +2669,55 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "WaterWave",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Fast boat. Slow boat."
+                    "text": "Fast boat. Slow boat.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_16.wav",
@@ -1534,50 +2755,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1589,11 +2810,57 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "DayNightBg-day_to_night-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-day_to_night"
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Happy fish. Sad fish."
+                    "text": "Happy fish. Sad fish.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_17.wav",
@@ -1631,50 +2898,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1686,11 +2953,57 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "DayNightBg-day_to_night-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-day_to_night"
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Big octopus. Small octopus."
+                    "text": "Big octopus. Small octopus.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_18.wav",
@@ -1728,50 +3041,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1783,11 +3096,145 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Akili-takes_food_and_eat-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Akili-takes_food_and_eat"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "BigOctopus-move_flap_legs-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "BigOctopus-move_flap_legs"
+                    ]
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "DayNightBg-day_to_night-1",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "DayNightBg-day_to_night"
+                    ]
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Ocean! I love the ocean."
+                    "text": "Ocean! I love the ocean.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_19.wav",
@@ -1832,26 +3279,26 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 4,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1863,11 +3310,55 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "AkiliHouse",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Where to go?"
+                    "text": "Where to go?",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_20.wav",
@@ -1898,50 +3389,50 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": 0,
-                    "typeOfLinking": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 8
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 6,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 0,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": 0,
-                    "typeOfLinking": 0,
-                    "DeactivateNextButton": true,
-                    "NavigationPage": 21
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -1953,11 +3444,35 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Cloud",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "My home! I love my home."
+                    "text": "My home! I love my home.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_21.wav",
@@ -2009,26 +3524,26 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 5,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 1,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -2044,7 +3559,10 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "I eat food."
+                    "text": "I eat food.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_22.wav",
@@ -2075,26 +3593,26 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 1,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 },
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 2,
+                    "animId": -1,
                     "timestamp": 0,
                     "sceneObjectId": 2,
-                    "animId": -1,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -2106,11 +3624,35 @@
                 "isAnim": false,
                 "objectId": 0
             },
-            "gameObjects": [],
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "AkiliHouse",
+                    "inText": false,
+                    "label": "",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Yum! I am happy."
+                    "text": "Yum! I am happy.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_23.wav",
@@ -2148,14 +3690,14 @@
                 {
                     "stanzaID": 0,
                     "type": 0,
+                    "prompts": [],
+                    "invokers": [],
                     "timing": 0.0,
-                    "textId": 3,
+                    "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "animId": 0,
-                    "typeOfLinking": 3,
-                    "DeactivateNextButton": false,
-                    "NavigationPage": 0
+                    "symmetricPairingId": 0,
+                    "Params": ""
                 }
             ]
         },
@@ -2171,11 +3713,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Different places!"
+                    "text": "Different places!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 },
                 {
                     "id": 1,
-                    "text": "I love different places, day and night."
+                    "text": "I love different places, day and night.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_stanza_page_24.wav",
