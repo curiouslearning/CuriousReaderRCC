@@ -48,8 +48,6 @@ public class BookEditor : EditorWindow
     string m_strAnimPath;
     string m_strImagePath;
 
-    List<string> m_rcImageNames;
-
     Rect[] m_rcAudioRects;
 
     bool[] m_bShowPage;
@@ -135,13 +133,7 @@ public class BookEditor : EditorWindow
                     // addFileWatcherForReloadingAtPath(m_strBookPath);
                 }
 
-                m_rcImageNames = GetImagesInPath(m_strCommonPath,"-1");
                 m_rastrAnimationNames = GetAnimationNames();
-
-//                foreach (string strAnimName in m_rastrAnimationNames)
-//                {
-//                    Debug.Log(strAnimName);
-//                }
 
             }
             m_needToLoadBookContent = false;
@@ -392,7 +384,7 @@ public class BookEditor : EditorWindow
 
         }
 
-        // Uncommenting these lines displays a button that removes all objects on all pages when clicked
+        // Note: Uncommenting these lines displays a button that removes all objects on all pages when clicked
         // if (GUILayout.Button("Remove All Objects From Pages", GUILayout.Height(24)))
         // {
         //     foreach (PageClass page in m_rcStoryBook.pages)
@@ -732,19 +724,9 @@ public class BookEditor : EditorWindow
                     }
                 }
             }
+            
+            // Note: Here we would set the m_rcImageNames tp a new list of images but we no longer need that since we have object field for images
 
-            // We are doing this here to have image names ready for scene object edit foldout dropdown
-            m_rcImageNames = new List<string>();
-            foreach (string objectAndAnimationName in parsedValues.Keys) 
-            {
-                if (objectAndAnimationName.Contains("-"))
-                {
-                    m_rcImageNames.Add(objectAndAnimationName + "-1");
-                } else
-                {
-                    m_rcImageNames.Add(objectAndAnimationName);
-                }
-            }
             Debug.Log("Populating objects using the metadata file is finished...");
             this.ShowNotification(new GUIContent("Finished Adding Objects on Pages."));
 
@@ -819,7 +801,11 @@ public class BookEditor : EditorWindow
             PageClass currentPage = m_rcStoryBook.pages[m_activePageID];
             TriggerClass[] rcNewArray = new TriggerClass[currentPage.triggers.Length + 1];
             Array.Copy(currentPage.triggers, rcNewArray, currentPage.triggers.Length);
-            rcNewArray[currentPage.triggers.Length] = new TriggerClass();
+            TriggerClass newTrigger = new TriggerClass();
+            newTrigger.invokers = new PerformanceInvoker[0];
+            newTrigger.prompts = new PromptType[1] { PromptType.Click };
+            newTrigger.type = TriggerType.Animation;
+            rcNewArray[currentPage.triggers.Length] = newTrigger;
             currentPage.triggers = rcNewArray;
 
             this.ShowNotification(new GUIContent("New Scene Trigger Added to Page " + m_activePageID));
@@ -1953,37 +1939,7 @@ public class BookEditor : EditorWindow
             i_rcGameObject.id = EditorGUILayout.IntField("ID", i_rcGameObject.id, EditorStyles.numberField);
             EditorGUI.EndDisabledGroup();
 
-            // if ( m_rcImageNames != null )
-            // {
-            //     if (m_rcImageNames.Contains(i_rcGameObject.imageName))
-            //     {
-            //         i_rcGameObject.ImageIndex = m_rcImageNames.IndexOf(i_rcGameObject.imageName);
-
-            //         i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
-            //         i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
-            //     }
-            //     else
-            //     {
-            //         i_rcGameObject.ImageIndex = EditorGUILayout.Popup(i_rcGameObject.ImageIndex, m_rcImageNames.ToArray());
-            //         i_rcGameObject.imageName = m_rcImageNames[i_rcGameObject.ImageIndex];
-            //     }
-            // }
-
-            // i_rcGameObject.imageName = EditorGUILayout.TextField("Image Name", i_rcGameObject.imageName, EditorStyles.textField);
             i_rcGameObject.imageName = ObjectFieldToString<GameObject>(ref i_rcGameObject.imageName, "Image", ref i_rcGameObject.editorImageObject, "svg", m_strCommonPath);
-            // (T)EditorGUILayout.ObjectField(i_strLabel, i_rcContainer, typeof(T), false);
-            // EditorGUIUtility.ShowObjectPicker<GameObject>(i_rcGameObject.editorImageObject, false, "", 1);
-            // Texture2D imageTexture = AssetPreview.GetAssetPreview(i_rcGameObject.editorImageObject);
-            // if (imageTexture != null) 
-            // {
-            //     // GUILayoutUtility.GetLastRect
-            //     Rect previewRectangle = GUILayoutUtility.GetLastRect();
-            //     previewRectangle.y += 20;
-            //     previewRectangle.x += 40;
-            //     previewRectangle.width = 60;
-            //     previewRectangle.height = 60;
-            //     EditorGUI.DrawPreviewTexture(previewRectangle, imageTexture);
-            // }
 
             EditorGUILayout.Space();
             // GUILayout.Space();
@@ -2609,46 +2565,6 @@ public class BookEditor : EditorWindow
             }
 
         }
-    }
-
-    public List<string> GetImagesInPath(string i_strPath, string i_strPattern="")
-    {
-        List<string> rcFiles = new List<string>();
-        string[] allowedExtensions = new string[] { "*.svg", "*.png", "prefab_*" };
-        string[] Directories = Directory.GetDirectories(i_strPath);
-
-        foreach (string strDir in Directories)
-        {
-            List<string> rcReturnFiles = GetImagesInPath(strDir,i_strPattern);
-
-            if (rcReturnFiles != null)
-            {
-                foreach (string strFile in rcReturnFiles)
-                {
-                    rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
-                }
-            }
-        }
-
-        foreach (string strType in allowedExtensions)
-        {
-            foreach (string strFile in Directory.GetFiles(i_strPath, strType))
-            {
-                if (string.IsNullOrEmpty(i_strPattern))
-                {
-                    rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
-                }
-                else
-                {
-                    if ( strFile.Contains(i_strPattern))
-                    {
-                        rcFiles.Add(System.IO.Path.GetFileNameWithoutExtension(strFile));
-                    }
-                }
-            }
-        }
-
-        return rcFiles;
     }
 
     public void AddImagesInPath(string i_strPath)
