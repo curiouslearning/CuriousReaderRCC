@@ -19,6 +19,7 @@ public class GameObjectClass
     public float rotZ;
     public int orderInLayer;
     public string imageName;
+    [System.NonSerialized] public GameObject editorImageObject;
     public bool inText;
     public string label;
 	public string destroyOnCollision;
