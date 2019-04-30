@@ -8,4 +8,9 @@ namespace CuriousReader.BookBuilder
     {
         public string InspectorLabel;
     }
+    [AttributeUsage(AttributeTargets.Field)]
+    public class CustomFieldAttribute : Attribute
+    {
+        public Type CustomFieldType;
+    }
 }

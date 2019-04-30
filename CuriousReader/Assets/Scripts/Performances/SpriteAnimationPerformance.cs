@@ -9,7 +9,7 @@ namespace CuriousReader.Performance
     using Elendow.SpritedowAnimator;
     public class SpriteAnimationParams : PerformanceParams
     {
-        [ExposeField]
+        [ExposeField][CustomField(CustomFieldType = typeof(SpriteAnimation))]
         public string AnimationName;
     }
 
