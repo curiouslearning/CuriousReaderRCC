@@ -6,10 +6,11 @@ namespace CuriousReader.BookBuilder
     using System.Collections;
     using System.Collections.Generic;
     using System.Reflection;
+    using Elendow.SpritedowAnimator;
 
     public static class ExposeFields
     {
-        public static void Expose(PropertyField[] properties)
+        public static void Expose(PropertyField[] properties, int i_nTriggerIndex, BookEditor i_rcBookEditor)
         {
             GUILayoutOption[] emptyOptions = new GUILayoutOption[0];
 
@@ -38,7 +39,50 @@ namespace CuriousReader.BookBuilder
                         break;
 
                     case SerializedPropertyType.String:
-                        field.SetValue(EditorGUILayout.TextField(inspectorLabel, (String)field.GetValue(), emptyOptions));
+                        object[] attributes = field.FieldInfo.GetCustomAttributes(true);
+
+                        CustomFieldAttribute customAttribute = null;
+
+                        foreach (object o in attributes)
+                        {
+                            if (o.GetType() == typeof(CustomFieldAttribute))
+                            {
+                                customAttribute = (CustomFieldAttribute)o;
+                                break;
+                            }
+                        }
+                        if (customAttribute != null && customAttribute.CustomFieldType == typeof(SpriteAnimation))
+                        {
+                            // Debug.Log(customAttribute.CustomFieldType.ToString() + " Trigger index " + i_nTriggerIndex + " meow: " + i_rcBookEditor.m_strBookPath);
+                            string[] selectedObjectAnimations = i_rcBookEditor.GetSelectedObjectAnimationsForTrigger(i_nTriggerIndex);
+                            if (selectedObjectAnimations == null || selectedObjectAnimations.Length == 0)
+                            {
+                                EditorGUI.BeginDisabledGroup(true);
+                                EditorGUILayout.Popup(inspectorLabel, 0, new string[1] { "Selected object doesn't have any animations." });
+                                field.SetValue("");
+                                EditorGUI.EndDisabledGroup();
+                            } else
+                            {
+                                // determine the index value from the array
+                                int chosenIndex = 0;
+                                string currentAnimationValue = (string)field.GetValue();
+                                if (!string.IsNullOrEmpty(currentAnimationValue))
+                                {
+                                    for (int i = 0; i < selectedObjectAnimations.Length; i++) 
+                                    {
+                                        if (currentAnimationValue.Equals(selectedObjectAnimations[i])) 
+                                        {
+                                            chosenIndex = i;
+                                            break;
+                                        }
+                                    }
+                                }
+                                field.SetValue(selectedObjectAnimations[EditorGUILayout.Popup(inspectorLabel, chosenIndex, selectedObjectAnimations)]);
+                            }
+                        } else
+                        {
+                            field.SetValue(EditorGUILayout.TextField(inspectorLabel, (String)field.GetValue(), emptyOptions));
+                        }
                         break;
 
                     case SerializedPropertyType.Vector2:
@@ -97,6 +141,7 @@ namespace CuriousReader.BookBuilder
 
                 foreach (object o in attributes)
                 {
+
                     if (o.GetType() == typeof(ExposeFieldAttribute))
                     {
                         isExposed = true;
