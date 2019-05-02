@@ -981,6 +981,18 @@ public class BookEditor : EditorWindow
         return directoryPathsLookup;
     }
 
+    public string[] GetSelectedObjectAnimationsForTrigger(int i_nTriggerIndex) 
+    {
+        PageClass storyPage = m_rcStoryBook.pages[m_activePageID];
+        if (i_nTriggerIndex < 0 || i_nTriggerIndex > storyPage.triggers.Length - 1) 
+        {
+            return null;
+        } else
+        {
+            return storyPage.gameObjects[storyPage.triggers[i_nTriggerIndex].sceneObjectId].Animations;
+        }
+    }
+
     /// <summary>
     /// Uses regex replace to remove consecutive whitespaces from the input string and trim it
     /// </summary>
@@ -1572,22 +1584,22 @@ public class BookEditor : EditorWindow
             switch (i_rcTrigger.type)
             {
                 case TriggerType.Navigation:
-                    i_rcTrigger.Params = OnBookGUI<NavigationParams>(i_rcTrigger);
+                    i_rcTrigger.Params = OnBookGUI<NavigationParams>(i_rcTrigger, i_nOrdinal);
                     break;
                 case TriggerType.Animation:
-                    i_rcTrigger.Params = OnBookGUI<SpriteAnimationParams>(i_rcTrigger);
+                    i_rcTrigger.Params = OnBookGUI<SpriteAnimationParams>(i_rcTrigger, i_nOrdinal);
                     break;
                 case TriggerType.Move:
-                    i_rcTrigger.Params = OnBookGUI<MoveParams>(i_rcTrigger);
+                    i_rcTrigger.Params = OnBookGUI<MoveParams>(i_rcTrigger, i_nOrdinal);
                     break;
                 case TriggerType.Highlight:
-                    i_rcTrigger.Params = OnBookGUI<HighlightParams>(i_rcTrigger);
+                    i_rcTrigger.Params = OnBookGUI<HighlightParams>(i_rcTrigger, i_nOrdinal);
                     break;
                 case TriggerType.Rotate:
-                    i_rcTrigger.Params = OnBookGUI<RotateParams>(i_rcTrigger);
+                    i_rcTrigger.Params = OnBookGUI<RotateParams>(i_rcTrigger, i_nOrdinal);
                     break;
                 case TriggerType.Scale:
-                    i_rcTrigger.Params = OnBookGUI<ScaleParams>(i_rcTrigger);
+                    i_rcTrigger.Params = OnBookGUI<ScaleParams>(i_rcTrigger, i_nOrdinal);
                     break;
                 default:
                     break;
@@ -2694,7 +2706,7 @@ public class BookEditor : EditorWindow
 #endif
     }
 
-    public static string OnBookGUI<T>(TriggerClass i_rcTrigger) where T : PerformanceParams, new()
+    public string OnBookGUI<T>(TriggerClass i_rcTrigger, int i_nOrdinal) where T : PerformanceParams, new()
     {
         string strParams = "";
 
@@ -2712,7 +2724,7 @@ public class BookEditor : EditorWindow
 
         if (i_rcTrigger.EditorFields != null)
         {
-            ExposeFields.Expose(i_rcTrigger.EditorFields);
+            ExposeFields.Expose(i_rcTrigger.EditorFields, i_nOrdinal, this);
         }
 
         if (i_rcTrigger.PerformanceParams != null)
