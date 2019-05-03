@@ -711,22 +711,14 @@ public class BookEditor : EditorWindow
                             {
                                 string objectName = objectAndAnimationName.Split('-')[0];
                                 newSceneObject.imageName = objectAndAnimationName + "-1";
-                                string fullObjectPath = System.IO.Path.Combine(storyPathsLookup["Objects"], 
+                                string fullAnimationAssetPath = System.IO.Path.Combine(storyPathsLookup["Objects"], 
                                     objectName);
-                                DirectoryInfo fullObjectPathInfo = new DirectoryInfo(fullObjectPath);
-                                FileInfo[] fullObjectPathContents = fullObjectPathInfo.GetFiles();
-                                List<string> animationAssetsFound = new List<string>();
-                                for (int i = 0; i < fullObjectPathContents.Length; i++)
+                                fullAnimationAssetPath = System.IO.Path.Combine(fullAnimationAssetPath, 
+                                    objectAndAnimationName + ".asset");
+                                if (File.Exists(fullAnimationAssetPath))
                                 {
-                                    FileInfo eachFile = fullObjectPathContents[i];
-                                    string eachFileExtension = eachFile.Extension.ToLower();
-                                    if (eachFileExtension.Equals(".asset"))
-                                    {
-                                        string animationName = System.IO.Path.GetFileNameWithoutExtension(eachFile.Name);
-                                        animationAssetsFound.Add(animationName);
-                                    }
+                                    newSceneObject.Animations = new string[1] { objectAndAnimationName };
                                 }
-                                newSceneObject.Animations = animationAssetsFound.ToArray();
                             }
                         }
                     }

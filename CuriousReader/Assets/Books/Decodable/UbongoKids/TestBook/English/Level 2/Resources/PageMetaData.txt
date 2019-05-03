@@ -12,7 +12,7 @@
 #   17      => Put object on page 17
 #   20:25x3 => Put object on pages 20 through 25, 3 times on each
 
-Akili-smiles_and_jumps > 1:10 & 12x3 & 17 20:25x2
+Akili-smiles_and_jumps > 1:10 & 12x3 & 17 & 20:25x2
 Akili-takes_food_and_eat > 20
 AkiliHouse > 21 & 24
 BigOctopus-move_flap_legs > 1:5 & 12x2 & 20x3
