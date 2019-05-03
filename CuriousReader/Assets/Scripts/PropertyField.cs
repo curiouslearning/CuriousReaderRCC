@@ -13,6 +13,14 @@
 #if UNITY_EDITOR
         SerializedPropertyType m_Type;
 
+            public FieldInfo FieldInfo
+            {
+                get
+                {
+                    return m_Info;
+                }
+            }
+
             public SerializedPropertyType Type
             {
                 get
