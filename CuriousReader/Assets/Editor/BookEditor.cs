@@ -799,6 +799,10 @@ public class BookEditor : EditorWindow
         if (GUILayout.Button("Add Page Trigger", GUILayout.Height(24)))
         {
             PageClass currentPage = m_rcStoryBook.pages[m_activePageID];
+            if (currentPage.gameObjects == null || currentPage.gameObjects.Length == 0) {
+                this.ShowNotification(new GUIContent("Error: Current page doesn't contain any Game Objects! Please add one."));
+                return;
+            }
             TriggerClass[] rcNewArray = new TriggerClass[currentPage.triggers.Length + 1];
             Array.Copy(currentPage.triggers, rcNewArray, currentPage.triggers.Length);
             TriggerClass newTrigger = new TriggerClass();
