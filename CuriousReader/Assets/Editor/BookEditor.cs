@@ -879,6 +879,7 @@ public class BookEditor : EditorWindow
         }
         EditorGUI.EndDisabledGroup();
 
+        EditorGUI.BeginDisabledGroup(m_rcStoryBook.pages.Length == 1);
         if (GUILayout.Button("Delete Page", GUILayout.Height(24))) {
             bool confirmedDeletion = EditorUtility.DisplayDialog(
                 "Confirm Deletion", "Are you sure you want to delete page(" + m_activePageID + ")?", 
@@ -891,6 +892,7 @@ public class BookEditor : EditorWindow
                 this.ShowNotification(new GUIContent("Page " + tempIndex + " Deleted!"));
             }
         }
+        EditorGUI.EndDisabledGroup();
 
         if (GUILayout.Button("Add Images To AssetBundle", GUILayout.Height(24)))
         {
