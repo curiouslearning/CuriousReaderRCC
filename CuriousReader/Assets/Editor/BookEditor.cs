@@ -2446,7 +2446,7 @@ public class BookEditor : EditorWindow
 
             string strStrippedName = System.IO.Path.GetFileNameWithoutExtension(i_strCurrentValue);
 
-            if (!strStrippedName.Equals(strObjectName))
+            if (strStrippedName != null && !strStrippedName.Equals(strObjectName))
             {
                 i_strCurrentValue = strObjectName;
             }
