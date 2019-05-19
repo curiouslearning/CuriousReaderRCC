@@ -208,25 +208,36 @@ public class BookEditor : EditorWindow
         if (m_foldoutPathsText) {
             GUILayout.Label("Path Values");
 
-            if (!string.IsNullOrEmpty(m_strBookPath)) {
+            if (!string.IsNullOrEmpty(m_strBookPath)) 
+            {
                 EditorGUI.BeginDisabledGroup(true);
                 EditorGUILayout.TextField("Story Book Path", m_strBookPath.Replace("/","\\"));
                 EditorGUI.EndDisabledGroup();
             }
 
-            if (!string.IsNullOrEmpty(m_strCommonPath)) {
+            if (!string.IsNullOrEmpty(m_strBookRoot)) 
+            {
+                EditorGUI.BeginDisabledGroup(true);
+                EditorGUILayout.TextField("Story Book Root", m_strBookRoot.Replace("/", "\\"));
+                EditorGUI.EndDisabledGroup();
+            }
+
+            if (!string.IsNullOrEmpty(m_strCommonPath)) 
+            {
                 EditorGUI.BeginDisabledGroup(true);
                 EditorGUILayout.TextField("Common Path", m_strCommonPath.Replace("/", "\\"));
                 EditorGUI.EndDisabledGroup();
             }
 
-            if (!string.IsNullOrEmpty(m_strAnimPath)) {
+            if (!string.IsNullOrEmpty(m_strAnimPath)) 
+            {
                 EditorGUI.BeginDisabledGroup(true);
                 EditorGUILayout.TextField("Animations Path", m_strAnimPath.Replace("/", "\\"));
                 EditorGUI.EndDisabledGroup();
             }
 
-            if (!string.IsNullOrEmpty(m_strAssetPath)) {
+            if (!string.IsNullOrEmpty(m_strAssetPath)) 
+            {
                 EditorGUI.BeginDisabledGroup(true);
                 EditorGUILayout.TextField("Assets Path", m_strAssetPath.Replace("/", "\\"));
                 EditorGUI.EndDisabledGroup();
