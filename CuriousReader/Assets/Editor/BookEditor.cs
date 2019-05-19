@@ -97,14 +97,15 @@ public class BookEditor : EditorWindow
 
                 if (m_rcStoryBook != null || m_needToLoadBookContent)
                 {
-                    m_strBookRoot = m_strBookPath;
-                    m_strCommonPath = m_strBookPath.Replace(System.IO.Path.GetFileName(m_strBookRoot), "");
+                    // Set book root to 4th parent directory from the book json file
+                    m_strBookRoot = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strBookPath).FullName).FullName).FullName).FullName;
+                    m_strCommonPath = m_strBookPath.Replace(System.IO.Path.GetFileName(m_strBookPath), "");
 #if UNITY_EDITOR_OSX
-                    m_strCommonPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strCommonPath).FullName).FullName).FullName).FullName + "/Common";
+                    m_strCommonPath = m_strBookRoot + "/Common";
 #endif
 
 #if UNITY_EDITOR_WIN
-                    m_strCommonPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strCommonPath).FullName).FullName).FullName).FullName + "\\Common";
+                    m_strCommonPath = m_strBookRoot + "\\Common";
 #endif
                     string strAssetPath = Application.dataPath.Replace("/Assets", "");
                     m_strAssetPath = strAssetPath;
