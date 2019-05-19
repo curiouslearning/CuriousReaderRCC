@@ -1011,9 +1011,67 @@ public class BookEditor : EditorWindow
             }
         }
 
-        // Language/Level/Audio/Stanza
-        // Language/Level/Resources/book.json
-        // Language/Words
+        DirectoryInfo storyRootDirectoryInfo = new DirectoryInfo(m_strBookRoot);
+
+        Dictionary<string, string> storyRootLookup = CreateSubDirectoryPathsLookup(storyRootDirectoryInfo);
+
+        foreach (KeyValuePair<string, string> languageDirectory in storyRootLookup)
+        {
+            if (languageDirectory.Key.ToLower().Equals("common"))
+                continue;   // We don't need to process common directory any more
+            
+            DirectoryInfo languageDirectoryInfo = new DirectoryInfo(languageDirectory.Value);
+
+            Dictionary<string, string> languageDirectoryLookup = CreateSubDirectoryPathsLookup(languageDirectoryInfo);
+
+            foreach (KeyValuePair<string, string> bookLanguageContentDirectory in languageDirectoryLookup)
+            {
+                if (bookLanguageContentDirectory.Key.ToLower().Equals("words"))
+                {
+                    // Language/Words
+
+                    DirectoryInfo wordsDirectoryInfo = new DirectoryInfo(bookLanguageContentDirectory.Value);
+
+                    FileInfo[] objectFiles = wordsDirectoryInfo.GetFiles();
+                    setAssetBundleForFiles(objectFiles, skipExtensions);
+                }
+                else
+                {
+                    // Language/Level/Audio/Stanza
+                    
+                    string stanzaPath = System.IO.Path.Combine(bookLanguageContentDirectory.Value, "Audio");
+                    stanzaPath = System.IO.Path.Combine(stanzaPath, "Stanza");
+
+                    DirectoryInfo stanzaDirectoryInfo = new DirectoryInfo(stanzaPath);
+
+                    if (!stanzaDirectoryInfo.Exists)
+                    {
+                        Debug.LogError("Stanza audio path is not present in the book at path: " + stanzaPath);
+                    } 
+                    else
+                    {
+                        FileInfo[] objectFiles = stanzaDirectoryInfo.GetFiles();
+                        setAssetBundleForFiles(objectFiles, skipExtensions);
+                    }
+
+                    // Language/Level/Resources/book.json
+
+                    string resourcesPath = System.IO.Path.Combine(bookLanguageContentDirectory.Value, "Resources");
+
+                    DirectoryInfo resourcesDirectoryInfo = new DirectoryInfo(resourcesPath);
+
+                    if (!resourcesDirectoryInfo.Exists)
+                    {
+                        Debug.LogError("Resources path is not present in the book at path: " + resourcesPath);
+                    }
+                    else
+                    {
+                        FileInfo[] objectFiles = resourcesDirectoryInfo.GetFiles();
+                        setAssetBundleForFiles(objectFiles, skipExtensions);
+                    }
+                }
+            }
+        }
 
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
