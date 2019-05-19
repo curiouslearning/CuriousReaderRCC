@@ -1022,10 +1022,10 @@ public class BookEditor : EditorWindow
     }
 
     /// <summary>
-    /// 
+    /// Get files and set asset bundle name and variant while skipping the files that have skip extension
     /// </summary>
-    /// <param name="files"></param>
-    /// <param name="skipExtensions"></param>
+    /// <param name="files">Input files</param>
+    /// <param name="skipExtensions">Extensions to skip separated by comma e.g ".txt,.meta"</param>
     private void setAssetBundleForFiles(FileInfo[] files, string skipExtensions)
     {
         for (int i = 0; i < files.Length; i++)
@@ -1046,6 +1046,11 @@ public class BookEditor : EditorWindow
         }
     }
 
+    /// <summary>
+    /// Transform a full file path to a relative Assets path
+    /// </summary>
+    /// <param name="fullFilePath">Full file path</param>
+    /// <returns>File path relative to Assets path</returns>
     private string fullPathToAssetsRelativePath(string fullFilePath)
     {
         string assetsRelativePath = fullFilePath;
