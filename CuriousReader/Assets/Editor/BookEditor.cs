@@ -917,10 +917,10 @@ public class BookEditor : EditorWindow
                 this.ShowNotification(new GUIContent("Please set asset bundle name first!"));
                 m_foldoutPathsText = true;
             } 
-            else 
+            else
             {
                 bundleBookAssets(); 
-            }   
+            }
 // #if UNITY_EDITOR_WIN
 //             Debug.Log("m_strAssetPath: " + m_strAssetPath);
 //             Debug.Log("m_strImagePath: " + m_strImagePath);
@@ -967,10 +967,17 @@ public class BookEditor : EditorWindow
     }
 
     /// <summary>
-    /// 
+    /// Sets the asset bundle name set in the editor to all the assets that the book contains that includes the book
+    /// file that's currently open in the Book Editor. Following directories are included:
+    /// - Common/Objects
+    /// - [Language]/Words
+    /// - [Language]/[Level]/Audio/Stanza
+    /// - [Language]/[Level]/Resources/book.json
     /// </summary>
     private void bundleBookAssets()
     {
+        Debug.Log("Starting to bundle assets for book at: " + m_strBookRoot);
+
         string skipExtensions = ".meta,.txt";
         
         // Add Common/Objects
