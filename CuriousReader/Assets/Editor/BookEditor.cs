@@ -38,7 +38,7 @@ public class BookEditor : EditorWindow
     public AudioClip m_rcRecordingClip;
     float m_fRecordingStart;
 
-    string m_strAssetBundleName = "differentplaces";
+    string m_strAssetBundleName = "";
 
     public string m_strBookPath;
     public string m_loadedBookNameWithoutExtension;
@@ -230,6 +230,10 @@ public class BookEditor : EditorWindow
                 EditorGUILayout.TextField("Assets Path", m_strAssetPath.Replace("/", "\\"));
                 EditorGUI.EndDisabledGroup();
             }
+
+            GUILayout.Space(10);
+
+            m_strAssetBundleName = EditorGUILayout.TextField("Asset Bundle Name", m_strAssetBundleName);
 
             GUILayout.Space(10);
         
@@ -894,22 +898,31 @@ public class BookEditor : EditorWindow
         }
         EditorGUI.EndDisabledGroup();
 
-        if (GUILayout.Button("Add Images To AssetBundle", GUILayout.Height(24)))
+        if (GUILayout.Button("Bundle Book Assets", GUILayout.Height(24)))
         {
-#if UNITY_EDITOR_WIN
-            Debug.Log("m_strAssetPath: " + m_strAssetPath);
-            Debug.Log("m_strImagePath: " + m_strImagePath);
-            Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
-            AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
-            Debug.Log(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
-            AddImagesInPath(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
-#endif
-#if UNITY_EDITOR_OSX            
-            Debug.Log(m_strAnimPath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets/"));
-            AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets"));
-            Debug.Log(m_strImagePath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets/"));
-            AddImagesInPath(m_strImagePath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets/"));
-#endif
+            if (string.IsNullOrEmpty(m_strAssetBundleName))
+            {
+                this.ShowNotification(new GUIContent("Please set asset bundle name first!"));
+                m_foldoutPathsText = true;
+            } 
+            else 
+            {
+                bundleBookAssets(); 
+            }   
+// #if UNITY_EDITOR_WIN
+//             Debug.Log("m_strAssetPath: " + m_strAssetPath);
+//             Debug.Log("m_strImagePath: " + m_strImagePath);
+//             Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+//             AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+//             Debug.Log(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+//             AddImagesInPath(m_strImagePath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+// #endif
+// #if UNITY_EDITOR_OSX            
+//             Debug.Log(m_strAnimPath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets/"));
+//             AddImagesInPath(m_strAnimPath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets"));
+//             Debug.Log(m_strImagePath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets/"));
+//             AddImagesInPath(m_strImagePath.Replace(m_strAssetPath, "").Replace("/Assets/", "Assets/"));
+// #endif
         }
 
         if (GUILayout.Button("Create Animations", GUILayout.Height(24)))
@@ -939,6 +952,90 @@ public class BookEditor : EditorWindow
 
 #endregion
     
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    private void bundleBookAssets()
+    {
+        string skipExtensions = ".meta,.txt";
+        
+        // Add Common/Objects
+
+        DirectoryInfo commonDirectoryInfo = new DirectoryInfo(m_strCommonPath);
+
+        Dictionary<string, string> commonLookup = CreateSubDirectoryPathsLookup(commonDirectoryInfo);
+
+        if (commonLookup.Count == 0 || !commonLookup.ContainsKey("Objects"))
+        {
+            Debug.LogError("Story common directory doesn't contain Objects directory.");
+        }
+        else
+        {
+            DirectoryInfo storyObjectsDirectoryInfo = new DirectoryInfo(commonLookup["Objects"]);
+
+            Dictionary<string, string> storyObjectPathsLookup = CreateSubDirectoryPathsLookup(storyObjectsDirectoryInfo);
+
+            if (storyObjectPathsLookup.Count == 0)
+            {
+                Debug.LogError("Common Objects directory is empty.");
+            }
+            else
+            {
+                foreach (KeyValuePair<string, string> eachObject in storyObjectPathsLookup)
+                {
+                    DirectoryInfo sceneObjectPathInfo = new DirectoryInfo(eachObject.Value);
+                    FileInfo[] objectFiles = sceneObjectPathInfo.GetFiles();
+                    setAssetBundleForFiles(objectFiles, skipExtensions);
+                }
+            }
+        }
+
+        // Language/Level/Audio/Stanza
+        // Language/Level/Resources/book.json
+        // Language/Words
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+
+        this.ShowNotification(new GUIContent("Finished setting \"" + m_strAssetBundleName + "\" bundle to book assets."));
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="files"></param>
+    /// <param name="skipExtensions"></param>
+    private void setAssetBundleForFiles(FileInfo[] files, string skipExtensions)
+    {
+        for (int i = 0; i < files.Length; i++)
+        {
+            FileInfo eachFile = files[i];
+            string extension = eachFile.Extension;
+            if (skipExtensions.Contains(extension))
+                continue;
+            try 
+            {
+                AssetImporter asset = AssetImporter.GetAtPath(fullPathToAssetsRelativePath(eachFile.FullName));
+                asset.SetAssetBundleNameAndVariant(m_strAssetBundleName, "");
+            } 
+            catch (Exception e)
+            {
+                Debug.LogError("Unable to set asset bundle to file with path: " + eachFile.FullName + " error: " + e.Message);
+            }
+        }
+    }
+
+    private string fullPathToAssetsRelativePath(string fullFilePath)
+    {
+        string assetsRelativePath = fullFilePath;
+        assetsRelativePath = assetsRelativePath.Replace("\\", @"/");
+        if (assetsRelativePath.StartsWith(Application.dataPath))
+        {
+            assetsRelativePath = "Assets" + assetsRelativePath.Substring(Application.dataPath.Length);
+        }
+        return assetsRelativePath;
     }
 
     /// <summary>
