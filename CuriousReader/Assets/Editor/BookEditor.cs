@@ -912,11 +912,11 @@ public class BookEditor : EditorWindow
 #endif
         }
 
-        if (GUILayout.Button("Create Animations", GUILayout.Height(24)))
-        {
-            Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
-            ConstructAnimationsInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
-        }
+        // if (GUILayout.Button("Create Animations", GUILayout.Height(24)))
+        // {
+        //     Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+        //     ConstructAnimationsInPath(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
+        // }
 
         if (GUILayout.Button("Save JSON", GUILayout.Height(24)))
         {
