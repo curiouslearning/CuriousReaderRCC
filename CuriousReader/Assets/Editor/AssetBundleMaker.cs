@@ -24,16 +24,15 @@ public static class AssetBundleMaker
     {
         createAssetBundlesDirectoryIfNotPresent();
         List<string> allAssets = AssetDatabase.GetAllAssetPaths().ToList();
-        List<string> bundleAssetPaths = allAssets.FindAll((assetPath) => 
-        { 
-            return AssetDatabase.GetImplicitAssetBundleName(assetPath) == i_strBundleName; 
+        List<string> bundleAssetPaths = allAssets.FindAll((assetPath) =>
+        {
+            return AssetDatabase.GetImplicitAssetBundleName(assetPath) == i_strBundleName;
         }).ToList();
 
         AssetBundleBuild[] buildMap = new AssetBundleBuild[1];
         buildMap[0].assetBundleName = i_strBundleName;
         buildMap[0].assetNames = bundleAssetPaths.ToArray();
         BuildPipeline.BuildAssetBundles(m_strBundlePath, buildMap, BuildAssetBundleOptions.None, BuildTarget.Android);
-
     }
 
     /// <summary>
