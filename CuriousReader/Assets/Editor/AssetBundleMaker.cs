@@ -7,12 +7,19 @@ public static class AssetBundleMaker
     
     private static readonly string m_strBundlePath = "Assets/StreamingAssets/AssetBundles/"; 
 
+    /// <summary>
+    /// Builds all the asset bundles
+    /// </summary>
     public static void BuildAllAssetBundles() 
     {
         createAssetBundlesDirectoryIfNotPresent();
         BuildPipeline.BuildAssetBundles(m_strBundlePath, BuildAssetBundleOptions.None, BuildTarget.Android);
     }
 
+    /// <summary>
+    /// Builds a specific asset bundle with a name
+    /// </summary>
+    /// <param name="i_strBundleName">Name of the bundle</param>
     public static void BuildAssetBundle(string i_strBundleName)
     {
         createAssetBundlesDirectoryIfNotPresent();
@@ -29,6 +36,9 @@ public static class AssetBundleMaker
 
     }
 
+    /// <summary>
+    /// Creates the asset bundles directory if it doesn't exist
+    /// </summary>
     private static void createAssetBundlesDirectoryIfNotPresent()
     {
         IOHelper.CreateDirectoryIfNotPresent(m_strBundlePath);
