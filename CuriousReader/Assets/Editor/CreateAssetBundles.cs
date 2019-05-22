@@ -1,17 +1,19 @@
 ﻿using System.IO;
 using UnityEditor;
 using UnityEngine;
+using System.Linq;
+using System.Collections.Generic;
 
 public class CreateAssetBundles {
 
 	[MenuItem("Curious Reader/Build AssetBundles")]
 	static void BuildAllAssetBundles()
 	{
-		string assetBundleDirectory = "Assets/StreamingAssets/AssetBundles/";
-		if(!Directory.Exists(assetBundleDirectory))
-		{
-			Directory.CreateDirectory(assetBundleDirectory);
-		}
-		BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None, BuildTarget.Android);
+		Debug.Log("Building all Asset Bundles!");
+		DateTimeTimer timer = new DateTimeTimer();
+		timer.Start();
+		AssetBundleMaker.BuildAllAssetBundles();
+		Debug.Log("Building all Asset Bundles finished in: " + timer.GetElapsedTime() + " minutes.");
 	}
+
 }

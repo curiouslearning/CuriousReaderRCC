@@ -937,6 +937,30 @@ public class BookEditor : EditorWindow
 // #endif
         }
 
+        if (GUILayout.Button("Build Book Bundle", GUILayout.Height(24)))
+        {
+            if (string.IsNullOrEmpty(m_strAssetBundleName))
+            {
+                this.ShowNotification(new GUIContent("Please set asset bundle name first!"));
+                m_foldoutPathsText = true;
+            } 
+            else
+            {
+                bool confirmedDeletion = EditorUtility.DisplayDialog(
+                "Confirm Build", "Build the book " + m_strAssetBundleName + "?", 
+                "Yes", 
+                "Cancel");
+                if (confirmedDeletion) 
+                {
+                    Debug.Log("Building Book Asset Bundle: " + m_strAssetBundleName);
+                    DateTimeTimer timer = new DateTimeTimer();
+                    timer.Start();
+                    AssetBundleMaker.BuildAssetBundle(m_strAssetBundleName); 
+                    Debug.Log("Finished Building Book Asset Bundle in: " + timer.GetElapsedTime() + " minutes.");
+                }
+            }
+        }
+
         // if (GUILayout.Button("Create Animations", GUILayout.Height(24)))
         // {
         //     Debug.Log(m_strAnimPath.Replace(m_strAssetPath.Replace("/", "\\"), "").Replace("\\Assets\\", "Assets\\"));
