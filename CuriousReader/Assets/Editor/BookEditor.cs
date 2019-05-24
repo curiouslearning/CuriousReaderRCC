@@ -95,7 +95,11 @@ public class BookEditor : EditorWindow
                 string strBook = File.ReadAllText(m_strBookPath);
                 m_rcStoryBook = JsonUtility.FromJson<StoryBookJson>(strBook);
 
-                if (m_rcStoryBook != null || m_needToLoadBookContent)
+                // If the story JSON file is empty let's create a new story book object and assign
+                if (m_rcStoryBook == null)
+                    m_rcStoryBook = new StoryBookJson();
+
+                if (m_needToLoadBookContent)
                 {
                     // Set book root to 4th parent directory from the book json file
                     m_strBookRoot = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetParent(m_strBookPath).FullName).FullName).FullName).FullName;
@@ -971,9 +975,7 @@ public class BookEditor : EditorWindow
         {
             Debug.Log(m_strBookPath + " file to be saved.");
 
-            StreamWriter rcWriter = new StreamWriter(m_strBookPath, false);
-            rcWriter.Write(JsonUtility.ToJson(m_rcStoryBook, true));
-            rcWriter.Close();
+            saveJSONBookToFile();
 
             AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
 
@@ -988,6 +990,16 @@ public class BookEditor : EditorWindow
 
 #endregion
     
+    }
+
+    /// <summary>
+    /// Save the JSON book file
+    /// </summary>
+    private void saveJSONBookToFile()
+    {
+        StreamWriter rcWriter = new StreamWriter(m_strBookPath, false);
+        rcWriter.Write(JsonUtility.ToJson(m_rcStoryBook, true));
+        rcWriter.Close();
     }
 
     /// <summary>
