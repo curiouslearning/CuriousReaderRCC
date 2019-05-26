@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1199635419
+CRC: 3889816520
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 76a2d279b550b0ffb49beb7a48784dbc
+    Hash: 4269e56a1350fcf5acf5beeae36c1daf
   TypeTreeHash:
     serializedVersion: 2
     Hash: 1a5bf2e0598d5c8d2dd3aedb253e6e11
@@ -861,7 +861,6 @@ Assets:
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/blinking eye small (night)/7_blinking_eye_small-2.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/Akili Wave/Akili_wave-5.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/7/blinking eye small (night)/7_blinking_eye_small-1.svg
-- Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/2/2_clouds_move_up_and_down-1.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/22/hearts/22_hearts-4.svg
 - Assets/Books/Decodable/UbongoKids/SMDP/Swahili/Level6/Audio/Stanza/audio_swahili_smdp_6_stanza_page_16.mp3
 - Assets/Books/Decodable/UbongoKids/SMDP/Common/Animations/4/music_note/04_a_small_singing_bird_music-2.svg
