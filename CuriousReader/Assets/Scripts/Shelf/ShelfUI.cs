@@ -8,9 +8,8 @@ public class ShelfUI : MonoBehaviour {
 
 	#region Public Members
 	
-	public event UnityAction<string>	OnBookFileNameChanged	    = delegate{};
-	public event UnityAction 			OnSceneLoadButtonClick 	    = delegate{};
-    public event UnityAction            OnAutoNarrateButtonClick    = delegate{};
+	public event UnityAction<string, string> 	OnSceneLoadButtonClick 	    = delegate{};
+    public event UnityAction                    OnAutoNarrateButtonClick    = delegate{};
 	
 	#endregion
 
@@ -18,19 +17,7 @@ public class ShelfUI : MonoBehaviour {
 	
 	[Header("Title Screen Components")]
     [SerializeField]
-    private Button          m_bookSelectionSceneLoadButton;
-    [SerializeField]
-    private Image           m_bookSelectionBackgroundImage;
-    [SerializeField]
-    private Image           m_bookSelectionImage;
-    [SerializeField]
-    private Sprite          m_bookSelectionSpriteEnglish;
-    [SerializeField]
-    private Sprite          m_bookSelectionSpriteSwahili;
-    [SerializeField]
-    private GameObject      m_bookLoadingOverlayWithLoadingSpinner;
-    [SerializeField]
-    private AudioSource     m_bookLoadAudioSource;
+    private List<BookCoverButton>       m_bookCovers;
     [SerializeField]
     private List<ShelfBookLevelButton>  m_bookLevelButtons;
 
@@ -54,13 +41,32 @@ public class ShelfUI : MonoBehaviour {
 
     private int     m_currentlyActiveBookLevel = 0;
     private string  m_readerLanguagePrefsKeyword = "reader_language";
+
+    // Book data manager for abstracted access
+    private BookInfoManager m_bookInfoManager;
+
+    private int m_bookCoversCount { get { return m_bookCovers.Count; } }
+
+    private int m_bookPagingStartIndex = 0;
 	
 	#endregion
 
 	#region Public Methods
 	
-	public void Initialize()
+	public void Initialize(BookInfoManager i_bookInfoManager = null)
 	{
+        if (i_bookInfoManager == null)
+        {
+            Debug.LogError("Book Info Manager is passed in the ShelfUI initialize method is null. Stopping initialization.");
+            return;
+        }
+
+        if (m_bookCovers == null)
+        {
+            Debug.LogError("Book covers are empty on object: " + name);
+            return;
+        }
+
 		if (m_bookLevelButtons == null) 
         {
             Debug.LogError("Book level buttons are empty on object: " + name);
@@ -72,6 +78,8 @@ public class ShelfUI : MonoBehaviour {
             Debug.LogError("Reader language toggle is not assigned on object: " + name);
         }
 
+        m_bookInfoManager = i_bookInfoManager;
+
         ReaderLanguage chosenLanguage = getSelectedReaderLanguagePreference();
 
 		foreach (ShelfBookLevelButton levelButton in m_bookLevelButtons)
@@ -82,28 +90,26 @@ public class ShelfUI : MonoBehaviour {
         }
 
 		m_bookLevelButtons[m_currentlyActiveBookLevel].Activate();
-        m_bookSelectionBackgroundImage.color = m_bookLevelButtons[m_currentlyActiveBookLevel].LevelColor;
-		OnBookFileNameChanged(m_bookLevelButtons[m_currentlyActiveBookLevel].GetBookTitleForLanguage(chosenLanguage));
+        setBookBorderColors(m_bookLevelButtons[m_currentlyActiveBookLevel].LevelColor);
 
-        m_bookSelectionSceneLoadButton.onClick.AddListener(() => { OnSceneLoadButtonClick(); });
+        foreach (BookCoverButton bookCover in m_bookCovers)
+        {
+            int index = m_bookCovers.IndexOf(bookCover);
+            bookCover.OnLaunchClick(() => {
+                (string bookFileName, string assetBundleName) = m_bookInfoManager
+                    .GetBookFileNameAndAssetBundle(index, getSelectedReaderLanguagePreference(), m_bookLevelButtons[m_currentlyActiveBookLevel].BookLevel);
+                OnSceneLoadButtonClick(assetBundleName, bookFileName);
+            });
+        }
+
         m_bookAutoNarrateButton.onClick.AddListener(() => { OnAutoNarrateButtonClick(); });
         
-        setBookSelectionBackgroundImageBasedOnLanguage(chosenLanguage);
+        setBooksSelectionBackgroundImageBasedOnLanguage(chosenLanguage);
 
         m_readerLanguageToggle.Initialize();
         m_readerLanguageToggle.ToggleTo(chosenLanguage, false, false);
         m_readerLanguageToggle.OnToggle += onReaderLanguageToggle;
 	}
-
-    public void EnableBookLoadingSpinnerAndOverlay()
-    {
-        m_bookLoadingOverlayWithLoadingSpinner.SetActive(true);
-    }
-
-    public void PlayBookLoadAudio()
-    {
-        m_bookLoadAudioSource.Play();
-    }
 
     public void ToggleAutoNarrateButtonImage(bool autoNarrate)
     {
@@ -133,11 +139,18 @@ public class ShelfUI : MonoBehaviour {
     {
         if (indexOfSender != m_currentlyActiveBookLevel)
         {
-			OnBookFileNameChanged(sender.GetBookTitleForLanguage(getSelectedReaderLanguagePreference()));
-            m_bookSelectionBackgroundImage.color = sender.LevelColor;
+            setBookBorderColors(sender.LevelColor);
             sender.Activate();
             m_bookLevelButtons[m_currentlyActiveBookLevel].Deactivate();
             m_currentlyActiveBookLevel = indexOfSender;
+        }
+    }
+
+    void setBookBorderColors(Color i_color)
+    {
+        foreach (BookCoverButton coverButton in m_bookCovers) 
+        {
+            coverButton.SetBorderColor(i_color);
         }
     }
 
@@ -145,24 +158,17 @@ public class ShelfUI : MonoBehaviour {
     {
         Debug.Log("Reader language changed to: " + language.ToString());
         setSelectedReaderLanguagePreference(language);
-        // Update the currently selected level button chosen file name when toggling
-        string selectedBookLevelFileName = m_bookLevelButtons[m_currentlyActiveBookLevel].GetBookTitleForLanguage(
-            getSelectedReaderLanguagePreference());
-        setBookSelectionBackgroundImageBasedOnLanguage(language);
-        OnBookFileNameChanged(selectedBookLevelFileName);
+        setBooksSelectionBackgroundImageBasedOnLanguage(language);
         m_readerLanguageToggle.ToggleTo(language, true, true);
     }
 
-    void setBookSelectionBackgroundImageBasedOnLanguage(ReaderLanguage language)
+    void setBooksSelectionBackgroundImageBasedOnLanguage(ReaderLanguage language)
     {
-        switch(language)
+        foreach (BookCoverButton coverButton in m_bookCovers)
         {
-            case ReaderLanguage.English:
-                m_bookSelectionImage.sprite = m_bookSelectionSpriteEnglish;
-                break;
-            case ReaderLanguage.Swahili:
-                m_bookSelectionImage.sprite = m_bookSelectionSpriteSwahili;
-                break;
+            int indexOfCoverButton = m_bookCovers.IndexOf(coverButton);
+            Sprite coverSprite = m_bookInfoManager.GetBookCoverWithLanguage(indexOfCoverButton, language);
+            coverButton.SetCoverSprite(coverSprite);
         }
     }
 	
