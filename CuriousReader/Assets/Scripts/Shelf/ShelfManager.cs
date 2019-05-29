@@ -40,7 +40,6 @@ public class ShelfManager : MonoBehaviour
             return;
         }
         m_shelfUI.OnSceneLoadButtonClick    += onBookSceneLoadClick;
-        m_shelfUI.OnBookFileNameChanged     += onBookFileNameChanged;
         m_shelfUI.OnAutoNarrateButtonClick  += onBookAutoNarrateButtonClick;
         m_shelfUI.Initialize(m_bookInfosManager);
         m_shelfUI.ToggleAutoNarrateButtonImage(AutoNarrate);
@@ -93,11 +92,6 @@ public class ShelfManager : MonoBehaviour
         asyncOp.allowSceneActivation = true;
     }
 
-    void onBookFileNameChanged(string newBookFileName)
-    {
-        SelectedBookFileName = newBookFileName;
-    }
-    
     void sendElapsedTimeToFirebaseAnalytics()
     {
         System.TimeSpan elapsedTime = m_shelfSceneTimer.GetElapsedTime();
