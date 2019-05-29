@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70.9 63.33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #ffcb33;
+      }
+
+      .cls-3 {
+        fill: #27c5f4;
+      }
+
+      .cls-4 {
+        fill: #f7f6da;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-6 {
+        fill: #8b5e3c;
+      }
+
+      .cls-7 {
+        fill: #603913;
+      }
+
+      .cls-8 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path class="cls-1" d="M38.65,35A58.48,58.48,0,0,1,5,42.6a17.53,17.53,0,0,0,19.45,7.28C37.55,46.51,38.65,35,38.65,35Z"/>
+    </clipPath>
+  </defs>
+  <title>p10</title>
+  <g id="character">
+    <g>
+      <g>
+        <g>
+          <rect class="cls-2" x="48.09" y="49.84" width="2.11" height="8.39" transform="translate(-23.19 43.91) rotate(-39.75)"/>
+          <path class="cls-2" d="M53.47,56.72a1,1,0,0,0-1.33-.45c-1.77.88-5.2,3-4.86,4.72.45,2.4,2.4,3,3.81,1.57.93-.94-2-1.56,2.09-4.6a1,1,0,0,0,.29-1.24Z"/>
+        </g>
+        <g>
+          <rect class="cls-2" x="55.25" y="46.73" width="2.11" height="8.39" transform="translate(-19.54 47.77) rotate(-39.75)"/>
+          <path class="cls-2" d="M60.63,53.6a1,1,0,0,0-1.32-.44c-1.77.87-5.2,3-4.87,4.72.46,2.39,2.4,3,3.81,1.56.93-.94-2-1.56,2.09-4.6a1,1,0,0,0,.29-1.24Z"/>
+        </g>
+        <path class="cls-2" d="M27,15.72s-12.31-.57-15.71-.14c-3,.37-5,1.71-4.85,7.78a1.18,1.18,0,0,0,1.89.92,10.79,10.79,0,0,1,6.5-1.77c6.65,0,12,.28,12,.28S27,15.29,27,15.72Z"/>
+        <path class="cls-3" d="M35.43,0c4.13,0,15.06,2.91,15.31,14.57S53.41,41.78,70.9,41.78c0,0-13.12,17.73-37.17,7.53S12.6,0,35.43,0Z"/>
+        <path class="cls-4" d="M19.81,35.62A26.68,26.68,0,0,0,33.73,49.31a40.89,40.89,0,0,0,8.09,2.52,14.82,14.82,0,0,0-22-16.21Z"/>
+        <g>
+          <circle class="cls-5" cx="29.68" cy="17.8" r="9.71"/>
+          <g>
+            <circle class="cls-6" cx="31.34" cy="18.52" r="4.6"/>
+            <circle class="cls-7" cx="31.46" cy="18.62" r="2.51"/>
+            <circle class="cls-5" cx="32.8" cy="16.01" r="1.61"/>
+          </g>
+        </g>
+      </g>
+      <g>
+        <path class="cls-3" d="M38.65,35A58.48,58.48,0,0,1,5,42.6a17.53,17.53,0,0,0,19.45,7.28C37.55,46.51,38.65,35,38.65,35Z"/>
+        <g class="cls-8">
+          <g>
+            <ellipse class="cls-2" cx="39.12" cy="38.78" rx="4" ry="3.64" transform="translate(-14.86 27.82) rotate(-33.28)"/>
+            <ellipse class="cls-2" cx="34.89" cy="43.62" rx="4" ry="3.64" transform="translate(-18.21 26.3) rotate(-33.28)"/>
+            <ellipse class="cls-2" cx="29.1" cy="47.94" rx="4" ry="3.64" transform="translate(-21.53 23.83) rotate(-33.28)"/>
+            <ellipse class="cls-2" cx="22.44" cy="49.72" rx="4" ry="3.64" transform="translate(-23.61 20.47) rotate(-33.28)"/>
+            <ellipse class="cls-2" cx="16" cy="50.22" rx="4" ry="3.64" transform="translate(-24.93 17.01) rotate(-33.28)"/>
+            <ellipse class="cls-2" cx="9.34" cy="48.76" rx="4" ry="3.64" transform="translate(-25.22 13.12) rotate(-33.28)"/>
+            <ellipse class="cls-2" cx="3.9" cy="46.17" rx="4" ry="3.64" transform="translate(-24.69 9.71) rotate(-33.28)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
