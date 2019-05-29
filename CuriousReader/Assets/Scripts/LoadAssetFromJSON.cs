@@ -57,13 +57,17 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
 		canvasTransform = this.transform;  //if this script is attached to canvas; otherwise update this line to store canvas transform.
 
-    if (ShelfManager.LoadedAssetBundle == null) {
-
-      Debug.Log("Book asset bundle is not loaded, attempting to load it...");
-			try {
-            	ShelfManager.LoadedAssetBundle = AssetBundle.LoadFromFile(Path.Combine(Application.streamingAssetsPath, "AssetBundles/differentplaces"));  //ShelfManager.selectedBook.ToLower())
+        if (ShelfManager.LoadedAssetBundle == null) {
+            Debug.Log("Book asset bundle is not loaded, attempting to load it...");
+			try
+            {
+                string assetBundlePath = Path.Combine(Application.streamingAssetsPath, "AssetBundles");
+                assetBundlePath = Path.Combine(assetBundlePath, ShelfManager.SelectedBookAssetBundle);
+            	ShelfManager.LoadedAssetBundle = AssetBundle.LoadFromFile(assetBundlePath);  //ShelfManager.selectedBook.ToLower())
 				LoadStoryData();
-			} catch (Exception e) {
+			} 
+            catch (Exception e) 
+            {
 				Debug.LogError("Failed to load \"differentplaces\" asset bundle! Message: " + e.Message);
 			}
 		} else
