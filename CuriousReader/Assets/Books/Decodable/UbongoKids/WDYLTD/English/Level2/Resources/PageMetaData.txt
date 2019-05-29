@@ -1,0 +1,97 @@
+# Scene Objects Count: 83
+
+# !!! Page index starts at 1 and the end page is inclusive !!!
+# !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
+# Syntax Example:
+#   ObjectName-animation_name > 1:10 & 12x3 & 17 & 20:25x3
+# Description:
+#   >       => Separates object name from page instructions
+#   &       => Connects the instructions
+#   1:10    => Put object on pages 1 through 10 (inclusive)
+#   12x3    => Put object on page 12, 3 times
+#   17      => Put object on page 17
+#   20:25x3 => Put object on pages 20 through 25, 3 times on each
+
+Akili-dancing > 14&22
+Akili-drawing > 21
+Akili-landing_and_jumping > 7&20
+Akili-laughing > 24
+Akili-looking_right > 3
+Akili-pointing > 25
+Akili-reading > 19
+Akili-singing > 17&23
+Akili-waving > 18
+Akili-waving_two > 24
+Baby > 17
+BackgroundSky > 1:25
+BlankCanvas > 9:11 & 21
+BlueBird > 10
+BlueBook > 3
+BlueCrayon > 10
+BlueMushroom > 2&3&13&16&22&23
+Bottle > 3
+BrownGround > 9:11 & 21
+BushBaby-dancing > 14
+BushBaby-drawing_blue > 9:10
+BushBaby-drawing_green > 10
+BushBaby-drawing_on_ground > 11
+BushBaby-drawing_red > 10
+BushBaby-drawing_yellow > 10
+BushBaby-landing_and_jumping >
+BushBaby-laughing > 24
+BushBaby-waving > 8
+BushBaby-waving_two > 24
+BushBaby > 3&17
+BushBaby_drawing > 21
+Drums > 14
+Easel > 9:11 & 21
+Elephant-moving_trunk > 16&23
+Elephant-wiggling_ears > 15
+Elephant > 17
+Father-waving > 17
+FlowerPicture > 21
+GreenBird > 10
+GreenCrayon > 10
+GreenHills > 1:4 & 12:17 & 22:24
+GreenMushroom > 2&13&22
+HappyHippo-drawing_on_canvas > 11
+HappyHippo > 14
+HappyHippo-landing_and_jumping > 7
+HappyHippo-laughing > 24
+HappyHippo-reading > 2&19
+HappyHippo-reading_two > 3
+HappyHippo-singing > 17
+HappyHippo-waving > 1
+HappyHippo-waving_two > 24
+Label > 3
+LionHouse > 6
+LittleLion-jumping_and_landing > 6
+LittleLion-landing_and_jumping > 5&7&20
+LittleLion-laughing > 24
+LittleLion-reading > 3
+LittleLion-waving > 4
+LittleLion-waving_two > 24
+Monkey-dancing > 13:14 & 22
+Monkey-laughing > 24
+Monkey-waving > 12
+Monkey-waving_two > 24
+Monkey > 17
+Mother-waving > 17
+MountainTop > 6:7
+MusicalNotes-floating > 14
+MusicalNotes-flying > 16 
+OrangeBook > 3
+OrangeMushroom > 2&3&13&16&22&23
+PictureBlueFrog > 10
+PictureGreenFrog > 10
+PictureRainbow > 11
+PictureRedFrog > 10
+Pictures-changing > 9
+PictureSun > 11
+PictureSunOnGround > 11
+PictureYellowFrog > 10
+RedBird > 10
+RedCrayon > 10
+SignPost > 3
+YellowBird > 10
+YellowCrayon > 10
