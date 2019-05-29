@@ -10,6 +10,7 @@ public class ShelfManager : MonoBehaviour
     #region Public Members
     
     public static string        SelectedBookFileName;
+    public static string        SelectedBookAssetBundle;
     public static AssetBundle   LoadedAssetBundle;
     public static bool          AutoNarrate = true;
     
@@ -18,11 +19,13 @@ public class ShelfManager : MonoBehaviour
     #region Private Members
 
     [SerializeField]
-    private ShelfUI m_shelfUI; 
+    private ShelfUI         m_shelfUI;
+    [SerializeField]
+    private BookInfoManager m_bookInfosManager;
 
-    private DateTimeTimer m_shelfSceneTimer; // Used for getting the elapsed time in seconds for firebase analytics
+    private DateTimeTimer   m_shelfSceneTimer; // Used for getting the elapsed time in seconds for firebase analytics
 
-    private bool    m_startedLoadingABook;
+    private bool            m_startedLoadingABook;
     
     #endregion
 
@@ -37,9 +40,8 @@ public class ShelfManager : MonoBehaviour
             return;
         }
         m_shelfUI.OnSceneLoadButtonClick    += onBookSceneLoadClick;
-        m_shelfUI.OnBookFileNameChanged     += onBookFileNameChanged;
         m_shelfUI.OnAutoNarrateButtonClick  += onBookAutoNarrateButtonClick;
-        m_shelfUI.Initialize();
+        m_shelfUI.Initialize(m_bookInfosManager);
         m_shelfUI.ToggleAutoNarrateButtonImage(AutoNarrate);
         
         m_shelfSceneTimer = new DateTimeTimer().Start();
@@ -49,14 +51,16 @@ public class ShelfManager : MonoBehaviour
 
     #region Private Methods
 
-    void onBookSceneLoadClick()
+    void onBookSceneLoadClick(string i_assetBundleName, string i_assetBundleBookFileName)
     {
         if (m_startedLoadingABook) return;
 
+        Debug.Log($"Loading book: {i_assetBundleBookFileName} from: {i_assetBundleName}");
+
         m_startedLoadingABook = true;
 
-        m_shelfUI.PlayBookLoadAudio();
-        m_shelfUI.EnableBookLoadingSpinnerAndOverlay();
+        SelectedBookFileName = i_assetBundleBookFileName;
+        SelectedBookAssetBundle = i_assetBundleName;
 
         sendElapsedTimeToFirebaseAnalytics();
 
@@ -88,11 +92,6 @@ public class ShelfManager : MonoBehaviour
         asyncOp.allowSceneActivation = true;
     }
 
-    void onBookFileNameChanged(string newBookFileName)
-    {
-        SelectedBookFileName = newBookFileName;
-    }
-    
     void sendElapsedTimeToFirebaseAnalytics()
     {
         System.TimeSpan elapsedTime = m_shelfSceneTimer.GetElapsedTime();

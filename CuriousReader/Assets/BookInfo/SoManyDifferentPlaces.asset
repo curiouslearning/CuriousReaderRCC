@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e8cd20a32069f4583c0f96074eb0c1, type: 3}
+  m_Name: SoManyDifferentPlaces
+  m_EditorClassIdentifier: 
+  BookAssetBundleName: differentplaces
+  BookCover:
+  - BookLanguage: 0
+    BookCoverSprite: {fileID: 21300000, guid: 98e87fa9d47f7bb4d851277597991a73, type: 3}
+  - BookLanguage: 1
+    BookCoverSprite: {fileID: 21300000, guid: 7646b09f8cbc7a94da839ca08cd85b1e, type: 3}
+  BookTitleTranslations:
+  - BookLevel: 2
+    BookLanguage: 0
+    AssetBundleBookFileName: DifferentPlacesLevel2
+  - BookLevel: 2
+    BookLanguage: 1
+    AssetBundleBookFileName: SWA_DifferentPlacesLevel2
+  - BookLevel: 4
+    BookLanguage: 0
+    AssetBundleBookFileName: DifferentPlacesLevel4
+  - BookLevel: 4
+    BookLanguage: 1
+    AssetBundleBookFileName: SWA_DifferentPlacesLevel4
+  - BookLevel: 6
+    BookLanguage: 0
+    AssetBundleBookFileName: DifferentPlacesLevel6
+  - BookLevel: 6
+    BookLanguage: 1
+    AssetBundleBookFileName: SWA_DifferentPlacesLevel6

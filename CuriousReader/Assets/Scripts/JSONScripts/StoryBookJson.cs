@@ -14,6 +14,12 @@ public class StoryBookJson{
     public string arrowColor;
     public string fontFamily;
     public string language;
-   public PageClass[] pages;
+    public PageClass[] pages;
+
+    public StoryBookJson()
+    {
+        pages = new PageClass[1];
+        pages[0] = new PageClass();
+    }
     
 }
