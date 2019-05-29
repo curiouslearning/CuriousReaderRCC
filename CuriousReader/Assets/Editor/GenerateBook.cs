@@ -7,7 +7,7 @@ public class GenerateBook
     private static readonly string m_strNewBookParentDirectory  = "Assets/Books/Decodable/UbongoKids/";
     private static readonly string m_strNewBookDefaultTitle     = "NewBook";
 
-    private static readonly string m_strBookInfosPath = "Assets/BookInfos/";
+    private static readonly string m_strBookInfosPath = "Assets/BookInfo/";
     private static readonly string m_strNewBookInfoDefaultName = "NewBook.asset";
 
     [MenuItem("Curious Reader/Generate Book")]
