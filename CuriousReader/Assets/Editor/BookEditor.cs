@@ -725,6 +725,7 @@ public class BookEditor : EditorWindow
                         {
                             GameObjectClass newSceneObject = AddNewGameObjectOnPage(pageIndex);
                             newSceneObject.imageName = objectAndAnimationName;
+                            newSceneObject.label = objectAndAnimationName;
                             
                             // Add the object animation asset name if it exists where it should already be
                             if (objectAndAnimationName.Contains("-"))
@@ -1971,7 +1972,8 @@ public class BookEditor : EditorWindow
                     {
                         i_rcTrigger.invokers[i].symmetricallyPaired = EditorGUILayout.Toggle(new GUIContent("Symmetrically Paired "), i_rcTrigger.invokers[i].symmetricallyPaired);
                         i_rcTrigger = UpdatePairing(i_rcTrigger, i_rcTrigger.invokers[i]);
-                        i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
+                        // BOOKMARK: Stanza ID is not used anymore                                      
+                        // i_rcTrigger.stanzaID = EditorGUILayout.IntField("Stanza ID", i_rcTrigger.stanzaID, EditorStyles.numberField);
                         bool textIDValuesEmpty = formattedTextIDDropdownValues.Length == 0 || formattedTextIDDropdownValues.Length == 1 && formattedTextIDDropdownValues[0] == null;
                         EditorGUI.BeginDisabledGroup(textIDValuesEmpty);
                         if (textIDValuesEmpty)
@@ -2136,7 +2138,9 @@ public class BookEditor : EditorWindow
 
         if (i_rcText.Show)
         {
+            EditorGUI.BeginDisabledGroup(true);
             i_rcText.id = EditorGUILayout.IntField("ID", i_rcText.id, EditorStyles.numberField);
+            EditorGUI.EndDisabledGroup();
             i_rcText.text = EditorGUILayout.TextField("Text", i_rcText.text, EditorStyles.textField);
             i_rcText.customPosition = EditorGUILayout.Toggle("Custom Position", i_rcText.customPosition);
             
