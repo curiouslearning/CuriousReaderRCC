@@ -21,19 +21,19 @@ MonoBehaviour:
   BookTitleTranslations:
   - BookLevel: 2
     BookLanguage: 0
-    AssetBundleBookFileName: DifferentPlacesLevel2
+    BookFileName: DifferentPlacesLevel2
   - BookLevel: 2
     BookLanguage: 1
-    AssetBundleBookFileName: SWA_DifferentPlacesLevel2
+    BookFileName: SWA_DifferentPlacesLevel2
   - BookLevel: 4
     BookLanguage: 0
-    AssetBundleBookFileName: DifferentPlacesLevel4
+    BookFileName: DifferentPlacesLevel4
   - BookLevel: 4
     BookLanguage: 1
-    AssetBundleBookFileName: SWA_DifferentPlacesLevel4
+    BookFileName: SWA_DifferentPlacesLevel4
   - BookLevel: 6
     BookLanguage: 0
-    AssetBundleBookFileName: DifferentPlacesLevel6
+    BookFileName: DifferentPlacesLevel6
   - BookLevel: 6
     BookLanguage: 1
-    AssetBundleBookFileName: SWA_DifferentPlacesLevel6
+    BookFileName: SWA_DifferentPlacesLevel2

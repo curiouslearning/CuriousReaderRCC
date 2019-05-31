@@ -9,5 +9,5 @@ public class BookTitleTranslation
     [SerializeField]
     public ReaderLanguage   BookLanguage;
     [SerializeField]
-    public string           AssetBundleBookFileName;
+    public string           BookFileName;
 }

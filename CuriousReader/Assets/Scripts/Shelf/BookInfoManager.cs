@@ -38,9 +38,9 @@ public class BookInfoManager : MonoBehaviour
             string bookFileName = m_bookInfos[i_bookIndex].BookTitleTranslations.Find((bookTitleTranslation) =>
             {
                 return bookTitleTranslation.BookLanguage == i_language && bookTitleTranslation.BookLevel == i_bookLevel;
-            }).AssetBundleBookFileName;
+            }).BookFileName;
             return (bookFileName, bookAssetBundle);
-        } 
+        }
         catch (Exception e)
         {
             Debug.LogError($"Unable to find book details with book index: {i_bookIndex}, language: {i_language} and level: {i_bookLevel}. Message: {e.Message}");
