@@ -21,6 +21,12 @@ public class ShelfUI : MonoBehaviour {
     [SerializeField]
     private List<ShelfBookLevelButton>  m_bookLevelButtons;
 
+    [Header("Navigation Arrow Buttons")]
+    [SerializeField]
+    private Button m_navigationButtonLeft;
+    [SerializeField]
+    private Button m_navigationButtonRight;
+
     [Header("Autonarrate Components")]
     [SerializeField]
     private Image           m_bookAutoNarrateImage;
@@ -97,10 +103,25 @@ public class ShelfUI : MonoBehaviour {
             int index = m_bookCovers.IndexOf(bookCover);
             bookCover.OnLaunchClick(() => {
                 (string bookFileName, string assetBundleName) = m_bookInfoManager
-                    .GetBookFileNameAndAssetBundle(index, getSelectedReaderLanguagePreference(), m_bookLevelButtons[m_currentlyActiveBookLevel].BookLevel);
+                    .GetBookFileNameAndAssetBundle(m_bookPagingStartIndex + index, getSelectedReaderLanguagePreference(), m_bookLevelButtons[m_currentlyActiveBookLevel].BookLevel);
                 OnSceneLoadButtonClick(assetBundleName, bookFileName);
             });
         }
+
+        m_navigationButtonLeft.onClick.AddListener(() => 
+        { 
+            changePagingStartIndexBy(-m_bookCoversCount); 
+            setBooksSelectionBackgroundImageBasedOnLanguage(getSelectedReaderLanguagePreference());
+            updateNavigationArrowsVisibility();
+        });
+        m_navigationButtonRight.onClick.AddListener(() => 
+        { 
+            changePagingStartIndexBy(m_bookCoversCount);
+            setBooksSelectionBackgroundImageBasedOnLanguage(getSelectedReaderLanguagePreference());
+            updateNavigationArrowsVisibility();
+        });
+
+        updateNavigationArrowsVisibility();
 
         m_bookAutoNarrateButton.onClick.AddListener(() => { OnAutoNarrateButtonClick(); });
         
@@ -133,6 +154,35 @@ public class ShelfUI : MonoBehaviour {
     void setSelectedReaderLanguagePreference(ReaderLanguage language)
     {
         PlayerPrefs.SetInt(m_readerLanguagePrefsKeyword, (int)language);
+    }
+
+    void changePagingStartIndexBy(int i_amount)
+    {
+        m_bookPagingStartIndex = Mathf.Clamp(m_bookPagingStartIndex + i_amount, 0, int.MaxValue);
+    }
+
+    void updateNavigationArrowsVisibility() 
+    {
+        // Hide left arrow if the paging start is 0
+        if (m_bookPagingStartIndex == 0)
+        {
+            m_navigationButtonLeft.GetComponent<Image>().enabled = false;
+        } 
+        else
+        {
+            m_navigationButtonLeft.GetComponent<Image>().enabled = true;
+        }
+
+        // Hide right arrow if have no more books to display
+        int totalBookCount = m_bookInfoManager.GetTotalBookCount();
+        if (m_bookPagingStartIndex >= totalBookCount || m_bookPagingStartIndex + m_bookCoversCount >= totalBookCount)
+        {
+            m_navigationButtonRight.GetComponent<Image>().enabled = false;
+        }
+        else
+        {
+            m_navigationButtonRight.GetComponent<Image>().enabled = true;
+        }
     }
 	
 	void onLevelButtonClicked(ShelfBookLevelButton sender, int indexOfSender)
@@ -167,7 +217,8 @@ public class ShelfUI : MonoBehaviour {
         foreach (BookCoverButton coverButton in m_bookCovers)
         {
             int indexOfCoverButton = m_bookCovers.IndexOf(coverButton);
-            Sprite coverSprite = m_bookInfoManager.GetBookCoverWithLanguage(indexOfCoverButton, language);
+            int indexOfCoverButtonFromPagingStart = m_bookPagingStartIndex + indexOfCoverButton;
+            Sprite coverSprite = m_bookInfoManager.GetBookCoverWithLanguage(indexOfCoverButtonFromPagingStart, language);
             coverButton.SetCoverSprite(coverSprite);
         }
     }
