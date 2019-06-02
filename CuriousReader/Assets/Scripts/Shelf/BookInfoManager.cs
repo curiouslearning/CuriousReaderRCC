@@ -15,6 +15,11 @@ public class BookInfoManager : MonoBehaviour
 
     #region Public Methods
 
+    public int GetTotalBookCount()
+    {
+        return m_bookInfos.Count;
+    }
+
     public Sprite GetBookCoverWithLanguage(int i_bookIndex, ReaderLanguage i_language)
     {
         try
@@ -25,7 +30,7 @@ public class BookInfoManager : MonoBehaviour
         } 
         catch
         {
-            Debug.LogError($"Unable get cover image for book with index {i_bookIndex} and language {i_language}.");
+            Debug.LogError($"Unable to get cover image for book with index {i_bookIndex} and language {i_language}.");
             return null;
         }
     }
