@@ -58,7 +58,11 @@ public class ShelfUI : MonoBehaviour {
 	#endregion
 
 	#region Public Methods
-	
+
+	/// <summary>
+	/// Initializes the shelf UI and it's various components
+	/// </summary>
+	/// <param name="i_bookInfoManager">Takes info manager for various book database methods</param>
 	public void Initialize(BookInfoManager i_bookInfoManager = null)
 	{
         if (i_bookInfoManager == null)
@@ -132,11 +136,18 @@ public class ShelfUI : MonoBehaviour {
         m_readerLanguageToggle.OnToggle += onReaderLanguageToggle;
 	}
 
-    public void ToggleAutoNarrateButtonImage(bool autoNarrate)
+    /// <summary>
+    /// Toggle auto narrate image depending on an input bool
+    /// </summary>
+    /// <param name="Narrate">Bool describing desired auto narration preference</param>
+    public void ToggleAutoNarrateButtonImage(bool i_autoNarrate)
     {
-        m_bookAutoNarrateImage.sprite = autoNarrate ? m_bookAutoNarrateSpriteOn : m_bookAutoNarrateSpriteOff;
+        m_bookAutoNarrateImage.sprite = i_autoNarrate ? m_bookAutoNarrateSpriteOn : m_bookAutoNarrateSpriteOff;
     }
 
+    /// <summary>
+    /// Play the autonarrate toggle audio
+    /// </summary>
     public void PlayAutoNarrateToggleAudio()
     {
         m_bookAutoNarrateClickAudioSource.Play();
@@ -146,21 +157,36 @@ public class ShelfUI : MonoBehaviour {
 
 	#region Private Methods
 
+    /// <summary>
+    /// Get the preferred language from player preferences
+    /// </summary>
+    /// <returns></returns>
     ReaderLanguage getSelectedReaderLanguagePreference()
     {
         return (ReaderLanguage)PlayerPrefs.GetInt(m_readerLanguagePrefsKeyword, 0);
     }
 
+    /// <summary>
+    /// Set new language into player preferences
+    /// </summary>
+    /// <param name="language">New language</param>
     void setSelectedReaderLanguagePreference(ReaderLanguage language)
     {
         PlayerPrefs.SetInt(m_readerLanguagePrefsKeyword, (int)language);
     }
 
+    /// <summary>
+    /// Changes the paging start index by a given amount, allowing to scroll
+    /// </summary>
+    /// <param name="i_amount"></param>
     void changePagingStartIndexBy(int i_amount)
     {
         m_bookPagingStartIndex = Mathf.Clamp(m_bookPagingStartIndex + i_amount, 0, int.MaxValue);
     }
 
+    /// <summary>
+    /// Updates the navigation arrows visibility depending on the paging start index
+    /// </summary>
     void updateNavigationArrowsVisibility() 
     {
         // Hide left arrow if the paging start is 0
@@ -185,6 +211,11 @@ public class ShelfUI : MonoBehaviour {
         }
     }
 	
+    /// <summary>
+    /// Level change button click handler
+    /// </summary>
+    /// <param name="sender">Leve button</param>
+    /// <param name="indexOfSender">Index of the level button</param>
 	void onLevelButtonClicked(ShelfBookLevelButton sender, int indexOfSender)
     {
         if (indexOfSender != m_currentlyActiveBookLevel)
@@ -196,6 +227,10 @@ public class ShelfUI : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Sets the book cover button border colors for images
+    /// </summary>
+    /// <param name="i_color">New color</param>
     void setBookBorderColors(Color i_color)
     {
         foreach (BookCoverButton coverButton in m_bookCovers) 
@@ -204,14 +239,21 @@ public class ShelfUI : MonoBehaviour {
         }
     }
 
+    /// <summary>
+    /// Event handler for language change 
+    /// </summary>
+    /// <param name="language">New language of choice</param>
     void onReaderLanguageToggle(ReaderLanguage language)
     {
-        Debug.Log("Reader language changed to: " + language.ToString());
         setSelectedReaderLanguagePreference(language);
         setBooksSelectionBackgroundImageBasedOnLanguage(language);
         m_readerLanguageToggle.ToggleTo(language, true, true);
     }
 
+    /// <summary>
+    /// Iterate and set the book covers taken from the books database
+    /// </summary>
+    /// <param name="language">For book cover localization</param>
     void setBooksSelectionBackgroundImageBasedOnLanguage(ReaderLanguage language)
     {
         foreach (BookCoverButton coverButton in m_bookCovers)

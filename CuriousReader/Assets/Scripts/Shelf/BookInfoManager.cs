@@ -15,11 +15,21 @@ public class BookInfoManager : MonoBehaviour
 
     #region Public Methods
 
+    /// <summary>
+    /// Get the count of number of books that we have
+    /// </summary>
+    /// <returns>Number of current books</returns>
     public int GetTotalBookCount()
     {
         return m_bookInfos.Count;
     }
 
+    /// <summary>
+    /// Try to return cover with book index and language
+    /// </summary>
+    /// <param name="i_bookIndex">Index of the book that we need to get</param>
+    /// <param name="i_language">Language of the book that we need to get the cover for</param>
+    /// <returns></returns>
     public Sprite GetBookCoverWithLanguage(int i_bookIndex, ReaderLanguage i_language)
     {
         try
@@ -35,6 +45,13 @@ public class BookInfoManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Get book file name and asset bundle using the passed parameters
+    /// </summary>
+    /// <param name="i_bookIndex">Index of the book</param>
+    /// <param name="i_language">Language of the book</param>
+    /// <param name="i_bookLevel">Level of the book</param>
+    /// <returns>Tuple that contains: book file name and book asset bundle</returns>
     public (string, string) GetBookFileNameAndAssetBundle(int i_bookIndex, ReaderLanguage i_language, int i_bookLevel)
     {
         try 
