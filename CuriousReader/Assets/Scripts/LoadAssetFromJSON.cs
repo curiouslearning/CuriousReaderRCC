@@ -1202,8 +1202,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 			go.AddComponent<Rigidbody2D>().isKinematic = true;
 
 		//add BoxCollider after adding the sprite for proper size!
-		PolygonCollider2D col = go.AddComponent<PolygonCollider2D>();
-		// BoxCollider col = go.AddComponent<BoxCollider>();
+		// PolygonCollider2D col = go.AddComponent<PolygonCollider2D>();
+		BoxCollider2D col = go.AddComponent<BoxCollider2D>();
 		col.isTrigger = true;
 		tinkerGraphicObjects.Add(go);
 	}
