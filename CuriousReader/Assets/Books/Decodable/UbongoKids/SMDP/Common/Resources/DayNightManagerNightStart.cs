@@ -44,9 +44,9 @@ public class DayNightManagerNightStart : GSManager
                     }
 
                     // Start this object unclickable.
-                    PolygonCollider2D rcCollider = rcGameObject.GetComponent<PolygonCollider2D>();
+                    Collider2D rcCollider = rcGameObject.GetComponent<Collider2D>();
 
-                    if (rcCollider != null)
+                    if (rcCollider != null && rcCollider.GetComponent<RectTransform>() == null)
                     {
                         rcCollider.enabled = false;
                     }

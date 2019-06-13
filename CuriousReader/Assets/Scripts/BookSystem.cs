@@ -32,9 +32,9 @@ public static class BookSystem
                 rcRenderer.material.DOColor(new Color(1.0f, 1.0f, 1.0f, 1.0f), i_fTime);
             }
 
-            PolygonCollider2D rcCollider = i_rcObject.GetComponent<PolygonCollider2D>();
+            Collider2D rcCollider = i_rcObject.GetComponent<Collider2D>();
 
-            if (rcCollider != null)
+            if (rcCollider != null && rcCollider.GetComponent<RectTransform>() == null)
             {
                 rcCollider.enabled = true;
             }
@@ -54,9 +54,9 @@ public static class BookSystem
             }
 
             // Start this object unclickable.
-            PolygonCollider2D rcCollider = i_rcObject.GetComponent<PolygonCollider2D>();
+            Collider2D rcCollider = i_rcObject.GetComponent<Collider2D>();
 
-            if (rcCollider != null)
+            if (rcCollider != null && rcCollider.GetComponent<RectTransform>() == null)
             {
                 rcCollider.enabled = false;
             }
