@@ -1182,8 +1182,8 @@ public class LoadAssetFromJSON : MonoBehaviour {
 
         if ( rcRender == null )
         {
-            go.AddComponent<SpriteRenderer>();
-            go.GetComponent<SpriteRenderer>().sortingOrder = gameObjectData.orderInLayer;
+            rcRender = go.AddComponent<SpriteRenderer>();
+            rcRender.sortingOrder = gameObjectData.orderInLayer;
 		}
 
 		go.transform.position = new Vector3(gameObjectData.posX, gameObjectData.posY, gameObjectData.posZ);
@@ -1201,10 +1201,10 @@ public class LoadAssetFromJSON : MonoBehaviour {
 		if (gameObjectData.destroyOnCollision != "NIL")
 			go.AddComponent<Rigidbody2D>().isKinematic = true;
 
-		//add BoxCollider after adding the sprite for proper size!
-		// PolygonCollider2D col = go.AddComponent<PolygonCollider2D>();
-		BoxCollider2D col = go.AddComponent<BoxCollider2D>();
+        // Assuming we have a correct physics shape set on the sprite itself from the Sprite Editor
+		PolygonCollider2D col = go.AddComponent<PolygonCollider2D>();
 		col.isTrigger = true;
+
 		tinkerGraphicObjects.Add(go);
 	}
 
