@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: a9273da8539c1b447882540fa77fa067
+guid: ad3b47f54deef3a49b1b3d3f7299e729
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/Akili-sleeping
-    400000: gameObject/Akili-sleeping/Transform
-    21200000: gameObject/Akili-sleeping/SpriteRenderer
+    100000: gameObject/HappyHippo-waving-1
+    400000: gameObject/HappyHippo-waving-1/Transform
+    21200000: gameObject/HappyHippo-waving-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
   userData: 
-  assetBundleName: 
+  assetBundleName: akiliriver
   assetBundleVariant: 
   script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
   svgType: 0
@@ -51,5 +51,5 @@ ScriptedImporter:
         y: 0
         width: 0
         height: 0
-      spriteID: 401e4af0889d03a43bd771e0e0fc96a2
+      spriteID: d54b97eab7be8af4ab0827dc1d8d581a
     PhysicsOutlines: []

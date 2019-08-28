@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35e8cd20a32069f4583c0f96074eb0c1, type: 3}
-  m_Name: FourthBook
+  m_Name: MyMarvelousMarket
   m_EditorClassIdentifier: 
-  BookAssetBundleName: fourthbook
+  BookAssetBundleName: akiliriver
   BookCover:
   - BookLanguage: 0
     BookCoverSprite: {fileID: 21300000, guid: e69222bf8a4ec754bb948b628e6ee2e6, type: 3}
@@ -21,19 +21,19 @@ MonoBehaviour:
   BookTitleTranslations:
   - BookLevel: 2
     BookLanguage: 0
-    AssetBundleBookFileName: 
+    BookFileName: AkiliRiverLevel2
   - BookLevel: 2
     BookLanguage: 1
-    AssetBundleBookFileName: 
+    BookFileName: SWA_AkiliRiverLevel2
   - BookLevel: 4
     BookLanguage: 0
-    AssetBundleBookFileName: 
+    BookFileName: AkiliRiverLevel4
   - BookLevel: 4
     BookLanguage: 1
-    AssetBundleBookFileName: 
+    BookFileName: SWA_AkiliRiverLevel4
   - BookLevel: 6
     BookLanguage: 0
-    AssetBundleBookFileName: 
+    BookFileName: AkiliRiverLevel6
   - BookLevel: 6
     BookLanguage: 1
-    AssetBundleBookFileName: 
+    BookFileName: SWA_AkiliRiverLevel6
