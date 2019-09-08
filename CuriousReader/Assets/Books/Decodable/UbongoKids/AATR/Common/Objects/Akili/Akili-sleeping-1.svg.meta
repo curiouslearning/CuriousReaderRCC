@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 382776c51037366438418bcfdd004ccb
+guid: 77cef2c596ed82149a7ff052c646f22e
 ScriptedImporter:
   fileIDToRecycleName:
-    100000: gameObject/Akili-sleeping-1
-    400000: gameObject/Akili-sleeping-1/Transform
-    21200000: gameObject/Akili-sleeping-1/SpriteRenderer
+    100002: gameObject/Akili-sleeping-1
+    400002: gameObject/Akili-sleeping-1/Transform
+    21200002: gameObject/Akili-sleeping-1/SpriteRenderer
     21300000: sprite
     100100000: gameObject
   externalObjects: {}
@@ -19,7 +19,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  preserveViewport: 0
+  preserveViewport: 1
   advancedMode: 0
   predefinedResolutionIndex: 1
   targetResolution: 1080
@@ -40,16 +40,25 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Akili-sleepingSprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: 3fbc8b2d2b2a0da4bbe258bbe9e2fe6f
-    PhysicsOutlines: []
+        width: 100
+        height: 100
+      spriteID: 1054b352e26f61c4dad16ca21c752c69
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 16, y: -5}
+      - {x: 10, y: -6}
+      - {x: 9, y: -9}
+      - {x: 9, y: -19}
+      - {x: 16, y: -22}
+      - {x: 40, y: -22}
+      - {x: 42, y: -17}
+      - {x: 42, y: -5}

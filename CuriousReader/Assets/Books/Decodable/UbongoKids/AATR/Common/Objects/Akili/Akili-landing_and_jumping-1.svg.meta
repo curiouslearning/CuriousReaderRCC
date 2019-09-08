@@ -19,7 +19,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  preserveViewport: 0
+  preserveViewport: 1
   advancedMode: 0
   predefinedResolutionIndex: 1
   targetResolution: 1080
@@ -40,16 +40,30 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Akili-landing_and_jumping-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: c48005f6944700a41aa0ff17feb78d0e
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 8, y: 35}
+      - {x: 3, y: 35}
+      - {x: -7, y: 34}
+      - {x: -13, y: 24}
+      - {x: -10, y: 17}
+      - {x: -18, y: 15}
+      - {x: -21, y: 12}
+      - {x: -21, y: 11}
+      - {x: -17, y: 6}
+      - {x: -13, y: -17}
+      - {x: 19, y: -17}
+      - {x: 19, y: 16}
+      - {x: 15, y: 27}

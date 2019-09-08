@@ -19,7 +19,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  preserveViewport: 0
+  preserveViewport: 1
   advancedMode: 0
   predefinedResolutionIndex: 1
   targetResolution: 1080
@@ -40,16 +40,25 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: LittleLion-jumping_and_landing-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: c57fc9089c5b0a44c9833fc13f9429f4
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -6, y: -1}
+      - {x: -17, y: -7}
+      - {x: -19, y: -18}
+      - {x: -19, y: -46}
+      - {x: -16, y: -50}
+      - {x: 19, y: -50}
+      - {x: 19, y: -2}
+      - {x: 17, y: -1}

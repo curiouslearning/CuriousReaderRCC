@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fps: 30
   frames:
-  - {fileID: 21300000, guid: b69bee62f914ceb419358433620b8414, type: 3}
-  - {fileID: 21300000, guid: c725f68c09cf5c547b7f7724f7c83891, type: 3}
-  - {fileID: 21300000, guid: 5ba48a342f8f36a4b93c3ba8bd3826b3, type: 3}
-  - {fileID: 21300000, guid: d6021f68132c48d4892bbc20cc448c6f, type: 3}
   - {fileID: 21300000, guid: 03205230dc0bfd04980295506249b682, type: 3}
   - {fileID: 21300000, guid: 264c1d022eec2184d983ec2aba58236a, type: 3}
   - {fileID: 21300000, guid: cfef33bed3bdf89408cf1dcd22758fc5, type: 3}
   - {fileID: 21300000, guid: 561e74b091d89d94392c787af341f6db, type: 3}
+  - {fileID: 21300000, guid: b69bee62f914ceb419358433620b8414, type: 3}
+  - {fileID: 21300000, guid: c725f68c09cf5c547b7f7724f7c83891, type: 3}
+  - {fileID: 21300000, guid: 5ba48a342f8f36a4b93c3ba8bd3826b3, type: 3}
+  - {fileID: 21300000, guid: d6021f68132c48d4892bbc20cc448c6f, type: 3}
   framesDuration: 0300000003000000030000000300000003000000030000000300000003000000

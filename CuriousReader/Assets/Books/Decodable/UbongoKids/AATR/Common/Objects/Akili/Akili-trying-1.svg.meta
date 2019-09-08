@@ -18,8 +18,8 @@ ScriptedImporter:
   gradientResolution: 128
   alignment: 0
   customPivot: {x: 0, y: 0}
-  generatePhysicsShape: 0
-  preserveViewport: 0
+  generatePhysicsShape: 1
+  preserveViewport: 1
   advancedMode: 0
   predefinedResolutionIndex: 1
   targetResolution: 1080
@@ -40,16 +40,29 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Akili-trying-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: 8f7794e6afecc3042914558f2af084df
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 33, y: -7}
+      - {x: 32, y: 6}
+      - {x: 24, y: 13}
+      - {x: 14, y: 13}
+      - {x: 3, y: 7}
+      - {x: -4, y: -1}
+      - {x: -4, y: -13}
+      - {x: 10, y: -30}
+      - {x: 34, y: -30}
+      - {x: 36, y: -28}
+      - {x: 37, y: -23}
+      - {x: 33, y: -20}

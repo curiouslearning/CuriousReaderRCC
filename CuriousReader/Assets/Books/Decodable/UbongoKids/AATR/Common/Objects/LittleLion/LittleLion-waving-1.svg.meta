@@ -19,7 +19,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  preserveViewport: 0
+  preserveViewport: 1
   advancedMode: 0
   predefinedResolutionIndex: 1
   targetResolution: 1080
@@ -40,16 +40,30 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: LittleLion-waving-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: 8cd62eb758c3a714ea4a349adc21c528
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -22, y: -4}
+      - {x: -24, y: -9}
+      - {x: -24, y: -17}
+      - {x: -20, y: -17}
+      - {x: -23, y: -17}
+      - {x: -24, y: -20}
+      - {x: -24, y: -21}
+      - {x: -21, y: -28}
+      - {x: -13, y: -28}
+      - {x: -7, y: -26}
+      - {x: -4, y: -23}
+      - {x: -4, y: -7}
+      - {x: -6, y: -4}

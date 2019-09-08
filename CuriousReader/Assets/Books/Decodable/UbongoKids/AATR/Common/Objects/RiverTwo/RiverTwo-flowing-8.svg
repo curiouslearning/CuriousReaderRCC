@@ -1,0 +1,31 @@
+<svg id="Layer_9" data-name="Layer 9" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #9b977c;
+      }
+
+      .cls-4 {
+        fill: #99d7f2;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="1920" height="1080"/>
+    </clipPath>
+  </defs>
+  <title>RiverTwo-flowing-8</title>
+  <g class="cls-2">
+    <g>
+      <path class="cls-3" d="M964.14,1191.7s102-48,90-144,15-69-51-108-90-27-138-33-84-3-159-18-75-15-144-27-60-12-120-18-75-9-135-15-78-6-135-9-138-3-138-3l-102-3-48,231,93,174Z"/>
+      <path class="cls-4" d="M-89,849.67s1392.14-15,1041.1,309H-53Z"/>
+    </g>
+  </g>
+</svg>

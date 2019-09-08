@@ -19,7 +19,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  preserveViewport: 0
+  preserveViewport: 1
   advancedMode: 0
   predefinedResolutionIndex: 1
   targetResolution: 1080
@@ -40,16 +40,25 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Akili-running_on_the_spot-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: 169a24515d4d025458f55b63b69ba7fd
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 16, y: 0}
+      - {x: 13, y: -5}
+      - {x: 13, y: -23}
+      - {x: 14, y: -28}
+      - {x: 25, y: -28}
+      - {x: 32, y: -27}
+      - {x: 32, y: -4}
+      - {x: 23, y: 0}
