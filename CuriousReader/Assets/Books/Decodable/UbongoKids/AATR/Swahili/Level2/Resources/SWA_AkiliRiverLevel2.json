@@ -1,4 +1,4 @@
-{
+﻿{
     "id": 4,
     "fontColor": "white",
     "textStartPositionX": -111.0,
@@ -255,7 +255,7 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_0",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_0",
             "timestamps": [
                 {
                     "start": 0,
@@ -686,7 +686,7 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_1",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_1",
             "timestamps": [
                 {
                     "start": 0,
@@ -931,18 +931,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little Lion anakimbia.",
+                    "text": "Little␢Lion anakimbia.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_2",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_2",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "little lion",
+                    "audio": "Little␢Lion",
                     "end": 992,
                     "starWord": "No"
                 },
@@ -1094,18 +1094,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little Lion anaruka.",
+                    "text": "Little␢Lion anaruka.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_3",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "little lion",
+                    "audio": "Little␢Lion",
                     "end": 992,
                     "starWord": "No"
                 },
@@ -1307,13 +1307,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Umefanya vizuri Little lion!",
+                    "text": "Umefanya vizuri Little␢Lion!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_4",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_4",
             "timestamps": [
                 {
                     "start": 0,
@@ -1332,7 +1332,7 @@
                 {
                     "start": 1236,
                     "wordIdx": 2,
-                    "audio": "little lion",
+                    "audio": "Little␢Lion",
                     "end": 1854,
                     "starWord": "Yes"
                 }
@@ -1538,18 +1538,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Happy Hippo anakimbia.",
+                    "text": "Happy␢Hippo anakimbia.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_5",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_5",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "happy hippo",
+                    "audio": "Happy␢Hippo",
                     "end": 888,
                     "starWord": "No"
                 },
@@ -1701,18 +1701,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Happy Hippo anaruka.",
+                    "text": "Happy␢Hippo anaruka.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_6",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_6",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "happy hippo",
+                    "audio": "Happy␢Hippo",
                     "end": 940,
                     "starWord": "No"
                 },
@@ -1914,13 +1914,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Umefanya kazi nzuri Happy Hippo!",
+                    "text": "Umefanya kazi nzuri Happy␢Hippo!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_7",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_7",
             "timestamps": [
                 {
                     "start": 0,
@@ -1939,7 +1939,7 @@
                 {
                     "start": 1376,
                     "wordIdx": 2,
-                    "audio": "happy hippo",
+                    "audio": "Happy␢Hippo",
                     "end": 2064,
                     "starWord": "Yes"
                 }
@@ -2311,7 +2311,7 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_8",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_8",
             "timestamps": [
                 {
                     "start": 0,
@@ -2576,7 +2576,7 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_9",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_9",
             "timestamps": [
                 {
                     "start": 0,
@@ -3015,7 +3015,7 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_11",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_11",
             "timestamps": [
                 {
                     "start": 0,
@@ -3392,7 +3392,7 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_12",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_12",
             "timestamps": [
                 {
                     "start": 0,
@@ -3555,7 +3555,7 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_13",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_13",
             "timestamps": [
                 {
                     "start": 0,
@@ -3770,7 +3770,7 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_14",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_14",
             "timestamps": [
                 {
                     "start": 0,
@@ -4155,7 +4155,7 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_15",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_15",
             "timestamps": [
                 {
                     "start": 0,
@@ -4723,18 +4723,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little Lion anaruka! Happy Hippo anaruka! Akili anaruka!",
+                    "text": "Little␢Lion anaruka! Happy␢Hippo anaruka! Akili anaruka!",
                     "customPosition": true,
                     "x": -445.0,
                     "y": 148.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_16",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_16",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "little lion",
+                    "audio": "Little␢Lion",
                     "end": 278,
                     "starWord": "No"
                 },
@@ -4748,7 +4748,7 @@
                 {
                     "start": 557,
                     "wordIdx": 2,
-                    "audio": "happy hippo",
+                    "audio": "Happy␢Hippo",
                     "end": 835,
                     "starWord": "No"
                 },
@@ -5078,7 +5078,7 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_17",
+            "audioFile": "audio_swahili_aatr_2_stanza_page_17",
             "timestamps": [
                 {
                     "start": 0,

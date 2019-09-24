@@ -1,14 +1,14 @@
 {
-    "id": 1,
+    "id": 6,
     "fontColor": "white",
     "textStartPositionX": -111.0,
     "textStartPositionY": 182.0,
-    "textFontSize": 30,
+    "textFontSize": 25,
     "storyImageFile": "",
     "backgroundColor": "blue",
     "arrowColor": "red",
     "fontFamily": "helvetica",
-    "language": "english",
+    "language": "Swahili",
     "pages": [
         {
             "pageNumber": 1,
@@ -249,13 +249,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Jumping is fun!",
+                    "text": "Siku moja, Akili, Happy␢Hippo na Little␢Lion walikuwa wanaruka nje.",
                     "customPosition": true,
                     "x": -135.94500732421876,
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_0",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_0",
             "timestamps": [
                 {
                     "start": 0,
@@ -680,13 +680,20 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Wow! A river!",
+                    "text": "Walifika kando ya mto mzuri.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "Je Akili na marafiki zake wataweza kuruka ng’ambo ya mto?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_1",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_1",
             "timestamps": [
                 {
                     "start": 0,
@@ -931,18 +938,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little␢Lion runs.",
+                    "text": "Little␢Lion alikimbia kwa kasi sana kuelekea kwenye mto.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_2",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_2",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "little lion",
+                    "audio": "Little␢Lion",
                     "end": 992,
                     "starWord": "No"
                 },
@@ -1094,18 +1101,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little␢Lion jumps.",
+                    "text": "akaruka juu na kuvuka mto.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_3",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_3",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "little lion",
+                    "audio": "Little␢Lion",
                     "end": 992,
                     "starWord": "No"
                 },
@@ -1307,13 +1314,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Good job Little␢Lion!",
+                    "text": "Jamani! Little␢Lion aliruka juu kama swala!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_4",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_4",
             "timestamps": [
                 {
                     "start": 0,
@@ -1332,7 +1339,7 @@
                 {
                     "start": 1236,
                     "wordIdx": 2,
-                    "audio": "little lion",
+                    "audio": "Little␢Lion",
                     "end": 1854,
                     "starWord": "Yes"
                 }
@@ -1538,18 +1545,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Happy␢Hippo runs.",
+                    "text": "Happy␢Hippo alikimbia kwa kasi sana kuelekea kwenye mto.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_5",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_5",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "happy hippo",
+                    "audio": "Happy␢Hippo",
                     "end": 888,
                     "starWord": "No"
                 },
@@ -1701,18 +1708,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Happy␢Hippo jumps.",
+                    "text": "Happy␢Hippo aliruka juu na kuvuka mto.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_6",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_6",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "happy hippo",
+                    "audio": "Happy␢Hippo",
                     "end": 940,
                     "starWord": "No"
                 },
@@ -1914,13 +1921,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Good job Happy␢Hippo!",
+                    "text": "Jamani! Happy␢Hippo aliruka juu kama ndege!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_7",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_7",
             "timestamps": [
                 {
                     "start": 0,
@@ -1939,7 +1946,7 @@
                 {
                     "start": 1376,
                     "wordIdx": 2,
-                    "audio": "happy hippo",
+                    "audio": "Happy␢Hippo",
                     "end": 2064,
                     "starWord": "Yes"
                 }
@@ -2305,13 +2312,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Akili runs.",
+                    "text": "Akili alikimbia kwa kasi kuelekea mtoni",
                     "customPosition": true,
                     "x": -96.32499694824219,
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_8",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_8",
             "timestamps": [
                 {
                     "start": 0,
@@ -2570,13 +2577,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "The river is big. Akili is afraid.",
+                    "text": "Lakini alipofika kwenye mto, aliogopa sana kuruka.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_9",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_9",
             "timestamps": [
                 {
                     "start": 0,
@@ -3009,13 +3016,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Jump Akili! Jump!",
+                    "text": "Little␢Lion na Happy␢Hippo walimpa moyo akili. “Unaweza, Akili! Jiamin”",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_11",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_11",
             "timestamps": [
                 {
                     "start": 0,
@@ -3386,13 +3393,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Akili tries.",
+                    "text": "Akili alijiamini mwenyewe. Aliamua kujaribu tena!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_12",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_12",
             "timestamps": [
                 {
                     "start": 0,
@@ -3549,13 +3556,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Akili jumps.",
+                    "text": "Aliruka juu sana.",
                     "customPosition": true,
                     "x": -101.7249984741211,
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_13",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_13",
             "timestamps": [
                 {
                     "start": 0,
@@ -3764,13 +3771,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Up! Up! Up!",
+                    "text": "jamani! Akili aliruka juu kama ndege!",
                     "customPosition": true,
                     "x": -104.16000366210938,
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_14",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_14",
             "timestamps": [
                 {
                     "start": 0,
@@ -4149,13 +4156,13 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Good job, Akili!",
+                    "text": "Jamani! Akili aliweza! Happy␢Hippo na Little␢Lion waliona fahari juu ya akili",
                     "customPosition": true,
                     "x": -139.35000610351563,
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_15",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_15",
             "timestamps": [
                 {
                     "start": 0,
@@ -4723,18 +4730,18 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little␢Lion jumps! Happy␢Hippo jumps! Akili jumps!",
+                    "text": "Marafiki watatu waliruka mchana kutwa, waliruka juu ya maua. Waliruka juu ya mawe!",
                     "customPosition": true,
                     "x": -445.0,
                     "y": 148.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_16",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_16",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "little lion",
+                    "audio": "Little␢Lion",
                     "end": 278,
                     "starWord": "No"
                 },
@@ -4748,7 +4755,7 @@
                 {
                     "start": 557,
                     "wordIdx": 2,
-                    "audio": "happy hippo",
+                    "audio": "Happy␢Hippo",
                     "end": 835,
                     "starWord": "No"
                 },
@@ -5072,13 +5079,20 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Tired friends.",
+                    "text": "Waliruka na kuruka mpaka walishindwa kuruka tena!",
                     "customPosition": true,
                     "x": -116.90499877929688,
                     "y": 182.0
+                },
+                {
+                    "id": 1,
+                    "text": "na kila mtu alikuwa amechoka.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
-            "audioFile": "audio_english_aatr_2_stanza_page_17",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_17",
             "timestamps": [
                 {
                     "start": 0,
