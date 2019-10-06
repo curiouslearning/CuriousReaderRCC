@@ -249,10 +249,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Siku moja, Akili, Happy␢Hippo na Little␢Lion walikuwa wanaruka nje.",
+                    "text": "Siku moja, Akili, Happy␢Hippo na Little␢Lion",
                     "customPosition": true,
-                    "x": -135.94500732421876,
-                    "y": 182.0
+                    "x": -351.0,
+                    "y": 219.0
+                },
+                {
+                    "id": 1,
+                    "text": "walikuwa wanaruka nje.",
+                    "customPosition": true,
+                    "x": -190.0,
+                    "y": 177.0
                 }
             ],
             "audioFile": "audio_swahili_aatr_6_stanza_page_0",
@@ -260,26 +267,131 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "jumping",
-                    "end": 661,
-                    "starWord": "Yes"
-                },
-                {
-                    "start": 661,
-                    "wordIdx": 1,
-                    "audio": "is",
-                    "end": 1322,
+                    "audio": "Siku",
+                    "end": 780,
                     "starWord": "No"
                 },
                 {
-                    "start": 1323,
+                    "start": 780,
+                    "wordIdx": 1,
+                    "audio": "Moja",
+                    "end": 1560,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1561,
                     "wordIdx": 2,
-                    "audio": "fun",
-                    "end": 1984,
+                    "audio": "Akili",
+                    "end": 2341,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2342,
+                    "wordIdx": 3,
+                    "audio": "Happy hippo",
+                    "end": 3122,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3123,
+                    "wordIdx": 4,
+                    "audio": "Na",
+                    "end": 3903,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3903,
+                    "wordIdx": 5,
+                    "audio": "Little lion",
+                    "end": 4683,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4684,
+                    "wordIdx": 6,
+                    "audio": "Walikuwa",
+                    "end": 5464,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5465,
+                    "wordIdx": 7,
+                    "audio": "Wanaruka",
+                    "end": 6245,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 6246,
+                    "wordIdx": 8,
+                    "audio": "Nje",
+                    "end": 7026,
                     "starWord": "No"
                 }
             ],
             "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
                 {
                     "stanzaID": 0,
                     "type": 7,
@@ -290,8 +402,8 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": true
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -311,7 +423,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 7,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -332,7 +444,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 7,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -681,16 +793,23 @@
                 {
                     "id": 0,
                     "text": "Walifika kando ya mto mzuri.",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -235.5749969482422,
+                    "y": 217.0
                 },
                 {
                     "id": 1,
-                    "text": "Je Akili na marafiki zake wataweza kuruka ng’ambo ya mto?",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "text": "Je Akili na marafiki zake wataweza",
+                    "customPosition": true,
+                    "x": -284.7349853515625,
+                    "y": 162.0
+                },
+                {
+                    "id": 2,
+                    "text": "kuruka ng'ambo ya mto?",
+                    "customPosition": true,
+                    "x": -193.7050018310547,
+                    "y": 107.0
                 }
             ],
             "audioFile": "audio_swahili_aatr_6_stanza_page_1",
@@ -698,22 +817,106 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "wow",
-                    "end": 627,
+                    "audio": "Walifika",
+                    "end": 465,
                     "starWord": "No"
                 },
                 {
-                    "start": 627,
+                    "start": 465,
                     "wordIdx": 1,
-                    "audio": "a",
-                    "end": 1254,
+                    "audio": "",
+                    "end": 930,
                     "starWord": "No"
                 },
                 {
-                    "start": 1254,
+                    "start": 930,
                     "wordIdx": 2,
-                    "audio": "river",
-                    "end": 1881,
+                    "audio": "ya",
+                    "end": 1395,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1395,
+                    "wordIdx": 3,
+                    "audio": "Mto",
+                    "end": 1860,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 1860,
+                    "wordIdx": 4,
+                    "audio": "Mzuri",
+                    "end": 2325,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2325,
+                    "wordIdx": 5,
+                    "audio": "Je",
+                    "end": 2790,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2790,
+                    "wordIdx": 6,
+                    "audio": "Akili",
+                    "end": 3255,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3255,
+                    "wordIdx": 7,
+                    "audio": "Na",
+                    "end": 3720,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3720,
+                    "wordIdx": 8,
+                    "audio": "Marafiki",
+                    "end": 4185,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4185,
+                    "wordIdx": 9,
+                    "audio": "Zake",
+                    "end": 4650,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4650,
+                    "wordIdx": 10,
+                    "audio": "Wataweza",
+                    "end": 5115,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5115,
+                    "wordIdx": 11,
+                    "audio": "Kuruka",
+                    "end": 5580,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5580,
+                    "wordIdx": 12,
+                    "audio": "ng_ambo",
+                    "end": 6045,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6045,
+                    "wordIdx": 13,
+                    "audio": "ya",
+                    "end": 6510,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6510,
+                    "wordIdx": 14,
+                    "audio": "Mto",
+                    "end": 6975,
                     "starWord": "Yes"
                 }
             ],
@@ -728,8 +931,13 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 3,
                             "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -738,6 +946,69 @@
                     "sceneObjectId": 12,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"River-flowing\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 }
             ]
         },
@@ -938,7 +1209,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little␢Lion alikimbia kwa kasi sana kuelekea kwenye mto.",
+                    "text": "Little␢Lion alikimbia kwa kasi",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "sana kuelekea kwenye mto.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -949,15 +1227,57 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Little␢Lion",
-                    "end": 992,
+                    "audio": "Little lion",
+                    "end": 522,
                     "starWord": "No"
                 },
                 {
-                    "start": 992,
+                    "start": 522,
                     "wordIdx": 1,
-                    "audio": "runs",
-                    "end": 1984,
+                    "audio": "Anakimbia",
+                    "end": 1044,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 1045,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1567,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1567,
+                    "wordIdx": 3,
+                    "audio": "Kasi",
+                    "end": 2089,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2090,
+                    "wordIdx": 4,
+                    "audio": "Sana",
+                    "end": 2612,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2612,
+                    "wordIdx": 5,
+                    "audio": "Kuelekea",
+                    "end": 3134,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3135,
+                    "wordIdx": 6,
+                    "audio": "Kwenye",
+                    "end": 3657,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3657,
+                    "wordIdx": 7,
+                    "audio": "Mto",
+                    "end": 4179,
                     "starWord": "Yes"
                 }
             ],
@@ -1003,6 +1323,27 @@
                     "sceneObjectId": 4,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"LittleLion-running_on_the_spot\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"RiverTwo-flowing\"}"
                 }
             ]
         },
@@ -1112,16 +1453,37 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Little␢Lion",
-                    "end": 992,
+                    "audio": "",
+                    "end": 465,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 465,
+                    "wordIdx": 1,
+                    "audio": "Juu",
+                    "end": 930,
                     "starWord": "No"
                 },
                 {
-                    "start": 992,
-                    "wordIdx": 1,
-                    "audio": "jumps",
-                    "end": 1984,
-                    "starWord": "Yes"
+                    "start": 930,
+                    "wordIdx": 2,
+                    "audio": "Na",
+                    "end": 1395,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1395,
+                    "wordIdx": 3,
+                    "audio": "Kuvuka",
+                    "end": 1860,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1860,
+                    "wordIdx": 4,
+                    "audio": "Mto",
+                    "end": 2325,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -1156,7 +1518,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 0,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -1177,7 +1539,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 0,
                             "symmetricallyPaired": false
                         },
                         {
@@ -1203,7 +1565,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 0,
                             "symmetricallyPaired": false
                         },
                         {
@@ -1314,7 +1676,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Jamani! Little␢Lion aliruka juu kama swala!",
+                    "text": "Jamani! Little␢Lion ameruka juu kama swala!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1325,23 +1687,44 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "good",
-                    "end": 618,
+                    "audio": "Jamani",
+                    "end": 635,
                     "starWord": "No"
                 },
                 {
-                    "start": 618,
+                    "start": 635,
                     "wordIdx": 1,
-                    "audio": "job",
-                    "end": 1236,
+                    "audio": "Little lion",
+                    "end": 1270,
                     "starWord": "No"
                 },
                 {
-                    "start": 1236,
+                    "start": 1271,
                     "wordIdx": 2,
-                    "audio": "Little␢Lion",
-                    "end": 1854,
+                    "audio": "Ameruka",
+                    "end": 1906,
                     "starWord": "Yes"
+                },
+                {
+                    "start": 1907,
+                    "wordIdx": 3,
+                    "audio": "Juu",
+                    "end": 2542,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2542,
+                    "wordIdx": 4,
+                    "audio": "Kama",
+                    "end": 3177,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3178,
+                    "wordIdx": 5,
+                    "audio": "Swala",
+                    "end": 3813,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -1355,7 +1738,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 1,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -1545,7 +1928,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Happy␢Hippo alikimbia kwa kasi sana kuelekea kwenye mto.",
+                    "text": "Happy␢Hippo alikimbia kwa kasi",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "sana kuelekea kwenye mto.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1556,15 +1946,57 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Happy␢Hippo",
-                    "end": 888,
+                    "audio": "Happy hippo",
+                    "end": 496,
                     "starWord": "No"
                 },
                 {
-                    "start": 888,
+                    "start": 496,
                     "wordIdx": 1,
-                    "audio": "runs",
-                    "end": 1776,
+                    "audio": "Anakimbia",
+                    "end": 992,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 992,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1488,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1489,
+                    "wordIdx": 3,
+                    "audio": "Kasi",
+                    "end": 1985,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1985,
+                    "wordIdx": 4,
+                    "audio": "Sana",
+                    "end": 2481,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2481,
+                    "wordIdx": 5,
+                    "audio": "Kuelekea",
+                    "end": 2977,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2978,
+                    "wordIdx": 6,
+                    "audio": "Kwenye",
+                    "end": 3474,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3474,
+                    "wordIdx": 7,
+                    "audio": "Mto",
+                    "end": 3970,
                     "starWord": "Yes"
                 }
             ],
@@ -1610,6 +2042,27 @@
                     "sceneObjectId": 4,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"HappyHippo-running_on_the_spot\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"RiverTwo-flowing\"}"
                 }
             ]
         },
@@ -1719,16 +2172,44 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Happy␢Hippo",
-                    "end": 940,
+                    "audio": "Happy hippo",
+                    "end": 631,
                     "starWord": "No"
                 },
                 {
-                    "start": 940,
+                    "start": 631,
                     "wordIdx": 1,
-                    "audio": "jumps",
-                    "end": 1880,
+                    "audio": "Aliruka",
+                    "end": 1262,
                     "starWord": "Yes"
+                },
+                {
+                    "start": 1262,
+                    "wordIdx": 2,
+                    "audio": "Juu",
+                    "end": 1893,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1894,
+                    "wordIdx": 3,
+                    "audio": "Na",
+                    "end": 2525,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2525,
+                    "wordIdx": 4,
+                    "audio": "Kuvuka",
+                    "end": 3156,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3156,
+                    "wordIdx": 5,
+                    "audio": "Mto",
+                    "end": 3787,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -1932,23 +2413,44 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "good",
-                    "end": 688,
+                    "audio": "Jamani",
+                    "end": 770,
                     "starWord": "No"
                 },
                 {
-                    "start": 688,
+                    "start": 770,
                     "wordIdx": 1,
-                    "audio": "job",
-                    "end": 1376,
+                    "audio": "Happy hippo",
+                    "end": 1540,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 1541,
+                    "wordIdx": 2,
+                    "audio": "Aliruka",
+                    "end": 2311,
                     "starWord": "No"
                 },
                 {
-                    "start": 1376,
-                    "wordIdx": 2,
-                    "audio": "Happy␢Hippo",
-                    "end": 2064,
-                    "starWord": "Yes"
+                    "start": 2312,
+                    "wordIdx": 3,
+                    "audio": "Juu",
+                    "end": 3082,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3082,
+                    "wordIdx": 4,
+                    "audio": "Kama",
+                    "end": 3852,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3853,
+                    "wordIdx": 5,
+                    "audio": "ndege",
+                    "end": 4623,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -1962,7 +2464,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 1,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -2313,7 +2815,7 @@
                 {
                     "id": 0,
                     "text": "Akili alikimbia kwa kasi kuelekea mtoni",
-                    "customPosition": true,
+                    "customPosition": false,
                     "x": -96.32499694824219,
                     "y": 182.0
                 }
@@ -2324,15 +2826,43 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Akili",
-                    "end": 757,
+                    "end": 583,
                     "starWord": "No"
                 },
                 {
-                    "start": 757,
+                    "start": 583,
                     "wordIdx": 1,
-                    "audio": "runs",
-                    "end": 1514,
+                    "audio": "Anakimbia",
+                    "end": 1166,
                     "starWord": "Yes"
+                },
+                {
+                    "start": 1166,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 1749,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1750,
+                    "wordIdx": 3,
+                    "audio": "Kasi",
+                    "end": 2333,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2333,
+                    "wordIdx": 4,
+                    "audio": "Kuelekea",
+                    "end": 2916,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2916,
+                    "wordIdx": 5,
+                    "audio": "Mtoni",
+                    "end": 3499,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -2588,49 +3118,49 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "the",
+                    "audio": "Lakini",
                     "end": 242,
                     "starWord": "No"
                 },
                 {
                     "start": 242,
                     "wordIdx": 1,
-                    "audio": "river",
+                    "audio": "Alipofika",
                     "end": 484,
                     "starWord": "Yes"
                 },
                 {
                     "start": 485,
                     "wordIdx": 2,
-                    "audio": "is",
+                    "audio": "Kwenye",
                     "end": 727,
                     "starWord": "No"
                 },
                 {
                     "start": 727,
                     "wordIdx": 3,
-                    "audio": "big",
+                    "audio": "Mto",
                     "end": 969,
                     "starWord": "No"
                 },
                 {
                     "start": 970,
                     "wordIdx": 4,
-                    "audio": "Akili",
+                    "audio": "Aliogopa",
                     "end": 1212,
                     "starWord": "No"
                 },
                 {
                     "start": 1212,
                     "wordIdx": 5,
-                    "audio": "is",
+                    "audio": "Sana",
                     "end": 1454,
                     "starWord": "No"
                 },
                 {
                     "start": 1455,
                     "wordIdx": 6,
-                    "audio": "afraid",
+                    "audio": "Kuruka",
                     "end": 1697,
                     "starWord": "Yes"
                 }
@@ -2646,7 +3176,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 3,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -2659,27 +3189,6 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 4,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
-                },
-                {
-                    "stanzaID": 0,
                     "type": 7,
                     "prompts": [
                         1,
@@ -2688,7 +3197,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 6,
+                            "invokerID": 4,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -3016,34 +3525,83 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little␢Lion na Happy␢Hippo walimpa moyo akili. “Unaweza, Akili! Jiamin”",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "text": "Little␢Lion na Happy␢Hippo walimpa moyo akili.",
+                    "customPosition": true,
+                    "x": -396.0,
+                    "y": 212.0
+                },
+                {
+                    "id": 1,
+                    "text": "“Unaweza, Akili! Jiamini”",
+                    "customPosition": true,
+                    "x": -220.0,
+                    "y": 167.0
                 }
             ],
-            "audioFile": "audio_swahili_aatr_6_stanza_page_11",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_10",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "jump",
-                    "end": 653,
-                    "starWord": "Yes"
-                },
-                {
-                    "start": 653,
-                    "wordIdx": 1,
-                    "audio": "Akili",
-                    "end": 1306,
+                    "audio": "Little lion",
+                    "end": 676,
                     "starWord": "No"
                 },
                 {
-                    "start": 1306,
+                    "start": 676,
+                    "wordIdx": 1,
+                    "audio": "Na",
+                    "end": 1352,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1352,
                     "wordIdx": 2,
-                    "audio": "jump",
-                    "end": 1959,
+                    "audio": "Happy hippo",
+                    "end": 2028,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2029,
+                    "wordIdx": 3,
+                    "audio": "Walimpa",
+                    "end": 2705,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2705,
+                    "wordIdx": 4,
+                    "audio": "Moyo",
+                    "end": 3381,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3381,
+                    "wordIdx": 5,
+                    "audio": "Akili",
+                    "end": 4057,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4058,
+                    "wordIdx": 6,
+                    "audio": "Unaweza",
+                    "end": 4734,
                     "starWord": "Yes"
+                },
+                {
+                    "start": 4734,
+                    "wordIdx": 7,
+                    "audio": "Akili",
+                    "end": 5410,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5410,
+                    "wordIdx": 8,
+                    "audio": "Jiamini",
+                    "end": 6086,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -3057,7 +3615,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 7,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -3078,13 +3636,8 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 6,
                             "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -3093,6 +3646,48 @@
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Akili-jumping_from_behind\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 }
             ]
         },
@@ -3393,27 +3988,55 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Akili alijiamini mwenyewe. Aliamua kujaribu tena!",
+                    "text": "Akili anajiamini mwenyewe. Aliamua kujaribu tena!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_aatr_6_stanza_page_12",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_11",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Akili",
-                    "end": 770,
+                    "end": 291,
                     "starWord": "No"
                 },
                 {
-                    "start": 770,
+                    "start": 291,
                     "wordIdx": 1,
-                    "audio": "tries",
-                    "end": 1540,
+                    "audio": "Anajiamini",
+                    "end": 582,
+                    "starWord": "No"
+                },
+                {
+                    "start": 583,
+                    "wordIdx": 2,
+                    "audio": "Mwenyewe",
+                    "end": 874,
+                    "starWord": "No"
+                },
+                {
+                    "start": 875,
+                    "wordIdx": 3,
+                    "audio": "Anaamua",
+                    "end": 1166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1166,
+                    "wordIdx": 4,
+                    "audio": "Kujaribu",
+                    "end": 1457,
                     "starWord": "Yes"
+                },
+                {
+                    "start": 1458,
+                    "wordIdx": 5,
+                    "audio": "Tena",
+                    "end": 1749,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -3448,7 +4071,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 4,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -3562,45 +4185,31 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_swahili_aatr_6_stanza_page_13",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_12",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Akili",
-                    "end": 770,
+                    "audio": "Aliruka",
+                    "end": 1193,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 1193,
+                    "wordIdx": 1,
+                    "audio": "Juu",
+                    "end": 2386,
                     "starWord": "No"
                 },
                 {
-                    "start": 770,
-                    "wordIdx": 1,
-                    "audio": "jumps",
-                    "end": 1540,
-                    "starWord": "Yes"
+                    "start": 2386,
+                    "wordIdx": 2,
+                    "audio": "Sana",
+                    "end": 3579,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
-                },
                 {
                     "stanzaID": 0,
                     "type": 10,
@@ -3611,7 +4220,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 0,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -3637,7 +4246,7 @@
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 0,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -3658,7 +4267,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 0,
                             "symmetricallyPaired": false
                         },
                         {
@@ -3771,37 +4380,79 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "jamani! Akili aliruka juu kama ndege!",
-                    "customPosition": true,
+                    "text": "Jamani! Akili aliruka juu kama ndege!",
+                    "customPosition": false,
                     "x": -104.16000366210938,
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_swahili_aatr_6_stanza_page_14",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_13",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "up",
-                    "end": 566,
-                    "starWord": "Yes"
+                    "audio": "Jamani",
+                    "end": 596,
+                    "starWord": "No"
                 },
                 {
-                    "start": 566,
+                    "start": 596,
                     "wordIdx": 1,
-                    "audio": "up",
-                    "end": 1132,
+                    "audio": "Akili",
+                    "end": 1192,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1193,
+                    "wordIdx": 2,
+                    "audio": "Aliruka",
+                    "end": 1789,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1132,
-                    "wordIdx": 2,
-                    "audio": "up",
-                    "end": 1698,
-                    "starWord": "Yes"
+                    "start": 1789,
+                    "wordIdx": 3,
+                    "audio": "Juu",
+                    "end": 2385,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2386,
+                    "wordIdx": 4,
+                    "audio": "Kama",
+                    "end": 2982,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2982,
+                    "wordIdx": 5,
+                    "audio": "ndege",
+                    "end": 3578,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
                 {
                     "stanzaID": 0,
                     "type": 7,
@@ -3812,25 +4463,15 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 1,
-                            "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
                             "invokerID": 2,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 0,
-                    "symmetricPairingId": 1,
+                    "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Akili-flapping\"}"
                 }
             ]
@@ -4156,34 +4797,97 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Jamani! Akili aliweza! Happy␢Hippo na Little␢Lion waliona fahari juu ya akili",
-                    "customPosition": true,
-                    "x": -139.35000610351563,
+                    "text": "Jamani! Akili aliweza! Happy␢Hippo na Little␢Lion",
+                    "customPosition": false,
+                    "x": -396.0,
                     "y": 182.0
+                },
+                {
+                    "id": 1,
+                    "text": "waliona fahari juu ya Akili.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_aatr_6_stanza_page_15",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_14",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "good",
-                    "end": 792,
+                    "audio": "Jamani",
+                    "end": 650,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 792,
+                    "start": 650,
                     "wordIdx": 1,
-                    "audio": "job",
-                    "end": 1584,
+                    "audio": "Akili",
+                    "end": 1300,
                     "starWord": "No"
                 },
                 {
-                    "start": 1584,
+                    "start": 1301,
                     "wordIdx": 2,
+                    "audio": "Ameweza",
+                    "end": 1951,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1952,
+                    "wordIdx": 3,
+                    "audio": "Happy hippo",
+                    "end": 2602,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2602,
+                    "wordIdx": 4,
+                    "audio": "Na",
+                    "end": 3252,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3253,
+                    "wordIdx": 5,
+                    "audio": "Little lion",
+                    "end": 3903,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3904,
+                    "wordIdx": 6,
+                    "audio": "Wanaona",
+                    "end": 4554,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4555,
+                    "wordIdx": 7,
+                    "audio": "fahari",
+                    "end": 5205,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5205,
+                    "wordIdx": 8,
+                    "audio": "Juu",
+                    "end": 5855,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5856,
+                    "wordIdx": 9,
+                    "audio": "ya",
+                    "end": 6506,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6507,
+                    "wordIdx": 10,
                     "audio": "Akili",
-                    "end": 2376,
-                    "starWord": "Yes"
+                    "end": 7157,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -4197,7 +4901,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 1,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -4207,6 +4911,79 @@
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"LittleLion-waving\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -4269,37 +5046,6 @@
                     "sceneObjectId": 7,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"HappyHippo-waving\"}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 7,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 1,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 1,
-                            "invokerID": 7,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 8,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"LittleLion-waving\"}"
                 }
             ]
         },
@@ -4394,7 +5140,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "BlueFlower-head_spins"
+                    ]
                 },
                 {
                     "id": 4,
@@ -4485,7 +5233,7 @@
                     "tag": "",
                     "posX": 152.0,
                     "posY": -147.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 750.0,
                     "scaleY": 750.0,
                     "rotX": 0.0,
@@ -4507,7 +5255,7 @@
                     "tag": "",
                     "posX": -279.0,
                     "posY": -157.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 800.0,
                     "scaleY": 800.0,
                     "rotX": 0.0,
@@ -4529,7 +5277,7 @@
                     "tag": "",
                     "posX": 203.0,
                     "posY": -171.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 900.0,
                     "scaleY": 900.0,
                     "rotX": 0.0,
@@ -4604,7 +5352,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "BlueFlower-head_spins"
+                    ]
                 },
                 {
                     "id": 14,
@@ -4624,7 +5374,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "PinkFlower-head_spins"
+                    ]
                 },
                 {
                     "id": 15,
@@ -4644,7 +5396,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "PinkFlower-head_spins"
+                    ]
                 },
                 {
                     "id": 16,
@@ -4664,7 +5418,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "RedFlower-head_spins"
+                    ]
                 },
                 {
                     "id": 17,
@@ -4684,7 +5440,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "RedFlower-head_spins"
+                    ]
                 },
                 {
                     "id": 18,
@@ -4704,7 +5462,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "OrangeFlower-head_spins"
+                    ]
                 },
                 {
                     "id": 19,
@@ -4724,64 +5484,143 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "OrangeFlower-head_spins"
+                    ]
                 }
             ],
             "texts": [
                 {
                     "id": 0,
-                    "text": "Marafiki watatu waliruka mchana kutwa, waliruka juu ya maua. Waliruka juu ya mawe!",
-                    "customPosition": true,
+                    "text": "Marafiki watatu waliruka mchana kutwa,",
+                    "customPosition": false,
                     "x": -445.0,
                     "y": 148.0
+                },
+                {
+                    "id": 1,
+                    "text": "waliruka juu ya maua. Waliruka juu ya mawe!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
-            "audioFile": "audio_swahili_aatr_6_stanza_page_16",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_15",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Little␢Lion",
-                    "end": 278,
+                    "audio": "Marafiki",
+                    "end": 564,
                     "starWord": "No"
                 },
                 {
-                    "start": 278,
+                    "start": 564,
                     "wordIdx": 1,
-                    "audio": "jumps",
-                    "end": 556,
+                    "audio": "Watatu",
+                    "end": 1128,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1129,
+                    "wordIdx": 2,
+                    "audio": "Waliruka",
+                    "end": 1693,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 557,
-                    "wordIdx": 2,
-                    "audio": "Happy␢Hippo",
-                    "end": 835,
-                    "starWord": "No"
-                },
-                {
-                    "start": 836,
+                    "start": 1693,
                     "wordIdx": 3,
-                    "audio": "jumps",
-                    "end": 1114,
+                    "audio": "Mchana",
+                    "end": 2257,
                     "starWord": "No"
                 },
                 {
-                    "start": 1114,
+                    "start": 2258,
                     "wordIdx": 4,
-                    "audio": "Akili",
-                    "end": 1392,
+                    "audio": "Kutwa",
+                    "end": 2822,
                     "starWord": "No"
                 },
                 {
-                    "start": 1393,
+                    "start": 2823,
                     "wordIdx": 5,
-                    "audio": "jumps",
-                    "end": 1671,
+                    "audio": "Waliruka",
+                    "end": 3387,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 3387,
+                    "wordIdx": 6,
+                    "audio": "Juu",
+                    "end": 3951,
                     "starWord": "No"
+                },
+                {
+                    "start": 3952,
+                    "wordIdx": 7,
+                    "audio": "ya",
+                    "end": 4516,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4516,
+                    "wordIdx": 8,
+                    "audio": "Maua",
+                    "end": 5080,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 5081,
+                    "wordIdx": 9,
+                    "audio": "Waliruka",
+                    "end": 5645,
+                    "starWord": "Yes"
+                },
+                {
+                    "start": 5646,
+                    "wordIdx": 10,
+                    "audio": "Juu",
+                    "end": 6210,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6210,
+                    "wordIdx": 11,
+                    "audio": "ya",
+                    "end": 6774,
+                    "starWord": "No"
+                },
+                {
+                    "start": 6775,
+                    "wordIdx": 12,
+                    "audio": "Mawe",
+                    "end": 7339,
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
                 {
                     "stanzaID": 0,
                     "type": 8,
@@ -4813,7 +5652,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 0,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -4826,6 +5665,918 @@
                 },
                 {
                     "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"BlueFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"BlueFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"OrangeFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"PinkFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 10,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"RedFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 13,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"BlueFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 14,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"PinkFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 15,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"PinkFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 16,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"RedFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 17,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"RedFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 19,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 18,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"OrangeFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 13,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 14,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 15,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 16,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 17,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 18,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 19,
+                    "symmetricPairingId": 11,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"OrangeFlower-head_spins\"}"
+                },
+                {
+                    "stanzaID": 0,
                     "type": 8,
                     "prompts": [
                         1,
@@ -4834,16 +6585,16 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 4,
-                            "symmetricallyPaired": false
+                            "invokerID": 12,
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 0,
+                    "sceneObjectId": 11,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
                 },
                 {
                     "stanzaID": 0,
@@ -4855,17 +6606,17 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 5,
+                            "invokerID": 2,
                             "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3,
+                            "invokerID": 5,
                             "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 9,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -4886,26 +6637,26 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
+                            "invokerID": 2,
                             "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 3,
+                            "invokerID": 5,
                             "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
-                            "invokerID": 5,
+                            "invokerID": 9,
                             "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 7,
+                    "sceneObjectId": 6,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"LittleLion-jumping_and_landing\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"HappyHippo-landing_and_jumping\"}"
                 },
                 {
                     "stanzaID": 0,
@@ -4917,26 +6668,26 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 3,
+                            "invokerID": 2,
                             "symmetricallyPaired": true
                         },
                         {
                             "invokerType": 0,
                             "invokerID": 5,
                             "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
                     "animId": 0,
                     "timestamp": 0,
-                    "sceneObjectId": 6,
-                    "symmetricPairingId": 1,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"HappyHippo-landing_and_jumping\"}"
+                    "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"LittleLion-jumping_and_landing\"}"
                 }
             ]
         },
@@ -5081,32 +6832,102 @@
                     "id": 0,
                     "text": "Waliruka na kuruka mpaka walishindwa kuruka tena!",
                     "customPosition": true,
-                    "x": -116.90499877929688,
-                    "y": 182.0
+                    "x": -416.8299865722656,
+                    "y": 207.0
                 },
                 {
                     "id": 1,
                     "text": "na kila mtu alikuwa amechoka.",
-                    "customPosition": false,
-                    "x": 0.0,
-                    "y": 0.0
+                    "customPosition": true,
+                    "x": -252.0,
+                    "y": 152.0
                 }
             ],
-            "audioFile": "audio_swahili_aatr_6_stanza_page_17",
+            "audioFile": "audio_swahili_aatr_6_stanza_page_16",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "tired",
-                    "end": 692,
-                    "starWord": "Yes"
+                    "audio": "Waliruka",
+                    "end": 537,
+                    "starWord": "No"
                 },
                 {
-                    "start": 692,
+                    "start": 537,
                     "wordIdx": 1,
-                    "audio": "friends",
-                    "end": 1384,
+                    "audio": "Na",
+                    "end": 1074,
                     "starWord": "No"
+                },
+                {
+                    "start": 1075,
+                    "wordIdx": 2,
+                    "audio": "Kuruka",
+                    "end": 1612,
+                    "starWord": "No"
+                },
+                {
+                    "start": 1613,
+                    "wordIdx": 3,
+                    "audio": "Mpaka",
+                    "end": 2150,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2150,
+                    "wordIdx": 4,
+                    "audio": "Walishindwa",
+                    "end": 2687,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2688,
+                    "wordIdx": 5,
+                    "audio": "Kuruka",
+                    "end": 3225,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3226,
+                    "wordIdx": 6,
+                    "audio": "Tena",
+                    "end": 3763,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3763,
+                    "wordIdx": 7,
+                    "audio": "Na",
+                    "end": 4300,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4301,
+                    "wordIdx": 8,
+                    "audio": "Kila",
+                    "end": 4838,
+                    "starWord": "No"
+                },
+                {
+                    "start": 4839,
+                    "wordIdx": 9,
+                    "audio": "Mtu",
+                    "end": 5376,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5376,
+                    "wordIdx": 10,
+                    "audio": "Alikuwa",
+                    "end": 5913,
+                    "starWord": "No"
+                },
+                {
+                    "start": 5914,
+                    "wordIdx": 11,
+                    "audio": "Amechoka",
+                    "end": 6451,
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -5120,7 +6941,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 11,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -5141,7 +6962,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 11,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -5162,7 +6983,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
+                            "invokerID": 11,
                             "symmetricallyPaired": true
                         }
                     ],
