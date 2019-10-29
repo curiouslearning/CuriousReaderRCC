@@ -268,60 +268,60 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Siku",
-                    "end": 780,
+                    "end": 375,
                     "starWord": "No"
                 },
                 {
-                    "start": 780,
+                    "start": 414,
                     "wordIdx": 1,
                     "audio": "Moja",
-                    "end": 1560,
+                    "end": 797,
                     "starWord": "No"
                 },
                 {
-                    "start": 1561,
+                    "start": 1130,
                     "wordIdx": 2,
-                    "audio": "Akili",
-                    "end": 2341,
+                    "audio": "Akili swahili",
+                    "end": 2095,
                     "starWord": "No"
                 },
                 {
-                    "start": 2342,
+                    "start": 2377,
                     "wordIdx": 3,
-                    "audio": "Happy hippo",
-                    "end": 3122,
+                    "audio": "Happy hippo swahili",
+                    "end": 3603,
                     "starWord": "No"
                 },
                 {
-                    "start": 3123,
+                    "start": 3638,
                     "wordIdx": 4,
                     "audio": "Na",
-                    "end": 3903,
+                    "end": 4161,
                     "starWord": "No"
                 },
                 {
-                    "start": 3903,
+                    "start": 4167,
                     "wordIdx": 5,
-                    "audio": "Little lion",
-                    "end": 4683,
+                    "audio": "Little lion swahili",
+                    "end": 4855,
                     "starWord": "No"
                 },
                 {
-                    "start": 4684,
+                    "start": 4992,
                     "wordIdx": 6,
                     "audio": "Walikuwa",
-                    "end": 5464,
+                    "end": 5776,
                     "starWord": "No"
                 },
                 {
-                    "start": 5465,
+                    "start": 5880,
                     "wordIdx": 7,
                     "audio": "Wanaruka",
-                    "end": 6245,
+                    "end": 6459,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 6246,
+                    "start": 6503,
                     "wordIdx": 8,
                     "audio": "Nje",
                     "end": 7026,
@@ -818,35 +818,35 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Walifika",
-                    "end": 465,
+                    "end": 622,
                     "starWord": "No"
                 },
                 {
-                    "start": 465,
+                    "start": 665,
                     "wordIdx": 1,
-                    "audio": "",
-                    "end": 930,
+                    "audio": "kando",
+                    "end": 1035,
                     "starWord": "No"
                 },
                 {
-                    "start": 930,
+                    "start": 1048,
                     "wordIdx": 2,
                     "audio": "ya",
-                    "end": 1395,
+                    "end": 1118,
                     "starWord": "No"
                 },
                 {
-                    "start": 1395,
+                    "start": 1174,
                     "wordIdx": 3,
                     "audio": "Mto",
-                    "end": 1860,
+                    "end": 1530,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1860,
+                    "start": 1555,
                     "wordIdx": 4,
                     "audio": "Mzuri",
-                    "end": 2325,
+                    "end": 2252,
                     "starWord": "No"
                 },
                 {
@@ -857,63 +857,63 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 2790,
+                    "start": 3161,
                     "wordIdx": 6,
-                    "audio": "Akili",
-                    "end": 3255,
+                    "audio": "Akili swahili",
+                    "end": 3826,
                     "starWord": "No"
                 },
                 {
-                    "start": 3255,
+                    "start": 3848,
                     "wordIdx": 7,
                     "audio": "Na",
-                    "end": 3720,
+                    "end": 3977,
                     "starWord": "No"
                 },
                 {
-                    "start": 3720,
+                    "start": 4031,
                     "wordIdx": 8,
                     "audio": "Marafiki",
-                    "end": 4185,
+                    "end": 4457,
                     "starWord": "No"
                 },
                 {
-                    "start": 4185,
+                    "start": 4553,
                     "wordIdx": 9,
                     "audio": "Zake",
-                    "end": 4650,
+                    "end": 4916,
                     "starWord": "No"
                 },
                 {
-                    "start": 4650,
+                    "start": 4966,
                     "wordIdx": 10,
                     "audio": "Wataweza",
-                    "end": 5115,
+                    "end": 5499,
                     "starWord": "No"
                 },
                 {
-                    "start": 5115,
+                    "start": 5489,
                     "wordIdx": 11,
                     "audio": "Kuruka",
-                    "end": 5580,
+                    "end": 5848,
                     "starWord": "No"
                 },
                 {
-                    "start": 5580,
+                    "start": 5980,
                     "wordIdx": 12,
                     "audio": "ng_ambo",
-                    "end": 6045,
+                    "end": 6207,
                     "starWord": "No"
                 },
                 {
-                    "start": 6045,
+                    "start": 6321,
                     "wordIdx": 13,
                     "audio": "ya",
-                    "end": 6510,
+                    "end": 6404,
                     "starWord": "No"
                 },
                 {
-                    "start": 6510,
+                    "start": 6426,
                     "wordIdx": 14,
                     "audio": "Mto",
                     "end": 6975,
@@ -1227,54 +1227,54 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Little lion",
-                    "end": 522,
+                    "audio": "Little lion swahili",
+                    "end": 839,
                     "starWord": "No"
                 },
                 {
-                    "start": 522,
+                    "start": 1302,
                     "wordIdx": 1,
                     "audio": "Anakimbia",
-                    "end": 1044,
+                    "end": 2038,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1045,
+                    "start": 2065,
                     "wordIdx": 2,
-                    "audio": "",
-                    "end": 1567,
+                    "audio": "kwa",
+                    "end": 2285,
                     "starWord": "No"
                 },
                 {
-                    "start": 1567,
+                    "start": 2270,
                     "wordIdx": 3,
                     "audio": "Kasi",
-                    "end": 2089,
+                    "end": 2627,
                     "starWord": "No"
                 },
                 {
-                    "start": 2090,
+                    "start": 2648,
                     "wordIdx": 4,
                     "audio": "Sana",
-                    "end": 2612,
+                    "end": 3029,
                     "starWord": "No"
                 },
                 {
-                    "start": 2612,
+                    "start": 3019,
                     "wordIdx": 5,
                     "audio": "Kuelekea",
-                    "end": 3134,
+                    "end": 3493,
                     "starWord": "No"
                 },
                 {
-                    "start": 3135,
+                    "start": 3470,
                     "wordIdx": 6,
                     "audio": "Kwenye",
-                    "end": 3657,
+                    "end": 3757,
                     "starWord": "No"
                 },
                 {
-                    "start": 3657,
+                    "start": 3770,
                     "wordIdx": 7,
                     "audio": "Mto",
                     "end": 4179,
@@ -1454,32 +1454,32 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "",
-                    "end": 465,
+                    "end": 668,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 465,
+                    "start": 754,
                     "wordIdx": 1,
                     "audio": "Juu",
-                    "end": 930,
+                    "end": 1025,
                     "starWord": "No"
                 },
                 {
-                    "start": 930,
+                    "start": 1214,
                     "wordIdx": 2,
                     "audio": "Na",
-                    "end": 1395,
+                    "end": 1298,
                     "starWord": "No"
                 },
                 {
-                    "start": 1395,
+                    "start": 1311,
                     "wordIdx": 3,
                     "audio": "Kuvuka",
-                    "end": 1860,
+                    "end": 1805,
                     "starWord": "No"
                 },
                 {
-                    "start": 1860,
+                    "start": 1832,
                     "wordIdx": 4,
                     "audio": "Mto",
                     "end": 2325,
@@ -1688,35 +1688,35 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Jamani",
-                    "end": 635,
+                    "end": 759,
                     "starWord": "No"
                 },
                 {
-                    "start": 635,
+                    "start": 1283,
                     "wordIdx": 1,
-                    "audio": "Little lion",
-                    "end": 1270,
+                    "audio": "Little lion swahili",
+                    "end": 1976,
                     "starWord": "No"
                 },
                 {
-                    "start": 1271,
+                    "start": 1987,
                     "wordIdx": 2,
                     "audio": "Ameruka",
-                    "end": 1906,
+                    "end": 2488,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1907,
+                    "start": 2537,
                     "wordIdx": 3,
                     "audio": "Juu",
-                    "end": 2542,
+                    "end": 2782,
                     "starWord": "No"
                 },
                 {
-                    "start": 2542,
+                    "start": 2842,
                     "wordIdx": 4,
                     "audio": "Kama",
-                    "end": 3177,
+                    "end": 3124,
                     "starWord": "No"
                 },
                 {
@@ -1946,50 +1946,50 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Happy hippo",
-                    "end": 496,
+                    "audio": "Happy hippo swahili",
+                    "end": 707,
                     "starWord": "No"
                 },
                 {
-                    "start": 496,
+                    "start": 1241,
                     "wordIdx": 1,
                     "audio": "Anakimbia",
-                    "end": 992,
+                    "end": 1827,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 992,
+                    "start": 1834,
                     "wordIdx": 2,
-                    "audio": "",
-                    "end": 1488,
+                    "audio": "kwa",
+                    "end": 2015,
                     "starWord": "No"
                 },
                 {
-                    "start": 1489,
+                    "start": 1972,
                     "wordIdx": 3,
                     "audio": "Kasi",
-                    "end": 1985,
+                    "end": 2276,
                     "starWord": "No"
                 },
                 {
-                    "start": 1985,
+                    "start": 2308,
                     "wordIdx": 4,
                     "audio": "Sana",
-                    "end": 2481,
+                    "end": 2727,
                     "starWord": "No"
                 },
                 {
-                    "start": 2481,
+                    "start": 2706,
                     "wordIdx": 5,
                     "audio": "Kuelekea",
-                    "end": 2977,
+                    "end": 3262,
                     "starWord": "No"
                 },
                 {
-                    "start": 2978,
+                    "start": 3279,
                     "wordIdx": 6,
                     "audio": "Kwenye",
-                    "end": 3474,
+                    "end": 3470,
                     "starWord": "No"
                 },
                 {
@@ -2172,40 +2172,40 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Happy hippo",
-                    "end": 631,
+                    "audio": "Happy hippo swahili",
+                    "end": 725,
                     "starWord": "No"
                 },
                 {
-                    "start": 631,
+                    "start": 1177,
                     "wordIdx": 1,
                     "audio": "Aliruka",
-                    "end": 1262,
+                    "end": 1856,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1262,
+                    "start": 1863,
                     "wordIdx": 2,
                     "audio": "Juu",
-                    "end": 1893,
+                    "end": 2136,
                     "starWord": "No"
                 },
                 {
-                    "start": 1894,
+                    "start": 2548,
                     "wordIdx": 3,
                     "audio": "Na",
-                    "end": 2525,
+                    "end": 2806,
                     "starWord": "No"
                 },
                 {
-                    "start": 2525,
+                    "start": 2812,
                     "wordIdx": 4,
                     "audio": "Kuvuka",
-                    "end": 3156,
+                    "end": 3260,
                     "starWord": "No"
                 },
                 {
-                    "start": 3156,
+                    "start": 3277,
                     "wordIdx": 5,
                     "audio": "Mto",
                     "end": 3787,
@@ -2418,35 +2418,35 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 770,
+                    "start": 1359,
                     "wordIdx": 1,
-                    "audio": "Happy hippo",
-                    "end": 1540,
+                    "audio": "Happy hippo swahili",
+                    "end": 2194,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1541,
+                    "start": 2516,
                     "wordIdx": 2,
                     "audio": "Aliruka",
-                    "end": 2311,
+                    "end": 3246,
                     "starWord": "No"
                 },
                 {
-                    "start": 2312,
+                    "start": 3244,
                     "wordIdx": 3,
                     "audio": "Juu",
-                    "end": 3082,
+                    "end": 3542,
                     "starWord": "No"
                 },
                 {
-                    "start": 3082,
+                    "start": 3498,
                     "wordIdx": 4,
                     "audio": "Kama",
                     "end": 3852,
                     "starWord": "No"
                 },
                 {
-                    "start": 3853,
+                    "start": 3919,
                     "wordIdx": 5,
                     "audio": "ndege",
                     "end": 4623,
@@ -2825,36 +2825,36 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Akili",
-                    "end": 583,
+                    "audio": "Akili swahili",
+                    "end": 693,
                     "starWord": "No"
                 },
                 {
-                    "start": 583,
+                    "start": 1206,
                     "wordIdx": 1,
                     "audio": "Anakimbia",
-                    "end": 1166,
+                    "end": 1863,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1166,
+                    "start": 1863,
                     "wordIdx": 2,
-                    "audio": "",
-                    "end": 1749,
+                    "audio": "kwa",
+                    "end": 2070,
                     "starWord": "No"
                 },
                 {
-                    "start": 1750,
+                    "start": 2059,
                     "wordIdx": 3,
                     "audio": "Kasi",
-                    "end": 2333,
+                    "end": 2452,
                     "starWord": "No"
                 },
                 {
-                    "start": 2333,
+                    "start": 2424,
                     "wordIdx": 4,
                     "audio": "Kuelekea",
-                    "end": 2916,
+                    "end": 2862,
                     "starWord": "No"
                 },
                 {
@@ -3119,50 +3119,50 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Lakini",
-                    "end": 242,
+                    "end": 619,
                     "starWord": "No"
                 },
                 {
-                    "start": 242,
+                    "start": 1233,
                     "wordIdx": 1,
                     "audio": "Alipofika",
-                    "end": 484,
-                    "starWord": "Yes"
+                    "end": 1964,
+                    "starWord": "No"
                 },
                 {
-                    "start": 485,
+                    "start": 1946,
                     "wordIdx": 2,
                     "audio": "Kwenye",
-                    "end": 727,
+                    "end": 2301,
                     "starWord": "No"
                 },
                 {
-                    "start": 727,
+                    "start": 2280,
                     "wordIdx": 3,
                     "audio": "Mto",
-                    "end": 969,
+                    "end": 2684,
                     "starWord": "No"
                 },
                 {
-                    "start": 970,
+                    "start": 2963,
                     "wordIdx": 4,
                     "audio": "Aliogopa",
-                    "end": 1212,
-                    "starWord": "No"
+                    "end": 3675,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 1212,
+                    "start": 3719,
                     "wordIdx": 5,
                     "audio": "Sana",
-                    "end": 1454,
+                    "end": 4112,
                     "starWord": "No"
                 },
                 {
-                    "start": 1455,
+                    "start": 4143,
                     "wordIdx": 6,
                     "audio": "Kuruka",
-                    "end": 1697,
-                    "starWord": "Yes"
+                    "end": 4746,
+                    "starWord": "No"
                 }
             ],
             "triggers": [
@@ -3543,12 +3543,12 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Little lion",
-                    "end": 676,
+                    "audio": "Little lion swahili",
+                    "end": 1129,
                     "starWord": "No"
                 },
                 {
-                    "start": 676,
+                    "start": 1086,
                     "wordIdx": 1,
                     "audio": "Na",
                     "end": 1352,
@@ -3557,47 +3557,47 @@
                 {
                     "start": 1352,
                     "wordIdx": 2,
-                    "audio": "Happy hippo",
-                    "end": 2028,
+                    "audio": "Happy hippo swahili",
+                    "end": 1925,
                     "starWord": "No"
                 },
                 {
-                    "start": 2029,
+                    "start": 1930,
                     "wordIdx": 3,
                     "audio": "Walimpa",
-                    "end": 2705,
+                    "end": 2444,
                     "starWord": "No"
                 },
                 {
-                    "start": 2705,
+                    "start": 2455,
                     "wordIdx": 4,
                     "audio": "Moyo",
-                    "end": 3381,
+                    "end": 2720,
                     "starWord": "No"
                 },
                 {
-                    "start": 3381,
+                    "start": 2714,
                     "wordIdx": 5,
-                    "audio": "Akili",
-                    "end": 4057,
+                    "audio": "Akili swahili",
+                    "end": 3243,
                     "starWord": "No"
                 },
                 {
-                    "start": 4058,
+                    "start": 3329,
                     "wordIdx": 6,
                     "audio": "Unaweza",
-                    "end": 4734,
+                    "end": 4410,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 4734,
+                    "start": 4361,
                     "wordIdx": 7,
-                    "audio": "Akili",
-                    "end": 5410,
+                    "audio": "Akili swahili",
+                    "end": 4898,
                     "starWord": "No"
                 },
                 {
-                    "start": 5410,
+                    "start": 4922,
                     "wordIdx": 8,
                     "audio": "Jiamini",
                     "end": 6086,
@@ -3999,43 +3999,43 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Akili",
-                    "end": 291,
+                    "audio": "Akili swahili",
+                    "end": 528,
                     "starWord": "No"
                 },
                 {
-                    "start": 291,
+                    "start": 559,
                     "wordIdx": 1,
                     "audio": "Anajiamini",
-                    "end": 582,
+                    "end": 1175,
                     "starWord": "No"
                 },
                 {
-                    "start": 583,
+                    "start": 1154,
                     "wordIdx": 2,
                     "audio": "Mwenyewe",
-                    "end": 874,
+                    "end": 1758,
                     "starWord": "No"
                 },
                 {
-                    "start": 875,
+                    "start": 2026,
                     "wordIdx": 3,
                     "audio": "Anaamua",
-                    "end": 1166,
+                    "end": 2876,
                     "starWord": "No"
                 },
                 {
-                    "start": 1166,
+                    "start": 2914,
                     "wordIdx": 4,
                     "audio": "Kujaribu",
-                    "end": 1457,
+                    "end": 3380,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1458,
+                    "start": 3459,
                     "wordIdx": 5,
                     "audio": "Tena",
-                    "end": 1749,
+                    "end": 3942,
                     "starWord": "No"
                 }
             ],
@@ -4191,21 +4191,21 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Aliruka",
-                    "end": 1193,
+                    "end": 762,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1193,
+                    "start": 756,
                     "wordIdx": 1,
                     "audio": "Juu",
-                    "end": 2386,
+                    "end": 1114,
                     "starWord": "No"
                 },
                 {
-                    "start": 2386,
+                    "start": 1113,
                     "wordIdx": 2,
                     "audio": "Sana",
-                    "end": 3579,
+                    "end": 1745,
                     "starWord": "No"
                 }
             ],
@@ -4392,35 +4392,35 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Jamani",
-                    "end": 596,
+                    "end": 624,
                     "starWord": "No"
                 },
                 {
-                    "start": 596,
+                    "start": 1170,
                     "wordIdx": 1,
-                    "audio": "Akili",
-                    "end": 1192,
+                    "audio": "Akili swahili",
+                    "end": 1813,
                     "starWord": "No"
                 },
                 {
-                    "start": 1193,
+                    "start": 1831,
                     "wordIdx": 2,
                     "audio": "Aliruka",
-                    "end": 1789,
+                    "end": 2244,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1789,
+                    "start": 2264,
                     "wordIdx": 3,
                     "audio": "Juu",
-                    "end": 2385,
+                    "end": 2575,
                     "starWord": "No"
                 },
                 {
-                    "start": 2386,
+                    "start": 2547,
                     "wordIdx": 4,
                     "audio": "Kama",
-                    "end": 2982,
+                    "end": 2912,
                     "starWord": "No"
                 },
                 {
@@ -4820,72 +4820,72 @@
                     "starWord": "Yes"
                 },
                 {
-                    "start": 650,
+                    "start": 1144,
                     "wordIdx": 1,
-                    "audio": "Akili",
-                    "end": 1300,
+                    "audio": "Akili swahili",
+                    "end": 1698,
                     "starWord": "No"
                 },
                 {
-                    "start": 1301,
+                    "start": 1673,
                     "wordIdx": 2,
                     "audio": "Ameweza",
-                    "end": 1951,
+                    "end": 2168,
                     "starWord": "No"
                 },
                 {
-                    "start": 1952,
+                    "start": 2809,
                     "wordIdx": 3,
-                    "audio": "Happy hippo",
-                    "end": 2602,
+                    "audio": "Happy hippo swahili",
+                    "end": 3512,
                     "starWord": "No"
                 },
                 {
-                    "start": 2602,
+                    "start": 3666,
                     "wordIdx": 4,
                     "audio": "Na",
-                    "end": 3252,
+                    "end": 3725,
                     "starWord": "No"
                 },
                 {
-                    "start": 3253,
+                    "start": 3748,
                     "wordIdx": 5,
-                    "audio": "Little lion",
-                    "end": 3903,
+                    "audio": "Little lion swahili",
+                    "end": 4307,
                     "starWord": "No"
                 },
                 {
-                    "start": 3904,
+                    "start": 4804,
                     "wordIdx": 6,
                     "audio": "Wanaona",
-                    "end": 4554,
+                    "end": 5626,
                     "starWord": "No"
                 },
                 {
-                    "start": 4555,
+                    "start": 5588,
                     "wordIdx": 7,
                     "audio": "fahari",
-                    "end": 5205,
+                    "end": 6057,
                     "starWord": "No"
                 },
                 {
-                    "start": 5205,
+                    "start": 6163,
                     "wordIdx": 8,
                     "audio": "Juu",
-                    "end": 5855,
+                    "end": 6274,
                     "starWord": "No"
                 },
                 {
-                    "start": 5856,
+                    "start": 6310,
                     "wordIdx": 9,
                     "audio": "ya",
-                    "end": 6506,
+                    "end": 6564,
                     "starWord": "No"
                 },
                 {
                     "start": 6507,
                     "wordIdx": 10,
-                    "audio": "Akili",
+                    "audio": "Akili swahili",
                     "end": 7157,
                     "starWord": "No"
                 }
@@ -5511,84 +5511,84 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Marafiki",
-                    "end": 564,
+                    "end": 625,
                     "starWord": "No"
                 },
                 {
-                    "start": 564,
+                    "start": 636,
                     "wordIdx": 1,
                     "audio": "Watatu",
-                    "end": 1128,
+                    "end": 1716,
                     "starWord": "No"
                 },
                 {
-                    "start": 1129,
+                    "start": 1687,
                     "wordIdx": 2,
                     "audio": "Waliruka",
-                    "end": 1693,
+                    "end": 2463,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1693,
+                    "start": 2424,
                     "wordIdx": 3,
                     "audio": "Mchana",
-                    "end": 2257,
+                    "end": 2882,
                     "starWord": "No"
                 },
                 {
-                    "start": 2258,
+                    "start": 2919,
                     "wordIdx": 4,
                     "audio": "Kutwa",
-                    "end": 2822,
+                    "end": 3356,
                     "starWord": "No"
                 },
                 {
-                    "start": 2823,
+                    "start": 3523,
                     "wordIdx": 5,
                     "audio": "Waliruka",
-                    "end": 3387,
+                    "end": 4392,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 3387,
+                    "start": 4469,
                     "wordIdx": 6,
                     "audio": "Juu",
-                    "end": 3951,
+                    "end": 4582,
                     "starWord": "No"
                 },
                 {
-                    "start": 3952,
+                    "start": 4639,
                     "wordIdx": 7,
                     "audio": "ya",
-                    "end": 4516,
+                    "end": 4717,
                     "starWord": "No"
                 },
                 {
-                    "start": 4516,
+                    "start": 4758,
                     "wordIdx": 8,
                     "audio": "Maua",
-                    "end": 5080,
+                    "end": 5184,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 5081,
+                    "start": 5576,
                     "wordIdx": 9,
                     "audio": "Waliruka",
-                    "end": 5645,
+                    "end": 6297,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 5646,
+                    "start": 6387,
                     "wordIdx": 10,
                     "audio": "Juu",
-                    "end": 6210,
+                    "end": 6578,
                     "starWord": "No"
                 },
                 {
-                    "start": 6210,
+                    "start": 6621,
                     "wordIdx": 11,
                     "audio": "ya",
-                    "end": 6774,
+                    "end": 6724,
                     "starWord": "No"
                 },
                 {
@@ -6849,42 +6849,42 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "Waliruka",
-                    "end": 537,
+                    "end": 694,
                     "starWord": "No"
                 },
                 {
-                    "start": 537,
+                    "start": 1132,
                     "wordIdx": 1,
                     "audio": "Na",
-                    "end": 1074,
+                    "end": 1323,
                     "starWord": "No"
                 },
                 {
-                    "start": 1075,
+                    "start": 1309,
                     "wordIdx": 2,
                     "audio": "Kuruka",
-                    "end": 1612,
+                    "end": 1898,
                     "starWord": "No"
                 },
                 {
-                    "start": 1613,
+                    "start": 1904,
                     "wordIdx": 3,
                     "audio": "Mpaka",
-                    "end": 2150,
+                    "end": 2266,
                     "starWord": "No"
                 },
                 {
-                    "start": 2150,
+                    "start": 2261,
                     "wordIdx": 4,
                     "audio": "Walishindwa",
-                    "end": 2687,
+                    "end": 2859,
                     "starWord": "No"
                 },
                 {
-                    "start": 2688,
+                    "start": 2862,
                     "wordIdx": 5,
                     "audio": "Kuruka",
-                    "end": 3225,
+                    "end": 3201,
                     "starWord": "No"
                 },
                 {
@@ -6895,35 +6895,35 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 3763,
+                    "start": 4216,
                     "wordIdx": 7,
                     "audio": "Na",
-                    "end": 4300,
+                    "end": 4435,
                     "starWord": "No"
                 },
                 {
-                    "start": 4301,
+                    "start": 4595,
                     "wordIdx": 8,
                     "audio": "Kila",
-                    "end": 4838,
+                    "end": 4939,
                     "starWord": "No"
                 },
                 {
-                    "start": 4839,
+                    "start": 4944,
                     "wordIdx": 9,
                     "audio": "Mtu",
-                    "end": 5376,
+                    "end": 5090,
                     "starWord": "No"
                 },
                 {
-                    "start": 5376,
+                    "start": 5238,
                     "wordIdx": 10,
                     "audio": "Alikuwa",
-                    "end": 5913,
+                    "end": 5691,
                     "starWord": "No"
                 },
                 {
-                    "start": 5914,
+                    "start": 5690,
                     "wordIdx": 11,
                     "audio": "Amechoka",
                     "end": 6451,
