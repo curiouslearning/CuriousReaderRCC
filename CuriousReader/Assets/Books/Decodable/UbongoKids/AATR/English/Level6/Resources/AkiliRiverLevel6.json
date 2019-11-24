@@ -318,7 +318,7 @@
                     "wordIdx": 7,
                     "audio": "jumping",
                     "end": 5688,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 5688,
@@ -471,7 +471,7 @@
                     "tag": "",
                     "posX": 232.0,
                     "posY": -91.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 200.0,
                     "scaleY": 200.0,
                     "rotX": 0.0,
@@ -811,116 +811,116 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "they",
-                    "end": 467,
+                    "end": 289,
                     "starWord": "No"
                 },
                 {
-                    "start": 467,
+                    "start": 290,
                     "wordIdx": 1,
                     "audio": "reached",
-                    "end": 934,
+                    "end": 763,
                     "starWord": "No"
                 },
                 {
-                    "start": 934,
+                    "start": 770,
                     "wordIdx": 2,
-                    "audio": "a",
-                    "end": 1401,
+                    "audio": "audio_english_aatr_2_stanza_page_0",
+                    "end": 1013,
                     "starWord": "No"
                 },
                 {
-                    "start": 1401,
+                    "start": 1058,
                     "wordIdx": 3,
                     "audio": "beautiful",
-                    "end": 1868,
+                    "end": 1797,
                     "starWord": "No"
                 },
                 {
-                    "start": 1868,
+                    "start": 1827,
                     "wordIdx": 4,
                     "audio": "river",
-                    "end": 2335,
-                    "starWord": "No"
+                    "end": 2508,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 2335,
+                    "start": 3038,
                     "wordIdx": 5,
                     "audio": "will",
-                    "end": 2802,
+                    "end": 3410,
                     "starWord": "No"
                 },
                 {
-                    "start": 2802,
+                    "start": 3382,
                     "wordIdx": 6,
                     "audio": "Akili",
-                    "end": 3269,
+                    "end": 4036,
                     "starWord": "No"
                 },
                 {
-                    "start": 3269,
+                    "start": 4340,
                     "wordIdx": 7,
                     "audio": "and",
-                    "end": 3736,
+                    "end": 4511,
                     "starWord": "No"
                 },
                 {
-                    "start": 3736,
+                    "start": 4515,
                     "wordIdx": 8,
                     "audio": "her",
-                    "end": 4203,
+                    "end": 4741,
                     "starWord": "No"
                 },
                 {
-                    "start": 4204,
+                    "start": 4849,
                     "wordIdx": 9,
                     "audio": "friends",
-                    "end": 4671,
+                    "end": 5337,
                     "starWord": "No"
                 },
                 {
-                    "start": 4671,
+                    "start": 5498,
                     "wordIdx": 10,
                     "audio": "be",
-                    "end": 5138,
+                    "end": 5720,
                     "starWord": "No"
                 },
                 {
-                    "start": 5138,
+                    "start": 5769,
                     "wordIdx": 11,
                     "audio": "able",
-                    "end": 5605,
+                    "end": 6184,
                     "starWord": "No"
                 },
                 {
-                    "start": 5605,
+                    "start": 6186,
                     "wordIdx": 12,
                     "audio": "to",
-                    "end": 6072,
+                    "end": 6370,
                     "starWord": "No"
                 },
                 {
-                    "start": 6072,
+                    "start": 6384,
                     "wordIdx": 13,
                     "audio": "jump",
-                    "end": 6539,
+                    "end": 6754,
                     "starWord": "No"
                 },
                 {
-                    "start": 6539,
+                    "start": 6807,
                     "wordIdx": 14,
                     "audio": "across",
-                    "end": 7006,
+                    "end": 7236,
                     "starWord": "No"
                 },
                 {
-                    "start": 7006,
+                    "start": 7238,
                     "wordIdx": 15,
                     "audio": "the",
-                    "end": 7473,
+                    "end": 7419,
                     "starWord": "No"
                 },
                 {
-                    "start": 7473,
+                    "start": 7445,
                     "wordIdx": 16,
                     "audio": "river",
                     "end": 7940,
@@ -1243,7 +1243,7 @@
                     "wordIdx": 1,
                     "audio": "ran",
                     "end": 908,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 909,
@@ -1299,7 +1299,7 @@
                     "wordIdx": 9,
                     "audio": "river",
                     "end": 4544,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -1483,7 +1483,7 @@
                     "wordIdx": 1,
                     "audio": "jumped",
                     "end": 864,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 864,
@@ -1758,53 +1758,53 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "wow",
-                    "end": 604,
+                    "end": 798,
                     "starWord": "No"
                 },
                 {
-                    "start": 604,
+                    "start": 1475,
                     "wordIdx": 1,
                     "audio": "little lion",
-                    "end": 1208,
-                    "starWord": "No"
+                    "end": 2240,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 1208,
+                    "start": 2252,
                     "wordIdx": 2,
                     "audio": "jumped",
-                    "end": 1812,
+                    "end": 2743,
                     "starWord": "No"
                 },
                 {
-                    "start": 1812,
+                    "start": 2785,
                     "wordIdx": 3,
                     "audio": "as",
-                    "end": 2416,
+                    "end": 3100,
                     "starWord": "No"
                 },
                 {
-                    "start": 2416,
+                    "start": 3104,
                     "wordIdx": 4,
                     "audio": "high",
-                    "end": 3020,
+                    "end": 3501,
                     "starWord": "No"
                 },
                 {
-                    "start": 3020,
+                    "start": 3545,
                     "wordIdx": 5,
                     "audio": "as",
-                    "end": 3624,
+                    "end": 3746,
                     "starWord": "No"
                 },
                 {
-                    "start": 3624,
+                    "start": 3767,
                     "wordIdx": 6,
-                    "audio": "",
-                    "end": 4228,
+                    "audio": "audio_english_smdp_6_stanza_page_9",
+                    "end": 3918,
                     "starWord": "No"
                 },
                 {
-                    "start": 4228,
+                    "start": 4006,
                     "wordIdx": 7,
                     "audio": "antelope",
                     "end": 4832,
@@ -2012,7 +2012,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Happy␢Hippo ran fast as she could",
+                    "text": "Happy␢Hippo ran as fast as she could",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -2031,64 +2031,71 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "happy hippo",
-                    "end": 525,
+                    "end": 864,
                     "starWord": "No"
                 },
                 {
-                    "start": 525,
+                    "start": 896,
                     "wordIdx": 1,
                     "audio": "ran",
-                    "end": 1050,
-                    "starWord": "No"
+                    "end": 1249,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 1050,
+                    "start": 1489,
                     "wordIdx": 2,
-                    "audio": "fast",
-                    "end": 1575,
-                    "starWord": "No"
-                },
-                {
-                    "start": 1576,
-                    "wordIdx": 3,
                     "audio": "as",
-                    "end": 2101,
+                    "end": 1777,
                     "starWord": "No"
                 },
                 {
-                    "start": 2101,
+                    "start": 1932,
+                    "wordIdx": 3,
+                    "audio": "fast",
+                    "end": 2379,
+                    "starWord": "No"
+                },
+                {
+                    "start": 2402,
                     "wordIdx": 4,
-                    "audio": "she",
-                    "end": 2626,
+                    "audio": "as",
+                    "end": 2612,
                     "starWord": "No"
                 },
                 {
-                    "start": 2626,
+                    "start": 2629,
                     "wordIdx": 5,
-                    "audio": "could",
-                    "end": 3151,
+                    "audio": "she",
+                    "end": 2860,
                     "starWord": "No"
                 },
                 {
-                    "start": 3152,
+                    "start": 2877,
                     "wordIdx": 6,
-                    "audio": "towards",
-                    "end": 3677,
+                    "audio": "could",
+                    "end": 3308,
                     "starWord": "No"
                 },
                 {
-                    "start": 3677,
+                    "start": 3469,
                     "wordIdx": 7,
-                    "audio": "the",
-                    "end": 4202,
+                    "audio": "towards",
+                    "end": 4012,
                     "starWord": "No"
                 },
                 {
-                    "start": 4202,
+                    "start": 4072,
                     "wordIdx": 8,
-                    "audio": "river",
-                    "end": 4727,
+                    "audio": "the",
+                    "end": 4214,
                     "starWord": "No"
+                },
+                {
+                    "start": 4220,
+                    "wordIdx": 9,
+                    "audio": "river",
+                    "end": 4703,
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -2144,7 +2151,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 8,
+                            "invokerID": 9,
                             "symmetricallyPaired": true
                         }
                     ],
@@ -2272,7 +2279,7 @@
                     "wordIdx": 1,
                     "audio": "jumped",
                     "end": 846,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 847,
@@ -2547,49 +2554,49 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "wow",
-                    "end": 594,
+                    "end": 949,
                     "starWord": "No"
                 },
                 {
-                    "start": 594,
+                    "start": 1638,
                     "wordIdx": 1,
                     "audio": "happy hippo",
-                    "end": 1188,
-                    "starWord": "No"
+                    "end": 2450,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 1188,
+                    "start": 2489,
                     "wordIdx": 2,
                     "audio": "jumped",
-                    "end": 1782,
+                    "end": 2950,
                     "starWord": "No"
                 },
                 {
-                    "start": 1782,
+                    "start": 3173,
                     "wordIdx": 3,
                     "audio": "as",
-                    "end": 2376,
+                    "end": 3417,
                     "starWord": "No"
                 },
                 {
-                    "start": 2377,
+                    "start": 3483,
                     "wordIdx": 4,
                     "audio": "high",
-                    "end": 2971,
+                    "end": 3754,
                     "starWord": "No"
                 },
                 {
-                    "start": 2971,
+                    "start": 3768,
                     "wordIdx": 5,
                     "audio": "as",
-                    "end": 3565,
+                    "end": 3962,
                     "starWord": "No"
                 },
                 {
-                    "start": 3565,
+                    "start": 3966,
                     "wordIdx": 6,
-                    "audio": "a",
-                    "end": 4159,
+                    "audio": "audio_english_aatr_2_stanza_page_0",
+                    "end": 4110,
                     "starWord": "No"
                 },
                 {
@@ -2880,7 +2887,7 @@
                     "tag": "",
                     "posX": -120.0,
                     "posY": -168.0,
-                    "posZ": 0.0,
+                    "posZ": -1.0,
                     "scaleX": 500.0,
                     "scaleY": 550.0,
                     "rotX": 0.0,
@@ -2981,7 +2988,7 @@
                     "wordIdx": 1,
                     "audio": "ran",
                     "end": 720,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 721,
@@ -3037,7 +3044,7 @@
                     "wordIdx": 9,
                     "audio": "river",
                     "end": 3604,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -3326,70 +3333,70 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 424,
+                    "start": 773,
                     "wordIdx": 1,
                     "audio": "when",
-                    "end": 848,
+                    "end": 1175,
                     "starWord": "No"
                 },
                 {
-                    "start": 849,
+                    "start": 1182,
                     "wordIdx": 2,
                     "audio": "she",
-                    "end": 1273,
+                    "end": 1481,
                     "starWord": "No"
                 },
                 {
-                    "start": 1273,
+                    "start": 1490,
                     "wordIdx": 3,
                     "audio": "reached",
-                    "end": 1697,
+                    "end": 1754,
                     "starWord": "No"
                 },
                 {
-                    "start": 1698,
+                    "start": 1917,
                     "wordIdx": 4,
                     "audio": "the",
-                    "end": 2122,
+                    "end": 2168,
                     "starWord": "No"
                 },
                 {
-                    "start": 2122,
+                    "start": 2172,
                     "wordIdx": 5,
                     "audio": "river",
                     "end": 2546,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 2547,
+                    "start": 3224,
                     "wordIdx": 6,
                     "audio": "she",
-                    "end": 2971,
+                    "end": 3460,
                     "starWord": "No"
                 },
                 {
-                    "start": 2971,
+                    "start": 3465,
                     "wordIdx": 7,
                     "audio": "was",
-                    "end": 3395,
+                    "end": 3662,
                     "starWord": "No"
                 },
                 {
-                    "start": 3396,
+                    "start": 3671,
                     "wordIdx": 8,
                     "audio": "too",
-                    "end": 3820,
+                    "end": 3904,
                     "starWord": "No"
                 },
                 {
-                    "start": 3820,
+                    "start": 3994,
                     "wordIdx": 9,
                     "audio": "afraid",
-                    "end": 4244,
-                    "starWord": "No"
+                    "end": 4466,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 4245,
+                    "start": 4502,
                     "wordIdx": 10,
                     "audio": "to",
                     "end": 4669,
@@ -3808,91 +3815,91 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "little lion",
-                    "end": 436,
+                    "end": 934,
                     "starWord": "No"
                 },
                 {
-                    "start": 436,
+                    "start": 994,
                     "wordIdx": 1,
                     "audio": "and",
-                    "end": 872,
+                    "end": 1346,
                     "starWord": "No"
                 },
                 {
-                    "start": 872,
+                    "start": 1348,
                     "wordIdx": 2,
                     "audio": "happy hippo",
-                    "end": 1308,
+                    "end": 2240,
                     "starWord": "No"
                 },
                 {
-                    "start": 1308,
+                    "start": 2452,
                     "wordIdx": 3,
                     "audio": "encouraged",
-                    "end": 1744,
+                    "end": 3274,
                     "starWord": "No"
                 },
                 {
-                    "start": 1744,
+                    "start": 3300,
                     "wordIdx": 4,
                     "audio": "Akili",
-                    "end": 2180,
-                    "starWord": "No"
+                    "end": 4000,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 2180,
+                    "start": 4574,
                     "wordIdx": 5,
                     "audio": "you",
-                    "end": 2616,
+                    "end": 4742,
                     "starWord": "No"
                 },
                 {
-                    "start": 2616,
+                    "start": 4750,
                     "wordIdx": 6,
                     "audio": "can",
-                    "end": 3052,
+                    "end": 5069,
                     "starWord": "No"
                 },
                 {
-                    "start": 3052,
+                    "start": 5100,
                     "wordIdx": 7,
                     "audio": "do",
-                    "end": 3488,
+                    "end": 5366,
                     "starWord": "No"
                 },
                 {
-                    "start": 3488,
+                    "start": 5378,
                     "wordIdx": 8,
                     "audio": "it",
-                    "end": 3924,
+                    "end": 5608,
                     "starWord": "No"
                 },
                 {
-                    "start": 3924,
+                    "start": 6119,
                     "wordIdx": 9,
                     "audio": "Akili",
-                    "end": 4360,
-                    "starWord": "No"
+                    "end": 6802,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 4360,
+                    "start": 6900,
                     "wordIdx": 10,
                     "audio": "believe",
-                    "end": 4796,
+                    "end": 7375,
                     "starWord": "No"
                 },
                 {
-                    "start": 4796,
+                    "start": 7519,
                     "wordIdx": 11,
                     "audio": "in",
-                    "end": 5232,
+                    "end": 7694,
                     "starWord": "No"
                 },
                 {
-                    "start": 5232,
+                    "start": 7700,
                     "wordIdx": 12,
                     "audio": "",
-                    "end": 5668,
+                    "end": 8407,
                     "starWord": "No"
                 }
             ],
@@ -4347,7 +4354,7 @@
                     "wordIdx": 9,
                     "audio": "try",
                     "end": 5153,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 5153,
@@ -4497,68 +4504,75 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "She jumped up and flew through the air.",
+                    "text": "She jumped up high and flew through the air",
                     "customPosition": false,
                     "x": -101.7249984741211,
                     "y": 182.0
                 }
             ],
-            "audioFile": "audio_english_aatr_6_stanza_page_13",
+            "audioFile": "audio_english_aatr_6_stanza_page_12",
             "timestamps": [
                 {
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "she",
-                    "end": 548,
+                    "end": 423,
                     "starWord": "No"
                 },
                 {
-                    "start": 548,
+                    "start": 423,
                     "wordIdx": 1,
                     "audio": "jumped",
-                    "end": 1096,
-                    "starWord": "No"
+                    "end": 841,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 1097,
+                    "start": 847,
                     "wordIdx": 2,
                     "audio": "up",
-                    "end": 1645,
+                    "end": 1051,
                     "starWord": "No"
                 },
                 {
-                    "start": 1645,
+                    "start": 1178,
                     "wordIdx": 3,
-                    "audio": "and",
-                    "end": 2193,
+                    "audio": "high",
+                    "end": 1615,
                     "starWord": "No"
                 },
                 {
-                    "start": 2194,
+                    "start": 1695,
                     "wordIdx": 4,
-                    "audio": "flew",
-                    "end": 2742,
+                    "audio": "and",
+                    "end": 2043,
                     "starWord": "No"
                 },
                 {
-                    "start": 2743,
+                    "start": 2220,
                     "wordIdx": 5,
-                    "audio": "through",
-                    "end": 3291,
+                    "audio": "flew",
+                    "end": 2685,
                     "starWord": "No"
                 },
                 {
-                    "start": 3291,
+                    "start": 2828,
                     "wordIdx": 6,
-                    "audio": "the",
-                    "end": 3839,
+                    "audio": "through",
+                    "end": 3135,
                     "starWord": "No"
                 },
                 {
-                    "start": 3840,
+                    "start": 3206,
                     "wordIdx": 7,
+                    "audio": "the",
+                    "end": 3322,
+                    "starWord": "No"
+                },
+                {
+                    "start": 3390,
+                    "wordIdx": 8,
                     "audio": "air",
-                    "end": 4388,
+                    "end": 3813,
                     "starWord": "No"
                 }
             ],
@@ -4791,52 +4805,52 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 862,
+                    "start": 1283,
                     "wordIdx": 1,
                     "audio": "Akili",
-                    "end": 1724,
+                    "end": 1897,
                     "starWord": "No"
                 },
                 {
-                    "start": 1724,
+                    "start": 1967,
                     "wordIdx": 2,
                     "audio": "jumped",
-                    "end": 2586,
-                    "starWord": "No"
+                    "end": 2377,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 2586,
+                    "start": 2402,
                     "wordIdx": 3,
                     "audio": "as",
-                    "end": 3448,
+                    "end": 2582,
                     "starWord": "No"
                 },
                 {
-                    "start": 3448,
+                    "start": 2708,
                     "wordIdx": 4,
                     "audio": "high",
-                    "end": 4310,
+                    "end": 2960,
                     "starWord": "No"
                 },
                 {
-                    "start": 4310,
+                    "start": 2986,
                     "wordIdx": 5,
                     "audio": "as",
-                    "end": 5172,
+                    "end": 3143,
                     "starWord": "No"
                 },
                 {
-                    "start": 5172,
+                    "start": 3161,
                     "wordIdx": 6,
                     "audio": "",
-                    "end": 6034,
+                    "end": 3277,
                     "starWord": "No"
                 },
                 {
-                    "start": 6034,
+                    "start": 3347,
                     "wordIdx": 7,
                     "audio": "aeroplane",
-                    "end": 6896,
+                    "end": 4269,
                     "starWord": "No"
                 }
             ],
@@ -5229,80 +5243,80 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 670,
+                    "start": 1052,
                     "wordIdx": 1,
                     "audio": "Akili",
-                    "end": 1340,
+                    "end": 1630,
                     "starWord": "No"
                 },
                 {
-                    "start": 1341,
+                    "start": 1704,
                     "wordIdx": 2,
                     "audio": "did",
-                    "end": 2011,
+                    "end": 1877,
                     "starWord": "No"
                 },
                 {
-                    "start": 2011,
+                    "start": 1880,
                     "wordIdx": 3,
                     "audio": "it",
-                    "end": 2681,
+                    "end": 2208,
                     "starWord": "No"
                 },
                 {
                     "start": 2682,
                     "wordIdx": 4,
                     "audio": "happy hippo",
-                    "end": 3352,
+                    "end": 3653,
                     "starWord": "No"
                 },
                 {
-                    "start": 3352,
+                    "start": 3703,
                     "wordIdx": 5,
                     "audio": "and",
-                    "end": 4022,
+                    "end": 3984,
                     "starWord": "No"
                 },
                 {
-                    "start": 4023,
+                    "start": 3997,
                     "wordIdx": 6,
                     "audio": "little lion",
                     "end": 4693,
                     "starWord": "No"
                 },
                 {
-                    "start": 4693,
+                    "start": 4698,
                     "wordIdx": 7,
                     "audio": "were",
-                    "end": 5363,
+                    "end": 5253,
                     "starWord": "No"
                 },
                 {
                     "start": 5364,
                     "wordIdx": 8,
                     "audio": "so",
-                    "end": 6034,
+                    "end": 5724,
                     "starWord": "No"
                 },
                 {
-                    "start": 6034,
+                    "start": 5715,
                     "wordIdx": 9,
                     "audio": "proud",
-                    "end": 6704,
-                    "starWord": "No"
+                    "end": 6079,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 6705,
+                    "start": 6090,
                     "wordIdx": 10,
                     "audio": "of",
-                    "end": 7375,
+                    "end": 6269,
                     "starWord": "No"
                 },
                 {
-                    "start": 7375,
+                    "start": 6275,
                     "wordIdx": 11,
                     "audio": "Akili",
-                    "end": 8045,
+                    "end": 6857,
                     "starWord": "No"
                 }
             ],
@@ -5931,7 +5945,7 @@
                     "wordIdx": 3,
                     "audio": "jumped",
                     "end": 2010,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 2011,
@@ -5948,28 +5962,28 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 3017,
+                    "start": 3678,
                     "wordIdx": 6,
                     "audio": "they",
-                    "end": 3519,
+                    "end": 4053,
                     "starWord": "No"
                 },
                 {
-                    "start": 3520,
+                    "start": 4055,
                     "wordIdx": 7,
                     "audio": "jumped",
-                    "end": 4022,
-                    "starWord": "No"
+                    "end": 4393,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 4023,
+                    "start": 4394,
                     "wordIdx": 8,
                     "audio": "over",
-                    "end": 4525,
+                    "end": 4898,
                     "starWord": "No"
                 },
                 {
-                    "start": 4525,
+                    "start": 4900,
                     "wordIdx": 9,
                     "audio": "the",
                     "end": 5027,
@@ -5979,39 +5993,39 @@
                     "start": 5028,
                     "wordIdx": 10,
                     "audio": "flowers",
-                    "end": 5530,
+                    "end": 5602,
                     "starWord": "No"
                 },
                 {
-                    "start": 5531,
+                    "start": 6119,
                     "wordIdx": 11,
                     "audio": "they",
-                    "end": 6033,
+                    "end": 6361,
                     "starWord": "No"
                 },
                 {
-                    "start": 6034,
+                    "start": 6379,
                     "wordIdx": 12,
                     "audio": "jumped",
-                    "end": 6536,
-                    "starWord": "No"
+                    "end": 6779,
+                    "starWord": "Yes"
                 },
                 {
-                    "start": 6537,
+                    "start": 6784,
                     "wordIdx": 13,
                     "audio": "over",
-                    "end": 7039,
+                    "end": 7199,
                     "starWord": "No"
                 },
                 {
-                    "start": 7040,
+                    "start": 7201,
                     "wordIdx": 14,
                     "audio": "the",
-                    "end": 7542,
+                    "end": 7333,
                     "starWord": "No"
                 },
                 {
-                    "start": 7543,
+                    "start": 7389,
                     "wordIdx": 15,
                     "audio": "rocks",
                     "end": 8045,
@@ -7256,7 +7270,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "couldn’t jump anymore! Everyone was tired.",
+                    "text": "couldn't jump anymore! Everyone was tired.",
                     "customPosition": true,
                     "x": -347.385009765625,
                     "y": 156.0
@@ -7346,10 +7360,88 @@
                     "wordIdx": 11,
                     "audio": "tired",
                     "end": 7548,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                },
                 {
                     "stanzaID": 0,
                     "type": 7,
@@ -7361,7 +7453,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 11,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -7382,7 +7474,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 11,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -7403,7 +7495,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 11,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,

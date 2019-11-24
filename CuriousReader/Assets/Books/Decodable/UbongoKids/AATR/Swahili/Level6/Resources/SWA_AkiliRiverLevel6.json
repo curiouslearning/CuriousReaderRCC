@@ -403,7 +403,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 7,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -970,7 +970,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 7,
+                    "type": 8,
                     "prompts": [
                         1,
                         0
@@ -987,7 +987,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 7,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
                 },
                 {
                     "stanzaID": 0,
@@ -1453,7 +1453,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "",
+                    "audio": "Anaruka",
                     "end": 668,
                     "starWord": "Yes"
                 },

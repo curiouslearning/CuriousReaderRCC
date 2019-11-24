@@ -3780,17 +3780,17 @@
                     "starWord": "Yes"
                 },
                 {
-                    "start": 566,
+                    "start": 972,
                     "wordIdx": 1,
                     "audio": "up",
-                    "end": 1132,
+                    "end": 1510,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1132,
+                    "start": 1919,
                     "wordIdx": 2,
                     "audio": "up",
-                    "end": 1698,
+                    "end": 2351,
                     "starWord": "Yes"
                 }
             ],
@@ -4161,21 +4161,21 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "good",
-                    "end": 792,
+                    "end": 326,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 792,
+                    "start": 466,
                     "wordIdx": 1,
                     "audio": "job",
-                    "end": 1584,
+                    "end": 894,
                     "starWord": "No"
                 },
                 {
-                    "start": 1584,
+                    "start": 992,
                     "wordIdx": 2,
                     "audio": "Akili",
-                    "end": 2376,
+                    "end": 1646,
                     "starWord": "Yes"
                 }
             ],
@@ -4735,42 +4735,42 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "little lion",
-                    "end": 278,
+                    "end": 1078,
                     "starWord": "No"
                 },
                 {
-                    "start": 278,
+                    "start": 1094,
                     "wordIdx": 1,
                     "audio": "jumps",
-                    "end": 556,
+                    "end": 2142,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 557,
+                    "start": 2556,
                     "wordIdx": 2,
                     "audio": "happy hippo",
-                    "end": 835,
+                    "end": 3528,
                     "starWord": "No"
                 },
                 {
-                    "start": 836,
+                    "start": 3540,
                     "wordIdx": 3,
                     "audio": "jumps",
-                    "end": 1114,
+                    "end": 4321,
                     "starWord": "No"
                 },
                 {
-                    "start": 1114,
+                    "start": 4716,
                     "wordIdx": 4,
                     "audio": "Akili",
-                    "end": 1392,
+                    "end": 5529,
                     "starWord": "No"
                 },
                 {
-                    "start": 1393,
+                    "start": 5789,
                     "wordIdx": 5,
                     "audio": "jumps",
-                    "end": 1671,
+                    "end": 6346,
                     "starWord": "No"
                 }
             ],
