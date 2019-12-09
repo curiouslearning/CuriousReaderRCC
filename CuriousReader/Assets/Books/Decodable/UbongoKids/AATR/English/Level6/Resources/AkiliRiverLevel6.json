@@ -1,4 +1,4 @@
-{
+﻿{
     "id": 3,
     "fontColor": "white",
     "textStartPositionX": -111.0,
@@ -249,7 +249,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "One day Akili, HappyHippo and LittleLion",
+                    "text": "One day Akili, Happy␢Hippo and Little␢Lion",
                     "customPosition": true,
                     "x": -322.9700012207031,
                     "y": 222.0
@@ -268,35 +268,35 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "one",
-                    "end": 711,
+                    "end": 435,
                     "starWord": "No"
                 },
                 {
-                    "start": 711,
+                    "start": 505,
                     "wordIdx": 1,
                     "audio": "day",
-                    "end": 1422,
+                    "end": 953,
                     "starWord": "No"
                 },
                 {
-                    "start": 1422,
+                    "start": 1054,
                     "wordIdx": 2,
                     "audio": "Akili",
-                    "end": 2133,
+                    "end": 1759,
                     "starWord": "No"
                 },
                 {
-                    "start": 2133,
+                    "start": 1915,
                     "wordIdx": 3,
                     "audio": "happy hippo",
                     "end": 2844,
                     "starWord": "No"
                 },
                 {
-                    "start": 2844,
+                    "start": 3100,
                     "wordIdx": 4,
                     "audio": "and",
-                    "end": 3555,
+                    "end": 3507,
                     "starWord": "No"
                 },
                 {
@@ -307,21 +307,21 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 4266,
+                    "start": 4544,
                     "wordIdx": 6,
                     "audio": "were",
-                    "end": 4977,
+                    "end": 5046,
                     "starWord": "No"
                 },
                 {
-                    "start": 4977,
+                    "start": 5080,
                     "wordIdx": 7,
                     "audio": "jumping",
-                    "end": 5688,
+                    "end": 5492,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 5688,
+                    "start": 5495,
                     "wordIdx": 8,
                     "audio": "outside",
                     "end": 6399,
@@ -924,7 +924,7 @@
                     "wordIdx": 16,
                     "audio": "river",
                     "end": 7940,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -1235,70 +1235,70 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "little lion",
-                    "end": 454,
+                    "end": 859,
                     "starWord": "No"
                 },
                 {
-                    "start": 454,
+                    "start": 991,
                     "wordIdx": 1,
                     "audio": "ran",
-                    "end": 908,
+                    "end": 1375,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 909,
+                    "start": 1437,
                     "wordIdx": 2,
                     "audio": "as",
-                    "end": 1363,
+                    "end": 1647,
                     "starWord": "No"
                 },
                 {
-                    "start": 1363,
+                    "start": 1830,
                     "wordIdx": 3,
                     "audio": "fast",
-                    "end": 1817,
+                    "end": 2205,
                     "starWord": "No"
                 },
                 {
-                    "start": 1818,
+                    "start": 2343,
                     "wordIdx": 4,
                     "audio": "as",
-                    "end": 2272,
+                    "end": 2635,
                     "starWord": "No"
                 },
                 {
-                    "start": 2272,
+                    "start": 2663,
                     "wordIdx": 5,
                     "audio": "he",
-                    "end": 2726,
+                    "end": 2852,
                     "starWord": "No"
                 },
                 {
-                    "start": 2727,
+                    "start": 2927,
                     "wordIdx": 6,
                     "audio": "could",
                     "end": 3181,
                     "starWord": "No"
                 },
                 {
-                    "start": 3181,
+                    "start": 3356,
                     "wordIdx": 7,
                     "audio": "towards",
-                    "end": 3635,
+                    "end": 3810,
                     "starWord": "No"
                 },
                 {
-                    "start": 3636,
+                    "start": 3857,
                     "wordIdx": 8,
                     "audio": "the",
-                    "end": 4090,
+                    "end": 4084,
                     "starWord": "No"
                 },
                 {
                     "start": 4090,
                     "wordIdx": 9,
                     "audio": "river",
-                    "end": 4544,
+                    "end": 4483,
                     "starWord": "Yes"
                 }
             ],
@@ -1475,21 +1475,21 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "he",
-                    "end": 432,
+                    "end": 243,
                     "starWord": "No"
                 },
                 {
-                    "start": 432,
+                    "start": 304,
                     "wordIdx": 1,
                     "audio": "jumped",
-                    "end": 864,
+                    "end": 624,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 864,
+                    "start": 668,
                     "wordIdx": 2,
                     "audio": "up",
-                    "end": 1296,
+                    "end": 984,
                     "starWord": "No"
                 },
                 {
@@ -1500,38 +1500,38 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 1729,
+                    "start": 1947,
                     "wordIdx": 4,
                     "audio": "and",
                     "end": 2161,
                     "starWord": "No"
                 },
                 {
-                    "start": 2162,
+                    "start": 2396,
                     "wordIdx": 5,
                     "audio": "flew",
-                    "end": 2594,
+                    "end": 2798,
                     "starWord": "No"
                 },
                 {
-                    "start": 2594,
+                    "start": 2910,
                     "wordIdx": 6,
                     "audio": "through",
-                    "end": 3026,
+                    "end": 3165,
                     "starWord": "No"
                 },
                 {
-                    "start": 3027,
+                    "start": 3188,
                     "wordIdx": 7,
                     "audio": "the",
-                    "end": 3459,
+                    "end": 3376,
                     "starWord": "No"
                 },
                 {
                     "start": 3459,
                     "wordIdx": 8,
                     "audio": "air",
-                    "end": 3891,
+                    "end": 3844,
                     "starWord": "No"
                 }
             ],
@@ -1582,8 +1582,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -1608,8 +1607,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -1634,7 +1632,7 @@
                     "stanzaID": 0,
                     "type": 10,
                     "prompts": [
-                        0,
+                        1,
                         0
                     ],
                     "invokers": [
@@ -1746,7 +1744,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Wow! LittleLion jumped as high as an antelope!",
+                    "text": "Wow! Little␢Lion jumped as high as an antelope!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1927,9 +1925,9 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": 123.0,
+                    "posX": 68.0,
                     "posY": -51.0,
-                    "posZ": -3.0,
+                    "posZ": -2.0,
                     "scaleX": 550.0,
                     "scaleY": 550.0,
                     "rotX": 0.0,
@@ -2118,7 +2116,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 4,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 },
                 {
                     "stanzaID": 0,
@@ -2334,27 +2332,6 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 1,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
-                },
-                {
-                    "stanzaID": 0,
                     "type": 9,
                     "prompts": [
                         1,
@@ -2378,8 +2355,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -2404,8 +2380,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -2523,7 +2498,7 @@
                     "tag": "",
                     "posX": 11.0,
                     "posY": -163.0,
-                    "posZ": -5.0,
+                    "posZ": -2.0,
                     "scaleX": 500.0,
                     "scaleY": 500.0,
                     "rotX": 0.0,
@@ -2542,7 +2517,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Wow! HappyHippo jumped as high as a bird!",
+                    "text": "Wow! Happy␢Hippo jumped as high as a bird!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -2595,7 +2570,7 @@
                 {
                     "start": 3966,
                     "wordIdx": 6,
-                    "audio": "audio_english_aatr_2_stanza_page_0",
+                    "audio": "a",
                     "end": 4110,
                     "starWord": "No"
                 },
@@ -2627,7 +2602,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 3,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
                 }
             ]
         },
@@ -3796,14 +3771,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "LittleLion and HappyHippo encouraged Akili.",
+                    "text": "Little␢Lion and Happy␢Hippo encouraged Akili.",
                     "customPosition": true,
                     "x": -333.9750061035156,
                     "y": 209.0
                 },
                 {
                     "id": 1,
-                    "text": "“You can do it, Akili! Believe in yourself!”",
+                    "text": "“You can do it! Akili! Believe in yourself!”",
                     "customPosition": true,
                     "x": -338.989990234375,
                     "y": 154.0
@@ -3844,7 +3819,7 @@
                     "wordIdx": 4,
                     "audio": "Akili",
                     "end": 4000,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 4574,
@@ -4504,7 +4479,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "She jumped up high and flew through the air",
+                    "text": "She jumped up high and flew through the air.",
                     "customPosition": false,
                     "x": -101.7249984741211,
                     "y": 182.0
@@ -4579,27 +4554,6 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
-                },
-                {
-                    "stanzaID": 0,
                     "type": 9,
                     "prompts": [
                         1,
@@ -4623,8 +4577,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -4649,8 +4602,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -5227,7 +5179,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "HappyHippo and LittleLion were so proud of Akili!",
+                    "text": "Happy␢Hippo and Little␢Lion were so proud of Akili!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -5994,7 +5946,7 @@
                     "wordIdx": 10,
                     "audio": "flowers",
                     "end": 5602,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 6119,
@@ -6029,13 +5981,13 @@
                     "wordIdx": 15,
                     "audio": "rocks",
                     "end": 8045,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 7,
+                    "type": 8,
                     "prompts": [
                         1,
                         0
@@ -6043,17 +5995,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3,
-                            "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 7,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 12,
+                            "invokerID": 2,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -6062,11 +6004,11 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Akili-landing_and_jumping\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 7,
+                    "type": 8,
                     "prompts": [
                         1,
                         0
@@ -6074,17 +6016,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3,
-                            "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 7,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 12,
+                            "invokerID": 2,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -6093,11 +6025,11 @@
                     "timestamp": 0,
                     "sceneObjectId": 7,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"LittleLion-jumping_and_landing\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 7,
+                    "type": 8,
                     "prompts": [
                         1,
                         0
@@ -6105,17 +6037,7 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 3,
-                            "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 7,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 12,
+                            "invokerID": 2,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -6124,7 +6046,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 6,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"HappyHippo-landing_and_jumping\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
                 },
                 {
                     "stanzaID": 0,
@@ -7061,7 +6983,7 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 7,
                     "prompts": [
                         1,
                         0
@@ -7069,7 +6991,17 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 12,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -7078,11 +7010,11 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Akili-landing_and_jumping\"}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 7,
                     "prompts": [
                         1,
                         0
@@ -7090,7 +7022,17 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 12,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -7099,11 +7041,11 @@
                     "timestamp": 0,
                     "sceneObjectId": 6,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"HappyHippo-landing_and_jumping\"}"
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
+                    "type": 7,
                     "prompts": [
                         1,
                         0
@@ -7111,7 +7053,17 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 2,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 12,
                             "symmetricallyPaired": false
                         }
                     ],
@@ -7119,8 +7071,8 @@
                     "animId": 0,
                     "timestamp": 0,
                     "sceneObjectId": 7,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"LittleLion-jumping_and_landing\"}"
                 }
             ]
         },
@@ -7282,84 +7234,84 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "they",
-                    "end": 629,
+                    "end": 340,
                     "starWord": "No"
                 },
                 {
-                    "start": 629,
+                    "start": 328,
                     "wordIdx": 1,
                     "audio": "jumped",
-                    "end": 1258,
+                    "end": 769,
                     "starWord": "No"
                 },
                 {
-                    "start": 1258,
+                    "start": 1230,
                     "wordIdx": 2,
                     "audio": "and",
-                    "end": 1887,
+                    "end": 1478,
                     "starWord": "No"
                 },
                 {
-                    "start": 1887,
+                    "start": 1559,
                     "wordIdx": 3,
                     "audio": "jumped",
-                    "end": 2516,
+                    "end": 1822,
                     "starWord": "No"
                 },
                 {
-                    "start": 2516,
+                    "start": 2320,
                     "wordIdx": 4,
                     "audio": "until",
-                    "end": 3145,
+                    "end": 2846,
                     "starWord": "No"
                 },
                 {
-                    "start": 3145,
+                    "start": 2849,
                     "wordIdx": 5,
                     "audio": "they",
-                    "end": 3774,
+                    "end": 3085,
                     "starWord": "No"
                 },
                 {
-                    "start": 3774,
+                    "start": 3111,
                     "wordIdx": 6,
                     "audio": "couldn_t",
-                    "end": 4403,
+                    "end": 3573,
                     "starWord": "No"
                 },
                 {
-                    "start": 4403,
+                    "start": 3888,
                     "wordIdx": 7,
                     "audio": "jump",
-                    "end": 5032,
+                    "end": 4223,
                     "starWord": "No"
                 },
                 {
-                    "start": 5032,
+                    "start": 4297,
                     "wordIdx": 8,
                     "audio": "anymore",
-                    "end": 5661,
+                    "end": 4944,
                     "starWord": "No"
                 },
                 {
                     "start": 5661,
                     "wordIdx": 9,
                     "audio": "everyone",
-                    "end": 6290,
+                    "end": 6522,
                     "starWord": "No"
                 },
                 {
-                    "start": 6290,
+                    "start": 6532,
                     "wordIdx": 10,
                     "audio": "was",
-                    "end": 6919,
+                    "end": 6744,
                     "starWord": "No"
                 },
                 {
                     "start": 6919,
                     "wordIdx": 11,
                     "audio": "tired",
-                    "end": 7548,
+                    "end": 7451,
                     "starWord": "Yes"
                 }
             ],
@@ -7375,7 +7327,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
@@ -7401,7 +7353,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
@@ -7427,7 +7379,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 0,
-                            "symmetricallyPaired": true
+                            "symmetricallyPaired": false
                         },
                         {
                             "invokerType": 0,
@@ -7453,7 +7405,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 11,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -7474,7 +7426,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 11,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,
@@ -7495,7 +7447,7 @@
                         {
                             "invokerType": 0,
                             "invokerID": 11,
-                            "symmetricallyPaired": false
+                            "symmetricallyPaired": true
                         }
                     ],
                     "timing": 0.0,

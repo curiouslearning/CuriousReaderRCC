@@ -1234,7 +1234,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little␢Lion anaruka. Juu, Juu, Juu ya mto",
+                    "text": "Little␢Lion anaruka. Juu, juu, juu ya mto.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1268,14 +1268,14 @@
                     "wordIdx": 3,
                     "audio": "Juu",
                     "end": 4005,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 4153,
                     "wordIdx": 4,
                     "audio": "Juu",
                     "end": 4523,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 4595,
@@ -1349,8 +1349,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -1375,8 +1374,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -1942,7 +1940,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Happy␢Hippo anaruka. Juu, juu, juu ya mto",
+                    "text": "Happy␢Hippo anaruka. Juu, juu, juu ya mto.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1969,7 +1967,7 @@
                     "wordIdx": 2,
                     "audio": "Juu",
                     "end": 2986,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 3138,
@@ -1983,7 +1981,7 @@
                     "wordIdx": 4,
                     "audio": "Juu",
                     "end": 4473,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 4539,
@@ -2057,8 +2055,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -2083,8 +2080,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -2202,7 +2198,7 @@
                     "tag": "",
                     "posX": 11.0,
                     "posY": -163.0,
-                    "posZ": -5.0,
+                    "posZ": -3.0,
                     "scaleX": 500.0,
                     "scaleY": 500.0,
                     "rotX": 0.0,
@@ -2264,7 +2260,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 3,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
                 }
             ]
         },
@@ -3907,8 +3903,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -3933,8 +3928,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -4773,7 +4767,7 @@
                     "tag": "",
                     "posX": 152.0,
                     "posY": -147.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 750.0,
                     "scaleY": 750.0,
                     "rotX": 0.0,
@@ -4795,7 +4789,7 @@
                     "tag": "",
                     "posX": -279.0,
                     "posY": -157.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 800.0,
                     "scaleY": 800.0,
                     "rotX": 0.0,
@@ -4817,7 +4811,7 @@
                     "tag": "",
                     "posX": 203.0,
                     "posY": -171.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 900.0,
                     "scaleY": 900.0,
                     "rotX": 0.0,
@@ -5018,7 +5012,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little␢Lion, Happy␢Hippo na Akili Wanaruka pamoja.",
+                    "text": "Little␢Lion, Happy␢Hippo na Akili wanaruka pamoja.",
                     "customPosition": true,
                     "x": -413.0,
                     "y": 195.0
@@ -5346,7 +5340,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 3,
                     "symmetricPairingId": 11,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"BlueFlower-head_spins\"}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"\"}"
                 },
                 {
                     "stanzaID": 0,

@@ -18,7 +18,7 @@ ScriptedImporter:
   gradientResolution: 128
   alignment: 0
   customPivot: {x: 0, y: 0}
-  generatePhysicsShape: 0
+  generatePhysicsShape: 1
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -40,16 +40,16 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: CloudSprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.49999514, y: 0.50077254}
       alignment: 0
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 36, y: 28, z: 63, w: 24}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 52
       spriteID: 8cb393be93490674687f2f482b93b9e1
     PhysicsOutlines: []

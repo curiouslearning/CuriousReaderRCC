@@ -1062,32 +1062,32 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "little lion",
-                    "end": 491,
+                    "end": 986,
                     "starWord": "No"
                 },
                 {
-                    "start": 491,
+                    "start": 1018,
                     "wordIdx": 1,
                     "audio": "runs",
-                    "end": 982,
+                    "end": 1455,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 982,
+                    "start": 1502,
                     "wordIdx": 2,
                     "audio": "to",
-                    "end": 1473,
+                    "end": 1861,
                     "starWord": "No"
                 },
                 {
-                    "start": 1473,
+                    "start": 1885,
                     "wordIdx": 3,
                     "audio": "the",
-                    "end": 1964,
+                    "end": 2046,
                     "starWord": "No"
                 },
                 {
-                    "start": 1964,
+                    "start": 2051,
                     "wordIdx": 4,
                     "audio": "river",
                     "end": 2455,
@@ -1296,7 +1296,7 @@
                     "wordIdx": 3,
                     "audio": "up",
                     "end": 3350,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 3661,
@@ -1391,8 +1391,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -1417,8 +1416,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -2039,7 +2037,7 @@
                     "wordIdx": 3,
                     "audio": "up",
                     "end": 3317,
-                    "starWord": "Yes"
+                    "starWord": "No"
                 },
                 {
                     "start": 3524,
@@ -2134,8 +2132,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -2160,8 +2157,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -2279,7 +2275,7 @@
                     "tag": "",
                     "posX": 11.0,
                     "posY": -163.0,
-                    "posZ": -5.0,
+                    "posZ": -2.0,
                     "scaleX": 500.0,
                     "scaleY": 500.0,
                     "rotX": 0.0,
@@ -2355,7 +2351,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 3,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
                 }
             ]
         },
@@ -3015,46 +3011,46 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "but",
-                    "end": 403,
+                    "end": 237,
                     "starWord": "No"
                 },
                 {
-                    "start": 403,
+                    "start": 292,
                     "wordIdx": 1,
                     "audio": "Akili",
                     "end": 806,
                     "starWord": "No"
                 },
                 {
-                    "start": 806,
+                    "start": 941,
                     "wordIdx": 2,
                     "audio": "is",
-                    "end": 1209,
+                    "end": 1362,
                     "starWord": "No"
                 },
                 {
-                    "start": 1209,
+                    "start": 1397,
                     "wordIdx": 3,
                     "audio": "too",
-                    "end": 1612,
+                    "end": 1678,
                     "starWord": "No"
                 },
                 {
-                    "start": 1612,
+                    "start": 1680,
                     "wordIdx": 4,
                     "audio": "afraid",
-                    "end": 2015,
+                    "end": 2198,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 2015,
+                    "start": 2209,
                     "wordIdx": 5,
                     "audio": "to",
                     "end": 2418,
                     "starWord": "No"
                 },
                 {
-                    "start": 2418,
+                    "start": 2426,
                     "wordIdx": 6,
                     "audio": "jump",
                     "end": 2821,
@@ -4040,8 +4036,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -4066,8 +4061,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -4215,24 +4209,24 @@
                     "starWord": "Yes"
                 },
                 {
-                    "start": 1410,
+                    "start": 1825,
                     "wordIdx": 3,
                     "audio": "in",
-                    "end": 1880,
+                    "end": 2088,
                     "starWord": "No"
                 },
                 {
-                    "start": 1880,
+                    "start": 2129,
                     "wordIdx": 4,
                     "audio": "the",
-                    "end": 2350,
+                    "end": 2280,
                     "starWord": "No"
                 },
                 {
                     "start": 2350,
                     "wordIdx": 5,
                     "audio": "air",
-                    "end": 2820,
+                    "end": 2805,
                     "starWord": "No"
                 }
             ],
@@ -5209,17 +5203,24 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little␢Lion, Happy␢Hippo and Akili jump together.",
+                    "text": "Little␢Lion, Happy␢Hippo and Akili jump",
                     "customPosition": true,
-                    "x": -476.0,
-                    "y": 181.0
+                    "x": -358.0,
+                    "y": 222.0
                 },
                 {
                     "id": 1,
-                    "text": "They jump over flowers. They jump over rocks.",
+                    "text": "together. They jump over flowers.",
                     "customPosition": true,
-                    "x": -478.0,
-                    "y": 127.0
+                    "x": -328.0,
+                    "y": 168.0
+                },
+                {
+                    "id": 2,
+                    "text": "They jump over rocks.",
+                    "customPosition": true,
+                    "x": -221.0,
+                    "y": 114.0
                 }
             ],
             "audioFile": "audio_english_aatr_4_stanza_page_15",
@@ -5257,7 +5258,7 @@
                     "wordIdx": 4,
                     "audio": "jump",
                     "end": 4132,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 4336,
@@ -5306,7 +5307,7 @@
                     "wordIdx": 11,
                     "audio": "jump",
                     "end": 8665,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 8779,
@@ -5320,7 +5321,7 @@
                     "wordIdx": 13,
                     "audio": "rocks",
                     "end": 9978,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -6554,10 +6555,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "They jump and jump until… they fall asleep!",
+                    "text": "They jump and jump until…",
                     "customPosition": true,
-                    "x": -456.0,
-                    "y": 182.0
+                    "x": -220.0,
+                    "y": 218.0
+                },
+                {
+                    "id": 1,
+                    "text": "they fall asleep!",
+                    "customPosition": true,
+                    "x": -108.0,
+                    "y": 166.0
                 }
             ],
             "audioFile": "audio_english_aatr_4_stanza_page_16",
@@ -6566,53 +6574,53 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "they",
-                    "end": 679,
+                    "end": 332,
                     "starWord": "No"
                 },
                 {
-                    "start": 679,
+                    "start": 375,
                     "wordIdx": 1,
                     "audio": "jump",
-                    "end": 1358,
+                    "end": 738,
                     "starWord": "No"
                 },
                 {
-                    "start": 1358,
+                    "start": 893,
                     "wordIdx": 2,
                     "audio": "and",
-                    "end": 2037,
+                    "end": 1220,
                     "starWord": "No"
                 },
                 {
-                    "start": 2037,
+                    "start": 1279,
                     "wordIdx": 3,
                     "audio": "jump",
-                    "end": 2716,
+                    "end": 1679,
                     "starWord": "No"
                 },
                 {
-                    "start": 2716,
+                    "start": 1905,
                     "wordIdx": 4,
                     "audio": "until",
-                    "end": 3395,
+                    "end": 2930,
                     "starWord": "No"
                 },
                 {
                     "start": 3395,
                     "wordIdx": 5,
                     "audio": "they",
-                    "end": 4074,
+                    "end": 3987,
                     "starWord": "No"
                 },
                 {
                     "start": 4074,
                     "wordIdx": 6,
                     "audio": "fall",
-                    "end": 4753,
+                    "end": 4512,
                     "starWord": "No"
                 },
                 {
-                    "start": 4753,
+                    "start": 4608,
                     "wordIdx": 7,
                     "audio": "asleep",
                     "end": 5432,

@@ -696,14 +696,14 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 627,
+                    "start": 1054,
                     "wordIdx": 1,
-                    "audio": "a",
-                    "end": 1254,
+                    "audio": "audio_english_aatr_2_stanza_page_0",
+                    "end": 1249,
                     "starWord": "No"
                 },
                 {
-                    "start": 1254,
+                    "start": 1251,
                     "wordIdx": 2,
                     "audio": "river",
                     "end": 1881,
@@ -1164,8 +1164,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -1190,8 +1189,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -1307,7 +1305,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Good job Little␢Lion!",
+                    "text": "Good job, Little␢Lion!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1771,8 +1769,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -1797,8 +1794,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -1895,7 +1891,7 @@
                     "tag": "",
                     "posX": 11.0,
                     "posY": -163.0,
-                    "posZ": -5.0,
+                    "posZ": -3.0,
                     "scaleX": 500.0,
                     "scaleY": 500.0,
                     "rotX": 0.0,
@@ -1914,7 +1910,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Good job Happy␢Hippo!",
+                    "text": "Good job, Happy␢Hippo!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1964,7 +1960,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 3,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
                 }
             ]
         },
@@ -2586,45 +2582,45 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 242,
+                    "start": 270,
                     "wordIdx": 1,
                     "audio": "river",
-                    "end": 484,
+                    "end": 690,
                     "starWord": "Yes"
                 },
                 {
-                    "start": 485,
+                    "start": 912,
                     "wordIdx": 2,
                     "audio": "is",
-                    "end": 727,
+                    "end": 1122,
                     "starWord": "No"
                 },
                 {
-                    "start": 727,
+                    "start": 1234,
                     "wordIdx": 3,
                     "audio": "big",
-                    "end": 969,
+                    "end": 1584,
                     "starWord": "No"
                 },
                 {
-                    "start": 970,
+                    "start": 1690,
                     "wordIdx": 4,
                     "audio": "Akili",
-                    "end": 1212,
+                    "end": 2366,
                     "starWord": "No"
                 },
                 {
-                    "start": 1212,
+                    "start": 2488,
                     "wordIdx": 5,
                     "audio": "is",
-                    "end": 1454,
+                    "end": 2879,
                     "starWord": "No"
                 },
                 {
-                    "start": 1455,
+                    "start": 3001,
                     "wordIdx": 6,
                     "audio": "afraid",
-                    "end": 1697,
+                    "end": 3701,
                     "starWord": "Yes"
                 }
             ],
@@ -3021,7 +3017,7 @@
                     "start": 0,
                     "wordIdx": 0,
                     "audio": "jump",
-                    "end": 653,
+                    "end": 491,
                     "starWord": "Yes"
                 },
                 {
@@ -3032,10 +3028,10 @@
                     "starWord": "No"
                 },
                 {
-                    "start": 1306,
+                    "start": 1427,
                     "wordIdx": 2,
                     "audio": "jump",
-                    "end": 1959,
+                    "end": 2128,
                     "starWord": "Yes"
                 }
             ],
@@ -3619,8 +3615,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -3645,8 +3640,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -4723,10 +4717,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Little␢Lion jumps! Happy␢Hippo jumps! Akili jumps!",
+                    "text": "Little␢Lion jumps! Happy␢Hippo jumps!",
                     "customPosition": true,
-                    "x": -445.0,
-                    "y": 148.0
+                    "x": -317.0,
+                    "y": 189.0
+                },
+                {
+                    "id": 1,
+                    "text": "Akili jumps!",
+                    "customPosition": true,
+                    "x": -101.52999877929688,
+                    "y": 127.0
                 }
             ],
             "audioFile": "audio_english_aatr_2_stanza_page_16",
@@ -4757,7 +4758,7 @@
                     "wordIdx": 3,
                     "audio": "jumps",
                     "end": 4321,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 4716,
@@ -4771,7 +4772,7 @@
                     "wordIdx": 5,
                     "audio": "jumps",
                     "end": 6346,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -4850,16 +4851,6 @@
                             "invokerType": 0,
                             "invokerID": 5,
                             "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 3,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 1,
-                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -4881,16 +4872,6 @@
                             "invokerType": 0,
                             "invokerID": 1,
                             "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 3,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 5,
-                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -4910,18 +4891,8 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 1,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
                             "invokerID": 3,
                             "symmetricallyPaired": true
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 5,
-                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
