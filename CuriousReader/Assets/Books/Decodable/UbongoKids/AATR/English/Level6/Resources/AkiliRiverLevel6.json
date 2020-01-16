@@ -1,4 +1,4 @@
-﻿{
+{
     "id": 3,
     "fontColor": "white",
     "textStartPositionX": -111.0,
@@ -1790,7 +1790,7 @@
                 {
                     "start": 3545,
                     "wordIdx": 5,
-                    "audio": "as",
+                    "audio": "an",
                     "end": 3746,
                     "starWord": "No"
                 },
@@ -3873,7 +3873,7 @@
                 {
                     "start": 7700,
                     "wordIdx": 12,
-                    "audio": "",
+                    "audio": "yourself",
                     "end": 8407,
                     "starWord": "No"
                 }
@@ -4787,7 +4787,7 @@
                 {
                     "start": 2986,
                     "wordIdx": 5,
-                    "audio": "as",
+                    "audio": "an",
                     "end": 3143,
                     "starWord": "No"
                 },
