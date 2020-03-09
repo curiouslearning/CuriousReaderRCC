@@ -2847,6 +2847,26 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 16,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "",
+                    "inText": false,
+                    "label": "bubble",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
                 }
             ],
             "texts": [
@@ -4276,7 +4296,7 @@
             "triggers": [
                 {
                     "stanzaID": 0,
-                    "type": 10,
+                    "type": 9,
                     "prompts": [
                         1,
                         0
@@ -4284,8 +4304,8 @@
                     "invokers": [
                         {
                             "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": true
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
                         }
                     ],
                     "timing": 0.0,
@@ -4293,7 +4313,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 0,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":320.0}}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":32.0,\"z\":0.0}}"
                 },
                 {
                     "stanzaID": 0,
@@ -4346,6 +4366,27 @@
                     "sceneObjectId": 3,
                     "symmetricPairingId": 0,
                     "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":544.0,\"y\":-32.0,\"z\":0.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 10,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":320.0}}"
                 }
             ]
         },
@@ -6772,7 +6813,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 35.0,
+                    "posX": -32.0,
                     "posY": 10.0,
                     "posZ": -3.0,
                     "scaleX": 800.0,
@@ -6814,7 +6855,7 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 18.0,
+                    "posX": -49.0,
                     "posY": 2.0,
                     "posZ": -3.0,
                     "scaleX": 700.0,
@@ -6836,7 +6877,7 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 91.0,
+                    "posX": 24.0,
                     "posY": -11.0,
                     "posZ": -3.0,
                     "scaleX": 800.0,
@@ -6858,7 +6899,7 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": -320.0,
+                    "posX": -377.0,
                     "posY": -126.0,
                     "posZ": 0.0,
                     "scaleX": 250.0,
@@ -6901,15 +6942,15 @@
                     "id": 0,
                     "text": "Waliruka na kuruka mpaka walishindwa",
                     "customPosition": true,
-                    "x": -416.8299865722656,
-                    "y": 207.0
+                    "x": -300.95001220703127,
+                    "y": 213.0
                 },
                 {
                     "id": 1,
                     "text": "kuruka tena! na kila mtu alikuwa amechoka.",
                     "customPosition": true,
-                    "x": -252.0,
-                    "y": 152.0
+                    "x": -352.6300048828125,
+                    "y": 158.0
                 }
             ],
             "audioFile": "audio_swahili_aatr_6_stanza_page_16",

@@ -5220,7 +5220,7 @@
                     "wordIdx": 4,
                     "audio": "happy hippo",
                     "end": 3653,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 3703,
@@ -5234,7 +5234,7 @@
                     "wordIdx": 6,
                     "audio": "little lion",
                     "end": 4693,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 },
                 {
                     "start": 4698,
@@ -7088,7 +7088,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 35.0,
+                    "posX": -19.0,
                     "posY": 10.0,
                     "posZ": -3.0,
                     "scaleX": 800.0,
@@ -7130,7 +7130,7 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 18.0,
+                    "posX": -36.0,
                     "posY": 2.0,
                     "posZ": -3.0,
                     "scaleX": 700.0,
@@ -7152,7 +7152,7 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 91.0,
+                    "posX": 37.0,
                     "posY": -11.0,
                     "posZ": -3.0,
                     "scaleX": 800.0,
@@ -7174,7 +7174,7 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": -320.0,
+                    "posX": -362.0,
                     "posY": -126.0,
                     "posZ": 0.0,
                     "scaleX": 250.0,

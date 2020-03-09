@@ -2275,13 +2275,13 @@
                     "tag": "",
                     "posX": 11.0,
                     "posY": -163.0,
-                    "posZ": -2.0,
+                    "posZ": -5.0,
                     "scaleX": 500.0,
                     "scaleY": 500.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": 1,
                     "imageName": "HappyHippoArmsOut",
                     "inText": false,
                     "label": "HappyHippoArmsOut",
@@ -2351,7 +2351,7 @@
                     "timestamp": 0,
                     "sceneObjectId": 3,
                     "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
                 }
             ]
         },
@@ -4640,7 +4640,7 @@
                     "wordIdx": 6,
                     "audio": "celebrate",
                     "end": 3787,
-                    "starWord": "No"
+                    "starWord": "Yes"
                 }
             ],
             "triggers": [
@@ -6428,7 +6428,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 35.0,
+                    "posX": -24.0,
                     "posY": 10.0,
                     "posZ": -3.0,
                     "scaleX": 800.0,
@@ -6470,7 +6470,7 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 18.0,
+                    "posX": -41.0,
                     "posY": 2.0,
                     "posZ": -3.0,
                     "scaleX": 700.0,
@@ -6492,7 +6492,7 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 91.0,
+                    "posX": 32.0,
                     "posY": -11.0,
                     "posZ": -3.0,
                     "scaleX": 800.0,
@@ -6514,7 +6514,7 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": -320.0,
+                    "posX": -362.0,
                     "posY": -126.0,
                     "posZ": 0.0,
                     "scaleX": 250.0,
