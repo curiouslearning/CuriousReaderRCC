@@ -15,9 +15,9 @@ MonoBehaviour:
   BookAssetBundleName: liketodo
   BookCover:
   - BookLanguage: 0
-    BookCoverSprite: {fileID: 21300000, guid: 31a05f09c3f532443944164a8c793ab7, type: 3}
+    BookCoverSprite: {fileID: 21300000, guid: 7646b09f8cbc7a94da839ca08cd85b1e, type: 3}
   - BookLanguage: 1
-    BookCoverSprite: {fileID: 21300000, guid: ee1a71c2b462b1e4b9c373bd8417ad40, type: 3}
+    BookCoverSprite: {fileID: 0}
   BookTitleTranslations:
   - BookLevel: 2
     BookLanguage: 0
