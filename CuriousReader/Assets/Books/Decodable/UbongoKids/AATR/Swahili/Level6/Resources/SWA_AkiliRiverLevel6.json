@@ -2847,26 +2847,6 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
-                },
-                {
-                    "id": 16,
-                    "tag": "",
-                    "posX": 0.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "",
-                    "inText": false,
-                    "label": "bubble",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
                 }
             ],
             "texts": [
@@ -4319,8 +4299,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
@@ -4345,8 +4324,7 @@
                     "stanzaID": 0,
                     "type": 9,
                     "prompts": [
-                        1,
-                        0
+                        1
                     ],
                     "invokers": [
                         {
