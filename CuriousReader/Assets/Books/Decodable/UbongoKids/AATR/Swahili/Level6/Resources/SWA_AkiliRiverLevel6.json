@@ -1234,7 +1234,7 @@
                 {
                     "start": 1302,
                     "wordIdx": 1,
-                    "audio": "Anakimbia",
+                    "audio": "alikimbia",
                     "end": 2038,
                     "starWord": "Yes"
                 },
@@ -1442,7 +1442,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Anaruka juu na kuvuka mto.",
+                    "text": "Akaruka juu na kuvuka mto.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1453,7 +1453,7 @@
                 {
                     "start": 0,
                     "wordIdx": 0,
-                    "audio": "Anaruka",
+                    "audio": "Akaruka",
                     "end": 668,
                     "starWord": "Yes"
                 },
@@ -1947,7 +1947,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Happy␢Hippo anakimbia kwa kasi",
+                    "text": "Happy␢Hippo alikimbia kwa kasi",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1972,7 +1972,7 @@
                 {
                     "start": 1241,
                     "wordIdx": 1,
-                    "audio": "Anakimbia",
+                    "audio": "alikimbia",
                     "end": 1827,
                     "starWord": "Yes"
                 },
@@ -2870,7 +2870,7 @@
                 {
                     "start": 1206,
                     "wordIdx": 1,
-                    "audio": "Anakimbia",
+                    "audio": "alikimbia",
                     "end": 1863,
                     "starWord": "Yes"
                 },
@@ -3166,7 +3166,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Lakini alipofika kwenye mto, aliogopa sana kuruka.",
+                    "text": "Lakini alipofika kwenye mto,",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "aliogopa sana kuruka.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -3591,7 +3598,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "“Unaweza, Akili! Jiamini!”",
+                    "text": "\"Unaweza, Akili! Jiamini!\"",
                     "customPosition": true,
                     "x": -220.0,
                     "y": 167.0
@@ -4084,7 +4091,7 @@
                 {
                     "start": 2026,
                     "wordIdx": 3,
-                    "audio": "Anaamua",
+                    "audio": "aliamua",
                     "end": 2876,
                     "starWord": "No"
                 },
@@ -4912,7 +4919,7 @@
                 {
                     "start": 1673,
                     "wordIdx": 2,
-                    "audio": "Ameweza",
+                    "audio": "aliweza",
                     "end": 2168,
                     "starWord": "No"
                 },
@@ -6925,7 +6932,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "kuruka tena! na kila mtu alikuwa amechoka.",
+                    "text": "kuruka tena! Na kila mtu alikuwa amechoka.",
                     "customPosition": true,
                     "x": -352.6300048828125,
                     "y": 158.0

@@ -15,9 +15,9 @@ MonoBehaviour:
   BookAssetBundleName: akiliriver
   BookCover:
   - BookLanguage: 0
-    BookCoverSprite: {fileID: 21300000, guid: 62f53b1887e6a7542b8ab08b2f9ac1aa, type: 3}
+    BookCoverSprite: {fileID: 21300000, guid: b2e9b2235e252304fa524499f493c45c, type: 3}
   - BookLanguage: 1
-    BookCoverSprite: {fileID: 21300000, guid: 47ef8e138447e9c4795296b56361823a, type: 3}
+    BookCoverSprite: {fileID: 21300000, guid: c577dcf0a9a266648b57d3dcc9910deb, type: 3}
   BookTitleTranslations:
   - BookLevel: 2
     BookLanguage: 0

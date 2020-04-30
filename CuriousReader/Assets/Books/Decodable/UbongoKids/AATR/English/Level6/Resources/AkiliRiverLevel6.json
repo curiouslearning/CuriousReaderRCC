@@ -799,7 +799,14 @@
                 },
                 {
                     "id": 1,
-                    "text": "and her friends be able to jump across the river?",
+                    "text": "and her friends be able to jump across",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 2,
+                    "text": "the river?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -824,7 +831,7 @@
                 {
                     "start": 770,
                     "wordIdx": 2,
-                    "audio": "audio_english_aatr_2_stanza_page_0",
+                    "audio": "a",
                     "end": 1013,
                     "starWord": "No"
                 },
@@ -1744,7 +1751,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Wow! Little␢Lion jumped as high as an antelope!",
+                    "text": "Wow! Little␢Lion jumped as high as",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "an antelope!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -1790,14 +1804,14 @@
                 {
                     "start": 3545,
                     "wordIdx": 5,
-                    "audio": "an",
+                    "audio": "as",
                     "end": 3746,
                     "starWord": "No"
                 },
                 {
                     "start": 3767,
                     "wordIdx": 6,
-                    "audio": "audio_english_smdp_6_stanza_page_9",
+                    "audio": "an",
                     "end": 3918,
                     "starWord": "No"
                 },
@@ -2257,7 +2271,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "She jumped up high and flew through the air.",
+                    "text": "She jumped up high and flew",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "id": 1,
+                    "text": "through the air.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -2943,10 +2964,17 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Akili ran as fast as she could towards the river.",
-                    "customPosition": true,
+                    "text": "Akili ran as fast as she could",
+                    "customPosition": false,
                     "x": -423.0,
                     "y": 182.0
+                },
+                {
+                    "id": 1,
+                    "text": "towards the river.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
                 }
             ],
             "audioFile": "audio_english_aatr_6_stanza_page_8",
@@ -3409,32 +3437,6 @@
                 },
                 {
                     "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 2,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 6,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
-                },
-                {
-                    "stanzaID": 0,
                     "type": 7,
                     "prompts": [
                         1,
@@ -3778,7 +3780,7 @@
                 },
                 {
                     "id": 1,
-                    "text": "“You can do it! Akili! Believe in yourself!”",
+                    "text": "\"You can do it! Akili! Believe in yourself!\"",
                     "customPosition": true,
                     "x": -338.989990234375,
                     "y": 154.0
@@ -4787,14 +4789,14 @@
                 {
                     "start": 2986,
                     "wordIdx": 5,
-                    "audio": "an",
+                    "audio": "as",
                     "end": 3143,
                     "starWord": "No"
                 },
                 {
                     "start": 3161,
                     "wordIdx": 6,
-                    "audio": "",
+                    "audio": "an",
                     "end": 3277,
                     "starWord": "No"
                 },
@@ -5172,14 +5174,14 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Wow! Akili did it!",
-                    "customPosition": true,
+                    "text": "Wow! Akili did it! Happy␢Hippo and Little␢Lion",
+                    "customPosition": false,
                     "x": -139.35000610351563,
                     "y": 182.0
                 },
                 {
                     "id": 1,
-                    "text": "Happy␢Hippo and Little␢Lion were so proud of Akili!",
+                    "text": "were so proud of Akili!",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -7316,84 +7318,6 @@
                 }
             ],
             "triggers": [
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 5,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 0,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 5,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 2,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
-                },
-                {
-                    "stanzaID": 0,
-                    "type": 8,
-                    "prompts": [
-                        1,
-                        0
-                    ],
-                    "invokers": [
-                        {
-                            "invokerType": 0,
-                            "invokerID": 0,
-                            "symmetricallyPaired": false
-                        },
-                        {
-                            "invokerType": 0,
-                            "invokerID": 5,
-                            "symmetricallyPaired": false
-                        }
-                    ],
-                    "timing": 0.0,
-                    "animId": 0,
-                    "timestamp": 0,
-                    "sceneObjectId": 3,
-                    "symmetricPairingId": 0,
-                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
-                },
                 {
                     "stanzaID": 0,
                     "type": 7,

@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: CuriousLearning
-  productName: Akili and the river
+  productName: Akili and the River
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -243,7 +243,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: E:/Curious Learning/Making Universal APKs from AABs/ubongo.keystore
+  AndroidKeystoreName: /Users/benburrage/Desktop/FTM/ubongo.keystore
   AndroidKeyaliasName: ubongo
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
