@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e8cd20a32069f4583c0f96074eb0c1, type: 3}
   m_Name: AkiliAndTheRiver
   m_EditorClassIdentifier: 
-  BookAssetBundleName: akiliriver
+  BookAssetBundleName: i_book
   BookCover:
   - BookLanguage: 0
     BookCoverSprite: {fileID: 21300000, guid: b2e9b2235e252304fa524499f493c45c, type: 3}
@@ -21,7 +21,7 @@ MonoBehaviour:
   BookTitleTranslations:
   - BookLevel: 2
     BookLanguage: 0
-    BookFileName: AkiliRiverLevel2
+    BookFileName: KIS_iWords
   - BookLevel: 2
     BookLanguage: 1
     BookFileName: SWA_AkiliRiverLevel2

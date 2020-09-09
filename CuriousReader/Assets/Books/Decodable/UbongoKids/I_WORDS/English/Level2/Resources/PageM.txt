@@ -1,0 +1,85 @@
+# Scene Objects Count: 71
+
+# !!! Page index starts at 1 and the end page is inclusive !!!
+# !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
+# Syntax Example:
+#   ObjectName-animation_name > 1:10 & 12x3 & 17 & 20:25x3
+# Description:
+#   >       => Separates object name from page instructions
+#   &       => Connects the instructions
+#   1:10    => Put object on pages 1 through 10 (inclusive)
+#   12x3    => Put object on page 12, 3 times
+#   17      => Put object on page 17
+#   20:25x3 => Put object on pages 20 through 25, 3 times on each
+
+A_pit >
+big_fish >
+Bus > 5&8&9&16
+Bus_stop > 
+candy_shop > 10
+Chair > 14&15&17
+chilli_peppers > 13&14
+City_light > 16
+Cloud > 1:17
+cup_of_hot_tea >
+fig_tree > 1:2 & 3x2
+fish >
+fish_chips_fin >
+fish_digs_a_hole >
+fish_flapping_fin >
+fish_hides >
+fish_looks_frightened >
+fish_slipping >
+fish_sweating >
+fish_swims_in_circles >
+fish_tripping >
+forest_of_trees > 5&16
+fruit_and_veg_shop > 11
+furniture_seller > 14
+furniture_store > 14&15
+Grandma_hyena_back_side > 3
+Grandma_hyena_eyes_widen > 7&15
+Grandma_hyena_holding_chair >
+Grandma_hyena_holding_hands_with_small_hyena >
+Grandma_hyena_sipping from_cup_of_hot_tea > 17
+Grandma_hyena_sitting > 6&9
+Grandma_hyena_sitting_on_chair_with_feet_up >
+Grandma_hyena_walking > 10&11
+small_hyena_back_side > 3
+hill > 1&2
+inside_of_bus_(three_seats) > 6&7
+man > 10
+market > 12
+pond >
+rock > 3
+Shop >
+Sky > 1:17
+small_fish >
+small_hyena > 1
+small_hyena_holding hands with bibi > 2
+small_hyena_holding_hands_with_warthog > 7
+small_hyena_looking_worried > 12
+small_hyena_playing_with_toys >17
+small_hyena_running >
+small_hyena_shaking_head >
+small_hyena_sitting > 4&6&9
+small_hyena_standing >
+small_hyena_walking > 10&11&13&14&15
+stool > 14&15
+sun > 16
+tall_buildings_(daytime) > 3
+thought_bubble > 4
+toy_ship >
+toys > 17
+vegetable_stall > 13&14
+village > 3
+warthog_eyes_widen >
+warthog_holding_hands_with_small_hyena >
+warthog_looking_worried > 12
+warthog_playing_with_toys >16
+warthog_shaking_head > 10&11&13&14&15
+warthog_sitting > 6&9
+water_body >
+white_radishes > 13&14
+woman > 11
+young_lady_(market_seller)_pointing > 14

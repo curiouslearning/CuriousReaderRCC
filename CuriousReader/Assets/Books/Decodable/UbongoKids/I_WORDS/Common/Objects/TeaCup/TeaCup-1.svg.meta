@@ -1,0 +1,63 @@
+fileFormatVersion: 2
+guid: 8463231babf6d3e49a2e1824aa5945cb
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: i_book
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
+  svgType: 0
+  texturedSpriteMeshType: 0
+  svgPixelsPerUnit: 100
+  gradientResolution: 64
+  alignment: 0
+  customPivot: {x: 0, y: 0}
+  generatePhysicsShape: 1
+  viewportOptions: 0
+  preserveViewport: 0
+  advancedMode: 0
+  predefinedResolutionIndex: 1
+  targetResolution: 1080
+  resolutionMultiplier: 1
+  stepDistance: 10
+  samplingStepDistance: 100
+  maxCordDeviationEnabled: 0
+  maxCordDeviation: 1
+  maxTangentAngleEnabled: 0
+  maxTangentAngle: 5
+  keepTextureAspectRatio: 1
+  textureSize: 256
+  textureWidth: 256
+  textureHeight: 256
+  wrapMode: 0
+  filterMode: 1
+  sampleCount: 4
+  preserveSVGImageAspect: 0
+  useSVGPixelsPerUnit: 0
+  spriteData:
+    TessellationDetail: 0
+    SpriteRect:
+      name: TeaCup-1Sprite
+      originalName: 
+      pivot: {x: 0.513408, y: 0.51555175}
+      alignment: 0
+      border: {x: 0, y: 0, z: 0, w: 0}
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 18
+        height: 15
+      spriteID: a83203f8da106d14083c97678cdc6df3
+      internalID: 0
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -9, y: 7.5}
+      - {x: -7, y: -4.5}
+      - {x: -5, y: -7.5}
+      - {x: 2, y: -7.5}
+      - {x: 4, y: -3.5}
+      - {x: 9, y: 5.499999}
+      - {x: -1, y: 7.5}
