@@ -1,0 +1,75 @@
+# Scene Objects Count: 61
+
+# !!! Page index starts at 1 and the end page is inclusive !!!
+# !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
+# Syntax Example:
+#   ObjectName-animation_name > 1:10 & 12x3 & 17 & 20:25x3
+# Description:
+#   >       => Separates object name from page instructions
+#   &       => Connects the instructions
+#   1:10    => Put object on pages 1 through 10 (inclusive)
+#   12x3    => Put object on page 12, 3 times
+#   17      => Put object on page 17
+#   20:25x3 => Put object on pages 20 through 25, 3 times on each
+
+Bottle >9&10
+Bowl-green >13
+Bowl-rice >13
+Bowl-stew >13
+Cat-dream >
+Cat-eatsvg >
+Cat-get_fat >
+Cat-get_stuck >
+Cat-move >7&10
+Cat-play >8&9&11
+Cat-run >
+Cat-sit >
+Cat-sleep >
+Cat-smile >
+Cat-stand_up >
+Cat-trip >
+Cat-waddle >
+Cat-wag_tail >
+Cat-walk >
+Cloud-sky > 1:12x2
+Couch >14
+DiningTable >13
+Duck-play >9&10
+Girl-cuts_meat > 6&8
+Girl-eats >4:5
+girl_waves >3
+Jam >
+Lamp-flame_inside >4:8
+Man-be_surprised >
+Man-blink >
+Man-dressed_in_suit_and_briefcase > 11
+Man-eats > 13
+Man-fall_over >
+Man-holds_younger_boy > 12
+Man-point_finger >
+Man-runs >
+Man-tip_his_hat >
+Man-wave >
+Man-where_a_black_hat >
+Mat-dark > 1:8
+Mat-light >
+Meat > 6&8
+Newpaper >
+OlderBoy-eat > 13
+OlderBoy-waves > 12
+Pot > 1:8
+Sand > 10
+Sky > 1:14
+Tomato > 1:8
+Toy >
+Tv > 14
+Woman-dressed_in_kanga >1
+Woman-eats >13
+Woman-peels_tomato > 2:6
+Woman-sits >
+WoolAndNeedles >14
+Yam >
+YoungBoy-eats >13
+YoungBoy-points > 1&7&9
+YoungBoy-sleeps > 14
+YoungBoy-walks >8&11
