@@ -39,17 +39,25 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Cat-get_fat-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: c13cc0bef0d2c074e9401a5f7172e48b
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -10, y: 18}
+      - {x: -24, y: -9}
+      - {x: -21, y: -24}
+      - {x: 10, y: -26}
+      - {x: 21, y: -5}
+      - {x: 4, y: 6}
+      - {x: 0, y: 19}

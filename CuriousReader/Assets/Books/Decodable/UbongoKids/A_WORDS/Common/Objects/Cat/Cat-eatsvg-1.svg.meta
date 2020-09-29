@@ -39,17 +39,26 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Cat-eatsvg-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: f6b6cfbf9cf9f4f42a5713ba0f01e8c8
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 15, y: 3}
+      - {x: 8, y: 19}
+      - {x: -13, y: 16}
+      - {x: -15, y: 0}
+      - {x: -5, y: -4}
+      - {x: -7, y: -28}
+      - {x: 11, y: -27}
+      - {x: 24, y: -3}

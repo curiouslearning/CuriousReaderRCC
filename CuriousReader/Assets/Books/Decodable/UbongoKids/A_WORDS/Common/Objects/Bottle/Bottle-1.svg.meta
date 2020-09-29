@@ -14,8 +14,8 @@ ScriptedImporter:
   gradientResolution: 64
   alignment: 0
   customPivot: {x: 0, y: 0}
-  generatePhysicsShape: 1
-  viewportOptions: 1
+  generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -39,17 +39,22 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Bottle-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.49475968, y: 0.5006001}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 18
+        height: 50
       spriteID: 70f10decf1de90d458e7de821bdbde48
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -9, y: 25}
+      - {x: -9, y: -25}
+      - {x: 9, y: -25}
+      - {x: 9, y: 25}

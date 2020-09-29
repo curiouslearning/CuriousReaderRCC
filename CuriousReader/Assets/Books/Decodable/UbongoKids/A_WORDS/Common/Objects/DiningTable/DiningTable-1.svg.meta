@@ -15,7 +15,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 1
-  viewportOptions: 1
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -39,17 +39,24 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: DiningTable-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.49961537, y: 0.49558842}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 260
+        height: 51
       spriteID: 66e5b3b433b75e4408b3662355600f65
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 127, y: -4.5}
+      - {x: 75, y: 25.5}
+      - {x: -78, y: 25.5}
+      - {x: -127, y: -1.5}
+      - {x: -130, y: -25.5}
+      - {x: 130, y: -21.5}

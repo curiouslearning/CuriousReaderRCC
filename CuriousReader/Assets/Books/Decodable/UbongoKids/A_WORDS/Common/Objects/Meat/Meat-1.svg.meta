@@ -15,7 +15,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 1
-  viewportOptions: 1
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -39,17 +39,24 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Meat-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.49286193, y: 0.50452423}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 15
+        height: 8
       spriteID: 6c720d7bd18376f43b2fc668cb9c46d2
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -2.5, y: 4}
+      - {x: -7.5, y: 1}
+      - {x: -7.5, y: -3}
+      - {x: -6.428571, y: -4}
+      - {x: 7.5, y: -4}
+      - {x: 7.5, y: 0}

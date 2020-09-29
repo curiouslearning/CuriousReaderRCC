@@ -39,17 +39,24 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Cat-dream-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: 305c899e02b94664ab5b77554a0c0863
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -21, y: -10}
+      - {x: -20, y: -26}
+      - {x: 1, y: -27}
+      - {x: 26, y: -21}
+      - {x: 24, y: -8}
+      - {x: -11, y: -1}

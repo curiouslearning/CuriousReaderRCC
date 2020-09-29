@@ -15,7 +15,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 1
-  viewportOptions: 1
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -39,17 +39,22 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Lamp-flame_inside-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.49962956, y: 0.50292575}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 27
+        height: 31
       spriteID: 4ee592dc879506544a43b9dddef5a44f
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 5.4000015, y: 15.5}
+      - {x: -6.749999, y: 15.5}
+      - {x: -8.5, y: -14.5}
+      - {x: 9.449999, y: -15.5}
