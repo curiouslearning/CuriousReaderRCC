@@ -1,0 +1,65 @@
+# Scene Objects Count: 51
+
+# !!! Page index starts at 1 and the end page is inclusive !!!
+# !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
+# Syntax Example:
+#   ObjectName-animation_name > 1:10 & 12x3 & 17 & 20:25x3
+# Description:
+#   >       => Separates object name from page instructions
+#   &       => Connects the instructions
+#   1:10    => Put object on pages 1 through 10 (inclusive)
+#   12x3    => Put object on page 12, 3 times
+#   17      => Put object on page 17
+#   20:25x3 => Put object on pages 20 through 25, 3 times on each
+
+BackgroundSky >1:16
+Basket-placed_upside_down >1:2 & 4 & 6:9 & 11:12 & 14:16
+Bat-animal_being_hit_by_stone >10
+Bat-animal_flying >11:12
+Bat-animal_sleeping >4 & 6:9 & 13:14
+Bottle-empty >4 & 6:7 & 9 & 12 & 14
+Box >
+Boy-aiming_plastic_bottle_at_mango >8
+Boy-gasps >16
+Boy-holding_a_stone >9
+Boy-holding_basket >1:7 & 11 & 14:15
+Boy-holding_mango >13:15
+Boy-standing_on_tiptoes_and_reaching_up_with_hand >6:7
+Boy-tall >12 & 14:15
+Boy-throwing_bottle >8
+Boy-walking >1:2 & 14:15
+Bubble-thought >2:3 & 15
+Bucket >4 & 6:9 & 12
+Bucket-silver >
+Clock >
+Cloud >
+Dog-brown >
+Door >
+Fog >
+Frog-green_frog >
+Frog-green_frog_holding_mop >
+Frog-green_frog_jumping_forwards >
+Frog-green_frog_jumping_up >
+Frog-green_frog_jumping_up_and_down >
+Frog-green_frog_looking_confused >
+Frog-green_frog_looking_relieved >
+Frog-green_frog_moves_mop_left_and_right_on_the_ground >
+Frog-green_frog_sweating >
+Grain >
+House >1:2 & 15
+Log >
+Mops-two >
+Mother >1:2 & 15
+Pepper-green >2 & 15
+Pot >
+Rock >
+Shade >
+Shop >
+Shop-inside >
+Stalls >3
+Stone >
+Stone-patches >
+Sun >
+Tree-mango >4 & 6:9 & 12
+Tree-short >4 & 6:9 & 12
+Zzz >

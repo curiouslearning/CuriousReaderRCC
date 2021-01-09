@@ -1,0 +1,55 @@
+# Scene Objects Count: 41
+
+# !!! Page index starts at 1 and the end page is inclusive !!!
+# !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
+# Syntax Example:
+#   ObjectName-animation_name > 1:10 & 12x3 & 17 & 20:25x3
+# Description:
+#   >       => Separates object name from page instructions
+#   &       => Connects the instructions
+#   1:10    => Put object on pages 1 through 10 (inclusive)
+#   12x3    => Put object on page 12, 3 times
+#   17      => Put object on page 17
+#   20:25x3 => Put object on pages 20 through 25, 3 times on each
+
+BackgroundSky > 1:16
+Backpack > 4:15
+Boy-peeks_kneeling >
+Boy-peeks_through_mesh >
+Boy-petting >
+Boy-sitting >
+Bubble > 6
+Bucket-dates > 12:16
+Chair >
+Chicken-coop >
+Cloud > 1:16x2
+Cockroach-carrying > 4:16
+Dates > 6
+Eggs >
+Grains >
+Hawk- walk > 2&7:9
+Hawk-dancing >5
+Hawk-giving_harp_to_man > 12
+Hawk-sitting > 1
+Hawk-strum_a_zeze > 3&4
+Hen-red_flying >
+Hen-red_hen >
+Hen-red_hen_closing_eyes >
+Hen-red_hen_pecking >
+Hen-red_hen_sad_face >
+Hen-red_hen_smiling >
+Hen-red_hen_standing >
+Hen-red_hen_walking >
+Hoe >
+Man-fat_man_ wearing_ring > 16
+Man-fat_man_nodding_head > 11&13&14
+Man-fat_man_ploughing_the_land > 9:10
+Man-fat_man_pointing_finger > 15
+Man-fat_man_shaking_head > 12
+Mango > 8&11&13
+Nest >
+Ring > 1:16
+Road > 1:16
+Tree > 1
+Tree-dates_palm > 9:16
+Zeze >

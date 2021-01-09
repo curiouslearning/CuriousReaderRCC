@@ -105,7 +105,6 @@ public class LoadAssetFromJSON : MonoBehaviour {
 #endif
 
         TextAsset selectedBookJson = ShelfManager.LoadedAssetBundle.LoadAsset(selectedBookJsonFileName) as TextAsset;
-
         if (selectedBookJson == null) {
 			Debug.LogError("Unable to load selected book Json file and load the story data.");
 			return;
