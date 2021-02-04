@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5b0e31439be698c4487ad96f99aab1e9
+guid: 05e121aba8dbd5849a50de34124d8d74
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -15,7 +15,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  viewportOptions: 0
+  viewportOptions: 1
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -39,17 +39,22 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Girl-with_lamp-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: f95fc7affd2bf7c4bbe60e70ea3529fe
+        width: 100
+        height: 100
+      spriteID: 3fce28a52c7bb0c4da84e3f891861cae
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -1, y: -17}
+      - {x: -1, y: 16}
+      - {x: 16, y: 16}
+      - {x: 16, y: -17}

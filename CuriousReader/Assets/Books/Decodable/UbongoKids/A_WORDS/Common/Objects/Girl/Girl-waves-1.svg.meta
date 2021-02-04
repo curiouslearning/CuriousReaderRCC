@@ -39,17 +39,22 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Girl-waves-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.50194126, y: 0.4989969}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 43
+        height: 91
       spriteID: 22a6d4de33275614b934b8dd0e4799ab
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -20.5, y: -44.5}
+      - {x: -20.5, y: 44.5}
+      - {x: 21.5, y: 44.5}
+      - {x: 21.5, y: -44.5}

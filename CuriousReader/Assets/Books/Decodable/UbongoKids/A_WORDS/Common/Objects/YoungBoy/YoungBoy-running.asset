@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: YoungBoy-running
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 1fd8a65e8acc67b478dc5e7769778e6f, type: 3}
+  - {fileID: 3286163911610860551, guid: bf0bc8492b31fd24b90337cf4b3fd83d, type: 3}
+  - {fileID: 3286163911610860551, guid: a199190a8f6f62d439eab634e272e09c, type: 3}
+  - {fileID: 3286163911610860551, guid: 7327971eef6d85e4f9dde05f3a99368c, type: 3}
+  - {fileID: 3286163911610860551, guid: 5769fc60f5c0296419053fd6bb048b15, type: 3}
+  - {fileID: 3286163911610860551, guid: 695fd08a8a23c5e4c904ee0bb356ceeb, type: 3}
+  - {fileID: 3286163911610860551, guid: 03dd5ce0733eb484f9d50015d349c085, type: 3}
+  - {fileID: 3286163911610860551, guid: d86527146f5da1b4d8a15e7dd160dcc8, type: 3}
+  - {fileID: 3286163911610860551, guid: 61fd91f7bb8b7d24d963d81fee3c0748, type: 3}
+  - {fileID: 3286163911610860551, guid: 2e2cf3256aad6bc4fa580d6ef89a1ac7, type: 3}
+  - {fileID: 3286163911610860551, guid: d020015f2c5970442949142afb401785, type: 3}
+  - {fileID: 3286163911610860551, guid: df0cfdee4561d774e9fdaf5af4230f93, type: 3}
+  - {fileID: 3286163911610860551, guid: d48d3ad53cdb70d4fae05074779cd7aa, type: 3}
+  - {fileID: 3286163911610860551, guid: e44fcc230ee4cf84cb8fdb2e6659c61c, type: 3}
+  - {fileID: 3286163911610860551, guid: 366a71393bc663946be1f48ce01ce4f5, type: 3}
+  - {fileID: 3286163911610860551, guid: 23809cc3563597648b89af030aa0334d, type: 3}
+  - {fileID: 3286163911610860551, guid: bc5aac01d237d8c4e92c90f1284661f5, type: 3}
+  - {fileID: 3286163911610860551, guid: 3b085f305f4a53c41825752f4a101acd, type: 3}
+  - {fileID: 3286163911610860551, guid: e600703df7d320f49ac502e2e61a9ea9, type: 3}
+  framesDuration: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000

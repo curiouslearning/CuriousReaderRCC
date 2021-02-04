@@ -39,17 +39,24 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Girl-eats-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: 94bda528fa48735419022d52727982a4
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -8, y: -30}
+      - {x: -12, y: -19}
+      - {x: -6, y: 8}
+      - {x: 6, y: 8}
+      - {x: 8, y: -5}
+      - {x: 17, y: -25}

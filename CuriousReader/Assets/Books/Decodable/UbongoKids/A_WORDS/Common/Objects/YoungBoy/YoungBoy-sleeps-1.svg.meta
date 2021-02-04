@@ -54,6 +54,6 @@ ScriptedImporter:
       internalID: 0
     PhysicsOutlines:
     - Vertices:
-      - {x: 6, y: 10}
-      - {x: 1, y: -7}
-      - {x: 12, y: -8}
+      - {x: 12, y: 15}
+      - {x: 7, y: -5}
+      - {x: 17, y: -5}

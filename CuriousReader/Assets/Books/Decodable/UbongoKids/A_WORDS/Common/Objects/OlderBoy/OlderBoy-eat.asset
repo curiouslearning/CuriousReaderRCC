@@ -15,4 +15,6 @@ MonoBehaviour:
   fps: 30
   frames:
   - {fileID: 3286163911610860551, guid: 32758f26e49880441896902b7c7b477a, type: 3}
-  framesDuration: 1e000000
+  - {fileID: 3286163911610860551, guid: 435873ebbb19c6b4f93508af96398ce0, type: 3}
+  - {fileID: 3286163911610860551, guid: 7da08528cd60b7344878cc7786f647d9, type: 3}
+  framesDuration: 0a0000000a0000000a000000

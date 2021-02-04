@@ -53,6 +53,8 @@ public class ShelfManager : MonoBehaviour
 
     void onBookSceneLoadClick(string i_assetBundleName, string i_assetBundleBookFileName)
     {
+        LoadedAssetBundle = null;
+        
         if (m_startedLoadingABook) return;
 
         Debug.Log($"Loading book: {i_assetBundleBookFileName} from: {i_assetBundleName}");

@@ -37,9 +37,7 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
@@ -53,15 +51,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -4,
-                    "imageName": "Mat-dark-1",
+                    "imageName": "Mat",
                     "inText": false,
                     "label": "Mat-dark",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Mat-dark"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 3,
@@ -128,43 +124,43 @@
                     "tag": "",
                     "posX": 47.0,
                     "posY": 12.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 800.0,
                     "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Woman-dressed_in_kanga-1",
+                    "imageName": "Woman-sits-1",
                     "inText": false,
                     "label": "Woman-dressed_in_kanga",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Woman-dressed_in_kanga"
+                        "Woman-sits"
                     ]
                 },
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": 427.0,
+                    "posX": -43.0,
                     "posY": 32.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 850.0,
                     "scaleY": 850.0,
                     "rotX": 0.0,
-                    "rotY": 180.0,
+                    "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "YoungBoy-points-1",
+                    "orderInLayer": -1,
+                    "imageName": "YoungBoy-sits_points_right-1",
                     "inText": false,
                     "label": "YoungBoy-points",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "YoungBoy-points"
+                        "YoungBoy-sits_points_right"
                     ]
                 },
                 {
@@ -257,9 +253,84 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"YoungBoy-sits_points_right\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Woman-sits\"}"
+                }
+            ]
         },
         {
             "pageNumber": 2,
@@ -288,9 +359,7 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
@@ -304,15 +373,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -4,
-                    "imageName": "Mat-dark-1",
+                    "imageName": "Mat",
                     "inText": false,
                     "label": "Mat-dark",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Mat-dark"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 3,
@@ -386,15 +453,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Woman-peels_tomato-1",
+                    "imageName": "Woman-peels_tomato",
                     "inText": false,
                     "label": "Woman-peels_tomato",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Woman-peels_tomato"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 6,
@@ -426,9 +491,52 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 3,
@@ -457,18 +565,16 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 276.0,
-                    "posY": -61.0,
-                    "posZ": 0.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
+                    "posX": 249.0,
+                    "posY": -18.0,
+                    "posZ": -3.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -479,7 +585,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Girl-waves"
+                    ]
                 },
                 {
                     "id": 3,
@@ -493,15 +601,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -3,
-                    "imageName": "Mat-dark-1",
+                    "imageName": "Mat",
                     "inText": false,
                     "label": "Mat-dark",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Mat-dark"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 4,
@@ -575,15 +681,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Woman-peels_tomato-1",
+                    "imageName": "Woman-peels_tomato",
                     "inText": false,
                     "label": "Woman-peels_tomato",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Woman-peels_tomato"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 7,
@@ -668,22 +772,24 @@
                 {
                     "id": 11,
                     "tag": "",
-                    "posX": 181.0,
-                    "posY": -50.0,
+                    "posX": -1.0,
+                    "posY": 15.0,
                     "posZ": 0.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "YoungBoy-sits-1",
+                    "imageName": "YoungBoy-points-1",
                     "inText": false,
                     "label": "Boy",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "YoungBoy-points"
+                    ]
                 }
             ],
             "texts": [
@@ -695,9 +801,84 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 11,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Girl-waves\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 11,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"YoungBoy-points\"}"
+                }
+            ]
         },
         {
             "pageNumber": 4,
@@ -726,30 +907,28 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 41.0,
-                    "posY": -6.0,
-                    "posZ": 0.0,
-                    "scaleX": 420.0,
-                    "scaleY": 420.0,
+                    "posX": -1.0,
+                    "posY": -1.0,
+                    "posZ": -3.0,
+                    "scaleX": 750.0,
+                    "scaleY": 750.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -3,
-                    "imageName": "Girl-eats-1",
+                    "imageName": "Girl-with_lamp-1",
                     "inText": false,
                     "label": "Girl-eats",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Girl-eats"
+                        "Girl-with_lamp"
                     ]
                 },
                 {
@@ -757,9 +936,9 @@
                     "tag": "",
                     "posX": 86.0,
                     "posY": -65.0,
-                    "posZ": 0.0,
-                    "scaleX": 200.0,
-                    "scaleY": 200.0,
+                    "posZ": -3.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -786,15 +965,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -4,
-                    "imageName": "Mat-dark-1",
+                    "imageName": "Mat",
                     "inText": false,
                     "label": "Mat-dark",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Mat-dark"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 5,
@@ -868,29 +1045,27 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Woman-peels_tomato-1",
+                    "imageName": "Woman-peels_tomato",
                     "inText": false,
                     "label": "Woman-peels_tomato",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Woman-peels_tomato"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 8,
                     "tag": "",
-                    "posX": 205.0,
-                    "posY": -47.0,
+                    "posX": -1.0,
+                    "posY": 15.0,
                     "posZ": 0.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "YoungBoy-sits-1",
+                    "imageName": "YoungBoy-sits_points_right-1",
                     "inText": false,
                     "label": "Boy",
                     "destroyOnCollision": "",
@@ -928,9 +1103,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Girl-with_lamp\"}"
+                }
+            ]
         },
         {
             "pageNumber": 5,
@@ -966,11 +1185,11 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 41.0,
-                    "posY": -6.0,
+                    "posX": 82.0,
+                    "posY": 8.0,
                     "posZ": 0.0,
-                    "scaleX": 420.0,
-                    "scaleY": 420.0,
+                    "scaleX": 450.0,
+                    "scaleY": 450.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -981,30 +1200,28 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Girl-eats"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 125.0,
-                    "posY": -78.0,
+                    "posX": 341.0,
+                    "posY": -25.0,
                     "posZ": 0.0,
-                    "scaleX": 220.0,
-                    "scaleY": 220.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Lamp-flame_inside-1",
+                    "imageName": "Lamp-flame_off-1",
                     "inText": false,
                     "label": "Lamp-flame_inside",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Lamp-flame_inside"
+                        "Lamp-flame_off"
                     ]
                 },
                 {
@@ -1019,15 +1236,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Mat-dark-1",
+                    "imageName": "Mat",
                     "inText": false,
                     "label": "Mat-dark",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Mat-dark"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 5,
@@ -1101,29 +1316,29 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Woman-peels_tomato-1",
+                    "imageName": "Woman-peels_tomato",
                     "inText": false,
                     "label": "Woman-peels_tomato",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Woman-peels_tomato"
+                        "Cat-run"
                     ]
                 },
                 {
                     "id": 8,
                     "tag": "",
-                    "posX": 202.0,
-                    "posY": -47.0,
+                    "posX": 41.0,
+                    "posY": 0.0,
                     "posZ": 0.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
+                    "scaleX": 650.0,
+                    "scaleY": 650.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "YoungBoy-sits-1",
+                    "imageName": "YoungBoy-sits_points_right-1",
                     "inText": false,
                     "label": "Boy",
                     "destroyOnCollision": "",
@@ -1161,9 +1376,79 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Lamp-flame_off\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 6,
@@ -1192,44 +1477,42 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -1.0,
-                    "posY": 15.0,
+                    "posX": 8.0,
+                    "posY": 20.0,
                     "posZ": 0.0,
-                    "scaleX": 720.0,
-                    "scaleY": 720.0,
+                    "scaleX": 750.0,
+                    "scaleY": 750.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "Girl-cuts_meat-1",
+                    "imageName": "Girl-cuts_meat",
                     "inText": false,
                     "label": "Girl-cuts_meat",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Girl-cuts_meat"
+                        "Cat-run"
                     ]
                 },
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 135.0,
-                    "posY": -88.0,
+                    "posX": 157.0,
+                    "posY": -61.0,
                     "posZ": 0.0,
                     "scaleX": 220.0,
                     "scaleY": 220.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -3,
                     "imageName": "Lamp-flame_inside-1",
                     "inText": false,
                     "label": "Lamp-flame_inside",
@@ -1252,15 +1535,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Mat-dark-1",
+                    "imageName": "Mat",
                     "inText": false,
                     "label": "Mat-dark",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Mat-dark"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 5,
@@ -1354,14 +1635,14 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Woman-peels_tomato-1",
+                    "imageName": "Woman-peels_tomato",
                     "inText": false,
                     "label": "Woman-peels_tomato",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Woman-peels_tomato"
+                        "Cat-run"
                     ]
                 },
                 {
@@ -1407,16 +1688,16 @@
                 {
                     "id": 11,
                     "tag": "",
-                    "posX": 213.0,
-                    "posY": -42.0,
+                    "posX": 41.0,
+                    "posY": 10.0,
                     "posZ": 0.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
+                    "scaleX": 650.0,
+                    "scaleY": 650.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "YoungBoy-sits-1",
+                    "imageName": "YoungBoy-sits_points_right-1",
                     "inText": false,
                     "label": "Boy",
                     "destroyOnCollision": "",
@@ -1434,9 +1715,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 7,
@@ -1450,23 +1775,23 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -300.0,
-                    "posY": -61.0,
-                    "posZ": 0.0,
-                    "scaleX": 400.0,
-                    "scaleY": 400.0,
+                    "posX": -36.0,
+                    "posY": 12.0,
+                    "posZ": -3.0,
+                    "scaleX": 650.0,
+                    "scaleY": 650.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "Cat-move-1",
+                    "imageName": "Cat-stand-1",
                     "inText": false,
                     "label": "Cat-move",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Cat-move"
+                        "Cat-stand"
                     ]
                 },
                 {
@@ -1487,14 +1812,12 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 83.0,
+                    "posX": 179.0,
                     "posY": -26.0,
                     "posZ": 0.0,
                     "scaleX": 220.0,
@@ -1509,14 +1832,12 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 162.0,
+                    "posX": 255.0,
                     "posY": -76.0,
                     "posZ": 0.0,
                     "scaleX": 250.0,
@@ -1524,7 +1845,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
+                    "orderInLayer": -2,
                     "imageName": "Lamp-flame_inside-1",
                     "inText": false,
                     "label": "Lamp-flame_inside",
@@ -1538,7 +1859,7 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": 302.0,
+                    "posX": 362.0,
                     "posY": -134.0,
                     "posZ": 0.0,
                     "scaleX": 500.0,
@@ -1547,20 +1868,18 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Mat-dark-1",
+                    "imageName": "Mat",
                     "inText": false,
                     "label": "Mat-dark",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Mat-dark"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": -29.0,
+                    "posX": 64.0,
                     "posY": -118.0,
                     "posZ": 0.0,
                     "scaleX": 500.0,
@@ -1600,7 +1919,7 @@
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": -2.0,
+                    "posX": 91.0,
                     "posY": -119.0,
                     "posZ": 0.0,
                     "scaleX": 300.0,
@@ -1620,23 +1939,23 @@
                 {
                     "id": 8,
                     "tag": "",
-                    "posX": 182.0,
-                    "posY": 36.0,
-                    "posZ": 0.0,
-                    "scaleX": 1000.0,
-                    "scaleY": 1000.0,
+                    "posX": 0.0,
+                    "posY": -24.0,
+                    "posZ": -3.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
                     "rotX": 0.0,
-                    "rotY": 180.0,
+                    "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "YoungBoy-points-1",
+                    "imageName": "YoungBoy-side_sits_points-1",
                     "inText": false,
                     "label": "YoungBoy-points",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "YoungBoy-points"
+                        "YoungBoy-side_sits_points"
                     ]
                 }
             ],
@@ -1649,9 +1968,79 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Cat-stand\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"YoungBoy-side_sits_points\"}"
+                }
+            ]
         },
         {
             "pageNumber": 8,
@@ -1665,23 +2054,23 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -392.0,
+                    "posX": 1.0,
                     "posY": 13.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 800.0,
                     "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Cat-play-1",
+                    "imageName": "Cat-run-1",
                     "inText": false,
                     "label": "Cat-play",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Cat-play"
+                        "Cat-run"
                     ]
                 },
                 {
@@ -1702,9 +2091,7 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
@@ -1717,44 +2104,40 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -5,
-                    "imageName": "Woman-peels_tomato-1",
+                    "orderInLayer": -3,
+                    "imageName": "Woman-peels_tomato",
                     "inText": false,
                     "label": "woman",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": -8.0,
-                    "posY": 14.0,
+                    "posX": 8.0,
+                    "posY": 20.0,
                     "posZ": 0.0,
-                    "scaleX": 720.0,
-                    "scaleY": 720.0,
+                    "scaleX": 750.0,
+                    "scaleY": 750.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "Girl-cuts_meat-1",
+                    "orderInLayer": 0,
+                    "imageName": "Girl-cuts_meat",
                     "inText": false,
                     "label": "Girl-cuts_meat",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Girl-cuts_meat"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 4,
                     "tag": "",
                     "posX": 143.0,
-                    "posY": -83.0,
+                    "posY": -63.0,
                     "posZ": 0.0,
                     "scaleX": 250.0,
                     "scaleY": 250.0,
@@ -1784,15 +2167,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Mat-dark-1",
+                    "imageName": "Mat",
                     "inText": false,
                     "label": "Mat-dark",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Mat-dark"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 6,
@@ -1817,8 +2198,8 @@
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": -36.0,
-                    "posY": -57.0,
+                    "posX": -1.0,
+                    "posY": -59.0,
                     "posZ": 0.0,
                     "scaleX": 300.0,
                     "scaleY": 300.0,
@@ -1826,7 +2207,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -4,
-                    "imageName": "Pot-1",
+                    "imageName": "Pot",
                     "inText": false,
                     "label": "Pot",
                     "destroyOnCollision": "",
@@ -1877,23 +2258,23 @@
                 {
                     "id": 10,
                     "tag": "",
-                    "posX": 6.0,
+                    "posX": -25.0,
                     "posY": 20.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 750.0,
                     "scaleY": 750.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "YoungBoy-walks-1",
+                    "imageName": "YoungBoy-running-1",
                     "inText": false,
                     "label": "YoungBoy-walks",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "YoungBoy-walks"
+                        "YoungBoy-running"
                     ]
                 },
                 {
@@ -1946,9 +2327,84 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 10,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Cat-run\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 10,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"YoungBoy-running\"}"
+                }
+            ]
         },
         {
             "pageNumber": 9,
@@ -1982,8 +2438,8 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -23.0,
-                    "posY": 4.0,
+                    "posX": 306.0,
+                    "posY": -17.0,
                     "posZ": 0.0,
                     "scaleX": 700.0,
                     "scaleY": 700.0,
@@ -1991,14 +2447,14 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Cat-play-1",
+                    "imageName": "Cat-run-1",
                     "inText": false,
                     "label": "Cat-play",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Cat-play"
+                        "Cat-run"
                     ]
                 },
                 {
@@ -2012,7 +2468,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -4,
+                    "orderInLayer": -3,
                     "imageName": "Land-sand_boundary-1",
                     "inText": false,
                     "label": "Sand",
@@ -2048,7 +2504,7 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": -16.0,
+                    "posX": -34.0,
                     "posY": 4.0,
                     "posZ": 0.0,
                     "scaleX": 700.0,
@@ -2057,15 +2513,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Duck-play-1",
+                    "imageName": "Duck-play",
                     "inText": false,
                     "label": "Duck-play",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Duck-play"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 5,
@@ -2092,21 +2546,21 @@
                     "tag": "",
                     "posX": 0.0,
                     "posY": -2.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 800.0,
                     "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -5,
-                    "imageName": "OlderBoy-standing_and_pointing-1",
+                    "orderInLayer": -4,
+                    "imageName": "YoungBoy-stands-1",
                     "inText": false,
                     "label": "YoungBoy-points",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "YoungBoy-points"
+                        "YoungBoy-stands"
                     ]
                 }
             ],
@@ -2119,9 +2573,91 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"YoungBoy-stands\"}"
+                }
+            ]
         },
         {
             "pageNumber": 10,
@@ -2137,7 +2673,7 @@
                     "tag": "",
                     "posX": 86.0,
                     "posY": -28.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 220.0,
                     "scaleY": 220.0,
                     "rotX": 0.0,
@@ -2150,51 +2686,29 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "YoungBoy-plays_with_bottle"
+                    ]
                 },
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -6.0,
-                    "posY": 7.0,
+                    "posX": 14.0,
+                    "posY": -46.0,
                     "posZ": 0.0,
-                    "scaleX": 500.0,
-                    "scaleY": 500.0,
+                    "scaleX": 170.0,
+                    "scaleY": 170.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -3,
-                    "imageName": "Cat-move-1",
+                    "imageName": "Cat-move",
                     "inText": false,
                     "label": "Cat-move",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cat-move"
-                    ]
-                },
-                {
-                    "id": 3,
-                    "tag": "",
-                    "posX": -1.0,
-                    "posY": -94.0,
-                    "posZ": 0.0,
-                    "scaleX": 390.0,
-                    "scaleY": 280.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -5,
-                    "imageName": "Land-sand_boundary-2",
-                    "inText": false,
-                    "label": "Boundary",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 4,
@@ -2207,15 +2721,15 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "Duck-play-1",
+                    "orderInLayer": 0,
+                    "imageName": "Duck-play",
                     "inText": false,
                     "label": "Duck-play",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Duck-play"
+                        "Cat-run"
                     ]
                 },
                 {
@@ -2230,7 +2744,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Sand",
+                    "imageName": "Land-sand_boundary-1",
                     "inText": false,
                     "label": "Sand",
                     "destroyOnCollision": "",
@@ -2268,9 +2782,60 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"YoungBoy-plays_with_bottle\"}"
+                }
+            ]
         },
         {
             "pageNumber": 11,
@@ -2284,23 +2849,23 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -571.0,
-                    "posY": 19.0,
+                    "posX": -156.0,
+                    "posY": -10.0,
                     "posZ": 0.0,
                     "scaleX": 800.0,
                     "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "Cat-play-1",
+                    "orderInLayer": 0,
+                    "imageName": "Cat-run-1",
                     "inText": false,
                     "label": "Cat-play",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Cat-play"
+                        "Cat-run"
                     ]
                 },
                 {
@@ -2336,7 +2901,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -5,
+                    "orderInLayer": 0,
                     "imageName": "Cloud-sky-1",
                     "inText": false,
                     "label": "Cloud-sky",
@@ -2392,29 +2957,29 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": -183.0,
-                    "posY": -98.0,
-                    "posZ": 0.0,
-                    "scaleX": 500.0,
-                    "scaleY": 500.0,
+                    "posX": -32.0,
+                    "posY": 21.0,
+                    "posZ": -3.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
                     "rotX": 0.0,
-                    "rotY": 180.0,
+                    "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "YoungBoy-walks-1",
+                    "imageName": "YoungBoy-running_point-1",
                     "inText": false,
                     "label": "YoungBoy-walks",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "YoungBoy-walks"
+                        "YoungBoy-running_point"
                     ]
                 },
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": -420.0,
+                    "posX": -334.0,
                     "posY": -118.0,
                     "posZ": 0.0,
                     "scaleX": 200.0,
@@ -2441,9 +3006,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"YoungBoy-running_point\"}"
+                }
+            ]
         },
         {
             "pageNumber": 12,
@@ -2472,14 +3081,12 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": -420.0,
+                    "posX": -332.0,
                     "posY": -115.0,
                     "posZ": 0.0,
                     "scaleX": 200.0,
@@ -2494,9 +3101,7 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cloud-sky"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
@@ -2525,7 +3130,7 @@
                     "tag": "",
                     "posX": 33.0,
                     "posY": -10.0,
-                    "posZ": 0.0,
+                    "posZ": -3.0,
                     "scaleX": 600.0,
                     "scaleY": 600.0,
                     "rotX": 0.0,
@@ -2572,9 +3177,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"OlderBoy-waves\"}"
+                }
+            ]
         },
         {
             "pageNumber": 13,
@@ -2588,7 +3237,7 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": -211.0,
+                    "posX": -158.0,
                     "posY": -137.0,
                     "posZ": 0.0,
                     "scaleX": 350.0,
@@ -2596,21 +3245,19 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -1,
-                    "imageName": "Bowl-green-1",
+                    "orderInLayer": 0,
+                    "imageName": "Bowl-green",
                     "inText": false,
                     "label": "Bowl-green",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Bowl-green"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 0.0,
+                    "posX": 16.0,
                     "posY": -137.0,
                     "posZ": 0.0,
                     "scaleX": 350.0,
@@ -2618,21 +3265,19 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -1,
-                    "imageName": "Bowl-rice-1",
+                    "orderInLayer": 0,
+                    "imageName": "Bowl-rice",
                     "inText": false,
                     "label": "Bowl-rice",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Bowl-rice"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 214.0,
+                    "posX": 171.0,
                     "posY": -130.0,
                     "posZ": 0.0,
                     "scaleX": 300.0,
@@ -2640,16 +3285,14 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -1,
-                    "imageName": "Bowl-stew-1",
+                    "orderInLayer": 0,
+                    "imageName": "Bowl-stew",
                     "inText": false,
                     "label": "Bowl-stew",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Bowl-stew"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 3,
@@ -2797,7 +3440,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Girl-eats"
+                    ]
                 },
                 {
                     "id": 10,
@@ -2909,9 +3554,230 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 249,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Man-eats\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"OlderBoy-eat\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Woman-eats\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 9,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 8,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"YoungBoy-eats\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 8,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 9,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Girl-eats\"}"
+                }
+            ]
         },
         {
             "pageNumber": 13,
@@ -3005,11 +3871,11 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": 29.0,
-                    "posY": -16.0,
-                    "posZ": 0.0,
-                    "scaleX": 700.0,
-                    "scaleY": 700.0,
+                    "posX": -5.0,
+                    "posY": -34.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -3047,7 +3913,7 @@
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": 31.0,
+                    "posX": 62.0,
                     "posY": -16.0,
                     "posZ": 0.0,
                     "scaleX": 600.0,
@@ -3067,11 +3933,11 @@
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": 0.0,
-                    "posY": -124.0,
+                    "posX": 78.0,
+                    "posY": -114.0,
                     "posZ": 0.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
+                    "scaleX": 270.0,
+                    "scaleY": 270.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -3114,9 +3980,46 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 249,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"YoungBoy-sleeps\"}"
+                }
+            ]
         }
     ]
 }
