@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fps: 30
   frames:
-  - {fileID: 3286163911610860551, guid: f0275bed697a6794b8cfa467e2fd2820, type: 3}
+  - {fileID: 3286163911610860551, guid: 4943a38c7984d954fb2100972410fce7, type: 3}
   framesDuration: 1e000000

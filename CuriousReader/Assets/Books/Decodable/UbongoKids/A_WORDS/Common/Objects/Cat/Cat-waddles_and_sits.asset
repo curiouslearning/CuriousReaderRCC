@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Cat-waddles_and_sits
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 68622c124c3c75d4e930d2bbb3bbd564, type: 3}
+  - {fileID: 3286163911610860551, guid: cb94f4ff3a77d984ca5f1f65cdb5344d, type: 3}
+  - {fileID: 3286163911610860551, guid: da72edd230829524fbfa27bc688b5ef4, type: 3}
+  - {fileID: 3286163911610860551, guid: cc4ddf1971b19a84fb1ff93e5ae00cef, type: 3}
+  - {fileID: 3286163911610860551, guid: b19bf173c469a1e48b52120f10313d6f, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

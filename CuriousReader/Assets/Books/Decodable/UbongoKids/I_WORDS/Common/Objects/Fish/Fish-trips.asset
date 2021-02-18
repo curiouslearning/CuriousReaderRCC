@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Fish-trips
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 2ad17be53bbcd4248b4f073228ea939d, type: 3}
+  - {fileID: 3286163911610860551, guid: e4650f6b9f54e1241a34737f6e4c230d, type: 3}
+  - {fileID: 3286163911610860551, guid: cc68a8d194c1b124baffa622d2c2f97d, type: 3}
+  - {fileID: 3286163911610860551, guid: 9aefa606f4892e843bd95c87b8b628ca, type: 3}
+  - {fileID: 3286163911610860551, guid: 6914eb2c1090eb14197f828a7d25904a, type: 3}
+  - {fileID: 3286163911610860551, guid: 57efd5035b74142499d0dddbf3806203, type: 3}
+  - {fileID: 3286163911610860551, guid: b78eb9d2576d1e64f917c11fe9db576b, type: 3}
+  - {fileID: 3286163911610860551, guid: c4178d321e3dc5148bf8de8ced10d197, type: 3}
+  - {fileID: 3286163911610860551, guid: 8585f5d3ef33d9f44a538bd9b496a3d8, type: 3}
+  - {fileID: 3286163911610860551, guid: 5e52afe765d53da40853a41936aa3f08, type: 3}
+  framesDuration: 03000000030000000300000003000000030000000300000003000000030000000300000003000000

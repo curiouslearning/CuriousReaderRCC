@@ -1,0 +1,3449 @@
+{
+    "id": 1,
+    "fontColor": "white",
+    "textStartPositionX": -111.0,
+    "textStartPositionY": 182.0,
+    "textFontSize": 30,
+    "storyImageFile": "",
+    "backgroundColor": "blue",
+    "arrowColor": "red",
+    "fontFamily": "helvetica",
+    "language": "english",
+    "pages": [
+        {
+            "pageNumber": 1,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -16.0,
+                    "posY": 28.0,
+                    "posZ": -2.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Frog-smiles-1",
+                    "inText": false,
+                    "label": "Frog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-smiles"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 4.0,
+                    "posY": -157.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -2.0,
+                    "posY": -104.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "The little frog.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-smiles\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 1,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 50.0,
+                    "posY": 47.0,
+                    "posZ": -2.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Frog-with_mom-1",
+                    "inText": false,
+                    "label": "Frog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-with_mom"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -101.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -1.0,
+                    "posY": -3.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 233.0,
+                    "posY": -7.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Mops",
+                    "inText": false,
+                    "label": "Mops",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 289.0,
+                    "posY": -26.0,
+                    "posZ": 0.0,
+                    "scaleX": 100.0,
+                    "scaleY": 100.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Rock",
+                    "inText": false,
+                    "label": "Rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 105.0,
+                    "posY": -141.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 7,
+                    "tag": "",
+                    "posX": -47.0,
+                    "posY": -141.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 8,
+                    "tag": "",
+                    "posX": 3.0,
+                    "posY": -75.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 9,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 45.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -7,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 10,
+                    "tag": "",
+                    "posX": 265.0,
+                    "posY": -31.0,
+                    "posZ": 0.0,
+                    "scaleX": 50.0,
+                    "scaleY": 50.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Mud",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog with mom.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-with_mom\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 2,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 14.0,
+                    "posY": -18.0,
+                    "posZ": -2.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Frog-mops_with_mom-1",
+                    "inText": false,
+                    "label": "Frog-holding_mop",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-mops_with_mom"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 41.0,
+                    "posY": -91.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 1.0,
+                    "posY": -3.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 118.0,
+                    "posY": -145.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": -41.0,
+                    "posY": -147.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 7,
+                    "tag": "",
+                    "posX": 14.0,
+                    "posY": -76.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 8,
+                    "tag": "",
+                    "posX": -2.0,
+                    "posY": 54.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog mops with mom.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-mops_with_mom\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 3,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 14.0,
+                    "posY": -41.0,
+                    "posZ": -2.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Frog-hot_mops_with_mom-1",
+                    "inText": false,
+                    "label": "Frog-sweating",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-hot_mops_with_mom"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -104.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 1.0,
+                    "posY": -2.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 326.0,
+                    "posY": -34.0,
+                    "posZ": 0.0,
+                    "scaleX": 130.0,
+                    "scaleY": 130.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Rock",
+                    "inText": false,
+                    "label": "Rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": -51.0,
+                    "posY": -142.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 7,
+                    "tag": "",
+                    "posX": 117.0,
+                    "posY": -146.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 8,
+                    "tag": "",
+                    "posX": 15.0,
+                    "posY": -78.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 9,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 63.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 10,
+                    "tag": "",
+                    "posX": 85.0,
+                    "posY": 89.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Sun",
+                    "inText": false,
+                    "label": "Sun",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 11,
+                    "tag": "",
+                    "posX": 330.0,
+                    "posY": -42.0,
+                    "posZ": 0.0,
+                    "scaleX": 75.0,
+                    "scaleY": 75.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Mud",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog is hot.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-hot_mops_with_mom\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 4,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 2.0,
+                    "posY": 23.0,
+                    "posZ": -2.0,
+                    "scaleX": 550.0,
+                    "scaleY": 550.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Frog-hops_onto_rock-1",
+                    "inText": false,
+                    "label": "Frog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-hops_onto_rock"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 2.0,
+                    "posY": -91.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -447.0,
+                    "posY": -64.0,
+                    "posZ": 0.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -44.0,
+                    "posZ": 0.0,
+                    "scaleX": 226.34893798828126,
+                    "scaleY": 226.34893798828126,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Rock",
+                    "inText": false,
+                    "label": "Rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": -11.0,
+                    "posY": 89.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -55.0,
+                    "posZ": 0.0,
+                    "scaleX": 120.0,
+                    "scaleY": 120.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Mud",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog on a rock.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-hops_onto_rock\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 5,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 7.0,
+                    "posY": 0.0,
+                    "posZ": -1.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Frog-in_fog-1",
+                    "inText": false,
+                    "label": "Frog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-in_fog"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -109.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -456.0,
+                    "posY": -58.0,
+                    "posZ": 0.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -49.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Rock",
+                    "inText": false,
+                    "label": "Rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": -18.0,
+                    "posY": 53.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -64.0,
+                    "posZ": 0.0,
+                    "scaleX": 120.0,
+                    "scaleY": 120.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Mud",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 7,
+                    "tag": "",
+                    "posX": 710.0543823242188,
+                    "posY": 4.0,
+                    "posZ": 0.0,
+                    "scaleX": 320.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Fog",
+                    "inText": false,
+                    "label": "Fog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog in a big fog.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 99,
+                    "starWord": "No"
+                },
+                {
+                    "start": 99,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 198,
+                    "starWord": "No"
+                },
+                {
+                    "start": 199,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 298,
+                    "starWord": "No"
+                },
+                {
+                    "start": 299,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 398,
+                    "starWord": "No"
+                },
+                {
+                    "start": 399,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":-18.0,\"y\":4.0,\"z\":0.0}}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 1,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-in_fog\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 6,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -18.0,
+                    "posY": 4.0,
+                    "posZ": 0.0,
+                    "scaleX": 320.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Fog",
+                    "inText": false,
+                    "label": "Fog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -55.0,
+                    "posY": -35.0,
+                    "posZ": 0.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Frog-looking_confused-1",
+                    "inText": false,
+                    "label": "Frog-looking_confused",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -120.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -456.0,
+                    "posY": -58.0,
+                    "posZ": 0.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 38.0,
+                    "posY": -18.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "ThoughtBubble-mom_vision-1",
+                    "inText": false,
+                    "label": "ThoughtBubble",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "ThoughtBubble-mom_vision"
+                    ]
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": -64.0,
+                    "posY": -126.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Rock",
+                    "inText": false,
+                    "label": "Rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 7.0,
+                    "posY": 102.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Where is mom?",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 1,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"ThoughtBubble-mom_vision\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 7,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -18.0,
+                    "posY": 4.0,
+                    "posZ": 0.0,
+                    "scaleX": 320.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Fog",
+                    "inText": false,
+                    "label": "Fog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 79.0,
+                    "posY": 1.0,
+                    "posZ": -2.0,
+                    "scaleX": 650.0,
+                    "scaleY": 650.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Frog-hops_from_rock-1",
+                    "inText": false,
+                    "label": "Frog-jumping_forwards",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-hops_from_rock"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -9.0,
+                    "posY": -131.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -265.0,
+                    "posY": -67.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 69.0,
+                    "posY": -73.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Rock",
+                    "inText": false,
+                    "label": "Rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": -7.0,
+                    "posY": 80.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 71.0,
+                    "posY": -78.0,
+                    "posZ": 0.0,
+                    "scaleX": 120.0,
+                    "scaleY": 120.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Mud",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Hop hop away.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-hops_from_rock\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 8,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -217.0,
+                    "posY": 115.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Clock",
+                    "inText": false,
+                    "label": "Clock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -146.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Grains",
+                    "inText": false,
+                    "label": "Grains",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -2.0,
+                    "posY": 38.0,
+                    "posZ": 0.0,
+                    "scaleX": 865.7627563476563,
+                    "scaleY": 865.7627563476563,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Shop",
+                    "inText": false,
+                    "label": "Shop",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -67.0,
+                    "posY": -117.0,
+                    "posZ": -1.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 180.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Frog-hops_onto_rock-1",
+                    "inText": false,
+                    "label": "Frog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-hops_onto_rock"
+                    ]
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog hops to a shop.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 99,
+                    "starWord": "No"
+                },
+                {
+                    "start": 99,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 198,
+                    "starWord": "No"
+                },
+                {
+                    "start": 199,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 298,
+                    "starWord": "No"
+                },
+                {
+                    "start": 299,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 398,
+                    "starWord": "No"
+                },
+                {
+                    "start": 399,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-hops_onto_rock\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.100000023841858}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 9,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -171.0,
+                    "posY": 46.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Clock",
+                    "inText": false,
+                    "label": "Clock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -183.0,
+                    "posY": 37.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 23.637813568115236,
+                    "orderInLayer": 0,
+                    "imageName": "Frog-hops_on_clock-1",
+                    "inText": false,
+                    "label": "Frog-clock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-hops_on_clock"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 51.0,
+                    "posY": -207.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Grains",
+                    "inText": false,
+                    "label": "Grains",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 33.0,
+                    "posY": -47.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Shop-inside",
+                    "inText": false,
+                    "label": "Shop-inside",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Shop-inside"
+                    ]
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog hops on the clock.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 99,
+                    "starWord": "No"
+                },
+                {
+                    "start": 99,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 198,
+                    "starWord": "No"
+                },
+                {
+                    "start": 199,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 298,
+                    "starWord": "No"
+                },
+                {
+                    "start": 299,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 398,
+                    "starWord": "No"
+                },
+                {
+                    "start": 399,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-hops_on_clock\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 10,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -246.0,
+                    "posY": 75.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Clock",
+                    "inText": false,
+                    "label": "Clock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -37.0,
+                    "posY": -54.0,
+                    "posZ": -2.0,
+                    "scaleX": 850.0,
+                    "scaleY": 850.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Frog-hops_to_knob-1",
+                    "inText": false,
+                    "label": "Frog-jumping_forwards",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-hops_to_knob"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -16.0,
+                    "posY": -15.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Shop-inside",
+                    "inText": false,
+                    "label": "Shop",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog hops to the knob.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 99,
+                    "starWord": "No"
+                },
+                {
+                    "start": 99,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 198,
+                    "starWord": "No"
+                },
+                {
+                    "start": 199,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 298,
+                    "starWord": "No"
+                },
+                {
+                    "start": 299,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 398,
+                    "starWord": "No"
+                },
+                {
+                    "start": 399,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-hops_to_knob\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 11,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -13.0,
+                    "posY": -222.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -29.0,
+                    "posY": -71.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Pot",
+                    "inText": false,
+                    "label": "Pot",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -26.0,
+                    "posY": -149.0,
+                    "posZ": 0.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -20.0,
+                    "posY": 108.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": -30.0,
+                    "posY": -23.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Frog-checks_pot-1",
+                    "inText": false,
+                    "label": "Frog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-checks_pot"
+                    ]
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog checks pot.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-checks_pot\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 12,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -22.0,
+                    "posY": -26.0,
+                    "posZ": -2.0,
+                    "scaleX": 550.0,
+                    "scaleY": 550.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Frog-checks_box-1",
+                    "inText": false,
+                    "label": "Frog-jumping_forwards",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-checks_box"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -202.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 89.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog checks box.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-checks_box\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 13,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 328.0,
+                    "posY": -13.0,
+                    "posZ": -2.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Dog",
+                    "inText": false,
+                    "label": "Dog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 66.0,
+                    "posY": -37.0,
+                    "posZ": 0.0,
+                    "scaleX": 550.0,
+                    "scaleY": 550.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Frog-checks_box-8",
+                    "inText": false,
+                    "label": "Frog-jumping_forwards",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 2.0,
+                    "posY": -210.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 111.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Big dog comes!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":206.0,\"y\":-13.0,\"z\":0.0}}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 14,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -18.0,
+                    "posY": 4.0,
+                    "posZ": 0.0,
+                    "scaleX": 320.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Fog",
+                    "inText": false,
+                    "label": "Fog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 6.0,
+                    "posY": -13.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Frog-hops_onto_rock-1",
+                    "inText": false,
+                    "label": "Frog-looking_confused",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Frog-hops_onto_rock"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -137.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -461.0,
+                    "posY": -55.0,
+                    "posZ": 0.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -84.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Rock",
+                    "inText": false,
+                    "label": "Rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": -4.0,
+                    "posY": 64.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -89.0,
+                    "posZ": 0.0,
+                    "scaleX": 120.0,
+                    "scaleY": 120.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Mud",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Hop back to rock!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Frog-hops_onto_rock\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 15,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -18.0,
+                    "posY": 4.0,
+                    "posZ": 0.0,
+                    "scaleX": 320.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Fog",
+                    "inText": false,
+                    "label": "Fog",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -24.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Frog-looking_confused-1",
+                    "inText": false,
+                    "label": "Frog-looking_confused",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -146.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -432.0,
+                    "posY": -78.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -89.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Rock",
+                    "inText": false,
+                    "label": "Rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 7.0,
+                    "posY": 91.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -104.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Mud",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "No more fog!",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":-830.0,\"y\":4.0,\"z\":0.0}}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 16,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -77.0,
+                    "posY": 14.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Frog-jumping_up_and_down-1",
+                    "inText": false,
+                    "label": "Frog-jumping_up_and_down",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -20.0,
+                    "posY": -117.0,
+                    "posZ": 0.0,
+                    "scaleX": 350.0,
+                    "scaleY": 350.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -7,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -221.0,
+                    "posY": -16.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Log",
+                    "inText": false,
+                    "label": "Log",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -184.0,
+                    "posY": -53.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "MomFrog-holding_mop",
+                    "inText": false,
+                    "label": "Mom frog-holding_mop",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 122.0,
+                    "posY": -40.0,
+                    "posZ": 0.0,
+                    "scaleX": 240.0,
+                    "scaleY": 240.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Rock",
+                    "inText": false,
+                    "label": "Rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": -170.0,
+                    "posY": -167.0,
+                    "posZ": 0.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": -230.0,
+                    "posY": -111.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Shadow",
+                    "inText": false,
+                    "label": "Shadow",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 7,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 75.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -8,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 8,
+                    "tag": "",
+                    "posX": 122.0,
+                    "posY": -62.0,
+                    "posZ": 0.0,
+                    "scaleX": 120.0,
+                    "scaleY": 120.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Mud",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Frog sees mom.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                }
+            ]
+        }
+    ]
+}

@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BookAssetBundleName: o_book
   BookCover:
-  - BookLanguage: 1
+  - BookLanguage: 0
     BookCoverSprite: {fileID: 21300000, guid: 64ebc6914458205438f0f539f7e1bf3c, type: 3}
   BookTitleTranslations:
   - BookLevel: 2
-    BookLanguage: 1
-    BookFileName: KIS_oWords
+    BookLanguage: 0
+    BookFileName: ENG_oWords
   - BookLevel: 4
-    BookLanguage: 1
-    BookFileName: KIS_oWords
+    BookLanguage: 0
+    BookFileName: ENG_oWords
   - BookLevel: 6
-    BookLanguage: 1
-    BookFileName: KIS_oWords
+    BookLanguage: 0
+    BookFileName: ENG_oWords

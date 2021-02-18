@@ -1,0 +1,3476 @@
+{
+    "id": 1,
+    "fontColor": "white",
+    "textStartPositionX": -111.0,
+    "textStartPositionY": 182.0,
+    "textFontSize": 30,
+    "storyImageFile": "",
+    "backgroundColor": "blue",
+    "arrowColor": "red",
+    "fontFamily": "helvetica",
+    "language": "english",
+    "pages": [
+        {
+            "pageNumber": 1,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -4.0,
+                    "posY": -64.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -101.0,
+                    "posY": -28.0,
+                    "posZ": -2.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Duck-flaps_wings-1",
+                    "inText": false,
+                    "label": "Duck-flaps_wings",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-flaps_wings"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -22.0,
+                    "posY": -30.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Hut",
+                    "inText": false,
+                    "label": "Hut",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -16.0,
+                    "posY": -182.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 4.0,
+                    "posY": 125.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": -320.0,
+                    "posY": 164.0,
+                    "posZ": 0.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Sun-yellow",
+                    "inText": false,
+                    "label": "Sun",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "The fun Duck is in the hut.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 71,
+                    "starWord": "No"
+                },
+                {
+                    "start": 71,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 142,
+                    "starWord": "No"
+                },
+                {
+                    "start": 142,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 213,
+                    "starWord": "No"
+                },
+                {
+                    "start": 213,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 284,
+                    "starWord": "No"
+                },
+                {
+                    "start": 285,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 356,
+                    "starWord": "No"
+                },
+                {
+                    "start": 356,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 427,
+                    "starWord": "No"
+                },
+                {
+                    "start": 427,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Duck-flaps_wings\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 1,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 2.0,
+                    "posY": -13.0,
+                    "posZ": 0.0,
+                    "scaleX": 330.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Hut-interior",
+                    "inText": false,
+                    "label": "Hut",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": -2.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Duck-cuts_paper-1",
+                    "inText": false,
+                    "label": "Duck",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-cuts_paper"
+                    ]
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "The Duck really likes to cut paper.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 71,
+                    "starWord": "No"
+                },
+                {
+                    "start": 71,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 142,
+                    "starWord": "No"
+                },
+                {
+                    "start": 142,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 213,
+                    "starWord": "No"
+                },
+                {
+                    "start": 213,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 284,
+                    "starWord": "No"
+                },
+                {
+                    "start": 285,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 356,
+                    "starWord": "No"
+                },
+                {
+                    "start": 356,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 427,
+                    "starWord": "No"
+                },
+                {
+                    "start": 427,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Duck-cuts_paper\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 2,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -68.0,
+                    "posY": -78.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -47.0,
+                    "posY": 2.0,
+                    "posZ": -2.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Duck-lies_in_sun-1",
+                    "inText": false,
+                    "label": "Duck-wearing_sunglasses",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-lies_in_sun"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -85.0,
+                    "posY": -179.0,
+                    "posZ": 0.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 70.0,
+                    "posY": 23.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 52.0,
+                    "posY": 67.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": -335.0,
+                    "posY": -62.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 510.0,
+                    "posY": -19.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Hut",
+                    "inText": false,
+                    "label": "Hut",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Duck likes to lie in the sun.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 71,
+                    "starWord": "No"
+                },
+                {
+                    "start": 71,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 142,
+                    "starWord": "No"
+                },
+                {
+                    "start": 142,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 213,
+                    "starWord": "No"
+                },
+                {
+                    "start": 213,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 284,
+                    "starWord": "No"
+                },
+                {
+                    "start": 285,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 356,
+                    "starWord": "No"
+                },
+                {
+                    "start": 356,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 427,
+                    "starWord": "No"
+                },
+                {
+                    "start": 427,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Duck-lies_in_sun\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 3,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -635.0,
+                    "posY": -42.0,
+                    "posZ": 0.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -34.0,
+                    "posY": -1.0,
+                    "posZ": -2.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Duck-swimming-1",
+                    "inText": false,
+                    "label": "Duck-flaps_wings",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-swimming"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -752.0,
+                    "posY": -328.0,
+                    "posZ": 0.0,
+                    "scaleX": 1000.0,
+                    "scaleY": 1000.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -2.0,
+                    "posY": 139.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": -71.0,
+                    "posY": -102.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Tub",
+                    "inText": false,
+                    "label": "Tub",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 122.0,
+                    "posY": -40.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Glasses",
+                    "inText": false,
+                    "label": "Glasses",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 260.0,
+                    "posY": 16.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Duck likes to swim in the tub.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 71,
+                    "starWord": "No"
+                },
+                {
+                    "start": 71,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 142,
+                    "starWord": "No"
+                },
+                {
+                    "start": 142,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 213,
+                    "starWord": "No"
+                },
+                {
+                    "start": 213,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 284,
+                    "starWord": "No"
+                },
+                {
+                    "start": 285,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 356,
+                    "starWord": "No"
+                },
+                {
+                    "start": 356,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 427,
+                    "starWord": "No"
+                },
+                {
+                    "start": 427,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Duck-swimming\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 4,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -52.0,
+                    "posY": -262.0,
+                    "posZ": 0.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Bug-runs_across_screen-1",
+                    "inText": false,
+                    "label": "Bug",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-runs_across_screen"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -635.0,
+                    "posY": 25.0,
+                    "posZ": 0.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 66.0,
+                    "posY": 45.0,
+                    "posZ": 0.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Duck-swimming-8",
+                    "inText": false,
+                    "label": "Duck-flaps_wings",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-flaps_wings"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -621.0,
+                    "posY": -259.0,
+                    "posZ": 0.0,
+                    "scaleX": 1000.0,
+                    "scaleY": 1000.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 2.0,
+                    "posY": 179.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 97.0,
+                    "posY": -32.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "The red Bug is on the run.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 71,
+                    "starWord": "No"
+                },
+                {
+                    "start": 71,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 142,
+                    "starWord": "No"
+                },
+                {
+                    "start": 142,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 213,
+                    "starWord": "No"
+                },
+                {
+                    "start": 213,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 284,
+                    "starWord": "No"
+                },
+                {
+                    "start": 285,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 356,
+                    "starWord": "No"
+                },
+                {
+                    "start": 356,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 427,
+                    "starWord": "No"
+                },
+                {
+                    "start": 427,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-runs_across_screen\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 5,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 45.0,
+                    "posY": -262.0,
+                    "posZ": 0.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Bug-running-1",
+                    "inText": false,
+                    "label": "Bug",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -651.0,
+                    "posY": -8.0,
+                    "posZ": 0.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 66.0,
+                    "posY": 45.0,
+                    "posZ": 0.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Duck-swimming-8",
+                    "inText": false,
+                    "label": "Duck-flaps_wings",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-flaps_wings"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -621.0,
+                    "posY": -259.0,
+                    "posZ": 0.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": -34.0,
+                    "posY": 187.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -7,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 100.0,
+                    "posY": -14.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Bug likes to run very fast.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 71,
+                    "starWord": "No"
+                },
+                {
+                    "start": 71,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 142,
+                    "starWord": "No"
+                },
+                {
+                    "start": 142,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 213,
+                    "starWord": "No"
+                },
+                {
+                    "start": 213,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 284,
+                    "starWord": "No"
+                },
+                {
+                    "start": 285,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 356,
+                    "starWord": "No"
+                },
+                {
+                    "start": 356,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 427,
+                    "starWord": "No"
+                },
+                {
+                    "start": 427,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":2.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":10.0,\"z\":0.0}}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 6,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -6.0,
+                    "posY": -10.0,
+                    "posZ": -2.0,
+                    "scaleX": 550.0,
+                    "scaleY": 550.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Bug-drums-1",
+                    "inText": false,
+                    "label": "Bug-banging_drum",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-drums"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -22.0,
+                    "posY": -243.0,
+                    "posZ": -1.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Drum",
+                    "inText": false,
+                    "label": "Drum",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -16.0,
+                    "posY": 143.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -20.0,
+                    "posY": 104.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Sound-wave",
+                    "inText": false,
+                    "label": "Sound",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Bug likes to bang on the drum.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 71,
+                    "starWord": "No"
+                },
+                {
+                    "start": 71,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 142,
+                    "starWord": "No"
+                },
+                {
+                    "start": 142,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 213,
+                    "starWord": "No"
+                },
+                {
+                    "start": 213,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 284,
+                    "starWord": "No"
+                },
+                {
+                    "start": 285,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 356,
+                    "starWord": "No"
+                },
+                {
+                    "start": 356,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 427,
+                    "starWord": "No"
+                },
+                {
+                    "start": 427,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-drums\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 6,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 7,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -4.0,
+                    "posY": -12.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Bug-chucks_rock-1",
+                    "inText": false,
+                    "label": "Bug-kicking_rock",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-chucks_rock"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 4.0,
+                    "posY": -195.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -10.0,
+                    "posY": -111.0,
+                    "posZ": 0.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Mud-puddle",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 4.0,
+                    "posY": -184.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Bug likes to chuck small rocks.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 62,
+                    "starWord": "No"
+                },
+                {
+                    "start": 62,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 186,
+                    "starWord": "No"
+                },
+                {
+                    "start": 187,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 249,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 311,
+                    "starWord": "No"
+                },
+                {
+                    "start": 311,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 436,
+                    "starWord": "No"
+                },
+                {
+                    "start": 436,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-chucks_rock\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 8,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -11.0,
+                    "posY": 106.0,
+                    "posZ": 0.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Bug-plays_in_mud-1",
+                    "inText": false,
+                    "label": "Bug-getting_muddy",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-plays_in_mud"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -145.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -12.0,
+                    "posY": -48.0,
+                    "posZ": 0.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Mud-puddle",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 10.0,
+                    "posY": -171.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Bug likes to play in the brown mud.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 62,
+                    "starWord": "No"
+                },
+                {
+                    "start": 62,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 186,
+                    "starWord": "No"
+                },
+                {
+                    "start": 187,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 249,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 311,
+                    "starWord": "No"
+                },
+                {
+                    "start": 311,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 436,
+                    "starWord": "No"
+                },
+                {
+                    "start": 436,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-plays_in_mud\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 7,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 9,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 32.0,
+                    "posY": -7.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Bug-sees_truck-1",
+                    "inText": false,
+                    "label": "Bug-banging_drum",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-sees_truck"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": 18.0,
+                    "posY": -178.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 173.0,
+                    "posY": -118.0,
+                    "posZ": 0.0,
+                    "scaleX": 150.0,
+                    "scaleY": 150.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Mud-puddle",
+                    "inText": false,
+                    "label": "Mud",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 22.0,
+                    "posY": -147.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": -62.0,
+                    "posY": -66.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Truck-approaches-1",
+                    "inText": false,
+                    "label": "Truck",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Truck-approaches"
+                    ]
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Bug looks at the big truck and runs.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 55,
+                    "starWord": "No"
+                },
+                {
+                    "start": 55,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 110,
+                    "starWord": "No"
+                },
+                {
+                    "start": 110,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 165,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 221,
+                    "starWord": "No"
+                },
+                {
+                    "start": 221,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 276,
+                    "starWord": "No"
+                },
+                {
+                    "start": 277,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 387,
+                    "starWord": "No"
+                },
+                {
+                    "start": 388,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 443,
+                    "starWord": "No"
+                },
+                {
+                    "start": 443,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-sees_truck\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Truck-approaches\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 10,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -28.0,
+                    "posY": -40.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Bug-sees_duck_in_tub-1",
+                    "inText": false,
+                    "label": "Bug-climbing_into_tub",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-sees_duck_in_tub"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -625.0,
+                    "posY": -42.0,
+                    "posZ": 0.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 66.0,
+                    "posY": 45.0,
+                    "posZ": 0.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Duck-swimming-8",
+                    "inText": false,
+                    "label": "Duck-flaps_wings",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -621.0,
+                    "posY": -259.0,
+                    "posZ": 0.0,
+                    "scaleX": 1000.0,
+                    "scaleY": 1000.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 6.0,
+                    "posY": 143.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 145.0,
+                    "posY": 14.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Bug sees the white Duck in the tub.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 62,
+                    "starWord": "No"
+                },
+                {
+                    "start": 62,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 186,
+                    "starWord": "No"
+                },
+                {
+                    "start": 187,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 249,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 311,
+                    "starWord": "No"
+                },
+                {
+                    "start": 311,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 436,
+                    "starWord": "No"
+                },
+                {
+                    "start": 436,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-sees_duck_in_tub\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 11,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 49.0,
+                    "posY": -54.0,
+                    "posZ": -2.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Bug-climbs_into_tub-1",
+                    "inText": false,
+                    "label": "Bug",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-climbs_into_tub"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -811.0,
+                    "posY": -33.0,
+                    "posZ": 0.0,
+                    "scaleX": 1500.0,
+                    "scaleY": 1500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 161.0,
+                    "posY": -17.0,
+                    "posZ": 0.0,
+                    "scaleX": 1500.0,
+                    "scaleY": 1500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Duck-swimming-8",
+                    "inText": false,
+                    "label": "Duck-flaps_wings",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-flaps_wings"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -167.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 169.0,
+                    "posY": 117.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "The Bug joins the Duck in the big tub.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 55,
+                    "starWord": "No"
+                },
+                {
+                    "start": 55,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 110,
+                    "starWord": "No"
+                },
+                {
+                    "start": 110,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 165,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 221,
+                    "starWord": "No"
+                },
+                {
+                    "start": 221,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 276,
+                    "starWord": "No"
+                },
+                {
+                    "start": 277,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 387,
+                    "starWord": "No"
+                },
+                {
+                    "start": 388,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 443,
+                    "starWord": "No"
+                },
+                {
+                    "start": 443,
+                    "wordIdx": 8,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 8,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-climbs_into_tub\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 12,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 109.0,
+                    "posY": -108.0,
+                    "posZ": -2.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Bug-likes_fun-1",
+                    "inText": false,
+                    "label": "Bug-getting_muddy",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-likes_fun"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -811.0,
+                    "posY": -33.0,
+                    "posZ": 0.0,
+                    "scaleX": 1500.0,
+                    "scaleY": 1500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 161.0,
+                    "posY": -17.0,
+                    "posZ": 0.0,
+                    "scaleX": 1500.0,
+                    "scaleY": 1500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Duck-swimming-8",
+                    "inText": false,
+                    "label": "Duck-flaps_wings",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-flaps_wings"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -8.0,
+                    "posY": -165.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 159.0,
+                    "posY": 105.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Bug likes to have fun with Duck .",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 62,
+                    "starWord": "No"
+                },
+                {
+                    "start": 62,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 186,
+                    "starWord": "No"
+                },
+                {
+                    "start": 187,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 249,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 311,
+                    "starWord": "No"
+                },
+                {
+                    "start": 311,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 436,
+                    "starWord": "No"
+                },
+                {
+                    "start": 436,
+                    "wordIdx": 7,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 4,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-likes_fun\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 13,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -10.0,
+                    "posY": 4.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Duck-hugs_bug-1",
+                    "inText": false,
+                    "label": "Bug-hugging_duck",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-hugs_bug"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -811.0,
+                    "posY": -33.0,
+                    "posZ": 0.0,
+                    "scaleX": 1500.0,
+                    "scaleY": 1500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -137.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -10.0,
+                    "posY": -204.0,
+                    "posZ": 0.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Tub",
+                    "inText": false,
+                    "label": "Tub",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 90.0,
+                    "posY": 98.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Duck and Bug like to hug.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 83,
+                    "starWord": "No"
+                },
+                {
+                    "start": 83,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 249,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 415,
+                    "starWord": "No"
+                },
+                {
+                    "start": 415,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Duck-hugs_bug\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 14,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": -2.0,
+                    "posY": -24.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Bug-twirls-1",
+                    "inText": false,
+                    "label": "Bug-twirling",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-twirls"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -635.0,
+                    "posY": 10.0,
+                    "posZ": 0.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -8.0,
+                    "posY": -26.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Duck-twirls-1",
+                    "inText": false,
+                    "label": "Duck-twirling",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-twirls"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": -661.0,
+                    "posY": -260.0,
+                    "posZ": 0.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 4.0,
+                    "posY": 127.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -6,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": 86.0,
+                    "posY": 28.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 0.0,
+                    "scaleY": 0.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Hut",
+                    "inText": false,
+                    "label": "Hui",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Duck and Bug are two lucky buddies.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 71,
+                    "starWord": "No"
+                },
+                {
+                    "start": 71,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 142,
+                    "starWord": "No"
+                },
+                {
+                    "start": 142,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 213,
+                    "starWord": "No"
+                },
+                {
+                    "start": 213,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 284,
+                    "starWord": "No"
+                },
+                {
+                    "start": 285,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 356,
+                    "starWord": "No"
+                },
+                {
+                    "start": 356,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 427,
+                    "starWord": "No"
+                },
+                {
+                    "start": 427,
+                    "wordIdx": 6,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-twirls\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Duck-twirls\"}"
+                }
+            ]
+        },
+        {
+            "pageNumber": 15,
+            "script": "GSManager",
+            "audio": {
+                "audioName": "",
+                "isAnim": false,
+                "objectId": 0
+            },
+            "gameObjects": [
+                {
+                    "id": 0,
+                    "tag": "",
+                    "posX": 47.0,
+                    "posY": -20.0,
+                    "posZ": -2.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Bug-walks_away-1",
+                    "inText": false,
+                    "label": "Bug-holding_hands_with_duck",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Bug-walks_away"
+                    ]
+                },
+                {
+                    "id": 1,
+                    "tag": "",
+                    "posX": -587.0,
+                    "posY": -42.0,
+                    "posZ": 0.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Bushes",
+                    "inText": false,
+                    "label": "Bushes",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 2,
+                    "tag": "",
+                    "posX": -100.0,
+                    "posY": -37.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Duck-walks_away-1",
+                    "inText": false,
+                    "label": "Duck-twirling",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": [
+                        "Duck-walks_away"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": -149.0,
+                    "posZ": 0.0,
+                    "scaleX": 500.0,
+                    "scaleY": 500.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -5,
+                    "imageName": "Sky",
+                    "inText": false,
+                    "label": "Sky",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 4,
+                    "tag": "",
+                    "posX": 0.0,
+                    "posY": 0.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": 0,
+                    "imageName": "Rays",
+                    "inText": false,
+                    "label": "Rays",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 5,
+                    "tag": "",
+                    "posX": -705.0,
+                    "posY": -321.0,
+                    "posZ": 0.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -4,
+                    "imageName": "Land",
+                    "inText": false,
+                    "label": "Land",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                }
+            ],
+            "texts": [
+                {
+                    "id": 0,
+                    "text": "Duck and Bug are best buds.",
+                    "customPosition": false,
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ],
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 83,
+                    "starWord": "No"
+                },
+                {
+                    "start": 83,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 249,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 415,
+                    "starWord": "No"
+                },
+                {
+                    "start": 415,
+                    "wordIdx": 5,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Bug-walks_away\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 5,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Duck-walks_away\"}"
+                }
+            ]
+        }
+    ]
+}

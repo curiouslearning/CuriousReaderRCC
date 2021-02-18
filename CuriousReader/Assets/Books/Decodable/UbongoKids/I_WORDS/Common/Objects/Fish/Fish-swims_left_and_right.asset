@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Fish-swims_left_and_right
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: dd8c9f5d198f4e847a7d6dd11a1a4993, type: 3}
+  - {fileID: 3286163911610860551, guid: ae5be74c3275a294f9e21236953215c1, type: 3}
+  - {fileID: 3286163911610860551, guid: bba0553d39a6c1d408fffd6f5bfd5c1e, type: 3}
+  - {fileID: 3286163911610860551, guid: af6d76244815f3045971831ba3abfdea, type: 3}
+  - {fileID: 3286163911610860551, guid: 3ef15bec76f96474ba28e4a4b0047be6, type: 3}
+  - {fileID: 3286163911610860551, guid: aaa3ce6be2c323f4fb8c16405d126a51, type: 3}
+  - {fileID: 3286163911610860551, guid: c5ca75b01beaa7c418bdd02166842162, type: 3}
+  - {fileID: 3286163911610860551, guid: e1861acfec2039b42bc288c88eaef32e, type: 3}
+  - {fileID: 3286163911610860551, guid: 8c0440d5666d8b340a99e53740d12ce5, type: 3}
+  - {fileID: 3286163911610860551, guid: 9c75e18c46f13ce449d450c6ef4e049c, type: 3}
+  - {fileID: 3286163911610860551, guid: 367b090d6274f314e9a708f70b454643, type: 3}
+  - {fileID: 3286163911610860551, guid: b0d95e74199183747b70f3a5f220d0cd, type: 3}
+  - {fileID: 3286163911610860551, guid: 7d92335cfc1f5c24a9b079ca63f672f9, type: 3}
+  framesDuration: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000

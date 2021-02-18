@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d52be3a39d0f5464e9d014edbc2139fd
+guid: ab362ca6909621b4fb5de75d8daf949b
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,17 +39,17 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Door-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5032894, y: 0.49866238}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: 43377283ebd54364480ef125a97c2949
+        width: 76
+        height: 157
+      spriteID: 994f753b735cc1f47916a00b94750567
       internalID: 0
     PhysicsOutlines: []

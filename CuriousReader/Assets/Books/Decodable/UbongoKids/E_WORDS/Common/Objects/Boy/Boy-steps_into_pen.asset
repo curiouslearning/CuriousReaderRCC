@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Boy-steps_into_pen
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 0dfc16bbaf6c21340a8ceab56a1f77ff, type: 3}
+  - {fileID: 3286163911610860551, guid: 1abdb199daaf6db47897c1f0968af706, type: 3}
+  - {fileID: 3286163911610860551, guid: 23ab70f3a8c7e8848aa09e7be3c9dbd7, type: 3}
+  - {fileID: 3286163911610860551, guid: f25b0517a3468074999a8c3a208d701e, type: 3}
+  framesDuration: 07000000070000000700000007000000

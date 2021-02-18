@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Duck-walks_away
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 7714ed4e13bff984d922622551dd4acb, type: 3}
+  - {fileID: 3286163911610860551, guid: 0c23c32610a187740bdb036facb14e38, type: 3}
+  - {fileID: 3286163911610860551, guid: 0615b8a700d20934380de1e72c273406, type: 3}
+  - {fileID: 3286163911610860551, guid: effbede1a874d514795f9547d03e9074, type: 3}
+  - {fileID: 3286163911610860551, guid: 69869948c468db4468e900b37548e18c, type: 3}
+  - {fileID: 3286163911610860551, guid: f8f92b8626b8df945b95f8aadf0beeeb, type: 3}
+  - {fileID: 3286163911610860551, guid: 37f9bbba305f03d4aa9a595dea23fe4e, type: 3}
+  - {fileID: 3286163911610860551, guid: 0470ed344c442af439cb0b98643550b6, type: 3}
+  - {fileID: 3286163911610860551, guid: 3bd70705854fe37438e95ee81bf3e201, type: 3}
+  - {fileID: 3286163911610860551, guid: 381340bd0d88cd945a82c1a441a359d0, type: 3}
+  - {fileID: 3286163911610860551, guid: 57457e168fa4ad645872b58d38426103, type: 3}
+  - {fileID: 3286163911610860551, guid: 0cc9fedff95f6e646aa0ab2e7d54f186, type: 3}
+  framesDuration: 020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000

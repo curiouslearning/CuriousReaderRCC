@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 531d03d95153241498f09b70692845be
+guid: 76864360fb4d039498ba670f2ac17e4a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,17 +39,17 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Pot-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.50204736, y: 0.50222844}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: 60abba7e2c259604495d3fdc010f05e5
+        width: 113
+        height: 76
+      spriteID: 32ec9907c494c0d44a899af16292a4c4
       internalID: 0
     PhysicsOutlines: []

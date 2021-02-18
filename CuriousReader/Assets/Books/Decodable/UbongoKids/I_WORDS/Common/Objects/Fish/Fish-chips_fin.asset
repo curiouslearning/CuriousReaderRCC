@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Fish-chips_fin
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: a8104e5679a84b74c9e360954cf16076, type: 3}
+  - {fileID: 3286163911610860551, guid: 6f97d0a4fdb9ae04ebb03646aeff53bd, type: 3}
+  - {fileID: 3286163911610860551, guid: c5a3a3fa833856549b7f2742b20b8630, type: 3}
+  - {fileID: 3286163911610860551, guid: f5e7230d524c5a04487c4d43eeb94608, type: 3}
+  - {fileID: 3286163911610860551, guid: 1f72ad12ff687184683d8ed450ac7a3c, type: 3}
+  - {fileID: 3286163911610860551, guid: 54b7724da31b7e74d9bbc0d594016a64, type: 3}
+  - {fileID: 3286163911610860551, guid: cedebf81807a7dd4cb257d89c651dc43, type: 3}
+  framesDuration: 04000000040000000400000004000000040000000400000004000000

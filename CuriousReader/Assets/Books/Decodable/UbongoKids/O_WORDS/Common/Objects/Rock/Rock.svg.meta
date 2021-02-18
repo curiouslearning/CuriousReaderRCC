@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e3e8d09bcad295b4cb2746ce254de443
+guid: 0bb9d3c5d5059c2408fa406238875130
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,17 +39,17 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Rock-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.49803957, y: 0.50563544}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: b9a08e6ff55099e48becd3b2dab91bf1
+        width: 108
+        height: 40
+      spriteID: b4a52089571f06e4788295c14ae47cfb
       internalID: 0
     PhysicsOutlines: []

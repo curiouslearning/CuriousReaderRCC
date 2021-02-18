@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Eggs-shakes_in_nest
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 4c9585f0d9b241d4990af5c193bb1180, type: 3}
+  - {fileID: 3286163911610860551, guid: a58d194d4405b21489646ad47543a398, type: 3}
+  - {fileID: 3286163911610860551, guid: 2ec684605e3a8c140bd184d911827cc6, type: 3}
+  - {fileID: 3286163911610860551, guid: 8449300e903d898428f5b3a54698848f, type: 3}
+  - {fileID: 3286163911610860551, guid: 08604d7677f3dd543ae67e01d323301e, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

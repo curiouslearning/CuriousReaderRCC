@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Cat-in_a_jam
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: a085dcd4b61416d47b8d174bb7d542e8, type: 3}
+  - {fileID: 3286163911610860551, guid: b2d695c54a739884f8b52aa84b7d6d5d, type: 3}
+  - {fileID: 3286163911610860551, guid: 9de78cff426cb764ebd51848b3456deb, type: 3}
+  - {fileID: 3286163911610860551, guid: 9a8651439f269914892fbc68e737c66e, type: 3}
+  - {fileID: 3286163911610860551, guid: fc1060a17951737408e921f386b13ce6, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

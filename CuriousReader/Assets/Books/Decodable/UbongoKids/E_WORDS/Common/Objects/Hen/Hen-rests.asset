@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Hen-rests
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: b0b3ab4fa678e294f94f6cdeb356a357, type: 3}
+  - {fileID: 3286163911610860551, guid: 0cb638071cc7e2d4898b752933c00b0b, type: 3}
+  - {fileID: 3286163911610860551, guid: d5316fc2ff3866e418574e7de7b1867b, type: 3}
+  framesDuration: 0a0000000a0000000a000000

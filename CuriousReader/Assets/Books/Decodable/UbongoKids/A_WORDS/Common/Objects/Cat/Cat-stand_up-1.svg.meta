@@ -1,0 +1,67 @@
+fileFormatVersion: 2
+guid: c1b49f54531c0a44b964a5c873173876
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: a_book
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
+  svgType: 0
+  texturedSpriteMeshType: 0
+  svgPixelsPerUnit: 100
+  gradientResolution: 64
+  alignment: 0
+  customPivot: {x: 0, y: 0}
+  generatePhysicsShape: 1
+  viewportOptions: 1
+  preserveViewport: 0
+  advancedMode: 0
+  predefinedResolutionIndex: 1
+  targetResolution: 1080
+  resolutionMultiplier: 1
+  stepDistance: 10
+  samplingStepDistance: 100
+  maxCordDeviationEnabled: 0
+  maxCordDeviation: 1
+  maxTangentAngleEnabled: 0
+  maxTangentAngle: 5
+  keepTextureAspectRatio: 1
+  textureSize: 256
+  textureWidth: 256
+  textureHeight: 256
+  wrapMode: 0
+  filterMode: 1
+  sampleCount: 4
+  preserveSVGImageAspect: 0
+  useSVGPixelsPerUnit: 0
+  spriteData:
+    TessellationDetail: 0
+    SpriteRect:
+      name: Cat-stand_up-1Sprite
+      originalName: 
+      pivot: {x: 0.5, y: 0.5}
+      alignment: 0
+      border: {x: 0, y: 0, z: 0, w: 0}
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      spriteID: d94fc8b4557d9ed4bb61e0ba6b7d80cf
+      internalID: 0
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 11, y: 5}
+      - {x: 10, y: 17}
+      - {x: 1, y: 23}
+      - {x: -8, y: 3}
+      - {x: -21, y: -9}
+      - {x: -34, y: 0}
+      - {x: -34, y: -16}
+      - {x: -21, y: -26}
+      - {x: -12, y: -31}
+      - {x: 10, y: -30}
+      - {x: 18, y: -14}

@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/shelf_prv.unity
-    guid: ddf8527a674e59242a624cf4343dbe04
+    path: Assets/shelf.unity
+    guid: 81aaf7717f793e0449c36811d2e169b2
   - enabled: 1
     path: Assets/Books/Decodable/Global/BasicScene.unity
     guid: d1207eebceaf88c4db1d374c56ce3d14

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Frog-checks_box
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 6a877934b4eee4e4a8a032d7580fb6d8, type: 3}
+  - {fileID: 3286163911610860551, guid: 6cb81bb4e34a9f5448d25d18ccffabd8, type: 3}
+  - {fileID: 3286163911610860551, guid: 38dc26f354e638a4b907ce5fe9dc11c8, type: 3}
+  - {fileID: 3286163911610860551, guid: 93687a468d50d1340a14f8b886e84bcc, type: 3}
+  - {fileID: 3286163911610860551, guid: d9ed35db90df31347b8ad834a2a5f27d, type: 3}
+  - {fileID: 3286163911610860551, guid: 9d397f84a80a25c4496b8787527a5892, type: 3}
+  - {fileID: 3286163911610860551, guid: bda6f8d9db2b7264f9202c5a15c2bc6f, type: 3}
+  - {fileID: 3286163911610860551, guid: eb5d891eacc93444f96342d54e926987, type: 3}
+  framesDuration: 0300000003000000030000000300000003000000030000000300000003000000

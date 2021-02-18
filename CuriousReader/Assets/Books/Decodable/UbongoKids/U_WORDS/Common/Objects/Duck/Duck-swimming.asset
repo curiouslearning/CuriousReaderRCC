@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Duck-swimming
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: d730a6df4bb215346888d754b7d92b66, type: 3}
+  - {fileID: 3286163911610860551, guid: 3c68247479f7d294ab2b7948fe0a164b, type: 3}
+  - {fileID: 3286163911610860551, guid: d1b1f32c7fc88274bb02242e7e92a24c, type: 3}
+  - {fileID: 3286163911610860551, guid: 05a2f8334e4a31c49a69b9506d20b241, type: 3}
+  - {fileID: 3286163911610860551, guid: 0b52fe7202e444541890026038aabdd3, type: 3}
+  - {fileID: 3286163911610860551, guid: 4b912b4bb78cf614b9418b93b5d41eca, type: 3}
+  - {fileID: 3286163911610860551, guid: fdb3287ef53bea8498eafbd34c9c193d, type: 3}
+  - {fileID: 3286163911610860551, guid: af77639ff292b164583fa9fe02751e7e, type: 3}
+  framesDuration: 0300000003000000030000000300000003000000030000000300000003000000

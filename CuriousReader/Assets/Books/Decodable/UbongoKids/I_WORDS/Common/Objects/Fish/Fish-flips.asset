@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Fish-flips
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: a3a9b4272afe67446bcdfcaadf5118ff, type: 3}
+  - {fileID: 3286163911610860551, guid: 65f66afad4c8fdd42a230892785ed267, type: 3}
+  - {fileID: 3286163911610860551, guid: 2b5c67c65d386ed4a8d9f9310024f1da, type: 3}
+  - {fileID: 3286163911610860551, guid: d572c26475640f448996d012e649e483, type: 3}
+  - {fileID: 3286163911610860551, guid: 25b26d81949fdbb4481d3b3df056622d, type: 3}
+  - {fileID: 3286163911610860551, guid: 12b19c0bc17e505478323199ef3a5d50, type: 3}
+  - {fileID: 3286163911610860551, guid: 084fddd43cce96b49851a51ef3c2ba98, type: 3}
+  - {fileID: 3286163911610860551, guid: 8f4e8131389c77349bffeb719d9c53c4, type: 3}
+  - {fileID: 3286163911610860551, guid: a9ce35ecc97d5dd4b9503562177a6651, type: 3}
+  - {fileID: 3286163911610860551, guid: 9678b4f99ed75024c80148d1ecb8b081, type: 3}
+  framesDuration: 03000000030000000300000003000000030000000300000003000000030000000300000003000000

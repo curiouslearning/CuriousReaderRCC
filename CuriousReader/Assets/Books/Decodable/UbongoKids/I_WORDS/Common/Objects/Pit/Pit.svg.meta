@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: db03bcffb70bbaa489e04843fbf40415
+guid: 12aca90dd3cd1d34ca45cf7dd7740904
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,17 +39,17 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: PitSprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5018333, y: 0.5019397}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: 9326b0ef12ccde14cadbe323cdb985cc
+        width: 120
+        height: 37
+      spriteID: 9ac0ae9b501944b488833e155cf7498f
       internalID: 0
     PhysicsOutlines: []

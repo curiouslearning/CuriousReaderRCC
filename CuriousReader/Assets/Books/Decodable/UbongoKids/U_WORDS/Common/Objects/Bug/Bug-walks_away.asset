@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Bug-walks_away
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 2817cb07a2cb96544b9fc63d0d9d26f4, type: 3}
+  - {fileID: 3286163911610860551, guid: 4402c9d2707b0404d9246f339c4629b6, type: 3}
+  - {fileID: 3286163911610860551, guid: 25516d30d3bb3fc408ece1e6c19f9b26, type: 3}
+  - {fileID: 3286163911610860551, guid: 60b509cb3c0b92743a564e5dcac6ef15, type: 3}
+  - {fileID: 3286163911610860551, guid: 72793fefdde2deb45aae9292f8bcce09, type: 3}
+  - {fileID: 3286163911610860551, guid: bdfa1f825104bb04f8b6b4cbad6ba949, type: 3}
+  - {fileID: 3286163911610860551, guid: 8737f028d0a3ba8429d0da07f544b591, type: 3}
+  - {fileID: 3286163911610860551, guid: fe1dcd84009e1104bb36529d440d9984, type: 3}
+  - {fileID: 3286163911610860551, guid: cddb82c2c19b29c4f9e3f862c84c3cfd, type: 3}
+  - {fileID: 3286163911610860551, guid: 5ceab2c4f2f784f478ed894dffaf12db, type: 3}
+  - {fileID: 3286163911610860551, guid: 00be597cb90d06e4585f7257633a0e28, type: 3}
+  - {fileID: 3286163911610860551, guid: 0107d3a6fb116f4458caf6a26583ab43, type: 3}
+  - {fileID: 3286163911610860551, guid: 6b6b41105db7f9647860fb11c2c8c649, type: 3}
+  framesDuration: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000

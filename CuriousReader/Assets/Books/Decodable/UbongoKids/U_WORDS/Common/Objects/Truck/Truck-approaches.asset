@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Truck-approaches
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: ed45664f21760a3489df05bc02564bc9, type: 3}
+  - {fileID: 3286163911610860551, guid: b3e20e068a3a3934fb5b5b827ac187e1, type: 3}
+  - {fileID: 3286163911610860551, guid: 26a3f0d4a058ab841bfa2066acda968b, type: 3}
+  - {fileID: 3286163911610860551, guid: a479a709995e6304b9fb244c12e93945, type: 3}
+  framesDuration: 07000000070000000700000007000000

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Man-enters
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: e6399c7cc622a9d4a923376b7fa6371a, type: 3}
+  - {fileID: 3286163911610860551, guid: 020f7352797462748819ec1cc8a87f1a, type: 3}
+  - {fileID: 3286163911610860551, guid: 5cafe61cb30cd1448ab9e5a81ce3e4bc, type: 3}
+  - {fileID: 3286163911610860551, guid: bb263779a55899f4b86739acddaefb14, type: 3}
+  framesDuration: 07000000070000000700000007000000

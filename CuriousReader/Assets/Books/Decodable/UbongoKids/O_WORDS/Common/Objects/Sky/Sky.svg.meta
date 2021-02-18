@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 246eac3ff4959ed4a91385424b027161
+guid: 1defd8b9fceb278408d4789099108fd4
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -14,7 +14,7 @@ ScriptedImporter:
   gradientResolution: 64
   alignment: 0
   customPivot: {x: 0, y: 0}
-  generatePhysicsShape: 0
+  generatePhysicsShape: 1
   viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
@@ -39,17 +39,17 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Sky-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5000577, y: 0.50000006}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: 59364bacb1790b349b88cbd690df0807
+        width: 260
+        height: 168
+      spriteID: 27e810b6a472c114999347b8df6beb75
       internalID: 0
     PhysicsOutlines: []

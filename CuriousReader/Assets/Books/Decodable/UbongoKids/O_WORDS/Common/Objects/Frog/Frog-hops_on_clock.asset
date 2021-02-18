@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Frog-hops_on_clock
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 3f1299387e1d8c14c88c4881944b98f4, type: 3}
+  - {fileID: 3286163911610860551, guid: 13f8f14d65230624eb08207f46a05258, type: 3}
+  - {fileID: 3286163911610860551, guid: da987585aa3a853499ffb939a14949c5, type: 3}
+  - {fileID: 3286163911610860551, guid: 73f83d4374c1194478e4430562b77d9c, type: 3}
+  - {fileID: 3286163911610860551, guid: 0d5d4c84d30954f48ae13561952668f7, type: 3}
+  - {fileID: 3286163911610860551, guid: 33878330b8081aa4c8178833813ac9e7, type: 3}
+  framesDuration: 050000000500000005000000050000000500000005000000

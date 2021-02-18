@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f06273d3695066f4f847400f2fe62b6d
+guid: fc639233f23db6b49b188d0a9446b275
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,17 +39,17 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Shop-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.4990729, y: 0.50128907}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: 173bba12366e7934697fd280e331d9a1
+        width: 151
+        height: 128
+      spriteID: be6e3534911768d479300dc8b709fbb9
       internalID: 0
     PhysicsOutlines: []

@@ -1,0 +1,53 @@
+# Scene Objects Count: 39
+
+# !!! Page index starts at 1 and the end page is inclusive !!!
+# !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
+# Syntax Example:
+#   ObjectName-animation_name > 1:10 & 12x3 & 17 & 20:25x3
+# Description:
+#   >       => Separates object name from page instructions
+#   &       => Connects the instructions
+#   1:10    => Put object on pages 1 through 10 (inclusive)
+#   12x3    => Put object on page 12, 3 times
+#   17      => Put object on page 17
+#   20:25x3 => Put object on pages 20 through 25, 3 times on each
+
+Background >
+Cat-dips_yam >
+Cat-dream >
+Cat-eats_yam >
+Cat-get_fat >
+Cat-get_stuck >
+Cat-in_a_jam >
+Cat-move >
+Cat-naps >
+Cat-pats_sam >
+Cat-ran >
+Cat-run >
+Cat-sit >
+Cat-sleep >
+Cat-smile >
+Cat-snores >
+Cat-stands >
+Cat-stand_up >
+Cat-trip >
+Cat-trips_over_toy >
+Cat-waddle >
+Cat-waddles_and_sits >
+Cat-wags_tail >
+Cat-wag_tail >
+Cat-walk >
+Jam >
+Man-enters >
+Man-fall_over >
+Man-points_to_cat >
+Man-ran >
+Man-slams >
+Man-tips_hat >
+Man-walk >
+Man-waves >
+Mat >
+Shadow >
+Toy >
+Yam >
+Zzz >

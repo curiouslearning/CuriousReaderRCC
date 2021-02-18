@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Boy-checks_hens_head
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: bcd645ad4a4648b47958cd0e9d014ab3, type: 3}
+  - {fileID: 3286163911610860551, guid: 541ae9db50a91f94f8e671c6d1249f06, type: 3}
+  - {fileID: 3286163911610860551, guid: d2b31e34f0ef6084d8c5ab9481d73b77, type: 3}
+  - {fileID: 3286163911610860551, guid: 392fb7359511d2f4ea9ec794e08434fa, type: 3}
+  - {fileID: 3286163911610860551, guid: 1dcedc764cc10c84ba40f2cbc4a8d4a7, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

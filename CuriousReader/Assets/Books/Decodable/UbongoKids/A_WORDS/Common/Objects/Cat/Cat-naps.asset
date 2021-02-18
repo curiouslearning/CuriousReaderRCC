@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Cat-naps
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: c434d83a0bb3b1341b4731924fff3169, type: 3}
+  - {fileID: 3286163911610860551, guid: 8d293a207e854944cba1f7811e575e9c, type: 3}
+  - {fileID: 3286163911610860551, guid: dc488e218e6b2ff4a8226c92d7c0a3f8, type: 3}
+  framesDuration: 0a0000000a0000000a000000

@@ -1,0 +1,50 @@
+# Scene Objects Count: 36
+
+# !!! Page index starts at 1 and the end page is inclusive !!!
+# !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
+# Syntax Example:
+#   ObjectName-animation_name > 1:10 & 12x3 & 17 & 20:25x3
+# Description:
+#   >       => Separates object name from page instructions
+#   &       => Connects the instructions
+#   1:10    => Put object on pages 1 through 10 (inclusive)
+#   12x3    => Put object on page 12, 3 times
+#   17      => Put object on page 17
+#   20:25x3 => Put object on pages 20 through 25, 3 times on each
+
+Background >
+Boy-checks >
+Boy-checks_hens_head >
+Boy-checks_hens_leg >
+Boy-checks_hens_neck >
+Boy-has_a_pet >
+Boy-peeks_kneeling >
+Boy-peeks_through_mesh >
+Boy-pets_the_hen >
+Boy-petting >
+Boy-sitting >
+Boy-steps_into_pen >
+Chair >
+Coop >
+Eggs-shakes_in_nest >
+Eggs >
+Grains >
+Hen >
+Hen-closing_eyes >
+Hen-flies_to_centre >
+Hen-flying >
+Hen-gets_up >
+Hen-is_not_well >
+Hen-pecking >
+Hen-pecks >
+Hen-rests >
+Hen-sad_face >
+Hen-smiles >
+Hen-smiling >
+Hen-standing >
+Hen-takes_a_step >
+Hen-walking >
+Hen-walking_in_pen >
+Land >
+Nest >
+Shadow >

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Cat-snores
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 3ce39177e3c966047965d19fb4099d78, type: 3}
+  - {fileID: 3286163911610860551, guid: 852a1ad4fed0a3a4491ac31b048be592, type: 3}
+  - {fileID: 3286163911610860551, guid: f31e0dbe0c64159478c097bf4551ec24, type: 3}
+  - {fileID: 3286163911610860551, guid: ecb9d31fac973bc41a60ede4fe672282, type: 3}
+  - {fileID: 3286163911610860551, guid: fd7e43cc47dea7b47a58be80a4dea9c5, type: 3}
+  - {fileID: 3286163911610860551, guid: f890cc2e9765bc94295aa6367147b7ee, type: 3}
+  framesDuration: 050000000500000005000000050000000500000005000000

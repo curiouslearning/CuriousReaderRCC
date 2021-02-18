@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Hen-flies_to_centre
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: e0ffffea84950934b9e7c100f3d16016, type: 3}
+  - {fileID: 3286163911610860551, guid: 73a39c3a76808e84eb8c50b2fdb8dc17, type: 3}
+  - {fileID: 3286163911610860551, guid: d1037624fe6b5e145a3f028bc09f6b7b, type: 3}
+  - {fileID: 3286163911610860551, guid: 5993a5678404a8e4c8fbffa75709fc40, type: 3}
+  framesDuration: 07000000070000000700000007000000

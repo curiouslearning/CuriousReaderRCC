@@ -1,0 +1,56 @@
+# Scene Objects Count: 42
+
+# !!! Page index starts at 1 and the end page is inclusive !!!
+# !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
+# Syntax Example:
+#   ObjectName-animation_name > 1:10 & 12x3 & 17 & 20:25x3
+# Description:
+#   >       => Separates object name from page instructions
+#   &       => Connects the instructions
+#   1:10    => Put object on pages 1 through 10 (inclusive)
+#   12x3    => Put object on page 12, 3 times
+#   17      => Put object on page 17
+#   20:25x3 => Put object on pages 20 through 25, 3 times on each
+
+Cardboardbox >
+Clock >
+Dog-enters >
+Dog >
+Door >
+Fog-emerges >
+Fog >
+Frog-checks_box >
+Frog-checks_pot >
+Frog-holding_mop >
+Frog-hops_from_rock >
+Frog-hops_onto_rock >
+Frog-hops_on_clock >
+Frog-hops_to_knob >
+Frog-hot_mops_with_mom >
+Frog-in_fog >
+Frog-jumping_forwards >
+Frog-jumping_up >
+Frog-jumping_up_and_down >
+Frog-looking_confused >
+Frog-looking_relieved >
+Frog-missing_mom >
+Frog-mops_with_mom >
+Frog-moves_mop >
+Frog-smiles >
+Frog-sweating >
+Frog-with_mom >
+Frog >
+Grains >
+Land >
+Log >
+MomFrog >
+Momfrog >
+Mops >
+Mud >
+Pot >
+Rock >
+Shadow >
+Shop >
+Sky >
+Sun >
+ThoughtBubble-mom_vision >

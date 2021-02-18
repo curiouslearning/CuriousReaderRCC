@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Cat-pats_sam
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 942d62e85a250194bb283f256a5ad9fb, type: 3}
+  - {fileID: 3286163911610860551, guid: bf7369faf6693af43b94b475a432f6ef, type: 3}
+  - {fileID: 3286163911610860551, guid: d8032b9b62e4fff4d963dc3457dad6c9, type: 3}
+  framesDuration: 0a0000000a0000000a000000

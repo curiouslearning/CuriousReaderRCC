@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Cat-trips_over_toy
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 1245dd903a7f69449919f53bba6d960a, type: 3}
+  - {fileID: 3286163911610860551, guid: f17f2fa9b4efd844bb9f61ba78591b28, type: 3}
+  - {fileID: 3286163911610860551, guid: 13f613cd35e66c14990e916ecb20e9e3, type: 3}
+  - {fileID: 3286163911610860551, guid: 86f1307b6ea28ad4389ecc017936b730, type: 3}
+  - {fileID: 3286163911610860551, guid: acb140fd054d2784f9d9f547ab022ac2, type: 3}
+  - {fileID: 3286163911610860551, guid: 46b3f4870577c4543b135105ea93ab2d, type: 3}
+  - {fileID: 3286163911610860551, guid: a8d8e42fb8f5ceb41b291ffb9e0bc164, type: 3}
+  - {fileID: 3286163911610860551, guid: ed48a192ab87b5d41bf675cd52acb621, type: 3}
+  - {fileID: 3286163911610860551, guid: 1e0daebd3c51de1469f03cf79a11559f, type: 3}
+  framesDuration: 030000000300000003000000030000000300000003000000030000000300000003000000

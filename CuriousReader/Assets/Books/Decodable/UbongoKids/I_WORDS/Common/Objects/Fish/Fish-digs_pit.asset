@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Fish-digs_pit
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 106a63517b74f4544bba7421a3ac86dc, type: 3}
+  - {fileID: 3286163911610860551, guid: efa29070bc3107c46bf50dfb826efbfc, type: 3}
+  - {fileID: 3286163911610860551, guid: 33568289987400a44a9eec3c657e3f9b, type: 3}
+  - {fileID: 3286163911610860551, guid: 64394e29da754e644b37a32e8252bf89, type: 3}
+  - {fileID: 3286163911610860551, guid: 584fc40c00a36c0459eb70d4dc6cac59, type: 3}
+  - {fileID: 3286163911610860551, guid: 106a63517b74f4544bba7421a3ac86dc, type: 3}
+  framesDuration: 050000000500000005000000050000000500000005000000

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Bug-drums
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: be7f2486eced6ba46b3e3ce46a101e68, type: 3}
+  - {fileID: 3286163911610860551, guid: 448f8bb3187f4e04da90d10706292f23, type: 3}
+  - {fileID: 3286163911610860551, guid: a1e145bd61866ed40ae0dec6f0ecf736, type: 3}
+  - {fileID: 3286163911610860551, guid: 8a2691a5c71a8294fa7cecee14e09fa6, type: 3}
+  - {fileID: 3286163911610860551, guid: d9a5a884bafec8f49955d284d1fb4ade, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

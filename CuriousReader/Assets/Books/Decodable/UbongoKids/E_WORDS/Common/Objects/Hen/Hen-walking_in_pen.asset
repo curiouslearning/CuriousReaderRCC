@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Hen-walking_in_pen
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 73215e4ec5d2f6745bb0a3f380c6f3d5, type: 3}
+  - {fileID: 3286163911610860551, guid: b2e156a9028832941b443268fbc07c6a, type: 3}
+  - {fileID: 3286163911610860551, guid: 565514934c82861498b5bc1b75aae38d, type: 3}
+  - {fileID: 3286163911610860551, guid: cf50edf0c59278c4785750a4b4ea76df, type: 3}
+  - {fileID: 3286163911610860551, guid: 1a14f75491bc1b943881e8361756ba59, type: 3}
+  - {fileID: 3286163911610860551, guid: 60511e132f23f5349aac952b9d2bc04c, type: 3}
+  - {fileID: 3286163911610860551, guid: e947b0adb7f8d32469d96b590abc8b8c, type: 3}
+  - {fileID: 3286163911610860551, guid: 54e8f77c4c0e57c4f8fa555a06bb1328, type: 3}
+  - {fileID: 3286163911610860551, guid: e6b0936f4775efc4ba06b7bc0bdcd138, type: 3}
+  - {fileID: 3286163911610860551, guid: e7497bbd47c280d4294627f98e67fa8f, type: 3}
+  - {fileID: 3286163911610860551, guid: 03507f468f141a34aaae8d914958946c, type: 3}
+  - {fileID: 3286163911610860551, guid: 5373df51e1fe39f4180a12deb7faf403, type: 3}
+  - {fileID: 3286163911610860551, guid: 5952517d7eafef64696d4bb95753e8c2, type: 3}
+  framesDuration: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000

@@ -1,0 +1,75 @@
+fileFormatVersion: 2
+guid: 6f3c0c6002f428545889d6d8df16e171
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: a_book
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: a57477913897c46af95d590f580878bd, type: 3}
+  svgType: 0
+  texturedSpriteMeshType: 0
+  svgPixelsPerUnit: 100
+  gradientResolution: 64
+  alignment: 0
+  customPivot: {x: 0, y: 0}
+  generatePhysicsShape: 1
+  viewportOptions: 1
+  preserveViewport: 0
+  advancedMode: 0
+  predefinedResolutionIndex: 1
+  targetResolution: 1080
+  resolutionMultiplier: 1
+  stepDistance: 10
+  samplingStepDistance: 100
+  maxCordDeviationEnabled: 0
+  maxCordDeviation: 1
+  maxTangentAngleEnabled: 0
+  maxTangentAngle: 5
+  keepTextureAspectRatio: 1
+  textureSize: 256
+  textureWidth: 256
+  textureHeight: 256
+  wrapMode: 0
+  filterMode: 1
+  sampleCount: 4
+  preserveSVGImageAspect: 0
+  useSVGPixelsPerUnit: 0
+  spriteData:
+    TessellationDetail: 0
+    SpriteRect:
+      name: Cat-trip-1Sprite
+      originalName: 
+      pivot: {x: 0.5, y: 0.5}
+      alignment: 0
+      border: {x: 0, y: 0, z: 0, w: 0}
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      spriteID: 5c37966021100994994009758abc4198
+      internalID: 0
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 42, y: 6}
+      - {x: 35, y: 19}
+      - {x: 22, y: 19}
+      - {x: 5, y: 9}
+      - {x: -17, y: 17}
+      - {x: -27, y: 32}
+      - {x: -35, y: 30}
+      - {x: -40, y: 21}
+      - {x: -31, y: 13}
+      - {x: -25, y: 1}
+      - {x: -19.230768, y: -10.344826}
+      - {x: -13, y: -7}
+      - {x: -3, y: -17}
+      - {x: 8, y: -20}
+      - {x: 13, y: -30}
+      - {x: 24, y: -28}
+      - {x: 26, y: -19}
+      - {x: 37, y: -16}
+      - {x: 38, y: -7}

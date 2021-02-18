@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8450c1af987aac8459be4b2cd3856cea
+guid: 259b1b23a39b71546b9f65b98a88bc92
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -39,17 +39,17 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Sun-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5089131, y: 0.5089131}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
-      spriteID: 0e9235927257ff742804265b91fb5051
+        width: 23
+        height: 23
+      spriteID: da7f7a7f85261b946a1fab5a73c05d81
       internalID: 0
     PhysicsOutlines: []
