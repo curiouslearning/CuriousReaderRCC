@@ -1,4 +1,4 @@
-# Scene Objects Count: 51
+# Scene Objects Count: 63
 
 # !!! Page index starts at 1 and the end page is inclusive !!!
 # !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
@@ -12,54 +12,66 @@
 #   17      => Put object on page 17
 #   20:25x3 => Put object on pages 20 through 25, 3 times on each
 
-BackgroundSky >1:16
-Basket-placed_upside_down >1:2 & 4 & 6:9 & 11:12 & 14:16
-Bat-animal_being_hit_by_stone >10
-Bat-animal_flying >11:12
-Bat-animal_sleeping >4 & 6:9 & 13:14
-Bottle-empty >4 & 6:7 & 9 & 12 & 14
+Background-house_tree >
+Background-land >
+Basket-placed_upside_down >
+Bat-animal_being_hit_by_stone >
+Bat-animal_flying >
+Bat-animal_sleeping >
+Bat-fast_asleep_in_the_bed >
+Bat-hit_by_the_stone >
+Bottle-empty >
 Box >
-Boy-aiming_plastic_bottle_at_mango >8
-Boy-gasps >16
-Boy-holding_a_stone >9
-Boy-holding_basket >1:7 & 11 & 14:15
-Boy-holding_mango >13:15
-Boy-standing_on_tiptoes_and_reaching_up_with_hand >6:7
-Boy-tall >12 & 14:15
-Boy-throwing_bottle >8
-Boy-walking >1:2 & 14:15
-Bubble-thought >2:3 & 15
-Bucket >4 & 6:9 & 12
+Boy-aiming_plastic_bottle_at_mango >
+Boy-argument_with_bat >
+Boy-climbed_the_short_log >
+Boy-eating_mango >
+Boy-eyes_right >
+Boy-gasps >
+Boy-holding_a_stone >
+Boy-holding_basket >
+Boy-holding_mango >
+Boy-is_eating_the_juicy_mango >
+Boy-licks_his_lips >
+Boy-points_at_the_mangoes >
+Boy-standing_on_tiptoes_and_reaching_up_with_hand >
+Boy-tall >
+Boy-tall_hand_up >
+Boy-tall_helps_the_child_pick_the_mango >
+Boy-throwing_bottle >
+Boy-walking >
+Boy-waves >
+Bubble-marketplace >
+Bubble-thought >
 Bucket-silver >
+Bucket >
 Clock >
 Cloud >
 Dog-brown >
 Door >
 Fog >
-Frog-green_frog >
-Frog-green_frog_holding_mop >
-Frog-green_frog_jumping_forwards >
-Frog-green_frog_jumping_up >
-Frog-green_frog_jumping_up_and_down >
-Frog-green_frog_looking_confused >
-Frog-green_frog_looking_relieved >
-Frog-green_frog_moves_mop_left_and_right_on_the_ground >
-Frog-green_frog_sweating >
 Grain >
-House >1:2 & 15
+House >
+Landscape-bushes >
+Landscape-lawn >
+Landscape-lawn_bush_path >
+Landscape-lawn_path >
 Log >
 Mops-two >
-Mother >1:2 & 15
-Pepper-green >2 & 15
+Mother-brought_the_pepper >
+Mother >
+Pepper-green >
 Pot >
 Rock >
 Shade >
-Shop >
 Shop-inside >
-Stalls >3
-Stone >
+Shop >
+Sky >
+Stalls >
 Stone-patches >
+Stone >
 Sun >
-Tree-mango >4 & 6:9 & 12
-Tree-short >4 & 6:9 & 12
-Zzz >
+Tree-mango >
+Tree-mango_half >
+Tree-short >
+Tree-trunk >

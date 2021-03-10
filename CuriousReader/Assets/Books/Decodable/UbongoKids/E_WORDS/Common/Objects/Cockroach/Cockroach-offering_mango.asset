@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Cockroach-offering_mango
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 7f4fb9cb81b265344b71f655f6f2b00b, type: 3}
+  - {fileID: 3286163911610860551, guid: 851fdd0c4b9dc4249b7a9d71b09979a4, type: 3}
+  - {fileID: 3286163911610860551, guid: 5f6e050af785b9e4894519179e7d55a2, type: 3}
+  - {fileID: 3286163911610860551, guid: 0e043b97e6165e14f85baac17ffd6bf7, type: 3}
+  - {fileID: 3286163911610860551, guid: cb4d8ad18593a034581a25c0e4c72f98, type: 3}
+  - {fileID: 3286163911610860551, guid: aeb5dad4b52365d4c9ccf850154809a6, type: 3}
+  - {fileID: 3286163911610860551, guid: 2aea953b4e559404488dd7e06f0edf7f, type: 3}
+  - {fileID: 3286163911610860551, guid: b56d9af6bb2fa0b4aadf9d2c4bb6189a, type: 3}
+  framesDuration: 0300000003000000030000000300000003000000030000000300000003000000

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: SmallHyena-and_the_warthog_eye_widen_as_they_look_around
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: ec259d2cc41fb984c8b25f17b13f0548, type: 3}
+  - {fileID: 3286163911610860551, guid: b2ae1393652148e448cad07ab581c581, type: 3}
+  - {fileID: 3286163911610860551, guid: bd318a2968f059d4293b5273c7b3fd18, type: 3}
+  - {fileID: 3286163911610860551, guid: 224b1ae409a48224389c490f0e4cfd76, type: 3}
+  - {fileID: 3286163911610860551, guid: 663ef373fc9f6994b88dfc6a7d7dbc64, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

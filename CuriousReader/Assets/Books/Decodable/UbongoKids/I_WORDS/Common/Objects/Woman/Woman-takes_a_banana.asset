@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Woman-takes_a_banana
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 0d3d0394f3997d24c92f91af8b444cb5, type: 3}
+  - {fileID: 3286163911610860551, guid: 9999305c309bbb446be0ef292e4a725a, type: 3}
+  - {fileID: 3286163911610860551, guid: adfd04b3f14689949b72add963039ace, type: 3}
+  framesDuration: 0a0000000a0000000a000000

@@ -15,7 +15,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  viewportOptions: 0
+  viewportOptions: 1
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -39,17 +39,23 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Man-nodding_pointing-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: cd8092e9c2434bd46b69774343ec4cfa
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: 12, y: -28}
+      - {x: 8, y: -12}
+      - {x: 12, y: 22}
+      - {x: 28, y: 22}
+      - {x: 28, y: -28}

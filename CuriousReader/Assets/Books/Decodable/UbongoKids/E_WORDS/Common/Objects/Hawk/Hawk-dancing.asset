@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Hawk-dancing
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 617931de36b9d14479ecb4f0c0ce715e, type: 3}
+  - {fileID: 3286163911610860551, guid: 7e0ab11cccabc004bb26cd0de3845ae1, type: 3}
+  - {fileID: 3286163911610860551, guid: 994d7f6c0f8120142a6da5b0a3069d6e, type: 3}
+  - {fileID: 3286163911610860551, guid: 871345c1eafe8244e940fc056bc00df2, type: 3}
+  - {fileID: 3286163911610860551, guid: ab10726a7ccafdb4da86cf2f1abf8091, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

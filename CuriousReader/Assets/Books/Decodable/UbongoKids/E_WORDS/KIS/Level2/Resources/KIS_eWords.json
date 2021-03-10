@@ -43,8 +43,8 @@
                     "id": 1,
                     "tag": "",
                     "posX": -76.0,
-                    "posY": -30.0,
-                    "posZ": 0.0,
+                    "posY": -43.0,
+                    "posZ": -2.0,
                     "scaleX": 230.0,
                     "scaleY": 230.0,
                     "rotX": 0.0,
@@ -57,9 +57,7 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Hawk-sitting"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 4,
@@ -91,9 +89,53 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 1,
@@ -149,21 +191,21 @@
                     "tag": "",
                     "posX": 14.0,
                     "posY": -14.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 570.0,
                     "scaleY": 570.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "Hawk- walk-1",
+                    "imageName": "Hawk-walking-1",
                     "inText": false,
                     "label": "Hawk- walk",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Hawk- walk"
+                        "Hawk-walking"
                     ]
                 },
                 {
@@ -216,9 +258,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        0,
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Hawk-walking\"}"
+                }
+            ]
         },
         {
             "pageNumber": 2,
@@ -240,7 +326,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -4,
+                    "orderInLayer": -6,
                     "imageName": "Background-sky2-1",
                     "inText": false,
                     "label": "BackgroundSky",
@@ -260,7 +346,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -3,
+                    "orderInLayer": -5,
                     "imageName": "Background-bushes-1",
                     "inText": false,
                     "label": "Bushes",
@@ -274,21 +360,21 @@
                     "tag": "",
                     "posX": 14.0,
                     "posY": -14.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 570.0,
                     "scaleY": 570.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Hawk-strum_a_zeze-1",
+                    "imageName": "Hawk-strumming_harp-1",
                     "inText": false,
                     "label": "Hawk-strum_a_zeze",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Hawk-strum_a_zeze"
+                        "Hawk-strumming_harp"
                     ]
                 },
                 {
@@ -302,7 +388,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
+                    "orderInLayer": -4,
                     "imageName": "Road",
                     "inText": false,
                     "label": "Road",
@@ -350,6 +436,26 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 6,
+                    "tag": "",
+                    "posX": 51.0,
+                    "posY": -45.0,
+                    "posZ": 0.0,
+                    "scaleX": 230.0,
+                    "scaleY": 230.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Zeze-straight-1",
+                    "inText": false,
+                    "label": "Zeze",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
                 }
             ],
             "texts": [
@@ -361,9 +467,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        0,
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Hawk-strumming_harp\"}"
+                }
+            ]
         },
         {
             "pageNumber": 3,
@@ -385,30 +535,10 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -5,
+                    "orderInLayer": -6,
                     "imageName": "Background-sky2-1",
                     "inText": false,
                     "label": "BackgroundSky",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 1,
-                    "tag": "",
-                    "posX": 0.0,
-                    "posY": -14.0,
-                    "posZ": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "Backpack",
-                    "inText": false,
-                    "label": "Backpack",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -425,7 +555,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -4,
+                    "orderInLayer": -5,
                     "imageName": "Background-bushes-1",
                     "inText": false,
                     "label": "Bush",
@@ -457,15 +587,15 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": 231.0,
+                    "posX": 439.0,
                     "posY": -166.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 220.0,
                     "scaleY": 220.0,
-                    "rotX": -0.000002181476247642422,
-                    "rotY": -0.0000037298577808542179,
+                    "rotX": -0.0000021814764750160977,
+                    "rotY": -0.000003729857326106867,
                     "rotZ": 0.06337720900774002,
-                    "orderInLayer": 0,
+                    "orderInLayer": -1,
                     "imageName": "Cockroach-bag-1",
                     "inText": false,
                     "label": "Cockroach-carrying",
@@ -487,16 +617,14 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "Hawk-strum_a_zeze-1",
+                    "orderInLayer": 0,
+                    "imageName": "Hawk-strumming_harp-1",
                     "inText": false,
                     "label": "Hawk-strum_a_zeze",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Hawk-strum_a_zeze"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 6,
@@ -529,7 +657,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -3,
+                    "orderInLayer": -4,
                     "imageName": "Road",
                     "inText": false,
                     "label": "Road",
@@ -549,7 +677,7 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
+                    "orderInLayer": -3,
                     "imageName": "Hawk-shadow-1",
                     "inText": false,
                     "label": "Shadow",
@@ -561,18 +689,18 @@
                 {
                     "id": 9,
                     "tag": "",
-                    "posX": 254.0,
-                    "posY": -87.0,
+                    "posX": 51.0,
+                    "posY": -45.0,
                     "posZ": 0.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
+                    "scaleX": 230.0,
+                    "scaleY": 230.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "Hawk-shadow-1",
+                    "orderInLayer": -2,
+                    "imageName": "Zeze-straight-1",
                     "inText": false,
-                    "label": "Shadow",
+                    "label": "Zeze",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -588,9 +716,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 9,
+                    "prompts": [
+                        0,
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":200.0,\"y\":-166.0,\"z\":0.0}}"
+                }
+            ]
         },
         {
             "pageNumber": 4,
@@ -708,7 +880,7 @@
                     "tag": "",
                     "posX": -39.0,
                     "posY": 19.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 600.0,
                     "scaleY": 600.0,
                     "rotX": 0.0,
@@ -815,9 +987,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Hawk-dancing\"}"
+                }
+            ]
         },
         {
             "pageNumber": 5,
@@ -955,7 +1171,7 @@
                     "tag": "",
                     "posX": -122.0,
                     "posY": -4.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 200.0,
                     "scaleY": 200.0,
                     "rotX": 0.0,
@@ -1000,9 +1216,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 6,
@@ -1096,23 +1356,23 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": 192.0,
-                    "posY": -171.0,
-                    "posZ": 0.0,
-                    "scaleX": 220.0,
-                    "scaleY": 220.0,
+                    "posX": 440.0,
+                    "posY": 59.0,
+                    "posZ": -2.0,
+                    "scaleX": 1000.0,
+                    "scaleY": 1000.0,
                     "rotX": -0.000004801142949872883,
                     "rotY": 180.0,
                     "rotZ": 10.460264205932618,
                     "orderInLayer": 0,
-                    "imageName": "Cockroach-bag-1",
+                    "imageName": "Cockroach-beckoning-1",
                     "inText": false,
                     "label": "Cockroach-carrying",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Cockroach-carrying"
+                        "Cockroach-beckoning"
                     ]
                 },
                 {
@@ -1127,15 +1387,13 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -3,
-                    "imageName": "Hawk- walk-1",
+                    "imageName": "Hawk-walking-1",
                     "inText": false,
                     "label": "Hawk- walk",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Hawk- walk"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 6,
@@ -1227,9 +1485,53 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Cockroach-beckoning\"}"
+                }
+            ]
         },
         {
             "pageNumber": 7,
@@ -1326,8 +1628,8 @@
                     "posX": 18.0,
                     "posY": -133.0,
                     "posZ": 0.0,
-                    "scaleX": 230.0,
-                    "scaleY": 230.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 305.4247131347656,
@@ -1338,9 +1640,7 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cockroach-carrying"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 5,
@@ -1354,22 +1654,20 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Hawk- walk-1",
+                    "imageName": "Hawk-walking-1",
                     "inText": false,
                     "label": "Hawk- walk",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Hawk- walk"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": -16.0,
-                    "posY": -101.0,
-                    "posZ": 0.0,
+                    "posX": -14.0,
+                    "posY": -100.0,
+                    "posZ": -2.0,
                     "scaleX": 400.0,
                     "scaleY": 400.0,
                     "rotX": 0.0,
@@ -1494,9 +1792,53 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        0,
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 8,
@@ -1621,22 +1963,20 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Hawk- walk-1",
+                    "imageName": "Hawk-walking-1",
                     "inText": false,
                     "label": "Hawk- walk",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Hawk- walk"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 6,
                     "tag": "",
                     "posX": 108.0,
                     "posY": -22.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 600.0,
                     "scaleY": 600.0,
                     "rotX": 0.0,
@@ -1745,9 +2085,53 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                }
+            ]
         },
         {
             "pageNumber": 9,
@@ -1954,9 +2338,67 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 99,
+                    "starWord": "No"
+                },
+                {
+                    "start": 99,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 198,
+                    "starWord": "No"
+                },
+                {
+                    "start": 199,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 298,
+                    "starWord": "No"
+                },
+                {
+                    "start": 299,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 398,
+                    "starWord": "No"
+                },
+                {
+                    "start": 399,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 10,
@@ -2065,40 +2507,38 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Cockroach-carrying"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 5,
                     "tag": "",
                     "posX": 0.0,
                     "posY": -30.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 600.0,
                     "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -3,
-                    "imageName": "Man-fat_man_nodding_head-1",
+                    "imageName": "Man-shaking_head-1",
                     "inText": false,
                     "label": "Man-fat_man_nodding_head",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Man-fat_man_nodding_head"
+                        "Man-shaking_head"
                     ]
                 },
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": -62.0,
-                    "posY": -9.0,
+                    "posX": -52.0,
+                    "posY": -14.0,
                     "posZ": 0.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -2252,6 +2692,46 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
+                },
+                {
+                    "id": 14,
+                    "tag": "",
+                    "posX": -203.0,
+                    "posY": 16.0,
+                    "posZ": 0.0,
+                    "scaleX": 200.0,
+                    "scaleY": 200.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -3,
+                    "imageName": "Bubble-thought-1",
+                    "inText": false,
+                    "label": "Bubble",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
+                },
+                {
+                    "id": 15,
+                    "tag": "",
+                    "posX": -204.0,
+                    "posY": 21.0,
+                    "posZ": -2.0,
+                    "scaleX": 0.20000000298023225,
+                    "scaleY": 0.20000000298023225,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
+                    "orderInLayer": -2,
+                    "imageName": "Dates",
+                    "inText": false,
+                    "label": "Dates",
+                    "destroyOnCollision": "",
+                    "draggable": false,
+                    "anim": [],
+                    "Animations": []
                 }
             ],
             "texts": [
@@ -2263,9 +2743,79 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Man-shaking_head\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 11,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 15,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":200.0,\"y\":200.0,\"z\":0.0}}"
+                }
+            ]
         },
         {
             "pageNumber": 11,
@@ -2381,8 +2931,8 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": -159.0,
-                    "posY": 3.0,
+                    "posX": -167.0,
+                    "posY": 13.0,
                     "posZ": 0.0,
                     "scaleX": 200.0,
                     "scaleY": 200.0,
@@ -2403,23 +2953,23 @@
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": -160.0,
-                    "posY": -100.0,
-                    "posZ": 0.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
+                    "posX": -9.0,
+                    "posY": 27.0,
+                    "posZ": -2.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Hawk_with_eyes_up_giving-1",
+                    "imageName": "Hawk-offering_harp-1",
                     "inText": false,
                     "label": "Hawk-giving_harp_to_man",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Hawk-giving_harp_to_man"
+                        "Hawk-offering_harp"
                     ]
                 },
                 {
@@ -2427,21 +2977,21 @@
                     "tag": "",
                     "posX": 0.0,
                     "posY": -14.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 620.0,
                     "scaleY": 620.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Man-fat_man_shaking_head-1",
+                    "imageName": "Man-shaking_head-1",
                     "inText": false,
                     "label": "Man-fat_man_shaking_head",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Man-fat_man_shaking_head"
+                        "Man-shaking_head"
                     ]
                 },
                 {
@@ -2529,8 +3079,8 @@
                 {
                     "id": 12,
                     "tag": "",
-                    "posX": -172.0,
-                    "posY": -37.0,
+                    "posX": -161.0,
+                    "posY": -63.0,
                     "posZ": 0.0,
                     "scaleX": 500.0,
                     "scaleY": 500.0,
@@ -2549,8 +3099,8 @@
                 {
                     "id": 13,
                     "tag": "",
-                    "posX": 111.0,
-                    "posY": 15.0,
+                    "posX": 163.0,
+                    "posY": -6.0,
                     "posZ": 0.0,
                     "scaleX": 100.0,
                     "scaleY": 100.0,
@@ -2576,9 +3126,84 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 7,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Hawk-offering_harp\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 7,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Man-shaking_head\"}"
+                }
+            ]
         },
         {
             "pageNumber": 12,
@@ -2694,23 +3319,23 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": -66.0,
-                    "posY": -31.0,
-                    "posZ": 0.0,
-                    "scaleX": 220.0,
-                    "scaleY": 220.0,
-                    "rotX": 0.000004407169399200939,
-                    "rotY": 180.0,
-                    "rotZ": 298.3748474121094,
+                    "posX": 5.0,
+                    "posY": 39.0,
+                    "posZ": -2.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
+                    "rotX": 0.0,
+                    "rotY": 0.0,
+                    "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Cockroach-bag-1",
+                    "imageName": "Cockroach-offering_mango-1",
                     "inText": false,
                     "label": "Cockroach-carrying",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Cockroach-carrying"
+                        "Cockroach-offering_mango"
                     ]
                 },
                 {
@@ -2718,42 +3343,22 @@
                     "tag": "",
                     "posX": 0.0,
                     "posY": -22.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 600.0,
                     "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Man-fat_man_nodding_head-1",
+                    "imageName": "Man-shaking_head-1",
                     "inText": false,
                     "label": "Man-fat_man_nodding_head",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Man-fat_man_nodding_head"
+                        "Man-shaking_head"
                     ]
-                },
-                {
-                    "id": 7,
-                    "tag": "",
-                    "posX": -30.0,
-                    "posY": 0.0,
-                    "posZ": 0.0,
-                    "scaleX": 350.0,
-                    "scaleY": 350.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": 0,
-                    "imageName": "Mango",
-                    "inText": false,
-                    "label": "Mango",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
                 },
                 {
                     "id": 8,
@@ -2847,9 +3452,84 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Cockroach-offering_mango\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Man-shaking_head\"}"
+                }
+            ]
         },
         {
             "pageNumber": 13,
@@ -2963,28 +3643,6 @@
                     "Animations": []
                 },
                 {
-                    "id": 5,
-                    "tag": "",
-                    "posX": -78.0,
-                    "posY": -18.0,
-                    "posZ": 0.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
-                    "rotX": 4.520010471343994,
-                    "rotY": 180.0,
-                    "rotZ": 295.5224914550781,
-                    "orderInLayer": 0,
-                    "imageName": "Cockroach-carrying-1",
-                    "inText": false,
-                    "label": "Cockroach-carrying",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": [
-                        "Cockroach-carrying"
-                    ]
-                },
-                {
                     "id": 6,
                     "tag": "",
                     "posX": 0.0,
@@ -2995,36 +3653,36 @@
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -4,
-                    "imageName": "Man-fat_man_nodding_head-1",
+                    "orderInLayer": 0,
+                    "imageName": "Man-shaking_head-1",
                     "inText": false,
                     "label": "Man-fat_man_nodding_head",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Man-fat_man_nodding_head"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": -47.0,
-                    "posY": 6.0,
-                    "posZ": 0.0,
-                    "scaleX": 200.0,
-                    "scaleY": 200.0,
+                    "posX": 7.0,
+                    "posY": 46.0,
+                    "posZ": -2.0,
+                    "scaleX": 900.0,
+                    "scaleY": 900.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
-                    "rotZ": 111.24179077148438,
-                    "orderInLayer": 0,
-                    "imageName": "Ring",
+                    "rotZ": 0.0,
+                    "orderInLayer": -1,
+                    "imageName": "Ring-sparkling-1",
                     "inText": false,
                     "label": "Ring",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Ring-sparkling"
+                    ]
                 },
                 {
                     "id": 8,
@@ -3098,9 +3756,53 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Ring-sparkling\"}"
+                }
+            ]
         },
         {
             "pageNumber": 14,
@@ -3156,9 +3858,9 @@
                     "tag": "",
                     "posX": 14.0,
                     "posY": -153.0,
-                    "posZ": 0.0,
-                    "scaleX": 220.0,
-                    "scaleY": 220.0,
+                    "posZ": -2.0,
+                    "scaleX": 233.51284790039063,
+                    "scaleY": 233.51284790039063,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -3221,7 +3923,7 @@
                     "posZ": 0.0,
                     "scaleX": 200.0,
                     "scaleY": 200.0,
-                    "rotX": 4.520009517669678,
+                    "rotX": 4.520010471343994,
                     "rotY": 180.0,
                     "rotZ": 295.5199890136719,
                     "orderInLayer": 0,
@@ -3240,21 +3942,21 @@
                     "tag": "",
                     "posX": 18.0,
                     "posY": -25.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 600.0,
                     "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Man-fat_man_pointing_finger-1",
+                    "imageName": "Man-nodding_pointing-1",
                     "inText": false,
                     "label": "Man-fat_man_pointing_finger",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Man-fat_man_pointing_finger"
+                        "Man-nodding_pointing"
                     ]
                 },
                 {
@@ -3389,9 +4091,91 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Man-nodding_pointing\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                }
+            ]
         },
         {
             "pageNumber": 15,
@@ -3440,9 +4224,7 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": [
-                        "Bucket-dates"
-                    ]
+                    "Animations": []
                 },
                 {
                     "id": 2,
@@ -3488,22 +4270,22 @@
                     "id": 4,
                     "tag": "",
                     "posX": 0.0,
-                    "posY": 7.0,
-                    "posZ": 0.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
+                    "posY": 43.0,
+                    "posZ": -2.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "Cockroach-front_facing-1",
+                    "imageName": "Cockroach-eating_date-1",
                     "inText": false,
                     "label": "Cockroach",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Cockroach-carrying"
+                        "Cockroach-eating_date"
                     ]
                 },
                 {
@@ -3511,42 +4293,44 @@
                     "tag": "",
                     "posX": -75.0,
                     "posY": -5.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 600.0,
                     "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Man-fat_man_ wearing_ring-1",
+                    "imageName": "Man-eating_date-1",
                     "inText": false,
                     "label": "Man-fat_man_ wearing_ring",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
                     "Animations": [
-                        "Man-fat_man_ wearing_ring"
+                        "Man-eating_date"
                     ]
                 },
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": 0.0,
-                    "posY": -95.0,
-                    "posZ": 0.0,
-                    "scaleX": 230.0,
-                    "scaleY": 230.0,
+                    "posX": -23.0,
+                    "posY": 24.0,
+                    "posZ": -2.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "Hawk-with_wings_near_beak-1",
+                    "imageName": "Hawk-eating_date-1",
                     "inText": false,
                     "label": "Hawk",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Hawk-eating_date"
+                    ]
                 },
                 {
                     "id": 7,
@@ -3660,9 +4444,95 @@
                     "y": 182.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Cockroach-eating_date\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Man-eating_date\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Hawk-eating_date\"}"
+                }
+            ]
         }
     ]
 }

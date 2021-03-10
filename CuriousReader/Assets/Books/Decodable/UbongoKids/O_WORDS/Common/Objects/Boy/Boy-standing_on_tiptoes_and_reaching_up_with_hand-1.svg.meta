@@ -54,7 +54,7 @@ ScriptedImporter:
       internalID: 0
     PhysicsOutlines:
     - Vertices:
-      - {x: -33, y: 19}
-      - {x: -31, y: -18}
-      - {x: -14, y: -23}
-      - {x: -11, y: 18}
+      - {x: -31, y: 14}
+      - {x: -27, y: -17}
+      - {x: -14, y: -16}
+      - {x: -18, y: 15}

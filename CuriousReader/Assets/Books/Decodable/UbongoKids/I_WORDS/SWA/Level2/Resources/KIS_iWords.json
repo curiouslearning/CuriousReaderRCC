@@ -20,46 +20,6 @@
             },
             "gameObjects": [
                 {
-                    "id": 0,
-                    "tag": "",
-                    "posX": 323.0,
-                    "posY": -41.0,
-                    "posZ": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -4,
-                    "imageName": "Cloud-sky-1",
-                    "inText": false,
-                    "label": "Cloud",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 1,
-                    "tag": "",
-                    "posX": -264.0,
-                    "posY": 130.0,
-                    "posZ": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -4,
-                    "imageName": "Cloud-sky-1",
-                    "inText": false,
-                    "label": "Cloud",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
                     "id": 2,
                     "tag": "",
                     "posX": -146.0,
@@ -91,7 +51,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -7,
-                    "imageName": "Sky",
+                    "imageName": "CityLights",
                     "inText": false,
                     "label": "Sky",
                     "destroyOnCollision": "",
@@ -104,7 +64,7 @@
                     "tag": "",
                     "posX": -27.0,
                     "posY": -22.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 280.0,
                     "scaleY": 280.0,
                     "rotX": 0.0,
@@ -143,15 +103,66 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Mimi ni fisi mdogo",
+                    "text": "Mimi ni fisi mdogo.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.5}"
+                }
+            ]
         },
         {
             "pageNumber": 2,
@@ -162,46 +173,6 @@
                 "objectId": 0
             },
             "gameObjects": [
-                {
-                    "id": 0,
-                    "tag": "",
-                    "posX": 323.0,
-                    "posY": -41.0,
-                    "posZ": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -4,
-                    "imageName": "Cloud-sky-1",
-                    "inText": false,
-                    "label": "Cloud",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 1,
-                    "tag": "",
-                    "posX": -264.0,
-                    "posY": 130.0,
-                    "posZ": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -4,
-                    "imageName": "Cloud-sky-1",
-                    "inText": false,
-                    "label": "Cloud",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
                 {
                     "id": 2,
                     "tag": "",
@@ -234,7 +205,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -5,
-                    "imageName": "Sky",
+                    "imageName": "CityLights",
                     "inText": false,
                     "label": "Sky",
                     "destroyOnCollision": "",
@@ -246,21 +217,23 @@
                     "id": 4,
                     "tag": "",
                     "posX": -5.0,
-                    "posY": -15.0,
-                    "posZ": 5.0,
-                    "scaleX": 280.0,
-                    "scaleY": 280.0,
+                    "posY": 27.0,
+                    "posZ": -2.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "SmallHyena-holding_hands_with_bibi-1",
+                    "imageName": "SmallHyena-with_grandmother-1",
                     "inText": false,
                     "label": "small_hyena_holding hands with bibi",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "SmallHyena-with_grandmother"
+                    ]
                 },
                 {
                     "id": 5,
@@ -292,9 +265,60 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"SmallHyena-with_grandmother\"}"
+                }
+            ]
         },
         {
             "pageNumber": 3,
@@ -305,26 +329,6 @@
                 "objectId": 0
             },
             "gameObjects": [
-                {
-                    "id": 0,
-                    "tag": "",
-                    "posX": -181.0,
-                    "posY": 34.0,
-                    "posZ": 0.0,
-                    "scaleX": 30.0,
-                    "scaleY": 30.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -5,
-                    "imageName": "Cloud-sky-1",
-                    "inText": false,
-                    "label": "Cloud",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
                 {
                     "id": 1,
                     "tag": "",
@@ -366,44 +370,26 @@
                     "Animations": []
                 },
                 {
-                    "id": 3,
-                    "tag": "",
-                    "posX": 153.0,
-                    "posY": -47.0,
-                    "posZ": 3.0,
-                    "scaleX": 220.0,
-                    "scaleY": 200.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -1,
-                    "imageName": "GrandmaHyena-back_side-1",
-                    "inText": false,
-                    "label": "Grandma_hyena_back_side",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
                     "id": 4,
                     "tag": "",
-                    "posX": -140.0,
-                    "posY": -69.0,
-                    "posZ": 5.0,
+                    "posX": 0.0,
+                    "posY": -53.0,
+                    "posZ": -2.0,
                     "scaleX": 250.0,
                     "scaleY": 250.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "SmallHyena-back_side-1",
+                    "imageName": "SmallHyena-are_going_to_the_town_today-1",
                     "inText": false,
                     "label": "small_hyena_back_side",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "SmallHyena-are_going_to_the_town_today"
+                    ]
                 },
                 {
                     "id": 5,
@@ -437,7 +423,7 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -6,
-                    "imageName": "Sky",
+                    "imageName": "CityLights-with_clounds-1",
                     "inText": false,
                     "label": "Sky",
                     "destroyOnCollision": "",
@@ -464,26 +450,6 @@
                     "draggable": false,
                     "anim": [],
                     "Animations": []
-                },
-                {
-                    "id": 8,
-                    "tag": "",
-                    "posX": -69.0,
-                    "posY": -169.0,
-                    "posZ": 0.0,
-                    "scaleX": 0.0,
-                    "scaleY": 0.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 107.74827575683594,
-                    "orderInLayer": -3,
-                    "imageName": "Village",
-                    "inText": false,
-                    "label": "village",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
                 }
             ],
             "texts": [
@@ -495,9 +461,84 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"SmallHyena-are_going_to_the_town_today\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                }
+            ]
         },
         {
             "pageNumber": 4,
@@ -551,16 +592,16 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": -176.0,
-                    "posY": -150.0,
+                    "posX": -200.0,
+                    "posY": -41.0,
                     "posZ": 0.0,
-                    "scaleX": 450.0,
-                    "scaleY": 450.0,
+                    "scaleX": 1000.0,
+                    "scaleY": 1000.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "SmallHyena-sitting-1",
+                    "imageName": "SmallHyena-smile-1",
                     "inText": false,
                     "label": "small_hyena_sitting",
                     "destroyOnCollision": "",
@@ -571,22 +612,24 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 140.0,
-                    "posY": -27.0,
-                    "posZ": 0.0,
-                    "scaleX": 200.0,
-                    "scaleY": 200.0,
+                    "posX": 71.0,
+                    "posY": 3.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -3,
-                    "imageName": "ThoughtBubble",
+                    "imageName": "GrandmaHyena-buy_a_beautiful_chair-1",
                     "inText": false,
                     "label": "thought_bubble",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "GrandmaHyena-buy_a_beautiful_chair"
+                    ]
                 }
             ],
             "texts": [
@@ -598,9 +641,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"GrandmaHyena-buy_a_beautiful_chair\"}"
+                }
+            ]
         },
         {
             "pageNumber": 5,
@@ -689,7 +776,9 @@
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Background-five"
+                    ]
                 },
                 {
                     "id": 4,
@@ -761,9 +850,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Background-five\"}"
+                }
+            ]
         },
         {
             "pageNumber": 6,
@@ -797,7 +930,7 @@
                 {
                     "id": 1,
                     "tag": "",
-                    "posX": 146.0,
+                    "posX": 175.0,
                     "posY": -27.0,
                     "posZ": 0.0,
                     "scaleX": 240.0,
@@ -857,16 +990,16 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": -21.0,
-                    "posY": -89.0,
+                    "posX": -20.0,
+                    "posY": 20.0,
                     "posZ": 0.0,
-                    "scaleX": 230.0,
-                    "scaleY": 230.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "SmallHyena-sitting-1",
+                    "imageName": "SmallHyena-smile-1",
                     "inText": false,
                     "label": "small_hyena_sitting",
                     "destroyOnCollision": "",
@@ -877,22 +1010,24 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": -161.0,
-                    "posY": -107.0,
-                    "posZ": 5.0,
-                    "scaleX": 210.0,
-                    "scaleY": 210.0,
+                    "posX": -41.0,
+                    "posY": 26.0,
+                    "posZ": -2.0,
+                    "scaleX": 700.0,
+                    "scaleY": 700.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -3,
-                    "imageName": "Warthog-sitting-1",
+                    "imageName": "Warthog-smile-1",
                     "inText": false,
                     "label": "warthog_sitting",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Warthog-smile"
+                    ]
                 }
             ],
             "texts": [
@@ -904,9 +1039,67 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 99,
+                    "starWord": "No"
+                },
+                {
+                    "start": 99,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 198,
+                    "starWord": "No"
+                },
+                {
+                    "start": 199,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 298,
+                    "starWord": "No"
+                },
+                {
+                    "start": 299,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 398,
+                    "starWord": "No"
+                },
+                {
+                    "start": 399,
+                    "wordIdx": 4,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Warthog-smile\"}"
+                }
+            ]
         },
         {
             "pageNumber": 7,
@@ -1130,9 +1323,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2000000476837159}"
+                }
+            ]
         },
         {
             "pageNumber": 9,
@@ -1166,22 +1403,24 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 63.0,
-                    "posY": -15.0,
+                    "posX": 11.0,
+                    "posY": 42.0,
                     "posZ": 0.0,
-                    "scaleX": 150.0,
-                    "scaleY": 150.0,
+                    "scaleX": 850.0,
+                    "scaleY": 850.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "GrandmaHyena-sitting-1",
+                    "imageName": "SmallHyena-and_the_warthog_eye_widen_as_they_look_around-1",
                     "inText": false,
                     "label": "Grandma_hyena_sitting",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "SmallHyena-and_the_warthog_eye_widen_as_they_look_around"
+                    ]
                 },
                 {
                     "id": 3,
@@ -1198,46 +1437,6 @@
                     "imageName": "Sky",
                     "inText": false,
                     "label": "Sky",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 4,
-                    "tag": "",
-                    "posX": -49.0,
-                    "posY": -40.0,
-                    "posZ": 0.0,
-                    "scaleX": 370.0,
-                    "scaleY": 370.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "SmallHyena-standing-1",
-                    "inText": false,
-                    "label": "small_hyena_sitting",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 5,
-                    "tag": "",
-                    "posX": -151.0,
-                    "posY": -60.0,
-                    "posZ": 0.0,
-                    "scaleX": 150.0,
-                    "scaleY": 150.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "Warthog-sitting-1",
-                    "inText": false,
-                    "label": "warthog_sitting",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -1273,9 +1472,53 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"SmallHyena-and_the_warthog_eye_widen_as_they_look_around\"}"
+                }
+            ]
         },
         {
             "pageNumber": 10,
@@ -1298,29 +1541,9 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -3,
-                    "imageName": "CandyShop",
+                    "imageName": "Candy-shop-1",
                     "inText": false,
                     "label": "candy_shop",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 1,
-                    "tag": "",
-                    "posX": -64.0,
-                    "posY": -54.0,
-                    "posZ": 0.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -1,
-                    "imageName": "Candy-in_hand-1",
-                    "inText": false,
-                    "label": "Candy",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
@@ -1349,22 +1572,24 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": -130.0,
-                    "posY": -39.0,
-                    "posZ": 5.0,
-                    "scaleX": 220.0,
-                    "scaleY": 220.0,
+                    "posX": -35.0,
+                    "posY": -21.0,
+                    "posZ": -3.0,
+                    "scaleX": 520.0,
+                    "scaleY": 520.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Man",
+                    "imageName": "Man-takes_a_sweet-1",
                     "inText": false,
                     "label": "man",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Man-takes_a_sweet"
+                    ]
                 },
                 {
                     "id": 4,
@@ -1409,16 +1634,16 @@
                 {
                     "id": 6,
                     "tag": "",
-                    "posX": 80.0,
-                    "posY": -144.0,
-                    "posZ": 3.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
+                    "posX": -18.0,
+                    "posY": -12.0,
+                    "posZ": -2.0,
+                    "scaleX": 629.3369750976563,
+                    "scaleY": 629.3369750976563,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Warthog-shaking_head-1",
+                    "imageName": "Warthog-shake_their_head-1",
                     "inText": false,
                     "label": "warthog_shaking_head",
                     "destroyOnCollision": "",
@@ -1456,9 +1681,84 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                }
+            ]
         },
         {
             "pageNumber": 11,
@@ -1552,62 +1852,68 @@
                 {
                     "id": 4,
                     "tag": "",
-                    "posX": -7.0,
-                    "posY": -96.0,
-                    "posZ": 0.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
+                    "posX": -20.0,
+                    "posY": 13.0,
+                    "posZ": -2.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "SmallHyena-watching-1",
+                    "imageName": "SmallHyena-shake_their_head-1",
                     "inText": false,
                     "label": "small_hyena_walking",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "SmallHyena-shake_their_head"
+                    ]
                 },
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": 46.0,
-                    "posY": -120.0,
-                    "posZ": 5.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
+                    "posX": -48.0,
+                    "posY": -10.0,
+                    "posZ": -3.0,
+                    "scaleX": 600.0,
+                    "scaleY": 600.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Warthog-shaking_head-1",
+                    "imageName": "Warthog-shake_their_head-1",
                     "inText": false,
                     "label": "warthog_shaking_head",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Warthog-shake_their_head"
+                    ]
                 },
                 {
                     "id": 6,
                     "tag": "",
                     "posX": -204.0,
                     "posY": -30.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 240.0,
                     "scaleY": 240.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "Woman-green_point-1",
+                    "imageName": "Woman-takes_a_banana-1",
                     "inText": false,
                     "label": "woman",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Woman-takes_a_banana"
+                    ]
                 },
                 {
                     "id": 7,
@@ -1633,15 +1939,121 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Chukua hii ndizi",
+                    "text": "Chukua hii ndizi.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 4,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 6,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Woman-takes_a_banana\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 4,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"SmallHyena-shake_their_head\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 6,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Warthog-shake_their_head\"}"
+                }
+            ]
         },
         {
             "pageNumber": 12,
@@ -1715,42 +2127,24 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 65.0,
-                    "posY": -69.0,
-                    "posZ": 5.0,
-                    "scaleX": 350.0,
-                    "scaleY": 350.0,
+                    "posX": -8.0,
+                    "posY": 6.0,
+                    "posZ": -2.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "SmallHyena-looking_worried-1",
+                    "imageName": "SmallHyena-and_Warthog_looking_worried-1",
                     "inText": false,
                     "label": "small_hyena_looking_worried",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 4,
-                    "tag": "",
-                    "posX": -85.0,
-                    "posY": -97.0,
-                    "posZ": 5.0,
-                    "scaleX": 300.0,
-                    "scaleY": 300.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -1,
-                    "imageName": "Warthog-looking_worried-1",
-                    "inText": false,
-                    "label": "warthog_looking_worried",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "SmallHyena-and_Warthog_looking_worried"
+                    ]
                 },
                 {
                     "id": 5,
@@ -1822,9 +2216,60 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 0,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"SmallHyena-and_Warthog_looking_worried\"}"
+                }
+            ]
         },
         {
             "pageNumber": 13,
@@ -1840,7 +2285,7 @@
                     "tag": "",
                     "posX": -39.0,
                     "posY": -115.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 250.0,
                     "scaleY": 250.0,
                     "rotX": 0.0,
@@ -1898,22 +2343,24 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 235.0,
-                    "posY": -86.0,
+                    "posX": 2.0,
+                    "posY": 1.0,
                     "posZ": 0.0,
-                    "scaleX": 2500.0,
-                    "scaleY": 2500.0,
+                    "scaleX": 800.0,
+                    "scaleY": 800.0,
                     "rotX": 0.0,
                     "rotY": 180.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "SmallHyena-walking-1",
+                    "imageName": "SmallHyena-running-1",
                     "inText": false,
                     "label": "small_hyena_walking",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "SmallHyena-running"
+                    ]
                 },
                 {
                     "id": 4,
@@ -1938,22 +2385,24 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": 99.0,
-                    "posY": -130.0,
+                    "posX": 362.0,
+                    "posY": -140.0,
                     "posZ": 0.0,
                     "scaleX": 250.0,
                     "scaleY": 250.0,
                     "rotX": 0.0,
-                    "rotY": 0.0,
+                    "rotY": 180.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "Warthog-shaking_head-1",
+                    "orderInLayer": -1,
+                    "imageName": "Warthog-running-1",
                     "inText": false,
                     "label": "warthog_shaking_head",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "Warthog-running"
+                    ]
                 },
                 {
                     "id": 6,
@@ -2045,9 +2494,114 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 124,
+                    "starWord": "No"
+                },
+                {
+                    "start": 124,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 248,
+                    "starWord": "No"
+                },
+                {
+                    "start": 249,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 373,
+                    "starWord": "No"
+                },
+                {
+                    "start": 374,
+                    "wordIdx": 3,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 3,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.2999999523162842}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        4,
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"SmallHyena-running\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        4,
+                        0,
+                        1
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 3,
+                            "symmetricallyPaired": false
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 5,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 5,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"Warthog-running\"}"
+                }
+            ]
         },
         {
             "pageNumber": 13,
@@ -2061,11 +2615,11 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 286.0,
-                    "posY": -19.0,
+                    "posX": 220.0,
+                    "posY": -83.0,
                     "posZ": 0.0,
-                    "scaleX": 150.0,
-                    "scaleY": 150.0,
+                    "scaleX": 161.3228302001953,
+                    "scaleY": 161.3228302001953,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -2101,31 +2655,33 @@
                 {
                     "id": 2,
                     "tag": "",
-                    "posX": 304.0,
-                    "posY": -75.0,
-                    "posZ": 0.0,
-                    "scaleX": 80.0,
-                    "scaleY": 80.0,
+                    "posX": -137.0,
+                    "posY": 123.0,
+                    "posZ": -2.0,
+                    "scaleX": 1200.0,
+                    "scaleY": 1200.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -2,
-                    "imageName": "GrandmaHyena-sitting-1",
+                    "imageName": "GrandmaHyena-holding_a_chair-1",
                     "inText": false,
                     "label": "Hyena",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "GrandmaHyena-holding_a_chair"
+                    ]
                 },
                 {
                     "id": 3,
                     "tag": "",
                     "posX": 358.0,
-                    "posY": -8.0,
+                    "posY": -28.0,
                     "posZ": 0.0,
-                    "scaleX": 400.0,
-                    "scaleY": 400.0,
+                    "scaleX": 380.0,
+                    "scaleY": 380.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -2182,7 +2738,7 @@
                     "id": 6,
                     "tag": "",
                     "posX": 0.0,
-                    "posY": -101.0,
+                    "posY": -113.0,
                     "posZ": 0.0,
                     "scaleX": 1300.0,
                     "scaleY": 1300.0,
@@ -2201,15 +2757,15 @@
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": 241.0,
-                    "posY": -58.0,
-                    "posZ": 0.0,
+                    "posX": 248.0,
+                    "posY": -78.0,
+                    "posZ": -1.0,
                     "scaleX": 350.0,
                     "scaleY": 350.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
-                    "orderInLayer": -3,
+                    "orderInLayer": -4,
                     "imageName": "Stool",
                     "inText": false,
                     "label": "stool",
@@ -2241,16 +2797,16 @@
                 {
                     "id": 9,
                     "tag": "",
-                    "posX": -75.0,
-                    "posY": -125.0,
+                    "posX": -128.0,
+                    "posY": -59.0,
                     "posZ": 0.0,
-                    "scaleX": 140.0,
-                    "scaleY": 140.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "Warthog-shaking_head-1",
+                    "imageName": "Warthog-shake_their_head-1",
                     "inText": false,
                     "label": "warthog_shaking_head",
                     "destroyOnCollision": "",
@@ -2301,11 +2857,11 @@
                 {
                     "id": 12,
                     "tag": "",
-                    "posX": 0.0,
-                    "posY": 99.0,
+                    "posX": 3.0,
+                    "posY": 51.0,
                     "posZ": 0.0,
-                    "scaleX": 370.0,
-                    "scaleY": 370.0,
+                    "scaleX": 310.0,
+                    "scaleY": 310.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -2322,15 +2878,90 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Ananunua kiti kizuri",
+                    "text": "Ananunua kiti kizuri.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 8,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 0,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"StartValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"duration\":1.0,\"speed\":0.0,\"Reset\":false,\"YoYo\":false,\"EndValues\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"ScaleMultiplier\":1.399999976158142}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 1,
+                            "symmetricallyPaired": true
+                        },
+                        {
+                            "invokerType": 1,
+                            "invokerID": 0,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"GrandmaHyena-holding_a_chair\"}"
+                }
+            ]
         },
         {
             "pageNumber": 14,
@@ -2344,11 +2975,11 @@
                 {
                     "id": 0,
                     "tag": "",
-                    "posX": 64.0,
+                    "posX": 43.0,
                     "posY": -29.0,
                     "posZ": 0.0,
-                    "scaleX": 250.0,
-                    "scaleY": 250.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
@@ -2404,22 +3035,24 @@
                 {
                     "id": 3,
                     "tag": "",
-                    "posX": 195.0,
-                    "posY": -47.0,
-                    "posZ": 5.0,
-                    "scaleX": 140.0,
-                    "scaleY": 140.0,
+                    "posX": 219.0,
+                    "posY": -68.0,
+                    "posZ": -2.0,
+                    "scaleX": 400.0,
+                    "scaleY": 400.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "GrandmaHyena-eyes_widen-1",
+                    "imageName": "GrandmaHyena-arms_open_wide-1",
                     "inText": false,
                     "label": "Grandma_hyena_eyes_widen",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "GrandmaHyena-arms_open_wide"
+                    ]
                 },
                 {
                     "id": 4,
@@ -2444,16 +3077,16 @@
                 {
                     "id": 5,
                     "tag": "",
-                    "posX": -73.0,
+                    "posX": -150.0,
                     "posY": -94.0,
                     "posZ": 2.0,
-                    "scaleX": 1600.0,
-                    "scaleY": 1600.0,
+                    "scaleX": 300.0,
+                    "scaleY": 300.0,
                     "rotX": 0.0,
-                    "rotY": 0.0,
+                    "rotY": 180.0,
                     "rotZ": 0.0,
                     "orderInLayer": -4,
-                    "imageName": "SmallHyena-walking-1",
+                    "imageName": "SmallHyena-watching-1",
                     "inText": false,
                     "label": "small_hyena_walking",
                     "destroyOnCollision": "",
@@ -2484,16 +3117,16 @@
                 {
                     "id": 7,
                     "tag": "",
-                    "posX": -197.0,
-                    "posY": -120.0,
+                    "posX": -236.0,
+                    "posY": -141.0,
                     "posZ": 3.0,
-                    "scaleX": 170.0,
-                    "scaleY": 170.0,
+                    "scaleX": 250.0,
+                    "scaleY": 250.0,
                     "rotX": 0.0,
-                    "rotY": 180.0,
+                    "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -1,
-                    "imageName": "Warthog-shaking_head-1",
+                    "imageName": "Warthog-running-2",
                     "inText": false,
                     "label": "warthog_shaking_head",
                     "destroyOnCollision": "",
@@ -2525,15 +3158,59 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "kumbe niliwapoteza vyinyi?",
+                    "text": "kumbe niliwapoteza nyinyi?",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 3,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"GrandmaHyena-arms_open_wide\"}"
+                }
+            ]
         },
         {
             "pageNumber": 15,
@@ -2748,7 +3425,7 @@
             "texts": [
                 {
                     "id": 0,
-                    "text": "Tunasafiri kurudi kijijini",
+                    "text": "Tunasafiri kurudi kijijini.",
                     "customPosition": false,
                     "x": 0.0,
                     "y": 0.0
@@ -2788,44 +3465,26 @@
                     "Animations": []
                 },
                 {
-                    "id": 1,
-                    "tag": "",
-                    "posX": 251.0,
-                    "posY": -139.0,
-                    "posZ": 0.0,
-                    "scaleX": 270.0,
-                    "scaleY": 270.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -3,
-                    "imageName": "Warthog-playing_with_toys-1",
-                    "inText": false,
-                    "label": "warthog",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
-                },
-                {
                     "id": 2,
                     "tag": "",
                     "posX": -155.0,
                     "posY": -11.0,
-                    "posZ": 0.0,
+                    "posZ": -2.0,
                     "scaleX": 250.0,
                     "scaleY": 250.0,
                     "rotX": 0.0,
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": -3,
-                    "imageName": "GrandmaHyena-sipping from_cup_of_hot_tea-1",
+                    "imageName": "GrandmaHyena-is_resting_her_body-1",
                     "inText": false,
                     "label": "Grandma_hyena_sipping from_cup_of_hot_tea",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "GrandmaHyena-is_resting_her_body"
+                    ]
                 },
                 {
                     "id": 4,
@@ -2839,33 +3498,15 @@
                     "rotY": 0.0,
                     "rotZ": 0.0,
                     "orderInLayer": 0,
-                    "imageName": "SmallHyena-playing_with_toys-1",
+                    "imageName": "SmallHyena-hyena_and_Warthog_laying_with_toys-1",
                     "inText": false,
                     "label": "small_hyena_playing_with_toys",
                     "destroyOnCollision": "",
                     "draggable": false,
                     "anim": [],
-                    "Animations": []
-                },
-                {
-                    "id": 5,
-                    "tag": "",
-                    "posX": 157.0,
-                    "posY": -166.0,
-                    "posZ": 0.0,
-                    "scaleX": 220.0,
-                    "scaleY": 220.0,
-                    "rotX": 0.0,
-                    "rotY": 0.0,
-                    "rotZ": 0.0,
-                    "orderInLayer": -2,
-                    "imageName": "Toys",
-                    "inText": false,
-                    "label": "toys",
-                    "destroyOnCollision": "",
-                    "draggable": false,
-                    "anim": [],
-                    "Animations": []
+                    "Animations": [
+                        "SmallHyena-hyena_and_Warthog_laying_with_toys"
+                    ]
                 },
                 {
                     "id": 6,
@@ -2917,9 +3558,74 @@
                     "y": 0.0
                 }
             ],
-            "audioFile": "",
-            "timestamps": [],
-            "triggers": []
+            "audioFile": "audio_tap",
+            "timestamps": [
+                {
+                    "start": 0,
+                    "wordIdx": 0,
+                    "audio": "",
+                    "end": 166,
+                    "starWord": "No"
+                },
+                {
+                    "start": 166,
+                    "wordIdx": 1,
+                    "audio": "",
+                    "end": 332,
+                    "starWord": "No"
+                },
+                {
+                    "start": 332,
+                    "wordIdx": 2,
+                    "audio": "",
+                    "end": 498,
+                    "starWord": "No"
+                }
+            ],
+            "triggers": [
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        1,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 0,
+                            "invokerID": 2,
+                            "symmetricallyPaired": true
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 1,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"GrandmaHyena-is_resting_her_body\"}"
+                },
+                {
+                    "stanzaID": 0,
+                    "type": 7,
+                    "prompts": [
+                        4,
+                        0
+                    ],
+                    "invokers": [
+                        {
+                            "invokerType": 1,
+                            "invokerID": 2,
+                            "symmetricallyPaired": false
+                        }
+                    ],
+                    "timing": 0.0,
+                    "animId": 0,
+                    "timestamp": 0,
+                    "sceneObjectId": 2,
+                    "symmetricPairingId": 0,
+                    "Params": "{\"InvokerList\":[],\"AllowInterrupt\":true,\"AnimationName\":\"SmallHyena-hyena_and_Warthog_laying_with_toys\"}"
+                }
+            ]
         }
     ]
 }

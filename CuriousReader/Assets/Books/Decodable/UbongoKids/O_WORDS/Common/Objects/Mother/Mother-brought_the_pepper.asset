@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Mother-brought_the_pepper
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 9cd260e19fcb37b428c98bb4e01a2b57, type: 3}
+  - {fileID: 3286163911610860551, guid: 0253b12736960ae4697c437bf3cf5ec3, type: 3}
+  - {fileID: 3286163911610860551, guid: f2f3ebf2683914e4b82c622f94fc877f, type: 3}
+  - {fileID: 3286163911610860551, guid: c3ce3b91069dd4148b29e033c4cf2699, type: 3}
+  - {fileID: 3286163911610860551, guid: c10ddd349bff2bf4fb8fcde24fa9ab65, type: 3}
+  - {fileID: 3286163911610860551, guid: 5540b88f23b495a409f3cc6f2134f8c4, type: 3}
+  - {fileID: 3286163911610860551, guid: fda0ecc8917054842bae55dd68492772, type: 3}
+  framesDuration: 03000000030000000700000007000000070000000300000000000000

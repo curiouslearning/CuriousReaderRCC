@@ -39,17 +39,24 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: BucketSprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5023643, y: 0.5008129}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 27
+        height: 23
       spriteID: f7e72488b90e6a94e8ce08618ee33b64
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -13.5, y: 11.5}
+      - {x: -9.5, y: -5.5}
+      - {x: -8.5, y: -11.5}
+      - {x: 10.5, y: -11.5}
+      - {x: 9.5, y: -4.5}
+      - {x: 13.5, y: 11.5}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Bat-hit_by_the_stone
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 019d47499af99d94f882f1a43400e4de, type: 3}
+  - {fileID: 3286163911610860551, guid: 34ac57506eb66534eaac91923b445f6a, type: 3}
+  - {fileID: 3286163911610860551, guid: f7d846c6f22a732478c5f918b582438a, type: 3}
+  - {fileID: 3286163911610860551, guid: 4d168d6b65de6af4699b63872c484efd, type: 3}
+  - {fileID: 3286163911610860551, guid: 8cf4ee1103b8ca045a3a99f7ceb9e6b2, type: 3}
+  - {fileID: 3286163911610860551, guid: 74c370b9527541e4e9dbafadcc9f43fb, type: 3}
+  - {fileID: 3286163911610860551, guid: 2cf7a4367827bd04986bcbafa8e744d9, type: 3}
+  framesDuration: 04000000040000000400000004000000040000000400000004000000

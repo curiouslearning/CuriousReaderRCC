@@ -9,9 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e8cd20a32069f4583c0f96074eb0c1, type: 3}
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
   m_Name: Landscape-lawn
   m_EditorClassIdentifier: 
-  BookAssetBundleName: o_book
-  BookCover: []
-  BookTitleTranslations: []
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: db998430187d7ce4ba371a9ade25a4d2, type: 3}
+  - {fileID: 3286163911610860551, guid: f0420ca5546cb254a82f40d899383757, type: 3}
+  - {fileID: 3286163911610860551, guid: 789784123b6b5f545b506750508346a4, type: 3}
+  framesDuration: 0a0000000a0000000a000000

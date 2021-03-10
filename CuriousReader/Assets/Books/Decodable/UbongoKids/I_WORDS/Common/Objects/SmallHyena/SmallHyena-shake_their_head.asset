@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: SmallHyena-shake_their_head
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 8499161bc0d5c64419386dfdf9d7bd76, type: 3}
+  - {fileID: 3286163911610860551, guid: 260779b621339c24a8f7443a7b3ed55d, type: 3}
+  - {fileID: 3286163911610860551, guid: cabdb1fca306d104d9fe51c5589ed0eb, type: 3}
+  - {fileID: 3286163911610860551, guid: e3d97b8ee846b414ea836422efc41d3c, type: 3}
+  - {fileID: 3286163911610860551, guid: b9fd1945c7e4ae54ea46c64d2cfa2e7b, type: 3}
+  - {fileID: 3286163911610860551, guid: 01c52c06d3f159843b0d2dcada9004b7, type: 3}
+  framesDuration: 050000000500000005000000050000000500000005000000

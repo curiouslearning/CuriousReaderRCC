@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Pearl-not_come_down
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 647ce1736aceb6845990ba6ed79833c0, type: 3}
+  - {fileID: 3286163911610860551, guid: e2834ca451fa59f43b79eedab1618c1f, type: 3}
+  - {fileID: 3286163911610860551, guid: a5375dd9f3186a648b305cfbeb120d48, type: 3}
+  - {fileID: 3286163911610860551, guid: 0841390503cfe1b49b905c66258ac2dc, type: 3}
+  framesDuration: 07000000070000000700000007000000

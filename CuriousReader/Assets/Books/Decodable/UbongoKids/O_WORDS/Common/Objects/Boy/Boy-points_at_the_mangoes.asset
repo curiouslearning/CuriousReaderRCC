@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Boy-points_at_the_mangoes
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 59cb771aed4244a4ea9d709d51118215, type: 3}
+  - {fileID: 3286163911610860551, guid: 5de995348f7b0a2418b18c320813221a, type: 3}
+  - {fileID: 3286163911610860551, guid: ca9f266d0c539204c82bc1b52f7bb710, type: 3}
+  framesDuration: 0a0000000a0000000a000000

@@ -9,9 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35e8cd20a32069f4583c0f96074eb0c1, type: 3}
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
   m_Name: Landscape-lawn_bush_path
   m_EditorClassIdentifier: 
-  BookAssetBundleName: o_book
-  BookCover: []
-  BookTitleTranslations: []
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: d59be620d13710a4ea1dda397aed5804, type: 3}
+  - {fileID: 3286163911610860551, guid: 1de1e6301d4d609438a677cb3ed3bac1, type: 3}
+  framesDuration: 0f0000000f000000

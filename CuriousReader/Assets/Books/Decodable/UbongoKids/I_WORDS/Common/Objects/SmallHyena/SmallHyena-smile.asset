@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: SmallHyena-smile
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: d8b22690017ce024b8409e7138500b0c, type: 3}
+  - {fileID: 3286163911610860551, guid: f82ae4bb17034b94aa3d167101676139, type: 3}
+  - {fileID: 3286163911610860551, guid: e24b6954f4f4f2549b17c41dba535f41, type: 3}
+  - {fileID: 3286163911610860551, guid: 6336db81624413a4ea178e12908b2508, type: 3}
+  - {fileID: 3286163911610860551, guid: 3e8367e3e9a8cb346bfa31e6e0830f80, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

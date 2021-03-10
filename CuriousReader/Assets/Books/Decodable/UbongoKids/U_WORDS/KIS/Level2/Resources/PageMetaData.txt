@@ -1,4 +1,4 @@
-# Scene Objects Count: 37
+# Scene Objects Count: 50
 
 # !!! Page index starts at 1 and the end page is inclusive !!!
 # !!! Key characters (>, &, x, :) can repeat with spaces in between but no other characters !!!
@@ -12,40 +12,53 @@
 #   17      => Put object on page 17
 #   20:25x3 => Put object on pages 20 through 25, 3 times on each
 
-Bench >11 & 15
-Bowl-soup >
-cage >1
-Can >6:10
-Crow-close_up_of_feet >16
-Crow-dancing >17
-Crow-looking_up >5
-Crow-peaking_into_water_cannister >6
-Crow-pearl_in_its_beak >2:3
-Crow-playing >4&9
-Crow-sad_face >10
-Crow-shaking_head >7:8 & 11 & 15
+Bench >
+Cage >
+Can-check >
+Can >
+Crow-close_up_of_feet >
+Crow-dancing >
+Crow-looking_up >
+Crow-peaking_into_water_cannister >
+Crow-pearl_in_its_beak >
+Crow-playing >
+Crow-playing_with_the_hen >
+Crow-sad_face >
+Crow-shakes_its_head >
+Crow-shaking_head >
 Crow-throws_pearl_with_beak >
-fence >1:6 & 8:11 & 15:171:6 & 8:11 & 15:17
-Girl-with_khanga_bending_over_stove >2 & 4
-Girl-with_khanga_drinking_soup_with_spoon >12
-Girl-with_khanga_holding_bowl >11
-Girl-with_khanga_holding_pearl >14
+fence >
+Girl-confused >
+Girl-eat >
+Girl-throws_the_pearl >
+Girl-with_khanga_bending_over_stove >
+Girl-with_khanga_drinking_soup_with_spoon >
+Girl-with_khanga_holding_bowl >
+Girl-with_khanga_holding_pearl >
 Girl-with_khanga_sitting_on_bench >
-Girl-with_khanga_surprised_face >13
-Girl-with_khanga_throws_pearl_over_shoulder >15
+Girl-with_khanga_surprised_face >
+Girl-with_khanga_throws_pearl_over_shoulder >
 Hen-catches_pearl_in_beak >
-Hen-close_up_of_feet >16
-Hen-dancing >17
-Hen-looking_up >5
-Hen-looking_up_peeking_into_water_cannister >6
-Hen-peaking_into_another_cooking_pot >8
-Hen-playing >4 & 9
-Hen-sad_face >10
-Hen-shaking_head >11 & 15
-Land >1:6 & 8:11 & 15:17
-Mud-puddle >11 & 15
-Pearl >4 & 15:17
-Pot-cooking >8:10
+Hen-check_the_pot >
+Hen-close_up_of_feet >
+Hen-dancing >
+Hen-dancing_with_crow >
+Hen-looking_up >
+Hen-looking_up_peeking_into_water_cannister >
+Hen-open_mouth >
+Hen-peaking_into_another_cooking_pot >
+Hen-playing >
+Hen-sad_face >
+Hen-shakes_its_head >
+Hen-shaking_head >
+Hen-thrown_way_up >
+Mud-land >
+Mud-path >
+Pearl-action >
+Pearl-birds_playing >
+Pearl-not_come_down >
+Pearl >
+Pot-cooking >
 Pot-cooking_small >
-Sky >1:17
-
+Shadow >
+Sky >

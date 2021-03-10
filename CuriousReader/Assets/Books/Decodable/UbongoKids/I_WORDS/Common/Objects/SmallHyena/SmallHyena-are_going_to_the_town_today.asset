@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: SmallHyena-are_going_to_the_town_today
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: b13731eaa0d4704478ebdeba6b04ad31, type: 3}
+  - {fileID: 3286163911610860551, guid: fbbf80e7a5fa2c84ea1051bc4b59643e, type: 3}
+  - {fileID: 3286163911610860551, guid: 977232d18400d314e8099cc76dd79173, type: 3}
+  - {fileID: 3286163911610860551, guid: 6f5ea710c1f45b24b9250b39c3fa5262, type: 3}
+  - {fileID: 3286163911610860551, guid: b4ba8fbe54deb9a4e95ca09cf346b51b, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

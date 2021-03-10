@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Hawk-offering_harp
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: bcce533f1bcb25249b5592382ae314df, type: 3}
+  - {fileID: 3286163911610860551, guid: a3377df0af790a845b76239d5fd3becd, type: 3}
+  - {fileID: 3286163911610860551, guid: 61c0c05c44b3e264fbc0b79fe496444b, type: 3}
+  - {fileID: 3286163911610860551, guid: 898968005dcd7574f86077acf8a68867, type: 3}
+  - {fileID: 3286163911610860551, guid: cb5642a3f6964134dab8a7980255dbb6, type: 3}
+  - {fileID: 3286163911610860551, guid: f6dee062c1e2c224d9cd3da78e56345c, type: 3}
+  - {fileID: 3286163911610860551, guid: 70b0e489878ef09469c9f380b240dc47, type: 3}
+  - {fileID: 3286163911610860551, guid: dabf36796080c6a4c811ce23332caede, type: 3}
+  - {fileID: 3286163911610860551, guid: 5867fb2cb9eb48d42903c1ee902bda0a, type: 3}
+  framesDuration: 030000000300000003000000030000000300000003000000030000000300000003000000

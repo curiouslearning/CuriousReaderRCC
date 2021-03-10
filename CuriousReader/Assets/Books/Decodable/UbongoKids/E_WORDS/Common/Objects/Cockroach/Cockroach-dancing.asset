@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Cockroach-dancing
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 823b657c840d7f141886fbc2fefa167e, type: 3}
+  - {fileID: 3286163911610860551, guid: 942015b86a51dff49873b6828ebd026b, type: 3}
+  - {fileID: 3286163911610860551, guid: ee4c14671021aea4daaf7cb2ac05ea12, type: 3}
+  - {fileID: 3286163911610860551, guid: 1c6b72fb0e66f124993d7491b99c6c8a, type: 3}
+  - {fileID: 3286163911610860551, guid: 0483b9b0d2a225640bd9388b787908aa, type: 3}
+  - {fileID: 3286163911610860551, guid: 845a5324cf0be8445b5d3257d1433029, type: 3}
+  - {fileID: 3286163911610860551, guid: e48a2389457922e4da976bda502b6192, type: 3}
+  framesDuration: 04000000040000000400000004000000040000000400000004000000

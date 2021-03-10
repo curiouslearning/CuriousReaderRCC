@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Hen-thrown_way_up
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 4641018689fab804f889be8be6739b51, type: 3}
+  - {fileID: 3286163911610860551, guid: 1744f8b8df762ec4e80941769748a1d8, type: 3}
+  - {fileID: 3286163911610860551, guid: 4fd29f573ad74d54aa0a05e5bd733332, type: 3}
+  - {fileID: 3286163911610860551, guid: ec38f4238aa9d8e4a9dce68cc24a805f, type: 3}
+  - {fileID: 3286163911610860551, guid: f91db83397722fc48ac7bd109882f48a, type: 3}
+  - {fileID: 3286163911610860551, guid: bde35b26a1b286344b52fab0225861c5, type: 3}
+  - {fileID: 3286163911610860551, guid: 7a688f0f81bed1849b76d7e0306f32ee, type: 3}
+  - {fileID: 3286163911610860551, guid: 8ede00cf0d6875748bcd85ecda41a48c, type: 3}
+  framesDuration: 0300000003000000030000000300000003000000030000000300000003000000

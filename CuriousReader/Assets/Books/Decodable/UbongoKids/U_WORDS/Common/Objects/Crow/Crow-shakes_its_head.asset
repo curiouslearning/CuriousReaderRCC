@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Crow-shakes_its_head
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: f5e66522dc944814fba9792362fad022, type: 3}
+  - {fileID: 3286163911610860551, guid: bb6c343a0f8e7744ea1d8ce565c5be31, type: 3}
+  - {fileID: 3286163911610860551, guid: 98f7f030270aad848a4423ae29bd3bc9, type: 3}
+  - {fileID: 3286163911610860551, guid: 11ee8e29dff92134da1cad9c884e4502, type: 3}
+  - {fileID: 3286163911610860551, guid: 1fc9a9ff4fdfb944b882c7743fff06f6, type: 3}
+  - {fileID: 3286163911610860551, guid: 0e68bcf75d16dae4085cc1856cb4a389, type: 3}
+  framesDuration: 050000000500000005000000050000000500000005000000

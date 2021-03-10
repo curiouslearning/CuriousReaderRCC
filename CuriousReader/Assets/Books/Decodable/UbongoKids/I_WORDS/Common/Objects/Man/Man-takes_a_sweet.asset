@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Man-takes_a_sweet
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: d872ba8f38962bb49a8d3e16a2810eb4, type: 3}
+  - {fileID: 3286163911610860551, guid: 1c3c02127cb403542aca74ce3954d41d, type: 3}
+  - {fileID: 3286163911610860551, guid: 273dbde261fcd1f488569ccb80f61518, type: 3}
+  framesDuration: 0a0000000a0000000a000000

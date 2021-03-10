@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Ring-sparkling
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 2eb72d6e47de6d340bb02e7206efab2d, type: 3}
+  - {fileID: 3286163911610860551, guid: 3c62aeb4357a24a4ca5b4f0eadfaefe4, type: 3}
+  - {fileID: 3286163911610860551, guid: ee7910acadbe1d5428f65619b7a4afa2, type: 3}
+  - {fileID: 3286163911610860551, guid: 36b089ba52fc6e84da1aa440c36824c0, type: 3}
+  - {fileID: 3286163911610860551, guid: cdc8caccd98226d47a7a399085b67c81, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000

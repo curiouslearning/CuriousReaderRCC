@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Cockroach-bagging_mango
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 7d44000fcc4565f47903301869057ffd, type: 3}
+  - {fileID: 3286163911610860551, guid: f8a2720a30e79f04bbc5353061d98c4a, type: 3}
+  - {fileID: 3286163911610860551, guid: 472a0a846f8eb474a8353d38e6eed6ba, type: 3}
+  - {fileID: 3286163911610860551, guid: 8f70cad322ba5544ab9d93e203191e56, type: 3}
+  - {fileID: 3286163911610860551, guid: 7b892681a62640044964a000f57ae445, type: 3}
+  - {fileID: 3286163911610860551, guid: 82a37533bab81a248a5b18ca879a87dd, type: 3}
+  - {fileID: 3286163911610860551, guid: d4febde9a8032db429ba1162e2936d69, type: 3}
+  - {fileID: 3286163911610860551, guid: d19174ac31adb4f4289bea615c809f39, type: 3}
+  framesDuration: 0300000003000000030000000300000003000000030000000300000003000000

@@ -15,7 +15,7 @@ ScriptedImporter:
   alignment: 0
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
-  viewportOptions: 0
+  viewportOptions: 1
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -39,17 +39,22 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: 
+      name: Cockroach-offering_mango-1Sprite
       originalName: 
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 0
-        height: 0
+        width: 100
+        height: 100
       spriteID: 80d2724a839aaeb42a19d9e443f2287a
       internalID: 0
-    PhysicsOutlines: []
+    PhysicsOutlines:
+    - Vertices:
+      - {x: -15, y: -12}
+      - {x: -15, y: -5}
+      - {x: -5, y: -5}
+      - {x: -5, y: -12}

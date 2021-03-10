@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Man-eating_date
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 1b5b8d2684776b44c8077625ff1ec528, type: 3}
+  - {fileID: 3286163911610860551, guid: 8111cad2bec790945938b38d7f483973, type: 3}
+  - {fileID: 3286163911610860551, guid: 906c6cb414283d5408f38097e34ed66c, type: 3}
+  - {fileID: 3286163911610860551, guid: 8662ca562c5e27343baa9e2f3b93d103, type: 3}
+  - {fileID: 3286163911610860551, guid: d5267021afb86fa46a93e75a2a80b9a5, type: 3}
+  - {fileID: 3286163911610860551, guid: c430d1a294bfad241857cd36ed1e0461, type: 3}
+  framesDuration: 050000000500000005000000050000000500000005000000

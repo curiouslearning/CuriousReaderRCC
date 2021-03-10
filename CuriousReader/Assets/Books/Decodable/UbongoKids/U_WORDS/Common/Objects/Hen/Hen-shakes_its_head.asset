@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Hen-shakes_its_head
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: 267f98484cd584740be14923dfb2a22a, type: 3}
+  - {fileID: 3286163911610860551, guid: e50f5e8544f307d4db212e552c40c958, type: 3}
+  - {fileID: 3286163911610860551, guid: 85e20a87f6cbd5a40b85c052b7200f65, type: 3}
+  - {fileID: 3286163911610860551, guid: 17e0485850b919d46aeee3049611bc8e, type: 3}
+  - {fileID: 3286163911610860551, guid: 5e68be1a9040e1640b4d7516a040de61, type: 3}
+  - {fileID: 3286163911610860551, guid: ea2719d1dc348ad4e8b370e8d8e99675, type: 3}
+  framesDuration: 050000000500000005000000050000000500000005000000

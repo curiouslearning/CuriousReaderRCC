@@ -14,8 +14,8 @@ ScriptedImporter:
   gradientResolution: 64
   alignment: 0
   customPivot: {x: 0, y: 0}
-  generatePhysicsShape: 1
-  viewportOptions: 1
+  generatePhysicsShape: 0
+  viewportOptions: 0
   preserveViewport: 0
   advancedMode: 0
   predefinedResolutionIndex: 1
@@ -39,22 +39,17 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: Pepper-green-1Sprite
+      name: 
       originalName: 
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       alignment: 0
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 100
-      spriteID: 333ba71a327c6514fa44c05b3e716226
+        width: 0
+        height: 0
+      spriteID: 3f99806ce37cce14887a146e49a45958
       internalID: 0
-    PhysicsOutlines:
-    - Vertices:
-      - {x: -34, y: 17}
-      - {x: -34, y: -6}
-      - {x: -18, y: -5}
-      - {x: -17, y: 17}
+    PhysicsOutlines: []

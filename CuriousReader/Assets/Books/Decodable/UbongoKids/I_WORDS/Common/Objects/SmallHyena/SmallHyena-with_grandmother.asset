@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: SmallHyena-with_grandmother
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: b5aa1f17cd13a274f8c47fb5ccfdf925, type: 3}
+  - {fileID: 3286163911610860551, guid: 6ce1146d4f645bd4a96cfbd94d5d2e67, type: 3}
+  - {fileID: 3286163911610860551, guid: 2ff470580596fbd49ada088fa0c223ed, type: 3}
+  - {fileID: 3286163911610860551, guid: ebcc24a2a8af7984cb34697b211d7c0c, type: 3}
+  framesDuration: 07000000070000000700000007000000

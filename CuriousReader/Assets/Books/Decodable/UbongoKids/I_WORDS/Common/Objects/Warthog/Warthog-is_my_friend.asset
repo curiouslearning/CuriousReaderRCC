@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77f76fefc0e73d4184cf86fd1488e0f, type: 3}
+  m_Name: Warthog-is_my_friend
+  m_EditorClassIdentifier: 
+  fps: 30
+  frames:
+  - {fileID: 3286163911610860551, guid: cb08c008a28485a4c915dd31af2a6770, type: 3}
+  - {fileID: 3286163911610860551, guid: 484a32eb0488e4d47a059e36980b4bb6, type: 3}
+  - {fileID: 3286163911610860551, guid: d23d7fac4e21b6e46b395e4d74906fd5, type: 3}
+  - {fileID: 3286163911610860551, guid: dbe5edf5822e6f440b39840f0292f128, type: 3}
+  - {fileID: 3286163911610860551, guid: 89ba22b13886eb14ca4f5a7810f73067, type: 3}
+  framesDuration: 0600000006000000060000000600000006000000
