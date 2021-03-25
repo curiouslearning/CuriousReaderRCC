@@ -38,6 +38,12 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+# google services
+google-services-desktop.json
+google-services-desktop.json.meta
+google-services.json
+google-services.meta
+
 CuriousReader/Assets/StreamingAssets/AssetBundles/
 
 CuriousReader/ProjectSettings/GvhProjectSettings\.xml
